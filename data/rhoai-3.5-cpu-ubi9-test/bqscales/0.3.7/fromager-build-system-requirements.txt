@@ -1,0 +1,5 @@
+hatch-nodejs-version
+hatch-build-scripts
+hatchling
+hatch
+jupyterlab==4.*

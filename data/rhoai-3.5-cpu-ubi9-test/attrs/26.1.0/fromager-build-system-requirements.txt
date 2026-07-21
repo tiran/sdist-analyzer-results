@@ -1,0 +1,3 @@
+hatch-fancy-pypi-readme>=23.2.0
+hatchling
+hatch-vcs

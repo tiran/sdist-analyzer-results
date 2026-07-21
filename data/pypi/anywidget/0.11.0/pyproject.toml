@@ -1,0 +1,101 @@
+[project]
+name = "anywidget"
+description = "custom jupyter widgets made easy"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{ name = "Trevor Manz", email = "trevor.j.manz@gmail.com" }]
+classifiers = [
+  "Framework :: Jupyter",
+  "Framework :: Jupyter :: JupyterLab",
+  "Framework :: Jupyter :: JupyterLab :: 4",
+  "Framework :: Jupyter :: JupyterLab :: Extensions",
+  "Framework :: Jupyter :: JupyterLab :: Extensions :: Prebuilt",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+]
+dependencies = ["ipywidgets>=7.6.0", "psygnal>=0.8.1", "typing-extensions>=4.2.0"]
+dynamic = ["version"]
+
+[project.urls]
+homepage = "https://github.com/manzt/anywidget"
+
+[project.optional-dependencies]
+dev = ["watchfiles>=1.1.0"]
+
+[dependency-groups]
+dev = [
+  "comm>=0.1.4",
+  "jupyterlab>=4.2.4",
+  "msgspec>=0.20.0",
+  "pydantic>=2.5.3",
+  "pytest>=7.4.4",
+  "ruff>=0.15.9",
+  "ty>=0.0.29",
+  "watchfiles>=0.23.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build]
+exclude = [".github", "docs", "paper"]
+artifacts = [
+  "anywidget/nbextension/index.*",
+  "anywidget/labextension/*.tgz",
+  "anywidget/labextension",
+]
+
+[tool.hatch.build.targets.wheel.shared-data]
+"anywidget/nbextension" = "share/jupyter/nbextensions/anywidget"
+"anywidget/labextension" = "share/jupyter/labextensions/anywidget"
+"anywidget.json" = "etc/jupyter/nbconfig/notebook.d/anywidget.json"
+
+[tool.hatch.build.hooks.jupyter-builder]
+build-function = "hatch_jupyter_builder.npm_builder"
+ensured-targets = ["anywidget/nbextension/index.js", "anywidget/labextension/package.json"]
+skip-if-exists = ["anywidget/nbextension/index.js", "anywidget/labextension/package.json"]
+dependencies = ["hatch-jupyter-builder>=0.5.0"]
+
+[tool.hatch.build.hooks.jupyter-builder.build-kwargs]
+npm = "vp"
+build_cmd = "build"
+
+[tool.hatch.version]
+path = "packages/anywidget/package.json"
+pattern = "\"version\": \"(?P<version>.+?)\""
+
+# https://github.com/charliermarsh/ruff
+[tool.ruff]
+src = ["anywidget", "tests"]
+exclude = ["packages", "docs"]
+
+[tool.ruff.lint]
+pydocstyle = { convention = "numpy" }
+select = ["ALL"]
+ignore = [
+  "D401", # First line should be in imperative mood (remove to opt in)
+  "COM812", # Missing trailing comma (conflicts with ruff format)
+  "ISC001", # Import sorting (conflicts with ruff format)
+  "FIX002", # Fixable issue
+  "DOC201", # TODO(manzt) enable in follow-up PR; no doc for return type.
+  "FBT", # TODO(manzt): enable in follow-up PR; require bool options to be keyword-only.
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*.py" = [
+  "D", # No docstrings in tests
+  "S101", # Use of assert
+  "B018", # "useless expression", for accessing the Foo._repr_mimbundle_ descriptor
+  "SLF001", # Access private member
+  "PLC2701", # Private imports
+]
+"tests/test_descriptor.py" = [
+  "FA100", # Don't add 'from __future__ import annotations' because it messes with Pydantic and ClassVar
+]
+"docs/*.py" = ["D"]
+
+[tool.uv]
+required-version = ">=0.11.0"

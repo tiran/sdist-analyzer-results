@@ -1,0 +1,44 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[project]
+name = "alchemy-config"
+dynamic = ["version"]
+description = "Configuration framework in Python for general configuration use."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9"
+authors = [
+    { name = "Gabe Goodhart", email = "ghart@us.ibm.com" },
+]
+keywords = ["config"]
+dependencies = [
+    "PyYAML>=5.3.1",
+]
+
+[project.urls]
+Homepage = "https://github.com/IBM/alchemy-config"
+
+[project.optional-dependencies]
+test = [
+    "pytest>=5.3.2",
+    "pytest-cov>=2.9.0",
+]
+
+[tool.pytest.ini_options]
+addopts = [
+    "--cov=aconfig",
+    "--cov-report=term",
+    "--cov-report=html",
+    "--disable-pytest-warnings",
+]
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.build.targets.sdist]
+include = ["aconfig/", "LICENSE", "README.md"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["aconfig"]

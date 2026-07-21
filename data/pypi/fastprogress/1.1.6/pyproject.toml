@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fastprogress"
+dynamic = ["version"]
+description = "A nested progress with plotting options for fastai"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "Apache-2.0"}
+authors = [{name = "Sylvain Gugger and Jeremy Howard", email = "info@fast.ai"}]
+keywords = ['jupyter', 'notebook', 'progressbar']
+classifiers = ["Natural Language :: English", "Intended Audience :: Developers", "Development Status :: 4 - Beta", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3 :: Only"]
+dependencies = ['fastcore>=1.10.0', 'python-fasthtml>=0.12.34']
+
+[project.urls]
+Repository = "https://github.com/answerdotai/fastprogress"
+Documentation = "https://fastprogress.fast.ai/"
+
+[project.entry-points.nbdev]
+fastprogress = "fastprogress._modidx:d"
+
+[project.optional-dependencies]
+dev = ['numpy']
+
+[tool.setuptools.dynamic]
+version = {attr = "fastprogress.__version__"}
+
+[tool.setuptools.packages.find]
+include = ["fastprogress"]
+
+[tool.nbdev]
+allowed_metadata_keys = ['solveit']
+allowed_cell_metadata_keys = ['solveit_ai']
+doc_path = 'docs'
+branch = 'master'
+custom_sidebar = false

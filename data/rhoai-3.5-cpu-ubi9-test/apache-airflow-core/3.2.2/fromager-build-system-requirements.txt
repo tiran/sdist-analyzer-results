@@ -1,0 +1,8 @@
+packaging==26.2
+hatchling==1.29.0
+smmap==5.0.3
+trove-classifiers==2026.5.20.19
+GitPython==3.1.50
+pluggy==1.6.0
+pathspec==1.1.1
+gitdb==4.0.12

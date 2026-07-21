@@ -1,0 +1,3 @@
+hatchling
+pdm-backend
+uv-dynamic-versioning>=0.7.0

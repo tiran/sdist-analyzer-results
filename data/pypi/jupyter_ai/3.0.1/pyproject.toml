@@ -1,0 +1,56 @@
+[build-system]
+requires = ["hatchling>=1.4.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "jupyter_ai"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.9"
+description = "A set of extensions providing agentic AI in JupyterLab"
+authors = [{ name = "Project Jupyter", email = "jupyter@googlegroups.com" }]
+keywords = ["jupyter", "jupyterlab", "jupyterlab-extension", "jupyter-ai"]
+classifiers = [
+  "Framework :: Jupyter",
+  "Framework :: Jupyter :: JupyterLab",
+  "Framework :: Jupyter :: JupyterLab :: 4",
+  "Framework :: Jupyter :: JupyterLab :: Extensions",
+  "Framework :: Jupyter :: JupyterLab :: Extensions :: Prebuilt",
+  "License :: OSI Approved :: BSD License",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+]
+dynamic = ["version"]
+
+dependencies = [
+  "jupyterlab_chat>=0.22.1,<0.23.0",
+  "jupyter_server_documents>=0.2.5,<0.3.0",
+  "jupyter_ai_router>=0.0.5,<0.1.0",
+  "jupyter_ai_persona_manager>=0.0.11,<0.1.0",
+  "jupyter_ai_chat_commands>=0.0.4,<0.1.0",
+  "jupyter_ai_acp_client>=0.1.5,<0.2.0",
+  "jupyter_server_mcp>=0.2.1,<0.3.0",
+  "jupyter_ai_tools>=0.5.2,<0.6.0",
+  "jupyterlab_notebook_awareness>=0.2.0,<0.3.0",
+  "jupyterlab_commands_toolkit>=0.1.6,<0.2.0",
+]
+
+[project.optional-dependencies]
+magics = ["jupyter_ai_litellm>=0.0.2,<0.1.0", "jupyter_ai_magic_commands>=0.0.3,<0.1.0"]
+jupyternaut = ["jupyter_ai_litellm>=0.0.2,<0.1.0", "jupyter_ai_jupyternaut>=0.0.11,<0.1.0"]
+
+[project.urls]
+Documentation = "https://jupyter-ai.readthedocs.io/en/v3/"
+Source = "https://github.com/jupyterlab/jupyter-ai"
+Tracker = "https://github.com/jupyterlab/jupyter-ai/issues"
+
+[tool.hatch.version]
+path = "jupyter_ai/__init__.py"
+
+[project.entry-points."jupyter_server_mcp.tools"]
+jupyter_ai = "jupyter_ai:DEFAULT_JUPYTER_SERVER_MCP_TOOLS"

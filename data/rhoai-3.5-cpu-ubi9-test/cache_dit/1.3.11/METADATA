@@ -1,0 +1,183 @@
+Metadata-Version: 2.4
+Name: cache_dit
+Version: 1.3.11
+Summary: Cache-DiT: A PyTorch-native Inference Engine with Cache, Parallelism and Quantization for Diffusion Transformers.
+Author: DefTruth, vipshop.com, etc.
+Maintainer: DefTruth, vipshop.com, etc
+Project-URL: Repository, https://github.com/vipshop/cache-dit
+Project-URL: Homepage, https://github.com/vipshop/cache-dit
+Project-URL: GitHub, https://github.com/vipshop/cache-dit
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: packaging
+Requires-Dist: pyyaml
+Requires-Dist: torch>=2.7.1
+Requires-Dist: diffusers>=0.36.0
+Requires-Dist: transformers>=4.55.2
+Provides-Extra: parallelism
+Requires-Dist: einops>=0.8.1; extra == "parallelism"
+Provides-Extra: ray
+Requires-Dist: ray>=2.0; extra == "ray"
+Requires-Dist: safetensors>=0.5.3; extra == "ray"
+Provides-Extra: quantization
+Requires-Dist: torchao>=0.14.1; extra == "quantization"
+Requires-Dist: bitsandbytes>=0.48.1; extra == "quantization"
+Requires-Dist: safetensors>=0.5.3; extra == "quantization"
+Provides-Extra: metrics
+Requires-Dist: scipy; extra == "metrics"
+Requires-Dist: scikit-image; extra == "metrics"
+Requires-Dist: image-reward; extra == "metrics"
+Requires-Dist: lpips==0.1.4; extra == "metrics"
+Provides-Extra: dev
+Requires-Dist: packaging; extra == "dev"
+Requires-Dist: pre-commit; extra == "dev"
+Requires-Dist: pytest<8.0.0,>=7.0.0; extra == "dev"
+Requires-Dist: pytest-html; extra == "dev"
+Requires-Dist: expecttest; extra == "dev"
+Requires-Dist: hypothesis; extra == "dev"
+Requires-Dist: accelerate; extra == "dev"
+Requires-Dist: peft; extra == "dev"
+Requires-Dist: protobuf; extra == "dev"
+Requires-Dist: sentencepiece; extra == "dev"
+Requires-Dist: opencv-python-headless; extra == "dev"
+Requires-Dist: ftfy; extra == "dev"
+Requires-Dist: scikit-image; extra == "dev"
+Provides-Extra: docs
+Requires-Dist: mkdocs==1.6.1; extra == "docs"
+Requires-Dist: mkdocs-api-autonav; extra == "docs"
+Requires-Dist: mkdocs-material==9.7.1; extra == "docs"
+Requires-Dist: mkdocstrings-python; extra == "docs"
+Requires-Dist: mkdocs-gen-files; extra == "docs"
+Requires-Dist: mkdocs-awesome-nav; extra == "docs"
+Requires-Dist: mkdocs-glightbox; extra == "docs"
+Requires-Dist: mkdocs-git-revision-date-localized-plugin; extra == "docs"
+Requires-Dist: mkdocs-minify-plugin; extra == "docs"
+Requires-Dist: regex; extra == "docs"
+Requires-Dist: ruff; extra == "docs"
+Requires-Dist: pydantic; extra == "docs"
+Provides-Extra: all
+Requires-Dist: cache-dit[parallelism]; extra == "all"
+Requires-Dist: cache-dit[quantization]; extra == "all"
+Requires-Dist: cache-dit[metrics]; extra == "all"
+Dynamic: license-file
+Dynamic: requires-python
+
+<div align="center">
+  <p align="center">
+    <h2 align="center">
+      <img src=https://github.com/vipshop/cache-dit/raw/main/assets/cache-dit-logo-v2.png width=185px align="left">
+      ⚡️🎉A PyTorch-native Inference Engine with Cache, <br>Parallelism, Quantization for Diffusion Transformers<br>
+      <a href="https://pepy.tech/projects/cache-dit"><img src=https://static.pepy.tech/personalized-badge/cache-dit?period=total&units=ABBREVIATION&left_color=GRAY&right_color=BLUE&left_text=downloads/pypi ></a>
+      <a href="https://pypi.org/project/cache-dit/"><img src=https://img.shields.io/github/release/vipshop/cache-dit.svg?color=GREEN ></a>
+      <img src="https://img.shields.io/github/license/vipshop/cache-dit.svg?color=blue">
+      <a href="https://cache-dit.readthedocs.io/en/latest/COMMUNITY/"><img src=https://img.shields.io/badge/🤗-Community-orange.svg ></a> 
+      <a href="https://hellogithub.com/repository/vipshop/cache-dit" target="_blank"><img src="https://api.hellogithub.com/v1/widgets/recommend.svg?rid=b8b03b3b32a449ea84cfc2b96cd384f3&claim_uid=ofSCbzTmdeQk3FD&theme=small" alt="Featured｜HelloGitHub" /></a> 
+    </h2>
+  </p>
+</div>
+
+**🤗Why Cache-DiT❓❓**Cache-DiT is built on top of the 🤗[Diffusers](https://github.com/huggingface/diffusers) library and now supports nearly [ALL](https://cache-dit.readthedocs.io/en/latest/supported_matrix/NVIDIA_GPU/) DiTs from Diffusers. It provides [hybrid cache acceleration](https://cache-dit.readthedocs.io/en/latest/user_guide/CACHE_API/) (DBCache, TaylorSeer, SCM, etc.) and comprehensive [parallelism](https://cache-dit.readthedocs.io/en/latest/user_guide/CONTEXT_PARALLEL/) optimizations, including Context Parallelism, Tensor Parallelism, hybrid 2D or 3D parallelism, and dedicated extra parallelism support for Text Encoder, VAE, and ControlNet. 
+
+<div align="center">
+  <img src=https://github.com/vipshop/cache-dit/raw/main/assets/arch_v2.png width=815px>
+</div>
+
+Cache-DiT is compatible with compilation, CPU Offloading, and quantization, fully integrates with [SGLang Diffusion](https://docs.sglang.io/diffusion/performance/cache/cache_dit.html), [vLLM-Omni](https://docs.vllm.ai/projects/vllm-omni/en/latest/user_guide/diffusion/cache_acceleration/cache_dit/), [TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM/pull/12548), ComfyUI, and runs natively on NVIDIA GPUs, Ascend NPUs and AMD GPUs. Cache-DiT is **fast**, **easy to use**, and **flexible** for various DiTs (online docs at 📘[cache-dit.io](https://cache-dit.readthedocs.io/en/latest/)).
+
+<div align="center">
+  <p align="center">
+    <i>⚡️9x speedup by Cache-DiT with Cache, Context Parallelism and Compilation</i>
+  </p>
+  <img src=https://github.com/vipshop/cache-dit/raw/main/assets/speedup_v5.png width=800px>
+</div>
+
+<div align="center">
+  <p> <h2>🚀Quick Start: Cache, Parallelism and Quantization</h2> </p>
+</div>
+
+First, you can install the cache-dit from PyPI or install from source: 
+
+```bash
+uv pip install -U cache-dit # PyPI, stable release.
+uv pip install git+https://github.com/vipshop/cache-dit.git # latest
+```
+
+Then, try to accelerate your DiTs with just **♥️one line♥️** of code ~  
+
+```python
+>>> import cache_dit
+>>> from diffusers import DiffusionPipeline
+>>> pipe = DiffusionPipeline.from_pretrained(...).to("cuda")
+>>> cache_dit.enable_cache(pipe) # Cache Acceleration with One-line code.
+>>> from cache_dit import DBCacheConfig, ParallelismConfig
+>>> cache_dit.enable_cache( # Or, Hybrid Cache Acceleration + Parallelism.
+...   pipe, cache_config=DBCacheConfig(), # w/ default
+...   parallelism_config=ParallelismConfig(ulysses_size=2))
+>>> from cache_dit import DBCacheConfig, ParallelismConfig, QuantizeConfig
+>>> cache_dit.enable_cache( # Or, Hybrid Cache + Parallelism + Quantization.
+...   pipe, cache_config=DBCacheConfig(), # w/ default
+...   parallelism_config=ParallelismConfig(ulysses_size=2),
+...   quantize_config=QuantizeConfig(quant_type=...))
+>>> output = pipe(...) # Then, just call the pipe as normal.
+```
+
+<div align="center">
+  <p> <h2>🚀Quick Start: SVDQuant (W4A4) PTQ/DQ workflow</h2> </p>
+</div>
+
+First, install Cache-DiT with SVDQuant support (Experimental):
+
+```bash
+# Required: CUDA 13.0+, PyTorch 2.11+, Ubuntu 22.04+ (GLIBC 2.32+).
+uv pip install -U cache-dit-cu13 # PyPI, stable release with SVDQ.
+CACHE_DIT_BUILD_SVDQUANT=1 uv pip install -e ".[quantization]" # latest
+```
+
+Then, try to quantize your model with just **♥️a few lines♥️** of codes ~
+
+```python
+>>> from cache_dit import QuantizeConfig
+>>> pipe = DiffusionPipeline.from_pretrained(...).to("cuda")
+>>> # Apply quantization with `cache_dit.quantize(...)` API.
+>>> pipe.transformer = cache_dit.quantize(
+...   pipe.transformer, quant_config=QuantizeConfig(
+...   quant_type="svdq_{int4|nvfp4}_r128_dq", # _r{rank}, e.g., r16, r32, r64, r128, etc.
+...   svdq_kwargs={"smooth_strategy": "few_shot"})) 
+>>> output = pipe(...) # Then, just call the pipe as normal.
+```
+
+For more advanced features, please refer to our online documentation at 📘[cache-dit.io](https://cache-dit.readthedocs.io/en/latest/user_guide/OVERVIEWS/).
+
+## 🌐Community Integration
+
+- 🎉[ComfyUI x Cache-DiT](https://github.com/Jasonzzt/ComfyUI-CacheDiT)
+- 🎉[(Intel) llm-scaler x Cache-DiT](https://github.com/intel/llm-scaler/tree/main/omni#cache-dit--torchcompile-acceleration)
+- 🎉[Diffusers x Cache-DiT](https://huggingface.co/docs/diffusers/main/en/optimization/cache_dit)
+- 🎉[TensorRT-LLM x Cache-DiT](https://github.com/NVIDIA/TensorRT-LLM/pull/12548)
+- 🎉[SGLang Diffusion x Cache-DiT](https://docs.sglang.io/diffusion/performance/cache/cache_dit.html)
+- 🎉[vLLM-Omni x Cache-DiT](https://docs.vllm.ai/projects/vllm-omni/en/latest/user_guide/diffusion/cache_acceleration/cache_dit/)
+- 🎉[Nunchaku x Cache-DiT](https://nunchaku.tech/docs/nunchaku/usage/cache.html#cache-dit)
+- 🎉[SD.Next x Cache-DiT](https://github.com/vladmandic/sdnext/blob/master/modules/cachedit.py)
+- 🎉[stable-diffusion.cpp x Cache-DiT](https://github.com/leejet/stable-diffusion.cpp/blob/master/cache_dit.hpp)
+- 🎉[jetson-containers x Cache-DiT](https://github.com/dusty-nv/jetson-containers/tree/master/packages/cv/diffusion/cache_edit)
+
+
+## ©️Acknowledgements
+
+Special thanks to vipshop's Computer Vision AI Team for supporting testing and deployment of this project. We learned and reused codes from: [Diffusers](https://github.com/huggingface/diffusers), [SGLang](https://github.com/sgl-project/sglang), [vLLM-Omni](https://github.com/vllm-project/vllm-omni), [Nunchaku](https://github.com/nunchaku-ai/nunchaku), [xDiT](https://github.com/xdit-project/xDiT) and [TaylorSeer](https://github.com/Shenyi-Z/TaylorSeer).
+
+
+## ©️Citations
+
+<div id="citations"></div>
+
+```BibTeX
+@misc{cache-dit@2025,
+  title={Cache-DiT: A PyTorch-native Inference Engine with Cache, Parallelism and Quantization for Diffusion Transformers.},
+  url={https://github.com/vipshop/cache-dit.git},
+  note={Open-source software available at https://github.com/vipshop/cache-dit.git},
+  author={DefTruth, vipshop.com, etc.},
+  year={2025}
+}
+```

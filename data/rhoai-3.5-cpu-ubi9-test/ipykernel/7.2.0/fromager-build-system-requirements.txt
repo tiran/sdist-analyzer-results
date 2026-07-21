@@ -1,0 +1,2 @@
+hatchling>=1.22
+jupyter_client>=6

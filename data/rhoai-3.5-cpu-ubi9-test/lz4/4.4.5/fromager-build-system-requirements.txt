@@ -1,0 +1,4 @@
+pkgconfig
+setuptools_scm[toml]>=6.2
+wheel
+setuptools>=45

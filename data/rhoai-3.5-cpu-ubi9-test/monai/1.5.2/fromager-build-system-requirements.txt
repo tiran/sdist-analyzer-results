@@ -1,0 +1,5 @@
+ninja
+packaging
+torch>=2.4.1
+wheel
+setuptools

@@ -1,0 +1,238 @@
+[project]
+name = "river"
+version = "0.24.2"
+description = "Online machine learning in Python"
+authors = [{ name = "Max Halford", email = "maxhalford25@gmail.com" }]
+requires-python = ">=3.11"
+readme = "README.md"
+license = "BSD-3-Clause"
+dependencies = [
+    "scipy>=1.16,<2",
+    "pandas>=2.2,<3",
+    "numpy>=2.3.4,<3",
+]
+
+[project.urls]
+Homepage = "https://riverml.xyz/"
+Repository = "https://github.com/online-ml/river/"
+
+[build-system]
+requires = [
+    "Cython",
+    "numpy",
+    "setuptools",
+    "setuptools-rust",
+]
+build-backend = "setuptools.build_meta"
+
+[dependency-groups]
+dev = [
+    "graphviz>=0.20.1,<0.21",
+    "gymnasium>=0.29.0,<0.30",
+    "matplotlib>=3.8.4,<4",
+    "mypy>=1.11.1,<2",
+    "pre-commit>=3.5.0,<4",
+    "pytest>=7.4.2,<8",
+    "ruff~=0.15.8",
+    "scikit-learn>=1.5.1,<2",
+    "sqlalchemy>=2.0.22,<3",
+    "sympy>=1.12.1,<2",
+    "pytest-xdist[psutil]>=3.3.1,<4",
+    "jupyter>=1.0.0,<2",
+    "mike @ git+https://github.com/squidfunk/mike.git",
+    "polars>=1.1.0,<2",
+]
+compat = [
+    "scikit-learn>=1.5.1,<2",
+    "sqlalchemy>=2.0.0,<3",
+]
+docs = [
+    "dominate",
+    "flask",
+    "jupyter-client",
+    "mike @ git+https://github.com/squidfunk/mike.git",
+    "pygments<2.20",
+    "TA-Lib",
+    "zensical",
+    "nbconvert",
+    "numpydoc",
+    "plotly>=6.3.0",
+    "python-slugify",
+    "spacy",
+    "tabulate",
+    "watermark",
+    "notebook<7",
+    "jupyter-contrib-nbextensions>=0.7.0,<0.8",
+]
+benchmark = [
+    "asv",
+    "virtualenv",
+]
+
+
+
+[tool.setuptools.packages.find]
+include = ["river*"]
+
+[tool.uv]
+default-groups = [
+    "dev",
+    "compat",
+    "docs",
+    "benchmark",
+]
+
+[tool.cibuildwheel]
+build-frontend = "build[uv]"
+# TODO: re-enable 32-bit builds once pandas is removed as a dependency
+skip = ["*_i686", "*-win32", "*-musllinux_i686"]
+test-command = "python -c \"import river\""
+
+[tool.cibuildwheel.environment]
+PATH = "$HOME/.cargo/bin:$PATH"
+MACOSX_DEPLOYMENT_TARGET = "10.13"
+
+[tool.cibuildwheel.linux.environment]
+PATH = "$HOME/.cargo/bin:$PATH"
+CARGO_NET_GIT_FETCH_WITH_CLI = "true"
+
+[[tool.cibuildwheel.overrides]]
+select = "*-*linux_*"
+before-build = """curl https://sh.rustup.rs -sSf | sh -s -- --default-toolchain=nightly --profile=minimal -y && rustup show"""
+
+[[tool.cibuildwheel.overrides]]
+select = ["*-macosx_*"]
+before-build = "rustup default nightly && rustup target add aarch64-apple-darwin && rustup target add x86_64-apple-darwin && rustup show"
+
+[[tool.cibuildwheel.overrides]]
+select = ["*-win_*", "*-win32"]
+before-build = "rustup default nightly && rustup toolchain install nightly-i686-pc-windows-msvc && rustup target add i686-pc-windows-msvc && rustup show"
+
+[tool.pytest.ini_options]
+addopts = [
+    "--doctest-modules",
+    "--doctest-glob=README.md",
+    "--ignore=build.py",
+    "--ignore=benchmarks",
+    "--ignore=docs/scripts",
+    "--verbose",
+    "-ra",
+    "-m not datasets and not slow",
+    "--color=yes",
+]
+filterwarnings = [
+    "ignore:A single label was found in 'y_true' and 'y_pred':UserWarning:sklearn",
+]
+doctest_optionflags = "NORMALIZE_WHITESPACE NUMBER ELLIPSIS"
+norecursedirs = [
+    "build",
+    "docs",
+    "node_modules",
+    ".eggs",
+    "scikit-multiflow",
+    "site",
+    "benchmarks",
+]
+markers = [
+    "datasets: tests that pertain to the datasets module",
+    "slow: tests that take a long time to run",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = 'py310'
+extend-include = ["*.ipynb"]
+
+[tool.ruff.lint]
+select = [
+    # pycodestyle
+    "E",
+    # Pyflakes
+    "F",
+    # pyupgrade
+    "UP",
+    # isort
+    "I",
+]
+ignore = ["E501"]
+fixable = ["ALL"]
+
+[tool.ruff.lint.isort]
+required-imports = ["from __future__ import annotations"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+
+[tool.mypy]
+files = "river"
+strict = true
+
+[[tool.mypy.overrides]]
+module = [
+    "mmh3.*",
+    "numpy.*",
+    "sklearn.*",
+    "pytest.*",
+    "pandas.*",
+    "scipy.*",
+    "graphviz.*",
+    "vaex.*",
+    "torch.*",
+    "sqlalchemy.*",
+    "requests.*",
+    "gymnasium.*",
+    "sympy.*",
+    "polars.*",
+]
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+# Disable strict mode for all non fully-typed modules
+module = [
+    "river.metrics.*",
+    "river.stats.*",
+    "river.optim.*",
+    "river.datasets.*",
+    "river.tree.*",
+    "river.preprocessing.*",
+    "river.stream.*",
+    "river.linear_model.*",
+    "river.evaluate.*",
+    "river.drift.*",
+    "river.compose.*",
+    "river.bandit.*",
+    "river.cluster.*",
+    "river.anomaly.*",
+    "river.time_series.*",
+    "river.feature_extraction.*",
+    "river.ensemble.*",
+    "river.proba.*",
+    "river.multioutput.*",
+    "river.naive_bayes.*",
+    "river.checks.*",
+    "river.rules.*",
+    "river.model_selection.*",
+    "river.forest.*",
+    "river.neighbors.*",
+    "river.sketch.*",
+    "river.facto.*",
+    "river.covariance.*",
+    "river.compat.*",
+    "river.multiclass.*",
+    "river.reco.*",
+    "river.imblearn.*",
+    "river.feature_selection.*",
+    "river.active.*",
+    "river.neural_net.*",
+    "river.test_estimators",
+]
+# The strict option is global, the checks must be disabled one by one
+warn_unused_ignores = false
+check_untyped_defs = false
+allow_subclassing_any = true
+allow_any_generics = true
+allow_untyped_calls = true
+allow_incomplete_defs = true
+allow_untyped_defs = true
+warn_return_any = false

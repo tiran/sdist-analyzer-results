@@ -1,0 +1,183 @@
+# Build backend: setuptools (not hatchling) until the bootstrap cycle described in
+# https://github.com/pypa/setuptools-scm/issues/1302 is gone: hatchling → pluggy →
+# setuptools-scm → vcs-versioning → hatchling. Revisit switching back to hatchling
+# once hatch/hatchling no longer depend on pluggy (or pluggy no longer pulls
+# setuptools-scm into the vcs-versioning build graph).
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = [
+  "setuptools>=45",
+  "packaging>=20",
+  'typing-extensions>=4.1; python_version < "3.11"',
+]
+
+[project]
+name = "vcs-versioning"
+description = "the blessed package to manage your versions by vcs metadata"
+readme = "README.md"
+keywords = [
+]
+license = {text = "MIT"}
+authors = [
+  { name = "Ronny Pfannschmidt", email = "opensource@ronnypfannschmidt.de" },
+]
+requires-python = ">=3.8"
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
+]
+dynamic = [
+  "version",
+]
+dependencies = [
+  "packaging>=20",
+  'tomli>=1; python_version < "3.11"',
+  'typing-extensions>=4.1; python_version < "3.11"',
+]
+
+[dependency-groups]
+test = [
+  "pytest",
+  "pytest-xdist",
+]
+
+[project.urls]
+Documentation = "https://github.com/pypa/setuptools-scm#readme"
+Issues = "https://github.com/pypa/setuptools-scm/issues"
+Source = "https://github.com/pypa/setuptools-scm"
+
+[project.scripts]
+"vcs-versioning" = "vcs_versioning._cli:main"
+
+[project.entry-points."vcs_versioning.discover_workdir"]
+hg-git = "vcs_versioning._backends._discover_vcs:discover"
+archival = "vcs_versioning._fallback_workdir:discover_archival"
+
+[project.entry-points."setuptools_scm.files_command"]
+".jj" = "vcs_versioning._file_finders._jj:jj_find_files"
+".git" = "vcs_versioning._file_finders._git:git_find_files"
+".hg" = "vcs_versioning._file_finders._hg:hg_find_files"
+
+[project.entry-points."setuptools_scm.files_command_fallback"]
+".git_archival.txt" = "vcs_versioning._file_finders._git:git_archive_find_files"
+".hg_archival.txt" = "vcs_versioning._file_finders._hg:hg_archive_find_files"
+
+[project.entry-points."setuptools_scm.local_scheme"]
+dirty-tag = "vcs_versioning._version_schemes:get_local_dirty_tag"
+"fail-on-uncommitted-changes" = "vcs_versioning._version_schemes:get_local_fail_on_uncommitted_changes"
+no-local-version = "vcs_versioning._version_schemes:get_no_local_node"
+no-local-version-strict = "vcs_versioning._version_schemes:get_no_local_node_strict"
+node-and-date = "vcs_versioning._version_schemes:get_local_node_and_date"
+node-and-timestamp = "vcs_versioning._version_schemes:get_local_node_and_timestamp"
+
+[project.entry-points."setuptools_scm.version_scheme"]
+"calver-by-date" = "vcs_versioning._version_schemes:calver_by_date"
+"guess-next-dev" = "vcs_versioning._version_schemes:guess_next_dev_version"
+"no-guess-dev" = "vcs_versioning._version_schemes:no_guess_dev_version"
+"only-version" = "vcs_versioning._version_schemes:only_version"
+"post-release" = "vcs_versioning._version_schemes:postrelease_version"
+"python-simplified-semver" = "vcs_versioning._version_schemes._standard:_deprecated_simplified_semver_version"
+"release-branch-semver" = "vcs_versioning._version_schemes._standard:_deprecated_release_branch_semver_version"
+"semver-pep440" = "vcs_versioning._version_schemes:simplified_semver_version"
+"semver-pep440-release-branch" = "vcs_versioning._version_schemes:release_branch_semver_version"
+"towncrier-fragments" = "vcs_versioning._version_schemes._towncrier:version_from_fragments"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+namespaces = false
+
+[tool.setuptools.package-data]
+"vcs_versioning._cli" = ["git_archival_stable.txt", "git_archival_full.txt"]
+
+[tool.vcs-versioning]
+root = ".."
+version_scheme = "towncrier-fragments"
+tag_regex = "^vcs-versioning-(?P<version>v?\\d+(?:\\.\\d+){0,2}[^\\+]*)(?:\\+.*)?$"
+fallback_version = "0.1.0"
+scm.git.describe_command = ["git", "describe", "--dirty", "--tags", "--long", "--match", "vcs-versioning-*"]
+
+[tool.pytest.ini_options]
+minversion = "8.2"
+testpaths = ["testing_vcs"]
+python_files = ["test_*.py"]
+xfail_strict = true
+addopts = ["-ra", "--strict-config", "--strict-markers", "-p", "vcs_versioning.test_api"]
+timeout = 300
+filterwarnings = [
+  "error",
+  "ignore:.*tool\\.setuptools_scm.*",
+  "ignore:.*git archive did not support describe output.*:UserWarning",
+  "ignore:.*unprocessed git archival found.*:UserWarning",
+  "ignore:.*without VcsEnvironment.*:DeprecationWarning",
+  "ignore:.*Passing config to workdir.*:DeprecationWarning",
+  "ignore:.*tag_regex.*is deprecated.*:DeprecationWarning",
+  "ignore:.*write_to_source.*:DeprecationWarning",
+  "ignore:.*relative_to is expected to be a file.*:UserWarning",
+]
+log_level = "debug"
+log_cli_level = "info"
+markers = [
+  "issue(id): reference to github issue",
+  "no_init: skip initializing the VCS repository in the test fixture",
+  "skip_commit: allows to skip committing in the helpers",
+]
+
+[tool.uv]
+default-groups = ["test"]
+
+[tool.towncrier]
+directory = "changelog.d"
+filename = "CHANGELOG.md"
+start_string = "<!-- towncrier release notes start -->\n"
+template = "changelog.d/template.md"
+title_format = "## {version} ({project_date})"
+issue_format = "[#{issue}](https://github.com/pypa/setuptools-scm/issues/{issue})"
+underlines = ["", "", ""]
+
+[[tool.towncrier.type]]
+directory = "major"
+name = "Major Changes"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "breaking"
+name = "Breaking Changes"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "removal"
+name = "Removed"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "deprecation"
+name = "Deprecated"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "feature"
+name = "Added"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "bugfix"
+name = "Fixed"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "doc"
+name = "Documentation"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "misc"
+name = "Miscellaneous"
+showcontent = true

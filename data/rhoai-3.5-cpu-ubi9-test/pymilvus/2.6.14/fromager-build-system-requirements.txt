@@ -1,0 +1,4 @@
+setuptools_scm[toml]>=6.2
+wheel
+gitpython
+setuptools>=67

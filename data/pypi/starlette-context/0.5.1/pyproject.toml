@@ -1,0 +1,128 @@
+[project]
+name = "starlette-context"
+version = "0.5.1"
+description = "Middleware for Starlette that allows you to store and access the context data of a request. Can be used with logging so logs automatically use request headers such as x-request-id or x-correlation-id."
+authors = [
+    {name = "Tom Wojcik", email = "starlette-context-pkg@tomwojcik.com"},
+]
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    'Development Status :: 4 - Beta',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: 3.12',
+    'Programming Language :: Python :: 3.13',
+    'Programming Language :: Python :: 3.14',
+    'Intended Audience :: Developers',
+    'Intended Audience :: Information Technology',
+    'Intended Audience :: System Administrators',
+    'License :: OSI Approved :: MIT License',
+    'Topic :: Internet',
+]
+keywords = ["middleware", "starlette", "fastapi"]
+dependencies = [
+    "starlette>=0.27.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/tomwojcik/starlette-context"
+Repository = "https://github.com/tomwojcik/starlette-context"
+Documentation = "https://starlette-context.readthedocs.io/"
+
+[dependency-groups]
+dev = [
+    "coverage>=7.4.1",
+    "pytest>=7.4.4,<9.0.0",
+    "pytest-cov>=4.1,<7.0",
+    "pytest-sugar>=0.9.7,<1.1.0",
+    "pytest-xdist>=3.5.0",
+    "pytest-asyncio>=0.23.4",
+    "codecov>=2.1.13",
+    "httpx>=0.27.0",
+]
+docs = [
+    "sphinx>=7.2.6",
+    "sphinx-rtd-theme>=2,<4",
+    "toml>=0.10.2",
+    "myst-parser>=2,<4",
+]
+example = [
+    "structlog",
+    "uvicorn",
+]
+code-quality = [
+    "ruff>=0.3,<0.12",
+    "mypy>=1.8.0",
+    "docformatter>=1.7.5",
+    "pyupgrade>=3.15.0",
+    "pre-commit>=3.2.0,<4.0.0",
+    "pre-commit-hooks>=4.4,<6.0",
+    "types-requests>=2.31.0.20240311",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/starlette_context",
+    "/AUTHORS",
+    "/LICENSE",
+    "/README.md",
+]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 79
+
+[tool.ruff.lint]
+select = [
+    "E",    # pycodestyle errors
+    "F",    # pyflakes
+    "I",    # isort
+    "C4",   # flake8-comprehensions
+    "SIM",  # flake8-simplify
+    "TCH",  # flake8-type-checking
+    "TID",  # flake8-tidy-imports
+    "UP",   # pyupgrade
+]
+ignore = ["TID252"]
+fixable = ["ALL"]
+unfixable = []
+
+[tool.ruff.lint.isort]
+known-first-party = ["starlette_context"]
+
+[tool.ruff.lint.flake8-tidy-imports]
+ban-relative-imports = "all"
+
+[tool.ruff.lint.per-file-ignores]
+"starlette_context/plugins/__init__.py" = ["F401"]
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+
+[tool.docformatter]
+recursive = true
+pre-summary-newline = true
+make-summary-multi-line = true
+wrap-summaries = 79
+wrap-descriptions = 79
+in-place = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+python_functions = "test_*"
+addopts = "--strict-markers"
+asyncio_mode = "auto"
+markers = [
+    "asyncio: marks tests as asyncio tests",
+]

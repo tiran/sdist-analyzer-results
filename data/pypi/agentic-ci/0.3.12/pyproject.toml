@@ -1,0 +1,69 @@
+[build-system]
+requires = ["uv_build>=0.9.3,<1"]
+build-backend = "uv_build"
+
+[project]
+name = "agentic-ci"
+version = "0.3.12"
+description = "Tooling for running AI coding agents in CI/CD environments"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+readme = "README.md"
+authors = [
+    { name = "Russell Bryant", email = "rbryant@redhat.com" },
+]
+keywords = ["ci", "cd", "ai", "agents", "claude", "llm", "telemetry"]
+dependencies = [
+    "PyYAML>=6.0",
+    "opentelemetry-proto>=1.0.0",
+    "requests>=2.28",
+    "tenacity>=8.0",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: Software Development :: Testing",
+]
+
+[project.urls]
+Homepage = "https://github.com/opendatahub-io/agentic-ci"
+Repository = "https://github.com/opendatahub-io/agentic-ci"
+Documentation = "https://opendatahub-io.github.io/agentic-ci/"
+Issues = "https://github.com/opendatahub-io/agentic-ci/issues"
+
+[project.optional-dependencies]
+forge = [
+    "PyJWT>=2.0",
+    "cryptography>=3.4",
+]
+docs = [
+    "mkdocs>=1.6",
+    "mkdocs-material>=9.5",
+    "mkdocstrings[python]>=0.25",
+]
+
+[project.scripts]
+agentic-ci = "agentic_ci.cli:main"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.11",
+]
+
+[tool.mypy]
+allow_redefinition = true
+warn_unused_ignores = true
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["F", "E", "W", "I", "N"]

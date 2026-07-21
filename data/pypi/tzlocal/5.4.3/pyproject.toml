@@ -1,0 +1,75 @@
+[build-system]
+requires = ["setuptools >= 64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tzlocal"
+description = "tzinfo object for the local timezone"
+readme = "README.rst"
+version = "5.4.3"
+authors = [{name = "Lennart Regebro", email = "regebro@gmail.com"}]
+license = "MIT"
+keywords = ["timezone"]
+classifiers = [
+    "Development Status :: 6 - Mature",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: Unix",
+    "Operating System :: MacOS :: MacOS X",
+    "Typing :: Typed",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+]
+requires-python = ">= 3.10"
+dependencies = [
+    "tzdata; platform_system == 'Windows'",
+]
+
+[project.urls]
+"Source code" = "https://github.com/regebro/tzlocal"
+Changelog = "https://github.com/regebro/tzlocal/blob/master/CHANGES.txt"
+"Issue tracker" = "https://github.com/regebro/tzlocal/issues"
+
+[project.optional-dependencies]
+testing = [
+    "pytest >= 4.3",
+    "pytest-mock >= 3.3",
+    "pytest-cov",
+    "check_manifest",
+    "pyroma",
+    "ruff",
+]
+devenv = [
+    "zest.releaser",
+]
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = ["tzlocal"]
+
+[tool.setuptools.package-data]
+"tzlocal.tests" = ["test_data/**/*"]
+ 
+[tool.ruff]
+line-length = 120
+
+[lint]
+select = [
+    "E", "F", "W",  # default flake-8
+    "I",            # isort
+    "ISC",          # flake8-implicit-str-concat
+    "PGH",          # pygrep-hooks
+    "RUF100",       # unused noqa (yesqa)
+    "UP",           # pyupgrade
+]
+ignore = ["UP015"]
+
+[tool.zest.releaser]
+create-wheel = true
+
+[tool.pytest.ini_options]
+testpaths = "tests"

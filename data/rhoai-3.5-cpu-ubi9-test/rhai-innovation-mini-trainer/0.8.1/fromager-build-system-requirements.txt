@@ -1,0 +1,5 @@
+ninja
+setuptools_scm>=8
+wheel
+torch>=2.6
+setuptools>=64.0

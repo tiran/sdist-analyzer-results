@@ -1,0 +1,72 @@
+[build-system]
+requires = [
+    "setuptools>=64"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rich-rst"
+version = "2.0.3"
+description = "A beautiful reStructuredText renderer for rich"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE", "rich_rst/_vendor/LICENSES.txt"]
+authors = [
+    { name = "Wasi Master", email = "arianmollik323@gmail.com" }
+]
+keywords = ["rich", "rst", "restructuredtext", "terminal", "docutils", "renderer"]
+classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Operating System :: OS Independent",
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Natural Language :: English"
+]
+dependencies = [
+    "rich>=12.0.0",
+    "pygments>=2.0.0"
+]
+
+[project.urls]
+"Bug Tracker" = "https://github.com/wasi-master/rich-rst/issues"
+"Source" = "https://github.com/wasi-master/rich-rst"
+"Documentation" = "https://rich-rst.readthedocs.io/en/latest/"
+"Say Thanks" = "https://saythanks.io/to/wasi-master"
+"Homepage" = "https://wasi-master.github.io/rich-rst"
+
+[project.optional-dependencies]
+docs = [
+    "docutils",
+    "rich",
+    "rich_rst",
+    "sphinx",
+    "sphinx_copybutton",
+    "sphinx_rtd_theme"
+]
+tests = [
+    "pytest",
+    "pytest-cov"
+]
+
+[tool.setuptools]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["rich_rst*"]
+
+[tool.coverage.run]
+omit = [
+    "rich_rst/_vendor/*",
+]
+[tool.coverage.report]
+omit = [
+    "rich_rst/_vendor/*",
+]

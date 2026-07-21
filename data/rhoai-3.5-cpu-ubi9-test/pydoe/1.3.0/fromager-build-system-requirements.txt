@@ -1,0 +1,2 @@
+hatch-vcs
+hatchling>=1.26

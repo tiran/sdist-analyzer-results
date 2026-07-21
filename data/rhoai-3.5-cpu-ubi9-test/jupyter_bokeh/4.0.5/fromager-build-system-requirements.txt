@@ -1,0 +1,3 @@
+hatch-nodejs-version
+setuptools
+hatchling>=1.5.0

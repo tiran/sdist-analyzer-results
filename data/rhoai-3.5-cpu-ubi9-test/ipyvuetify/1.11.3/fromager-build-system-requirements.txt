@@ -1,0 +1,4 @@
+wheel
+jupyterlab~=4.0
+pynpm
+setuptools>=40.8.0

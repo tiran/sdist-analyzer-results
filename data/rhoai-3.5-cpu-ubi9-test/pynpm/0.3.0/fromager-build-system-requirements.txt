@@ -1,0 +1,3 @@
+setuptools
+wheel
+babel>2.8

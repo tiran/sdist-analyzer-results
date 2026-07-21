@@ -1,0 +1,4 @@
+setuptools
+wheel
+setuptools>=40.8.0
+jupyter_packaging~=0.12.2

@@ -1,0 +1,432 @@
+#  -----------------------------------------------------------------------------------------
+#  (C) Copyright IBM Corp. 2023-2026.
+#  https://opensource.org/licenses/BSD-3-Clause
+#  -----------------------------------------------------------------------------------------
+
+[build-system]
+requires = ["setuptools", "build"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ibm_watsonx_ai"
+version = "1.6.0"
+requires-python = ">=3.11,<3.15"
+authors = [
+  {name = "IBM"}
+]
+maintainers = [
+  {name = "Maria Oleszkiewicz", email = "maria.oleszkiewicz@pl.ibm.com"},
+  {name = "Mateusz Szewczyk", email = "Mateusz.Szewczyk@ibm.com"}
+]
+description = "IBM watsonx.ai API Client"
+readme = "README.md"
+license = {text = "BSD-3-Clause"}
+keywords = [
+    "watsonx.ai",
+    "machine learning",
+    "IBM",
+    "Bluemix",
+    "client",
+    "API",
+    "IBM Cloud",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Natural Language :: English",
+    "License :: OSI Approved :: BSD License",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Operating System :: MacOS :: MacOS X",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: Microsoft :: Windows",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: Internet",
+]
+dependencies = [
+    "requests",
+    "httpx>=0.27,<0.29",
+    "urllib3",
+    "pandas<2.4.0,>=0.24.2; python_version < '3.14'",
+    "pandas>=2.3.3; python_version >= '3.14'",
+    "certifi",
+    "lomond",
+    "tabulate",
+    "packaging",
+    "ibm-cos-sdk>=2.12.0,<2.15.0",
+    "cachetools"
+]
+
+[project.urls]
+Documentation = "https://ibm.github.io/watsonx-ai-python-sdk"
+Changelog = "https://ibm.github.io/watsonx-ai-python-sdk/changelog.html"
+Samples = "https://github.com/IBM/watsonx-ai-samples"
+
+[project.optional-dependencies]
+rag = [
+    "langchain-core>=0.3.80,<0.4",
+    "langchain>=0.3,<0.4",
+    "langchain-community>=0.3,<0.4",
+    "langchain-elasticsearch>=0.3.0,<=0.3.2",
+    "langchain-ibm>=0.3,<0.4",
+    "langgraph>=0.2.40,<0.7",
+    "langchain-chroma>=0.1.4,<=0.2.5; python_version < '3.14'",
+    "langchain-milvus>=0.1.8,<=0.2.1; python_version < '3.14'",
+    "pymilvus<=2.6.6; python_version < '3.14'",
+    "langchain-text-splitters>=0.3,<0.4",
+    "grpcio>=1.54.3; python_version < '3.14'",
+    "python-docx>=1.1.2,<=1.2.0",
+    "python-pptx==1.0.2",
+    "pypdf>=4.2.0",
+    "beautifulsoup4>=4.12.3,<=4.13.5",
+    "markdown>=3.4.1,<=3.8.2",
+    "pyYAML>=5.1.2",
+    "scikit-learn>=1.3.0; python_version < '3.14'",
+    "openpyxl==3.1.5",
+    "langchain-db2>=0.1,<0.2"
+]
+mcp = [
+    "mcp>=1.6.0,<2.0"
+]
+
+
+[dependency-groups]
+lint = [
+    "ruff>=0.14,<0.15",
+    "black",
+    "docstrfmt>=2,<3",
+    "typos>=1,<2; platform_machine != 's390x'"
+]
+typing = [
+    "mypy>=1.19,<1.20",
+    "types-requests",
+    "types-tabulate",
+    "types-cachetools",
+    "types-Markdown",
+    "types-PyYAML"
+]
+test_core = [
+    "pytest>=9.0.3,<10",
+    "allure-pytest",
+    "pytest-mock",
+    "pytest-env",
+    "pytest-asyncio>=1.0,<2",
+    "pytest-cov",
+    "pytest-timeout",
+    "pytest-dependency",
+    "pytest-xdist>=3.6.1,<4",
+    "allure-python-commons",
+    "python-dotenv",
+]
+dev_common = [
+  "ipykernel>=6.29.5,<7",
+  "setuptools<82.0.0",
+  "pyarrow",
+  "sphinx>=8,<9",
+  "sphinx-design",
+  "sphinx-multiversion",
+  "furo",
+  "twine",
+  { include-group = "lint" },
+  { include-group = "typing" },
+]
+dev = [
+    { include-group = "dev_common" },
+    { include-group = "test_core" },
+    "matplotlib",
+    "tensorflow>=2.18.0,<2.22.0; python_version < '3.14'",
+]
+dev_autoai_rt24_1 = [
+    { include-group = "dev_common" },
+    { include-group = "test_core" },
+    "autoai-libs==2.0.*; python_version == '3.11'",
+    "autoai-ts-libs==4.0.*; python_version == '3.11'",
+    "joblib>=1.3,<1.4; python_version == '3.11'",
+    "lale[fairness]>=0.8,<0.9; python_version == '3.11'",
+    "langgraph==0.2.40; python_version == '3.11'",
+    "lightgbm==4.2.*; python_version == '3.11'",
+    "numpy==1.26.*; python_version == '3.11'",
+    "pandas==2.1.*; python_version == '3.11'",
+    "onnxruntime==1.16; python_version == '3.11'",
+    "onnxruntime-extensions<0.14; python_version == '3.11'",
+    "scikit-learn==1.3.*; python_version == '3.11'",
+    "snapml>=1.14.0,<1.15.0; python_version == '3.11'",
+    "timeout-decorator; python_version == '3.11'",
+    "xgboost==2.0.*; python_version == '3.11'",
+    "pyarrow; python_version == '3.11'",
+    "python-docx; python_version == '3.11'",
+    "python-pptx; python_version == '3.11'",
+    "pypdf; python_version == '3.11'",
+    "beautifulsoup4; python_version == '3.11'",
+    "langchain-core; python_version == '3.11'",
+    "pyyaml; python_version == '3.11'",
+    "xlrd==2.0.*; python_version == '3.11'",
+]
+dev_autoai_rt25_1 = [
+    { include-group = "dev_common" },
+    { include-group = "test_core" },
+    "autoai-libs>=3.0.8,<3.1; python_version == '3.12'",
+    "autoai-ts-libs==5.0.*; python_version == '3.12'",
+    "beautifulsoup4; python_version == '3.12'",
+    "joblib==1.4.*; python_version == '3.12'",
+    "lale[fairness]>=0.9,<0.10; python_version == '3.12'",
+    "langchain-core; python_version == '3.12'",
+    "langgraph==0.2.40; python_version == '3.12'",
+    "lightgbm==4.5.*; python_version == '3.12'",
+    "numpy>=2.0.2,<2.1; python_version == '3.12'",
+    "onnxruntime==1.21.*; python_version == '3.12' and platform_machine != 's390x'",
+    "onnxruntime-extensions<0.14; python_version == '3.12' and platform_machine != 's390x'",
+    "pandas==2.2.*; python_version == '3.12'",
+    "pyarrow; python_version == '3.12'",
+    "python-docx; python_version == '3.12'",
+    "python-pptx; python_version == '3.12'",
+    "pypdf; python_version == '3.12'",
+    "pyyaml; python_version == '3.12'",
+    "scikit-learn==1.6.*; python_version == '3.12'",
+    "snapml==1.16.4; python_version == '3.12'",
+    "timeout-decorator; python_version == '3.12'",
+    "xgboost==2.1.*; python_version == '3.12'",
+    "xlrd==2.0.*; python_version == '3.12'",
+]
+dev_autoai_rag_genai_25a = [
+    { include-group = "dev_common" },
+    { include-group = "test_core" },
+    "beautifulsoup4==4.13.5; python_version == '3.12'",
+    "joblib==1.4.*; python_version == '3.12'",
+    "lale[fairness]>=0.9,<0.10; python_version == '3.12'",
+    "langchain-core; python_version == '3.12'",
+    "langgraph==0.6.11; python_version == '3.12'",
+    "lightgbm==4.5.*; python_version == '3.12'",
+    "numpy>=2.0.2,<2.1; python_version == '3.12'",
+    "pandas==2.2.*; python_version == '3.12'",
+    "pyarrow; python_version == '3.12'",
+    "python-docx==1.2.0; python_version == '3.12'",
+    "python-pptx==1.0.2; python_version == '3.12'",
+    "pypdf>=4.2.0; python_version == '3.12'",
+    "pyyaml>=5.1.2; python_version == '3.12'",
+    "scikit-learn==1.7.*; python_version == '3.12'",
+    "snapml>=1.16.0,<1.18; python_version == '3.12'",
+    "timeout-decorator; python_version == '3.12'",
+    "xgboost==2.1.*; python_version == '3.12'",
+]
+dev_base_rt_24_1 = [
+    { include-group = "dev_common" },
+    { include-group = "test_core" },
+    "joblib>=1.3,<1.4; python_version=='3.11'",
+    "numpy==1.26.*; python_version == '3.11'",
+    "pyspark==3.4.0; python_version=='3.11'",
+    "scikit-learn==1.3.*; python_version=='3.11'",
+    "tensorflow==2.14.*; python_version=='3.11'",
+    "xgboost==2.0.*; python_version=='3.11'",
+]
+dev_base_rt_25_1 = [
+    { include-group = "dev_common" },
+    { include-group = "test_core" },
+    "joblib==1.4.*; python_version == '3.12'",
+    "numpy>=2.0.2,<2.1; python_version == '3.12'",
+    "pyspark==3.4.0; python_version == '3.12'",
+    "scikit-learn==1.6.*; python_version == '3.12'",
+    "tensorflow==2.18.*; python_version == '3.12'",
+    "xgboost==2.1.*; python_version == '3.12'",
+]
+dev_fm_rt_24_1 = [
+    { include-group = "dev_common" },
+    { include-group = "test_core" },
+    "beautifulsoup4==4.12.3; python_version == '3.11'",
+    "grpcio>=1.60.0; python_version=='3.11'",  # for Milvus
+    "joblib>=1.3,<1.4; python_version=='3.11'",
+    "langchain>=0.3,<0.4; python_version == '3.11'",
+    "langchain-core>=0.3.80,<0.4; python_version == '3.11'",
+    "langchain-elasticsearch==0.3.0; python_version == '3.11'",
+    "langchain_chroma==0.1.4; python_version == '3.11'",
+    "langchain-db2>=0.1,<0.2; python_version == '3.11'",
+    "langchain_ibm>=0.3,<0.4; python_version == '3.11'",
+    "pymilvus<2.5.7; python_version == '3.11'",
+    "langchain_milvus==0.1.8; python_version == '3.11'",
+    "llama-index-core; python_version == '3.11'",
+    "llama-index-llms-ibm; python_version == '3.11'",
+    "llama-index-embeddings-ibm; python_version == '3.11'",
+    "markdown==3.4.1; python_version == '3.11'",
+    "mcp>=1.6.0,<2.0; python_version == '3.11'",
+    "numexpr; python_version == '3.11'",  # for LLMMathChain test
+    "platformdirs; python_version == '3.11'",
+    "pypdf>=5,<6; python_version == '3.11'",
+    "python-docx==1.1.2; python_version == '3.11'",
+    "python-pptx; python_version == '3.11'",
+    "pyYAML; python_version == '3.11'",
+    "tiktoken; python_version == '3.11'",  # for text splitter test
+]
+dev_fm_rt_25_1 = [
+    { include-group = "dev_common" },
+    { include-group = "test_core" },
+    "beautifulsoup4==4.13.5; python_version == '3.12'",
+    "grpcio>=1.60.0; python_version=='3.12'",  # for Milvus
+    "joblib==1.4.*; python_version == '3.12'",
+    "langchain>=0.3,<0.4; python_version == '3.12'",
+    "langchain-core>=0.3.80,<0.4; python_version == '3.12'",
+    "langchain-elasticsearch==0.3.2; python_version == '3.12'",
+    "langchain_chroma==0.2.5; python_version == '3.12'",
+    "langchain-db2>=0.1,<0.2; python_version == '3.12'",
+    "langchain_milvus==0.2.1; python_version == '3.12'",
+    "langchain_ibm>=0.3,<0.4; python_version == '3.12'",
+    "llama-index-core; python_version == '3.12'",
+    "llama-index-llms-ibm; python_version == '3.12'",
+    "llama-index-embeddings-ibm; python_version == '3.12'",
+    "markdown==3.8.2; python_version == '3.12'",
+    "mcp>=1.6.0,<2.0; python_version == '3.12'",
+    "numexpr; python_version == '3.12'",  # for LLMMathChain test
+    "platformdirs; python_version == '3.12'",
+    "pypdf>=6,<7; python_version == '3.12'",
+    "python-docx==1.2.0; python_version == '3.12'",
+    "python-pptx; python_version == '3.12'",
+    "pyYAML; python_version == '3.12'",
+    "tiktoken; python_version == '3.12'",  # for text splitter test
+]
+
+[tool.uv]
+conflicts = [
+    [
+      { group = "dev" },
+      { group = "dev-base-rt-24-1" },
+    ],
+    [
+      { group = "dev-autoai-rt25-1" },
+      { group = "dev-autoai-rag-genai-25a" },
+    ],
+    [
+      { group = "dev-base-rt-25-1" },
+      { group = "dev-autoai-rag-genai-25a" },
+    ],
+]
+config-settings = { editable_mode = "compat" }
+
+[tool.ruff]
+fix = true
+
+[tool.ruff.format]
+docstring-code-format = true
+docstring-code-line-length = 72  # https://peps.python.org/pep-0008/#maximum-line-length
+
+[tool.setuptools]
+package-data = {messages = ["messages/messages_en.json"], foundation_models = ["foundation_models/extensions/rag/pattern/_default_inference_service_schema/request.json", "foundation_models/extensions/rag/pattern/_default_inference_service_schema/response.json"], api_version_param = ["utils/API_VERSION_PARAM"]}
+include-package-data = true
+license-files = []
+
+
+[tool.setuptools.packages.find]
+exclude = ["tests.*", "tests"]
+
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "session"
+asyncio_default_test_loop_scope = "session"
+addopts = "--clean-alluredir --alluredir=target/allure-results"
+markers = [
+    "asyncio: async function",
+    "flaky: flaky test",
+    "smokeCPD: smoke tests CPD suite",
+    "smokeWXCLOUD: smoke tests CLOUD suite",
+    "smokeWXCPD: smoke tests WX.CPD suite",
+    "wip: work in progress test",
+    "order: mark for ordering tests",
+    "unittest: isolated source code tests",
+    "timeout: specify time for test"
+]
+testpaths = [
+    "tests"
+]
+filterwarnings = [
+    "always::PendingDeprecationWarning",
+    "always::DeprecationWarning",
+    "ignore:.*Model needs to be:UserWarning",
+    "ignore:.*invalid escape sequence.*:DeprecationWarning"
+]
+
+[tool.mypy]
+packages = ["ibm_watsonx_ai"]
+explicit_package_bases = true
+
+disallow_untyped_defs = true        # Requires types for all function signatures
+disallow_incomplete_defs = true     # Prevents partial typing (e.g., missing return type)
+ignore_missing_imports = true       # Stops errors from 3rd party libs without type stubs
+
+check_untyped_defs = true           # Analyzes the body of functions even if they aren't annotated
+no_implicit_optional = true         # Forces 'Optional[X]' instead of assuming 'X = None' is fine
+warn_unused_ignores = true          # Alerts you if a '# type: ignore' is no longer needed
+warn_redundant_casts = true         # Alerts you if you are casting a variable to its own type
+show_error_codes = true             # Displays specific error codes (e.g., [attr-defined]) in output
+
+follow_imports = "normal"
+
+[[tool.mypy.overrides]]
+module = [
+    "ibm_watsonx_ai.experiment.*",
+    "ibm_watsonx_ai.foundation_models.extensions.rag.pattern.*",
+    "ibm_watsonx_ai.helpers.*",
+    "ibm_watsonx_ai.libs.*",
+    "ibm_watsonx_ai.utils.*",
+]
+ignore_errors = true
+follow_imports = "skip"
+
+[tool.coverage.run]
+omit = [
+    "generate_changelog.py",
+    "generate_version_changelog.py",
+    "send_slack_notification.py",
+    "ibm_watsonx_ai/deployment/*",
+    "ibm_watsonx_ai/experiment/autoai/*",
+    "ibm_watsonx_ai/foundation_models/extensions/langchain/*",
+    "ibm_watsonx_ai/foundation_models/extensions/rag/pattern/default_*",
+    "ibm_watsonx_ai/foundation_models/extensions/rag/vector_stores/adapters/*",
+    "ibm_watsonx_ai/foundation_models/extensions/rag/vector_stores/langchain_vector_store_adapter.py",
+    "ibm_watsonx_ai/foundation_models/extensions/rag/vector_stores/vector_store_connector.py",
+    "ibm_watsonx_ai/libs/*",
+    "ibm_watsonx_ai/utils/autoai/connection.py",
+    "ibm_watsonx_ai/utils/autoai/fairness.py",
+    "ibm_watsonx_ai/utils/autoai/local_training_message_handler.py",
+    "ibm_watsonx_ai/utils/autoai/progress_bar.py",
+    "ibm_watsonx_ai/utils/autoai/training.py",
+    "ibm_watsonx_ai/utils/autoai/utils.py",
+    "ibm_watsonx_ai/utils/utils.py",
+    "tests/install_requirements.py",
+    "tests/run_base.py",
+    "tests/conftest*",
+    "tests/autoai/*",
+    "tests/base/*",
+    "tests/contract/*",
+    "tests/deployment/*",
+    "tests/foundation_models/*",
+    "tests/utils/*",
+    "tests/unit/data/*"
+]
+
+[tool.coverage.report]
+show_missing = true
+exclude_also = [
+    "pytest.fail",
+    "pytest.mark.skip",
+    "if TYPE_CHECKING:",
+]
+
+[tool.typos]
+files.extend-exclude = [
+    "*.csv",
+    "*.ipynb",
+    "*.html",
+    "libs"
+]
+
+[tool.typos.default.extend-words]
+aadd = "aadd"
+asend = "asend"
+Deploymnet = "Deploymnet"
+fpr = "fpr"

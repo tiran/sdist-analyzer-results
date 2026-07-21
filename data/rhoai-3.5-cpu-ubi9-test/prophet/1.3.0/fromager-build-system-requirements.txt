@@ -1,0 +1,3 @@
+setuptools>=64
+wheel
+cmdstanpy>=1.0.4

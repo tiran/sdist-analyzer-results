@@ -1,0 +1,5 @@
+wheel
+packaging>=24.2
+setuptools
+twine>=6.1.0
+pkginfo>=1.12.0
