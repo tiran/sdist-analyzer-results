@@ -7,7 +7,7 @@
 #     "pyyaml",
 #     "requests",
 #     "tqdm",
-#     "zipwire[requests]",
+#     "zipwire[requests]>=0.3.0",
 # ]
 # ///
 # SPDX-License-Identifier: Apache-2.0
@@ -32,7 +32,7 @@ import yaml
 from packaging.requirements import InvalidRequirement, Requirement
 from pypi_simple import PyPISimple
 from tqdm import tqdm
-from zipwire import FileNotFoundInZip, SyncRemoteZip
+from zipwire import SyncRemoteWheel
 from zipwire.backends import RequestsReader
 
 logger = logging.getLogger(__name__)
@@ -47,6 +47,8 @@ EXTRACT_FILENAMES = {
     "fromager-build-backend-requirements.txt",
     "fromager-build-sdist-requirements.txt",
     "fromager-build-system-requirements.txt",
+    "fromager-elf-requires.txt",
+    "fromager-elf-provides.txt",
 }
 
 DATA_DIR = Path("data")
@@ -142,24 +144,14 @@ def fetch_wheel_metadata(
     if dest.is_dir():
         return None  # already done
 
-    # Derive dist-info prefix from the wheel filename.
-    wheel_filename = wheel_url.rsplit("/", 1)[-1]
-    wheelname, whl_version = wheel_filename.split("-", 2)[:2]
-    distinfo_prefix = f"{wheelname}-{whl_version}.dist-info/"
-
     reader = RequestsReader(wheel_url, session=session)
     try:
-        with SyncRemoteZip(reader) as rz:
+        with SyncRemoteWheel(reader) as whl:
             extracted: dict[str, bytes] = {}
-            for target in EXTRACT_FILENAMES:
-                entry_name = distinfo_prefix + target
-                try:
-                    info = rz.getinfo(entry_name)
-                    if info.file_size == 0:
-                        continue
-                    extracted[target] = rz.read(info)
-                except FileNotFoundInZip:
-                    pass
+            for entry in whl.distinfolist():
+                basename = entry.filename.rsplit("/", 1)[-1]
+                if basename in EXTRACT_FILENAMES and entry.file_size > 0:
+                    extracted[basename] = whl.read(entry)
     except Exception as e:
         logger.warning("Failed to read %s==%s: %s", name, version, e)
         return f"{name}=={version}: {e}"
