@@ -1,0 +1,3 @@
+setuptools>=77
+setuptools-rust
+setuptools_scm[toml]>=6.4

@@ -1,0 +1,2 @@
+expandvars
+setuptools>=82.0.1

@@ -1,0 +1,4 @@
+wheel
+setuptools<82
+Cython~=3.1
+setuptools>=60

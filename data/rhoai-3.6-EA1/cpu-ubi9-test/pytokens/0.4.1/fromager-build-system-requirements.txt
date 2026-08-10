@@ -1,0 +1,3 @@
+mypy
+setuptools>=69
+wheel

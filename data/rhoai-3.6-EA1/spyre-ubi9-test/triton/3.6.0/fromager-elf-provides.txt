@@ -1,0 +1,3 @@
+libGPUInstrumentationTestLib.so()(64bit)
+libPrintLoadStoreMemSpaces.so()(64bit)
+libtriton.so()(64bit)

@@ -1,0 +1,4 @@
+libhip_stub.so()(64bit)
+libhiprtc_stub.so()(64bit)
+libtilelang.so()(64bit)
+libtvm.so()(64bit)

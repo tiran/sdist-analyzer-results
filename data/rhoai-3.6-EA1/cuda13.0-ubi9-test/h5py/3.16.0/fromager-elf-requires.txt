@@ -1,0 +1,7 @@
+ld-linux-aarch64.so.1()(64bit)
+ld-linux-aarch64.so.1(GLIBC_2.17)(64bit)
+libc.so.6()(64bit)
+libc.so.6(GLIBC_2.17)(64bit)
+libhdf5.so.310()(64bit)
+libhdf5_hl.so.310()(64bit)
+rtld(GNU_HASH)

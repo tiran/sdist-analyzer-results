@@ -1,0 +1,3 @@
+maturin
+grpcio-tools
+setuptools

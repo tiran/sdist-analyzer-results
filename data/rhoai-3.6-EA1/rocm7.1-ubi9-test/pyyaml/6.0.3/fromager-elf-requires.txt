@@ -1,0 +1,6 @@
+libc.so.6()(64bit)
+libc.so.6(GLIBC_2.14)(64bit)
+libc.so.6(GLIBC_2.2.5)(64bit)
+libc.so.6(GLIBC_2.4)(64bit)
+libyaml-0.so.2()(64bit)
+rtld(GNU_HASH)

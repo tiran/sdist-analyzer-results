@@ -1,0 +1,2 @@
+expandvars
+setuptools>=47

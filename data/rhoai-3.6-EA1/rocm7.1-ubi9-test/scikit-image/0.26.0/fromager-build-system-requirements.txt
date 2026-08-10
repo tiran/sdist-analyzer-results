@@ -1,0 +1,5 @@
+pythran>=0.16
+lazy_loader>=0.4
+meson-python>=0.16
+Cython!=3.2.0b1,>=3.0.8
+numpy>=2.0

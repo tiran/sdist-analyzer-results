@@ -1,0 +1,5 @@
+wheel
+setuptools_scm>=8
+Cython>=3.0
+setuptools>=64
+numpy>=2.0

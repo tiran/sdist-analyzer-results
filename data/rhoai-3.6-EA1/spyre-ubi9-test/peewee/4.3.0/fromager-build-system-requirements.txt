@@ -1,0 +1,2 @@
+setuptools
+cython>=3; platform_python_implementation == "CPython"

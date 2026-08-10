@@ -1,0 +1,4 @@
+wheel
+Cython
+numpy>=2.0
+setuptools

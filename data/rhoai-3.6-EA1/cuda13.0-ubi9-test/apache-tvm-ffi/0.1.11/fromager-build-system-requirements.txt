@@ -1,0 +1,3 @@
+setuptools-scm
+scikit-build-core>=0.10.0
+cython>=3.0

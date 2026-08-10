@@ -1,0 +1,9 @@
+meson-python
+build
+types-PyYAML
+torch==2.11.*
+pybind11
+setuptools>=80.9.0
+pytest
+patchelf
+pyyaml

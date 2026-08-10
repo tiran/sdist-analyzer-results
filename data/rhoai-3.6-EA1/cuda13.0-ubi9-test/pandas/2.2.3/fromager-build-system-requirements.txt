@@ -1,0 +1,7 @@
+meson<1.11.0,>=1.2.1
+Cython~=3.0.5
+setuptools
+meson-python==0.13.1
+versioneer[toml]
+wheel
+numpy>=2.0

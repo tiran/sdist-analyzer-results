@@ -1,0 +1,5 @@
+numpy>2
+setuptools>=64
+py-cpuinfo
+Cython
+setuptools-scm[toml]>=6.2

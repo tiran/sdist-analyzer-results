@@ -1,0 +1,4 @@
+wheel
+torch
+setuptools
+setuptools>=64

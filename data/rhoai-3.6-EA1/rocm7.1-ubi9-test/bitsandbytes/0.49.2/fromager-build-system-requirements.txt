@@ -1,0 +1,3 @@
+setuptools>=77.0.3
+scikit-build-core
+trove-classifiers>=2025.8.6.13

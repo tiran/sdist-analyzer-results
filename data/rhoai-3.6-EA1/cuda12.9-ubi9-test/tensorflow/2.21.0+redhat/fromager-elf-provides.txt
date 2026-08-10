@@ -1,0 +1,7 @@
+lib_native_proto_caster.so()(64bit)
+lib_pywrap_tensorflow_common.so()(64bit)
+lib_pywrap_tflite_7_shared_object.so()(64bit)
+libpywrap_tflite_common.so()(64bit)
+libtensorflow_cc.so.2()(64bit)
+libtensorflow_cc.so.2(tensorflow)(64bit)
+libtensorflow_framework.so.2()(64bit)

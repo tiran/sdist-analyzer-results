@@ -1,0 +1,2 @@
+libbitsandbytes_cpu.so()(64bit)
+libbitsandbytes_rocm714.so()(64bit)

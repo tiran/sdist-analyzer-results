@@ -1,0 +1,2 @@
+setuptools-rust
+setuptools_scm

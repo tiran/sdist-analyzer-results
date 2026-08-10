@@ -1,0 +1,5 @@
+setuptools
+wheel
+numpy>=1.10.0
+pybind11>=2.0
+setuptools>=42

@@ -1,0 +1,4 @@
+setuptools_scm
+Cython>=0.29.33
+setuptools
+numpy>=2.0.0

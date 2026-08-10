@@ -1,0 +1,6 @@
+pandas
+ninja
+psutil
+packaging
+vcs_versioning
+setuptools_scm

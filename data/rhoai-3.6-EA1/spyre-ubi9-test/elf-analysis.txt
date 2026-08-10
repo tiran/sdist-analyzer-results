@@ -1,0 +1,70 @@
+External shared library dependencies
+====================================
+
+Library              Count  Projects
+-------------------  -  --------
+libgomp.so.1         7  faiss-cpu, lightgbm, numba, scikit-learn, scikit-network, torch, xgboost
+libcrypto.so.3       6  cmake, cryptography, grpcio, pyarrow, sccache, yara-python
+libssl.so.3          5  cmake, cryptography, grpcio, pyarrow, sccache
+libbz2.so.1          4  daft, pyarrow, uv, uv-build
+libjpeg.so.62        3  opencv-python-headless, pillow, torchvision
+libopenblasp.so.0    3  numpy, opencv-python-headless, scipy
+libre2.so.9          3  grpcio, onnxruntime, pyarrow
+libwebp.so.7         3  opencv-python-headless, pillow, torchvision
+libfreetype.so.6     2  matplotlib, pillow
+libopenblaso.so.0    2  faiss-cpu, torch
+libopenjp2.so.7      2  opencv-python-headless, pillow
+libpng16.so.16       2  opencv-python-headless, torchvision
+libtiff.so.5         2  opencv-python-headless, pillow
+libwebpdemux.so.2    2  opencv-python-headless, pillow
+libwebpmux.so.3      2  opencv-python-headless, pillow
+libzstd.so.1         2  llvmlite, pyarrow
+libavcodec.so.60     1  opencv-python-headless
+libavformat.so.60    1  opencv-python-headless
+libavutil.so.58      1  opencv-python-headless
+libcurl.so.4         1  pyarrow
+libeccodes.so.0.1    1  pygrib
+libexslt.so.0        1  lxml
+libffi.so.8          1  cffi
+libgdal.so.36        1  pyogrio
+libgeos_c.so.1       1  shapely
+libgfortran.so.5     1  scipy
+libgssapi_krb5.so.2  1  gssapi
+libhdf5.so.310       1  h5py
+libhdf5_hl.so.310    1  h5py
+libk5crypto.so.3     1  krb5
+libkrb5.so.3         1  krb5
+liblcms2.so.2        1  pillow
+liblz4.so.1          1  pyarrow
+liblzma.so.5         1  uv-build
+libmariadb.so.3      1  mariadb
+libmpi.so.40         1  torch
+libmpi_cxx.so.40     1  torch
+libncurses.so.6      1  cmake
+libnuma.so.1         1  torch
+libproj.so.25        1  pyproj
+libqhull_r.so.7      1  matplotlib
+libsnappy.so.1       1  pyarrow
+libswscale.so.7      1  opencv-python-headless
+libtbb.so.2          1  prophet
+libthrift-0.15.0.so  1  pyarrow
+libtinfo.so.6        1  cmake
+libunwind.so.8       1  ray
+libutf8proc.so.2     1  pyarrow
+libxml2.so.2         1  lxml
+libxslt.so.1         1  lxml
+libzmq.so.5          1  pyzmq
+
+51 unique libraries across 85 project references
+
+
+Inter-wheel shared library dependencies
+=======================================
+
+Library          Provided by -> Required by
+---------------  ---------------------------
+libc10.so        torch -> torchvision
+libtorch_cpu.so  torch -> torchaudio, torchvision
+libtvm_ffi.so    apache-tvm-ffi -> xgrammar
+
+3 shared libraries provided by wheels and used by other wheels

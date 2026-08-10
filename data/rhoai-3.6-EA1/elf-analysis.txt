@@ -1,0 +1,171 @@
+External shared library dependencies
+====================================
+
+Library                       Count  Projects
+----------------------------  --  --------
+libcudart.so.13               19  bitsandbytes, causal-conv1d, deep-ep, deep-gemm, detectron2, faiss-cpu, flash-attn, flashinfer-jit-cache, kvcached, mamba-ssm, nixl-cu13, onnxruntime-gpu, pplx-kernels, torchao, torchaudio, torchcodec, torchvision, vllm, xformers
+libcudart.so.12               18  bitsandbytes, causal-conv1d, deep-ep, deep-gemm, detectron2, faiss-cpu, flash-attn, flashinfer-jit-cache, kvcached, mamba-ssm, nixl-cu12, onnxruntime-gpu, pplx-kernels, torchao, torchaudio, torchcodec, torchvision, vllm
+libc10_cuda.so                10  causal-conv1d, deep-ep, deep-gemm, detectron2, flash-attn, mamba-ssm, pplx-kernels, torchcodec, torchvision, vllm
+libgomp.so.1                  10  bitsandbytes, faiss-cpu, lightgbm, numba, scikit-learn, scikit-network, simsimd, torch, xgboost, zentorch
+libamdhip64.so.7               9  amd-aiter, aotriton, detectron2, flash-attn, flydsl, tensorflow-rocm, torch, torchvision, vllm
+libtorch_cuda.so               9  deep-gemm, flash-attn, pplx-kernels, torchao, torchaudio, torchcodec, torchvision, vllm, xformers
+libcrypto.so.3                 7  cmake, cryptography, grpcio, pyarrow, pymssql, sccache, yara-python
+libcuda.so.1                   7  deep-ep, deep-gemm, flashinfer-jit-cache, kvcached, pplx-kernels, pyarrow, vllm
+libbz2.so.1                    6  daft, pyarrow, python-libsbml, selenium, uv, uv-build
+libssl.so.3                    6  cmake, cryptography, grpcio, pyarrow, pymssql, sccache
+libavcodec.so.60               5  av, opencv-python, opencv-python-headless, torchcodec, torchvision
+libavformat.so.60              5  av, opencv-python, opencv-python-headless, torchcodec, torchvision
+libavutil.so.58                5  av, opencv-python, opencv-python-headless, torchcodec, torchvision
+libcublas.so.13                5  bitsandbytes, cupy-cuda13x, faiss-cpu, flashinfer-jit-cache, onnxruntime-gpu
+libjpeg.so.62                  5  docling-parse, opencv-python, opencv-python-headless, pillow, torchvision
+libnvrtc.so.13                 5  cupy-cuda13x, deep-gemm, flashinfer-jit-cache, torchcodec, vllm
+libre2.so.9                    5  grpcio, onnxruntime, onnxruntime-gpu, onnxruntime-migraphx, pyarrow
+librocrand.so.1                5  bitsandbytes, torch, torchaudio, torchcodec, vllm
+libswscale.so.7                5  av, opencv-python, opencv-python-headless, torchcodec, torchvision
+libcublas.so.12                4  bitsandbytes, faiss-cpu, flashinfer-jit-cache, onnxruntime-gpu
+libcublasLt.so.12              4  bitsandbytes, faiss-cpu, flashinfer-jit-cache, onnxruntime-gpu
+libcublasLt.so.13              4  bitsandbytes, faiss-cpu, flashinfer-jit-cache, onnxruntime-gpu
+libnvrtc.so.12                 4  deep-gemm, flashinfer-jit-cache, torchcodec, vllm
+libopenblasp.so.0              4  numpy, opencv-python, opencv-python-headless, scipy
+libopenjp2.so.7                4  docling-parse, opencv-python, opencv-python-headless, pillow
+librocsolver.so.0              4  tensorflow-rocm, torch, torchaudio, torchcodec
+libwebp.so.7                   4  opencv-python, opencv-python-headless, pillow, torchvision
+libavdevice.so.60              3  av, opencv-python, torchcodec
+libfreetype.so.6               3  docling-parse, matplotlib, pillow
+libhipblas.so.3                3  bitsandbytes, torch, vllm
+libhipblaslt.so.1              3  bitsandbytes, torch, vllm
+libhipsparse.so.4              3  bitsandbytes, tensorflow-rocm, torch
+liblz4.so.1                    3  lz4, memray, pyarrow
+liblzma.so.5                   3  aotriton, torch, uv-build
+libnuma.so.1                   3  tensorflow-rocm, torch, vllm
+libpng16.so.16                 3  opencv-python, opencv-python-headless, torchvision
+libswresample.so.4             3  av, torchcodec, torchvision
+libtiff.so.5                   3  opencv-python, opencv-python-headless, pillow
+libwebpdemux.so.2              3  opencv-python, opencv-python-headless, pillow
+libwebpmux.so.3                3  opencv-python, opencv-python-headless, pillow
+libaio.so.1                    2  nixl-cu12, nixl-cu13
+libavfilter.so.9               2  av, torchcodec
+libcufft.so.12                 2  cupy-cuda13x, onnxruntime-gpu
+libcufile.so.0                 2  nixl-cu12, nixl-cu13
+libcurand.so.10                2  cupy-cuda13x, onnxruntime-gpu
+libcusparse.so.12              2  bitsandbytes, cupy-cuda13x
+libffi.so.8                    2  cffi, pandoc-rhai
+libgdal.so.36                  2  pyogrio, rasterio
+libgssapi_krb5.so.2            2  gssapi, pymssql
+libhipfft.so.0                 2  tensorflow-rocm, torch
+libhiprand.so.1                2  bitsandbytes, torch
+libhipsolver.so.1              2  tensorflow-rocm, torch
+libhipsparselt.so.0            2  tensorflow-rocm, torch
+libhsa-runtime64.so.1          2  tensorflow-rocm, tilelang
+liblcms2.so.2                  2  docling-parse, pillow
+libmariadb.so.3                2  mariadb, mysqlclient
+libnccl.so.2                   2  cupy-cuda13x, deep-ep
+libnvshmem_host.so.3           2  deep-ep, pplx-kernels
+libopenblaso.so.0              2  faiss-cpu, torch
+libpq.so.5                     2  psycopg2, psycopg2-binary
+librccl.so.1                   2  tensorflow-rocm, torch
+libsnappy.so.1                 2  openvino, pyarrow
+libtbb.so.2                    2  openvino, prophet
+libtinfo.so.6                  2  cmake, llvmlite
+libucp.so.0                    2  nixl-cu12, nixl-cu13
+libucs.so.0                    2  nixl-cu12, nixl-cu13
+libunwind.so.8                 2  memray, ray
+libzstd.so.1                   2  llvmlite, pyarrow
+libMIOpen.so.1                 1  torch
+libamd_comgr.so.3              1  tensorflow-rocm
+libcudnn.so.9                  1  onnxruntime-gpu
+libcufft.so.11                 1  onnxruntime-gpu
+libcurl.so.4                   1  pyarrow
+libcusolver.so.12              1  cupy-cuda13x
+libcusparseLt.so.0             1  cupy-cuda13x
+libdebuginfod.so.1             1  memray
+libeccodes.so.0.1              1  pygrib
+libev.so.4                     1  cassandra-driver
+libexslt.so.0                  1  lxml
+libgeos_c.so.1                 1  shapely
+libgfortran.so.5               1  scipy
+libgmp.so.10                   1  pandoc-rhai
+libhdf5.so.310                 1  h5py
+libhdf5_hl.so.310              1  h5py
+libhipfftw.so.0                1  tensorflow-rocm
+libhiprtc.so.7                 1  torch
+libicui18n.so.67               1  apsw
+libicuuc.so.67                 1  apsw
+libk5crypto.so.3               1  krb5
+libkrb5.so.3                   1  krb5
+liblept.so.5                   1  tesserocr
+libloguru.so.2                 1  docling-parse
+libmpi.so.40                   1  torch
+libmpi_cxx.so.40               1  torch
+libncurses.so.6                1  cmake
+libnetcdf.so.19                1  netcdf4
+libnppicc.so.12                1  torchcodec
+libnppicc.so.13                1  torchcodec
+libnvJitLink.so.12             1  bitsandbytes
+libnvJitLink.so.13             1  bitsandbytes
+libnvjpeg.so.12                1  torchvision
+libnvjpeg.so.13                1  torchvision
+libodbc.so.2                   1  pyodbc
+libproj.so.25                  1  pyproj
+libpython3.12.so.1.0           1  torchcodec
+libqhull_r.so.7                1  matplotlib
+librocblas.so.5                1  torch
+librocm_smi64.so.1             1  tensorflow-rocm
+librocprofiler-register.so.0   1  tensorflow-rocm
+libroctracer64.so.4            1  torch
+libroctx64.so.4                1  torch
+libtesseract.so.4              1  tesserocr
+libthrift-0.15.0.so            1  pyarrow
+libutf8proc.so.2               1  pyarrow
+libxml2.so.2                   1  lxml
+libxslt.so.1                   1  lxml
+libyaml-0.so.2                 1  pyyaml
+libz3.so                       1  tilelang
+libzip.so.5                    1  tacozip
+libzmq.so.5                    1  pyzmq
+
+120 unique libraries across 325 project references
+
+
+Inter-wheel shared library dependencies
+=======================================
+
+Library             Provided by -> Required by
+------------------  ---------------------------
+libc10.so           torch -> amd-aiter, amd-quark, causal-conv1d, deep-ep, deep-gemm, detectron2, flash-attn, kvcached, mamba-ssm, pplx-kernels, torchao, torchaudio, torchcodec, torchvision, vllm, zentorch
+libc10_hip.so       torch -> amd-aiter, detectron2, flash-attn, torchao, torchvision, vllm
+libtorch.so         torch -> amd-aiter, amd-quark, detectron2, pplx-kernels, torchao, torchaudio, torchcodec, torchvision, vllm, zentorch
+libtorch_cpu.so     torch -> amd-aiter, amd-quark, causal-conv1d, deep-ep, deep-gemm, detectron2, flash-attn, kvcached, mamba-ssm, pplx-kernels, torchao, torchaudio, torchcodec, torchvision, vllm, xformers, zentorch
+libtorch_hip.so     torch -> amd-aiter, flash-attn, torchao, torchaudio, torchcodec, torchvision, vllm
+libtorch_python.so  torch -> amd-aiter, causal-conv1d, deep-ep, deep-gemm, detectron2, flash-attn, kvcached, mamba-ssm, torchaudio, vllm, zentorch
+libtvm_ffi.so       apache-tvm-ffi -> tilelang, xgrammar
+libz3.so.4.15       z3-solver -> tilelang
+
+8 shared libraries provided by wheels and used by other wheels
+
+
+Packages without fromager-elf-requires/provides
+===============================================
+
+cupy-cuda13x (13.6.0)
+dulwich (1.2.10, 1.2.11, 1.2.12, 1.2.5, 1.2.6, 1.2.7, 1.2.8, 1.2.9)
+eval-hub-server (0.4.4)
+frozendict (2.4.7)
+intel-cmplr-lib-ur (2024.2.1)
+intel-openmp (2024.2.1)
+mysql-connector-python (26.7.0, 9.7.0)
+nvidia-cutlass-dsl-libs-base (4.4.2, 4.5.0, 4.5.1, 4.5.2, 4.6.0)
+nvidia-cutlass-dsl-libs-cu13 (4.5.2)
+pyyaml (6.0.3)
+rtree (1.4.1)
+runai-model-streamer (0.15.7, 0.16.0)
+runai-model-streamer-azure (0.15.7)
+runai-model-streamer-gcs (0.15.7)
+runai-model-streamer-s3 (0.15.7)
+soundfile (0.13.1, 0.14.0)
+tensorflow-rocm (2.19.1, 2.19.1+rocm7.14.0)
+torch (2.11.0)
+torch-nnpa (1.5.0+git7f131ad)
+vllm (0.24.0+rhaiv.3.spyre)
+
+20 packages

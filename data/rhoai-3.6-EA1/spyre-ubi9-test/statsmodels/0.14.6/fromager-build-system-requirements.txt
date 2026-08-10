@@ -1,0 +1,5 @@
+scipy<2,>=1.13
+setuptools_scm[toml]<9,>=8
+setuptools>=69.0.2
+numpy<3,>=2.0.0
+cython<4,>=3.0.10

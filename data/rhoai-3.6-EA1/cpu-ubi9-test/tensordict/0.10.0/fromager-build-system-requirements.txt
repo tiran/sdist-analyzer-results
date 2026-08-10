@@ -1,0 +1,4 @@
+wheel
+setuptools_scm
+pybind11[global]
+setuptools

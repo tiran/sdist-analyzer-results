@@ -1,0 +1,3 @@
+setuptools
+scikit-build-core>=0.10
+numpy<3.0,>=2.0

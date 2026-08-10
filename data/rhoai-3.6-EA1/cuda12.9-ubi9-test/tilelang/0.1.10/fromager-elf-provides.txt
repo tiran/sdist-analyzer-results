@@ -1,0 +1,6 @@
+libcuda_stub.so()(64bit)
+libcudart_stub.so()(64bit)
+libnvrtc_stub.so()(64bit)
+libtilelang.so()(64bit)
+libtvm_compiler.so()(64bit)
+libtvm_runtime.so()(64bit)

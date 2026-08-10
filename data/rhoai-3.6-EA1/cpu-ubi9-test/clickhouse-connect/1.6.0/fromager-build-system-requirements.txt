@@ -1,0 +1,2 @@
+cython<4,>=3.1
+setuptools

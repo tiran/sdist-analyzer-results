@@ -1,0 +1,6 @@
+setuptools
+wheel
+oldest-supported-numpy>=2022.8.16
+setuptools>=51.0.0
+Cython<3,>=0.29.32
+meson<1.11.0,>=1.2.1

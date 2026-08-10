@@ -1,0 +1,12 @@
+setuptools>=77
+ninja
+apache-tvm-ffi<0.2,>=0.1
+requests
+wheel
+numpy
+tqdm
+torch
+nvidia-ml-py
+packaging>=24
+setuptools
+flashinfer-cubin

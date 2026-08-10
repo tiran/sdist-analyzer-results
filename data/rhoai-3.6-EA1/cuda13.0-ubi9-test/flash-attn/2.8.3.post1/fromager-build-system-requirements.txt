@@ -1,0 +1,6 @@
+packaging
+torch
+psutil
+setuptools
+wheel
+ninja

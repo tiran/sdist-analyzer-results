@@ -1,0 +1,3 @@
+tomli
+Cython>=3.0
+setuptools

@@ -1,0 +1,5 @@
+cython>=3.0
+hatch-cython==0.5
+hatchling
+numpy>=2.0
+hatch-vcs==0.4

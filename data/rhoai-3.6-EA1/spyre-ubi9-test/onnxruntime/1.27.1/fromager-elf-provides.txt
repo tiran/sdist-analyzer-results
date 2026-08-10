@@ -1,0 +1,4 @@
+libonnxruntime.so.1()(64bit)
+libonnxruntime.so.1(VERS_1.27.1)(64bit)
+libonnxruntime_providers_shared.so()(64bit)
+libonnxruntime_providers_shared.so(VERS_1.0)(64bit)

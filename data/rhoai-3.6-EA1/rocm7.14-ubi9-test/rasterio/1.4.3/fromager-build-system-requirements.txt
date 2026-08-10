@@ -1,0 +1,4 @@
+cython~=3.0.2
+wheel
+setuptools>=67.8
+numpy>=2

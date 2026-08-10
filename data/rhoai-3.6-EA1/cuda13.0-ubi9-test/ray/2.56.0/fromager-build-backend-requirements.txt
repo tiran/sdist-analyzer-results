@@ -1,0 +1,3 @@
+wheel
+cython>=3.0.12
+pip

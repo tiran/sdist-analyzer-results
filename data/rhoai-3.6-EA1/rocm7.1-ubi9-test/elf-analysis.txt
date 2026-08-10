@@ -1,0 +1,85 @@
+External shared library dependencies
+====================================
+
+Library              Count  Projects
+-------------------  -  --------
+libamdhip64.so.7     6  amd-aiter, aotriton, flash-attn, torch, torchvision, vllm
+libgomp.so.1         5  bitsandbytes, numba, scikit-learn, simsimd, torch
+libcrypto.so.3       4  cmake, cryptography, grpcio, pyarrow
+librocrand.so.1      4  bitsandbytes, torch, torchaudio, vllm
+libssl.so.3          4  cmake, cryptography, grpcio, pyarrow
+libavcodec.so.60     3  av, opencv-python-headless, torchvision
+libavformat.so.60    3  av, opencv-python-headless, torchvision
+libavutil.so.58      3  av, opencv-python-headless, torchvision
+libbz2.so.1          3  pyarrow, uv, uv-build
+libhipblas.so.3      3  bitsandbytes, torch, vllm
+libhipblaslt.so.1    3  bitsandbytes, torch, vllm
+libjpeg.so.62        3  opencv-python-headless, pillow, torchvision
+liblzma.so.5         3  aotriton, torch, uv-build
+libopenblasp.so.0    3  numpy, opencv-python-headless, scipy
+libswscale.so.7      3  av, opencv-python-headless, torchvision
+libwebp.so.7         3  opencv-python-headless, pillow, torchvision
+libgdal.so.36        2  pyogrio, rasterio
+libhiprand.so.1      2  bitsandbytes, torch
+libhipsparse.so.4    2  bitsandbytes, torch
+libopenjp2.so.7      2  opencv-python-headless, pillow
+libpng16.so.16       2  opencv-python-headless, torchvision
+libre2.so.9          2  grpcio, pyarrow
+librocsolver.so.0    2  torch, torchaudio
+libswresample.so.4   2  av, torchvision
+libtiff.so.5         2  opencv-python-headless, pillow
+libtinfo.so.6        2  cmake, llvmlite
+libwebpdemux.so.2    2  opencv-python-headless, pillow
+libwebpmux.so.3      2  opencv-python-headless, pillow
+libMIOpen.so.1       1  torch
+libavdevice.so.60    1  av
+libavfilter.so.9     1  av
+libcurl.so.4         1  pyarrow
+libffi.so.8          1  cffi
+libfreetype.so.6     1  pillow
+libgeos_c.so.1       1  shapely
+libgfortran.so.5     1  scipy
+libhdf5.so.310       1  h5py
+libhdf5_hl.so.310    1  h5py
+libhipfft.so.0       1  torch
+libhiprtc.so.7       1  torch
+libhipsolver.so.1    1  torch
+libhipsparselt.so.0  1  torch
+liblcms2.so.2        1  pillow
+liblz4.so.1          1  pyarrow
+libmpi.so.40         1  torch
+libmpi_cxx.so.40     1  torch
+libncurses.so.6      1  cmake
+libnetcdf.so.19      1  netcdf4
+libnuma.so.1         1  torch
+libopenblaso.so.0    1  torch
+libproj.so.25        1  pyproj
+librccl.so.1         1  torch
+librocblas.so.5      1  torch
+libroctracer64.so.4  1  torch
+libroctx64.so.4      1  torch
+libsnappy.so.1       1  pyarrow
+libthrift-0.15.0.so  1  pyarrow
+libutf8proc.so.2     1  pyarrow
+libyaml-0.so.2       1  pyyaml
+libzip.so.5          1  tacozip
+libzmq.so.5          1  pyzmq
+libzstd.so.1         1  pyarrow
+
+62 unique libraries across 114 project references
+
+
+Inter-wheel shared library dependencies
+=======================================
+
+Library             Provided by -> Required by
+------------------  ---------------------------
+libc10.so           torch -> amd-aiter, flash-attn, torchao, torchvision, vllm
+libc10_hip.so       torch -> amd-aiter, flash-attn, torchao, torchvision, vllm
+libtorch.so         torch -> amd-aiter, torchaudio, vllm
+libtorch_cpu.so     torch -> amd-aiter, flash-attn, torchao, torchaudio, torchvision, vllm
+libtorch_hip.so     torch -> amd-aiter, flash-attn, torchao, torchaudio, torchvision, vllm
+libtorch_python.so  torch -> amd-aiter, flash-attn, torchaudio
+libtvm_ffi.so       apache-tvm-ffi -> xgrammar
+
+7 shared libraries provided by wheels and used by other wheels

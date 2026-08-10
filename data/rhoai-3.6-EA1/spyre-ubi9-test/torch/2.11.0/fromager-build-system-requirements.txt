@@ -1,0 +1,10 @@
+packaging
+setuptools
+numpy
+setuptools<82,>=70.1.0
+six
+ninja
+requests
+pyyaml
+filelock
+typing-extensions>=4.10.0

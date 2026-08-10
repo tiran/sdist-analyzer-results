@@ -1,0 +1,4 @@
+cmake>=3.18
+pybind11[global]<3,>=2.13
+setuptools>=64
+ninja==1.11.1.1

@@ -1,0 +1,2 @@
+setuptools
+Cython; python_version < "3.13"
