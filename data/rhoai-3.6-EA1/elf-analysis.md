@@ -7,18 +7,18 @@
 | **Total packages** | **1579** |  |
 | &ensp;Purelib (pure Python) | 1304 | 82.6% |
 | &ensp;Platlib (native code) | 275 | 17.4% |
-| &ensp;Manylinux + bundleable | 186 | 11.8% |
+| &ensp;Manylinux + bundleable | 196 | 12.4% |
 | &ensp;&ensp;Manylinux-only | 175 | 11.1% |
-| &ensp;&ensp;Could be bundled | 2 | 0.1% |
+| &ensp;&ensp;Could be bundled | 12 | 0.8% |
 | &ensp;&ensp;Pre-built (manylinux) | 9 | 0.6% |
-| &ensp;Platform-dependent | 84 | 5.3% |
+| &ensp;Platform-dependent | 74 | 4.7% |
 | &ensp;&ensp;Accelerator-specific | 30 | 1.9% |
-| &ensp;&ensp;Unbundleable | 29 | 1.8% |
-| &ensp;&ensp;Undecided | 25 | 1.6% |
+| &ensp;&ensp;Unbundleable | 44 | 2.8% |
+| &ensp;&ensp;Undecided | 0 | 0.0% |
 | &ensp;&ensp;Unknown | 0 | 0.0% |
 | &ensp;No ELF data (other) | 5 | 0.3% |
-| **Purelib + manylinux + bundleable** | **1490** | **94.4%** |
-| **Platform/accel + other** | **89** | **5.6%** |
+| **Purelib + manylinux + bundleable** | **1500** | **95.0%** |
+| **Platform/accel + other** | **79** | **5.0%** |
 
 ## Charts
 
@@ -28,7 +28,7 @@ xychart-beta
     title "combined -- package overview"
     x-axis ["purelib", "manylinux + bundleable", "platform/accel", "no ELF data (other)"]
     y-axis "Packages"
-    bar [1304, 186, 84, 5]
+    bar [1304, 196, 74, 5]
 ```
 
 ## External Dependencies
@@ -182,15 +182,25 @@ and/or libraries provided by other wheels in the index.
 
 aiohttp, aiokafka, annoy, apache-tvm-ffi, argon2-cffi-bindings, array-record, ast-serialize, asyncmy, asyncpg, backports-zstd, base2048, bcrypt, biotite, biotraj, blake3, blis, brotli, cachebox, caio, cartopy, cbor2, cftime, chromadb, clickhouse-connect, cmarkgfm, contourpy, coreforecast, coverage, cuda-bindings, cuda-tile, cymem, cysignals, cython, debugpy, dm-tree, duckdb, eval-hub-server, fastar, fastavro, fastrlock, fastsafetensors, fasttext-predict, fastuuid, frozenlist, gevent, geventhttpclient, goodpoints, google-re2, greenlet, grpcio-tools, hf-transfer, hf-xet, hiredis, hnswlib, httptools, jiter, jpype1, kernels-data, kiwisolver, kornia-rs, lancedb, lapx, lazy-object-proxy, libcst, librt, lintrunner, llguidance, markupsafe, maturin, minify-html, ml-dtypes, mmh3, msgpack, msgspec, multidict, murmurhash, nh3, numcodecs, numexpr, nvidia-cudnn-frontend, nvtx, obstore, onnx, openai-harmony, openalgo, openshell, optree, oracledb, orjson, ormsgpack, outlines-core, pandas, patchelf, peewee, pendulum, phik, pinecone, polars, polyleven, posix-ipc, preshed, propcache, protobuf, psutil, py-rust-stemmers, py-spy, pyasn, pybase64, pyclipper, pycocotools, pycrdt, pycryptodome, pycryptodomex, pydantic-core, pydantic-monty, pydantic-monty-runtime, pymongo, pynacl, pysqlite3, python-rapidjson, pytokens, pywavelets, pyzstd, rapidfuzz, regex, rfc3161-client, rignore, ripgrep, river, rpds-py, ruff, safetensors, scikit-image, sentencepiece, setproctitle, shap, snowflake-connector-python, soxr, spacy, sqlalchemy, srsly, statsforecast, statsmodels, stringzilla, temporalio, tensordict, tensorflow, tensorflow-cpu, thinc, thriftpy2, tiktoken, tlparse, tokenizers, tornado, tree-sitter, tree-sitter-c, tree-sitter-javascript, tree-sitter-languages, tree-sitter-python, tree-sitter-typescript, triton, ujson, uuid-utils, uvloop, wandb, watchfiles, websockets, wordcloud, wrapt, xgrammar, xxhash, yarl, z3-solver, zope-interface, zstandard
 
-### Could become manylinux by bundling (2 packages)
+### Could become manylinux by bundling (12 packages)
 
 All external deps are vendorable -- bundling them would make
 these wheels manylinux-compatible.
 
 | Package | Libraries |
 |:---|:---|
+| cassandra-driver | libev.so.4 |
+| mariadb | libmariadb.so.3 |
+| mysqlclient | libmariadb.so.3 |
+| onnxruntime | libre2.so.9 |
+| onnxruntime-migraphx | libre2.so.9 |
+| prophet | libtbb.so.2 |
+| psycopg2 | libpq.so.5 |
+| psycopg2-binary | libpq.so.5 |
 | pygrib | libeccodes.so.0.1 |
 | pyyaml | libyaml-0.so.2 |
+| pyzmq | libzmq.so.5 |
+| tacozip | libzip.so.5 |
 
 ### AI accelerator-specific (30 packages)
 
@@ -230,7 +240,7 @@ These must be provided by the accelerator platform.
 | xformers | libcudart.so.13, libtorch_cuda.so |
 | zentorch | libgomp.so.1 |
 
-### Unbundleable external dependencies (29 packages)
+### Unbundleable external dependencies (44 packages)
 
 At least one external dep must never be bundled (crypto,
 system runtime, etc.) and must be provided by the platform.
@@ -239,70 +249,52 @@ on OpenSSL, libpq depends on OpenSSL + Kerberos).
 
 | Package | Libraries |
 |:---|:---|
-| cmake | libcrypto.so.3, libncurses.so.6, libssl.so.3, libtinfo.so.6 |
-| cryptography | libcrypto.so.3, libssl.so.3 |
-| grpcio | libcrypto.so.3, libssl.so.3 (+ libre2.so.9) |
-| gssapi | libgssapi_krb5.so.2 |
-| krb5 | libk5crypto.so.3, libkrb5.so.3 |
-| lightgbm | libgomp.so.1 |
-| llvmlite | libtinfo.so.6 (+ libzstd.so.1) |
-| mariadb | libmariadb.so.3 |
-| memray | libdebuginfod.so.1, libunwind.so.8 (+ liblz4.so.1) |
-| mysqlclient | libmariadb.so.3 |
-| numba | libgomp.so.1 |
-| numpy | libopenblasp.so.0 |
-| opencv-python | libopenblasp.so.0 (+ libavcodec.so.60, libavdevice.so.60, libavformat.so.60, libavutil.so.58, libjpeg.so.62, libopenjp2.so.7, libpng16.so.16, libswscale.so.7, libtiff.so.5, libwebp.so.7, libwebpdemux.so.2, libwebpmux.so.3) |
-| opencv-python-headless | libopenblasp.so.0 (+ libavcodec.so.60, libavformat.so.60, libavutil.so.58, libjpeg.so.62, libopenjp2.so.7, libpng16.so.16, libswscale.so.7, libtiff.so.5, libwebp.so.7, libwebpdemux.so.2, libwebpmux.so.3) |
-| psycopg2 | libpq.so.5 |
-| psycopg2-binary | libpq.so.5 |
-| pymssql | libcrypto.so.3, libgssapi_krb5.so.2, libssl.so.3 |
-| pyodbc | libodbc.so.2 |
-| pyzmq | libzmq.so.5 |
-| ray | libunwind.so.8 |
-| sccache | libcrypto.so.3, libssl.so.3 |
-| scikit-learn | libgomp.so.1 |
-| scikit-network | libgomp.so.1 |
-| scipy | libopenblasp.so.0 (+ libgfortran.so.5) |
-| simsimd | libgomp.so.1 |
-| tacozip | libzip.so.5 |
-| tesserocr | liblept.so.5, libtesseract.so.4 |
-| xgboost | libgomp.so.1 |
-| yara-python | libcrypto.so.3 |
-
-### Undecided external dependencies (25 packages)
-
-All external deps are known but not yet classified as
-bundleable or unbundleable.
-
-| Package | Libraries |
-|:---|:---|
 | apsw | libicui18n.so.67, libicuuc.so.67 |
 | av | libavcodec.so.60, libavdevice.so.60, libavfilter.so.9, libavformat.so.60, libavutil.so.58, libswresample.so.4, libswscale.so.7 |
-| cassandra-driver | libev.so.4 |
 | cffi | libffi.so.8 |
+| cmake | libcrypto.so.3, libncurses.so.6, libssl.so.3, libtinfo.so.6 |
+| cryptography | libcrypto.so.3, libssl.so.3 |
 | daft | libbz2.so.1 |
-| docling-parse | libfreetype.so.6, libjpeg.so.62, liblcms2.so.2, libloguru.so.2, libopenjp2.so.7 |
+| docling-parse | libfreetype.so.6, libjpeg.so.62, liblcms2.so.2, libopenjp2.so.7 (+ libloguru.so.2) |
+| grpcio | libcrypto.so.3, libssl.so.3 (+ libre2.so.9) |
+| gssapi | libgssapi_krb5.so.2 |
 | h5py | libhdf5.so.310, libhdf5_hl.so.310 |
+| krb5 | libk5crypto.so.3, libkrb5.so.3 |
+| lightgbm | libgomp.so.1 |
+| llvmlite | libtinfo.so.6, libzstd.so.1 |
 | lxml | libexslt.so.0, libxml2.so.2, libxslt.so.1 |
 | lz4 | liblz4.so.1 |
-| matplotlib | libfreetype.so.6, libqhull_r.so.7 |
+| matplotlib | libfreetype.so.6 (+ libqhull_r.so.7) |
+| memray | libdebuginfod.so.1, liblz4.so.1, libunwind.so.8 |
 | netcdf4 | libnetcdf.so.19 |
-| onnxruntime | libre2.so.9 |
-| onnxruntime-migraphx | libre2.so.9 |
-| openvino | libsnappy.so.1, libtbb.so.2 |
+| numba | libgomp.so.1 |
+| numpy | libopenblasp.so.0 |
+| opencv-python | libavcodec.so.60, libavdevice.so.60, libavformat.so.60, libavutil.so.58, libjpeg.so.62, libopenblasp.so.0, libopenjp2.so.7, libpng16.so.16, libswscale.so.7, libtiff.so.5, libwebp.so.7, libwebpdemux.so.2, libwebpmux.so.3 |
+| opencv-python-headless | libavcodec.so.60, libavformat.so.60, libavutil.so.58, libjpeg.so.62, libopenblasp.so.0, libopenjp2.so.7, libpng16.so.16, libswscale.so.7, libtiff.so.5, libwebp.so.7, libwebpdemux.so.2, libwebpmux.so.3 |
+| openvino | libsnappy.so.1 (+ libtbb.so.2) |
 | pandoc-rhai | libffi.so.8, libgmp.so.10 |
 | pillow | libfreetype.so.6, libjpeg.so.62, liblcms2.so.2, libopenjp2.so.7, libtiff.so.5, libwebp.so.7, libwebpdemux.so.2, libwebpmux.so.3 |
-| prophet | libtbb.so.2 |
+| pymssql | libcrypto.so.3, libgssapi_krb5.so.2, libssl.so.3 |
+| pyodbc | libodbc.so.2 |
 | pyogrio | libgdal.so.36 |
 | pyproj | libproj.so.25 |
 | python-libsbml | libbz2.so.1 |
 | rasterio | libgdal.so.36 |
+| ray | libunwind.so.8 |
+| sccache | libcrypto.so.3, libssl.so.3 |
+| scikit-learn | libgomp.so.1 |
+| scikit-network | libgomp.so.1 |
+| scipy | libgfortran.so.5, libopenblasp.so.0 |
 | selenium | libbz2.so.1 |
 | shapely | libgeos_c.so.1 |
+| simsimd | libgomp.so.1 |
+| tesserocr | liblept.so.5, libtesseract.so.4 |
 | uv | libbz2.so.1 |
 | uv-build | libbz2.so.1, liblzma.so.5 |
+| xgboost | libgomp.so.1 |
+| yara-python | libcrypto.so.3 |
 
-**Total:** 261 packages with ELF dependencies (175 manylinux-only, 2 bundleable, 30 accelerator, 29 unbundleable, 25 undecided, 0 unknown)
+**Total:** 261 packages with ELF dependencies (175 manylinux-only, 12 bundleable, 30 accelerator, 44 unbundleable, 0 undecided, 0 unknown)
 
 ## Packages without ELF Data (14)
 

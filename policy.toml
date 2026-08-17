@@ -1,0 +1,227 @@
+# Wheelmonger shared library policy for RHOAI 3.6-EA1
+#
+# Generated from ELF analysis of RHOAI Pulp indexes:
+#   cpu-ubi9, cuda12.9-ubi9, cuda13.0-ubi9, rocm7.1-ubi9,
+#   rocm7.14-ubi9, spyre-ubi9
+#
+# Categories:
+#   vendor  -- bundle into wheel (small, stable, no transitive issues)
+#   skip    -- provided by another Python wheel in the index
+#   system  -- must come from the platform / container image
+
+[policy]
+
+vendor = [
+    # text processing
+    "libre2.so.9",
+    "libutf8proc.so.2",
+    # math / science
+    "libqhull_r.so.7",
+    # data formats
+    "libthrift-0.15.0.so",
+    # database clients / archive / messaging -- bundleable but
+    # transitively depend on security libraries (libssl, libkrb5);
+    # bundled copies will link against the system's OpenSSL/Kerberos
+    "libmariadb.so.3",
+    "libpq.so.5",
+    "libzip.so.5",
+    "libzmq.so.5",
+    # ECMWF GRIB codec -- bundled copy links against system libgomp,
+    # image codecs (libjpeg, libopenjp2, libpng) at runtime
+    "libeccodes.so.0.1",
+    "libjasper.so.4",
+    # misc
+    "libev.so.4",
+    "libloguru.so.2",
+    "libtbb.so.2",
+    "libyaml-0.so.2",
+]
+
+# Cross-wheel dependencies (provided by other Python packages)
+skip = [
+    # PyTorch (provided by torch wheel)
+    "libc10.so",
+    "libc10_cuda.so",
+    "libc10_hip.so",
+    "libtorch.so",
+    "libtorch_cpu.so",
+    "libtorch_cuda.so",
+    "libtorch_hip.so",
+    "libtorch_python.so",
+    # TVM (provided by apache-tvm-ffi wheel)
+    "libtvm_ffi.so",
+    # Z3 (provided by z3-solver wheel)
+    "libz3.so",
+    "libz3.so.4.15",
+]
+
+system = [
+    # -- crypto / auth (security / certification requirements) --
+    "libcrypto.so.3",
+    "libcrypt.so.2",               # password hashing (glibc)
+    "libssl.so.3",
+    "libgssapi_krb5.so.2",
+    "libk5crypto.so.3",
+    "libkeyutils.so.1",            # kernel key management
+    "libkrb5.so.3",
+    "libkrb5support.so.0",         # Kerberos support library
+    "libcom_err.so.2",             # MIT error table (Kerberos / e2fsprogs)
+
+    # -- SASL / LDAP / NSS (authentication and directory services) --
+    "libsasl2.so.3",
+    "libldap.so.2",
+    "liblber.so.2",
+    "libnss3.so",
+    "libnssutil3.so",
+    "libnspr4.so",
+
+    # -- NVIDIA CUDA 12 --
+    "libcublas.so.12",
+    "libcublasLt.so.12",
+    "libcudart.so.12",
+    "libcufft.so.11",
+    "libcusolver.so.12",
+    "libcusparse.so.12",
+    "libnppicc.so.12",
+    "libnvJitLink.so.12",
+    "libnvjpeg.so.12",
+    "libnvrtc.so.12",
+
+    # -- NVIDIA CUDA 13 --
+    "libcublas.so.13",
+    "libcublasLt.so.13",
+    "libcudart.so.13",
+    "libcufft.so.12",
+    "libnppicc.so.13",
+    "libnvJitLink.so.13",
+    "libnvjpeg.so.13",
+    "libnvrtc.so.13",
+
+    # -- NVIDIA CUDA (version-independent) --
+    "libcuda.so.1",
+    "libcudnn.so.9",
+    "libcufile.so.0",
+    "libcurand.so.10",
+    "libcusparseLt.so.0",
+    "libnccl.so.2",
+    "libnvshmem_host.so.3",
+
+    # -- AMD ROCm --
+    "libMIOpen.so.1",
+    "libamd_comgr.so.3",
+    "libamdhip64.so.7",
+    "libhipblas.so.3",
+    "libhipblaslt.so.1",
+    "libhipfft.so.0",
+    "libhipfftw.so.0",
+    "libhiprand.so.1",
+    "libhiprtc.so.7",
+    "libhipsolver.so.1",
+    "libhipsparse.so.4",
+    "libhipsparselt.so.0",
+    "libhsa-runtime64.so.1",
+    "librccl.so.1",
+    "librocblas.so.5",
+    "librocm_smi64.so.1",
+    "librocprofiler-register.so.0",
+    "librocrand.so.1",
+    "librocsolver.so.0",
+    "libroctracer64.so.4",
+    "libroctx64.so.4",
+
+    # -- UCX (GPU interconnect) --
+    "libucp.so.0",
+    "libucs.so.0",
+
+    # -- MPI (must match system MPI, network fabric, job scheduler) --
+    "libmpi.so.40",
+    "libmpi_cxx.so.40",
+
+    # -- math / science (must match system runtime) --
+    "libgfortran.so.5",            # also a transitive dep of libopenblas
+    "libgmp.so.10",
+    "libgomp.so.1",
+    "libopenblaso.so.0",
+    "libopenblasp.so.0",
+
+    # -- image codecs (used by multiple packages: Pillow, opencv,
+    #    torchvision, docling-parse, etc. -- use system versions) --
+    "libjbig.so.2.1",
+    "libjpeg.so.62",
+    "libpng16.so.16",
+    "liblcms2.so.2",
+    "libopenjp2.so.7",
+    "libtiff.so.5",
+    "libwebp.so.7",
+    "libwebpdemux.so.2",
+    "libwebpmux.so.3",
+
+    # -- XML / XSLT (security-sensitive, use system versions) --
+    "libexslt.so.0",
+    "libxml2.so.2",
+    "libxslt.so.1",
+
+    # -- compression (typically available on all systems) --
+    "libbz2.so.1",
+    "liblz4.so.1",
+    "liblzma.so.5",
+    "libsnappy.so.1",
+    "libzstd.so.1",
+
+    # -- compiler / language runtime --
+    "libffi.so.8",                 # always present (Python's ctypes depends on it)
+    "libpython3.12.so.1.0",
+    "libsqlite3.so.0",             # always present (Python depends on it)
+
+    # -- font rendering (transitive deps: libharfbuzz, libpng, libbz2, libbrotli) --
+    "libfreetype.so.6",
+    # -- GIS --
+    "libgeos_c.so.1",              # requires libgeos (large C++ geometry engine)
+    "libproj.so.25",               # transitive deps: libcurl -> libssl, libkrb5
+
+    # -- security / kernel interfaces --
+    "libselinux.so.1",
+    # -- system networking --
+    "libtirpc.so.3",               # Sun RPC
+    "libaio.so.1",
+    "libdebuginfod.so.1",
+    "libnuma.so.1",
+    "libunwind.so.8",
+
+    # -- terminal (needs system terminfo database) --
+    "libncurses.so.6",
+    "libtinfo.so.6",
+
+    # -- ODBC (needs system-installed database drivers) --
+    "libodbc.so.2",
+
+    # -- networking (transitively depends on libssl) --
+    "libcurl.so.4",
+
+
+    # -- OCR (needs system tessdata files) --
+    "liblept.so.5",
+    "libtesseract.so.4",
+
+    # -- FFmpeg / multimedia (large, licensing, HW acceleration) --
+    "libavcodec.so.60",
+    "libavdevice.so.60",
+    "libavfilter.so.9",
+    "libavformat.so.60",
+    "libavutil.so.58",
+    "libswresample.so.4",
+    "libswscale.so.7",
+
+
+    # -- ICU (too large to bundle ~30 MB libicudata, but typically
+    #    available where gdb is installed; undecided) --
+    "libicui18n.so.67",
+    "libicuuc.so.67",
+
+
+    # -- HDF5 / scientific data (large, may need MPI variant) --
+    "libgdal.so.36",
+    "libhdf5.so.310",
+    "libhdf5_hl.so.310",
+    "libnetcdf.so.19",
+]

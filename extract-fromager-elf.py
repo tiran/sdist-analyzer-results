@@ -172,82 +172,70 @@ _ACCELERATOR_LIBS = {
 # the resulting wheel becomes manylinux-compatible without an external
 # system dependency.
 _BUNDLEABLE_LIBS = {
+    # ECMWF GRIB codec -- bundled copy links against system libgomp,
+    # image codecs (libjpeg, libopenjp2, libpng) at runtime
     "libeccodes.so.0.1",
+    "libjasper.so.4",           # JPEG-2000, transitive dep of libeccodes
+    "libev.so.4",
+    "libloguru.so.2",
+    "libutf8proc.so.2",
+    # math / science
+    "libqhull_r.so.7",
+    # database clients / archive / messaging -- bundleable but
+    # transitively depend on security libraries (libssl, libkrb5);
+    # bundled copies will link against the system's OpenSSL/Kerberos
+    "libmariadb.so.3",          # -> libssl, libcrypto
+    "libpq.so.5",               # -> libssl, libcrypto, libgssapi_krb5, libkrb5
+    "libre2.so.9",
+    "libtbb.so.2",
     "libthrift-0.15.0.so",
     "libyaml-0.so.2",
+    "libzip.so.5",              # -> libcrypto
+    "libzmq.so.5",              # -> libgssapi_krb5, libkrb5, libcrypto
 }
 
 # Libraries not yet classified as bundleable or unbundleable.  Listing
 # them here keeps the "unknown" report section clean -- only truly
 # unexpected libraries show up there.
-_UNDECIDED_LIBS = {
-    # compression
-    "libbz2.so.1",
-    "liblz4.so.1",
-    "liblzma.so.5",
-    "libsnappy.so.1",
-    "libzstd.so.1",
-    # image codecs
-    "libfreetype.so.6",
-    "libjpeg.so.62",
-    "liblcms2.so.2",
-    "libopenjp2.so.7",
-    "libpng16.so.16",
-    "libtiff.so.5",
-    "libwebp.so.7",
-    "libwebpdemux.so.2",
-    "libwebpmux.so.3",
-    # video / multimedia (FFmpeg)
-    "libavcodec.so.60",
-    "libavdevice.so.60",
-    "libavfilter.so.9",
-    "libavformat.so.60",
-    "libavutil.so.58",
-    "libswresample.so.4",
-    "libswscale.so.7",
-    # XML / text processing
-    "libexslt.so.0",
-    "libre2.so.9",
-    "libutf8proc.so.2",
-    "libxml2.so.2",
-    "libxslt.so.1",
-    # math / science
-    "libgfortran.so.5",
-    "libqhull_r.so.7",
-    # data formats
-    "libcurl.so.4",
-    "libgdal.so.36",
-    "libhdf5.so.310",
-    "libhdf5_hl.so.310",
-    "libnetcdf.so.19",
-    # GIS
-    "libgeos_c.so.1",
-    "libproj.so.25",
-    # ICU
-    "libicui18n.so.67",
-    "libicuuc.so.67",
-    # misc
-    "libev.so.4",
-    "libffi.so.8",
-    "libgmp.so.10",
-    "libloguru.so.2",
-    "libtbb.so.2",
+# Libraries provided by other Python wheels in the index (cross-wheel
+# dependencies).  These are not external system deps -- they are resolved
+# by installing the providing wheel alongside the consuming one.
+_WHEEL_PROVIDED_LIBS = {
     "libz3.so",             # provided by z3-solver wheel (unversioned soname)
+    "libz3.so.4.15",        # versioned soname (also provided by z3-solver)
+    "libtvm_ffi.so",        # provided by apache-tvm-ffi wheel
 }
+
+# Libraries not yet classified as bundleable or unbundleable.  Listing
+# them here keeps the "unknown" report section clean -- only truly
+# unexpected libraries show up there.
+_UNDECIDED_LIBS: set[str] = set()
 
 # Libraries that must NEVER be bundled into wheels -- either because of
 # security / certification requirements (OpenSSL, Kerberos), because
 # they are provided by the accelerator runtime / driver stack, because
 # they must match the system runtime (MPI, kernel interfaces, OpenMP/BLAS),
+# because they are used by many packages (image codecs, compression),
 # or because they transitively depend on unbundleable libraries (e.g.
-# libmariadb -> libssl, libpq -> libssl + libkrb5, libzmq -> libkrb5).
+# libcurl -> libssl + libkrb5, libeccodes -> libgomp).
 _NEVER_BUNDLE_LIBS = {
     # crypto / auth -- must use system-provided versions
     "libcrypto.so.3",
+    "libcrypt.so.2",            # password hashing (glibc)
     "libgssapi_krb5.so.2",
     "libk5crypto.so.3",
+    "libkeyutils.so.1",        # kernel key management
     "libkrb5.so.3",
+    "libkrb5support.so.0",     # Kerberos support library
+    "libcom_err.so.2",         # MIT error table (Kerberos / e2fsprogs)
     "libssl.so.3",
+    # SASL / LDAP / NSS -- authentication and directory services
+    "libsasl2.so.3",
+    "libldap.so.2",
+    "liblber.so.2",
+    "libnss3.so",
+    "libnssutil3.so",
+    "libnspr4.so",
     # NVIDIA CUDA
     "libcublas.so.12",
     "libcublas.so.13",
@@ -302,30 +290,82 @@ _NEVER_BUNDLE_LIBS = {
     # MPI -- must match system MPI, network fabric, and job scheduler
     "libmpi.so.40",
     "libmpi_cxx.so.40",
-    # OpenMP / BLAS -- must match system runtime to avoid conflicts
+    # math / science -- must match system runtime to avoid conflicts;
+    # libgfortran is also a transitive dep of libopenblas
+    "libgfortran.so.5",
+    "libgmp.so.10",
     "libgomp.so.1",
-    "libopenblasp.so.0",
     "libopenblaso.so.0",
-    # kernel / system interfaces
+    "libopenblasp.so.0",
+    # security / kernel interfaces
+    "libselinux.so.1",
+    # system networking
+    "libtirpc.so.3",            # Sun RPC
     "libaio.so.1",
     "libdebuginfod.so.1",
     "libnuma.so.1",
     "libpython3.12.so.1.0",
+    "libsqlite3.so.0",         # always present (Python depends on it)
+    # image codecs -- used by multiple packages (Pillow, opencv,
+    # torchvision, docling-parse, etc.), use system versions
+    "libjbig.so.2.1",
+    "libjpeg.so.62",
+    "liblcms2.so.2",
+    "libpng16.so.16",
+    "libopenjp2.so.7",
+    "libtiff.so.5",
+    "libwebp.so.7",
+    "libwebpdemux.so.2",
+    "libwebpmux.so.3",
+    # XML / XSLT -- security-sensitive, use system versions
+    "libexslt.so.0",
+    "libxml2.so.2",
+    "libxslt.so.1",
+    # compression -- typically available on all systems
+    "libbz2.so.1",
+    "libzstd.so.1",
+    "liblz4.so.1",
+    "liblzma.so.5",
+    "libsnappy.so.1",
+    # ABI-specific platform library; always present because
+    # Python's ctypes module depends on it
+    "libffi.so.8",
     "libunwind.so.8",
     # terminal -- needs system terminfo database
     "libncurses.so.6",
     "libtinfo.so.6",
-    # database clients -- transitively depend on libssl / libkrb5
-    "libmariadb.so.3",          # -> libssl, libcrypto
-    "libpq.so.5",               # -> libssl, libcrypto, libgssapi_krb5, libkrb5
     # ODBC -- needs system-installed database drivers
     "libodbc.so.2",
     # OCR -- needs system tessdata files
     "liblept.so.5",
     "libtesseract.so.4",
-    # archive / messaging -- transitively depend on libssl / libkrb5
-    "libzip.so.5",              # -> libcrypto
-    "libzmq.so.5",              # -> libgssapi_krb5, libkrb5, libcrypto
+    # font rendering -- transitive deps: libharfbuzz, libpng, libbz2, libbrotli
+    "libfreetype.so.6",
+    # FFmpeg / multimedia -- large, licensing, HW acceleration
+    "libavcodec.so.60",
+    "libavdevice.so.60",
+    "libavfilter.so.9",
+    "libavformat.so.60",
+    "libavutil.so.58",
+    "libswresample.so.4",
+    "libswscale.so.7",
+    # GIS -- libgeos_c requires libgeos (large C++ geometry engine)
+    "libgeos_c.so.1",
+    # ICU -- too large to bundle (~30 MB libicudata), but typically
+    # available on systems where gdb is installed (gdb depends on ICU)
+    "libicui18n.so.67",
+    "libicuuc.so.67",
+    # GIS projection -- transitive deps: libcurl -> libssl, libkrb5
+    "libproj.so.25",
+    # networking -- transitively depends on libssl / libkrb5
+    "libcurl.so.4",
+    # GDAL -- 96 transitive deps including libssl, libgomp, libopenblaso
+    "libgdal.so.36",
+    # HDF5 -- large, may need MPI variant; libnetcdf depends on it
+    "libhdf5.so.310",
+    "libhdf5_hl.so.310",
+    # NetCDF -- transitively depends on libcurl -> libssl / libkrb5
+    "libnetcdf.so.19",
 }
 
 # rhoai-{version}[-EA{n}]-{accelerator}[{accel_ver}]-{rhel}[-sdists][-test]
@@ -668,7 +708,7 @@ def _classify_projects(
     undecided: dict[str, set[str]] = {}
     unknown_external: dict[str, set[str]] = {}
 
-    known = _BUNDLEABLE_LIBS | _NEVER_BUNDLE_LIBS | _UNDECIDED_LIBS
+    known = _BUNDLEABLE_LIBS | _NEVER_BUNDLE_LIBS | _UNDECIDED_LIBS | _WHEEL_PROVIDED_LIBS
 
     for proj in sorted(accel_projects - set(project_libs)):
         accelerator[proj] = set()

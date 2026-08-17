@@ -7,17 +7,17 @@
 | **Total packages** | **377** |  |
 | &ensp;Purelib (pure Python) | 285 | 75.6% |
 | &ensp;Platlib (native code) | 92 | 24.4% |
-| &ensp;Manylinux + bundleable | 59 | 15.6% |
+| &ensp;Manylinux + bundleable | 61 | 16.2% |
 | &ensp;&ensp;Manylinux-only | 57 | 15.1% |
-| &ensp;&ensp;Could be bundled | 1 | 0.3% |
+| &ensp;&ensp;Could be bundled | 3 | 0.8% |
 | &ensp;&ensp;Pre-built (manylinux) | 1 | 0.3% |
-| &ensp;Platform-dependent | 33 | 8.8% |
+| &ensp;Platform-dependent | 31 | 8.2% |
 | &ensp;&ensp;Accelerator-specific | 9 | 2.4% |
-| &ensp;&ensp;Unbundleable | 13 | 3.4% |
-| &ensp;&ensp;Undecided | 11 | 2.9% |
+| &ensp;&ensp;Unbundleable | 22 | 5.8% |
+| &ensp;&ensp;Undecided | 0 | 0.0% |
 | &ensp;&ensp;Unknown | 0 | 0.0% |
-| **Purelib + manylinux + bundleable** | **344** | **91.2%** |
-| **Platform/accel + other** | **33** | **8.8%** |
+| **Purelib + manylinux + bundleable** | **346** | **91.8%** |
+| **Platform/accel + other** | **31** | **8.2%** |
 
 ## Charts
 
@@ -27,7 +27,7 @@ xychart-beta
     title "rocm7.1-ubi9-test -- package overview"
     x-axis ["purelib", "manylinux + bundleable", "platform/accel"]
     y-axis "Packages"
-    bar [285, 59, 33]
+    bar [285, 61, 31]
 ```
 
 ## External Dependencies
@@ -122,7 +122,7 @@ and/or libraries provided by other wheels in the index.
 
 aiohttp, apache-tvm-ffi, blake3, cartopy, cbor2, cftime, contourpy, cython, duckdb, fastar, frozenlist, hf-xet, hiredis, httptools, jiter, kiwisolver, kornia-rs, libcst, llguidance, markupsafe, matplotlib, maturin, ml-dtypes, msgspec, multidict, numcodecs, obstore, onnx, openai-harmony, outlines-core, pandas, patchelf, propcache, protobuf, psutil, pybase64, pydantic-core, regex, rignore, rpds-py, safetensors, scikit-image, sentencepiece, setproctitle, soxr, stringzilla, tiktoken, tokenizers, triton, uvloop, watchfiles, websockets, wrapt, xgrammar, xxhash, yarl, zstandard
 
-### Could become manylinux by bundling (1 packages)
+### Could become manylinux by bundling (3 packages)
 
 All external deps are vendorable -- bundling them would make
 these wheels manylinux-compatible.
@@ -130,6 +130,8 @@ these wheels manylinux-compatible.
 | Package | Libraries |
 |:---|:---|
 | pyyaml | libyaml-0.so.2 |
+| pyzmq | libzmq.so.5 |
+| tacozip | libzip.so.5 |
 
 ### AI accelerator-specific (9 packages)
 
@@ -148,7 +150,7 @@ These must be provided by the accelerator platform.
 | torchvision | libamdhip64.so.7, libavcodec.so.60, libavformat.so.60, libavutil.so.58, libjpeg.so.62, libpng16.so.16, libswresample.so.4, libswscale.so.7, libwebp.so.7 |
 | vllm | libamdhip64.so.7, libhipblas.so.3, libhipblaslt.so.1, librocrand.so.1 |
 
-### Unbundleable external dependencies (13 packages)
+### Unbundleable external dependencies (22 packages)
 
 At least one external dep must never be bundled (crypto,
 system runtime, etc.) and must be provided by the platform.
@@ -157,40 +159,30 @@ on OpenSSL, libpq depends on OpenSSL + Kerberos).
 
 | Package | Libraries |
 |:---|:---|
+| av | libavcodec.so.60, libavdevice.so.60, libavfilter.so.9, libavformat.so.60, libavutil.so.58, libswresample.so.4, libswscale.so.7 |
+| cffi | libffi.so.8 |
 | cmake | libcrypto.so.3, libncurses.so.6, libssl.so.3, libtinfo.so.6 |
 | cryptography | libcrypto.so.3, libssl.so.3 |
 | grpcio | libcrypto.so.3, libssl.so.3 (+ libre2.so.9) |
+| h5py | libhdf5.so.310, libhdf5_hl.so.310 |
 | llvmlite | libtinfo.so.6 |
+| netcdf4 | libnetcdf.so.19 |
 | numba | libgomp.so.1 |
 | numpy | libopenblasp.so.0 |
-| opencv-python-headless | libopenblasp.so.0 (+ libavcodec.so.60, libavformat.so.60, libavutil.so.58, libjpeg.so.62, libopenjp2.so.7, libpng16.so.16, libswscale.so.7, libtiff.so.5, libwebp.so.7, libwebpdemux.so.2, libwebpmux.so.3) |
-| pyarrow | libcrypto.so.3, libssl.so.3 (+ libbz2.so.1, libcurl.so.4, liblz4.so.1, libre2.so.9, libsnappy.so.1, libthrift-0.15.0.so, libutf8proc.so.2, libzstd.so.1) |
-| pyzmq | libzmq.so.5 |
-| scikit-learn | libgomp.so.1 |
-| scipy | libopenblasp.so.0 (+ libgfortran.so.5) |
-| simsimd | libgomp.so.1 |
-| tacozip | libzip.so.5 |
-
-### Undecided external dependencies (11 packages)
-
-All external deps are known but not yet classified as
-bundleable or unbundleable.
-
-| Package | Libraries |
-|:---|:---|
-| av | libavcodec.so.60, libavdevice.so.60, libavfilter.so.9, libavformat.so.60, libavutil.so.58, libswresample.so.4, libswscale.so.7 |
-| cffi | libffi.so.8 |
-| h5py | libhdf5.so.310, libhdf5_hl.so.310 |
-| netcdf4 | libnetcdf.so.19 |
+| opencv-python-headless | libavcodec.so.60, libavformat.so.60, libavutil.so.58, libjpeg.so.62, libopenblasp.so.0, libopenjp2.so.7, libpng16.so.16, libswscale.so.7, libtiff.so.5, libwebp.so.7, libwebpdemux.so.2, libwebpmux.so.3 |
 | pillow | libfreetype.so.6, libjpeg.so.62, liblcms2.so.2, libopenjp2.so.7, libtiff.so.5, libwebp.so.7, libwebpdemux.so.2, libwebpmux.so.3 |
+| pyarrow | libbz2.so.1, libcrypto.so.3, libcurl.so.4, liblz4.so.1, libsnappy.so.1, libssl.so.3, libzstd.so.1 (+ libre2.so.9, libthrift-0.15.0.so, libutf8proc.so.2) |
 | pyogrio | libgdal.so.36 |
 | pyproj | libproj.so.25 |
 | rasterio | libgdal.so.36 |
+| scikit-learn | libgomp.so.1 |
+| scipy | libgfortran.so.5, libopenblasp.so.0 |
 | shapely | libgeos_c.so.1 |
+| simsimd | libgomp.so.1 |
 | uv | libbz2.so.1 |
 | uv-build | libbz2.so.1, liblzma.so.5 |
 
-**Total:** 91 packages with ELF dependencies (57 manylinux-only, 1 bundleable, 9 accelerator, 13 unbundleable, 11 undecided, 0 unknown)
+**Total:** 91 packages with ELF dependencies (57 manylinux-only, 3 bundleable, 9 accelerator, 22 unbundleable, 0 undecided, 0 unknown)
 
 ## Packages without ELF Data (1)
 
