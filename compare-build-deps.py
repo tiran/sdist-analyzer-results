@@ -1,31 +1,50 @@
-#!/usr/bin/env python3
-"""Compare fromager build-system-requirements with pyproject.toml build-system.requires.
+#!/usr/bin/env -S uv run
+# /// script
+# requires-python = ">=3.11"
+# dependencies = [
+#     "packaging",
+# ]
+# ///
+# SPDX-License-Identifier: Apache-2.0
+"""Compare fromager build-system-requirements with upstream pyproject.toml.
 
-Iterates over all rhoai-3.5-cpu-ubi9-test packages and compares the fromager
-build-system-requirements.txt (from Red Hat wheels) with the build-system.requires
-from the corresponding PyPI sdist pyproject.toml.
+.. note::
+
+   This script was generated with the assistance of Claude (Anthropic).
+   Review before relying on its output.
+
+Iterates over RHOAI wheel data and compares fromager
+build-system-requirements.txt (from Red Hat wheels) with the
+build-system.requires from the corresponding PyPI sdist pyproject.toml.
 
 Reports:
   - EXTRA: deps in fromager but not in pyproject.toml
   - MISSING: deps in pyproject.toml but not in fromager
+
+Usage::
+
+    uv run compare-build-deps.py
+    uv run compare-build-deps.py 3.6-EA1
 """
 
+from __future__ import annotations
+
+import argparse
 import sys
-import tomllib
 from collections import defaultdict
 from pathlib import Path
 
+import tomllib
 from packaging.requirements import InvalidRequirement, Requirement
 from packaging.utils import canonicalize_name
 
-BASE = Path(__file__).resolve().parent / "data"
-RHOAI = BASE / "rhoai-3.5-cpu-ubi9-test"
-PYPI = BASE / "pypi"
+DATA_DIR = Path("data")
+DEFAULT_VERSION = "3.6-EA1"
 
 
 def parse_fromager(path: Path) -> set[str]:
     """Parse fromager-build-system-requirements.txt and return canonicalized names."""
-    names = set()
+    names: set[str] = set()
     for line in path.read_text().splitlines():
         line = line.strip()
         if not line or line.startswith("#"):
@@ -59,7 +78,7 @@ def parse_pyproject_build_requires(path: Path) -> set[str] | None:
     if requires is None:
         return None
 
-    names = set()
+    names: set[str] = set()
     for req_str in requires:
         try:
             req = Requirement(req_str)
@@ -72,9 +91,32 @@ def parse_pyproject_build_requires(path: Path) -> set[str] | None:
     return names
 
 
-def main():
-    # Collect all fromager files
-    fromager_files = sorted(RHOAI.glob("*/*/fromager-build-system-requirements.txt"))
+def main() -> None:
+    ap = argparse.ArgumentParser(description=__doc__)
+    ap.add_argument(
+        "version",
+        nargs="?",
+        default=DEFAULT_VERSION,
+        help="RHOAI index version (default: %(default)s)",
+    )
+    ap.add_argument(
+        "--data-dir",
+        type=Path,
+        default=DATA_DIR,
+        help="Base data directory (default: %(default)s)",
+    )
+    args = ap.parse_args()
+
+    rhoai_dir = args.data_dir.joinpath(f"rhoai-{args.version}")
+    pypi_dir = args.data_dir.joinpath("pypi")
+
+    if not rhoai_dir.is_dir():
+        print(f"Error: {rhoai_dir} not found", file=sys.stderr)
+        print("Run fetch-wheel-metadata.py first.", file=sys.stderr)
+        sys.exit(1)
+
+    # Collect fromager files across all indexes
+    fromager_files = sorted(rhoai_dir.glob("*/*/fromager-build-system-requirements.txt"))
     print(f"Found {len(fromager_files)} fromager-build-system-requirements.txt files\n")
 
     # extra_deps[dep_name] = list of (pkg, version)
@@ -91,7 +133,7 @@ def main():
         version = fromager_path.parent.name
         name = fromager_path.parent.parent.name
 
-        pyproject_path = PYPI / name / version / "pyproject.toml"
+        pyproject_path = pypi_dir.joinpath(name, version, "pyproject.toml")
 
         if not pyproject_path.exists():
             skipped_no_pyproject += 1

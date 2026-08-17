@@ -3,21 +3,21 @@ no sdist:
   - 0.1.16.post3
   - 0.1.13.post1
   amd-quark:
-  - 0.12.post1+rocm714.torch2.11
   - 0.12+rocm714.torch2.11
+  - 0.12.post1+rocm714.torch2.11
   array-record:
   - 0.8.3
   bitsandbytes:
-  - 0.50.0
   - 0.50.1
+  - 0.50.0
   cache-dit:
   - 1.5.0
   - 1.3.0
   ctranslate2:
   - 4.8.1
   cuda-bindings:
-  - 12.9.4
   - 13.0.3
+  - 12.9.4
   cuda-pathfinder:
   - 1.6.0
   cuda-python:
@@ -43,19 +43,19 @@ no sdist:
   flatbuffers:
   - 25.12.19
   flydsl:
-  - 0.2.0
   - 0.3.0
+  - 0.2.0
   - 0.1.4.2
   guardrails-detectors:
   - 0.3.0
   ibm-fms:
-  - '1.12'
-  - 1.13.1
   - 1.11.1
-  - 1.12.1
-  - 1.11.0
-  - 1.13.0
+  - 1.13.1
   - 1.11.2
+  - 1.11.0
+  - '1.12'
+  - 1.13.0
+  - 1.12.1
   intel-cmplr-lib-ur:
   - 2024.2.1
   intel-openmp:
@@ -64,10 +64,10 @@ no sdist:
   - 0.36.0
   - 0.30.0
   lazyllm:
-  - 1.2.1
+  - 1.1.1
   - 1.2.2
   - 0.7.6
-  - 1.1.1
+  - 1.2.1
   nemoguardrails:
   - 0.21.0
   nixl:
@@ -89,10 +89,10 @@ no sdist:
   onnxconverter-common:
   - 1.16.0
   onnxruntime:
-  - 1.27.0
-  - 1.27.1
   - 1.25.0
   - 1.26.0
+  - 1.27.0
+  - 1.27.1
   onnxruntime-gpu:
   - 1.25.0
   onnxruntime-migraphx:
@@ -100,20 +100,20 @@ no sdist:
   opencv-python-headless:
   - 4.13.0.92
   openshell:
-  - 0.0.103+rhaiv.0
   - 0.0.104+rhaiv.0
-  - 0.0.91
-  - 0.0.90
-  - 0.0.88
-  - 0.0.97+rhaiv.0
-  - 0.0.94+rhaiv.0
-  - 0.0.95+rhaiv.0
   - 0.0.89
+  - 0.0.91
+  - 0.0.88
   - 0.0.92+rhaiv.0
+  - 0.0.95+rhaiv.0
   - 0.0.95
+  - 0.0.103+rhaiv.0
+  - 0.0.94+rhaiv.0
   - 0.0.96+rhaiv.0
-  - 0.0.98
   - 0.0.99+rhaiv.0
+  - 0.0.90
+  - 0.0.97+rhaiv.0
+  - 0.0.98
   openvino:
   - 2026.3.0
   presidio:
@@ -127,9 +127,9 @@ no sdist:
   rapidocr:
   - 3.9.2
   ray:
-  - 2.55.1
-  - 2.56.1
   - 2.56.0
+  - 2.56.1
+  - 2.55.1
   runai-model-streamer:
   - 0.15.7
   - 0.16.1
@@ -142,8 +142,8 @@ no sdist:
   sccache:
   - 0.16.0
   tensorboard:
-  - 2.19.0
   - 2.20.0
+  - 2.19.0
   tensorboard-data-server:
   - 0.7.2
   tensordict:
@@ -187,17 +187,17 @@ not on PyPI:
   llm-d-latency-predictor:
   - 0.1.0
   mlserver-onnx:
-  - 1.7.1+rhaiv.11
   - 1.7.1+rhaiv.10
+  - 1.7.1+rhaiv.11
   pandoc-rhai:
   - 3.9.0.2+rhaiv.1
   pplx-kernels:
   - 0.0.1
   torch-sendnn:
-  - 1.2.3+0
   - 1.2.5+0
+  - 1.2.3+0
   trustyai-service:
-  - 0.30.0+rhaiv.2
   - 0.30.0+rhaiv.3
+  - 0.30.0+rhaiv.2
   vllm-bart-plugin:
   - 0.5.0

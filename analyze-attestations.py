@@ -3,6 +3,7 @@
 # requires-python = ">=3.12"
 # dependencies = [
 #     "packaging",
+#     "pypi-attestations",
 #     "pypi-simple",
 #     "pyyaml",
 #     "requests",
@@ -10,12 +11,21 @@
 # ]
 # ///
 # SPDX-License-Identifier: Apache-2.0
-"""Analyze PyPI digital attestations (PEP 740) for packages in the RHOAI index.
+"""Analyze PyPI digital attestations (PEP 740) for RHOAI packages.
 
-For each project in packages.yaml, checks the latest version on PyPI for
-Sigstore-based attestations via the Simple API's provenance_url attribute.
-For packages with attestations, fetches the full provenance JSON to extract
-publisher details (kind, repository, workflow).
+.. note::
+
+   This script was generated with the assistance of Claude (Anthropic).
+   Review before relying on its output.
+
+Scans local PyPI data (previously fetched by ``fetch-pypi-sdists.py``)
+to discover package names, then checks the latest version of each on
+PyPI for Sigstore-based attestations via the Simple API's provenance_url
+attribute.  Writes results to ``data/pypi/attestations.yaml``.
+
+Usage::
+
+    uv run analyze-attestations.py
 """
 
 from __future__ import annotations
@@ -29,6 +39,7 @@ from pathlib import Path
 
 import requests
 import yaml
+import pypi_attestations
 from packaging.version import InvalidVersion, Version
 from pypi_simple import ACCEPT_JSON_ONLY, PyPISimple
 from tqdm import tqdm
@@ -37,7 +48,6 @@ logger = logging.getLogger(__name__)
 
 PYPI_INDEX = "https://pypi.org/simple/"
 DATA_DIR = Path("data")
-PACKAGES_YAML = "packages.yaml"
 
 
 def _make_session(workers: int) -> requests.Session:
@@ -51,11 +61,17 @@ def _make_session(workers: int) -> requests.Session:
     return session
 
 
-def load_packages_yaml(path: str | Path) -> dict[str, list[str]]:
-    """Load packages dict from YAML file."""
-    with open(path) as f:
-        data = yaml.safe_load(f)
-    return data["packages"]
+def scan_local_packages(pypi_dir: Path) -> dict[str, list[str]]:
+    """Scan local PyPI data directory for package names and versions."""
+    packages: dict[str, set[str]] = {}
+    for pkg_dir in sorted(pypi_dir.iterdir()):
+        if not pkg_dir.is_dir():
+            continue
+        for ver_dir in pkg_dir.iterdir():
+            if not ver_dir.is_dir():
+                continue
+            packages.setdefault(pkg_dir.name, set()).add(ver_dir.name)
+    return {name: sorted(versions) for name, versions in sorted(packages.items())}
 
 
 def latest_version(versions: list[str]) -> str:
@@ -79,6 +95,8 @@ class AttestationResult:
     publisher_kind: str | None = None
     repository: str | None = None
     workflow: str | None = None
+    ref: str | None = None
+    commit: str | None = None
     error: str | None = None
 
 
@@ -140,45 +158,40 @@ def check_attestation(
 
 
 def _extract_publisher_info(
-    provenance: dict, result: AttestationResult
+    provenance_dict: dict, result: AttestationResult
 ) -> None:
-    """Extract publisher info from the provenance JSON."""
-    # PEP 740 provenance format:
-    # {
-    #   "version": 1,
-    #   "attestation_bundles": [
-    #     {
-    #       "publisher": {"kind": "GitHub", "claims": {...}, ...},
-    #       "attestations": [...]
-    #     }
-    #   ]
-    # }
-    bundles = provenance.get("attestation_bundles", [])
-    if not bundles:
+    """Extract publisher info from a PEP 740 provenance dict.
+
+    Uses pypi_attestations to parse the provenance model and decode
+    Fulcio certificate claims (ref, commit) from the Sigstore bundle.
+    """
+    prov = pypi_attestations.Provenance.model_validate(provenance_dict)
+    if not prov.attestation_bundles:
         return
 
-    publisher = bundles[0].get("publisher", {})
-    result.publisher_kind = publisher.get("kind")
+    bundle = prov.attestation_bundles[0]
+    publisher = bundle.publisher
+    result.publisher_kind = publisher.kind
 
-    claims = publisher.get("claims", {})
-    if claims:
-        result.repository = claims.get("repository")
-        result.workflow = claims.get("workflow")
+    if hasattr(publisher, "repository"):
+        result.repository = publisher.repository
+    if hasattr(publisher, "workflow"):
+        result.workflow = publisher.workflow
 
-    # Some provenance formats put repository/workflow at the publisher level
-    if result.repository is None:
-        result.repository = publisher.get("repository")
-    if result.workflow is None:
-        result.workflow = publisher.get("workflow")
+    # Extract ref and commit from Fulcio certificate claims
+    if not bundle.attestations:
+        return
+    try:
+        claims = bundle.attestations[0].certificate_claims
+        # Fulcio OIDs: https://github.com/sigstore/fulcio/blob/main/docs/oid-info.md
+        result.commit = claims.get("1.3.6.1.4.1.57264.1.13")  # source repo digest
+        result.ref = claims.get("1.3.6.1.4.1.57264.1.14")     # source repo ref
+    except Exception:
+        pass
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument(
-        "--packages-yaml",
-        default=PACKAGES_YAML,
-        help="Path to packages YAML file (default: %(default)s)",
-    )
     parser.add_argument(
         "--data-dir",
         type=Path,
@@ -204,9 +217,14 @@ def main() -> None:
         format="%(asctime)s %(levelname)s %(message)s",
     )
 
-    packages_yaml = args.data_dir / args.packages_yaml
-    packages = load_packages_yaml(packages_yaml)
-    logger.info("Loaded %d projects from %s", len(packages), packages_yaml)
+    pypi_dir = args.data_dir / "pypi"
+    if not pypi_dir.is_dir():
+        logger.error("No local data at %s", pypi_dir)
+        logger.error("Run fetch-pypi-sdists.py first.")
+        return
+
+    packages = scan_local_packages(pypi_dir)
+    logger.info("Found %d projects in %s", len(packages), pypi_dir)
 
     # Build tasks: (name, latest_version) for each project
     tasks: list[tuple[str, str]] = []
@@ -245,66 +263,61 @@ def main() -> None:
                     )
                 results.append(result)
 
-    # --- Report ---
+    # --- Build output ---
     with_attestation = [r for r in results if r.has_attestation]
     without_attestation = [r for r in results if not r.has_attestation]
     total = len(results)
 
-    print()
-    print("=" * 72)
-    print("PyPI Digital Attestation (PEP 740) Analysis")
-    print("=" * 72)
-    print(f"Total projects analyzed: {total}")
-    print(f"Projects WITH attestations:    {len(with_attestation)}")
-    print(f"Projects WITHOUT attestations: {len(without_attestation)}")
-    if total > 0:
-        pct = len(with_attestation) / total * 100
-        print(f"Attestation coverage: {pct:.1f}%")
-    if errors:
-        print(f"Errors: {len(errors)}")
-
-    # Publisher kind breakdown
-    print()
-    print("=" * 72)
-    print("Publisher kind breakdown:")
-    print("=" * 72)
     kind_counts: Counter[str] = Counter()
-    for r in with_attestation:
+    attested: dict[str, dict[str, str | None]] = {}
+    for r in sorted(with_attestation, key=lambda r: r.name.lower()):
         kind = r.publisher_kind or "unknown"
         kind_counts[kind] += 1
-    for kind, count in kind_counts.most_common():
-        print(f"  {kind:30s} {count:5d}  ({count / total * 100:.1f}%)")
-
-    # Projects WITH attestations
-    print()
-    print("=" * 72)
-    print("Projects WITH attestations:")
-    print("=" * 72)
-    for r in sorted(with_attestation, key=lambda r: r.name.lower()):
-        parts = [f"{r.name}=={r.version}"]
+        entry: dict[str, str | None] = {"version": r.version}
         if r.publisher_kind:
-            parts.append(f"publisher={r.publisher_kind}")
+            entry["publisher"] = r.publisher_kind
         if r.repository:
-            parts.append(f"repo={r.repository}")
+            entry["repository"] = r.repository
         if r.workflow:
-            parts.append(f"workflow={r.workflow}")
-        print(f"  {', '.join(parts)}")
+            entry["workflow"] = r.workflow
+        if r.ref:
+            entry["ref"] = r.ref
+        if r.commit:
+            entry["commit"] = r.commit
+        attested[r.name] = entry
 
-    # Projects WITHOUT attestations
-    print()
-    print("=" * 72)
-    print("Projects WITHOUT attestations:")
-    print("=" * 72)
-    for r in sorted(without_attestation, key=lambda r: r.name.lower()):
-        print(f"  {r.name}=={r.version}")
+    not_attested = {
+        r.name: r.version
+        for r in sorted(without_attestation, key=lambda r: r.name.lower())
+    }
 
+    output = {
+        "note": "Only the latest version of each package was checked.",
+        "summary": {
+            "total": total,
+            "with_attestation": len(with_attestation),
+            "without_attestation": len(without_attestation),
+            "coverage_pct": round(len(with_attestation) / total * 100, 1) if total else 0,
+            "publisher_kinds": dict(kind_counts.most_common()),
+        },
+        "with_attestation": attested,
+        "without_attestation": not_attested,
+    }
     if errors:
-        print()
-        print("=" * 72)
-        print("Errors:")
-        print("=" * 72)
-        for e in sorted(errors):
-            print(f"  {e}")
+        output["errors"] = sorted(errors)
+
+    dest = pypi_dir / "attestations.yaml"
+    with open(dest, "w") as f:
+        yaml.dump(output, f, default_flow_style=False, sort_keys=False)
+
+    logger.info("Wrote %s", dest)
+    logger.info(
+        "Total: %d, with attestation: %d (%.1f%%), without: %d",
+        total,
+        len(with_attestation),
+        len(with_attestation) / total * 100 if total else 0,
+        len(without_attestation),
+    )
 
 
 if __name__ == "__main__":

@@ -21,7 +21,7 @@ import re
 import subprocess
 import sys
 
-# Libraries to check -- vendor + bundleable from policy.toml / extract-fromager-elf.py
+# Libraries to check -- vendor + bundleable from policy.toml / analyze-elf-deps.py
 _CHECK_LIBS = [
     # vendor: text processing
     "libre2.so.9",
@@ -199,7 +199,7 @@ def _run_ldd(path: str) -> list[tuple[str, str]]:
     env = dict(os.environ)
     env.pop("LD_PRELOAD", None)
     result = subprocess.run(
-        ["ldd", path], capture_output=True, text=True, env=env
+        ["ldd", path], capture_output=True, text=True, env=env, check=False
     )
     deps: list[tuple[str, str]] = []
     for line in result.stdout.splitlines():

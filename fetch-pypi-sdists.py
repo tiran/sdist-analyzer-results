@@ -2,7 +2,7 @@
 # /// script
 # requires-python = ">=3.12"
 # dependencies = [
-#     "packaging",
+#     "packaging>=24.2",
 #     "pypi-simple",
 #     "pyyaml",
 #     "requests",
@@ -10,13 +10,24 @@
 # ]
 # ///
 # SPDX-License-Identifier: Apache-2.0
-"""Fetch sdist metadata files from PyPI for packages in a Red Hat PyPI index.
+"""Fetch sdist metadata files from PyPI for RHOAI packages.
 
-Uses pypi_simple to enumerate packages/versions from a Red Hat simple index,
+.. note::
+
+   This script was generated with the assistance of Claude (Anthropic).
+   Review before relying on its output.
+
+Scans local RHOAI wheel data (previously fetched by
+``fetch-rhoai-metadata.py``) to discover package names and versions,
 then downloads source distributions from PyPI and extracts PKG-INFO,
 pyproject.toml, and setup.py into data/pypi/<name>/<version>/.
 
 Optimized for re-runs: skips packages whose output directory already exists.
+
+Usage::
+
+    uv run fetch-pypi-sdists.py
+    uv run fetch-pypi-sdists.py 3.6-EA1
 """
 
 from __future__ import annotations
@@ -24,12 +35,12 @@ from __future__ import annotations
 import argparse
 import io
 import logging
-import os
 import tarfile
 import zipfile
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
+import packaging.metadata
 import requests
 import yaml
 from packaging.version import Version
@@ -38,17 +49,32 @@ from tqdm import tqdm
 
 logger = logging.getLogger(__name__)
 
-RHAI_INDEX = (
-    "https://packages.redhat.com/api/pypi/public-rhai/"
-    "rhoai/3.5/cpu-ubi9-test/simple/"
-)
 PYPI_INDEX = "https://pypi.org/simple/"
 
 EXTRACT_FILENAMES = {"PKG-INFO", "pyproject.toml", "setup.py"}
+MAX_FIELD_LEN = 512
 
 DATA_DIR = Path("data")
-PACKAGES_YAML = "packages.yaml"
-NO_SDIST_YAML = "no_sdist.yaml"
+DEFAULT_VERSION = "3.6-EA1"
+
+
+def _shrink_pkg_info(raw: bytes) -> bytes:
+    """Drop description body and truncate license/summary in PKG-INFO.
+
+    Uses the same format as wheel METADATA (RFC 822).
+    Returns original bytes on parse failure.
+    """
+    try:
+        metadata = packaging.metadata.Metadata.from_email(raw)
+        metadata.description = None
+        metadata.description_content_type = None
+        if metadata.license and len(metadata.license) > MAX_FIELD_LEN:
+            metadata.license = metadata.license[:MAX_FIELD_LEN - 3] + "..."
+        if metadata.summary and len(metadata.summary) > MAX_FIELD_LEN:
+            metadata.summary = metadata.summary[:MAX_FIELD_LEN - 3] + "..."
+        return metadata.as_rfc822().as_bytes()
+    except Exception:
+        return raw
 
 def _make_session(workers: int) -> requests.Session:
     """Create a requests session with connection pool sized for workers."""
@@ -61,72 +87,25 @@ def _make_session(workers: int) -> requests.Session:
     return session
 
 
-def _fetch_versions(
-    client: PyPISimple, name: str
-) -> tuple[str, list[str]]:
-    """Fetch unique versions for a single project from a simple index."""
-    page = client.get_project_page(name, timeout=30)
-    versions: set[str] = set()
-    for pkg in page.packages:
-        if pkg.version is not None:
-            versions.add(pkg.version)
-    return name, sorted(versions)
+def scan_local_packages(rhoai_dir: Path) -> dict[str, list[str]]:
+    """Scan local RHOAI data directory for package names and versions.
 
-
-def get_packages_from_index(
-    index_url: str, workers: int = 16
-) -> dict[str, list[str]]:
-    """Get all packages and their unique versions from a simple index."""
-    client = PyPISimple(index_url)
-    packages: dict[str, list[str]] = {}
-
-    project_names = list(client.stream_project_names(timeout=60))
-    logger.info("Found %d projects in index", len(project_names))
-
-    with ThreadPoolExecutor(max_workers=workers) as pool:
-        futures = {
-            pool.submit(_fetch_versions, client, name): name
-            for name in project_names
-        }
-        with tqdm(
-            as_completed(futures),
-            total=len(futures),
-            desc="Fetching versions",
-        ) as pbar:
-            for future in pbar:
-                name = futures[future]
-                try:
-                    _, versions = future.result()
-                except Exception as e:
-                    logger.warning("Failed to fetch %s: %s", name, e)
+    Looks at ``data/rhoai-<version>/<index>/<package>/<version>/``
+    directories created by ``fetch-rhoai-metadata.py``.  Returns
+    ``{name: [versions]}`` with duplicates across indexes merged.
+    """
+    packages: dict[str, set[str]] = {}
+    for index_dir in sorted(rhoai_dir.iterdir()):
+        if not index_dir.is_dir():
+            continue
+        for pkg_dir in index_dir.iterdir():
+            if not pkg_dir.is_dir():
+                continue
+            for ver_dir in pkg_dir.iterdir():
+                if not ver_dir.is_dir():
                     continue
-                if versions:
-                    packages[name] = versions
-
-    return packages
-
-
-def dump_packages_yaml(
-    packages: dict[str, list[str]], path: str | Path = PACKAGES_YAML
-) -> None:
-    """Write packages dict to YAML file."""
-    path = Path(path)
-    path.parent.mkdir(parents=True, exist_ok=True)
-    with open(path, "w") as f:
-        yaml.dump(
-            {"packages": packages},
-            f,
-            default_flow_style=False,
-            sort_keys=True,
-        )
-    logger.info("Wrote %d packages to %s", len(packages), path)
-
-
-def load_packages_yaml(path: str | Path = PACKAGES_YAML) -> dict[str, list[str]]:
-    """Load packages dict from YAML file."""
-    with open(path) as f:
-        data = yaml.safe_load(f)
-    return data["packages"]
+                packages.setdefault(pkg_dir.name, set()).add(ver_dir.name)
+    return {name: sorted(versions) for name, versions in sorted(packages.items())}
 
 
 def _extract_from_tar(
@@ -148,9 +127,12 @@ def _extract_from_tar(
             parts = member.name.split("/")
             # sdist has one top-level dir; files directly inside it
             if len(parts) == 2 and parts[1] in EXTRACT_FILENAMES:
-                data = tf.extractfile(member)
-                if data is not None:
-                    (dest / parts[1]).write_bytes(data.read())
+                fobj = tf.extractfile(member)
+                if fobj is not None:
+                    content = fobj.read()
+                    if parts[1] == "PKG-INFO":
+                        content = _shrink_pkg_info(content)
+                    dest.joinpath(parts[1]).write_bytes(content)
                     found.add(parts[1])
             # early exit once we've found all possible files
             if found == EXTRACT_FILENAMES:
@@ -166,14 +148,16 @@ def _extract_from_zip(
         for name in zf.namelist():
             parts = name.split("/")
             if len(parts) == 2 and parts[1] in EXTRACT_FILENAMES:
-                data = zf.read(name)
-                (dest / parts[1]).write_bytes(data)
+                content = zf.read(name)
+                if parts[1] == "PKG-INFO":
+                    content = _shrink_pkg_info(content)
+                dest.joinpath(parts[1]).write_bytes(content)
 
 
 class FetchResult:
     """Result of a fetch_sdist call."""
 
-    __slots__ = ("name", "version", "error", "reason")
+    __slots__ = ("error", "name", "reason", "version")
 
     def __init__(
         self,
@@ -198,6 +182,7 @@ def fetch_sdist(
     version: str,
     pypi_dir: Path,
     session: requests.Session,
+    pypi_client: PyPISimple,
 ) -> FetchResult:
     """Find and extract metadata files from a PyPI sdist."""
     dest = pypi_dir / name / version
@@ -214,9 +199,8 @@ def fetch_sdist(
     except Exception:
         pass
 
-    pypi = PyPISimple(PYPI_INDEX)
     try:
-        page = pypi.get_project_page(name, timeout=30)
+        page = pypi_client.get_project_page(name, timeout=30)
     except Exception:
         logger.warning("Project %s not found on PyPI", name)
         return FetchResult(name, version, reason="not on PyPI")
@@ -260,14 +244,10 @@ def fetch_sdist(
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
-        "--index-url",
-        default=RHAI_INDEX,
-        help="Simple repository index URL (default: RHAI index)",
-    )
-    parser.add_argument(
-        "--packages-yaml",
-        default=PACKAGES_YAML,
-        help="Path to packages YAML file (default: %(default)s)",
+        "version",
+        nargs="?",
+        default=DEFAULT_VERSION,
+        help="RHOAI index version (default: %(default)s)",
     )
     parser.add_argument(
         "--data-dir",
@@ -282,21 +262,6 @@ def main() -> None:
         help="Number of parallel download workers (default: %(default)s)",
     )
     parser.add_argument(
-        "--no-sdist-yaml",
-        default=NO_SDIST_YAML,
-        help="Path to missing sdists YAML file (default: %(default)s)",
-    )
-    parser.add_argument(
-        "--skip-fetch",
-        action="store_true",
-        help="Only generate packages.yaml, skip sdist fetching",
-    )
-    parser.add_argument(
-        "--reuse-yaml",
-        action="store_true",
-        help="Reuse existing packages.yaml instead of fetching from index",
-    )
-    parser.add_argument(
         "-v",
         "--verbose",
         action="store_true",
@@ -309,29 +274,23 @@ def main() -> None:
         format="%(asctime)s %(levelname)s %(message)s",
     )
 
-    # Derive paths from data dir
-    packages_yaml = args.data_dir / args.packages_yaml
-    no_sdist_yaml = args.data_dir / args.no_sdist_yaml
+    rhoai_dir = args.data_dir / f"rhoai-{args.version}"
     pypi_dir = args.data_dir / "pypi"
 
-    # Step 1: Get packages from index or reuse YAML
-    if args.reuse_yaml and packages_yaml.exists():
-        logger.info("Reusing existing %s", packages_yaml)
-        packages = load_packages_yaml(packages_yaml)
-    else:
-        logger.info("Fetching package list from %s", args.index_url)
-        packages = get_packages_from_index(args.index_url, args.workers)
-        dump_packages_yaml(packages, packages_yaml)
+    if not rhoai_dir.is_dir():
+        logger.error("No local data at %s", rhoai_dir)
+        logger.error("Run fetch-rhoai-metadata.py first.")
+        return
 
+    # Step 1: Scan local data for package names and versions
+    packages = scan_local_packages(rhoai_dir)
     total_versions = sum(len(v) for v in packages.values())
     logger.info(
-        "Total: %d packages, %d unique versions",
+        "Found %d packages, %d versions in %s",
         len(packages),
         total_versions,
+        rhoai_dir,
     )
-
-    if args.skip_fetch:
-        return
 
     # Step 2: Fetch sdists in parallel
     pypi_dir.mkdir(parents=True, exist_ok=True)
@@ -344,9 +303,10 @@ def main() -> None:
     # missing sdists: {reason: {name: [versions]}}
     missing: dict[str, dict[str, list[str]]] = {}
     session = _make_session(args.workers)
+    pypi_client = PyPISimple(PYPI_INDEX, session=session)
     with ThreadPoolExecutor(max_workers=args.workers) as pool:
         futures = {
-            pool.submit(fetch_sdist, name, version, pypi_dir, session): (
+            pool.submit(fetch_sdist, name, version, pypi_dir, session, pypi_client): (
                 name,
                 version,
             )
@@ -377,18 +337,18 @@ def main() -> None:
                         f"{result.name}=={result.version}: {result.error}"
                     )
 
-    # Write missing sdist info
+    # Write missing sdist info for later analysis
     if missing:
-        with open(no_sdist_yaml, "w") as f:
+        no_sdist_path = pypi_dir / "no_sdist.yaml"
+        with open(no_sdist_path, "w") as f:
             yaml.dump(missing, f, default_flow_style=False, sort_keys=True)
         total_missing = sum(
             len(v) for by_name in missing.values() for v in by_name.values()
         )
-        logger.info(
-            "Wrote %d missing sdist entries to %s",
-            total_missing,
-            no_sdist_yaml,
-        )
+        logger.info("Wrote %d missing sdist entries to %s", total_missing, no_sdist_path)
+        for reason, by_name in sorted(missing.items()):
+            count = sum(len(v) for v in by_name.values())
+            logger.info("  %s: %d versions", reason, count)
 
     logger.info(
         "Done: %d total, %d errors",
