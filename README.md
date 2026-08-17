@@ -60,8 +60,6 @@ recorded in `data/pypi-no-sdist.yaml`.
 uv run analyze-elf-deps.py 3.6-EA1
 
 # PyPI digital attestations (PEP 740)
-uv run analyze-attestations.py 3.6-EA1
-
 # Git hosting URL coverage
 uv run analyze-git-hosting.py 3.6-EA1
 
@@ -79,14 +77,13 @@ python3 dump-transitive-deps.py
 | Script | Source | Description |
 |:---|:---|:---|
 | `fetch-rhoai-metadata.py` | RHOAI Pulp | Fetches METADATA, WHEEL, and fromager files from all RHOAI indexes for a version. Writes `wheel-counts.json`. |
-| `fetch-pypi-sdists.py` | PyPI | Downloads sdists and extracts PKG-INFO, pyproject.toml, setup.py. Writes `no_sdist.yaml`. |
+| `fetch-pypi-sdists.py` | PyPI | Downloads sdists, extracts PKG-INFO/pyproject.toml/setup.py. Fetches release info and PEP 740 attestations. Writes `pypi-releases.yaml`, `pypi-no-sdist.yaml`. |
 
 ### Analyze (local data)
 
 | Script | Description |
 |:---|:---|
 | `analyze-elf-deps.py` | Classifies ELF shared library deps as manylinux-only, bundleable, accelerator-specific, or unbundleable. Writes `elf-analysis.md` per index and combined, with Mermaid bar charts. |
-| `analyze-attestations.py` | Checks the latest PyPI version of each package for Sigstore attestations (PEP 740). Extracts publisher, repository, workflow, git ref, and commit hash. Writes `data/pypi-attestations.yaml`. |
 | `analyze-git-hosting.py` | Scans METADATA for Home-page and Project-URL fields, checks for known git hosting platforms (GitHub, GitLab, etc.). |
 | `compare-build-deps.py` | Compares fromager `build-system-requirements.txt` against upstream `pyproject.toml` `build-system.requires`. Reports extra and missing deps. |
 | `dump-transitive-deps.py` | Runs `ldd` on the local system to discover transitive shared library deps for vendor/bundleable libraries. Flags unbundleable transitive deps (OpenSSL, Kerberos, etc.). |
@@ -104,7 +101,7 @@ python3 dump-transitive-deps.py
 | `data/rhoai-3.6-EA1/elf-analysis.md` | Combined ELF dependency analysis across all indexes |
 | `data/rhoai-3.6-EA1/*/elf-analysis.md` | Per-index ELF dependency analysis |
 | `data/rhoai-3.6-EA1/transitive-deps.yaml` | Transitive deps of vendor/bundleable libraries (from `ldd`) |
-| `data/pypi-attestations.yaml` | PyPI attestation results |
+| `data/pypi-releases.yaml` | PyPI release info, wheel tags, and attestation results |
 | `data/pypi-no-sdist.yaml` | Packages/versions without sdists on PyPI |
 | `cuda-rocm-without-torch.md` | Packages using CUDA/ROCm without PyTorch runtime |
 | `downstream-build-system-analysis.md` | Build system patching analysis |

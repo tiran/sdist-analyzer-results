@@ -14,14 +14,13 @@ All scripts use `uv run` with PEP 723 inline metadata (no requirements.txt neede
 | Script | Purpose |
 |:---|:---|
 | `fetch-rhoai-metadata.py` | Fetches METADATA, WHEEL, and fromager files from RHOAI Pulp indexes via zipwire (HTTP/2). Writes `wheel-counts.json` per index. |
-| `fetch-pypi-sdists.py` | Downloads sdists from PyPI and extracts PKG-INFO, pyproject.toml, setup.py into `data/pypi/`. Writes `no_sdist.yaml`. |
+| `fetch-pypi-sdists.py` | Downloads sdists from PyPI, extracts PKG-INFO/pyproject.toml/setup.py. Fetches release info and PEP 740 attestations. Writes `pypi-releases.yaml`, `pypi-no-sdist.yaml`. |
 
 ### Analyze (local data)
 
 | Script | Purpose |
 |:---|:---|
 | `analyze-elf-deps.py` | ELF dependency analysis. Classifies deps (manylinux/bundleable/accelerator/unbundleable), writes `elf-analysis.md` with Mermaid charts. |
-| `analyze-attestations.py` | Checks PyPI PEP 740 Sigstore attestations. Writes `data/pypi-attestations.yaml`. |
 | `analyze-git-hosting.py` | Finds projects without git hosting URLs in METADATA. |
 | `compare-build-deps.py` | Diffs fromager build-system-requirements vs upstream pyproject.toml build-system.requires. |
 | `dump-transitive-deps.py` | Runs ldd on local system to dump transitive deps for vendor/bundleable libraries. |
