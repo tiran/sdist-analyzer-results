@@ -1,0 +1,49 @@
+metadata-version: 2.4
+name: httpx2
+version: 2.7.0
+summary: The next generation HTTP client.
+author-email: Tom Christie <tom@tomchristie.com>
+maintainer-email: "Pydantic Services Inc." <engineering@pydantic.dev>
+license-expression: BSD-3-Clause
+license-file: LICENSE.md
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Web Environment
+classifier: Framework :: AnyIO
+classifier: Framework :: AsyncIO
+classifier: Framework :: Trio
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: BSD License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Internet :: WWW/HTTP
+requires-dist: anyio>=4.10
+requires-dist: httpcore2==2.7.0
+requires-dist: idna>=3.18
+requires-dist: truststore>=0.10
+requires-dist: typing-extensions>=4.5.0; python_version < "3.13"
+requires-dist: brotli; platform_python_implementation == "CPython" and extra == "brotli"
+requires-dist: brotlicffi; platform_python_implementation != "CPython" and extra == "brotli"
+requires-dist: click>=8.4; extra == "cli"
+requires-dist: pygments==2.*; extra == "cli"
+requires-dist: rich<16,>=10; extra == "cli"
+requires-dist: h2<5,>=3; extra == "http2"
+requires-dist: socksio==1.*; extra == "socks"
+requires-dist: wsproto>=1.2; extra == "ws"
+requires-dist: zstandard>=0.18.0; python_version <= "3.13" and extra == "zstd"
+requires-python: >=3.10
+project-url: Changelog, https://github.com/pydantic/httpx2/blob/main/src/httpx2/CHANGELOG.md
+project-url: Homepage, https://github.com/pydantic/httpx2
+project-url: Source, https://github.com/pydantic/httpx2
+provides-extra: brotli
+provides-extra: cli
+provides-extra: http2
+provides-extra: socks
+provides-extra: ws
+provides-extra: zstd
+

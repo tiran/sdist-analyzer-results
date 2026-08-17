@@ -1,0 +1,152 @@
+metadata-version: 2.4
+name: deepspeed
+version: 0.19.5
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: project-url
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: summary
+summary: DeepSpeed library
+home-page: http://deepspeed.ai
+author: DeepSpeed Team
+author-email: info@deepspeedai.com
+license: Apache Software License 2.0
+license-file: LICENSE
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+requires-dist: einops
+requires-dist: hjson
+requires-dist: msgpack
+requires-dist: ninja
+requires-dist: numpy
+requires-dist: packaging>=20.0
+requires-dist: psutil
+requires-dist: py-cpuinfo
+requires-dist: pydantic>=2.0.0
+requires-dist: torch>=2.0.0
+requires-dist: tqdm
+requires-dist: mpi4py; extra == "1bit-mpi"
+requires-dist: autodoc_pydantic>=2.0.0; extra == "readthedocs"
+requires-dist: docutils<0.18; extra == "readthedocs"
+requires-dist: hjson; extra == "readthedocs"
+requires-dist: packaging; extra == "readthedocs"
+requires-dist: psutil; extra == "readthedocs"
+requires-dist: py-cpuinfo; extra == "readthedocs"
+requires-dist: pydantic>=2.0.0; extra == "readthedocs"
+requires-dist: recommonmark; extra == "readthedocs"
+requires-dist: sphinx_rtd_theme; extra == "readthedocs"
+requires-dist: torch>=2.0.0; extra == "readthedocs"
+requires-dist: tqdm; extra == "readthedocs"
+requires-dist: accelerate; extra == "dev"
+requires-dist: clang-format==18.1.3; extra == "dev"
+requires-dist: comet_ml>=3.41.0; extra == "dev"
+requires-dist: deepspeed-kernels; sys_platform == "linux" and extra == "dev"
+requires-dist: docutils<0.18; extra == "dev"
+requires-dist: future; extra == "dev"
+requires-dist: importlib-metadata>=4; extra == "dev"
+requires-dist: mup; extra == "dev"
+requires-dist: pre-commit>=3.2.0; extra == "dev"
+requires-dist: pytest<8.4.0,>=7.2.0; extra == "dev"
+requires-dist: pytest-forked; extra == "dev"
+requires-dist: pytest-randomly; extra == "dev"
+requires-dist: pytest-xdist; extra == "dev"
+requires-dist: qtorch==0.3.0; extra == "dev"
+requires-dist: recommonmark; extra == "dev"
+requires-dist: sphinx; extra == "dev"
+requires-dist: sphinx-rtd-theme; extra == "dev"
+requires-dist: tensorboard; extra == "dev"
+requires-dist: torchvision; extra == "dev"
+requires-dist: transformers>=4.51.3; extra == "dev"
+requires-dist: wandb; extra == "dev"
+requires-dist: tabulate; extra == "autotuning"
+requires-dist: hjson; extra == "autotuning-ml"
+requires-dist: tabulate; extra == "autotuning-ml"
+requires-dist: xgboost; extra == "autotuning-ml"
+requires-dist: triton==1.0.0; extra == "sparse-attn"
+requires-dist: neural-compressor==2.1.0; extra == "sparse"
+requires-dist: google; extra == "inf"
+requires-dist: lm-eval==0.3.0; extra == "inf"
+requires-dist: protobuf; extra == "inf"
+requires-dist: qtorch; extra == "inf"
+requires-dist: safetensors; extra == "inf"
+requires-dist: sentencepiece; extra == "inf"
+requires-dist: transformers>=4.32.1; extra == "inf"
+requires-dist: diffusers>=0.25.0; extra == "sd"
+requires-dist: triton>=2.1.0; extra == "sd"
+requires-dist: triton==2.1.0; extra == "triton"
+requires-dist: scipy; extra == "deepcompile"
+requires-dist: torchembed>=0.3.1; extra == "torchembed"
+requires-dist: neural-compressor==2.1.0; extra == "all"
+requires-dist: lm-eval==0.3.0; extra == "all"
+requires-dist: torch>=2.0.0; extra == "all"
+requires-dist: pytest-forked; extra == "all"
+requires-dist: recommonmark; extra == "all"
+requires-dist: protobuf; extra == "all"
+requires-dist: sphinx_rtd_theme; extra == "all"
+requires-dist: pytest-xdist; extra == "all"
+requires-dist: safetensors; extra == "all"
+requires-dist: scipy; extra == "all"
+requires-dist: hjson; extra == "all"
+requires-dist: sentencepiece; extra == "all"
+requires-dist: sphinx-rtd-theme; extra == "all"
+requires-dist: autodoc_pydantic>=2.0.0; extra == "all"
+requires-dist: xgboost; extra == "all"
+requires-dist: pydantic>=2.0.0; extra == "all"
+requires-dist: qtorch==0.3.0; extra == "all"
+requires-dist: torchvision; extra == "all"
+requires-dist: mup; extra == "all"
+requires-dist: packaging; extra == "all"
+requires-dist: pre-commit>=3.2.0; extra == "all"
+requires-dist: mpi4py; extra == "all"
+requires-dist: tensorboard; extra == "all"
+requires-dist: torchembed>=0.3.1; extra == "all"
+requires-dist: sphinx; extra == "all"
+requires-dist: importlib-metadata>=4; extra == "all"
+requires-dist: comet_ml>=3.41.0; extra == "all"
+requires-dist: diffusers>=0.25.0; extra == "all"
+requires-dist: tabulate; extra == "all"
+requires-dist: docutils<0.18; extra == "all"
+requires-dist: py-cpuinfo; extra == "all"
+requires-dist: triton>=2.1.0; extra == "all"
+requires-dist: transformers>=4.32.1; extra == "all"
+requires-dist: accelerate; extra == "all"
+requires-dist: deepspeed-kernels; sys_platform == "linux" and extra == "all"
+requires-dist: pytest-randomly; extra == "all"
+requires-dist: psutil; extra == "all"
+requires-dist: qtorch; extra == "all"
+requires-dist: triton==2.1.0; extra == "all"
+requires-dist: transformers>=4.51.3; extra == "all"
+requires-dist: clang-format==18.1.3; extra == "all"
+requires-dist: pytest<8.4.0,>=7.2.0; extra == "all"
+requires-dist: triton==1.0.0; extra == "all"
+requires-dist: tqdm; extra == "all"
+requires-dist: wandb; extra == "all"
+requires-dist: future; extra == "all"
+requires-dist: google; extra == "all"
+project-url: Documentation, https://deepspeed.readthedocs.io
+project-url: Source, https://github.com/deepspeedai/DeepSpeed
+provides-extra: 1bit
+provides-extra: 1bit-mpi
+provides-extra: readthedocs
+provides-extra: dev
+provides-extra: autotuning
+provides-extra: autotuning-ml
+provides-extra: sparse-attn
+provides-extra: sparse
+provides-extra: inf
+provides-extra: sd
+provides-extra: triton
+provides-extra: deepcompile
+provides-extra: torchembed
+provides-extra: all
+

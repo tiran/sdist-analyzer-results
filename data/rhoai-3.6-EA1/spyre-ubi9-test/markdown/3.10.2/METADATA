@@ -1,0 +1,50 @@
+metadata-version: 2.4
+name: Markdown
+version: 3.10.2
+dynamic: license-file
+summary: Python implementation of John Gruber's Markdown.
+keywords: markdown,markdown-parser,python-markdown,markdown-to-html
+author: Manfred Stienstra, Yuri Takhteyev
+author-email: Waylan limberg <python.markdown@gmail.com>
+maintainer: Isaac Muse
+maintainer-email: Waylan Limberg <python.markdown@gmail.com>
+license-expression: BSD-3-Clause
+license-file: LICENSE.md
+classifier: Development Status :: 5 - Production/Stable
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Communications :: Email :: Filters
+classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content :: CGI Tools/Libraries
+classifier: Topic :: Internet :: WWW/HTTP :: Site Management
+classifier: Topic :: Software Development :: Documentation
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: Text Processing :: Filters
+classifier: Topic :: Text Processing :: Markup :: HTML
+classifier: Topic :: Text Processing :: Markup :: Markdown
+requires-dist: coverage; extra == "testing"
+requires-dist: pyyaml; extra == "testing"
+requires-dist: mkdocs>=1.6; extra == "docs"
+requires-dist: mkdocs-nature>=0.6; extra == "docs"
+requires-dist: mdx_gh_links>=0.2; extra == "docs"
+requires-dist: mkdocstrings[python]>=0.28.3; extra == "docs"
+requires-dist: mkdocs-gen-files; extra == "docs"
+requires-dist: mkdocs-section-index; extra == "docs"
+requires-dist: mkdocs-literate-nav; extra == "docs"
+requires-python: >=3.10
+project-url: Homepage, https://Python-Markdown.github.io/
+project-url: Documentation, https://Python-Markdown.github.io/
+project-url: Repository, https://github.com/Python-Markdown/markdown
+project-url: Issue Tracker, https://github.com/Python-Markdown/markdown/issues
+project-url: Changelog, https://python-markdown.github.io/changelog/
+provides-extra: testing
+provides-extra: docs
+

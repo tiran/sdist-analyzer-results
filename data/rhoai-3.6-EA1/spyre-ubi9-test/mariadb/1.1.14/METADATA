@@ -1,0 +1,45 @@
+metadata-version: 2.4
+name: mariadb
+version: 1.1.14
+dynamic: author
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: project-url
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: Python MariaDB extension
+home-page: https://www.github.com/mariadb-corporation/mariadb-connector-python
+author: Georg Richter
+license: LGPL 2.1
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Environment :: MacOS X
+classifier: Environment :: Win32 (MS Windows)
+classifier: License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)
+classifier: Programming Language :: C
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: MacOS
+classifier: Operating System :: POSIX
+classifier: Intended Audience :: End Users/Desktop
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: System Administrators
+classifier: Topic :: Database
+requires-dist: packaging
+requires-python: >=3.8
+project-url: Bug Tracker, https://jira.mariadb.org/
+project-url: Documentation, https://mariadb-corporation.github.io/mariadb-connector-python/
+project-url: Source Code, https://www.github.com/mariadb-corporation/mariadb-connector-python
+

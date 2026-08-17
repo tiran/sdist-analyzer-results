@@ -1,35 +1,31 @@
-Metadata-Version: 1.1
-Name: pydub
-Version: 0.25.1
-Summary: Manipulate audio with an simple and easy high level interface
-Home-page: http://pydub.com
-Author: James Robert
-Author-email: jiaaro@gmail.com
-License: MIT
-Description: 
-        Manipulate audio with an simple and easy high level interface.
-        
-        See the README file for details, usage info, and a list of gotchas.
-        
-Keywords: audio sound high-level
-Platform: UNKNOWN
-Classifier: Development Status :: 5 - Production/Stable
-Classifier: License :: OSI Approved :: MIT License
-Classifier: Programming Language :: Python
-Classifier: Programming Language :: Python :: 2
-Classifier: Programming Language :: Python :: 2.7
-Classifier: Programming Language :: Python :: 3
-Classifier: Programming Language :: Python :: 3.4
-Classifier: Programming Language :: Python :: 3.5
-Classifier: Programming Language :: Python :: 3.6
-Classifier: Programming Language :: Python :: 3.7
-Classifier: Programming Language :: Python :: 3.8
-Classifier: Intended Audience :: Developers
-Classifier: Operating System :: OS Independent
-Classifier: Topic :: Multimedia :: Sound/Audio
-Classifier: Topic :: Multimedia :: Sound/Audio :: Analysis
-Classifier: Topic :: Multimedia :: Sound/Audio :: Conversion
-Classifier: Topic :: Multimedia :: Sound/Audio :: Editors
-Classifier: Topic :: Multimedia :: Sound/Audio :: Mixers
-Classifier: Topic :: Software Development :: Libraries
-Classifier: Topic :: Utilities
+metadata-version: 1.1
+name: pydub
+version: 0.25.1
+platform: UNKNOWN
+summary: Manipulate audio with an simple and easy high level interface
+keywords: audio sound high-level
+home-page: http://pydub.com
+author: James Robert
+author-email: jiaaro@gmail.com
+license: MIT
+classifier: Development Status :: 5 - Production/Stable
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 2
+classifier: Programming Language :: Python :: 2.7
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.4
+classifier: Programming Language :: Python :: 3.5
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Intended Audience :: Developers
+classifier: Operating System :: OS Independent
+classifier: Topic :: Multimedia :: Sound/Audio
+classifier: Topic :: Multimedia :: Sound/Audio :: Analysis
+classifier: Topic :: Multimedia :: Sound/Audio :: Conversion
+classifier: Topic :: Multimedia :: Sound/Audio :: Editors
+classifier: Topic :: Multimedia :: Sound/Audio :: Mixers
+classifier: Topic :: Software Development :: Libraries
+classifier: Topic :: Utilities
+

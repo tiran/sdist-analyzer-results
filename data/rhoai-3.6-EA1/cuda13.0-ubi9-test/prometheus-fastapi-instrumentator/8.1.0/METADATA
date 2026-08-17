@@ -1,0 +1,21 @@
+metadata-version: 2.4
+name: prometheus-fastapi-instrumentator
+version: 8.1.0
+summary: Instrument your FastAPI app with Prometheus metrics
+keywords: prometheus,instrumentation,fastapi,exporter,metrics
+author: Tim Schwenke
+author-email: tim@trallnag.com
+license: ISC
+license-file: LICENSE
+classifier: License :: OSI Approved
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-dist: prometheus-client<1.0.0,>=0.8.0
+requires-dist: starlette<2.0.0,>=1.0.0
+requires-python: >=3.10
+project-url: Homepage, https://github.com/trallnag/prometheus-fastapi-instrumentator
+

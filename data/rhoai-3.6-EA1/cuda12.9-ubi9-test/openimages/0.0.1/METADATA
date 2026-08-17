@@ -1,0 +1,31 @@
+metadata-version: 2.4
+name: openimages
+version: 0.0.1
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: provides
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: Tools for downloading computer vision datasets from Google's OpenImages dataset
+home-page: https://github.com/monocongo/openimages
+author: James Adams
+author-email: monocongo@gmail.com
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Operating System :: OS Independent
+requires-dist: boto3
+requires-dist: cvdata
+requires-dist: lxml
+requires-dist: pandas
+requires-dist: requests
+requires-dist: tqdm
+requires-python: >=3.6
+provides: openimages
+

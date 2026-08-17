@@ -1,0 +1,28 @@
+metadata-version: 2.4
+name: contextily
+version: 1.7.1
+dynamic: license-file
+summary: Context geo-tiles in Python
+author-email: Dani Arribas-Bel <daniel.arribas.bel@gmail.com>
+maintainer: contextily contributors
+license-expression: BSD-3-Clause
+license-file: LICENSE.txt
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Framework :: Matplotlib
+requires-dist: geopy
+requires-dist: matplotlib
+requires-dist: mercantile
+requires-dist: pillow
+requires-dist: rasterio
+requires-dist: requests
+requires-dist: joblib
+requires-dist: xyzservices
+requires-python: >=3.10
+project-url: Home, https://github.com/geopandas/contextily
+project-url: Repository, https://github.com/geopandas/contextily
+

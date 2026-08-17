@@ -1,0 +1,30 @@
+metadata-version: 2.5
+name: jsonschema-specifications
+version: 2025.9.1
+summary: The JSON Schema meta-schemas and vocabularies, exposed as a Registry
+keywords: data validation,json,json schema,jsonschema,validation
+author-email: Julian Berman <Julian+jsonschema-specifications@GrayVines.com>
+license-expression: MIT
+license-file: COPYING
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: File Formats :: JSON
+classifier: Topic :: File Formats :: JSON :: JSON Schema
+requires-dist: referencing>=0.31.0
+requires-python: >=3.9
+project-url: Documentation, https://jsonschema-specifications.readthedocs.io/
+project-url: Homepage, https://github.com/python-jsonschema/jsonschema-specifications
+project-url: Issues, https://github.com/python-jsonschema/jsonschema-specifications/issues/
+project-url: Funding, https://github.com/sponsors/Julian
+project-url: Tidelift, https://tidelift.com/subscription/pkg/pypi-jsonschema-specifications?utm_source=pypi-jsonschema-specifications&utm_medium=referral&utm_campaign=pypi-link
+project-url: Source, https://github.com/python-jsonschema/jsonschema-specifications
+

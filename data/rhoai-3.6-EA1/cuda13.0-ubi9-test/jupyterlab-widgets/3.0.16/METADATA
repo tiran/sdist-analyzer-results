@@ -1,0 +1,39 @@
+metadata-version: 2.5
+name: jupyterlab_widgets
+version: 3.0.16
+summary: Jupyter interactive widgets for JupyterLab
+keywords: Interactive,Interpreter,Jupyter,JupyterLab,JupyterLab3,Shell,Web,notebook,widgets
+author-email: Jupyter Development Team <jupyter@googlegroups.com>
+license: Copyright (c) 2015 Project Jupyter Contributors
+                 All rights reserved.
+                 
+                 Redistribution and use in source and binary forms, with or without
+                 modification, are permitted provided that the following conditions are met:
+                 
+                 1. Redistributions of source code must retain the above copyright notice, this
+                    list of conditions and the following disclaimer.
+                 
+                 2. Redistributions in binary form must reproduce the above copyright notice,
+                    thi...
+license-file: LICENSE
+classifier: Framework :: Jupyter
+classifier: Framework :: Jupyter :: JupyterLab
+classifier: Framework :: Jupyter :: JupyterLab :: 3
+classifier: Framework :: Jupyter :: JupyterLab :: 4
+classifier: Framework :: Jupyter :: JupyterLab :: Extensions
+classifier: Framework :: Jupyter :: JupyterLab :: Extensions :: Prebuilt
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: Intended Audience :: System Administrators
+classifier: License :: OSI Approved :: BSD License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+requires-python: >=3.7
+project-url: Homepage, https://github.com/jupyter-widgets/ipywidgets
+

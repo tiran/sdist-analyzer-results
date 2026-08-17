@@ -1,0 +1,3 @@
+setuptools_scm[toml]>=3.4.1
+coherent.licensed
+setuptools>=77

@@ -1,0 +1,29 @@
+metadata-version: 2.4
+name: pdfminer.six
+version: 20260107
+dynamic: license-file
+summary: PDF parser and analyzer
+keywords: layout analysis,pdf converter,pdf parser,text mining
+author: Yusuke Shinyama, Pieter Marsman
+author-email: Philippe Guglielmetti <pdfminer@goulu.net>
+license-expression: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Text Processing
+requires-dist: charset-normalizer>=2.0.0
+requires-dist: cryptography>=36.0.0
+requires-dist: Pillow; extra == "image"
+requires-python: >=3.10
+project-url: Homepage, https://github.com/pdfminer/pdfminer.six
+provides-extra: image
+

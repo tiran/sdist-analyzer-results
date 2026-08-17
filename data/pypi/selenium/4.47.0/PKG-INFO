@@ -1,0 +1,27 @@
+metadata-version: 2.1
+name: selenium
+version: 4.47.0
+summary: Official Python bindings for Selenium WebDriver
+home-page: https://www.selenium.dev
+license: Apache-2.0
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Operating System :: POSIX
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Topic :: Software Development :: Testing
+classifier: Topic :: Software Development :: Libraries
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-dist: certifi>=2026.2.25
+requires-dist: trio<1.0,>=0.31.0
+requires-dist: trio-websocket<1.0,>=0.12.2
+requires-dist: typing_extensions<5.0,>=4.15.0
+requires-dist: urllib3[socks]<3.0,>=2.6.3
+requires-dist: websocket-client<2.0,>=1.8.0
+requires-python: >=3.10
+

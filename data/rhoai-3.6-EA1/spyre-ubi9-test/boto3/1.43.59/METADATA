@@ -1,0 +1,40 @@
+metadata-version: 2.4
+name: boto3
+version: 1.43.59
+dynamic: author
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: project-url
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: The AWS SDK for Python
+home-page: https://github.com/boto/boto3
+author: Amazon Web Services
+license: Apache-2.0
+license-file: LICENSE
+license-file: NOTICE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Natural Language :: English
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Free Threading :: 2 - Beta
+requires-dist: botocore<1.44.0,>=1.43.59
+requires-dist: jmespath<2.0.0,>=0.7.1
+requires-dist: s3transfer<0.20.0,>=0.19.0
+requires-dist: botocore[crt]<2.0a0,>=1.21.0; extra == "crt"
+requires-python: >=3.10
+project-url: Documentation, https://docs.aws.amazon.com/boto3/latest/
+project-url: Source, https://github.com/boto/boto3
+provides-extra: crt
+

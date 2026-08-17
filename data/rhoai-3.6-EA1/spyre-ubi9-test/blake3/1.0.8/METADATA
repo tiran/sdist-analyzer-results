@@ -1,0 +1,22 @@
+metadata-version: 2.4
+name: blake3
+version: 1.0.8
+summary: Python bindings for the Rust blake3 crate
+home-page: https://github.com/oconnor663/blake3-py
+author: Jack O'Connor <oconnor663@gmail.com>
+author-email: Jack O'Connor <oconnor663@gmail.com>
+license: CC0-1.0 OR Apache-2.0
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: Free Threading
+classifier: Programming Language :: Rust
+classifier: Topic :: Security
+classifier: Topic :: Security :: Cryptography
+classifier: Topic :: Utilities
+requires-dist: typing-extensions>=4.6.0; python_full_version < "3.12"
+requires-python: >=3.8
+project-url: Homepage, https://github.com/oconnor663/blake3-py
+project-url: Source Code, https://github.com/oconnor663/blake3-py
+

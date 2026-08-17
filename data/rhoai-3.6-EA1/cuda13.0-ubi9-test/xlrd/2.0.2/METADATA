@@ -1,0 +1,46 @@
+metadata-version: 2.4
+name: xlrd
+version: 2.0.2
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: provides-extra
+dynamic: requires-python
+dynamic: summary
+summary: Library for developers to extract data from Microsoft Excel (tm) .xls spreadsheet files
+keywords: xls,excel,spreadsheet,workbook
+home-page: http://www.python-excel.org/
+author: Chris Withers
+author-email: chris@withers.org
+license: BSD
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: BSD License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 2
+classifier: Programming Language :: Python :: 2.7
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Operating System :: OS Independent
+classifier: Topic :: Database
+classifier: Topic :: Office/Business
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: pytest; extra == "test"
+requires-dist: pytest-cov; extra == "test"
+requires-dist: sphinx; extra == "docs"
+requires-dist: wheel; extra == "build"
+requires-dist: twine; extra == "build"
+requires-python: !=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*,>=2.7
+provides-extra: test
+provides-extra: docs
+provides-extra: build
+

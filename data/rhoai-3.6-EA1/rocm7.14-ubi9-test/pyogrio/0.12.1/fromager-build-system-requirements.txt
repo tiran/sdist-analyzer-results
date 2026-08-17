@@ -1,3 +1,0 @@
-setuptools
-versioneer[toml]==0.28
-Cython>=3.1

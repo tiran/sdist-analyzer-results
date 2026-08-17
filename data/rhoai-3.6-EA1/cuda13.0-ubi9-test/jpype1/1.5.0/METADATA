@@ -1,0 +1,48 @@
+metadata-version: 2.4
+name: JPype1
+version: 1.5.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: maintainer
+dynamic: maintainer-email
+dynamic: platform
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+platform: Operating System :: Microsoft :: Windows
+platform: Operating System :: POSIX
+platform: Operating System :: Unix
+platform: Operating System :: MacOS
+summary: A Python to Java bridge.
+home-page: https://github.com/jpype-project/jpype
+author: Steve Menard
+author-email: devilwolf@users.sourceforge.net
+maintainer: Luis Nell
+maintainer-email: cooperate@originell.org
+license: License :: OSI Approved :: Apache Software License
+license-file: LICENSE
+license-file: NOTICE
+license-file: AUTHORS.rst
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Topic :: Software Development
+classifier: Topic :: Scientific/Engineering
+requires-dist: typing_extensions; python_version < "3.8"
+requires-dist: packaging
+requires-dist: pytest; extra == "tests"
+requires-dist: readthedocs-sphinx-ext; extra == "docs"
+requires-dist: sphinx; extra == "docs"
+requires-dist: sphinx-rtd-theme; extra == "docs"
+requires-python: >=3.7
+provides-extra: tests
+provides-extra: docs
+

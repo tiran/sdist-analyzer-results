@@ -1,0 +1,30 @@
+metadata-version: 2.4
+name: SigProfilerMatrixGenerator
+version: 1.3.6
+dynamic: author
+dynamic: author-email
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: SigProfiler matrix generator tool
+home-page: https://github.com/AlexandrovLab/SigProfilerMatrixGenerator.git
+author: Erik Bergstrom
+author-email: ebergstr@eng.ucsd.edu
+license: UCSD
+license-file: LICENSE
+requires-dist: matplotlib>=2.2.2
+requires-dist: sigProfilerPlotting>=1.4.1
+requires-dist: statsmodels>=0.9.0
+requires-dist: numpy>=2.0.0
+requires-dist: pandas>=2.0.0
+requires-dist: scipy>=1.12.0
+requires-dist: pytest; extra == "tests"
+requires-python: >=3.9
+provides-extra: tests
+

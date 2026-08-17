@@ -1,0 +1,54 @@
+metadata-version: 2.4
+name: pyspark
+version: 4.0.4
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: Apache Spark Python API
+home-page: https://github.com/apache/spark/tree/master/python
+author: Spark Developers
+author-email: dev@spark.apache.org
+license: http://www.apache.org/licenses/LICENSE-2.0
+license-file: LICENSE
+license-file: NOTICE
+classifier: Development Status :: 5 - Production/Stable
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Typing :: Typed
+requires-dist: py4j<0.10.9.10,>=0.10.9.7
+requires-dist: numpy>=1.21; extra == "ml"
+requires-dist: numpy>=1.21; extra == "mllib"
+requires-dist: pandas>=2.0.0; extra == "sql"
+requires-dist: pyarrow>=11.0.0; extra == "sql"
+requires-dist: numpy>=1.21; extra == "sql"
+requires-dist: pandas>=2.0.0; extra == "pandas-on-spark"
+requires-dist: pyarrow>=11.0.0; extra == "pandas-on-spark"
+requires-dist: numpy>=1.21; extra == "pandas-on-spark"
+requires-dist: pandas>=2.0.0; extra == "connect"
+requires-dist: pyarrow>=11.0.0; extra == "connect"
+requires-dist: grpcio>=1.67.0; extra == "connect"
+requires-dist: grpcio-status>=1.67.0; extra == "connect"
+requires-dist: googleapis-common-protos>=1.65.0; extra == "connect"
+requires-dist: numpy>=1.21; extra == "connect"
+requires-python: >=3.9
+provides-extra: ml
+provides-extra: mllib
+provides-extra: sql
+provides-extra: pandas-on-spark
+provides-extra: connect
+

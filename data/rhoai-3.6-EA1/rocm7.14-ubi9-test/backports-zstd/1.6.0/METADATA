@@ -1,0 +1,24 @@
+metadata-version: 2.4
+name: backports.zstd
+version: 1.6.0
+dynamic: license-file
+summary: Backport of compression.zstd
+keywords: backport,backports,pep-784,zstd
+author-email: Rogdham <contact@rogdham.net>
+license-expression: PSF-2.0
+license-file: LICENSE.txt
+license-file: LICENSE_zstd.txt
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Topic :: System :: Archiving :: Compression
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+requires-python: <3.14,>=3.10
+project-url: Homepage, https://github.com/rogdham/backports.zstd
+project-url: Source, https://github.com/rogdham/backports.zstd
+

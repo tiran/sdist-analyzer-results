@@ -1,0 +1,37 @@
+metadata-version: 2.5
+name: jupyterlab_notebook_awareness
+version: 0.2.0
+summary: A JupyterLab extension that tracks a user's current notebook and cell.
+keywords: jupyter,jupyterlab,jupyterlab-extension
+author-email: Zach Sailer <zachsailer@gmail.com>
+license: BSD 3-Clause License
+                 
+                 Copyright (c) 2025, Zach Sailer
+                 All rights reserved.
+                 
+                 Redistribution and use in source and binary forms, with or without
+                 modification, are permitted provided that the following conditions are met:
+                 
+                 1. Redistributions of source code must retain the above copyright notice, this
+                    list of conditions and the following disclaimer.
+                 
+                 2. Redistributions in binary form must reproduce the above copyright ...
+license-file: LICENSE
+classifier: Framework :: Jupyter
+classifier: Framework :: Jupyter :: JupyterLab
+classifier: Framework :: Jupyter :: JupyterLab :: 4
+classifier: Framework :: Jupyter :: JupyterLab :: Extensions
+classifier: Framework :: Jupyter :: JupyterLab :: Extensions :: Prebuilt
+classifier: License :: OSI Approved :: BSD License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+requires-python: >=3.9
+project-url: Homepage, https://github.com/jupyter-ai-contrib/jupyterlab-notebook-awareness
+project-url: Bug Tracker, https://github.com/jupyter-ai-contrib/jupyterlab-notebook-awareness/issues
+project-url: Repository, https://github.com/jupyter-ai-contrib/jupyterlab-notebook-awareness.git
+

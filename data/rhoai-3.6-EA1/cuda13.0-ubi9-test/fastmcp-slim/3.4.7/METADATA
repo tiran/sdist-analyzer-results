@@ -1,0 +1,78 @@
+metadata-version: 2.5
+name: fastmcp-slim
+version: 3.4.7
+summary: The dependency-slim FastMCP package.
+keywords: agent,fastmcp,llm,mcp,mcp client,mcp server,model context protocol
+author: Jeremiah Lowin
+license-expression: Apache-2.0
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+classifier: Typing :: Typed
+requires-dist: platformdirs>=4.0.0
+requires-dist: pydantic-settings>=2.0.0
+requires-dist: pydantic[email]>=2.11.7
+requires-dist: python-dotenv>=1.1.0
+requires-dist: rich>=13.9.4
+requires-dist: typing-extensions>=4.0.0
+requires-dist: anthropic>=0.48.0; extra == "anthropic"
+requires-dist: prefab-ui>=0.18.0; extra == "apps"
+requires-dist: azure-identity>=1.16.0; extra == "azure"
+requires-dist: pyjwt>=2.12.0; extra == "azure"
+requires-dist: authlib>=1.6.11; extra == "client"
+requires-dist: exceptiongroup>=1.2.2; extra == "client"
+requires-dist: httpx<1.0,>=0.28.1; extra == "client"
+requires-dist: mcp<2.0,>=1.24.0; extra == "client"
+requires-dist: opentelemetry-api>=1.20.0; extra == "client"
+requires-dist: py-key-value-aio[filetree,keyring,memory]<0.5.0,>=0.4.4; extra == "client"
+requires-dist: starlette>=1.0.1; extra == "client"
+requires-dist: pydantic-monty==0.0.17; extra == "code-mode"
+requires-dist: google-genai>=1.18.0; extra == "gemini"
+requires-dist: jsonref>=1.1.0; extra == "gemini"
+requires-dist: exceptiongroup>=1.2.2; extra == "mcp"
+requires-dist: httpx<1.0,>=0.28.1; extra == "mcp"
+requires-dist: mcp<2.0,>=1.24.0; extra == "mcp"
+requires-dist: opentelemetry-api>=1.20.0; extra == "mcp"
+requires-dist: starlette>=1.0.1; extra == "mcp"
+requires-dist: openai>=1.102.0; extra == "openai"
+requires-dist: authlib>=1.6.11; extra == "server"
+requires-dist: cyclopts>=4.0.0; extra == "server"
+requires-dist: exceptiongroup>=1.2.2; extra == "server"
+requires-dist: griffelib>=2.0.0; extra == "server"
+requires-dist: httpx<1.0,>=0.28.1; extra == "server"
+requires-dist: joserfc>=1.1.0; extra == "server"
+requires-dist: jsonref>=1.1.0; extra == "server"
+requires-dist: jsonschema-path>=0.3.4; extra == "server"
+requires-dist: mcp<2.0,>=1.24.0; extra == "server"
+requires-dist: openapi-pydantic>=0.5.1; extra == "server"
+requires-dist: opentelemetry-api>=1.20.0; extra == "server"
+requires-dist: packaging>=24.0; extra == "server"
+requires-dist: py-key-value-aio[filetree,keyring,memory]<0.5.0,>=0.4.4; extra == "server"
+requires-dist: pyperclip>=1.9.0; extra == "server"
+requires-dist: python-multipart>=0.0.26; extra == "server"
+requires-dist: pyyaml<7.0,>=6.0; extra == "server"
+requires-dist: starlette>=1.0.1; extra == "server"
+requires-dist: uncalled-for>=0.2.0; extra == "server"
+requires-dist: uvicorn>=0.35; extra == "server"
+requires-dist: watchfiles>=1.0.0; extra == "server"
+requires-dist: websockets>=15.0.1; extra == "server"
+requires-dist: pydocket>=0.20.0; extra == "tasks"
+requires-python: >=3.10
+project-url: Homepage, https://gofastmcp.com
+project-url: Repository, https://github.com/PrefectHQ/fastmcp
+project-url: Documentation, https://gofastmcp.com
+provides-extra: anthropic
+provides-extra: apps
+provides-extra: azure
+provides-extra: client
+provides-extra: code-mode
+provides-extra: gemini
+provides-extra: mcp
+provides-extra: openai
+provides-extra: server
+provides-extra: tasks
+

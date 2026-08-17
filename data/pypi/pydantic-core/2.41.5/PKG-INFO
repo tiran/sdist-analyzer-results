@@ -1,0 +1,35 @@
+metadata-version: 2.4
+name: pydantic_core
+version: 2.41.5
+summary: Core functionality for Pydantic validation and serialization
+home-page: https://github.com/pydantic/pydantic-core
+author-email: Samuel Colvin <s@muelcolvin.com>, Adrian Garcia Badaracco <1755071+adriangb@users.noreply.github.com>, David Montague <david@pydantic.dev>, David Hewitt <mail@davidhewitt.dev>, Sydney Runkle <sydneymarierunkle@gmail.com>, Victorien Plot <contact@vctrn.dev>
+license-expression: MIT
+license-file: LICENSE
+classifier: Development Status :: 3 - Alpha
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Programming Language :: Python :: Implementation :: GraalPy
+classifier: Programming Language :: Rust
+classifier: Framework :: Pydantic
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Information Technology
+classifier: Operating System :: POSIX :: Linux
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: MacOS
+classifier: Typing :: Typed
+requires-dist: typing-extensions>=4.14.1
+requires-python: >=3.9
+project-url: Homepage, https://github.com/pydantic/pydantic-core
+project-url: Funding, https://github.com/sponsors/samuelcolvin
+project-url: Source, https://github.com/pydantic/pydantic-core
+

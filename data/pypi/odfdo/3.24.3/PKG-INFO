@@ -1,0 +1,33 @@
+metadata-version: 2.4
+name: odfdo
+version: 3.24.3
+summary: Python library for OpenDocument Format
+keywords: python,library,ODF,OpenDocument
+author: Jérôme Dumonteil
+author-email: Jérôme Dumonteil <jerome.dumonteil@gmail.com>
+license-expression: Apache-2.0
+license-file: LICENSE
+license-file: NOTICE.txt
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Operating System :: OS Independent
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: lxml<5.1.1,>=4.8.0; python_full_version == "3.10.*"
+requires-dist: lxml<7,>=4.9.4; python_full_version >= "3.11" and python_full_version < "3.13"
+requires-dist: lxml<7,>=5.3.0; python_full_version >= "3.13"
+requires-dist: typing-extensions>=4.15.0
+requires-python: <4,>=3.10
+project-url: homepage, https://github.com/jdum/odfdo
+project-url: repository, https://github.com/jdum/odfdo
+project-url: changelog, https://github.com/jdum/odfdo/blob/main/CHANGES.md
+project-url: documentation, https://jdum.github.io/odfdo/
+

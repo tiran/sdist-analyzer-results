@@ -1,0 +1,49 @@
+metadata-version: 2.4
+name: WebOb
+version: 1.8.10
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: maintainer
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: WSGI request and response object
+keywords: wsgi request web http
+home-page: http://webob.org/
+author: Ian Bicking
+author-email: ianb@colorstudy.com
+maintainer: Pylons Project
+license: MIT
+license-file: docs/license.txt
+classifier: Development Status :: 6 - Mature
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Topic :: Internet :: WWW/HTTP :: WSGI
+classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Application
+classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Middleware
+classifier: Programming Language :: Python :: 2.7
+classifier: Programming Language :: Python :: 3.4
+classifier: Programming Language :: Python :: 3.5
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+requires-dist: legacy-cgi>=2.6; python_version >= "3.13"
+requires-dist: pytest>=3.1.0; extra == "testing"
+requires-dist: coverage; extra == "testing"
+requires-dist: pytest-cov; extra == "testing"
+requires-dist: pytest-xdist; extra == "testing"
+requires-dist: Sphinx>=1.7.5; extra == "docs"
+requires-dist: pylons-sphinx-themes; extra == "docs"
+requires-dist: setuptools; extra == "docs"
+requires-python: !=3.0.*,!=3.1.*,!=3.2.*,>=2.7
+provides-extra: testing
+provides-extra: docs
+

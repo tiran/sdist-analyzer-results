@@ -1,0 +1,45 @@
+metadata-version: 2.5
+name: zarr
+version: 3.3.0
+summary: An implementation of chunked, compressed, N-dimensional arrays for Python
+keywords: Python,compressed,ndimensional-arrays,zarr
+author-email: Alistair Miles <alimanfoo@googlemail.com>
+maintainer: jakirkham, Norman Rzepka, Ryan Abernathey, David Stansby, Deepak Cherian
+maintainer-email: Davis Bennett <davis.v.bennett@gmail.com>, Josh Moore <josh@openmicroscopy.org>, Joe Hamman <joe@earthmover.io>, Juan Nunez-Iglesias <juan.nunez-iglesias@monash.edu>, Martin Durant <mdurant@anaconda.com>, Tom Augspurger <tom.w.augspurger@gmail.com>
+license-expression: MIT
+license-file: LICENSE.txt
+classifier: Development Status :: 6 - Mature
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Information Technology
+classifier: Intended Audience :: Science/Research
+classifier: Operating System :: Unix
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: donfig>=0.8
+requires-dist: google-crc32c>=1.5
+requires-dist: numcodecs>=0.14
+requires-dist: numpy>=2
+requires-dist: packaging>=22.0
+requires-dist: typing-extensions>=4.14
+requires-dist: cast-value-rs; extra == "cast-value-rs"
+requires-dist: typer; extra == "cli"
+requires-dist: cupy-cuda12x; sys_platform != "darwin" and extra == "gpu"
+requires-dist: universal-pathlib; extra == "optional"
+requires-dist: fsspec>=2023.10.0; extra == "remote"
+requires-dist: obstore>=0.5.1; extra == "remote"
+requires-python: >=3.12
+project-url: issues, https://github.com/zarr-developers/zarr-python/issues
+project-url: changelog, https://zarr.readthedocs.io/en/stable/release-notes.html
+project-url: Discussions, https://github.com/zarr-developers/zarr-python/discussions
+project-url: documentation, https://zarr.readthedocs.io/
+project-url: homepage, https://github.com/zarr-developers/zarr-python
+provides-extra: cast-value-rs
+provides-extra: cli
+provides-extra: gpu
+provides-extra: optional
+provides-extra: remote
+

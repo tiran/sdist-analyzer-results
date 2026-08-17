@@ -1,0 +1,43 @@
+metadata-version: 2.4
+name: semantic_version
+version: 2.10.0
+dynamic: license-file
+summary: A library implementing the 'SemVer' scheme.
+keywords: semantic version,versioning,version
+home-page: https://github.com/rbarrois/python-semanticversion
+author: Raphaël Barrois
+author-email: raphael.barrois+semver@polytechnique.org
+license: BSD
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: BSD License
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 2.7
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.4
+classifier: Programming Language :: Python :: 3.5
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: Django>=1.11; extra == "dev"
+requires-dist: nose2; extra == "dev"
+requires-dist: tox; extra == "dev"
+requires-dist: check_manifest; extra == "dev"
+requires-dist: coverage; extra == "dev"
+requires-dist: flake8; extra == "dev"
+requires-dist: wheel; extra == "dev"
+requires-dist: zest.releaser[recommended]; extra == "dev"
+requires-dist: readme_renderer<25.0; python_version == "3.4" and extra == "dev"
+requires-dist: colorama<=0.4.1; python_version == "3.4" and extra == "dev"
+requires-dist: Sphinx; extra == "doc"
+requires-dist: sphinx_rtd_theme; extra == "doc"
+requires-python: >=2.7
+provides-extra: dev
+provides-extra: doc
+

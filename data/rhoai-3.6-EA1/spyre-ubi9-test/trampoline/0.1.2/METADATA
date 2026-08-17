@@ -1,0 +1,26 @@
+metadata-version: 2.4
+name: trampoline
+version: 0.1.2
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: summary
+summary: Simple and tiny yield-based trampoline implementation.
+keywords: trampoline recursion tail call
+home-page: https://gitlab.com/ferreum/trampoline
+author-email: code.danielk@gmail.com
+license: MIT
+license-file: LICENSE
+classifier: Development Status :: 3 - Alpha
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Natural Language :: English
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3.5
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+

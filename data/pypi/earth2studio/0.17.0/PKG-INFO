@@ -1,0 +1,318 @@
+metadata-version: 2.4
+name: earth2studio
+version: 0.17.0
+summary: Open-source deep-learning framework for exploring, building and deploying AI weather/climate workflows.
+author: NVIDIA PhysicsNeMo Team
+license-expression: Apache-2.0
+license-file: LICENSE
+classifier: Environment :: GPU
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+classifier: Typing :: Typed
+requires-dist: cftime
+requires-dist: fsspec>=2024.2.0
+requires-dist: gcsfs
+requires-dist: h5netcdf>=1.0.0
+requires-dist: h5py>=3.2.0
+requires-dist: huggingface-hub>=0.27.0
+requires-dist: loguru
+requires-dist: netcdf4<1.7.3,>=1.6.4
+requires-dist: obstore>=0.8
+requires-dist: pandas
+requires-dist: pyarrow>=14.0.0
+requires-dist: pygrib
+requires-dist: python-dotenv
+requires-dist: rich
+requires-dist: s3fs>=2023.5.0
+requires-dist: torch>=2.5.0
+requires-dist: tqdm>=4.65.0
+requires-dist: xarray[parallel]>=2023.1.0
+requires-dist: zarr>=3.1.3
+requires-dist: fme; extra == "ace2"
+requires-dist: pandas>=2.3.2; extra == "ace2"
+requires-dist: scipy>=1.15.2; extra == "ace2"
+requires-dist: anemoi-models==0.5.1; extra == "aifs"
+requires-dist: earthkit-regrid==0.4.0; extra == "aifs"
+requires-dist: ecmwf-opendata>=0.3.29; extra == "aifs"
+requires-dist: flash-attn; extra == "aifs"
+requires-dist: anemoi-models<0.9.5,>=0.9.3; extra == "aifs2"
+requires-dist: earthkit-regrid>=0.5.1; extra == "aifs2"
+requires-dist: ecmwf-opendata>=0.3.29; extra == "aifs2"
+requires-dist: flash-attn; extra == "aifs2"
+requires-dist: torch-geometric>=2.6.0; extra == "aifs2"
+requires-dist: anemoi-models==0.11.2; extra == "aifs2ens"
+requires-dist: earthkit-regrid>=0.5.1; extra == "aifs2ens"
+requires-dist: ecmwf-opendata>=0.3.29; extra == "aifs2ens"
+requires-dist: flash-attn; extra == "aifs2ens"
+requires-dist: torch-geometric>=2.6.0; extra == "aifs2ens"
+requires-dist: anemoi-models==0.5.1; extra == "aifsens"
+requires-dist: earthkit-regrid==0.4.0; extra == "aifsens"
+requires-dist: ecmwf-opendata>=0.3.29; extra == "aifsens"
+requires-dist: flash-attn; extra == "aifsens"
+requires-dist: aiofiles>=23.0.0; extra == "all"
+requires-dist: arraylake>=1.0.0; python_version >= "3.12" and extra == "all"
+requires-dist: azure-identity>=1.15.0; extra == "all"
+requires-dist: azure-storage-blob>=12.19.0; extra == "all"
+requires-dist: cbottle; python_full_version >= "3.12" and extra == "all"
+requires-dist: cdsapi>=0.7.5; extra == "all"
+requires-dist: cfgrib>=0.9.10.3; extra == "all"
+requires-dist: climate-learn; extra == "all"
+requires-dist: cryptography>=41.0.0; extra == "all"
+requires-dist: cucim-cu13>=25.4.0; extra == "all"
+requires-dist: cudf-cu13>=26.2.0; extra == "all"
+requires-dist: cupy-cuda13x; extra == "all"
+requires-dist: dm-haiku>=0.0.14; extra == "all"
+requires-dist: dm-tree>=0.1.9; extra == "all"
+requires-dist: earth2grid; extra == "all"
+requires-dist: eccodes>=2.39.2; extra == "all"
+requires-dist: eccodeslib>=2.39.2; extra == "all"
+requires-dist: ecmwf-opendata>=0.3.29; extra == "all"
+requires-dist: einops; extra == "all"
+requires-dist: einops>=0.8.1; extra == "all"
+requires-dist: eumdac>=3.1.0; extra == "all"
+requires-dist: fastapi>=0.104.0; extra == "all"
+requires-dist: flax>=0.10.6; extra == "all"
+requires-dist: graphcast; extra == "all"
+requires-dist: gribberish>=1.5.0; python_version >= "3.12" and extra == "all"
+requires-dist: hiredis>=2.0.0; extra == "all"
+requires-dist: httpx==0.28.1; extra == "all"
+requires-dist: httpx>=0.25.0; extra == "all"
+requires-dist: hydra-core>=1.3.0; extra == "all"
+requires-dist: hydra-core>=1.3.2; extra == "all"
+requires-dist: icechunk>=2.0.0; python_version >= "3.12" and extra == "all"
+requires-dist: importlib-metadata; extra == "all"
+requires-dist: intake-esgf>=2026.1.26; python_version >= "3.12" and extra == "all"
+requires-dist: jax[cuda13]>=0.4.26; extra == "all"
+requires-dist: makani; extra == "all"
+requires-dist: microsoft-aurora>=2.0.0; extra == "all"
+requires-dist: moviepy; extra == "all"
+requires-dist: multi-storage-client>=0.44.0; extra == "all"
+requires-dist: natten; python_version < "3.14" and extra == "all"
+requires-dist: nvidia-physicsnemo>=1.0.1; extra == "all"
+requires-dist: nvidia-physicsnemo>=1.3.0; extra == "all"
+requires-dist: nvidia-physicsnemo>=2.0; extra == "all"
+requires-dist: nvidia-physicsnemo>=2.1.0; extra == "all"
+requires-dist: nvtx>=0.2.11; extra == "all"
+requires-dist: omegaconf>=2.3.0; extra == "all"
+requires-dist: onnx; extra == "all"
+requires-dist: onnxruntime-gpu>=1.21.0; extra == "all"
+requires-dist: onnxscript; extra == "all"
+requires-dist: pcodec>=1.0.2; python_version >= "3.12" and extra == "all"
+requires-dist: planetary-computer>=0.5.0; extra == "all"
+requires-dist: prometheus-client>=0.17.0; extra == "all"
+requires-dist: pybufrkit>=0.2.22; extra == "all"
+requires-dist: pydantic>=2.0.0; extra == "all"
+requires-dist: pynvml>=12.0.0; extra == "all"
+requires-dist: pyproj>=3.7.1; extra == "all"
+requires-dist: pystac-client>=0.9.0; extra == "all"
+requires-dist: python-dotenv>=1.0.0; extra == "all"
+requires-dist: python-multipart>=0.0.6; extra == "all"
+requires-dist: rasterio>=1.3.9; extra == "all"
+requires-dist: redis>=5.0.0; extra == "all"
+requires-dist: requests>=2.25.0; extra == "all"
+requires-dist: rioxarray>=0.15.5; extra == "all"
+requires-dist: rq>=1.15.0; extra == "all"
+requires-dist: ruamel-yaml>=0.18.10; extra == "all"
+requires-dist: ruamel-yaml>=0.18.14; extra == "all"
+requires-dist: scikit-image>=0.25.2; extra == "all"
+requires-dist: scipy>=1.10.0; extra == "all"
+requires-dist: scipy>=1.15.2; extra == "all"
+requires-dist: timm; extra == "all"
+requires-dist: torch-harmonics; extra == "all"
+requires-dist: torch-harmonics>=0.7.4; extra == "all"
+requires-dist: torch-harmonics>=0.8.0; extra == "all"
+requires-dist: types-redis; extra == "all"
+requires-dist: urllib3>=1.26.0; extra == "all"
+requires-dist: uvicorn[standard]>=0.24.0; extra == "all"
+requires-dist: xarray<2026.4.0; extra == "all"
+requires-dist: einops; extra == "atlas"
+requires-dist: natten; python_version < "3.14" and extra == "atlas"
+requires-dist: nvidia-physicsnemo>=1.3.0; extra == "atlas"
+requires-dist: timm; extra == "atlas"
+requires-dist: torch-harmonics; extra == "atlas"
+requires-dist: microsoft-aurora>=2.0.0; extra == "aurora"
+requires-dist: cbottle; python_full_version >= "3.12" and extra == "cbottle"
+requires-dist: earth2grid; extra == "cbottle"
+requires-dist: einops>=0.8.1; extra == "corrdiff"
+requires-dist: nvidia-physicsnemo>=2.0; extra == "corrdiff"
+requires-dist: nvtx>=0.2.11; extra == "corrdiff"
+requires-dist: scipy>=1.15.2; extra == "corrdiff"
+requires-dist: einops>=0.8.1; extra == "cosmo"
+requires-dist: natten; python_version < "3.14" and extra == "cosmo"
+requires-dist: nvidia-physicsnemo>=2.2.0a0; extra == "cosmo"
+requires-dist: nvtx>=0.2.11; extra == "cosmo"
+requires-dist: cucim-cu13>=25.4.0; extra == "cyclone"
+requires-dist: cupy-cuda13x; extra == "cyclone"
+requires-dist: scikit-image>=0.25.2; extra == "cyclone"
+requires-dist: cudf-cu13>=26.2.0; extra == "da-healda"
+requires-dist: cupy-cuda13x; extra == "da-healda"
+requires-dist: earth2grid; extra == "da-healda"
+requires-dist: nvidia-physicsnemo<=2.1.1,>=2.0; python_version < "3.14" and extra == "da-healda"
+requires-dist: cudf-cu13>=26.2.0; extra == "da-interp"
+requires-dist: cupy-cuda13x; extra == "da-interp"
+requires-dist: cudf-cu13>=26.2.0; extra == "da-stormcast"
+requires-dist: cupy-cuda13x; extra == "da-stormcast"
+requires-dist: einops>=0.8.1; extra == "da-stormcast"
+requires-dist: nvidia-physicsnemo>=2.0; extra == "da-stormcast"
+requires-dist: nvtx>=0.2.11; extra == "da-stormcast"
+requires-dist: omegaconf>=2.3.0; extra == "da-stormcast"
+requires-dist: pyproj>=3.7.1; extra == "da-stormcast"
+requires-dist: scipy>=1.15.2; extra == "da-stormcast"
+requires-dist: arraylake>=1.0.0; python_version >= "3.12" and extra == "data"
+requires-dist: cdsapi>=0.7.5; extra == "data"
+requires-dist: cfgrib>=0.9.10.3; extra == "data"
+requires-dist: eccodes>=2.39.2; extra == "data"
+requires-dist: eccodeslib>=2.39.2; extra == "data"
+requires-dist: ecmwf-opendata>=0.3.29; extra == "data"
+requires-dist: eumdac>=3.1.0; extra == "data"
+requires-dist: gribberish>=1.5.0; python_version >= "3.12" and extra == "data"
+requires-dist: httpx==0.28.1; extra == "data"
+requires-dist: icechunk>=2.0.0; python_version >= "3.12" and extra == "data"
+requires-dist: intake-esgf>=2026.1.26; python_version >= "3.12" and extra == "data"
+requires-dist: pcodec>=1.0.2; python_version >= "3.12" and extra == "data"
+requires-dist: planetary-computer>=0.5.0; extra == "data"
+requires-dist: pybufrkit>=0.2.22; extra == "data"
+requires-dist: pyproj>=3.7.1; extra == "data"
+requires-dist: pystac-client>=0.9.0; extra == "data"
+requires-dist: rasterio>=1.3.9; extra == "data"
+requires-dist: rioxarray>=0.15.5; extra == "data"
+requires-dist: scipy>=1.15.2; extra == "data"
+requires-dist: earth2grid; extra == "dlesym"
+requires-dist: hydra-core>=1.3.2; extra == "dlesym"
+requires-dist: nvidia-physicsnemo>=1.0.1; extra == "dlesym"
+requires-dist: omegaconf>=2.3.0; extra == "dlesym"
+requires-dist: importlib-metadata; extra == "dlwp"
+requires-dist: nvidia-physicsnemo>=1.0.1; extra == "dlwp"
+requires-dist: nvidia-physicsnemo>=1.0.1; extra == "fcn"
+requires-dist: makani; extra == "fcn3"
+requires-dist: moviepy; extra == "fcn3"
+requires-dist: ruamel-yaml>=0.18.14; extra == "fcn3"
+requires-dist: scipy>=1.10.0; extra == "fcn3"
+requires-dist: torch-harmonics>=0.8.0; extra == "fcn3"
+requires-dist: onnx; extra == "fengwu"
+requires-dist: onnxruntime-gpu>=1.21.0; extra == "fengwu"
+requires-dist: onnxscript; extra == "fengwu"
+requires-dist: onnx; extra == "fuxi"
+requires-dist: onnxruntime-gpu>=1.21.0; extra == "fuxi"
+requires-dist: onnxscript; extra == "fuxi"
+requires-dist: dm-haiku>=0.0.14; extra == "gencast"
+requires-dist: dm-tree>=0.1.9; extra == "gencast"
+requires-dist: flax>=0.10.6; extra == "gencast"
+requires-dist: graphcast; extra == "gencast"
+requires-dist: jax[cuda13]>=0.4.26; extra == "gencast"
+requires-dist: xarray<2026.4.0; extra == "gencast"
+requires-dist: dm-haiku>=0.0.14; extra == "graphcast"
+requires-dist: dm-tree>=0.1.9; extra == "graphcast"
+requires-dist: flax>=0.10.6; extra == "graphcast"
+requires-dist: graphcast; extra == "graphcast"
+requires-dist: jax[cuda13]>=0.4.26; extra == "graphcast"
+requires-dist: xarray<2026.4.0; extra == "graphcast"
+requires-dist: nvidia-physicsnemo>=2.0; extra == "interp-modafno"
+requires-dist: climate-learn; extra == "orbit"
+requires-dist: onnx; extra == "pangu"
+requires-dist: onnxruntime-gpu>=1.21.0; extra == "pangu"
+requires-dist: onnxscript; extra == "pangu"
+requires-dist: scipy>=1.15.2; extra == "perturbation"
+requires-dist: torch-harmonics>=0.7.4; extra == "perturbation"
+requires-dist: nvidia-physicsnemo>=1.0.1; extra == "precip-afno"
+requires-dist: nvidia-physicsnemo>=1.0.1; extra == "precip-afno-v2"
+requires-dist: aiofiles>=23.0.0; extra == "serve"
+requires-dist: azure-identity>=1.15.0; extra == "serve"
+requires-dist: azure-storage-blob>=12.19.0; extra == "serve"
+requires-dist: cryptography>=41.0.0; extra == "serve"
+requires-dist: fastapi>=0.104.0; extra == "serve"
+requires-dist: hiredis>=2.0.0; extra == "serve"
+requires-dist: httpx>=0.25.0; extra == "serve"
+requires-dist: hydra-core>=1.3.0; extra == "serve"
+requires-dist: multi-storage-client>=0.44.0; extra == "serve"
+requires-dist: prometheus-client>=0.17.0; extra == "serve"
+requires-dist: pydantic>=2.0.0; extra == "serve"
+requires-dist: python-dotenv>=1.0.0; extra == "serve"
+requires-dist: python-multipart>=0.0.6; extra == "serve"
+requires-dist: redis>=5.0.0; extra == "serve"
+requires-dist: requests>=2.25.0; extra == "serve"
+requires-dist: rq>=1.15.0; extra == "serve"
+requires-dist: types-redis; extra == "serve"
+requires-dist: urllib3>=1.26.0; extra == "serve"
+requires-dist: uvicorn[standard]>=0.24.0; extra == "serve"
+requires-dist: makani; extra == "sfno"
+requires-dist: moviepy; extra == "sfno"
+requires-dist: pynvml>=12.0.0; extra == "sfno"
+requires-dist: ruamel-yaml>=0.18.10; extra == "sfno"
+requires-dist: scipy>=1.10.0; extra == "sfno"
+requires-dist: torch-harmonics>=0.8.0; extra == "sfno"
+requires-dist: nvidia-physicsnemo>=1.0.1; extra == "solarradiation-afno"
+requires-dist: nvidia-physicsnemo>=1.0.1; extra == "statistics"
+requires-dist: einops>=0.8.1; extra == "stormcast"
+requires-dist: nvidia-physicsnemo>=2.0; extra == "stormcast"
+requires-dist: nvtx>=0.2.11; extra == "stormcast"
+requires-dist: omegaconf>=2.3.0; extra == "stormcast"
+requires-dist: pyproj>=3.7.1; extra == "stormcast"
+requires-dist: scipy>=1.15.2; extra == "stormcast"
+requires-dist: natten; python_version < "3.14" and extra == "stormcast-conus"
+requires-dist: nvidia-physicsnemo>=2.2.0a0; extra == "stormcast-conus"
+requires-dist: nvtx>=0.2.11; extra == "stormcast-conus"
+requires-dist: omegaconf>=2.3.0; extra == "stormcast-conus"
+requires-dist: scipy>=1.15.2; extra == "stormcast-conus"
+requires-dist: earth2grid; extra == "stormscope"
+requires-dist: natten; python_version < "3.14" and extra == "stormscope"
+requires-dist: nvidia-physicsnemo>=2.1.0; extra == "stormscope"
+requires-dist: nvtx>=0.2.11; extra == "stormscope"
+requires-dist: scipy>=1.15.2; extra == "stormscope"
+requires-dist: earth2grid; extra == "utils"
+requires-dist: scipy>=1.15.2; extra == "utils"
+requires-dist: nvidia-physicsnemo>=1.0.1; extra == "windgust-afno"
+requires-python: <3.15,>=3.11
+project-url: Homepage, https://github.com/NVIDIA/earth2studio
+project-url: Documentation, https://nvidia.github.io/earth2studio
+project-url: Issues, https://github.com/NVIDIA/earth2studio/issues
+project-url: Changelog, https://github.com/NVIDIA/earth2studio/blob/main/CHANGELOG.md
+provides-extra: ace2
+provides-extra: aifs
+provides-extra: aifs2
+provides-extra: aifs2ens
+provides-extra: aifsens
+provides-extra: all
+provides-extra: atlas
+provides-extra: aurora
+provides-extra: cbottle
+provides-extra: climatenet
+provides-extra: corrdiff
+provides-extra: cosmo
+provides-extra: cyclone
+provides-extra: da-healda
+provides-extra: da-interp
+provides-extra: da-stormcast
+provides-extra: data
+provides-extra: derived
+provides-extra: dlesym
+provides-extra: dlwp
+provides-extra: fcn
+provides-extra: fcn3
+provides-extra: fengwu
+provides-extra: fuxi
+provides-extra: gencast
+provides-extra: graphcast
+provides-extra: interp-modafno
+provides-extra: orbit
+provides-extra: pangu
+provides-extra: perturbation
+provides-extra: precip-afno
+provides-extra: precip-afno-v2
+provides-extra: serve
+provides-extra: sfno
+provides-extra: solarradiation-afno
+provides-extra: statistics
+provides-extra: stormcast
+provides-extra: stormcast-conus
+provides-extra: stormscope
+provides-extra: ucast
+provides-extra: utils
+provides-extra: windgust-afno
+

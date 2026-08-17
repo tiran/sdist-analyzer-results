@@ -1,0 +1,38 @@
+metadata-version: 2.4
+name: tokenizers
+version: 0.22.2
+keywords: NLP,tokenizer,BPE,transformer,deep learning
+author-email: Nicolas Patry <patry.nicolas@protonmail.com>, Anthony Moi <anthony@huggingface.co>
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Education
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+requires-dist: huggingface-hub<2.0,>=0.16.4
+requires-dist: tokenizers[testing]; extra == "dev"
+requires-dist: sphinx; extra == "docs"
+requires-dist: sphinx-rtd-theme; extra == "docs"
+requires-dist: setuptools-rust; extra == "docs"
+requires-dist: pytest; extra == "testing"
+requires-dist: pytest-asyncio; extra == "testing"
+requires-dist: requests; extra == "testing"
+requires-dist: numpy; extra == "testing"
+requires-dist: datasets; extra == "testing"
+requires-dist: ruff; extra == "testing"
+requires-dist: ty; extra == "testing"
+requires-python: >=3.9
+project-url: Homepage, https://github.com/huggingface/tokenizers
+project-url: Source, https://github.com/huggingface/tokenizers
+provides-extra: dev
+provides-extra: docs
+provides-extra: testing
+

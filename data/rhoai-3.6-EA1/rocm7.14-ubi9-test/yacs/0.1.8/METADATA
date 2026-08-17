@@ -1,0 +1,22 @@
+metadata-version: 2.4
+name: yacs
+version: 0.1.8
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: requires-dist
+dynamic: summary
+summary: Yet Another Configuration System
+home-page: https://github.com/rbgirshick/yacs
+author: Ross Girshick
+author-email: ross.girshick@gmail.com
+classifier: Programming Language :: Python :: 2.7
+classifier: Programming Language :: Python :: 3
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: OS Independent
+classifier: Intended Audience :: Science/Research
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+requires-dist: PyYAML
+

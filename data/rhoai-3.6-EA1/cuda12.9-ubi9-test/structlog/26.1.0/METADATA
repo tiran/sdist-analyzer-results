@@ -1,0 +1,32 @@
+metadata-version: 2.5
+name: structlog
+version: 26.1.0
+summary: Structured Logging for Python
+keywords: log,logging,structure,structured
+author-email: Hynek Schlawack <hs@ox.cx>
+license-expression: MIT OR Apache-2.0
+license-file: LICENSE-APACHE
+license-file: LICENSE-MIT
+license-file: NOTICE
+classifier: Development Status :: 5 - Production/Stable
+classifier: License :: OSI Approved :: Apache Software License
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: 3.15
+classifier: Topic :: System :: Logging
+classifier: Typing :: Typed
+requires-dist: typing-extensions; python_version < "3.11"
+requires-python: >=3.10
+project-url: Documentation, https://www.structlog.org/
+project-url: Changelog, https://github.com/hynek/structlog/blob/main/CHANGELOG.md
+project-url: GitHub, https://github.com/hynek/structlog
+project-url: Funding, https://github.com/sponsors/hynek
+project-url: Tidelift, https://tidelift.com?utm_source=lifter&utm_medium=referral&utm_campaign=hynek
+project-url: Mastodon, https://mastodon.social/@hynek
+project-url: Bluesky, https://bsky.app/profile/hynek.me
+project-url: Twitter, https://twitter.com/hynek
+

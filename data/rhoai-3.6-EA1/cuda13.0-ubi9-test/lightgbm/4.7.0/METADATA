@@ -1,0 +1,48 @@
+metadata-version: 2.4
+name: lightgbm
+version: 4.7.0
+summary: LightGBM Python-package
+maintainer-email: Yu Shi <yushi@microsoft.com>
+license-expression: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Science/Research
+classifier: Natural Language :: English
+classifier: Operating System :: MacOS
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: POSIX
+classifier: Operating System :: Unix
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+requires-dist: narwhals>=1.15
+requires-dist: numpy>=1.21.3
+requires-dist: scipy
+requires-dist: narwhals[pyarrow]; extra == "arrow"
+requires-dist: pyarrow>=16.0.0; extra == "arrow"
+requires-dist: dask[array,dataframe,distributed]>=2.0.0; extra == "dask"
+requires-dist: narwhals[pandas]; extra == "dask"
+requires-dist: pandas>=1.3.4; extra == "dask"
+requires-dist: narwhals[pandas]; extra == "pandas"
+requires-dist: pandas>=1.3.4; extra == "pandas"
+requires-dist: graphviz; extra == "plotting"
+requires-dist: matplotlib; extra == "plotting"
+requires-dist: narwhals[polars]; extra == "polars"
+requires-dist: polars>=1.0.0; extra == "polars"
+requires-dist: scikit-learn>=1.0.2; extra == "scikit-learn"
+requires-python: >=3.10
+project-url: homepage, https://github.com/lightgbm-org/LightGBM
+project-url: documentation, https://lightgbm.readthedocs.io/en/latest/
+project-url: repository, https://github.com/lightgbm-org/LightGBM.git
+project-url: changelog, https://github.com/lightgbm-org/LightGBM/releases
+provides-extra: arrow
+provides-extra: dask
+provides-extra: pandas
+provides-extra: plotting
+provides-extra: polars
+provides-extra: scikit-learn
+

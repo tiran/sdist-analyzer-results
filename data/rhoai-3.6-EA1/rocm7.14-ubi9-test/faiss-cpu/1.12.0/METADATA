@@ -1,0 +1,25 @@
+metadata-version: 2.4
+name: faiss-cpu
+version: 1.12.0
+summary: A library for efficient similarity search and clustering of dense vectors.
+keywords: faiss,similarity search,clustering,machine learning
+author-email: Kota Yamaguchi <yamaguchi_kota@cyberagent.co.jp>
+license-expression: MIT AND BSD-3-Clause
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: POSIX
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+requires-dist: numpy<3.0,>=1.25.0
+requires-dist: packaging
+requires-python: <3.15,>=3.9
+project-url: Repository, https://github.com/kyamagu/faiss-wheels
+

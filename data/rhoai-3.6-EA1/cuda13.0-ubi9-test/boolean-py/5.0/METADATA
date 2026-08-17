@@ -1,0 +1,48 @@
+metadata-version: 2.4
+name: boolean.py
+version: 5.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: provides-extra
+dynamic: summary
+summary: Define boolean algebras, create and parse boolean expressions and create custom boolean DSL.
+keywords: boolean expression,boolean algebra,logic,expression parser
+home-page: https://github.com/bastikr/boolean.py
+author: Sebastian Kraemer
+author-email: basti.kr@gmail.com
+license: BSD-2-Clause
+license-file: LICENSE.txt
+license-file: README.rst
+license-file: CHANGELOG.rst
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Topic :: Scientific/Engineering :: Mathematics
+classifier: Topic :: Software Development :: Compilers
+classifier: Topic :: Software Development :: Libraries
+classifier: Topic :: Utilities
+requires-dist: pytest!=7.0.0,>=6; extra == "testing"
+requires-dist: pytest-xdist>=2; extra == "testing"
+requires-dist: twine; extra == "dev"
+requires-dist: build; extra == "dev"
+requires-dist: black; extra == "linting"
+requires-dist: isort; extra == "linting"
+requires-dist: pycodestyle; extra == "linting"
+requires-dist: Sphinx>=3.3.1; extra == "docs"
+requires-dist: sphinx-rtd-theme>=0.5.0; extra == "docs"
+requires-dist: doc8>=0.8.1; extra == "docs"
+requires-dist: sphinxcontrib-apidoc>=0.3.0; extra == "docs"
+provides-extra: testing
+provides-extra: dev
+provides-extra: linting
+provides-extra: docs
+

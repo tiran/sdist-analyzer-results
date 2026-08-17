@@ -1,0 +1,24 @@
+metadata-version: 2.4
+name: azure-ai-contentunderstanding
+version: 1.2.0b3
+dynamic: license-file
+summary: Microsoft Corporation Azure AI Content Understanding Client Library for Python
+keywords: azure,azure sdk
+author-email: Microsoft Corporation <azpysdkhelp@microsoft.com>
+license-expression: MIT
+license-file: LICENSE
+classifier: Development Status :: 4 - Beta
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-dist: isodate>=0.6.1
+requires-dist: azure-core>=1.37.0
+requires-dist: typing-extensions>=4.6.0
+requires-python: >=3.10
+project-url: repository, https://github.com/Azure/azure-sdk-for-python
+

@@ -1,0 +1,37 @@
+metadata-version: 2.4
+name: multimethod
+version: 1.12
+dynamic: license-file
+summary: Multiple argument dispatching.
+keywords: multiple,dispatch,multidispatch,generic,functions,methods,overload
+author-email: Aric Coady <aric.coady@gmail.com>
+license: Copyright 2022 Aric Coady
+                 
+                    Licensed under the Apache License, Version 2.0 (the "License");
+                    you may not use this file except in compliance with the License.
+                    You may obtain a copy of the License at
+                 
+                      http://www.apache.org/licenses/LICENSE-2.0
+                 
+                    Unless required by applicable law or agreed to in writing, software
+                    distributed under the License is distributed on an "AS IS" BASIS,
+                    WITHOUT WARRANTIES OR CONDITION...
+license-file: LICENSE.txt
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Typing :: Typed
+requires-python: >=3.9
+project-url: Homepage, https://github.com/coady/multimethod
+project-url: Documentation, https://coady.github.io/multimethod
+project-url: Changelog, https://github.com/coady/multimethod/blob/main/CHANGELOG.md
+project-url: Issues, https://github.com/coady/multimethod/issues
+

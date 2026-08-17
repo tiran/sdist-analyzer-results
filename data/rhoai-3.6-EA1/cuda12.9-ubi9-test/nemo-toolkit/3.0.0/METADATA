@@ -1,0 +1,302 @@
+metadata-version: 2.4
+name: nemo-toolkit
+version: 3.0.0
+dynamic: author
+dynamic: download-url
+dynamic: home-page
+dynamic: license-file
+dynamic: maintainer
+dynamic: requires-python
+summary: NeMo - a toolkit for Conversational AI
+keywords: NLP,NeMo,deep,gpu,language,learning,learning,machine,nvidia,pytorch,speech,torch,tts
+home-page: https://github.com/NVIDIA-NeMo/NeMo
+download-url: https://github.com/NVIDIA-NeMo/NeMo/releases
+author: NVIDIA
+author-email: NVIDIA <nemo-toolkit@nvidia.com>
+maintainer: NVIDIA
+maintainer-email: NVIDIA <nemo-toolkit@nvidia.com>
+license: Apache License
+                                            Version 2.0, January 2004
+                                         http://www.apache.org/licenses/
+                 
+                    TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+                 
+                    1. Definitions.
+                 
+                       "License" shall mean the terms and conditions for use, reproduction,
+                       and distribution as defined by Sections 1 through 9 of this document.
+                 
+                       "Licensor" shall mean the copyright owner or entity a...
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Information Technology
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Natural Language :: English
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+classifier: Topic :: Scientific/Engineering :: Image Recognition
+classifier: Topic :: Scientific/Engineering :: Mathematics
+classifier: Topic :: Scientific/Engineering
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: Software Development :: Libraries
+classifier: Topic :: Utilities
+requires-dist: aistore
+requires-dist: fsspec>=2024.12.0
+requires-dist: huggingface_hub>=0.24
+requires-dist: numba; platform_system == "Darwin"
+requires-dist: cuda-bindings; platform_system != "Darwin"
+requires-dist: numpy>=1.22
+requires-dist: onnx>=1.7.0
+requires-dist: scikit-learn
+requires-dist: setuptools>=70.0.0
+requires-dist: smart-open
+requires-dist: tensorboard
+requires-dist: text-unidecode
+requires-dist: torch>=2.6.0
+requires-dist: tqdm>=4.41.0
+requires-dist: wrapt
+requires-dist: hydra-core<=1.3.2,>1.3; extra == "core"
+requires-dist: lightning<=2.4.0,>2.2.1; extra == "core"
+requires-dist: omegaconf<=2.3; extra == "core"
+requires-dist: torchmetrics>=0.11.0; extra == "core"
+requires-dist: transformers; extra == "core"
+requires-dist: wandb; extra == "core"
+requires-dist: webdataset>=0.2.86; extra == "core"
+requires-dist: nv_one_logger_core>=2.3.1; extra == "core"
+requires-dist: nv_one_logger_training_telemetry>=2.3.1; extra == "core"
+requires-dist: nv_one_logger_pytorch_lightning_integration>=2.3.1; extra == "core"
+requires-dist: hydra-core<=1.3.2,>1.3; extra == "lightning"
+requires-dist: lightning<=2.4.0,>2.2.1; extra == "lightning"
+requires-dist: omegaconf<=2.3; extra == "lightning"
+requires-dist: torchmetrics>=0.11.0; extra == "lightning"
+requires-dist: transformers; extra == "lightning"
+requires-dist: wandb; extra == "lightning"
+requires-dist: webdataset>=0.2.86; extra == "lightning"
+requires-dist: nv_one_logger_core>=2.3.1; extra == "lightning"
+requires-dist: nv_one_logger_training_telemetry>=2.3.1; extra == "lightning"
+requires-dist: nv_one_logger_pytorch_lightning_integration>=2.3.1; extra == "lightning"
+requires-dist: datasets>=3.2.0; extra == "common-only"
+requires-dist: einops; extra == "common-only"
+requires-dist: pandas; extra == "common-only"
+requires-dist: sentencepiece<1.0.0; extra == "common-only"
+requires-dist: braceexpand; extra == "asr-only"
+requires-dist: einops; extra == "asr-only"
+requires-dist: kaldialign; extra == "asr-only"
+requires-dist: lhotse>=1.33.0; extra == "asr-only"
+requires-dist: librosa>=0.10.1; extra == "asr-only"
+requires-dist: packaging; extra == "asr-only"
+requires-dist: sacrebleu; extra == "asr-only"
+requires-dist: scipy>=0.14; extra == "asr-only"
+requires-dist: soundfile; extra == "asr-only"
+requires-dist: whisper_normalizer; extra == "asr-only"
+requires-dist: einops; extra == "tts"
+requires-dist: janome; extra == "tts"
+requires-dist: jieba; extra == "tts"
+requires-dist: librosa; extra == "tts"
+requires-dist: matplotlib; extra == "tts"
+requires-dist: nemo_text_processing; ("arm" not in platform_machine and "aarch" not in platform_machine and sys_platform != "darwin") and extra == "tts"
+requires-dist: nltk; extra == "tts"
+requires-dist: pandas; extra == "tts"
+requires-dist: pypinyin; extra == "tts"
+requires-dist: pypinyin-dict; extra == "tts"
+requires-dist: pyopenjtalk; extra == "tts"
+requires-dist: braceexpand; extra == "tts"
+requires-dist: kaldialign; extra == "tts"
+requires-dist: lhotse>=1.33.0; extra == "tts"
+requires-dist: librosa>=0.10.1; extra == "tts"
+requires-dist: packaging; extra == "tts"
+requires-dist: sacrebleu; extra == "tts"
+requires-dist: scipy>=0.14; extra == "tts"
+requires-dist: soundfile; extra == "tts"
+requires-dist: whisper_normalizer; extra == "tts"
+requires-dist: datasets>=3.2.0; extra == "tts"
+requires-dist: sentencepiece<1.0.0; extra == "tts"
+requires-dist: hydra-core<=1.3.2,>1.3; extra == "tts"
+requires-dist: lightning<=2.4.0,>2.2.1; extra == "tts"
+requires-dist: omegaconf<=2.3; extra == "tts"
+requires-dist: torchmetrics>=0.11.0; extra == "tts"
+requires-dist: transformers; extra == "tts"
+requires-dist: wandb; extra == "tts"
+requires-dist: webdataset>=0.2.86; extra == "tts"
+requires-dist: nv_one_logger_core>=2.3.1; extra == "tts"
+requires-dist: nv_one_logger_training_telemetry>=2.3.1; extra == "tts"
+requires-dist: nv_one_logger_pytorch_lightning_integration>=2.3.1; extra == "tts"
+requires-dist: einops; extra == "audio"
+requires-dist: lhotse>=1.33.0; extra == "audio"
+requires-dist: librosa>=0.10.0; extra == "audio"
+requires-dist: matplotlib; extra == "audio"
+requires-dist: pesq; (platform_machine != "x86_64" or platform_system != "Darwin") and extra == "audio"
+requires-dist: pystoi; extra == "audio"
+requires-dist: scipy>=0.14; extra == "audio"
+requires-dist: soundfile; extra == "audio"
+requires-dist: datasets>=3.2.0; extra == "audio"
+requires-dist: pandas; extra == "audio"
+requires-dist: sentencepiece<1.0.0; extra == "audio"
+requires-dist: hydra-core<=1.3.2,>1.3; extra == "audio"
+requires-dist: lightning<=2.4.0,>2.2.1; extra == "audio"
+requires-dist: omegaconf<=2.3; extra == "audio"
+requires-dist: torchmetrics>=0.11.0; extra == "audio"
+requires-dist: transformers; extra == "audio"
+requires-dist: wandb; extra == "audio"
+requires-dist: webdataset>=0.2.86; extra == "audio"
+requires-dist: nv_one_logger_core>=2.3.1; extra == "audio"
+requires-dist: nv_one_logger_training_telemetry>=2.3.1; extra == "audio"
+requires-dist: nv_one_logger_pytorch_lightning_integration>=2.3.1; extra == "audio"
+requires-dist: nemo_automodel; extra == "speechlm2-only"
+requires-dist: flashoptim; extra == "speechlm2-only"
+requires-dist: peft<=0.18.0; extra == "speechlm2-only"
+requires-dist: hydra-core<=1.3.2,>1.3; extra == "all"
+requires-dist: lightning<=2.4.0,>2.2.1; extra == "all"
+requires-dist: omegaconf<=2.3; extra == "all"
+requires-dist: torchmetrics>=0.11.0; extra == "all"
+requires-dist: transformers; extra == "all"
+requires-dist: wandb; extra == "all"
+requires-dist: webdataset>=0.2.86; extra == "all"
+requires-dist: nv_one_logger_core>=2.3.1; extra == "all"
+requires-dist: nv_one_logger_training_telemetry>=2.3.1; extra == "all"
+requires-dist: nv_one_logger_pytorch_lightning_integration>=2.3.1; extra == "all"
+requires-dist: datasets>=3.2.0; extra == "all"
+requires-dist: einops; extra == "all"
+requires-dist: pandas; extra == "all"
+requires-dist: sentencepiece<1.0.0; extra == "all"
+requires-dist: braceexpand; extra == "all"
+requires-dist: kaldialign; extra == "all"
+requires-dist: lhotse>=1.33.0; extra == "all"
+requires-dist: librosa>=0.10.1; extra == "all"
+requires-dist: packaging; extra == "all"
+requires-dist: sacrebleu; extra == "all"
+requires-dist: scipy>=0.14; extra == "all"
+requires-dist: soundfile; extra == "all"
+requires-dist: whisper_normalizer; extra == "all"
+requires-dist: janome; extra == "all"
+requires-dist: jieba; extra == "all"
+requires-dist: librosa; extra == "all"
+requires-dist: matplotlib; extra == "all"
+requires-dist: nemo_text_processing; ("arm" not in platform_machine and "aarch" not in platform_machine and sys_platform != "darwin") and extra == "all"
+requires-dist: nltk; extra == "all"
+requires-dist: pypinyin; extra == "all"
+requires-dist: pypinyin-dict; extra == "all"
+requires-dist: pyopenjtalk; extra == "all"
+requires-dist: librosa>=0.10.0; extra == "all"
+requires-dist: pesq; (platform_machine != "x86_64" or platform_system != "Darwin") and extra == "all"
+requires-dist: pystoi; extra == "all"
+requires-dist: nemo_automodel; extra == "all"
+requires-dist: flashoptim; extra == "all"
+requires-dist: peft<=0.18.0; extra == "all"
+requires-dist: torch==2.12.0+cu126; sys_platform == "linux" and extra == "cu12"
+requires-dist: numba-cuda[cu12]; platform_system != "Darwin" and extra == "cu12"
+requires-dist: cuda-python<13,>=12; platform_system != "Darwin" and extra == "cu12"
+requires-dist: torch==2.12.0+cu132; sys_platform == "linux" and extra == "cu13"
+requires-dist: numba-cuda[cu13]; platform_system != "Darwin" and extra == "cu13"
+requires-dist: cuda-python<14,>=13; platform_system != "Darwin" and extra == "cu13"
+requires-dist: onnx-ir==0.2.1; extra == "compiled"
+requires-dist: onnxscript==0.7.0; extra == "compiled"
+requires-dist: deep_ep==1.2.1; extra == "compiled"
+requires-dist: nv-grouped-gemm==1.1.4.post8; extra == "compiled"
+requires-dist: causal-conv1d==1.6.2.post1; extra == "compiled"
+requires-dist: mamba-ssm==2.3.2.post1; extra == "compiled"
+requires-dist: flash-attn==2.8.3; extra == "compiled"
+requires-dist: transformer-engine[core_cu13,pytorch]==2.15; extra == "compiled"
+requires-dist: onnx-ir==0.2.1; extra == "compiled-a100"
+requires-dist: onnxscript==0.7.0; extra == "compiled-a100"
+requires-dist: nv-grouped-gemm==1.1.4.post8; extra == "compiled-a100"
+requires-dist: causal-conv1d==1.6.2.post1; extra == "compiled-a100"
+requires-dist: mamba-ssm==2.3.2.post1; extra == "compiled-a100"
+requires-dist: flash-attn==2.8.3; extra == "compiled-a100"
+requires-dist: transformer-engine[core_cu12,pytorch]==2.15; extra == "compiled-a100"
+requires-dist: datasets>=3.2.0; extra == "common"
+requires-dist: einops; extra == "common"
+requires-dist: pandas; extra == "common"
+requires-dist: sentencepiece<1.0.0; extra == "common"
+requires-dist: hydra-core<=1.3.2,>1.3; extra == "common"
+requires-dist: lightning<=2.4.0,>2.2.1; extra == "common"
+requires-dist: omegaconf<=2.3; extra == "common"
+requires-dist: torchmetrics>=0.11.0; extra == "common"
+requires-dist: transformers; extra == "common"
+requires-dist: wandb; extra == "common"
+requires-dist: webdataset>=0.2.86; extra == "common"
+requires-dist: nv_one_logger_core>=2.3.1; extra == "common"
+requires-dist: nv_one_logger_training_telemetry>=2.3.1; extra == "common"
+requires-dist: nv_one_logger_pytorch_lightning_integration>=2.3.1; extra == "common"
+requires-dist: braceexpand; extra == "asr"
+requires-dist: einops; extra == "asr"
+requires-dist: kaldialign; extra == "asr"
+requires-dist: lhotse>=1.33.0; extra == "asr"
+requires-dist: librosa>=0.10.1; extra == "asr"
+requires-dist: packaging; extra == "asr"
+requires-dist: sacrebleu; extra == "asr"
+requires-dist: scipy>=0.14; extra == "asr"
+requires-dist: soundfile; extra == "asr"
+requires-dist: whisper_normalizer; extra == "asr"
+requires-dist: datasets>=3.2.0; extra == "asr"
+requires-dist: pandas; extra == "asr"
+requires-dist: sentencepiece<1.0.0; extra == "asr"
+requires-dist: hydra-core<=1.3.2,>1.3; extra == "asr"
+requires-dist: lightning<=2.4.0,>2.2.1; extra == "asr"
+requires-dist: omegaconf<=2.3; extra == "asr"
+requires-dist: torchmetrics>=0.11.0; extra == "asr"
+requires-dist: transformers; extra == "asr"
+requires-dist: wandb; extra == "asr"
+requires-dist: webdataset>=0.2.86; extra == "asr"
+requires-dist: nv_one_logger_core>=2.3.1; extra == "asr"
+requires-dist: nv_one_logger_training_telemetry>=2.3.1; extra == "asr"
+requires-dist: nv_one_logger_pytorch_lightning_integration>=2.3.1; extra == "asr"
+requires-dist: nemo_automodel; extra == "speechlm2"
+requires-dist: flashoptim; extra == "speechlm2"
+requires-dist: peft<=0.18.0; extra == "speechlm2"
+requires-dist: braceexpand; extra == "speechlm2"
+requires-dist: einops; extra == "speechlm2"
+requires-dist: kaldialign; extra == "speechlm2"
+requires-dist: lhotse>=1.33.0; extra == "speechlm2"
+requires-dist: librosa>=0.10.1; extra == "speechlm2"
+requires-dist: packaging; extra == "speechlm2"
+requires-dist: sacrebleu; extra == "speechlm2"
+requires-dist: scipy>=0.14; extra == "speechlm2"
+requires-dist: soundfile; extra == "speechlm2"
+requires-dist: whisper_normalizer; extra == "speechlm2"
+requires-dist: datasets>=3.2.0; extra == "speechlm2"
+requires-dist: pandas; extra == "speechlm2"
+requires-dist: sentencepiece<1.0.0; extra == "speechlm2"
+requires-dist: hydra-core<=1.3.2,>1.3; extra == "speechlm2"
+requires-dist: lightning<=2.4.0,>2.2.1; extra == "speechlm2"
+requires-dist: omegaconf<=2.3; extra == "speechlm2"
+requires-dist: torchmetrics>=0.11.0; extra == "speechlm2"
+requires-dist: transformers; extra == "speechlm2"
+requires-dist: wandb; extra == "speechlm2"
+requires-dist: webdataset>=0.2.86; extra == "speechlm2"
+requires-dist: nv_one_logger_core>=2.3.1; extra == "speechlm2"
+requires-dist: nv_one_logger_training_telemetry>=2.3.1; extra == "speechlm2"
+requires-dist: nv_one_logger_pytorch_lightning_integration>=2.3.1; extra == "speechlm2"
+requires-dist: janome; extra == "speechlm2"
+requires-dist: jieba; extra == "speechlm2"
+requires-dist: librosa; extra == "speechlm2"
+requires-dist: matplotlib; extra == "speechlm2"
+requires-dist: nemo_text_processing; ("arm" not in platform_machine and "aarch" not in platform_machine and sys_platform != "darwin") and extra == "speechlm2"
+requires-dist: nltk; extra == "speechlm2"
+requires-dist: pypinyin; extra == "speechlm2"
+requires-dist: pypinyin-dict; extra == "speechlm2"
+requires-dist: pyopenjtalk; extra == "speechlm2"
+requires-python: >=3.10
+project-url: Download, https://github.com/NVIDIA-NeMo/NeMo/releases
+project-url: Homepage, https://github.com/NVIDIA-NeMo/NeMo
+provides-extra: core
+provides-extra: lightning
+provides-extra: common-only
+provides-extra: asr-only
+provides-extra: tts
+provides-extra: audio
+provides-extra: speechlm2-only
+provides-extra: all
+provides-extra: cu12
+provides-extra: cu13
+provides-extra: compiled
+provides-extra: compiled-a100
+provides-extra: common
+provides-extra: asr
+provides-extra: speechlm2
+

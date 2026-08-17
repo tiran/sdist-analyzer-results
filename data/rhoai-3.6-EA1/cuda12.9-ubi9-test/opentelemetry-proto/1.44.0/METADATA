@@ -1,0 +1,22 @@
+metadata-version: 2.5
+name: opentelemetry-proto
+version: 1.44.0
+summary: OpenTelemetry Python Proto
+author-email: OpenTelemetry Authors <cncf-opentelemetry-contributors@lists.cncf.io>
+license-expression: Apache-2.0
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Framework :: OpenTelemetry
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-dist: protobuf<8.0,>=5.0
+requires-python: >=3.10
+project-url: Homepage, https://github.com/open-telemetry/opentelemetry-python/tree/main/opentelemetry-proto
+project-url: Repository, https://github.com/open-telemetry/opentelemetry-python
+

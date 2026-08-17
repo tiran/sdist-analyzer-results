@@ -1,0 +1,24 @@
+metadata-version: 2.4
+name: ml_dtypes
+version: 0.6.0
+summary: ml_dtypes is a stand-alone implementation of several NumPy dtype extensions used in machine learning.
+author-email: ml_dtypes authors <ml_dtypes@google.com>
+license-expression: Apache-2.0
+license-file: LICENSE
+license-file: LICENSE.eigen
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Intended Audience :: Science/Research
+requires-dist: numpy>=2.0.0
+requires-dist: numpy>=2.1.0; python_version >= "3.13"
+requires-dist: numpy>=2.3.0; python_version >= "3.14"
+requires-dist: absl-py; extra == "dev"
+requires-dist: pytest; extra == "dev"
+requires-dist: pytest-xdist; extra == "dev"
+requires-dist: pylint>=2.6.0; extra == "dev"
+requires-dist: pyink; extra == "dev"
+requires-python: >=3.10
+project-url: homepage, https://github.com/jax-ml/ml_dtypes
+project-url: repository, https://github.com/jax-ml/ml_dtypes
+provides-extra: dev
+

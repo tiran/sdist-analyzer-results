@@ -1,4 +1,0 @@
-Cython>=0.29.31
-setuptools
-wheel
-pkgconfig

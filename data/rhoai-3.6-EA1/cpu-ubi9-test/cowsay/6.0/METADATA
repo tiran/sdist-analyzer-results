@@ -1,0 +1,24 @@
+metadata-version: 2.4
+name: cowsay
+version: 6.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: summary
+summary: The famous cowsay for GNU/Linux is now available for python
+home-page: https://github.com/VaasuDevanS/cowsay-python
+author: Vaasudevan Srinivasan
+author-email: vaasuceg.96@gmail.com
+license: GNU-GPL
+license-file: LICENSE.txt
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+

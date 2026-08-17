@@ -1,0 +1,36 @@
+metadata-version: 2.5
+name: sqlparse
+version: 0.5.5
+summary: A non-validating SQL parser.
+author-email: Andi Albrecht <albrecht.andi@gmail.com>
+license-file: AUTHORS
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: BSD License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Database
+classifier: Topic :: Software Development
+requires-dist: build; extra == "dev"
+requires-dist: sphinx; extra == "doc"
+requires-python: >=3.8
+project-url: Home, https://github.com/andialbrecht/sqlparse
+project-url: Documentation, https://sqlparse.readthedocs.io/
+project-url: Release Notes, https://sqlparse.readthedocs.io/en/latest/changes.html
+project-url: Source, https://github.com/andialbrecht/sqlparse
+project-url: Tracker, https://github.com/andialbrecht/sqlparse/issues
+provides-extra: dev
+provides-extra: doc
+

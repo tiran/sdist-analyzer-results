@@ -1,28 +1,24 @@
-Metadata-Version: 2.1
-Name: jupyter-packaging
-Version: 0.7.12
-Summary: Jupyter Packaging Utilities
-Home-page: http://jupyter.org
-Author: Jupyter Development Team
-Author-email: jupyter@googlegroups.com
-License: BSD
-Description: 
-            This package contains utilities for making Python packages with
-            and without accompanying JavaScript packages.
-            
-Keywords: Jupyter,Packaging
-Platform: Linux
-Platform: Mac OS X
-Platform: Windows
-Classifier: Intended Audience :: Developers
-Classifier: Intended Audience :: System Administrators
-Classifier: Intended Audience :: Science/Research
-Classifier: License :: OSI Approved :: BSD License
-Classifier: Programming Language :: Python
-Classifier: Programming Language :: Python :: 3
-Classifier: Programming Language :: Python :: 3.6
-Classifier: Programming Language :: Python :: 3.7
-Classifier: Programming Language :: Python :: 3.8
-Requires-Python: >=3.6
-Description-Content-Type: text/x-rst
-Provides-Extra: test
+metadata-version: 2.1
+name: jupyter-packaging
+version: 0.7.12
+platform: Linux
+platform: Mac OS X
+platform: Windows
+summary: Jupyter Packaging Utilities
+keywords: Jupyter,Packaging
+home-page: http://jupyter.org
+author: Jupyter Development Team
+author-email: jupyter@googlegroups.com
+license: BSD
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: System Administrators
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: BSD License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+requires-python: >=3.6
+provides-extra: test
+

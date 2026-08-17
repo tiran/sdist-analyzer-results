@@ -1,0 +1,4 @@
+greenlet>=3.2.2; platform_python_implementation == "CPython"
+setuptools>=40.8.0
+Cython>=3.2.4
+cffi>=2.1.1; platform_python_implementation == "CPython"

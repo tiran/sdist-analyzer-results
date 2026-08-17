@@ -1,0 +1,34 @@
+metadata-version: 2.5
+name: kube-authkit
+version: 0.4.0
+summary: Unified Kubernetes authentication toolkit - supports KubeConfig, In-Cluster, OIDC, and OpenShift OAuth authentication
+keywords: authentication,k8s,kubeconfig,kubernetes,oauth,oidc,openshift
+author: Kube AuthKit Contributors
+license: Apache-2.0
+license-file: LICENSE
+classifier: Development Status :: 3 - Alpha
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: System :: Systems Administration :: Authentication/Directory
+requires-dist: kubernetes>=35.0.0
+requires-dist: pyjwt>=2.8.0
+requires-dist: requests>=2.31.0
+requires-dist: urllib3>=2.6.0
+requires-dist: pytest-cov>=4.1.0; extra == "dev"
+requires-dist: pytest-mock>=3.11.1; extra == "dev"
+requires-dist: pytest>=7.4.0; extra == "dev"
+requires-dist: ruff>=0.1.0; extra == "dev"
+requires-dist: keyring>=24.0.0; extra == "keyring"
+requires-python: >=3.10
+project-url: Homepage, https://github.com/kube-authkit/kube-authkit
+project-url: Documentation, https://github.com/kube-authkit/kube-authkit#readme
+project-url: Repository, https://github.com/kube-authkit/kube-authkit
+project-url: Issues, https://github.com/kube-authkit/kube-authkit/issues
+provides-extra: dev
+provides-extra: keyring
+

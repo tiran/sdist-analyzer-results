@@ -1,0 +1,44 @@
+metadata-version: 2.4
+name: defusedxml
+version: 0.7.1
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: download-url
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: maintainer
+dynamic: maintainer-email
+dynamic: platform
+dynamic: requires-python
+dynamic: summary
+platform: all
+summary: XML bomb protection for Python stdlib modules
+keywords: xml bomb DoS
+home-page: https://github.com/tiran/defusedxml
+download-url: https://pypi.python.org/pypi/defusedxml
+author: Christian Heimes
+author-email: christian@python.org
+maintainer: Christian Heimes
+maintainer-email: christian@python.org
+license: PSFL
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Python Software Foundation License
+classifier: Natural Language :: English
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 2
+classifier: Programming Language :: Python :: 2.7
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.5
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Topic :: Text Processing :: Markup :: XML
+requires-python: !=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,>=2.7
+

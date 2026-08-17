@@ -1,0 +1,31 @@
+metadata-version: 2.4
+name: python-ulid
+version: 4.0.1
+summary: Universally unique lexicographically sortable identifier
+author-email: Martin Domke <mail@martindomke.net>
+license-expression: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Operating System :: POSIX :: Linux
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Software Development :: Libraries
+requires-dist: typing-extensions; python_version < "3.11"
+requires-dist: pydantic>=2.0; extra == "pydantic"
+requires-python: >=3.10
+project-url: Homepage, https://github.com/mdomke/python-ulid
+project-url: Documentation, https://python-ulid.readthedocs.io
+project-url: Changelog, https://python-ulid.readthedocs.io/en/latest/changelog.html
+project-url: Issues, https://github.com/mdomke/python-ulid/issues
+project-url: CI, https://github.com/mdomke/python-ulid/actions
+project-url: Repository, https://github.com/mdomke/python-ulid
+provides-extra: pydantic
+

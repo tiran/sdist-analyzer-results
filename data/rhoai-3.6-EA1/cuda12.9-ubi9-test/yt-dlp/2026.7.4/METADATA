@@ -1,0 +1,75 @@
+metadata-version: 2.5
+name: yt-dlp
+version: 2026.7.4
+summary: A feature-rich command-line audio/video downloader
+keywords: cli,downloader,sponsorblock,youtube-dl,youtube-downloader,yt-dlp
+author-email: pukkandan <pukkandan.ytdlp@gmail.com>
+maintainer-email: maintainers@yt-dlp.org, Grub4K <contact@grub4k.dev>, bashonly <bashonly@protonmail.com>, coletdjnz <coletdjnz@protonmail.com>
+license-expression: Unlicense
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Implementation
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Multimedia :: Video
+requires-dist: curl-cffi!=0.6.*,!=0.7.*,!=0.8.*,!=0.9.*,<0.16,>=0.5.10; implementation_name == "cpython" and extra == "curl-cffi"
+requires-dist: brotli; (implementation_name == "cpython" and sys_platform != "ios") and extra == "default"
+requires-dist: brotlicffi; implementation_name != "cpython" and extra == "default"
+requires-dist: certifi; extra == "default"
+requires-dist: mutagen; extra == "default"
+requires-dist: pycryptodomex; extra == "default"
+requires-dist: requests<3,>=2.32.2; extra == "default"
+requires-dist: urllib3<3,>=2.0.2; extra == "default"
+requires-dist: websockets>=13.0; extra == "default"
+requires-dist: yt-dlp-ejs==0.8.0; extra == "default"
+requires-dist: deno>=2.6.6; extra == "deno"
+requires-dist: brotli==1.2.0; (implementation_name == "cpython" and sys_platform != "ios") and extra == "pin"
+requires-dist: brotlicffi==1.2.0.1; implementation_name != "cpython" and extra == "pin"
+requires-dist: certifi==2026.6.17; extra == "pin"
+requires-dist: charset-normalizer==3.4.7; extra == "pin"
+requires-dist: idna==3.18; extra == "pin"
+requires-dist: mutagen==1.48.1; extra == "pin"
+requires-dist: pycryptodomex==3.23.0; extra == "pin"
+requires-dist: requests==2.34.2; extra == "pin"
+requires-dist: urllib3==2.7.0; extra == "pin"
+requires-dist: websockets==16.0; extra == "pin"
+requires-dist: yt-dlp-ejs==0.8.0; extra == "pin"
+requires-dist: certifi==2026.6.17; implementation_name == "cpython" and extra == "pin-curl-cffi"
+requires-dist: cffi==2.0.0; implementation_name == "cpython" and extra == "pin-curl-cffi"
+requires-dist: curl-cffi==0.15.0; implementation_name == "cpython" and extra == "pin-curl-cffi"
+requires-dist: markdown-it-py==4.2.0; implementation_name == "cpython" and extra == "pin-curl-cffi"
+requires-dist: mdurl==0.1.2; implementation_name == "cpython" and extra == "pin-curl-cffi"
+requires-dist: pycparser==3.0; implementation_name == "cpython" and extra == "pin-curl-cffi"
+requires-dist: pygments==2.20.0; implementation_name == "cpython" and extra == "pin-curl-cffi"
+requires-dist: rich==15.0.0; implementation_name == "cpython" and extra == "pin-curl-cffi"
+requires-dist: deno==2.8.3; extra == "pin-deno"
+requires-dist: cffi==2.0.0; platform_python_implementation != "PyPy" and extra == "pin-secretstorage"
+requires-dist: cryptography==49.0.0; extra == "pin-secretstorage"
+requires-dist: jeepney==0.9.0; extra == "pin-secretstorage"
+requires-dist: pycparser==3.0; (implementation_name != "PyPy" and platform_python_implementation != "PyPy") and extra == "pin-secretstorage"
+requires-dist: secretstorage==3.5.0; extra == "pin-secretstorage"
+requires-dist: typing-extensions==4.15.0; python_full_version < "3.11" and extra == "pin-secretstorage"
+requires-dist: secretstorage; extra == "secretstorage"
+requires-python: >=3.10
+project-url: Documentation, https://github.com/yt-dlp/yt-dlp#readme
+project-url: Repository, https://github.com/yt-dlp/yt-dlp
+project-url: Tracker, https://github.com/yt-dlp/yt-dlp/issues
+project-url: Funding, https://github.com/yt-dlp/yt-dlp/blob/master/Maintainers.md#maintainers
+provides-extra: curl-cffi
+provides-extra: default
+provides-extra: deno
+provides-extra: pin
+provides-extra: pin-curl-cffi
+provides-extra: pin-deno
+provides-extra: pin-secretstorage
+provides-extra: secretstorage
+

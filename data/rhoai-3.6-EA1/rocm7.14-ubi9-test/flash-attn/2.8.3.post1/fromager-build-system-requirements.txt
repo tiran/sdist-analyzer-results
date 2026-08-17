@@ -1,6 +1,6 @@
-wheel
 torch
 ninja
-setuptools
-packaging
+wheel
 psutil
+packaging
+setuptools

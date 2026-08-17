@@ -1,0 +1,41 @@
+metadata-version: 2.5
+name: pydantic
+version: 2.11.10
+summary: Data validation using Python type hints
+author-email: Samuel Colvin <s@muelcolvin.com>, Eric Jolibois <em.jolibois@gmail.com>, Hasan Ramezani <hasan.r67@gmail.com>, Adrian Garcia Badaracco <1755071+adriangb@users.noreply.github.com>, Terrence Dorsey <terry@pydantic.dev>, David Montague <david@pydantic.dev>, Serge Matveenko <lig@countzero.co>, Marcelo Trylesinski <marcelotryle@gmail.com>, Sydney Runkle <sydneymarierunkle@gmail.com>, David Hewitt <mail@davidhewitt.io>, Alex Hall <alex.mojaki@gmail.com>, Victorien Plot <contact@vctrn.dev>
+license-expression: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Framework :: Hypothesis
+classifier: Framework :: Pydantic
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Information Technology
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Internet
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: annotated-types>=0.6.0
+requires-dist: pydantic-core==2.33.2
+requires-dist: typing-extensions>=4.12.2
+requires-dist: typing-inspection>=0.4.0
+requires-dist: email-validator>=2.0.0; extra == "email"
+requires-dist: tzdata; (python_version >= "3.9" and platform_system == "Windows") and extra == "timezone"
+requires-python: >=3.9
+project-url: Homepage, https://github.com/pydantic/pydantic
+project-url: Documentation, https://docs.pydantic.dev
+project-url: Funding, https://github.com/sponsors/samuelcolvin
+project-url: Source, https://github.com/pydantic/pydantic
+project-url: Changelog, https://docs.pydantic.dev/latest/changelog/
+provides-extra: email
+provides-extra: timezone
+

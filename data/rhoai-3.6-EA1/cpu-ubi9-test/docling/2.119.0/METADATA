@@ -1,0 +1,45 @@
+metadata-version: 2.4
+name: docling
+version: 2.119.0
+summary: SDK and CLI for parsing PDF, DOCX, HTML, and more, to a unified document representation for powering downstream workflows such as gen AI applications.
+keywords: convert,docling,document,docx,html,layout model,markdown,pdf,segmentation,table former,table structure
+author-email: Christoph Auer <cau@zurich.ibm.com>, Michele Dolfi <dol@zurich.ibm.com>, Maxim Lysak <mly@zurich.ibm.com>, Nikos Livathinos <nli@zurich.ibm.com>, Ahmed Nassar <ahn@zurich.ibm.com>, Panos Vagenas <pva@zurich.ibm.com>, Peter Staar <taa@zurich.ibm.com>
+license-expression: MIT
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: POSIX :: Linux
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+requires-dist: docling-slim[standard]==2.119.0
+requires-dist: docling-slim[format-audio]==2.119.0; extra == "asr"
+requires-dist: docling-slim[format-html-render]==2.119.0; extra == "htmlrender"
+requires-dist: docling-slim[feat-ocr-mac]==2.119.0; extra == "ocrmac"
+requires-dist: docling-slim[models-onnxruntime]==2.119.0; extra == "onnxruntime"
+requires-dist: docling-slim[feat-ocr-rapidocr-onnx]==2.119.0; extra == "rapidocr"
+requires-dist: docling-slim[models-remote]==2.119.0; extra == "remote-serving"
+requires-dist: docling-slim[feat-ocr-tesserocr]==2.119.0; extra == "tesserocr"
+requires-dist: docling-slim[models-vlm-inline]==2.119.0; extra == "vlm"
+requires-dist: docling-slim[format-xml-xbrl]==2.119.0; extra == "xbrl"
+requires-python: <4.0,>=3.10
+project-url: homepage, https://github.com/docling-project/docling
+project-url: repository, https://github.com/docling-project/docling
+project-url: issues, https://github.com/docling-project/docling/issues
+project-url: changelog, https://github.com/docling-project/docling/blob/main/CHANGELOG.md
+provides-extra: asr
+provides-extra: htmlrender
+provides-extra: ocrmac
+provides-extra: onnxruntime
+provides-extra: rapidocr
+provides-extra: remote-serving
+provides-extra: tesserocr
+provides-extra: vlm
+provides-extra: xbrl
+

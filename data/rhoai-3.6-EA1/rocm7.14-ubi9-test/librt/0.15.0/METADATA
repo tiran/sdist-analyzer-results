@@ -1,0 +1,24 @@
+metadata-version: 2.4
+name: librt
+version: 0.15.0
+dynamic: license-file
+summary: Mypyc runtime library
+author-email: Jukka Lehtosalo <jukka.lehtosalo@iki.fi>, Ivan Levkivskyi <levkivskyi@gmail.com>
+license-expression: MIT
+license-file: LICENSE
+classifier: Development Status :: 3 - Alpha
+classifier: Environment :: Console
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Software Development
+classifier: Typing :: Typed
+requires-python: >=3.9
+project-url: Homepage, https://github.com/mypyc/librt
+project-url: Issues, https://github.com/mypyc/mypyc/issues
+

@@ -1,0 +1,45 @@
+metadata-version: 2.4
+name: numcodecs
+version: 0.15.1
+dynamic: license-file
+summary: A Python package providing buffer compression and transformation codecs for use in data storage and communication applications.
+maintainer-email: Alistair Miles <alimanfoo@googlemail.com>
+license: MIT
+license-file: LICENSE.txt
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Information Technology
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Operating System :: Unix
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+requires-dist: numpy>=1.24
+requires-dist: deprecated
+requires-dist: sphinx; extra == "docs"
+requires-dist: sphinx-issues; extra == "docs"
+requires-dist: pydata-sphinx-theme; extra == "docs"
+requires-dist: numpydoc; extra == "docs"
+requires-dist: coverage; extra == "test"
+requires-dist: pytest; extra == "test"
+requires-dist: pytest-cov; extra == "test"
+requires-dist: importlib_metadata; extra == "test-extras"
+requires-dist: msgpack; extra == "msgpack"
+requires-dist: zfpy>=1.0.0; extra == "zfpy"
+requires-dist: pcodec<0.4,>=0.3; extra == "pcodec"
+requires-dist: crc32c>=2.7; extra == "crc32c"
+requires-python: >=3.11
+project-url: Bug Tracker, https://github.com/zarr-developers/numcodecs/issues
+project-url: Changelog, https://numcodecs.readthedocs.io/en/stable/release.html
+project-url: Documentation, https://numcodecs.readthedocs.io/
+project-url: Homepage, https://github.com/zarr-developers/numcodecs
+provides-extra: docs
+provides-extra: test
+provides-extra: test-extras
+provides-extra: msgpack
+provides-extra: zfpy
+provides-extra: pcodec
+provides-extra: crc32c
+

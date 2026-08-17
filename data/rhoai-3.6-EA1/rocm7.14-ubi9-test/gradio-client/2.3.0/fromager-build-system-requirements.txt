@@ -1,0 +1,3 @@
+hatch-fancy-pypi-readme>=22.5.0
+hatchling
+hatch-requirements-txt

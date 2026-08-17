@@ -1,0 +1,33 @@
+metadata-version: 2.4
+name: lm-format-enforcer
+version: 0.11.3
+summary: Enforce the output format (JSON Schema, Regex etc) of a language model
+author: Noam Gat
+author-email: noamgat@gmail.com
+license: MIT
+license-file: LICENSE
+classifier: Development Status :: 3 - Alpha
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: interegular>=0.3.2
+requires-dist: packaging
+requires-dist: pydantic>=1.10.8
+requires-dist: pyyaml
+requires-python: <4.0,>=3.8
+project-url: Bug Tracker, https://github.com/noamgat/lm-format-enforcer/issues
+project-url: Documentation, https://github.com/noamgat/lm-format-enforcer
+project-url: Homepage, https://github.com/noamgat/lm-format-enforcer
+project-url: Repository, https://github.com/noamgat/lm-format-enforcer
+

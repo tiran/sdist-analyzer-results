@@ -1,0 +1,40 @@
+metadata-version: 2.4
+name: yarl
+version: 1.24.5
+dynamic: license-file
+summary: Yet another URL library
+keywords: cython,cext,yarl
+home-page: https://github.com/aio-libs/yarl
+author: Andrew Svetlov
+author-email: andrew.svetlov@gmail.com
+maintainer: aiohttp team <team@aiohttp.org>
+maintainer-email: team@aiohttp.org
+license: Apache-2.0
+license-file: LICENSE
+license-file: NOTICE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Cython
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Internet :: WWW/HTTP
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: idna>=2.0
+requires-dist: multidict>=4.0
+requires-dist: propcache>=0.2.1
+requires-python: >=3.10
+project-url: Chat: Matrix, https://matrix.to/#/#aio-libs:matrix.org
+project-url: Chat: Matrix Space, https://matrix.to/#/#aio-libs-space:matrix.org
+project-url: CI: GitHub Workflows, https://github.com/aio-libs/yarl/actions?query=branch:master
+project-url: Code of Conduct, https://github.com/aio-libs/.github/blob/master/CODE_OF_CONDUCT.md
+project-url: Coverage: codecov, https://codecov.io/github/aio-libs/yarl
+project-url: Docs: Changelog, https://yarl.aio-libs.org/en/latest/changes/
+project-url: Docs: RTD, https://yarl.aio-libs.org
+project-url: GitHub: issues, https://github.com/aio-libs/yarl/issues
+project-url: GitHub: repo, https://github.com/aio-libs/yarl
+

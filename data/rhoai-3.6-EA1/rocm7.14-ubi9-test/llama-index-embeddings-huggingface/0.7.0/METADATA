@@ -1,0 +1,11 @@
+metadata-version: 2.5
+name: llama-index-embeddings-huggingface
+version: 0.7.0
+summary: llama-index embeddings huggingface integration
+author-email: Your Name <you@example.com>
+license-expression: MIT
+requires-dist: huggingface-hub[inference]>=0.19.0
+requires-dist: llama-index-core<0.15,>=0.13.0
+requires-dist: sentence-transformers>=2.6.1
+requires-python: <4.0,>=3.10
+

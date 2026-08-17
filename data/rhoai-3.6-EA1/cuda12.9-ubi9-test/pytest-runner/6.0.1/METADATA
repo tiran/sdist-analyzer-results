@@ -1,0 +1,32 @@
+metadata-version: 2.4
+name: pytest-runner
+version: 6.0.1
+dynamic: license-file
+summary: Invoke py.test as distutils command with dependency resolution
+home-page: https://github.com/pytest-dev/pytest-runner/
+author: Jason R. Coombs
+author-email: jaraco@jaraco.com
+license-file: LICENSE
+classifier: Development Status :: 7 - Inactive
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Framework :: Pytest
+requires-dist: pytest>=6; extra == "testing"
+requires-dist: pytest-checkdocs>=2.4; extra == "testing"
+requires-dist: pytest-flake8; extra == "testing"
+requires-dist: pytest-black>=0.3.7; platform_python_implementation != "PyPy" and extra == "testing"
+requires-dist: pytest-cov; extra == "testing"
+requires-dist: pytest-mypy>=0.9.1; platform_python_implementation != "PyPy" and extra == "testing"
+requires-dist: pytest-enabler>=1.0.1; extra == "testing"
+requires-dist: pytest-virtualenv; extra == "testing"
+requires-dist: types-setuptools; extra == "testing"
+requires-dist: sphinx; extra == "docs"
+requires-dist: jaraco.packaging>=9; extra == "docs"
+requires-dist: rst.linker>=1.9; extra == "docs"
+requires-dist: jaraco.tidelift>=1.4; extra == "docs"
+requires-python: >=3.7
+provides-extra: testing
+provides-extra: docs
+

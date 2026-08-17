@@ -1,0 +1,26 @@
+metadata-version: 2.4
+name: ecmwf-datastores-client
+version: 0.5.3
+dynamic: license-file
+summary: ECMWF Data Stores Service (DSS) API Python client
+license-expression: Apache-2.0
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Science/Research
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Scientific/Engineering
+requires-dist: attrs>=23.1.0
+requires-dist: multiurl>=0.3.7
+requires-dist: requests>=2.5.0
+requires-dist: typing-extensions>=4.13.0
+requires-dist: cdsapi>=0.7.6; extra == "legacy"
+requires-python: >=3.10
+provides-extra: legacy
+

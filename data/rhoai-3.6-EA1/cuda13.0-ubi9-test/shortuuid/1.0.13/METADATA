@@ -1,0 +1,24 @@
+metadata-version: 2.4
+name: shortuuid
+version: 1.0.13
+summary: A generator library for concise, unambiguous and URL-safe UUIDs.
+author: Stavros Korokithakis
+author-email: hi@stavros.io
+license: BSD-3-Clause
+license-file: COPYING
+classifier: License :: OSI Approved :: BSD License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-python: >=3.6
+project-url: Homepage, https://github.com/skorokithakis/shortuuid/
+

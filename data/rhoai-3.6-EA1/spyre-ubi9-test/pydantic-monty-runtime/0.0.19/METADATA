@@ -1,0 +1,18 @@
+metadata-version: 2.4
+name: pydantic-monty-runtime
+version: 0.0.19
+summary: The monty CLI binary — spawned as worker subprocesses by pydantic-monty
+home-page: https://github.com/pydantic/monty/
+license: MIT
+classifier: Development Status :: 3 - Alpha
+classifier: Programming Language :: Rust
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: Unix
+classifier: Operating System :: POSIX :: Linux
+classifier: Operating System :: Microsoft :: Windows
+classifier: Environment :: MacOS X
+requires-python: >=3.10
+project-url: Homepage, https://github.com/pydantic/monty
+project-url: Source, https://github.com/pydantic/monty
+

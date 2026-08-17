@@ -1,0 +1,2 @@
+setuptools<81,>=78.1.1
+wheel

@@ -1,3 +1,0 @@
-setuptools>=77
-cffi>=1.0.1; python_version < "3.14"
-setuptools_scm[toml]>=6.2

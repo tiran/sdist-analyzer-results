@@ -1,0 +1,71 @@
+metadata-version: 2.5
+name: mem0ai
+version: 2.0.18
+summary: Long-term memory for AI Agents
+author-email: Mem0 <support@mem0.ai>
+license-expression: Apache-2.0
+license-file: LICENSE
+requires-dist: httpx>=0.28.0
+requires-dist: openai>=1.90.0
+requires-dist: posthog>=7.14.0
+requires-dist: protobuf<7.0.0,>=5.29.6
+requires-dist: pydantic>=2.7.3
+requires-dist: pytz>=2024.1
+requires-dist: qdrant-client>=1.12.0
+requires-dist: sqlalchemy>=2.0.31
+requires-dist: isort>=5.13.2; extra == "dev"
+requires-dist: pytest>=8.2.2; extra == "dev"
+requires-dist: ruff==0.16.0; extra == "dev"
+requires-dist: boto3>=1.34.0; extra == "extras"
+requires-dist: elasticsearch<9.0.0,>=8.0.0; extra == "extras"
+requires-dist: fastembed>=0.3.1; extra == "extras"
+requires-dist: langchain-community<1.0.0,>=0.3.27; extra == "extras"
+requires-dist: langchain-core<1.0.0,>=0.3.85; extra == "extras"
+requires-dist: langchain<1.0.0,>=0.3.30; extra == "extras"
+requires-dist: opensearch-py>=2.0.0; extra == "extras"
+requires-dist: sentence-transformers>=5.2.0; extra == "extras"
+requires-dist: transformers>=5.3.0; extra == "extras"
+requires-dist: google-genai>=1.0.0; extra == "llms"
+requires-dist: google-generativeai>=0.3.0; extra == "llms"
+requires-dist: groq>=0.3.0; extra == "llms"
+requires-dist: litellm>=1.83.7; extra == "llms"
+requires-dist: ollama>=0.3.0; extra == "llms"
+requires-dist: openai>=1.90.0; extra == "llms"
+requires-dist: together>=0.2.10; extra == "llms"
+requires-dist: vertexai>=0.1.0; extra == "llms"
+requires-dist: spacy>=3.7.0; extra == "nlp"
+requires-dist: pytest-asyncio>=0.23.7; extra == "test"
+requires-dist: pytest-mock>=3.14.0; extra == "test"
+requires-dist: pytest>=8.2.2; extra == "test"
+requires-dist: azure-identity>=1.24.0; extra == "vector-stores"
+requires-dist: azure-search-documents>=11.4.0b8; extra == "vector-stores"
+requires-dist: cassandra-driver>=3.29.0; extra == "vector-stores"
+requires-dist: chromadb>=0.4.24; extra == "vector-stores"
+requires-dist: databricks-sdk>=0.63.0; extra == "vector-stores"
+requires-dist: dbutils>=3.0.3; extra == "vector-stores"
+requires-dist: elasticsearch<9.0.0,>=8.0.0; extra == "vector-stores"
+requires-dist: faiss-cpu>=1.7.4; extra == "vector-stores"
+requires-dist: langchain-aws<0.3.0,>=0.2.23; extra == "vector-stores"
+requires-dist: oracledb>=2.2.0; extra == "vector-stores"
+requires-dist: pinecone-text>=0.10.0; extra == "vector-stores"
+requires-dist: pinecone<=7.3.0; extra == "vector-stores"
+requires-dist: psycopg-pool<4.0.0,>=3.2.6; extra == "vector-stores"
+requires-dist: psycopg>=3.2.8; extra == "vector-stores"
+requires-dist: pymilvus<2.6.0,>=2.4.0; extra == "vector-stores"
+requires-dist: pymochow>=2.2.9; extra == "vector-stores"
+requires-dist: pymongo>=4.13.2; extra == "vector-stores"
+requires-dist: pymysql>=1.1.0; extra == "vector-stores"
+requires-dist: redis<6.0.0,>=5.0.0; extra == "vector-stores"
+requires-dist: redisvl<1.0.0,>=0.1.0; extra == "vector-stores"
+requires-dist: upstash-vector>=0.6.0; extra == "vector-stores"
+requires-dist: valkey>=6.0.0; extra == "vector-stores"
+requires-dist: vecs>=0.4.0; extra == "vector-stores"
+requires-dist: weaviate-client<5.0.0,>=4.15.4; extra == "vector-stores"
+requires-python: <4.0,>=3.10
+provides-extra: dev
+provides-extra: extras
+provides-extra: llms
+provides-extra: nlp
+provides-extra: test
+provides-extra: vector-stores
+

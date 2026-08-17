@@ -1,0 +1,63 @@
+metadata-version: 2.4
+name: watchdog
+version: 6.0.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: provides-extra
+dynamic: requires-python
+dynamic: summary
+summary: Filesystem events monitoring
+keywords: python filesystem monitoring monitor FSEvents kqueue inotify ReadDirectoryChangesW polling DirectorySnapshot
+home-page: https://github.com/gorakhargosh/watchdog
+author: Mickaël Schoentgen
+author-email: contact@tiger-222.fr
+license: Apache-2.0
+license-file: LICENSE
+license-file: COPYING
+license-file: AUTHORS
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: System Administrators
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Natural Language :: English
+classifier: Operating System :: POSIX :: Linux
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Operating System :: POSIX :: BSD
+classifier: Operating System :: Microsoft :: Windows :: Windows Vista
+classifier: Operating System :: Microsoft :: Windows :: Windows 7
+classifier: Operating System :: Microsoft :: Windows :: Windows 8
+classifier: Operating System :: Microsoft :: Windows :: Windows 8.1
+classifier: Operating System :: Microsoft :: Windows :: Windows 10
+classifier: Operating System :: Microsoft :: Windows :: Windows 11
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Programming Language :: C
+classifier: Topic :: Software Development :: Libraries
+classifier: Topic :: System :: Monitoring
+classifier: Topic :: System :: Filesystems
+classifier: Topic :: Utilities
+requires-dist: PyYAML>=3.10; extra == "watchmedo"
+requires-python: >=3.9
+project-url: Documentation, https://python-watchdog.readthedocs.io/en/stable/
+project-url: Source, https://github.com/gorakhargosh/watchdog/
+project-url: Issues, https://github.com/gorakhargosh/watchdog/issues
+project-url: Changelog, https://github.com/gorakhargosh/watchdog/blob/master/changelog.rst
+provides-extra: watchmedo
+

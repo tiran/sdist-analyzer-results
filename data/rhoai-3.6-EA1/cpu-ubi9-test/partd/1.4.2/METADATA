@@ -1,0 +1,23 @@
+metadata-version: 2.4
+name: partd
+version: 1.4.2
+dynamic: license-file
+summary: Appendable key-value storage
+maintainer-email: Matthew Rocklin <mrocklin@gmail.com>
+license: BSD
+license-file: LICENSE.txt
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+requires-dist: locket
+requires-dist: toolz
+requires-dist: numpy>=1.20.0; extra == "complete"
+requires-dist: pandas>=1.3; extra == "complete"
+requires-dist: pyzmq; extra == "complete"
+requires-dist: blosc; extra == "complete"
+requires-python: >=3.9
+project-url: Homepage, http://github.com/dask/partd/
+provides-extra: complete
+

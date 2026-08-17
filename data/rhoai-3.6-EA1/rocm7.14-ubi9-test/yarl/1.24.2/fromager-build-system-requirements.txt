@@ -1,4 +1,0 @@
-setuptools
-setuptools>=82.0.1
-expandvars
-Cython>=3.0.0

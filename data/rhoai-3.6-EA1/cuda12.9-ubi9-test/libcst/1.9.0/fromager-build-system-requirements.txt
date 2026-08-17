@@ -1,4 +1,4 @@
-setuptools-rust
-setuptools-scm
 setuptools
 wheel
+setuptools-rust
+setuptools-scm

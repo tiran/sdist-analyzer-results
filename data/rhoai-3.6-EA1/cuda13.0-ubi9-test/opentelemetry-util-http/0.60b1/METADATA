@@ -1,0 +1,20 @@
+metadata-version: 2.5
+name: opentelemetry-util-http
+version: 0.60b1
+summary: Web util for OpenTelemetry
+author-email: OpenTelemetry Authors <cncf-opentelemetry-contributors@lists.cncf.io>
+license-expression: Apache-2.0
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+requires-python: >=3.9
+project-url: Homepage, https://github.com/open-telemetry/opentelemetry-python-contrib/tree/main/util/opentelemetry-util-http
+project-url: Repository, https://github.com/open-telemetry/opentelemetry-python-contrib
+

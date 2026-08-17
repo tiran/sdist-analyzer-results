@@ -1,0 +1,32 @@
+metadata-version: 2.5
+name: uv-dynamic-versioning
+version: 0.14.0
+summary: Dynamic versioning based on VCS tags for uv/hatch project
+keywords: hatch,uv
+license: MIT License
+                 
+                 Copyright (c) 2024 Manabu Niseki
+                 
+                 Permission is hereby granted, free of charge, to any person obtaining a copy
+                 of this software and associated documentation files (the "Software"), to deal
+                 in the Software without restriction, including without limitation the rights
+                 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+                 copies of the Software, and to permit persons to whom the Software is
+                 furnished to d...
+license-file: LICENSE
+classifier: Framework :: Hatch
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-dist: dunamai~=1.26
+requires-dist: hatchling~=1.26
+requires-dist: jinja2~=3.0
+requires-dist: tomlkit~=0.13
+requires-python: <4.0,>=3.10
+project-url: Repository, https://github.com/ninoseki/uv-dynamic-versioning/
+project-url: Homepage, https://github.com/ninoseki/uv-dynamic-versioning/
+

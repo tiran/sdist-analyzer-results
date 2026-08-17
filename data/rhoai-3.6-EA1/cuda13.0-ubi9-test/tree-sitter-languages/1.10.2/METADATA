@@ -1,0 +1,31 @@
+metadata-version: 2.4
+name: tree_sitter_languages
+version: 1.10.2
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: project-url
+dynamic: requires-dist
+dynamic: summary
+summary: Binary Python wheels for all tree sitter languages.
+home-page: https://github.com/grantjenks/py-tree-sitter-languages
+author: Grant Jenks
+author-email: contact@grantjenks.com
+license: Apache 2.0
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Natural Language :: English
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: Implementation :: CPython
+requires-dist: tree-sitter<0.22
+project-url: Documentation, https://github.com/grantjenks/py-tree-sitter-languages
+project-url: Source, https://github.com/grantjenks/py-tree-sitter-languages
+project-url: Tracker, https://github.com/grantjenks/py-tree-sitter-languages/issues
+

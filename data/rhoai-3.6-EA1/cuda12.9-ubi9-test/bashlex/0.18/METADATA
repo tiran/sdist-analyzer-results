@@ -1,0 +1,31 @@
+metadata-version: 2.4
+name: bashlex
+version: 0.18
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: Python parser for bash
+home-page: https://github.com/idank/bashlex.git
+author: Idan Kamara
+author-email: i@idank.me
+license: GPLv3+
+license-file: LICENSE
+classifier: Development Status :: 4 - Beta
+classifier: Environment :: Console
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: System :: System Shells
+classifier: Topic :: Text Processing
+requires-dist: enum34; python_version < "3.4"
+requires-python: !=3.0,!=3.1,!=3.2,!=3.3,!=3.4,>=2.7
+

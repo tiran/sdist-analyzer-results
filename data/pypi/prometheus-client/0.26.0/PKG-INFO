@@ -1,0 +1,35 @@
+metadata-version: 2.4
+name: prometheus_client
+version: 0.26.0
+dynamic: license-file
+summary: Python client for the Prometheus monitoring system.
+keywords: prometheus,monitoring,instrumentation,client
+author-email: The Prometheus Authors <prometheus-developers@googlegroups.com>
+license-expression: Apache-2.0 AND BSD-2-Clause
+license-file: LICENSE
+license-file: NOTICE
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Information Technology
+classifier: Intended Audience :: System Administrators
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: System :: Monitoring
+requires-dist: twisted; extra == "twisted"
+requires-dist: aiohttp; extra == "aiohttp"
+requires-dist: django; extra == "django"
+requires-python: >=3.9
+project-url: Homepage, https://github.com/prometheus/client_python
+project-url: Documentation, https://prometheus.github.io/client_python/
+provides-extra: twisted
+provides-extra: aiohttp
+provides-extra: django
+

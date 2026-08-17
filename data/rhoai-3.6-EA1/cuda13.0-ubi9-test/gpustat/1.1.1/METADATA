@@ -1,0 +1,44 @@
+metadata-version: 2.4
+name: gpustat
+version: 1.1.1
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: An utility to monitor NVIDIA GPU status and usage
+keywords: nvidia-smi gpu cuda monitoring gpustat
+home-page: https://github.com/wookayin/gpustat
+author: Jongwook Choi
+author-email: wookayin@gmail.com
+license: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: POSIX :: Linux
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Topic :: System :: Monitoring
+requires-dist: nvidia-ml-py>=11.450.129
+requires-dist: psutil>=5.6.0
+requires-dist: blessed>=1.17.1
+requires-dist: mockito>=1.2.1; extra == "test"
+requires-dist: pytest>=5.4.1; extra == "test"
+requires-dist: pytest-runner; extra == "test"
+requires-dist: shtab; extra == "completion"
+requires-python: >=3.6
+provides-extra: test
+provides-extra: completion
+

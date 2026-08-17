@@ -1,0 +1,40 @@
+metadata-version: 2.4
+name: sigstore-rekor-types
+version: 0.0.18
+dynamic: license-file
+summary: Python models for Rekor's API types
+author-email: Trail of Bits <opensource@trailofbits.com>
+license: Apache License
+                                            Version 2.0, January 2004
+                                         http://www.apache.org/licenses/
+                 
+                    TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+                 
+                    1. Definitions.
+                 
+                       "License" shall mean the terms and conditions for use, reproduction,
+                       and distribution as defined by Sections 1 through 9 of this document.
+                 
+                       "Licensor" shall mean the copyright owner or entity a...
+license-file: LICENSE
+classifier: Programming Language :: Python :: 3
+classifier: License :: OSI Approved :: Apache Software License
+requires-dist: pydantic[email]<3,>=2
+requires-dist: typing-extensions; python_version < "3.9"
+requires-dist: pdoc<16.0,>=14.2; extra == "doc"
+requires-dist: ruff<0.7.5; extra == "lint"
+requires-dist: mypy>=1.0; extra == "lint"
+requires-dist: datamodel-code-generator>=0.25.2; extra == "codegen"
+requires-dist: sigstore-rekor-types[lint]; extra == "codegen"
+requires-dist: sigstore-rekor-types[codegen,doc,lint]; extra == "dev"
+requires-dist: build; extra == "dev"
+requires-python: >=3.8
+project-url: Homepage, https://pypi.org/project/sigstore-rekor-types
+project-url: Documentation, https://trailofbits.github.io/sigstore-rekor-types/
+project-url: Issues, https://github.com/trailofbits/sigstore-rekor-types/issues
+project-url: Source, https://github.com/trailofbits/sigstore-rekor-types
+provides-extra: doc
+provides-extra: lint
+provides-extra: codegen
+provides-extra: dev
+

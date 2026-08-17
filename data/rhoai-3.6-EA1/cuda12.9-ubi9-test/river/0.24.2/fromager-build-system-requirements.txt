@@ -1,4 +1,0 @@
-setuptools-rust
-Cython
-setuptools
-numpy

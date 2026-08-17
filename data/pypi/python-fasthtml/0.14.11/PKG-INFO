@@ -1,0 +1,34 @@
+metadata-version: 2.4
+name: python-fasthtml
+version: 0.14.11
+dynamic: license-file
+summary: The fastest way to create an HTML app
+keywords: nbdev,jupyter,notebook,python
+author-email: Jeremy Howard and contributors <github@jhoward.fastmail.fm>
+license: Apache-2.0
+license-file: LICENSE
+classifier: Natural Language :: English
+classifier: Intended Audience :: Developers
+classifier: Development Status :: 3 - Alpha
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+requires-dist: fastcore>=2.1.2
+requires-dist: python-dateutil
+requires-dist: starlette>=1.0.1
+requires-dist: oauthlib
+requires-dist: itsdangerous
+requires-dist: uvicorn[standard]>=0.30
+requires-dist: httpx2
+requires-dist: python-multipart
+requires-dist: beautifulsoup4
+requires-dist: ipython; extra == "dev"
+requires-dist: lxml; extra == "dev"
+requires-dist: pysym2md>=0.0.6; extra == "dev"
+requires-dist: monsterui; extra == "dev"
+requires-dist: PyJWT; extra == "dev"
+requires-dist: fastlite; extra == "dev"
+requires-python: >=3.10
+project-url: Repository, https://github.com/AnswerDotAI/fasthtml
+project-url: Documentation, https://www.fastht.ml/docs/
+provides-extra: dev
+

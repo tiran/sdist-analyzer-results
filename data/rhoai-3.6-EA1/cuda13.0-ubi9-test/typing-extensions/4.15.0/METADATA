@@ -1,0 +1,29 @@
+metadata-version: 2.4
+name: typing_extensions
+version: 4.15.0
+summary: Backported and Experimental Type Hints for Python 3.9+
+keywords: annotations,backport,checker,checking,function,hinting,hints,type,typechecking,typehinting,typehints,typing
+author-email: "Guido van Rossum, Jukka Lehtosalo, Łukasz Langa, Michael Lee" <levkivskyi@gmail.com>
+license-expression: PSF-2.0
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Intended Audience :: Developers
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Software Development
+requires-python: >=3.9
+project-url: Bug Tracker, https://github.com/python/typing_extensions/issues
+project-url: Changes, https://github.com/python/typing_extensions/blob/main/CHANGELOG.md
+project-url: Documentation, https://typing-extensions.readthedocs.io/
+project-url: Home, https://github.com/python/typing_extensions
+project-url: Q & A, https://github.com/python/typing/discussions
+project-url: Repository, https://github.com/python/typing_extensions
+

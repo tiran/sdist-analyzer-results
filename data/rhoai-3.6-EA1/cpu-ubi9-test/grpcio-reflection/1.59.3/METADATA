@@ -1,0 +1,36 @@
+metadata-version: 2.4
+name: grpcio-reflection
+version: 1.59.3
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: Standard Protobuf Reflection Service for gRPC
+home-page: https://grpc.io
+author: The gRPC Authors
+author-email: grpc-io@googlegroups.com
+license: Apache License 2.0
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.4
+classifier: Programming Language :: Python :: 3.5
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: License :: OSI Approved :: Apache Software License
+requires-dist: protobuf>=4.21.6
+requires-dist: grpcio>=1.59.3
+requires-python: >=3.6
+

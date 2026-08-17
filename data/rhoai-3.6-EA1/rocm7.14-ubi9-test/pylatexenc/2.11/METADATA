@@ -1,0 +1,33 @@
+metadata-version: 2.4
+name: pylatexenc
+version: 2.11
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: summary
+summary: Simple LaTeX parser providing latex-to-unicode and unicode-to-latex conversion
+keywords: latex text unicode encode parse expression
+home-page: https://github.com/phfaist/pylatexenc
+author: Philippe Faist
+author-email: philippe.faist@bluewin.ch
+license: MIT
+license-file: LICENSE.txt
+classifier: Development Status :: 5 - Production/Stable
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 2
+classifier: Programming Language :: Python :: 2.7
+classifier: Programming Language :: Python :: 3
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: POSIX :: Linux
+classifier: Intended Audience :: Developers
+classifier: Topic :: Scientific/Engineering
+classifier: Topic :: Text Processing :: General
+classifier: Topic :: Text Processing :: Markup :: LaTeX
+

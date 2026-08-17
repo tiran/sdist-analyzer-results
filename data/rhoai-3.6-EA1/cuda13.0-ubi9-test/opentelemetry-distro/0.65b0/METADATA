@@ -1,0 +1,26 @@
+metadata-version: 2.5
+name: opentelemetry-distro
+version: 0.65b0
+summary: OpenTelemetry Python Distro
+author-email: OpenTelemetry Authors <cncf-opentelemetry-contributors@lists.cncf.io>
+license-expression: Apache-2.0
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Typing :: Typed
+requires-dist: opentelemetry-api~=1.12
+requires-dist: opentelemetry-instrumentation==0.65b0
+requires-dist: opentelemetry-sdk~=1.13
+requires-dist: opentelemetry-exporter-otlp==1.44.0; extra == "otlp"
+requires-python: >=3.10
+project-url: Homepage, https://github.com/open-telemetry/opentelemetry-python-contrib/tree/main/opentelemetry-distro
+project-url: Repository, https://github.com/open-telemetry/opentelemetry-python-contrib
+provides-extra: otlp
+

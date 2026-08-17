@@ -1,0 +1,119 @@
+metadata-version: 2.4
+name: mlforecast
+version: 0.14.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: Scalable machine learning based time series forecasting
+keywords: python forecast forecasting machine-learning dask
+home-page: https://github.com/Nixtla/mlforecast
+author: José Morales
+author-email: jmoralz92@gmail.com
+license: Apache Software License 2.0
+license-file: LICENSE
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: Natural Language :: English
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: License :: OSI Approved :: Apache Software License
+requires-dist: cloudpickle
+requires-dist: coreforecast>=0.0.11
+requires-dist: fsspec
+requires-dist: numba
+requires-dist: optuna
+requires-dist: packaging
+requires-dist: pandas
+requires-dist: scikit-learn
+requires-dist: utilsforecast>=0.2.3
+requires-dist: window-ops
+requires-dist: fugue; extra == "dask"
+requires-dist: dask[complete]; extra == "dask"
+requires-dist: lightgbm; extra == "dask"
+requires-dist: xgboost; extra == "dask"
+requires-dist: fugue[ray]; extra == "ray"
+requires-dist: lightgbm_ray; extra == "ray"
+requires-dist: numpy<2; extra == "ray"
+requires-dist: pandas<2.2; extra == "ray"
+requires-dist: ray<2.8; extra == "ray"
+requires-dist: setuptools<70; extra == "ray"
+requires-dist: xgboost<2; extra == "ray"
+requires-dist: xgboost_ray; extra == "ray"
+requires-dist: fugue; extra == "spark"
+requires-dist: pyspark>=3.3; extra == "spark"
+requires-dist: lightgbm; extra == "spark"
+requires-dist: xgboost; extra == "spark"
+requires-dist: fsspec[s3]; extra == "aws"
+requires-dist: fsspec[adl]; extra == "azure"
+requires-dist: fsspec[gcs]; extra == "gcp"
+requires-dist: polars[numpy]; extra == "polars"
+requires-dist: black>=24; extra == "dev"
+requires-dist: datasetsforecast; extra == "dev"
+requires-dist: gitpython; extra == "dev"
+requires-dist: holidays<0.21; extra == "dev"
+requires-dist: lightgbm; extra == "dev"
+requires-dist: matplotlib; extra == "dev"
+requires-dist: mlflow>=2.10.0; extra == "dev"
+requires-dist: mypy; extra == "dev"
+requires-dist: nbdev<2.3.26; extra == "dev"
+requires-dist: pre-commit; extra == "dev"
+requires-dist: polars[numpy]; extra == "dev"
+requires-dist: pyarrow; extra == "dev"
+requires-dist: ruff; extra == "dev"
+requires-dist: shap; extra == "dev"
+requires-dist: statsmodels; extra == "dev"
+requires-dist: xgboost; extra == "dev"
+requires-dist: ruff; extra == "all"
+requires-dist: xgboost; extra == "all"
+requires-dist: statsmodels; extra == "all"
+requires-dist: matplotlib; extra == "all"
+requires-dist: mypy; extra == "all"
+requires-dist: datasetsforecast; extra == "all"
+requires-dist: xgboost_ray; extra == "all"
+requires-dist: dask[complete]; extra == "all"
+requires-dist: nbdev<2.3.26; extra == "all"
+requires-dist: xgboost<2; extra == "all"
+requires-dist: fsspec[s3]; extra == "all"
+requires-dist: black>=24; extra == "all"
+requires-dist: pandas<2.2; extra == "all"
+requires-dist: ray<2.8; extra == "all"
+requires-dist: fsspec[gcs]; extra == "all"
+requires-dist: pyarrow; extra == "all"
+requires-dist: holidays<0.21; extra == "all"
+requires-dist: polars[numpy]; extra == "all"
+requires-dist: lightgbm; extra == "all"
+requires-dist: pyspark>=3.3; extra == "all"
+requires-dist: shap; extra == "all"
+requires-dist: fsspec[adl]; extra == "all"
+requires-dist: setuptools<70; extra == "all"
+requires-dist: pre-commit; extra == "all"
+requires-dist: lightgbm_ray; extra == "all"
+requires-dist: numpy<2; extra == "all"
+requires-dist: fugue[ray]; extra == "all"
+requires-dist: gitpython; extra == "all"
+requires-dist: mlflow>=2.10.0; extra == "all"
+requires-dist: fugue; extra == "all"
+requires-python: >=3.8
+provides-extra: dask
+provides-extra: ray
+provides-extra: spark
+provides-extra: lag-transforms
+provides-extra: aws
+provides-extra: azure
+provides-extra: gcp
+provides-extra: polars
+provides-extra: dev
+provides-extra: all
+

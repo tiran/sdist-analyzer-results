@@ -1,0 +1,34 @@
+metadata-version: 2.4
+name: caio
+version: 0.12.2
+dynamic: license-file
+summary: Asynchronous file IO for Linux MacOS or Windows.
+author-email: Dmitry Orlov <me@mosquito.su>
+license-expression: Apache-2.0
+license-file: COPYING
+classifier: Topic :: Software Development
+classifier: Topic :: Software Development :: Libraries
+classifier: Intended Audience :: Developers
+classifier: Natural Language :: English
+classifier: Operating System :: MacOS
+classifier: Operating System :: POSIX
+classifier: Operating System :: Microsoft
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Free Threading :: 2 - Beta
+requires-dist: aiomisc-pytest; extra == "develop"
+requires-dist: coveralls; extra == "develop"
+requires-dist: pytest; extra == "develop"
+requires-dist: pytest-cov; extra == "develop"
+requires-dist: pytest-rerunfailures; extra == "develop"
+requires-dist: setuptools; extra == "develop"
+requires-python: >=3.10
+project-url: Source Code, https://github.com/mosquito/caio/
+provides-extra: develop
+

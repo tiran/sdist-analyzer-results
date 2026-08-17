@@ -1,0 +1,32 @@
+metadata-version: 2.4
+name: hf-xet
+version: 1.6.0
+summary: Fast transfer of large files with the Hugging Face Hub.
+maintainer-email: Rajat Arya <rajat@rajatarya.com>, Jared Sulzdorf <j.sulzdorf@gmail.com>, Di Xiao <di@huggingface.co>, Assaf Vayner <assaf@huggingface.co>, Hoyt Koepke <hoytak@gmail.com>
+license-expression: Apache-2.0
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Programming Language :: Rust
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Free Threading
+classifier: Programming Language :: Python :: Free Threading :: 2 - Beta
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+requires-dist: pytest; extra == "tests"
+requires-python: >=3.8
+project-url: Documentation, https://huggingface.co/docs/hub/xet/index
+project-url: Homepage, https://github.com/huggingface/xet-core
+project-url: Issues, https://github.com/huggingface/xet-core/issues
+project-url: Repository, https://github.com/huggingface/xet-core.git
+provides-extra: tests
+

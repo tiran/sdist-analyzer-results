@@ -1,0 +1,32 @@
+metadata-version: 2.4
+name: ibm-aiu-smi
+version: 1.3.0
+dynamic: license-file
+summary: A tool to collect performance metrics from IBM Spyre during an execution of AI workload
+keywords: IBM Spyre,monitoring,performance,device
+author: Torch-Spyre Authors
+license-expression: Apache-2.0
+license-file: LICENSE
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: System Administrators
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.12
+classifier: Topic :: System :: Monitoring
+requires-dist: spyremetrics>=0.5.0
+requires-dist: psutil>=5.9.6
+requires-dist: build; extra == "build"
+requires-dist: setuptools<80.0,>=70.1.0; extra == "build"
+requires-dist: wheel; extra == "build"
+requires-dist: pytest~=9.0.0; extra == "test"
+requires-dist: pydantic; extra == "test"
+requires-dist: pytest-xdist; extra == "test"
+requires-dist: transformers~=4.57.1; extra == "test"
+requires-dist: mypy~=1.13.0; extra == "lint"
+requires-dist: pre-commit~=4.5.0; extra == "lint"
+requires-dist: types-PyYAML~=6.0.12.20250915; extra == "lint"
+requires-dist: uv~=0.10.0; extra == "lint"
+requires-python: >=3.12
+provides-extra: build
+provides-extra: test
+provides-extra: lint
+

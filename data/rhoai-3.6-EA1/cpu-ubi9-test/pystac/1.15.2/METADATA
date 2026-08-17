@@ -1,0 +1,56 @@
+metadata-version: 2.5
+name: pystac
+version: 1.15.2
+summary: Python library for working with the SpatioTemporal Asset Catalog (STAC) specification
+keywords: STAC,catalog,imagery,pystac,raster
+author-email: Rob Emanuele <rdemanuele@gmail.com>, Jon Duckworth <duckontheweb@gmail.com>
+maintainer-email: Pete Gadomski <pete.gadomski@gmail.com>
+license: Apache-2.0
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Natural Language :: English
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+requires-dist: pystac-core<2,>=1.15.0
+requires-dist: pystac-ext-classification
+requires-dist: pystac-ext-datacube
+requires-dist: pystac-ext-eo
+requires-dist: pystac-ext-file
+requires-dist: pystac-ext-grid
+requires-dist: pystac-ext-item-assets
+requires-dist: pystac-ext-label
+requires-dist: pystac-ext-mgrs
+requires-dist: pystac-ext-mlm
+requires-dist: pystac-ext-pointcloud
+requires-dist: pystac-ext-projection
+requires-dist: pystac-ext-raster
+requires-dist: pystac-ext-render
+requires-dist: pystac-ext-sar
+requires-dist: pystac-ext-sat
+requires-dist: pystac-ext-scientific
+requires-dist: pystac-ext-storage
+requires-dist: pystac-ext-table
+requires-dist: pystac-ext-timestamps
+requires-dist: pystac-ext-version
+requires-dist: pystac-ext-view
+requires-dist: pystac-ext-xarray-assets
+requires-dist: jinja2<4.0; extra == "jinja2"
+requires-dist: orjson>=3.5; extra == "orjson"
+requires-dist: urllib3>=2.6.3; extra == "urllib3"
+requires-dist: jsonschema~=4.18; extra == "validation"
+requires-python: >=3.10
+project-url: Documentation, https://pystac.readthedocs.io
+project-url: Repository, https://github.com/stac-utils/pystac
+project-url: Issues, https://github.com/stac-utils/pystac/issues
+project-url: Changelog, https://github.com/stac-utils/pystac/blob/main/CHANGELOG.md
+project-url: Discussions, https://github.com/radiantearth/stac-spec/discussions/categories/stac-software
+provides-extra: jinja2
+provides-extra: orjson
+provides-extra: urllib3
+provides-extra: validation
+

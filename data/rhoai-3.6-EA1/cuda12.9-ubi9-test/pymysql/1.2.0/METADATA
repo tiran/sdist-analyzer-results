@@ -1,0 +1,23 @@
+metadata-version: 2.4
+name: PyMySQL
+version: 1.2.0
+dynamic: license-file
+summary: Pure Python MySQL Driver
+keywords: MySQL
+author-email: Inada Naoki <songofacandy@gmail.com>, Yutaka Matsubara <yutaka.matsubara@gmail.com>
+license-expression: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Intended Audience :: Developers
+classifier: Topic :: Database
+requires-dist: cryptography>=46.0.7; extra == "rsa"
+requires-dist: PyNaCl>=1.6.2; extra == "ed25519"
+requires-python: >=3.9
+project-url: Project, https://github.com/PyMySQL/PyMySQL
+project-url: Documentation, https://pymysql.readthedocs.io/
+project-url: Changelog, https://github.com/PyMySQL/PyMySQL/blob/main/CHANGELOG.md
+provides-extra: rsa
+provides-extra: ed25519
+

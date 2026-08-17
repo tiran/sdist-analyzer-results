@@ -1,2 +1,2 @@
-setuptools
 pybind11
+setuptools

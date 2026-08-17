@@ -1,0 +1,19 @@
+metadata-version: 2.4
+name: json_repair
+version: 0.63.1
+dynamic: license-file
+summary: A package to repair broken json strings
+keywords: JSON,REPAIR,LLM,PARSER
+author-email: Stefano Baccianella <4247706+mangiucugna@users.noreply.github.com>
+license-expression: MIT
+license-file: LICENSE
+classifier: Programming Language :: Python :: 3
+classifier: Operating System :: OS Independent
+requires-dist: jsonschema>=4.21; (python_full_version < "3.15.0a0" or python_full_version >= "3.15.0") and extra == "schema"
+requires-dist: pydantic>=2; (python_full_version < "3.15.0a0" or python_full_version >= "3.15.0") and extra == "schema"
+requires-python: >=3.10
+project-url: Homepage, https://github.com/mangiucugna/json_repair/
+project-url: Bug Tracker, https://github.com/mangiucugna/json_repair/issues
+project-url: Live demo, https://mangiucugna.github.io/json_repair/
+provides-extra: schema
+

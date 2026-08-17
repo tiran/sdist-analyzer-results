@@ -1,0 +1,48 @@
+metadata-version: 2.4
+name: setproctitle
+version: 1.3.7
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: download-url
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: platform
+dynamic: provides-extra
+dynamic: requires-python
+dynamic: summary
+platform: GNU/Linux
+platform: BSD
+platform: MacOS X
+platform: Windows
+summary: A Python module to customize the process title
+home-page: https://github.com/dvarrazzo/py-setproctitle
+download-url: http://pypi.python.org/pypi/setproctitle/
+author: Daniele Varrazzo
+author-email: daniele.varrazzo@gmail.com
+license: BSD-3-Clause
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: BSD License
+classifier: Programming Language :: C
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Operating System :: POSIX :: Linux
+classifier: Operating System :: POSIX :: BSD
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Operating System :: Microsoft :: Windows
+classifier: Topic :: Software Development
+requires-dist: pytest; extra == "test"
+requires-python: >=3.8
+provides-extra: test
+

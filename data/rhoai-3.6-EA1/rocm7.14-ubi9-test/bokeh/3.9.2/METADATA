@@ -1,0 +1,51 @@
+metadata-version: 2.4
+name: bokeh
+version: 3.9.2
+dynamic: license-file
+summary: Interactive plots and applications in the browser from Python
+author: Bokeh Team
+author-email: info@bokeh.org
+license-expression: BSD-3-Clause
+license-file: LICENSE.txt
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Environment :: Web Environment
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Education
+classifier: Intended Audience :: End Users/Desktop
+classifier: Intended Audience :: Financial and Insurance Industry
+classifier: Intended Audience :: Healthcare Industry
+classifier: Intended Audience :: Information Technology
+classifier: Intended Audience :: Legal Industry
+classifier: Intended Audience :: Other Audience
+classifier: Intended Audience :: Science/Research
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: JavaScript
+classifier: Topic :: Office/Business
+classifier: Topic :: Office/Business :: Financial
+classifier: Topic :: Scientific/Engineering
+classifier: Topic :: Scientific/Engineering :: Visualization
+classifier: Topic :: Scientific/Engineering :: Mathematics
+classifier: Topic :: Scientific/Engineering :: Information Analysis
+classifier: Topic :: Utilities
+requires-dist: Jinja2>=2.9
+requires-dist: contourpy>=1.2
+requires-dist: narwhals>=1.13
+requires-dist: numpy>=1.16
+requires-dist: packaging>=16.8
+requires-dist: pillow>=7.1.0
+requires-dist: PyYAML>=3.10
+requires-dist: tornado>=6.2; sys_platform != "emscripten"
+requires-dist: xyzservices>=2021.09.1
+requires-python: >=3.10
+project-url: homepage, https://bokeh.org
+project-url: documentation, https://docs.bokeh.org
+project-url: repository, https://github.com/bokeh/bokeh
+

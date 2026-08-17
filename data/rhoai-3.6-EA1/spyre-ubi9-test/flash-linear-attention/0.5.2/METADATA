@@ -1,0 +1,42 @@
+metadata-version: 2.4
+name: flash-linear-attention
+version: 0.5.2
+dynamic: license-file
+summary: Fast linear attention models and layers
+license: MIT License
+                 
+                 Copyright (c) 2023-2026 Songlin Yang, Yu Zhang, Zhiyuan Li
+                 
+                 Permission is hereby granted, free of charge, to any person obtaining a copy
+                 of this software and associated documentation files (the "Software"), to deal
+                 in the Software without restriction, including without limitation the rights
+                 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+                 copies of the Software, and to permit persons to whom the Software...
+license-file: LICENSE
+requires-dist: fla-core==0.5.2
+requires-dist: transformers>=4.45.0
+requires-dist: fla-core[cuda]==0.5.2; extra == "cuda"
+requires-dist: fla-core[rocm]==0.5.2; extra == "rocm"
+requires-dist: fla-core[xpu]==0.5.2; extra == "xpu"
+requires-dist: fla-core[npu]==0.5.2; extra == "npu"
+requires-dist: fla-core[cpu]==0.5.2; extra == "cpu"
+requires-dist: tilelang>=0.1.9; extra == "tilelang"
+requires-dist: causal-conv1d>=1.4.0; extra == "conv1d"
+requires-dist: matplotlib; extra == "benchmark"
+requires-dist: pandas; extra == "benchmark"
+requires-dist: datasets>=3.3.0; extra == "benchmark"
+requires-dist: pytest; extra == "test"
+requires-dist: pytest-xdist; extra == "test"
+requires-python: >=3.10
+project-url: Homepage, https://github.com/fla-org/flash-linear-attention
+project-url: Repository, https://github.com/fla-org/flash-linear-attention
+provides-extra: cuda
+provides-extra: rocm
+provides-extra: xpu
+provides-extra: npu
+provides-extra: cpu
+provides-extra: tilelang
+provides-extra: conv1d
+provides-extra: benchmark
+provides-extra: test
+

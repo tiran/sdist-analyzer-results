@@ -1,0 +1,35 @@
+metadata-version: 2.4
+name: textblob
+version: 0.15.3
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: requires-dist
+dynamic: summary
+summary: Simple, Pythonic text processing. Sentiment analysis, part-of-speech tagging, noun phrase parsing, and more.
+keywords: textblob,nlp,linguistics,nltk,pattern
+home-page: https://github.com/sloria/TextBlob
+author: Steven Loria
+author-email: sloria1@gmail.com
+license: MIT
+license-file: LICENSE
+license-file: NOTICE
+license-file: AUTHORS.rst
+classifier: Intended Audience :: Developers
+classifier: Natural Language :: English
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 2.7
+classifier: Programming Language :: Python :: 3.4
+classifier: Programming Language :: Python :: 3.5
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Text Processing :: Linguistic
+requires-dist: nltk>=3.1
+

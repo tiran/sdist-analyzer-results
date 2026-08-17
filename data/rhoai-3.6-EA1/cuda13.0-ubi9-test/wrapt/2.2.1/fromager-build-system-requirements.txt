@@ -1,2 +1,0 @@
-setuptools>=62.0
-wheel

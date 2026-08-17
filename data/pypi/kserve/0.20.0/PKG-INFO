@@ -1,0 +1,59 @@
+metadata-version: 2.4
+name: kserve
+version: 0.20.0
+summary: KServe Python SDK
+author-email: The KServe Authors <dsun20@bloomberg.net>, The KServe Authors <ellisbigelow@google.com>, The KServe Authors <hejinchi@cn.ibm.com>
+license: Apache-2.0
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Education
+classifier: Intended Audience :: Science/Research
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: OS Independent
+classifier: Topic :: Scientific/Engineering
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+classifier: Topic :: Software Development
+classifier: Topic :: Software Development :: Libraries
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: uvicorn[standard]<1.0.0,>=0.30.6
+requires-dist: fastapi<1.0.0,>=0.115.3
+requires-dist: starlette>=1.0.1
+requires-dist: cloudevents<2.0.0,>=1.6.2
+requires-dist: six<2.0.0,>=1.16.0
+requires-dist: kubernetes>=23.3.0
+requires-dist: python-dateutil<3.0.0,>=2.8.0
+requires-dist: numpy<3.0.0,>=1.26.0
+requires-dist: psutil<6.0.0,>=5.9.6
+requires-dist: grpcio<2.0.0,>=1.73.0
+requires-dist: grpcio-tools<2.0.0,>=1.73.0
+requires-dist: grpc-interceptor<1.0.0,>=0.15.4
+requires-dist: protobuf<7.0.0,>=6.33.5
+requires-dist: prometheus-client<1.0.0,>=0.20.0
+requires-dist: orjson<4.0.0,>=3.11.6
+requires-dist: httpx<1.0.0,>=0.27.2
+requires-dist: timing-asgi<1.0.0,>=0.3.0
+requires-dist: tabulate<1.0.0,>=0.9.0
+requires-dist: pandas<3.0.0,>=2.2.0
+requires-dist: pydantic<3.0.0,>=2.5.0
+requires-dist: pyyaml<7.0.0,>=6.0.0
+requires-dist: urllib3>=2.7.0
+requires-dist: aiohttp>=3.13.4
+requires-dist: h11>=0.16.0
+requires-dist: cryptography>=46.0.7
+requires-dist: python-multipart>=0.0.27
+requires-dist: pyjwt>=2.13.0
+requires-dist: pyasn1>=0.6.3
+requires-dist: kserve-storage==0.20.0; extra == "storage"
+requires-dist: asgi-logger<1.0.0,>=0.1.0; extra == "logging"
+requires-dist: ray[serve]>=2.43.0; extra == "ray"
+requires-dist: vllm==0.24.0; extra == "llm"
+requires-python: <3.13,>=3.10
+project-url: repository, https://github.com/kserve/kserve/tree/master/python/kserve
+provides-extra: storage
+provides-extra: logging
+provides-extra: ray
+provides-extra: llm
+

@@ -1,0 +1,28 @@
+metadata-version: 2.4
+name: Werkzeug
+version: 3.1.8
+summary: The comprehensive WSGI web application library.
+maintainer-email: Pallets <contact@palletsprojects.com>
+license-expression: BSD-3-Clause
+license-file: LICENSE.txt
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Web Environment
+classifier: Intended Audience :: Developers
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+classifier: Topic :: Internet :: WWW/HTTP :: WSGI
+classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Application
+classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Middleware
+classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+classifier: Typing :: Typed
+requires-dist: markupsafe>=2.1.1
+requires-dist: watchdog>=2.3; extra == "watchdog"
+requires-python: >=3.9
+project-url: Changes, https://werkzeug.palletsprojects.com/page/changes/
+project-url: Chat, https://discord.gg/pallets
+project-url: Documentation, https://werkzeug.palletsprojects.com/
+project-url: Donate, https://palletsprojects.com/donate
+project-url: Source, https://github.com/pallets/werkzeug/
+provides-extra: watchdog
+

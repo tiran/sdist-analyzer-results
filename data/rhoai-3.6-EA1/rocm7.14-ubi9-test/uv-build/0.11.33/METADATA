@@ -1,0 +1,33 @@
+metadata-version: 2.4
+name: uv-build
+version: 0.11.33
+summary: The uv build backend
+keywords: uv,requirements,packaging
+home-page: https://pypi.org/project/uv/
+author-email: "Astral Software Inc." <hey@astral.sh>
+license-expression: MIT OR Apache-2.0
+license-file: LICENSE-APACHE
+license-file: LICENSE-MIT
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Intended Audience :: Developers
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Topic :: Software Development :: Quality Assurance
+classifier: Topic :: Software Development :: Testing
+classifier: Topic :: Software Development :: Libraries
+requires-python: >=3.8
+project-url: Changelog, https://github.com/astral-sh/uv/blob/main/CHANGELOG.md
+project-url: Discord, https://discord.gg/astral-sh
+project-url: Documentation, https://docs.astral.sh/uv
+project-url: Releases, https://github.com/astral-sh/uv/releases
+project-url: Repository, https://github.com/astral-sh/uv
+

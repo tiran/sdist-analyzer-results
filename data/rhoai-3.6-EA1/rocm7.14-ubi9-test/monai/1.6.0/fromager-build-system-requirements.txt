@@ -1,0 +1,6 @@
+wheel
+ninja
+more-itertools>=8.0
+packaging
+torch>=2.8.0
+setuptools

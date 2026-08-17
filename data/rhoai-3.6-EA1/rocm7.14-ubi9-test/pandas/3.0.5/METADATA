@@ -1,0 +1,143 @@
+metadata-version: 2.1
+name: pandas
+version: 3.0.5
+summary: Powerful data structures for data analysis, time series, and statistics
+author-email: The Pandas Development Team <pandas-dev@python.org>
+license: BSD 3-Clause License
+                  
+                  Copyright (c) 2008-2011, AQR Capital Management, LLC, Lambda Foundry, Inc. and PyData Development Team
+                  All rights reserved.
+                  
+                  Copyright (c) 2011-2026, Open source contributors.
+                  
+                  Redistribution and use in source and binary forms, with or without
+                  modification, are permitted provided that the following conditions are met:
+                  
+                  * Redistributions of source code must retain the above copyright notice, thi...
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: BSD License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Cython
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Scientific/Engineering
+requires-dist: numpy>=1.26.0; python_version < "3.14"
+requires-dist: numpy>=2.3.3; python_version >= "3.14"
+requires-dist: python-dateutil>=2.8.2
+requires-dist: tzdata; sys_platform == "win32"
+requires-dist: tzdata; sys_platform == "emscripten"
+requires-dist: hypothesis>=6.116.0; extra == "test"
+requires-dist: pytest<9.1,>=8.3.4; extra == "test"
+requires-dist: pytest-xdist>=3.6.1; extra == "test"
+requires-dist: pyarrow>=13.0.0; extra == "pyarrow"
+requires-dist: bottleneck>=1.4.2; extra == "performance"
+requires-dist: numba>=0.60.0; extra == "performance"
+requires-dist: numexpr>=2.10.2; extra == "performance"
+requires-dist: scipy>=1.14.1; extra == "computation"
+requires-dist: xarray>=2024.10.0; extra == "computation"
+requires-dist: fsspec>=2024.10.0; extra == "fss"
+requires-dist: s3fs>=2024.10.0; extra == "aws"
+requires-dist: gcsfs>=2024.10.0; extra == "gcp"
+requires-dist: odfpy>=1.4.1; extra == "excel"
+requires-dist: openpyxl>=3.1.5; extra == "excel"
+requires-dist: python-calamine>=0.3.0; extra == "excel"
+requires-dist: pyxlsb>=1.0.10; extra == "excel"
+requires-dist: xlrd>=2.0.1; extra == "excel"
+requires-dist: xlsxwriter>=3.2.0; extra == "excel"
+requires-dist: pyarrow>=13.0.0; extra == "parquet"
+requires-dist: pyarrow>=13.0.0; extra == "feather"
+requires-dist: pyiceberg>=0.8.1; extra == "iceberg"
+requires-dist: tables>=3.10.1; extra == "hdf5"
+requires-dist: pyreadstat>=1.2.8; extra == "spss"
+requires-dist: SQLAlchemy>=2.0.36; extra == "postgresql"
+requires-dist: psycopg2>=2.9.10; extra == "postgresql"
+requires-dist: adbc-driver-postgresql>=1.2.0; extra == "postgresql"
+requires-dist: SQLAlchemy>=2.0.36; extra == "mysql"
+requires-dist: pymysql>=1.1.1; extra == "mysql"
+requires-dist: SQLAlchemy>=2.0.36; extra == "sql-other"
+requires-dist: adbc-driver-postgresql>=1.2.0; extra == "sql-other"
+requires-dist: adbc-driver-sqlite>=1.2.0; extra == "sql-other"
+requires-dist: beautifulsoup4>=4.12.3; extra == "html"
+requires-dist: html5lib>=1.1; extra == "html"
+requires-dist: lxml>=5.3.0; extra == "html"
+requires-dist: lxml>=5.3.0; extra == "xml"
+requires-dist: matplotlib>=3.9.3; extra == "plot"
+requires-dist: jinja2>=3.1.5; extra == "output-formatting"
+requires-dist: tabulate>=0.9.0; extra == "output-formatting"
+requires-dist: PyQt5>=5.15.9; extra == "clipboard"
+requires-dist: qtpy>=2.4.2; extra == "clipboard"
+requires-dist: zstandard>=0.23.0; extra == "compression"
+requires-dist: pytz>=2020.1; extra == "timezone"
+requires-dist: adbc-driver-postgresql>=1.2.0; extra == "all"
+requires-dist: adbc-driver-sqlite>=1.2.0; extra == "all"
+requires-dist: beautifulsoup4>=4.12.3; extra == "all"
+requires-dist: bottleneck>=1.4.2; extra == "all"
+requires-dist: fastparquet>=2024.11.0; extra == "all"
+requires-dist: fsspec>=2024.10.0; extra == "all"
+requires-dist: gcsfs>=2024.10.0; extra == "all"
+requires-dist: html5lib>=1.1; extra == "all"
+requires-dist: hypothesis>=6.116.0; extra == "all"
+requires-dist: jinja2>=3.1.5; extra == "all"
+requires-dist: lxml>=5.3.0; extra == "all"
+requires-dist: matplotlib>=3.9.3; extra == "all"
+requires-dist: numba>=0.60.0; extra == "all"
+requires-dist: numexpr>=2.10.2; extra == "all"
+requires-dist: odfpy>=1.4.1; extra == "all"
+requires-dist: openpyxl>=3.1.5; extra == "all"
+requires-dist: psycopg2>=2.9.10; extra == "all"
+requires-dist: pyarrow>=13.0.0; extra == "all"
+requires-dist: pyiceberg>=0.8.1; extra == "all"
+requires-dist: pymysql>=1.1.1; extra == "all"
+requires-dist: PyQt5>=5.15.9; extra == "all"
+requires-dist: pyreadstat>=1.2.8; extra == "all"
+requires-dist: pytest>=8.3.4; extra == "all"
+requires-dist: pytest-xdist>=3.6.1; extra == "all"
+requires-dist: python-calamine>=0.3.0; extra == "all"
+requires-dist: pytz>=2020.1; extra == "all"
+requires-dist: pyxlsb>=1.0.10; extra == "all"
+requires-dist: qtpy>=2.4.2; extra == "all"
+requires-dist: scipy>=1.14.1; extra == "all"
+requires-dist: s3fs>=2024.10.0; extra == "all"
+requires-dist: SQLAlchemy>=2.0.36; extra == "all"
+requires-dist: tables>=3.10.1; extra == "all"
+requires-dist: tabulate>=0.9.0; extra == "all"
+requires-dist: xarray>=2024.10.0; extra == "all"
+requires-dist: xlrd>=2.0.1; extra == "all"
+requires-dist: xlsxwriter>=3.2.0; extra == "all"
+requires-dist: zstandard>=0.23.0; extra == "all"
+requires-python: >=3.11
+project-url: homepage, https://pandas.pydata.org
+project-url: documentation, https://pandas.pydata.org/docs/
+project-url: repository, https://github.com/pandas-dev/pandas
+provides-extra: test
+provides-extra: pyarrow
+provides-extra: performance
+provides-extra: computation
+provides-extra: fss
+provides-extra: aws
+provides-extra: gcp
+provides-extra: excel
+provides-extra: parquet
+provides-extra: feather
+provides-extra: iceberg
+provides-extra: hdf5
+provides-extra: spss
+provides-extra: postgresql
+provides-extra: mysql
+provides-extra: sql-other
+provides-extra: html
+provides-extra: xml
+provides-extra: plot
+provides-extra: output-formatting
+provides-extra: clipboard
+provides-extra: compression
+provides-extra: timezone
+provides-extra: all
+

@@ -1,0 +1,35 @@
+metadata-version: 2.4
+name: fla-core
+version: 0.5.2
+dynamic: license-file
+summary: Core operations for flash-linear-attention
+license: MIT License
+                 
+                 Copyright (c) 2023-2026 Songlin Yang, Yu Zhang, Zhiyuan Li
+                 
+                 Permission is hereby granted, free of charge, to any person obtaining a copy
+                 of this software and associated documentation files (the "Software"), to deal
+                 in the Software without restriction, including without limitation the rights
+                 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+                 copies of the Software, and to permit persons to whom the Software...
+license-file: LICENSE
+requires-dist: einops
+requires-dist: torch>=2.7.0; extra == "cuda"
+requires-dist: triton>=3.3; extra == "cuda"
+requires-dist: torch>=2.7.0; extra == "rocm"
+requires-dist: torch>=2.7.0; extra == "xpu"
+requires-dist: torch==2.7.1; extra == "npu"
+requires-dist: torch_npu==2.7.1.post4; extra == "npu"
+requires-dist: torchvision==0.22.1; extra == "npu"
+requires-dist: triton-ascend==3.2.1; extra == "npu"
+requires-dist: torch>=2.7.0; extra == "cpu"
+requires-dist: triton>=3.3; extra == "cpu"
+requires-python: >=3.10
+project-url: Homepage, https://github.com/fla-org/flash-linear-attention
+project-url: Repository, https://github.com/fla-org/flash-linear-attention
+provides-extra: cuda
+provides-extra: rocm
+provides-extra: xpu
+provides-extra: npu
+provides-extra: cpu
+

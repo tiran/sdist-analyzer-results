@@ -1,0 +1,48 @@
+metadata-version: 2.4
+name: aiohttp
+version: 3.14.3
+dynamic: license-file
+summary: Async http client/server framework (asyncio)
+maintainer-email: aiohttp team <team@aiohttp.org>
+license: Apache-2.0 AND MIT
+license-file: LICENSE.txt
+license-file: vendor/llhttp/LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Framework :: AsyncIO
+classifier: Intended Audience :: Developers
+classifier: Operating System :: POSIX
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Operating System :: Microsoft :: Windows
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Internet :: WWW/HTTP
+requires-dist: aiohappyeyeballs>=2.5.0
+requires-dist: aiosignal>=1.4.0
+requires-dist: async-timeout<6.0,>=4.0; python_version < "3.11"
+requires-dist: attrs>=17.3.0
+requires-dist: frozenlist>=1.1.1
+requires-dist: multidict<7.0,>=4.5
+requires-dist: propcache>=0.2.0
+requires-dist: typing_extensions>=4.4; python_version < "3.13"
+requires-dist: yarl<2.0,>=1.17.0
+requires-dist: aiodns>=3.3.0; (sys_platform != "android" and sys_platform != "ios") and extra == "speedups"
+requires-dist: Brotli>=1.2; (platform_python_implementation == "CPython" and sys_platform != "android" and sys_platform != "ios") and extra == "speedups"
+requires-dist: brotlicffi>=1.2; platform_python_implementation != "CPython" and extra == "speedups"
+requires-dist: backports.zstd; (platform_python_implementation == "CPython" and python_version < "3.14" and sys_platform != "android" and sys_platform != "ios") and extra == "speedups"
+requires-python: >=3.10
+project-url: Homepage, https://github.com/aio-libs/aiohttp
+project-url: Chat: Matrix, https://matrix.to/#/#aio-libs:matrix.org
+project-url: Chat: Matrix Space, https://matrix.to/#/#aio-libs-space:matrix.org
+project-url: CI: GitHub Actions, https://github.com/aio-libs/aiohttp/actions?query=workflow%3ACI
+project-url: Coverage: codecov, https://codecov.io/github/aio-libs/aiohttp
+project-url: Docs: Changelog, https://docs.aiohttp.org/en/stable/changes.html
+project-url: Docs: RTD, https://docs.aiohttp.org
+project-url: GitHub: issues, https://github.com/aio-libs/aiohttp/issues
+project-url: GitHub: repo, https://github.com/aio-libs/aiohttp
+provides-extra: speedups
+

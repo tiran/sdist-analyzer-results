@@ -1,76 +1,31 @@
-Metadata-Version: 2.4
-Name: execnet
-Version: 2.1.2
-Summary: execnet: rapid multi-Python deployment
-Project-URL: Homepage, https://execnet.readthedocs.io/en/latest/
-Author: holger krekel and others
-License-Expression: MIT
-License-File: LICENSE
-Classifier: Development Status :: 5 - Production/Stable
-Classifier: Intended Audience :: Developers
-Classifier: License :: OSI Approved :: MIT License
-Classifier: Operating System :: MacOS :: MacOS X
-Classifier: Operating System :: Microsoft :: Windows
-Classifier: Operating System :: POSIX
-Classifier: Programming Language :: Python :: 3.8
-Classifier: Programming Language :: Python :: 3.9
-Classifier: Programming Language :: Python :: 3.10
-Classifier: Programming Language :: Python :: 3.11
-Classifier: Programming Language :: Python :: 3.12
-Classifier: Programming Language :: Python :: Implementation :: CPython
-Classifier: Programming Language :: Python :: Implementation :: PyPy
-Classifier: Topic :: Software Development :: Libraries
-Classifier: Topic :: System :: Distributed Computing
-Classifier: Topic :: System :: Networking
-Requires-Python: >=3.8
-Provides-Extra: testing
-Requires-Dist: hatch; extra == 'testing'
-Requires-Dist: pre-commit; extra == 'testing'
-Requires-Dist: pytest; extra == 'testing'
-Requires-Dist: tox; extra == 'testing'
-Description-Content-Type: text/x-rst
+metadata-version: 2.4
+name: execnet
+version: 2.1.2
+summary: execnet: rapid multi-Python deployment
+author: holger krekel and others
+license-expression: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: POSIX
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Software Development :: Libraries
+classifier: Topic :: System :: Distributed Computing
+classifier: Topic :: System :: Networking
+requires-dist: hatch; extra == "testing"
+requires-dist: pre-commit; extra == "testing"
+requires-dist: pytest; extra == "testing"
+requires-dist: tox; extra == "testing"
+requires-python: >=3.8
+project-url: Homepage, https://execnet.readthedocs.io/en/latest/
+provides-extra: testing
 
-execnet: distributed Python deployment and communication
-========================================================
-
-.. image:: https://img.shields.io/pypi/v/execnet.svg
-    :target: https://pypi.org/project/execnet/
-
-.. image:: https://anaconda.org/conda-forge/execnet/badges/version.svg
-    :target: https://anaconda.org/conda-forge/execnet
-
-.. image:: https://img.shields.io/pypi/pyversions/execnet.svg
-    :target: https://pypi.org/project/execnet/
-
-.. image:: https://github.com/pytest-dev/execnet/workflows/test/badge.svg
-    :target: https://github.com/pytest-dev/execnet/actions?query=workflow%3Atest
-
-.. image:: https://img.shields.io/badge/code%20style-black-000000.svg
-    :target: https://github.com/python/black
-
-.. _execnet: https://execnet.readthedocs.io
-
-execnet_ provides carefully tested means to ad-hoc interact with Python
-interpreters across version, platform and network barriers.  It provides
-a minimal and fast API targeting the following uses:
-
-* distribute tasks to local or remote processes
-* write and deploy hybrid multi-process applications
-* write scripts to administer multiple hosts
-
-Features
---------
-
-* zero-install bootstrapping: no remote installation required!
-
-* flexible communication: send/receive as well as
-  callback/queue mechanisms supported
-
-* simple serialization of python builtin types (no pickling)
-
-* grouped creation and robust termination of processes
-
-* interoperable between Windows and Unix-ish systems.
-
-* integrates with different threading models, including standard
-  os threads, eventlet and gevent based systems.

@@ -1,3 +1,0 @@
-hatchling>=1.11
-jupyterlab<4.6,>=4.5.8
-hatch-jupyter-builder>=0.5

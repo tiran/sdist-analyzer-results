@@ -1,0 +1,33 @@
+metadata-version: 2.4
+name: ipytree
+version: 0.2.2
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: requires-dist
+dynamic: summary
+summary: A Tree Widget using jsTree
+keywords: ipython,jupyter,widgets
+home-page: https://github.com/martinRenou/ipytree
+author: Martin Renou
+author-email: martin.renou@gmail.com
+license: MIT License
+license-file: LICENSE
+classifier: Development Status :: 4 - Beta
+classifier: Framework :: IPython
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: Topic :: Multimedia :: Graphics
+classifier: Programming Language :: Python :: 2
+classifier: Programming Language :: Python :: 2.7
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.3
+classifier: Programming Language :: Python :: 3.4
+classifier: Programming Language :: Python :: 3.5
+requires-dist: ipywidgets<9,>=7.5.0
+

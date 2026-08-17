@@ -1,0 +1,23 @@
+metadata-version: 2.4
+name: ImageHash
+version: 4.3.2
+dynamic: author
+dynamic: author-email
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: requires-dist
+dynamic: summary
+summary: Image Hashing library
+home-page: https://github.com/JohannesBuchner/imagehash
+author: Johannes Buchner
+author-email: buchner.johannes@gmx.at
+license: 2-clause BSD License
+license-file: LICENSE
+requires-dist: numpy
+requires-dist: scipy
+requires-dist: pillow
+requires-dist: PyWavelets
+

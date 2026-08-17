@@ -1,0 +1,55 @@
+metadata-version: 2.4
+name: apache-airflow-providers-common-sql
+version: 2.1.0
+summary: Provider package apache-airflow-providers-common-sql for Apache Airflow
+keywords: airflow-provider,common.sql,airflow,integration
+author-email: Apache Software Foundation <dev@airflow.apache.org>
+maintainer-email: Apache Software Foundation <dev@airflow.apache.org>
+license-expression: Apache-2.0
+license-file: LICENSE
+license-file: NOTICE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Environment :: Web Environment
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: System Administrators
+classifier: Framework :: Apache Airflow
+classifier: Framework :: Apache Airflow :: Provider
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: System :: Monitoring
+requires-dist: apache-airflow>=2.11.0
+requires-dist: apache-airflow-providers-common-compat>=1.14.1
+requires-dist: sqlparse>=0.5.1
+requires-dist: more-itertools>=9.0.0
+requires-dist: methodtools>=0.4.7
+requires-dist: apache-airflow-providers-amazon; extra == "amazon"
+requires-dist: apache-airflow-providers-apache-iceberg; extra == "apache-iceberg"
+requires-dist: datafusion<52.0.0,>=50.0.0; extra == "datafusion"
+requires-dist: apache-airflow-providers-openlineage; extra == "openlineage"
+requires-dist: pandas[sql-other]>=2.1.2; extra == "pandas" and python_version < "3.13"
+requires-dist: pandas>=2.2.3; extra == "pandas" and (python_version >= "3.13" and python_version < "3.14")
+requires-dist: pandas>=2.3.3; extra == "pandas" and python_version >= "3.14"
+requires-dist: polars>=1.26.0; extra == "polars"
+requires-dist: pyiceberg-core>=0.8.0; extra == "pyiceberg-core"
+requires-dist: sqlalchemy>=1.4.54; extra == "sqlalchemy"
+requires-python: >=3.10
+project-url: Bug Tracker, https://github.com/apache/airflow/issues
+project-url: Changelog, https://airflow.apache.org/docs/apache-airflow-providers-common-sql/2.1.0/changelog.html
+project-url: Documentation, https://airflow.apache.org/docs/apache-airflow-providers-common-sql/2.1.0
+project-url: Mastodon, https://fosstodon.org/@airflow
+project-url: Slack Chat, https://s.apache.org/airflow-slack
+project-url: Source Code, https://github.com/apache/airflow
+project-url: YouTube, https://www.youtube.com/channel/UCSXwxpWZQ7XZ1WL3wqevChA/
+provides-extra: amazon
+provides-extra: apache-iceberg
+provides-extra: datafusion
+provides-extra: openlineage
+provides-extra: pandas
+provides-extra: polars
+provides-extra: pyiceberg-core
+provides-extra: sqlalchemy
+

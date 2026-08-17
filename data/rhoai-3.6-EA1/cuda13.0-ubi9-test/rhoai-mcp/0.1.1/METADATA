@@ -1,0 +1,29 @@
+metadata-version: 2.5
+name: rhoai-mcp
+version: 0.1.1
+summary: MCP server for Red Hat OpenShift AI
+keywords: ai,kubernetes,mcp,ml,openshift,plugin,rhoai
+author-email: Adam Miller <admiller@redhat.com>
+maintainer-email: RHOAI MCP Team <rhoai-mcp@redhat.com>
+license: MIT
+license-file: LICENSE
+classifier: Development Status :: 3 - Alpha
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+requires-dist: httpx>=0.27.0
+requires-dist: kubernetes>=28.1.0
+requires-dist: mcp>=1.0.0
+requires-dist: pluggy>=1.4.0
+requires-dist: pydantic-settings>=2.0.0
+requires-dist: pydantic>=2.0.0
+requires-dist: pyjwt[crypto]>=2.12.0
+requires-python: >=3.10
+project-url: Homepage, https://github.com/opendatahub-io/rhoai-mcp
+project-url: Repository, https://github.com/opendatahub-io/rhoai-mcp
+project-url: Issues, https://github.com/opendatahub-io/rhoai-mcp/issues
+

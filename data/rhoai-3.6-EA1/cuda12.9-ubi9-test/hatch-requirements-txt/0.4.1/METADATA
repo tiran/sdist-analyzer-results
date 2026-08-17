@@ -1,0 +1,41 @@
+metadata-version: 2.5
+name: hatch-requirements-txt
+version: 0.4.1
+summary: Hatchling plugin to read project dependencies from requirements.txt
+keywords: dependencies,hatch,requirements
+author-email: Dominic Davis-Foster <dominic@davis-foster.co.uk>
+license: Copyright (c) 2022 Dominic Davis-Foster
+                 
+                 Permission is hereby granted, free of charge, to any person obtaining a copy
+                 of this software and associated documentation files (the "Software"), to deal
+                 in the Software without restriction, including without limitation the rights
+                 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+                 copies of the Software, and to permit persons to whom the Software is
+                 furnished to do so, subject to the f...
+license-file: LICENSE
+classifier: Development Status :: 4 - Beta
+classifier: Framework :: Hatch
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: System :: Archiving :: Packaging
+classifier: Typing :: Typed
+requires-dist: hatchling>=0.21.0
+requires-dist: packaging>=21.3
+requires-python: >=3.6.1
+project-url: Homepage, https://github.com/repo-helper/hatch-requirements-txt
+project-url: Issue Tracker, https://github.com/repo-helper/hatch-requirements-txt/issues
+project-url: Source Code, https://github.com/repo-helper/hatch-requirements-txt
+

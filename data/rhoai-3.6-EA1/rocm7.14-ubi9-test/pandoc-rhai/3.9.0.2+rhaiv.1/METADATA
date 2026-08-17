@@ -1,0 +1,5 @@
+metadata-version: 2.4
+name: pandoc-rhai
+version: 3.9.0.2+rhaiv.1
+summary: Pandoc binary packaged as a Python wheel
+

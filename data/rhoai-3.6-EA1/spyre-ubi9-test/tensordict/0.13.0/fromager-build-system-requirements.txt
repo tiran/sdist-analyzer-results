@@ -1,4 +1,4 @@
 wheel
-setuptools
 setuptools_scm
+setuptools
 pybind11[global]>=2.13

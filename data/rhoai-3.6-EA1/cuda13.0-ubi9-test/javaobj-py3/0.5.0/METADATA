@@ -1,0 +1,34 @@
+metadata-version: 2.5
+name: javaobj-py3
+version: 0.5.0
+summary: Module for serializing and de-serializing Java objects.
+keywords: java,marshalling,python,serialization
+author-email: Volodymyr Buell <vbuell@gmail.com>
+maintainer-email: Thomas Calmant <thomas.calmant@gmail.com>
+license-expression: Apache-2.0
+license-file: AUTHORS
+license-file: LICENSE
+classifier: Development Status :: 3 - Alpha
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 2.7
+classifier: Programming Language :: Python :: 3.4
+classifier: Programming Language :: Python :: 3.5
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: enum34; python_version < "3.4"
+requires-dist: typing; python_version < "3.5"
+requires-dist: pytest; extra == "test"
+project-url: Homepage, https://github.com/tcalmant/python-javaobj
+project-url: Issues, http://github.com/tcalmant/python-javaobj/issues
+project-url: Source, http://github.com/tcalmant/python-javaobj/
+provides-extra: test
+

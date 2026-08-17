@@ -1,0 +1,36 @@
+metadata-version: 2.5
+name: starlette
+version: 1.3.1
+summary: The little ASGI library that shines.
+author-email: Tom Christie <tom@tomchristie.com>
+maintainer-email: Marcelo Trylesinski <marcelotryle@gmail.com>
+license-expression: BSD-3-Clause
+license-file: LICENSE.md
+classifier: Development Status :: 3 - Alpha
+classifier: Environment :: Web Environment
+classifier: Framework :: AnyIO
+classifier: Intended Audience :: Developers
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Internet :: WWW/HTTP
+requires-dist: anyio<5,>=3.6.2
+requires-dist: typing-extensions>=4.10.0; python_version < "3.13"
+requires-dist: httpx2>=2.0.0; extra == "full"
+requires-dist: httpx<0.29.0,>=0.27.0; extra == "full"
+requires-dist: itsdangerous; extra == "full"
+requires-dist: jinja2; extra == "full"
+requires-dist: python-multipart>=0.0.18; extra == "full"
+requires-dist: pyyaml; extra == "full"
+requires-python: >=3.10
+project-url: Homepage, https://github.com/Kludex/starlette
+project-url: Documentation, https://starlette.dev/
+project-url: Changelog, https://starlette.dev/release-notes/
+project-url: Funding, https://github.com/sponsors/Kludex
+project-url: Source, https://github.com/Kludex/starlette
+provides-extra: full
+

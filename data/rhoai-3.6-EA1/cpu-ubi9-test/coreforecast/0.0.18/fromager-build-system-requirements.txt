@@ -1,2 +1,2 @@
-scikit-build-core
 pybind11
+scikit-build-core

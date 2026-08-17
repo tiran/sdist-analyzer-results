@@ -1,2 +1,2 @@
-setuptools>=80
 setuptools_scm>=8
+setuptools>=80

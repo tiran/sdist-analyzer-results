@@ -1,0 +1,28 @@
+metadata-version: 2.4
+name: wrapt
+version: 2.3.0
+dynamic: license-file
+summary: Module for decorators, wrappers and monkey patching.
+keywords: wrapper,proxy,decorator
+author-email: Graham Dumpleton <Graham.Dumpleton@gmail.com>
+license-expression: BSD-2-Clause
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+requires-dist: pytest; extra == "dev"
+requires-dist: setuptools; extra == "dev"
+requires-python: >=3.9
+project-url: Homepage, https://github.com/GrahamDumpleton/wrapt
+project-url: Bug Tracker, https://github.com/GrahamDumpleton/wrapt/issues/
+project-url: Changelog, https://wrapt.readthedocs.io/en/latest/changes.html
+project-url: Documentation, https://wrapt.readthedocs.io/
+provides-extra: dev
+

@@ -1,0 +1,33 @@
+metadata-version: 2.4
+name: python-pptx
+version: 1.0.2
+dynamic: license-file
+summary: Create, read, and update PowerPoint 2007+ (.pptx) files.
+keywords: powerpoint,ppt,pptx,openxml,office
+author-email: Steve Canny <stcanny@gmail.com>
+license: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Topic :: Office/Business :: Office Suites
+classifier: Topic :: Software Development :: Libraries
+requires-dist: Pillow>=3.3.2
+requires-dist: XlsxWriter>=0.5.7
+requires-dist: lxml>=3.1.0
+requires-dist: typing_extensions>=4.9.0
+requires-python: >=3.8
+project-url: Changelog, https://github.com/scanny/python-pptx/blob/master/HISTORY.rst
+project-url: Documentation, https://python-pptx.readthedocs.io/en/latest/
+project-url: Homepage, https://github.com/scanny/python-pptx
+project-url: Repository, https://github.com/scanny/python-pptx
+

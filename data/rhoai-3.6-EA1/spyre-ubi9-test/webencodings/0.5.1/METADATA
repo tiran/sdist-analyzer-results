@@ -1,0 +1,35 @@
+metadata-version: 2.4
+name: webencodings
+version: 0.5.1
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: license
+dynamic: maintainer
+dynamic: maintainer-email
+dynamic: summary
+summary: Character encoding aliases for legacy web content
+home-page: https://github.com/SimonSapin/python-webencodings
+author: Simon Sapin
+author-email: simon.sapin@exyr.org
+maintainer: Geoffrey Sneddon
+maintainer-email: me@gsnedders.com
+license: BSD
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: BSD License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 2
+classifier: Programming Language :: Python :: 2.6
+classifier: Programming Language :: Python :: 2.7
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.3
+classifier: Programming Language :: Python :: 3.4
+classifier: Programming Language :: Python :: 3.5
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Internet :: WWW/HTTP
+

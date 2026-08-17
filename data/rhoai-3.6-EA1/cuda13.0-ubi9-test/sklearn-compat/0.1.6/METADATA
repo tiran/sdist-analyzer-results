@@ -1,0 +1,38 @@
+metadata-version: 2.5
+name: sklearn-compat
+version: 0.1.6
+summary: Ease support for compatible scikit-learn estimators across versions
+author-email: Guillaume Lemaitre <guillaume@probabl.ai>, Adrin Jalali <adrin.jalali@gmail.com>
+license-file: LICENSE
+classifier: Development Status :: 4 - Beta
+classifier: License :: OSI Approved :: BSD License
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Scientific/Engineering :: Physics
+requires-dist: scikit-learn<1.10,>=1.2
+requires-dist: ipython; extra == "dev"
+requires-dist: mkdocs; extra == "docs"
+requires-dist: mkdocs-material; extra == "docs"
+requires-dist: pre-commit; extra == "lint"
+requires-dist: pandas; extra == "tests"
+requires-dist: polars; extra == "tests"
+requires-dist: pyarrow; extra == "tests"
+requires-dist: pytest; extra == "tests"
+requires-dist: pytest-cov; extra == "tests"
+requires-dist: pytest-xdist; extra == "tests"
+requires-dist: pytz; extra == "tests"
+requires-python: >=3.8
+project-url: Homepage, https://sklearn-compat.readthedocs.io/en/
+project-url: Source, https://github.com/sklearn-compat/sklearn-compat
+project-url: Issues, https://github.com/sklearn-compat/sklearn-compat/issues
+provides-extra: dev
+provides-extra: docs
+provides-extra: lint
+provides-extra: tests
+

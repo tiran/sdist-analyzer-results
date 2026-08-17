@@ -1,0 +1,18 @@
+metadata-version: 2.4
+name: ipadic
+version: 1.0.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: summary
+summary: IPAdic packaged for Python
+home-page: https://github.com/polm/ipadic-py
+author: Paul O'Leary McCann
+author-email: polm@dampfkraft.com
+classifier: Programming Language :: Python :: 3
+classifier: Operating System :: OS Independent
+classifier: Natural Language :: Japanese
+

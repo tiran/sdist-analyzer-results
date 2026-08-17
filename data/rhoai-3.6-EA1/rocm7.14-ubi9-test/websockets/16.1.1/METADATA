@@ -1,0 +1,29 @@
+metadata-version: 2.4
+name: websockets
+version: 16.1.1
+dynamic: description
+dynamic: description-content-type
+dynamic: license-file
+summary: An implementation of the WebSocket Protocol (RFC 6455 & 7692)
+keywords: WebSocket
+author-email: Aymeric Augustin <aymeric.augustin@m4x.org>
+license-expression: BSD-3-Clause
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Web Environment
+classifier: Intended Audience :: Developers
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-python: >=3.10
+project-url: Homepage, https://github.com/python-websockets/websockets
+project-url: Changelog, https://websockets.readthedocs.io/en/stable/project/changelog.html
+project-url: Documentation, https://websockets.readthedocs.io/
+project-url: Funding, https://tidelift.com/subscription/pkg/pypi-websockets?utm_source=pypi-websockets&utm_medium=referral&utm_campaign=readme
+project-url: Tracker, https://github.com/python-websockets/websockets/issues
+

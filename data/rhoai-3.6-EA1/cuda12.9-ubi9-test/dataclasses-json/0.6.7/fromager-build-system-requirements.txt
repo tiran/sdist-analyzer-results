@@ -1,0 +1,2 @@
+poetry-dynamic-versioning
+poetry-core>=1.2.0

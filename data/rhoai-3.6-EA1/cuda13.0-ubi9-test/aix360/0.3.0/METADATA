@@ -1,0 +1,14 @@
+metadata-version: 2.4
+name: aix360
+version: 0.3.0
+dynamic: license-file
+summary: AI Explainability 360 v0.3.0
+author-email: aix360 developers <aix360@us.ibm.com>
+license-file: LICENSE
+classifier: Programming Language :: Python :: 3
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: OS Independent
+requires-python: >=3.6
+project-url: Homepage, https://github.com/Trusted-AI/AIX360
+project-url: Bug Tracker, https://github.com/Trusted-AI/AIX360/issues
+

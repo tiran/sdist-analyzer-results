@@ -1,0 +1,14 @@
+metadata-version: 2.4
+name: flydsl
+version: 0.2.0
+dynamic: description
+dynamic: description-content-type
+dynamic: license
+dynamic: license-file
+dynamic: requires-python
+dynamic: summary
+summary: FlyDSL - ROCm Domain Specific Language for layout algebra (Python + embedded MLIR runtime)
+license: Apache-2.0
+license-file: LICENSE
+requires-python: >=3.8
+

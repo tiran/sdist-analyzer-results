@@ -1,5 +1,0 @@
-nanobind
-setuptools>=64
-setuptools
-protobuf>=4.25.1
-pybind11[global]

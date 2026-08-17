@@ -1,6 +1,0 @@
-setuptools>=77.0.3
-delocate<1.0.0,>=0.11.0
-wheel<1.0.0,>=0.43.0
-pybind11>=2.13.6
-cmake<4.0.0,>=3.27.0
-cibuildwheel<4.0.0,>=2.19.2; python_version >= "3.11"

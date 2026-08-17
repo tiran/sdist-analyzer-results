@@ -1,0 +1,41 @@
+metadata-version: 2.4
+name: nvidia-cudnn-frontend
+version: 1.27.0
+dynamic: license-file
+summary: NVIDIA cuDNN Frontend — Python and C++ Graph API with SOTA attention (SDPA / Flash Attention), MoE grouped GEMM fusions, and FP8/MXFP8 kernels for Hopper and Blackwell GPUs.
+keywords: cudnn,cuda,gpu,nvidia,deep-learning,attention,sdpa,flash-attention,transformer,moe,mixture-of-experts,grouped-gemm,fp8,mxfp8,blackwell,hopper,pytorch,kernel,graph-api
+license: Apache-2.0 AND MIT
+license-file: LICENSE-MIT.txt
+license-file: LICENSE.txt
+license-file: NOTICE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: Apache Software License
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: POSIX :: Linux
+classifier: Operating System :: Microsoft :: Windows
+classifier: Programming Language :: C++
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Environment :: GPU :: NVIDIA CUDA
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: nvidia-cutlass-dsl[cu13]>=4.5.0; extra == "cutedsl"
+requires-dist: cuda-python; extra == "cutedsl"
+requires-dist: torch; extra == "cutedsl"
+requires-dist: apache-tvm-ffi>=0.1.11; extra == "cutedsl"
+requires-dist: torch-c-dlpack-ext; extra == "cutedsl"
+requires-python: >=3.9
+project-url: Homepage, https://github.com/NVIDIA/cudnn-frontend
+project-url: Documentation, https://docs.nvidia.com/deeplearning/cudnn/frontend/latest/
+project-url: Blog, https://nvidia.github.io/cudnn-frontend/
+project-url: Repository, https://github.com/NVIDIA/cudnn-frontend
+project-url: Bug Tracker, https://github.com/NVIDIA/cudnn-frontend/issues
+project-url: Release Notes, https://github.com/NVIDIA/cudnn-frontend/releases
+provides-extra: cutedsl
+

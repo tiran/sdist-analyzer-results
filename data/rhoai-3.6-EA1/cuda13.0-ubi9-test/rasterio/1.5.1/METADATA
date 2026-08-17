@@ -1,0 +1,58 @@
+metadata-version: 2.4
+name: rasterio
+version: 1.5.1
+dynamic: license-file
+summary: Fast and direct raster I/O for use with NumPy
+keywords: gis,raster,gdal
+author-email: Sean Gillies <sean.gillies@gmail.com>
+maintainer: Rasterio contributors
+license-expression: BSD-3-Clause
+license-file: LICENSE.txt
+license-file: AUTHORS.txt
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Information Technology
+classifier: Intended Audience :: Science/Research
+classifier: Programming Language :: C
+classifier: Programming Language :: Cython
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: 3
+classifier: Topic :: Multimedia :: Graphics :: Graphics Conversion
+classifier: Topic :: Scientific/Engineering :: GIS
+requires-dist: affine
+requires-dist: attrs
+requires-dist: certifi
+requires-dist: click!=8.2.*,>=4.0
+requires-dist: numpy>=2
+requires-dist: pyparsing>=3.0
+requires-dist: rasterio[docs,ipython,plot,s3,test]; extra == "all"
+requires-dist: ghp-import; extra == "docs"
+requires-dist: numpydoc; extra == "docs"
+requires-dist: sphinx; extra == "docs"
+requires-dist: sphinx-click; extra == "docs"
+requires-dist: sphinx-rtd-theme; extra == "docs"
+requires-dist: ipython>=2.0; extra == "ipython"
+requires-dist: matplotlib; extra == "plot"
+requires-dist: boto3>=1.2.4; extra == "s3"
+requires-dist: aiohttp; extra == "test"
+requires-dist: boto3>=1.2.4; extra == "test"
+requires-dist: fsspec; extra == "test"
+requires-dist: hypothesis; extra == "test"
+requires-dist: matplotlib; extra == "test"
+requires-dist: packaging; extra == "test"
+requires-dist: pytest-cov>=2.2.0; extra == "test"
+requires-dist: pytest>=2.8.2; extra == "test"
+requires-dist: requests; extra == "test"
+requires-dist: shapely; extra == "test"
+requires-python: >=3.12
+project-url: Documentation, https://rasterio.readthedocs.io/
+project-url: Repository, https://github.com/rasterio/rasterio
+provides-extra: all
+provides-extra: docs
+provides-extra: ipython
+provides-extra: plot
+provides-extra: s3
+provides-extra: test
+

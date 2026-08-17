@@ -1,0 +1,14 @@
+metadata-version: 1.1
+name: braceexpand
+version: 0.1.7
+platform: UNKNOWN
+summary: Bash-style brace expansion for Python
+home-page: https://github.com/trendels/braceexpand
+author: Stanis Trendelenburg
+author-email: stanis.trendelenburg@gmail.com
+license: MIT
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 2
+classifier: Programming Language :: Python :: 3
+

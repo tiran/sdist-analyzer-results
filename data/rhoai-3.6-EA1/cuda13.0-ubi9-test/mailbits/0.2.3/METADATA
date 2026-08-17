@@ -1,0 +1,26 @@
+metadata-version: 2.5
+name: mailbits
+version: 0.2.3
+summary: Assorted e-mail utility functions
+keywords: EmailMessage,content type,e-mail,e-mail address,e-mail comparison,e-mail inspection,email,recipients
+author-email: John Thorvald Wodder II <mailbits@varonathe.org>
+license-expression: MIT
+license-file: LICENSE
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Communications :: Email
+classifier: Topic :: Utilities
+classifier: Typing :: Typed
+requires-dist: attrs>=18.1
+requires-python: >=3.10
+project-url: Source Code, https://github.com/jwodder/mailbits
+project-url: Bug Tracker, https://github.com/jwodder/mailbits/issues
+

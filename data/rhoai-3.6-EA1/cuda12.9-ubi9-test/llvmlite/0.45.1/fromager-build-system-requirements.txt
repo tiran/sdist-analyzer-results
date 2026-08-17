@@ -1,2 +1,2 @@
-setuptools>=40.8.0
 setuptools<81
+setuptools>=40.8.0

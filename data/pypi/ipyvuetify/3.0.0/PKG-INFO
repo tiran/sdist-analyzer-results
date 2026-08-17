@@ -1,0 +1,44 @@
+metadata-version: 2.4
+name: ipyvuetify
+version: 3.0.0
+dynamic: license-file
+summary: Jupyter widgets based on vuetify UI components
+keywords: ipython,jupyter,widgets
+author-email: Mario Buikhuizen <mbuikhuizen@gmail.com>, Maarten Breddels <maartenbreddels@gmail.com>
+license: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Framework :: IPython
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: Topic :: Multimedia :: Graphics
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+requires-dist: ipyvue>=3.0.0
+requires-dist: nox; extra == "dev"
+requires-dist: pre-commit; extra == "dev"
+requires-dist: mypy; extra == "dev"
+requires-dist: pytest; extra == "test"
+requires-dist: pytest-playwright<0.6; extra == "test"
+requires-dist: pixelmatch<0.4,>=0.3.0; extra == "test"
+requires-dist: nbformat<5.10; extra == "test"
+requires-dist: jupyterlab<4; extra == "test"
+requires-dist: solara[pytest]; extra == "test"
+requires-dist: sphinx<7; extra == "doc"
+requires-dist: jupyter-sphinx; extra == "doc"
+requires-dist: ipykernel; extra == "doc"
+requires-dist: pydata-sphinx-theme; extra == "doc"
+requires-dist: sphinx-design; extra == "doc"
+requires-python: >=3.6
+project-url: repository, https://github.com/widgetti/ipyvuetify
+provides-extra: dev
+provides-extra: test
+provides-extra: doc
+

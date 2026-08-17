@@ -1,0 +1,49 @@
+metadata-version: 2.4
+name: aistore
+version: 1.25.0
+summary: Client-side APIs to access and utilize clusters, buckets, and objects on AIStore.
+keywords: AIStore,Artificial Intelligence,Deep Learning,ETL,High Performance,Lightweight Object Storage,Object Storage,Petascale
+author-email: Team AIStore <aistore@nvidia.com>
+license-expression: MIT
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Education
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Topic :: Scientific/Engineering
+requires-dist: braceexpand>=0.1.7
+requires-dist: cloudpickle>=3.0.0
+requires-dist: humanize>=4.9.0
+requires-dist: msgspec>=0.18.5
+requires-dist: overrides>=7.4.0
+requires-dist: packaging>=23.0
+requires-dist: pydantic>=2.5.0
+requires-dist: python-dateutil>=2.9.0
+requires-dist: pyyaml>=6.0.1
+requires-dist: requests>=2.28.2
+requires-dist: tenacity>=9.0.0
+requires-dist: urllib3>=1.26.18
+requires-dist: xxhash>=3.3.0
+requires-dist: wrapt; extra == "botocore"
+requires-dist: aiofiles>=23.2.1; extra == "etl"
+requires-dist: fastapi>=0.109.1; extra == "etl"
+requires-dist: flask>=2.3.0; extra == "etl"
+requires-dist: gunicorn>=23.0.0; extra == "etl"
+requires-dist: httpx>=0.28.0; extra == "etl"
+requires-dist: uvicorn[standard]>=0.32.0; extra == "etl"
+requires-dist: mcp[cli]>=1.4.1; extra == "mcp"
+requires-dist: alive-progress>=3.1.0; extra == "pytorch"
+requires-dist: torch; extra == "pytorch"
+requires-dist: torchdata; extra == "pytorch"
+requires-dist: webdataset>=0.2.100; extra == "pytorch"
+requires-python: >=3.8
+project-url: Homepage, https://aistore.nvidia.com
+project-url: Documentation, https://aistore.nvidia.com/docs/python-sdk
+project-url: Changelog, https://github.com/NVIDIA/aistore/blob/main/python/CHANGELOG.md
+project-url: Source, https://github.com/NVIDIA/aistore/tree/main/python/aistore/sdk
+provides-extra: botocore
+provides-extra: etl
+provides-extra: mcp
+provides-extra: pytorch
+

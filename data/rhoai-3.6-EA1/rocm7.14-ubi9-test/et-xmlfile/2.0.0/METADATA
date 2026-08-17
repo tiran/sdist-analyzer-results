@@ -1,0 +1,38 @@
+metadata-version: 2.4
+name: et_xmlfile
+version: 2.0.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: project-url
+dynamic: requires-python
+dynamic: summary
+summary: An implementation of lxml.xmlfile for the standard library
+home-page: https://foss.heptapod.net/openpyxl/et_xmlfile
+author: See AUTHORS.txt
+author-email: charlie.clark@clark-consulting.eu
+license: MIT
+license-file: LICENCE.python
+license-file: LICENCE.rst
+license-file: AUTHORS.txt
+classifier: Development Status :: 5 - Production/Stable
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: POSIX
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+requires-python: >=3.8
+project-url: Documentation, https://openpyxl.pages.heptapod.net/et_xmlfile/
+project-url: Source, https://foss.heptapod.net/openpyxl/et_xmlfile
+project-url: Tracker, https://foss.heptapod.net/openpyxl/et_xmfile/-/issues
+

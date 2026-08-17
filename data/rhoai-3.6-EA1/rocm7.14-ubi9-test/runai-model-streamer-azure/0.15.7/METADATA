@@ -1,0 +1,9 @@
+metadata-version: 2.4
+name: runai-model-streamer-azure
+version: 0.15.7
+dynamic: license-file
+dynamic: requires-dist
+license-file: LICENSE
+requires-dist: azure-storage-blob
+requires-dist: azure-identity
+

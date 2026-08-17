@@ -1,0 +1,41 @@
+metadata-version: 2.4
+name: google-resumable-media
+version: 2.10.1
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: platform
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+platform: Posix; MacOS X; Windows
+summary: Utilities for Google Media Downloads and Resumable Uploads
+home-page: https://github.com/googleapis/google-cloud-python/tree/main/packages/google-resumable-media
+author: Google Cloud Platform
+author-email: googleapis-publisher@google.com
+license: Apache 2.0
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Internet
+requires-dist: google-crc32c<2.0.0,>=1.0.0
+requires-dist: requests<3.0.0,>=2.18.0; extra == "requests"
+requires-dist: aiohttp<4.0.0,>=3.6.2; extra == "aiohttp"
+requires-dist: google-auth<3.0.0,>=2.14.1; extra == "aiohttp"
+requires-python: >=3.10
+provides-extra: requests
+provides-extra: aiohttp
+

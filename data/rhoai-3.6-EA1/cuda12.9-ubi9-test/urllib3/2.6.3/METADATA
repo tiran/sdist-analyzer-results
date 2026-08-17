@@ -1,0 +1,41 @@
+metadata-version: 2.5
+name: urllib3
+version: 2.6.3
+summary: HTTP library with thread-safe connection pooling, file post, and more.
+keywords: filepost,http,httplib,https,pooling,ssl,threadsafe,urllib
+author-email: Andrey Petrov <andrey.petrov@shazow.net>
+maintainer-email: Seth Michael Larson <sethmichaellarson@gmail.com>, Quentin Pradet <quentin@pradet.me>, Illia Volochii <illia.volochii@gmail.com>
+license-expression: MIT
+license-file: LICENSE.txt
+classifier: Environment :: Web Environment
+classifier: Intended Audience :: Developers
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Free Threading :: 2 - Beta
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Internet :: WWW/HTTP
+classifier: Topic :: Software Development :: Libraries
+requires-dist: brotli>=1.2.0; platform_python_implementation == "CPython" and extra == "brotli"
+requires-dist: brotlicffi>=1.2.0.0; platform_python_implementation != "CPython" and extra == "brotli"
+requires-dist: h2<5,>=4; extra == "h2"
+requires-dist: pysocks!=1.5.7,<2.0,>=1.5.6; extra == "socks"
+requires-dist: backports-zstd>=1.0.0; python_version < "3.14" and extra == "zstd"
+requires-python: >=3.9
+project-url: Changelog, https://github.com/urllib3/urllib3/blob/main/CHANGES.rst
+project-url: Documentation, https://urllib3.readthedocs.io
+project-url: Code, https://github.com/urllib3/urllib3
+project-url: Issue tracker, https://github.com/urllib3/urllib3/issues
+provides-extra: brotli
+provides-extra: h2
+provides-extra: socks
+provides-extra: zstd
+

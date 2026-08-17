@@ -1,0 +1,4 @@
+Cython>=0.29
+numpy>=2.0.0rc1; python_version >= "3.9"
+setuptools_scm[toml]>=3.4
+setuptools>=61

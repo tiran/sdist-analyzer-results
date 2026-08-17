@@ -1,0 +1,103 @@
+metadata-version: 2.5
+name: plotly
+version: 6.9.0
+summary: An open-source interactive data visualization library for Python
+author-email: Chris P <chris@plot.ly>
+maintainer-email: Martha Cryan <martha.cryan@plot.ly>, Emily Kellison-Linn <emily@plot.ly>
+license-expression: MIT
+license-file: LICENSE.txt
+classifier: Development Status :: 5 - Production/Stable
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Topic :: Scientific/Engineering :: Visualization
+requires-dist: narwhals>=1.15.1
+requires-dist: packaging
+requires-dist: anywidget; extra == "dev"
+requires-dist: build; extra == "dev"
+requires-dist: colorcet; extra == "dev"
+requires-dist: fiona<=1.9.6; python_version <= "3.8" and extra == "dev"
+requires-dist: geopandas; extra == "dev"
+requires-dist: inflect; extra == "dev"
+requires-dist: jupyterlab; extra == "dev"
+requires-dist: kaleido>=1.3.0; extra == "dev"
+requires-dist: numpy>=1.22; extra == "dev"
+requires-dist: orjson; extra == "dev"
+requires-dist: pandas; extra == "dev"
+requires-dist: pdfrw; extra == "dev"
+requires-dist: pillow; extra == "dev"
+requires-dist: plotly-geo; extra == "dev"
+requires-dist: polars[timezone]; extra == "dev"
+requires-dist: pyarrow; extra == "dev"
+requires-dist: pyshp; extra == "dev"
+requires-dist: pytest; extra == "dev"
+requires-dist: pytz; extra == "dev"
+requires-dist: requests; extra == "dev"
+requires-dist: ruff==0.11.12; extra == "dev"
+requires-dist: scikit-image; extra == "dev"
+requires-dist: scipy; extra == "dev"
+requires-dist: shapely; extra == "dev"
+requires-dist: statsmodels; extra == "dev"
+requires-dist: vaex; python_version <= "3.9" and extra == "dev"
+requires-dist: xarray; extra == "dev"
+requires-dist: build; extra == "dev-build"
+requires-dist: jupyterlab; extra == "dev-build"
+requires-dist: pytest; extra == "dev-build"
+requires-dist: requests; extra == "dev-build"
+requires-dist: ruff==0.11.12; extra == "dev-build"
+requires-dist: pytest; extra == "dev-core"
+requires-dist: requests; extra == "dev-core"
+requires-dist: ruff==0.11.12; extra == "dev-core"
+requires-dist: anywidget; extra == "dev-optional"
+requires-dist: build; extra == "dev-optional"
+requires-dist: colorcet; extra == "dev-optional"
+requires-dist: fiona<=1.9.6; python_version <= "3.8" and extra == "dev-optional"
+requires-dist: geopandas; extra == "dev-optional"
+requires-dist: inflect; extra == "dev-optional"
+requires-dist: jupyterlab; extra == "dev-optional"
+requires-dist: kaleido>=1.3.0; extra == "dev-optional"
+requires-dist: numpy>=1.22; extra == "dev-optional"
+requires-dist: orjson; extra == "dev-optional"
+requires-dist: pandas; extra == "dev-optional"
+requires-dist: pdfrw; extra == "dev-optional"
+requires-dist: pillow; extra == "dev-optional"
+requires-dist: plotly-geo; extra == "dev-optional"
+requires-dist: polars[timezone]; extra == "dev-optional"
+requires-dist: pyarrow; extra == "dev-optional"
+requires-dist: pyshp; extra == "dev-optional"
+requires-dist: pytest; extra == "dev-optional"
+requires-dist: pytz; extra == "dev-optional"
+requires-dist: requests; extra == "dev-optional"
+requires-dist: ruff==0.11.12; extra == "dev-optional"
+requires-dist: scikit-image; extra == "dev-optional"
+requires-dist: scipy; extra == "dev-optional"
+requires-dist: shapely; extra == "dev-optional"
+requires-dist: statsmodels; extra == "dev-optional"
+requires-dist: vaex; python_version <= "3.9" and extra == "dev-optional"
+requires-dist: xarray; extra == "dev-optional"
+requires-dist: numpy<2,>=1; extra == "dev-pandas1"
+requires-dist: pandas<2,>=1; extra == "dev-pandas1"
+requires-dist: setuptools<82; extra == "dev-pandas1"
+requires-dist: pandas<3,>=2; extra == "dev-pandas2"
+requires-dist: pandas>=3; python_version >= "3.11" and extra == "dev-pandas3"
+requires-dist: numpy>=1.22; extra == "express"
+requires-dist: kaleido>=1.3.0; extra == "kaleido"
+requires-python: >=3.8
+project-url: Homepage, https://plotly.com/python/
+project-url: Documentation, https://plotly.com/python/
+project-url: GitHub, https://github.com/plotly/plotly.py
+project-url: Changelog, https://github.com/plotly/plotly.py/blob/main/CHANGELOG.md
+provides-extra: dev
+provides-extra: dev-build
+provides-extra: dev-core
+provides-extra: dev-optional
+provides-extra: dev-pandas1
+provides-extra: dev-pandas2
+provides-extra: dev-pandas3
+provides-extra: express
+provides-extra: kaleido
+

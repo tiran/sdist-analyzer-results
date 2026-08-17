@@ -1,0 +1,12 @@
+metadata-version: 2.5
+name: lance-namespace
+version: 0.9.0
+summary: Lance Namespace interface and plugin registry
+keywords: lance,lancedb,namespace,vector-database
+author-email: LanceDB Devs <dev@lancedb.com>
+license: Apache-2.0
+requires-dist: lance-namespace-urllib3-client==0.9.0
+requires-python: >=3.8
+project-url: Repository, https://github.com/lance-format/lance-namespace
+project-url: Documentation, https://lance.org/format/namespace/
+

@@ -1,2 +1,0 @@
-vcs-versioning<3,>=2.0.0.dev0
-setuptools>=77.0.3

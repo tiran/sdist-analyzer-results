@@ -1,0 +1,15 @@
+metadata-version: 2.4
+name: coherent.licensed
+version: 0.5.2
+summary: License management tooling for Coherent System and skeleton projects
+author-email: "Jason R. Coombs" <jaraco@jaraco.com>
+license-expression: MIT
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+requires-python: >=3.9
+project-url: Source, https://github.com/coherent-oss/coherent.licensed
+provides-extra: doc
+provides-extra: test
+

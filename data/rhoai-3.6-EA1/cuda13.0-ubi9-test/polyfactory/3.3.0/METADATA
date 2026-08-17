@@ -1,0 +1,65 @@
+metadata-version: 2.5
+name: polyfactory
+version: 3.3.0
+summary: Mock data generation factories
+keywords: attrs,dataclasses,msgspec,pydantic,sqlalchemy
+author-email: Na'aman Hirschfeld <nhirschfeld@gmail.com>
+maintainer-email: Cody Fincher <cody@litestar.dev>, Janek Nouvertné <janek@litestar.dev>, Jacob Coffee <jacob@litestar.dev>, Peter Schutt <peter@litestar.dev>, Alc <alc@litestar.dev>, Andy <adh.truong@gmail.com>
+license: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Web Environment
+classifier: Framework :: Pytest
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Natural Language :: English
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Software Development
+classifier: Topic :: Software Development :: Libraries
+classifier: Topic :: Software Development :: Testing
+classifier: Topic :: Software Development :: Testing :: Unit
+classifier: Topic :: Utilities
+classifier: Typing :: Typed
+requires-dist: faker>=5.0.0
+requires-dist: typing-extensions>=4.6.0
+requires-dist: attrs>=22.2.0; extra == "attrs"
+requires-dist: beanie; extra == "beanie"
+requires-dist: pydantic[email]; extra == "beanie"
+requires-dist: pymongo<4.9; extra == "beanie"
+requires-dist: attrs; extra == "full"
+requires-dist: beanie; extra == "full"
+requires-dist: msgspec; extra == "full"
+requires-dist: odmantic; extra == "full"
+requires-dist: pydantic; extra == "full"
+requires-dist: sqlalchemy; extra == "full"
+requires-dist: msgspec>=0.20.0; extra == "msgspec"
+requires-dist: odmantic<1.0.0; extra == "odmantic"
+requires-dist: pydantic[email]; extra == "odmantic"
+requires-dist: eval-type-backport>=0.2.2; extra == "pydantic"
+requires-dist: pydantic[email]>=1.10; extra == "pydantic"
+requires-dist: sqlalchemy>=1.4.29; extra == "sqlalchemy"
+requires-python: <4.0,>=3.9
+project-url: Issue Tracker, https://github.com/litestar-org/polyfactory/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc
+project-url: Changelog, https://github.com/litestar-org/polyfactory/releases/
+project-url: Twitter, https://twitter.com/LitestarAPI
+project-url: Reddit, https://www.reddit.com/r/LitestarAPI
+project-url: Discord, https://discord.gg/MmcwxztmQb
+project-url: Blog, https://blog.litestar.dev
+project-url: homepage, https://github.com/litestar-org/polyfactory
+project-url: repository, https://github.com/litestar-org/polyfactory
+project-url: documentation, https://github.com/litestar-org/polyfactory
+provides-extra: attrs
+provides-extra: beanie
+provides-extra: full
+provides-extra: msgspec
+provides-extra: odmantic
+provides-extra: pydantic
+provides-extra: sqlalchemy
+

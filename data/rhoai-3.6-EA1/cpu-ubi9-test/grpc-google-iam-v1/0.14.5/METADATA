@@ -1,0 +1,26 @@
+metadata-version: 2.4
+name: grpc-google-iam-v1
+version: 0.14.5
+dynamic: license-file
+summary: IAM API client library
+author-email: Google LLC <googleapis-packages@google.com>
+license: Apache 2.0
+license-file: LICENSE
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Operating System :: OS Independent
+classifier: Topic :: Internet
+requires-dist: grpcio<2.0.0,>=1.59.0
+requires-dist: googleapis-common-protos[grpc]<2.0.0,>=1.69.2
+requires-dist: protobuf<8.0.0,>=6.33.5
+requires-python: >=3.10
+project-url: Repository, https://github.com/googleapis/google-cloud-python
+

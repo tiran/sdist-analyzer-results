@@ -1,0 +1,4 @@
+hatch-nodejs-version>=0.3.2
+jupyterlab<5,>=4.0.0
+hatch-jupyter-builder>=0.5
+hatchling>=1.5.0

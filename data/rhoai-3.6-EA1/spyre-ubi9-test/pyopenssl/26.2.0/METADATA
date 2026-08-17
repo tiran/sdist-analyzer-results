@@ -1,0 +1,51 @@
+metadata-version: 2.4
+name: pyOpenSSL
+version: 26.2.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: project-url
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: Python wrapper module around the OpenSSL library
+home-page: https://pyopenssl.org/
+author: The pyOpenSSL developers
+author-email: cryptography-dev@python.org
+license: Apache License, Version 2.0
+license-file: LICENSE
+classifier: Development Status :: 6 - Mature
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: POSIX
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Security :: Cryptography
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: System :: Networking
+requires-dist: cryptography<49,>=46.0.0
+requires-dist: typing-extensions>=4.9; python_version < "3.13" and python_version >= "3.8"
+requires-dist: pytest-rerunfailures; extra == "test"
+requires-dist: pretend; extra == "test"
+requires-dist: pytest>=3.0.1; extra == "test"
+requires-dist: sphinx!=5.2.0,!=5.2.0.post0,!=7.2.5; extra == "docs"
+requires-dist: sphinx_rtd_theme; extra == "docs"
+requires-python: >=3.8
+project-url: Source, https://github.com/pyca/pyopenssl
+provides-extra: test
+provides-extra: docs
+

@@ -1,0 +1,29 @@
+metadata-version: 2.4
+name: numexpr
+version: 2.10.1
+dynamic: license-file
+summary: Fast numerical expression evaluator for NumPy
+author-email: "David M. Cooke, Francesc Alted, and others" <blosc@blosc.org>
+maintainer-email: Blosc Development Team <blosc@blosc.org>
+license-file: LICENSE.txt
+license-file: AUTHORS.txt
+classifier: Development Status :: 6 - Mature
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Information Technology
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: Unix
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+requires-dist: numpy>=1.23.0
+requires-python: >=3.9
+project-url: homepage, https://github.com/pydata/numexpr
+project-url: documentation, https://numexpr.readthedocs.io
+project-url: repository, https://github.com/pydata/numexpr
+

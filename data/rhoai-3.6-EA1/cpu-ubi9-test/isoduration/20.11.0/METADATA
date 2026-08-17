@@ -1,0 +1,33 @@
+metadata-version: 2.4
+name: isoduration
+version: 20.11.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: keywords
+dynamic: license-file
+dynamic: project-url
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: Operations with ISO 8601 durations
+keywords: datetime,date,time,duration,duration-parsing,duration-string,iso8601,iso8601-duration
+home-page: https://github.com/bolsote/isoduration
+author: Víctor Muñoz
+author-email: victorm@marshland.es
+license-file: LICENSE
+classifier: Programming Language :: Python :: 3
+classifier: Operating System :: OS Independent
+classifier: License :: OSI Approved :: ISC License (ISCL)
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: arrow>=0.15.0
+requires-python: >=3.7
+project-url: Repository, https://github.com/bolsote/isoduration
+project-url: Bug Reports, https://github.com/bolsote/isoduration/issues
+project-url: Changelog, https://github.com/bolsote/isoduration/blob/master/CHANGELOG
+

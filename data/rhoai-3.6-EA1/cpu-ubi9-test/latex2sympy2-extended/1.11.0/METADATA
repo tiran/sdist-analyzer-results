@@ -1,0 +1,22 @@
+metadata-version: 2.4
+name: latex2sympy2_extended
+version: 1.11.0
+dynamic: license-file
+summary: Convert LaTeX math to SymPy expressions
+author-email: Hynek Kydlíček <hynek.kydlicek@huggingface.co>
+license: MIT
+license-file: LICENSE.txt
+requires-dist: sympy
+requires-dist: antlr4-python3-runtime<=4.13.2,>=4.9.3
+requires-dist: pytest; extra == "dev"
+requires-dist: antlr4-python3-runtime==4.9.3; extra == "antlr4-9-3"
+requires-dist: antlr4-python3-runtime==4.11.0; extra == "antlr4-11-0"
+requires-dist: antlr4-python3-runtime==4.13.2; extra == "antlr4-13-2"
+requires-python: >=3.10
+project-url: Homepage, https://github.com/OrangeX4/latex2sympy2
+project-url: Repository, https://github.com/OrangeX4/latex2sympy2.git
+provides-extra: dev
+provides-extra: antlr4-9-3
+provides-extra: antlr4-11-0
+provides-extra: antlr4-13-2
+

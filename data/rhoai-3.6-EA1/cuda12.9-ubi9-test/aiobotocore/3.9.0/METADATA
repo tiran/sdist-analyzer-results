@@ -1,0 +1,37 @@
+metadata-version: 2.5
+name: aiobotocore
+version: 3.9.0
+summary: Async client for aws services using botocore and aiohttp
+author-email: Nikolay Novik <nickolainovik@gmail.com>
+license-expression: Apache-2.0
+license-file: LICENSE
+classifier: Development Status :: 4 - Beta
+classifier: Environment :: Web Environment
+classifier: Framework :: AsyncIO
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: System Administrators
+classifier: Natural Language :: English
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-dist: aiohttp<4.0.0,>=3.14.0
+requires-dist: aioitertools<1.0.0,>=0.5.1
+requires-dist: botocore<1.43.57,>=1.43.3
+requires-dist: jmespath<2.0.0,>=0.7.1
+requires-dist: multidict<7.0.0,>=6.0.0
+requires-dist: python-dateutil<3.0.0,>=2.1
+requires-dist: typing-extensions<5.0.0,>=4.14.0; python_version < "3.11"
+requires-dist: wrapt<3.0.0,>=1.10.10
+requires-dist: anyio<5,>=4.11.0; extra == "httpx"
+requires-dist: httpx<0.29,>=0.25.1; extra == "httpx"
+requires-dist: anyio<5,>=4.11.0; extra == "httpx2"
+requires-dist: httpx2<3.0.0,>=2.0; extra == "httpx2"
+requires-python: >=3.10
+project-url: Repository, https://github.com/aio-libs/aiobotocore
+project-url: Documentation, https://aiobotocore.aio-libs.org
+provides-extra: httpx
+provides-extra: httpx2
+

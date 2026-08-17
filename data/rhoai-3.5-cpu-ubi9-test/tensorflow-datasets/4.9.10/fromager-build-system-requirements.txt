@@ -1,3 +1,0 @@
-packaging
-wheel
-setuptools

@@ -1,0 +1,55 @@
+metadata-version: 2.5
+name: colpali_engine
+version: 0.3.17
+summary: The code used to train and run inference with the ColPali architecture.
+author-email: Manuel Faysse <manuel.faysse@illuin.tech>, Hugues Sibille <hugues.sibille@illuin.tech>, Tony Wu <tony.wu@illuin.tech>
+maintainer-email: Manuel Faysse <manuel.faysse@illuin.tech>, Tony Wu <tony.wu@illuin.tech>
+license-file: LICENSE
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+requires-dist: numpy
+requires-dist: peft<0.20.0,>=0.18.0
+requires-dist: pillow>=10.0.0
+requires-dist: requests
+requires-dist: scipy
+requires-dist: torch<2.12.0,>=2.2.0
+requires-dist: torchvision
+requires-dist: transformers<6.0.0,>=5.3.0
+requires-dist: accelerate<2.0.0,>=1.1.0; extra == "all"
+requires-dist: bitsandbytes; extra == "all"
+requires-dist: configue>=5.0.0; extra == "all"
+requires-dist: datasets>=2.19.1; extra == "all"
+requires-dist: einops<1.0.0,>=0.8.0; extra == "all"
+requires-dist: late-interaction-kernels<0.5.0,>=0.4.1; extra == "all"
+requires-dist: matplotlib<4.0.0,>=3.9.0; extra == "all"
+requires-dist: mteb<3,>=1.16.3; extra == "all"
+requires-dist: pillow<12.3.0,>=10.0.0; extra == "all"
+requires-dist: pytest>=8.0.0; extra == "all"
+requires-dist: ruff>=0.4.0; extra == "all"
+requires-dist: seaborn<1.0.0,>=0.13.2; extra == "all"
+requires-dist: typer>=0.15.1; extra == "all"
+requires-dist: pytest>=8.0.0; extra == "dev"
+requires-dist: ruff>=0.4.0; extra == "dev"
+requires-dist: einops<1.0.0,>=0.8.0; extra == "interpretability"
+requires-dist: matplotlib<4.0.0,>=3.9.0; extra == "interpretability"
+requires-dist: seaborn<1.0.0,>=0.13.2; extra == "interpretability"
+requires-dist: late-interaction-kernels<0.5.0,>=0.4.1; extra == "lik"
+requires-dist: accelerate<2.0.0,>=1.1.0; extra == "train"
+requires-dist: bitsandbytes; extra == "train"
+requires-dist: configue>=5.0.0; extra == "train"
+requires-dist: datasets>=2.19.1; extra == "train"
+requires-dist: mteb<3,>=1.16.3; extra == "train"
+requires-dist: pillow<12.3.0,>=10.0.0; extra == "train"
+requires-dist: typer>=0.15.1; extra == "train"
+requires-python: <3.15,>=3.10
+project-url: homepage, https://github.com/illuin-tech/colpali
+provides-extra: all
+provides-extra: dev
+provides-extra: interpretability
+provides-extra: lik
+provides-extra: train
+

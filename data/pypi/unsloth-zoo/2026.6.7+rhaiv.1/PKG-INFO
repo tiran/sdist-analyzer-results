@@ -1,0 +1,80 @@
+metadata-version: 2.4
+name: unsloth_zoo
+version: 2026.6.7
+dynamic: license-file
+summary: Utils for Unsloth
+keywords: ai,llm
+author: Unsloth AI team
+author-email: info@unsloth.ai
+maintainer-email: Daniel Han <danielhanchen@gmail.com>, Michael Han <info@unsloth.ai>
+license-expression: LGPL-3.0-or-later
+license-file: LICENSE
+license-file: COPYING
+classifier: Programming Language :: Python
+requires-dist: torch<2.13.0,>=2.4.0; sys_platform != "darwin" or platform_machine != "arm64"
+requires-dist: torchao>=0.13.0; sys_platform != "darwin" or platform_machine != "arm64"
+requires-dist: triton>=3.0.0; "linux" in sys_platform
+requires-dist: tyro; sys_platform != "darwin" or platform_machine != "arm64"
+requires-dist: accelerate>=0.34.1; sys_platform != "darwin" or platform_machine != "arm64"
+requires-dist: trl!=0.19.0,<=0.24.0,>=0.18.2; sys_platform != "darwin" or platform_machine != "arm64"
+requires-dist: peft!=0.11.0,>=0.18.0; sys_platform != "darwin" or platform_machine != "arm64"
+requires-dist: cut_cross_entropy; python_version >= "3.10" and (sys_platform != "darwin" or platform_machine != "arm64")
+requires-dist: mlx>=0.22.0; sys_platform == "darwin" and platform_machine == "arm64"
+requires-dist: mlx-lm>=0.22.0; sys_platform == "darwin" and platform_machine == "arm64"
+requires-dist: mlx-vlm>=0.4.4; sys_platform == "darwin" and platform_machine == "arm64"
+requires-dist: packaging>=24.1
+requires-dist: transformers!=4.52.0,!=4.52.1,!=4.52.2,!=4.52.3,!=4.53.0,!=4.54.0,!=4.55.0,!=4.55.1,!=4.57.4,!=4.57.5,!=5.0.0,!=5.1.0,<=5.5.0,>=4.51.3
+requires-dist: datasets!=4.0.*,!=4.1.0,<4.4.0,>=3.4.1
+requires-dist: sentencepiece>=0.2.0
+requires-dist: tqdm
+requires-dist: psutil
+requires-dist: wheel>=0.42.0
+requires-dist: numpy
+requires-dist: protobuf
+requires-dist: huggingface_hub>=0.34.0
+requires-dist: hf_transfer
+requires-dist: pillow
+requires-dist: regex
+requires-dist: msgspec
+requires-dist: typing_extensions
+requires-dist: filelock
+requires-dist: mlx>=0.22.0; extra == "mlx"
+requires-dist: mlx-lm>=0.22.0; extra == "mlx"
+requires-dist: mlx-vlm>=0.4.4; extra == "mlx"
+requires-dist: packaging>=24.1; extra == "core"
+requires-dist: tyro; extra == "core"
+requires-dist: transformers!=4.52.0,!=4.52.1,!=4.52.2,!=4.52.3,!=4.53.0,!=4.54.0,!=4.55.0,!=4.55.1,!=4.57.4,!=4.57.5,!=5.0.0,!=5.1.0,<=5.5.0,>=4.51.3; extra == "core"
+requires-dist: datasets!=4.0.*,!=4.1.0,<4.4.0,>=3.4.1; extra == "core"
+requires-dist: sentencepiece>=0.2.0; extra == "core"
+requires-dist: tqdm; extra == "core"
+requires-dist: psutil; extra == "core"
+requires-dist: wheel>=0.42.0; extra == "core"
+requires-dist: numpy; extra == "core"
+requires-dist: accelerate>=0.34.1; extra == "core"
+requires-dist: trl!=0.19.0,<=0.24.0,>=0.18.2; extra == "core"
+requires-dist: peft!=0.11.0,>=0.18.0; extra == "core"
+requires-dist: protobuf; extra == "core"
+requires-dist: huggingface_hub>=0.34.0; extra == "core"
+requires-dist: hf_transfer; extra == "core"
+requires-dist: cut_cross_entropy; python_version >= "3.10" and extra == "core"
+requires-dist: pillow; extra == "core"
+requires-dist: regex; extra == "core"
+requires-dist: msgspec; extra == "core"
+requires-dist: typing_extensions; extra == "core"
+requires-dist: filelock; extra == "core"
+requires-dist: unsloth_zoo[core]; extra == "huggingface"
+requires-dist: triton-windows; (sys_platform == "win32" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "huggingface"
+requires-dist: unsloth_zoo[huggingface]; extra == "base"
+requires-dist: torch>=2.4.0; extra == "intelgpu"
+requires-dist: triton>=3.0.0; "linux" in sys_platform and extra == "intelgpu"
+requires-dist: unsloth_zoo[core]; extra == "intelgpu"
+requires-python: <3.15,>=3.9
+project-url: homepage, http://www.unsloth.ai
+project-url: documentation, https://github.com/unslothai/unsloth
+project-url: repository, https://github.com/unslothai/unsloth
+provides-extra: mlx
+provides-extra: core
+provides-extra: huggingface
+provides-extra: base
+provides-extra: intelgpu
+

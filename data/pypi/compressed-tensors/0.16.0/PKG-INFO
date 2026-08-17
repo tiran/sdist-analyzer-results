@@ -1,0 +1,34 @@
+metadata-version: 2.4
+name: compressed-tensors
+version: 0.16.0
+dynamic: author
+dynamic: author-email
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: summary
+summary: Library for utilization of compressed safetensors of neural network models
+home-page: https://github.com/vllm-project/compressed-tensors
+author: The vLLM Project
+author-email: vllm-questions@lists.berkeley.edu
+license: Apache 2.0
+license-file: LICENSE
+requires-dist: torch>=2.10.0
+requires-dist: transformers>=4.45.0
+requires-dist: pydantic>=2.0
+requires-dist: loguru
+requires-dist: black==22.12.0; extra == "dev"
+requires-dist: isort==5.8.0; extra == "dev"
+requires-dist: wheel>=0.36.2; extra == "dev"
+requires-dist: flake8>=3.8.3; extra == "dev"
+requires-dist: pytest>=6.0.0; extra == "dev"
+requires-dist: nbconvert>=7.16.3; extra == "dev"
+requires-dist: accelerate; extra == "dev"
+requires-dist: accelerate; extra == "accelerate"
+provides-extra: dev
+provides-extra: accelerate
+

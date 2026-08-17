@@ -1,0 +1,47 @@
+metadata-version: 2.4
+name: pexpect
+version: 4.9.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: platform
+dynamic: project-url
+dynamic: requires-dist
+dynamic: summary
+platform: UNIX
+summary: Pexpect allows easy control of interactive console applications.
+home-page: https://pexpect.readthedocs.io/
+author: Noah Spurrier; Thomas Kluyver; Jeff Quast
+author-email: noah@noah.org, thomas@kluyver.me.uk, contact@jeffquast.com
+license: ISC license
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: System Administrators
+classifier: License :: OSI Approved :: ISC License (ISCL)
+classifier: Operating System :: POSIX
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 2.7
+classifier: Programming Language :: Python :: 3
+classifier: Topic :: Software Development
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: Software Development :: Quality Assurance
+classifier: Topic :: Software Development :: Testing
+classifier: Topic :: System
+classifier: Topic :: System :: Archiving :: Packaging
+classifier: Topic :: System :: Installation/Setup
+classifier: Topic :: System :: Shells
+classifier: Topic :: System :: Software Distribution
+classifier: Topic :: Terminals
+requires-dist: ptyprocess>=0.5
+project-url: Bug Tracker, https://github.com/pexpect/pexpect/issues
+project-url: Documentation, https://pexpect.readthedocs.io/
+project-url: Source Code, https://github.com/pexpect/pexpect
+project-url: History, https://pexpect.readthedocs.io/en/stable/history.html
+

@@ -1,1 +1,0 @@
-libsf_mini_core.so()(64bit)

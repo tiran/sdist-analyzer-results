@@ -1,8 +1,8 @@
 pybind11>=2.10
-setuptools
-cmake
+setuptools>=64
 nanobind>=2.0
+cmake
+patchelf
 wheel
 numpy
-setuptools>=64
-patchelf
+setuptools

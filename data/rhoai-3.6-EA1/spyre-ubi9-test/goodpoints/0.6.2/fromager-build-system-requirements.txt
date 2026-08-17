@@ -1,4 +1,4 @@
-Cython
-wheel
-numpy>=2.0
 setuptools
+wheel
+Cython
+numpy>=2.0

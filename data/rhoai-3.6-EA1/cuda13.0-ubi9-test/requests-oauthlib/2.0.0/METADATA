@@ -1,0 +1,44 @@
+metadata-version: 2.4
+name: requests-oauthlib
+version: 2.0.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: OAuthlib authentication support for Requests.
+home-page: https://github.com/requests/requests-oauthlib
+author: Kenneth Reitz
+author-email: me@kennethreitz.com
+license: ISC
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Natural Language :: English
+classifier: License :: OSI Approved :: BSD License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.4
+classifier: Programming Language :: Python :: 3.5
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+requires-dist: oauthlib>=3.0.0
+requires-dist: requests>=2.0.0
+requires-dist: oauthlib[signedtoken]>=3.0.0; extra == "rsa"
+requires-python: >=3.4
+provides-extra: rsa
+

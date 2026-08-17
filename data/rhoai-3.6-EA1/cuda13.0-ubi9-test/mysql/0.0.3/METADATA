@@ -1,0 +1,17 @@
+metadata-version: 2.4
+name: mysql
+version: 0.0.3
+dynamic: author
+dynamic: author-email
+dynamic: description
+dynamic: home-page
+dynamic: license
+dynamic: requires-dist
+dynamic: summary
+summary: Virtual package for MySQL-python
+home-page: https://github.com/valhallasw/virtual-mysql-pypi-package
+author: Merlijn van Deen
+author-email: valhallasw@arctus.nl
+license: MIT
+requires-dist: mysqlclient
+

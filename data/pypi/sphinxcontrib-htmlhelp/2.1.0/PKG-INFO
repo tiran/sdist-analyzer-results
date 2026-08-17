@@ -1,65 +1,42 @@
-Metadata-Version: 2.1
-Name: sphinxcontrib-htmlhelp
-Version: 2.1.0
-Summary: sphinxcontrib-htmlhelp is a sphinx extension which renders HTML help files
-Author-email: Georg Brandl <georg@python.org>
-Requires-Python: >=3.9
-Description-Content-Type: text/x-rst
-Classifier: Development Status :: 5 - Production/Stable
-Classifier: Environment :: Console
-Classifier: Environment :: Web Environment
-Classifier: Intended Audience :: Developers
-Classifier: Intended Audience :: Education
-Classifier: License :: OSI Approved :: BSD License
-Classifier: Operating System :: OS Independent
-Classifier: Programming Language :: Python
-Classifier: Programming Language :: Python :: 3
-Classifier: Programming Language :: Python :: 3 :: Only
-Classifier: Programming Language :: Python :: 3.9
-Classifier: Programming Language :: Python :: 3.10
-Classifier: Programming Language :: Python :: 3.11
-Classifier: Programming Language :: Python :: 3.12
-Classifier: Programming Language :: Python :: 3.13
-Classifier: Framework :: Sphinx
-Classifier: Framework :: Sphinx :: Extension
-Classifier: Topic :: Documentation
-Classifier: Topic :: Documentation :: Sphinx
-Classifier: Topic :: Text Processing
-Classifier: Topic :: Utilities
-Requires-Dist: ruff==0.5.5 ; extra == "lint"
-Requires-Dist: mypy ; extra == "lint"
-Requires-Dist: types-docutils ; extra == "lint"
-Requires-Dist: Sphinx>=5 ; extra == "standalone"
-Requires-Dist: pytest ; extra == "test"
-Requires-Dist: html5lib ; extra == "test"
-Project-URL: Changelog, https://github.com/sphinx-doc/sphinxcontrib-htmlhelp/blob/master/CHANGES.rst
-Project-URL: Code, https://github.com/sphinx-doc/sphinxcontrib-htmlhelp/
-Project-URL: Download, https://pypi.org/project/sphinxcontrib-htmlhelp/
-Project-URL: Homepage, https://www.sphinx-doc.org/
-Project-URL: Issue tracker, https://github.com/sphinx-doc/sphinx/issues/
-Provides-Extra: lint
-Provides-Extra: standalone
-Provides-Extra: test
-
-======================
-sphinxcontrib-htmlhelp
-======================
-
-sphinxcontrib-htmlhelp is a sphinx extension which renders HTML help files.
-
-For more details, please visit http://www.sphinx-doc.org/.
-
-Installing
-==========
-
-Install from PyPI::
-
-   pip install -U sphinxcontrib-htmlhelp
-
-Contributing
-============
-
-See `CONTRIBUTING.rst`__
-
-.. __: https://github.com/sphinx-doc/sphinx/blob/master/CONTRIBUTING.rst
+metadata-version: 2.1
+name: sphinxcontrib-htmlhelp
+version: 2.1.0
+summary: sphinxcontrib-htmlhelp is a sphinx extension which renders HTML help files
+author-email: Georg Brandl <georg@python.org>
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Environment :: Web Environment
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Education
+classifier: License :: OSI Approved :: BSD License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Framework :: Sphinx
+classifier: Framework :: Sphinx :: Extension
+classifier: Topic :: Documentation
+classifier: Topic :: Documentation :: Sphinx
+classifier: Topic :: Text Processing
+classifier: Topic :: Utilities
+requires-dist: ruff==0.5.5; extra == "lint"
+requires-dist: mypy; extra == "lint"
+requires-dist: types-docutils; extra == "lint"
+requires-dist: Sphinx>=5; extra == "standalone"
+requires-dist: pytest; extra == "test"
+requires-dist: html5lib; extra == "test"
+requires-python: >=3.9
+project-url: Changelog, https://github.com/sphinx-doc/sphinxcontrib-htmlhelp/blob/master/CHANGES.rst
+project-url: Code, https://github.com/sphinx-doc/sphinxcontrib-htmlhelp/
+project-url: Download, https://pypi.org/project/sphinxcontrib-htmlhelp/
+project-url: Homepage, https://www.sphinx-doc.org/
+project-url: Issue tracker, https://github.com/sphinx-doc/sphinx/issues/
+provides-extra: lint
+provides-extra: standalone
+provides-extra: test
 

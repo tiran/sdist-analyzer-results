@@ -1,0 +1,74 @@
+metadata-version: 2.1
+name: memray
+version: 1.20.0
+summary: A memory profiler for Python applications
+author: Pablo Galindo Salgado, Matt Wozniski
+license: Apache 2.0
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: POSIX :: Linux
+classifier: Operating System :: MacOS
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: 3.15
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Topic :: Software Development :: Debuggers
+requires-dist: jinja2>=2.9
+requires-dist: rich>=11.2.0
+requires-dist: textual>=0.41.0
+requires-dist: Cython; extra == "test"
+requires-dist: greenlet; python_version < "3.15" and extra == "test"
+requires-dist: pytest; extra == "test"
+requires-dist: pytest-cov; extra == "test"
+requires-dist: ipython; extra == "test"
+requires-dist: scikit-build-core; extra == "test"
+requires-dist: setuptools; extra == "test"
+requires-dist: pytest-textual-snapshot; extra == "test"
+requires-dist: textual!=0.65.2,!=0.66,>=0.43; extra == "test"
+requires-dist: packaging; extra == "test"
+requires-dist: IPython; extra == "docs"
+requires-dist: bump2version; extra == "docs"
+requires-dist: sphinx; extra == "docs"
+requires-dist: furo; extra == "docs"
+requires-dist: sphinx-argparse; extra == "docs"
+requires-dist: towncrier; extra == "docs"
+requires-dist: black; extra == "lint"
+requires-dist: flake8; extra == "lint"
+requires-dist: isort; extra == "lint"
+requires-dist: mypy; extra == "lint"
+requires-dist: check-manifest; extra == "lint"
+requires-dist: asv; extra == "benchmark"
+requires-dist: Cython; extra == "dev"
+requires-dist: greenlet; python_version < "3.15" and extra == "dev"
+requires-dist: pytest; extra == "dev"
+requires-dist: pytest-cov; extra == "dev"
+requires-dist: ipython; extra == "dev"
+requires-dist: scikit-build-core; extra == "dev"
+requires-dist: setuptools; extra == "dev"
+requires-dist: pytest-textual-snapshot; extra == "dev"
+requires-dist: textual!=0.65.2,!=0.66,>=0.43; extra == "dev"
+requires-dist: packaging; extra == "dev"
+requires-dist: black; extra == "dev"
+requires-dist: flake8; extra == "dev"
+requires-dist: isort; extra == "dev"
+requires-dist: mypy; extra == "dev"
+requires-dist: check-manifest; extra == "dev"
+requires-dist: IPython; extra == "dev"
+requires-dist: bump2version; extra == "dev"
+requires-dist: sphinx; extra == "dev"
+requires-dist: furo; extra == "dev"
+requires-dist: sphinx-argparse; extra == "dev"
+requires-dist: towncrier; extra == "dev"
+requires-dist: asv; extra == "dev"
+requires-python: >=3.9.0
+project-url: Homepage, https://github.com/bloomberg/memray
+provides-extra: test
+provides-extra: docs
+provides-extra: lint
+provides-extra: benchmark
+provides-extra: dev
+

@@ -1,0 +1,38 @@
+metadata-version: 2.4
+name: Pygments
+version: 2.20.0
+summary: Pygments is a syntax highlighting package written in Python.
+keywords: syntax highlighting
+author-email: Georg Brandl <georg@python.org>
+maintainer: Matthäus G. Chajdas
+maintainer-email: Georg Brandl <georg@python.org>, Jean Abou Samra <jean@abou-samra.fr>
+license-expression: BSD-2-Clause
+license-file: AUTHORS
+license-file: LICENSE
+classifier: Development Status :: 6 - Mature
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: End Users/Desktop
+classifier: Intended Audience :: System Administrators
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Text Processing :: Filters
+classifier: Topic :: Utilities
+requires-dist: colorama>=0.4.6; extra == "windows-terminal"
+requires-python: >=3.9
+project-url: Homepage, https://pygments.org
+project-url: Documentation, https://pygments.org/docs
+project-url: Source, https://github.com/pygments/pygments
+project-url: Bug Tracker, https://github.com/pygments/pygments/issues
+project-url: Changelog, https://github.com/pygments/pygments/blob/master/CHANGES
+provides-extra: plugins
+provides-extra: windows-terminal
+

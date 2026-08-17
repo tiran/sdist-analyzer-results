@@ -1,2 +1,2 @@
-meson-python>=0.15.0
 Cython>=3.0.6
+meson-python>=0.15.0

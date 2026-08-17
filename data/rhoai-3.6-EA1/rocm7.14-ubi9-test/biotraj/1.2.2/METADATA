@@ -1,0 +1,41 @@
+metadata-version: 2.4
+name: biotraj
+version: 1.2.2
+dynamic: license-file
+summary: Basic trajectory file format functionality for Biotite; forked from MDTraj
+author: Robert McGibbon, The Biotite contributors
+license: GNU LESSER GENERAL PUBLIC LICENSE
+                                        Version 2.1, February 1999
+                 
+                  Copyright (C) 1991, 1999 Free Software Foundation, Inc.
+                  51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+                  Everyone is permitted to copy and distribute verbatim copies
+                  of this license document, but changing it is not allowed.
+                 
+                 [This is the first released version of the Lesser GPL.  It also counts
+                  as the successor of the GNU Library Pub...
+license-file: LICENSE.rst
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)
+classifier: Natural Language :: English
+classifier: Operating System :: POSIX :: Linux
+classifier: Operating System :: MacOS
+classifier: Operating System :: Microsoft :: Windows
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+requires-dist: numpy>=1.25
+requires-dist: scipy>=1.13
+requires-dist: pytest; extra == "test"
+requires-dist: psutil; extra == "test"
+requires-dist: netcdf4>=1.7.1; extra == "test"
+requires-dist: ruff==0.6.1; extra == "lint"
+requires-python: >=3.10
+project-url: homepage, https://www.biotite-python.org
+project-url: repository, https://github.com/biotite-dev/biotraj
+project-url: documentation, https://www.biotite-python.org
+provides-extra: test
+provides-extra: lint
+

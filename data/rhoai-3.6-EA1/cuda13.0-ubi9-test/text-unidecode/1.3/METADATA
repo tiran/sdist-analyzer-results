@@ -1,0 +1,35 @@
+metadata-version: 2.4
+name: text-unidecode
+version: 1.3
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: summary
+summary: The most basic Text::Unidecode port
+home-page: https://github.com/kmike/text-unidecode/
+author: Mikhail Korobov
+author-email: kmike84@gmail.com
+license: Artistic License
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Artistic License
+classifier: License :: OSI Approved :: GNU General Public License (GPL)
+classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 2
+classifier: Programming Language :: Python :: 2.7
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.4
+classifier: Programming Language :: Python :: 3.5
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: Text Processing :: Linguistic
+

@@ -1,0 +1,55 @@
+metadata-version: 2.4
+name: dill
+version: 0.3.9
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: download-url
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: maintainer
+dynamic: maintainer-email
+dynamic: platform
+dynamic: project-url
+dynamic: provides-extra
+dynamic: requires-python
+dynamic: summary
+platform: Linux
+platform: Windows
+platform: Mac
+summary: serialize all of Python
+home-page: https://github.com/uqfoundation/dill
+download-url: https://pypi.org/project/dill/#files
+author: Mike McKerns
+author-email: mmckerns@uqfoundation.org
+maintainer: Mike McKerns
+maintainer-email: mmckerns@uqfoundation.org
+license: BSD-3-Clause
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: BSD License
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Scientific/Engineering
+classifier: Topic :: Software Development
+requires-dist: objgraph>=1.7.2; extra == "graph"
+requires-dist: gprof2dot>=2022.7.29; extra == "profile"
+requires-python: >=3.8
+project-url: Documentation, http://dill.rtfd.io
+project-url: Source Code, https://github.com/uqfoundation/dill
+project-url: Bug Tracker, https://github.com/uqfoundation/dill/issues
+provides-extra: readline
+provides-extra: graph
+provides-extra: profile
+

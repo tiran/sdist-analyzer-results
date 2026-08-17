@@ -1,0 +1,12 @@
+metadata-version: 2.4
+name: fla-core
+version: 0.5.0
+dynamic: license-file
+summary: Core operations for flash-linear-attention
+license-file: LICENSE
+requires-dist: torch>=2.7.0
+requires-dist: einops
+requires-python: >=3.10
+project-url: Homepage, https://github.com/fla-org/flash-linear-attention
+project-url: Repository, https://github.com/fla-org/flash-linear-attention
+

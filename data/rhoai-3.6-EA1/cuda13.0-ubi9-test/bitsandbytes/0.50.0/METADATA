@@ -1,0 +1,53 @@
+metadata-version: 2.4
+name: bitsandbytes
+version: 0.50.0
+dynamic: license-file
+summary: k-bit optimizers and matrix multiplication routines.
+keywords: gpu,optimizers,optimization,8-bit,quantization,compression
+author-email: Tim Dettmers <dettmers@cs.washington.edu>
+maintainer-email: Titus von Köller <titus@huggingface.co>, Matthew Douglas <matthew.douglas@huggingface.co>
+license-expression: MIT
+license-file: LICENSE
+classifier: Development Status :: 4 - Beta
+classifier: Environment :: GPU :: NVIDIA CUDA :: 11.8
+classifier: Environment :: GPU :: NVIDIA CUDA :: 12
+classifier: Environment :: GPU :: NVIDIA CUDA :: 13
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: Operating System :: POSIX :: Linux
+classifier: Operating System :: MacOS
+classifier: Operating System :: Microsoft :: Windows
+classifier: Programming Language :: C++
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+requires-dist: torch<3,>=2.4
+requires-dist: numpy>=1.17
+requires-dist: packaging>=20.9
+requires-dist: pandas; extra == "benchmark"
+requires-dist: matplotlib; extra == "benchmark"
+requires-dist: hf-doc-builder==0.5.0; extra == "docs"
+requires-dist: bitsandbytes[test]; extra == "dev"
+requires-dist: build<2,>=1.0.0; extra == "dev"
+requires-dist: ruff~=0.14.3; extra == "dev"
+requires-dist: pre-commit<4,>=3.5.0; extra == "dev"
+requires-dist: wheel<1,>=0.42; extra == "dev"
+requires-dist: einops~=0.8.0; extra == "test"
+requires-dist: lion-pytorch==0.2.3; extra == "test"
+requires-dist: pytest~=8.3; extra == "test"
+requires-dist: scipy<2,>=1.11.4; extra == "test"
+requires-dist: transformers<5,>=4.30.1; extra == "test"
+requires-python: >=3.10
+project-url: homepage, https://github.com/bitsandbytes-foundation/bitsandbytes
+project-url: changelog, https://github.com/bitsandbytes-foundation/bitsandbytes/blob/main/CHANGELOG.md
+project-url: docs, https://huggingface.co/docs/bitsandbytes/main
+project-url: issues, https://github.com/bitsandbytes-foundation/bitsandbytes/issues
+provides-extra: benchmark
+provides-extra: docs
+provides-extra: dev
+provides-extra: test
+

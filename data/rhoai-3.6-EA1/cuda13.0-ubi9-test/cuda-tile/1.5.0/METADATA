@@ -1,0 +1,26 @@
+metadata-version: 2.4
+name: cuda-tile
+version: 1.5.0
+dynamic: license-file
+summary: CUDA Tile Compiler
+author: NVIDIA Corporation
+license-expression: Apache-2.0
+license-file: LICENSES/Apache-2.0.txt
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: GPU :: NVIDIA CUDA :: 13
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Topic :: Software Development :: Compilers
+requires-dist: typing-extensions
+requires-python: <3.15,>=3.10
+project-url: Homepage, https://github.com/nvidia/cutile-python
+project-url: Repository, https://github.com/nvidia/cutile-python
+project-url: documentation, https://docs.nvidia.com/cuda/cutile-python
+project-url: Bug Tracker, https://github.com/nvidia/cutile-python/issues
+provides-extra: tileiras
+

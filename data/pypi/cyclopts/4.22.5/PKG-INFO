@@ -1,0 +1,59 @@
+metadata-version: 2.4
+name: cyclopts
+version: 4.22.5
+summary: Intuitive, easy CLIs based on type hints.
+author: Brian Pugh
+license-expression: Apache-2.0
+license-file: LICENSE
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-dist: attrs>=23.1.0
+requires-dist: docstring-parser<4.0,>=0.15
+requires-dist: rich-rst<3.0.0,>=1.3.1
+requires-dist: rich>=13.6.0
+requires-dist: tomli>=2.0.0; python_version < "3.11"
+requires-dist: typing-extensions>=4.8.0; python_version < "3.11"
+requires-dist: ipdb>=0.13.9; extra == "debug"
+requires-dist: line-profiler>=3.5.1; extra == "debug"
+requires-dist: coverage[toml]>=5.1; extra == "dev"
+requires-dist: mkdocs>=1.4.0; extra == "dev"
+requires-dist: pexpect>=4.9.0; sys_platform != "win32" and extra == "dev"
+requires-dist: pre-commit>=2.16.0; extra == "dev"
+requires-dist: pydantic<3.0.0,>=2.11.2; extra == "dev"
+requires-dist: pytest-cov>=3.0.0; extra == "dev"
+requires-dist: pytest-mock>=3.7.0; extra == "dev"
+requires-dist: pytest>=8.2.0; extra == "dev"
+requires-dist: pyyaml>=6.0.1; extra == "dev"
+requires-dist: syrupy>=4.0.0; extra == "dev"
+requires-dist: toml<1.0.0,>=0.10.2; extra == "dev"
+requires-dist: trio>=0.10.0; extra == "dev"
+requires-dist: gitpython>=3.1.31; extra == "docs"
+requires-dist: myst-parser[linkify]<5.0.0,>=3.0.1; extra == "docs"
+requires-dist: sphinx-autodoc-typehints<4.0.0,>=1.25.2; extra == "docs"
+requires-dist: sphinx-copybutton<1.0,>=0.5; extra == "docs"
+requires-dist: sphinx-rtd-dark-mode<2.0.0,>=1.3.0; extra == "docs"
+requires-dist: sphinx-rtd-theme<4.0.0,>=3.0.0; extra == "docs"
+requires-dist: sphinx<8.2.0,>=7.4.7; extra == "docs"
+requires-dist: markdown>=3.3; extra == "mkdocs"
+requires-dist: mkdocs>=1.4.0; extra == "mkdocs"
+requires-dist: pymdown-extensions>=10.0; extra == "mkdocs"
+requires-dist: tomli>=2.0.0; python_version < "3.11" and extra == "toml"
+requires-dist: trio>=0.10.0; extra == "trio"
+requires-dist: pyyaml>=6.0.1; extra == "yaml"
+requires-python: >=3.10
+project-url: Homepage, https://github.com/BrianPugh/cyclopts
+project-url: Repository, https://github.com/BrianPugh/cyclopts
+provides-extra: debug
+provides-extra: dev
+provides-extra: docs
+provides-extra: mkdocs
+provides-extra: toml
+provides-extra: trio
+provides-extra: yaml
+

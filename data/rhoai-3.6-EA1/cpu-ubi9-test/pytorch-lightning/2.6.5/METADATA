@@ -1,0 +1,143 @@
+metadata-version: 2.4
+name: pytorch-lightning
+version: 2.6.5
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: download-url
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: project-url
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: PyTorch Lightning is the lightweight PyTorch wrapper for ML researchers. Scale your models. Write less boilerplate.
+keywords: deep learning,pytorch,AI
+home-page: https://github.com/Lightning-AI/lightning
+download-url: https://github.com/Lightning-AI/lightning
+author: Lightning AI et al.
+author-email: developer@lightning.ai
+license: Apache-2.0
+license-file: LICENSE
+classifier: Environment :: Console
+classifier: Natural Language :: English
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+classifier: Topic :: Scientific/Engineering :: Image Recognition
+classifier: Topic :: Scientific/Engineering :: Information Analysis
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+requires-dist: torch>=2.1.0
+requires-dist: tqdm>=4.57.0
+requires-dist: PyYAML>5.4
+requires-dist: fsspec[http]>=2022.5.0
+requires-dist: torchmetrics>0.7.0
+requires-dist: packaging>=23.0
+requires-dist: typing-extensions>4.5.0
+requires-dist: lightning-utilities>=0.10.0
+requires-dist: matplotlib>3.1; extra == "extra"
+requires-dist: omegaconf>=2.2.3; extra == "extra"
+requires-dist: hydra-core>=1.2.0; extra == "extra"
+requires-dist: jsonargparse[jsonnet,signatures]>=4.39.0; extra == "extra"
+requires-dist: rich>=12.3.0; extra == "extra"
+requires-dist: tensorboardX>=2.2; extra == "extra"
+requires-dist: bitsandbytes>=0.45.2; platform_system != "Darwin" and extra == "extra"
+requires-dist: torch-tensorrt; (platform_system != "Darwin" and python_version >= "3.12") and extra == "test-gpu"
+requires-dist: deepspeed<0.17.0,>=0.15.0; (platform_system != "Windows" and platform_system != "Darwin") and extra == "strategies"
+requires-dist: requests<2.33.0; extra == "examples"
+requires-dist: torchvision>=0.16.0; extra == "examples"
+requires-dist: ipython[all]>=8.0.0; extra == "examples"
+requires-dist: torchmetrics>=0.10.0; extra == "examples"
+requires-dist: coverage==7.13.4; python_version >= "3.10" and extra == "test"
+requires-dist: coverage==7.10.7; python_version < "3.10" and extra == "test"
+requires-dist: pytest==9.0.2; extra == "test"
+requires-dist: pytest-cov==7.0.0; extra == "test"
+requires-dist: pytest-timeout==2.4.0; extra == "test"
+requires-dist: pytest-rerunfailures==16.0.1; python_version < "3.10" and extra == "test"
+requires-dist: pytest-rerunfailures==16.1; python_version >= "3.10" and extra == "test"
+requires-dist: pytest-random-order==1.2.0; extra == "test"
+requires-dist: cloudpickle>=1.3; extra == "test"
+requires-dist: scikit-learn>0.22.1; extra == "test"
+requires-dist: numpy>1.21.0; python_version < "3.12" and extra == "test"
+requires-dist: numpy>2.1.0; python_version >= "3.12" and extra == "test"
+requires-dist: onnx>1.12.0; extra == "test"
+requires-dist: onnxruntime>=1.12.0; extra == "test"
+requires-dist: onnxscript>=0.1.0; extra == "test"
+requires-dist: onnx-ir<0.1.16; extra == "test"
+requires-dist: psutil<7.3.0; extra == "test"
+requires-dist: pandas>2.0; extra == "test"
+requires-dist: fastapi; extra == "test"
+requires-dist: uvicorn; extra == "test"
+requires-dist: tensorboard>=2.11; extra == "test"
+requires-dist: huggingface-hub; extra == "test"
+requires-dist: deepspeed<0.17.0,>=0.15.0; (platform_system != "Windows" and platform_system != "Darwin") and extra == "deepspeed"
+requires-dist: matplotlib>3.1; extra == "all"
+requires-dist: omegaconf>=2.2.3; extra == "all"
+requires-dist: hydra-core>=1.2.0; extra == "all"
+requires-dist: jsonargparse[jsonnet,signatures]>=4.39.0; extra == "all"
+requires-dist: rich>=12.3.0; extra == "all"
+requires-dist: tensorboardX>=2.2; extra == "all"
+requires-dist: bitsandbytes>=0.45.2; platform_system != "Darwin" and extra == "all"
+requires-dist: deepspeed<0.17.0,>=0.15.0; (platform_system != "Windows" and platform_system != "Darwin") and extra == "all"
+requires-dist: requests<2.33.0; extra == "all"
+requires-dist: torchvision>=0.16.0; extra == "all"
+requires-dist: ipython[all]>=8.0.0; extra == "all"
+requires-dist: torchmetrics>=0.10.0; extra == "all"
+requires-dist: matplotlib>3.1; extra == "dev"
+requires-dist: omegaconf>=2.2.3; extra == "dev"
+requires-dist: hydra-core>=1.2.0; extra == "dev"
+requires-dist: jsonargparse[jsonnet,signatures]>=4.39.0; extra == "dev"
+requires-dist: rich>=12.3.0; extra == "dev"
+requires-dist: tensorboardX>=2.2; extra == "dev"
+requires-dist: bitsandbytes>=0.45.2; platform_system != "Darwin" and extra == "dev"
+requires-dist: deepspeed<0.17.0,>=0.15.0; (platform_system != "Windows" and platform_system != "Darwin") and extra == "dev"
+requires-dist: requests<2.33.0; extra == "dev"
+requires-dist: torchvision>=0.16.0; extra == "dev"
+requires-dist: ipython[all]>=8.0.0; extra == "dev"
+requires-dist: torchmetrics>=0.10.0; extra == "dev"
+requires-dist: coverage==7.13.4; python_version >= "3.10" and extra == "dev"
+requires-dist: coverage==7.10.7; python_version < "3.10" and extra == "dev"
+requires-dist: pytest==9.0.2; extra == "dev"
+requires-dist: pytest-cov==7.0.0; extra == "dev"
+requires-dist: pytest-timeout==2.4.0; extra == "dev"
+requires-dist: pytest-rerunfailures==16.0.1; python_version < "3.10" and extra == "dev"
+requires-dist: pytest-rerunfailures==16.1; python_version >= "3.10" and extra == "dev"
+requires-dist: pytest-random-order==1.2.0; extra == "dev"
+requires-dist: cloudpickle>=1.3; extra == "dev"
+requires-dist: scikit-learn>0.22.1; extra == "dev"
+requires-dist: numpy>1.21.0; python_version < "3.12" and extra == "dev"
+requires-dist: numpy>2.1.0; python_version >= "3.12" and extra == "dev"
+requires-dist: onnx>1.12.0; extra == "dev"
+requires-dist: onnxruntime>=1.12.0; extra == "dev"
+requires-dist: onnxscript>=0.1.0; extra == "dev"
+requires-dist: onnx-ir<0.1.16; extra == "dev"
+requires-dist: psutil<7.3.0; extra == "dev"
+requires-dist: pandas>2.0; extra == "dev"
+requires-dist: fastapi; extra == "dev"
+requires-dist: uvicorn; extra == "dev"
+requires-dist: tensorboard>=2.11; extra == "dev"
+requires-dist: huggingface-hub; extra == "dev"
+requires-python: >=3.10
+project-url: Bug Tracker, https://github.com/Lightning-AI/pytorch-lightning/issues
+project-url: Documentation, https://pytorch-lightning.rtfd.io/en/latest/
+project-url: Source Code, https://github.com/Lightning-AI/lightning
+provides-extra: extra
+provides-extra: test-gpu
+provides-extra: strategies
+provides-extra: examples
+provides-extra: test
+provides-extra: deepspeed
+provides-extra: all
+provides-extra: dev
+

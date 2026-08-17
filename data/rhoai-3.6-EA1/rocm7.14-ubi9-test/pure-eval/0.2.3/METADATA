@@ -1,0 +1,23 @@
+metadata-version: 2.4
+name: pure_eval
+version: 0.2.3
+dynamic: license-file
+summary: Safely evaluate AST nodes without side effects
+home-page: http://github.com/alexmojaki/pure_eval
+author: Alex Hall
+author-email: alex.mojaki@gmail.com
+license: MIT
+license-file: LICENSE.txt
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+requires-dist: pytest; extra == "tests"
+provides-extra: tests
+

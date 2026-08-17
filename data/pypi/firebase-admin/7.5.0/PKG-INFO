@@ -1,0 +1,41 @@
+metadata-version: 2.4
+name: firebase_admin
+version: 7.5.0
+dynamic: author
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: project-url
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: Firebase Admin Python SDK
+keywords: firebase cloud development
+home-page: https://firebase.google.com/docs/admin/setup/
+author: Firebase
+license: Apache License 2.0
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Topic :: Software Development :: Build Tools
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: License :: OSI Approved :: Apache Software License
+requires-dist: cachecontrol>=0.14.3
+requires-dist: google-api-core[grpc]<3.0.0dev,>=2.25.1; platform_python_implementation != "PyPy"
+requires-dist: google-cloud-firestore>=2.21.0; platform_python_implementation != "PyPy"
+requires-dist: google-cloud-storage>=3.1.1
+requires-dist: pyjwt[crypto]>=2.10.1
+requires-dist: cryptography<44.0.0; platform_python_implementation == "PyPy" and python_version < "3.11"
+requires-dist: httpx[http2]==0.28.1
+requires-python: >=3.9
+project-url: Release Notes, https://firebase.google.com/support/release-notes/admin/python
+project-url: Source, https://github.com/firebase/firebase-admin-python
+

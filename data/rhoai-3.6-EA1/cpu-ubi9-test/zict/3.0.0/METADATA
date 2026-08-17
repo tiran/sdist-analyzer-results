@@ -1,0 +1,22 @@
+metadata-version: 2.4
+name: zict
+version: 3.0.0
+dynamic: license-file
+summary: Mutable mapping tools
+keywords: mutable mapping,dict,dask
+home-page: http://zict.readthedocs.io/en/latest/
+maintainer: Matthew Rocklin
+maintainer-email: mrocklin@coiled.io
+license: BSD
+license-file: LICENSE.txt
+classifier: Development Status :: 5 - Production/Stable
+classifier: License :: OSI Approved :: BSD License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+requires-python: >=3.8
+

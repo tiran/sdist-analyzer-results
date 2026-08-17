@@ -1,0 +1,61 @@
+metadata-version: 2.4
+name: nglview
+version: 4.0.1
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: IPython widget to interactively view molecular structures and trajectories.
+keywords: ipython,jupyter,widgets
+home-page: https://github.com/arose/nglview
+author: Alexander S. Rose, Hai Nguyen
+author-email: alexander.rose@weirdbyte.de
+license: MIT
+license-file: LICENSE
+classifier: Framework :: IPython
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: JavaScript
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Topic :: Multimedia :: Graphics
+classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+classifier: Topic :: Scientific/Engineering :: Chemistry
+classifier: Topic :: Scientific/Engineering :: Visualization
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: POSIX
+classifier: Operating System :: Unix
+classifier: Operating System :: MacOS
+requires-dist: ipywidgets>=8
+requires-dist: notebook>=7
+requires-dist: jupyterlab>=3
+requires-dist: jupyterlab_widgets
+requires-dist: numpy
+requires-dist: simpletraj; extra == "simpletraj"
+requires-dist: mdtraj; extra == "mdtraj"
+requires-dist: pytraj; extra == "pytraj"
+requires-dist: MDAnalysis; extra == "mdanalysis"
+requires-dist: parmed; extra == "parmed"
+requires-dist: rdkit; extra == "rdkit"
+requires-dist: ase; extra == "ase"
+requires-dist: htmd; extra == "htmd"
+requires-dist: qcelemental; extra == "qcelemental"
+requires-python: >=3.7
+provides-extra: simpletraj
+provides-extra: mdtraj
+provides-extra: pytraj
+provides-extra: mdanalysis
+provides-extra: parmed
+provides-extra: rdkit
+provides-extra: ase
+provides-extra: htmd
+provides-extra: qcelemental
+

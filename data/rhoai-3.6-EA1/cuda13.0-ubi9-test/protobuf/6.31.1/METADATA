@@ -1,0 +1,31 @@
+metadata-version: 2.4
+name: protobuf
+version: 6.31.1
+dynamic: classifier
+dynamic: description
+dynamic: download-url
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: maintainer
+dynamic: maintainer-email
+dynamic: project-url
+dynamic: requires-python
+dynamic: summary
+summary: Protocol Buffers
+home-page: https://developers.google.com/protocol-buffers/
+download-url: https://github.com/protocolbuffers/protobuf/releases
+maintainer: protobuf@googlegroups.com
+maintainer-email: protobuf@googlegroups.com
+license: BSD-3-Clause
+license-file: LICENSE
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+requires-python: >=3.9
+project-url: Source, https://github.com/protocolbuffers/protobuf
+

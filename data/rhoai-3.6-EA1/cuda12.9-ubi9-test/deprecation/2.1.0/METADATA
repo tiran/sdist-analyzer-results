@@ -1,0 +1,42 @@
+metadata-version: 2.4
+name: deprecation
+version: 2.1.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: maintainer
+dynamic: maintainer-email
+dynamic: project-url
+dynamic: requires-dist
+dynamic: summary
+summary: A library to handle automated deprecations
+keywords: deprecation
+home-page: http://deprecation.readthedocs.io/
+author: Brian Curtin
+author-email: brian@python.org
+maintainer: Brian Curtin
+maintainer-email: brian@python.org
+license: Apache 2
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 2
+classifier: Programming Language :: Python :: 2.7
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.5
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: packaging
+project-url: Documentation, http://deprecation.readthedocs.io/en/latest/
+project-url: Source, https://github.com/briancurtin/deprecation
+project-url: Bug Tracker, https://github.com/briancurtin/deprecation/issues
+

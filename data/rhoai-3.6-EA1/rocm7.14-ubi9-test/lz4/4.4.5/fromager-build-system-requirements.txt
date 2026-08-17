@@ -1,4 +1,4 @@
 wheel
+pkgconfig
 setuptools_scm[toml]>=6.2
 setuptools>=45
-pkgconfig

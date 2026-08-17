@@ -1,0 +1,3 @@
+hatch-fancy-pypi-readme
+uv-dynamic-versioning>=0.14.0
+hatchling

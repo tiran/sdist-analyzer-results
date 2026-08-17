@@ -1,6 +1,0 @@
-setuptools-rust
-setuptools
-setuptools-scm
-puccinialin
-numpy>=2.0
-cython>=3.0

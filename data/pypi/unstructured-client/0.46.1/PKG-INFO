@@ -1,0 +1,18 @@
+metadata-version: 2.4
+name: unstructured-client
+version: 0.46.1
+dynamic: license-file
+summary: Python Client SDK for Unstructured API
+author: Unstructured
+license: MIT
+license-file: LICENSE.md
+requires-dist: aiofiles>=25.1.0
+requires-dist: httpcore>=1.0.9
+requires-dist: httpx>=0.28.1
+requires-dist: pydantic>=2.12.5
+requires-dist: pypdf>=6.9.2
+requires-dist: pypdfium2>=5.6.0
+requires-dist: requests-toolbelt>=1.0.0
+requires-python: >=3.11
+project-url: repository, https://github.com/Unstructured-IO/unstructured-python-client.git
+

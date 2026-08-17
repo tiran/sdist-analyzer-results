@@ -1,0 +1,44 @@
+metadata-version: 2.4
+name: wn
+version: 0.9.5
+summary: Wordnet interface library
+keywords: wordnet,interlingual,linguistics,language,library
+author-email: Michael Wayne Goodman <goodman.m.w@gmail.com>
+license-file: LICENSE
+classifier: Development Status :: 4 - Beta
+classifier: Environment :: Console
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Information Technology
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Topic :: Scientific/Engineering :: Information Analysis
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: Text Processing :: Linguistic
+requires-dist: requests
+requires-dist: tomli
+requires-dist: typing-extensions; python_version < "3.8"
+requires-dist: furo; extra == "doc"
+requires-dist: sphinx; extra == "doc"
+requires-dist: sphinx-copybutton; extra == "doc"
+requires-dist: wn-editor; extra == "editor"
+requires-dist: mypy; extra == "test"
+requires-dist: nox; extra == "test"
+requires-dist: pytest; extra == "test"
+requires-dist: ruff; extra == "test"
+requires-dist: types-requests; extra == "test"
+requires-dist: starlette; extra == "web"
+requires-python: >=3.8
+project-url: changelog, https://github.com/goodmami/wn/blob/main/CHANGELOG.md
+project-url: documentation, https://wn.readthedocs.io
+project-url: homepage, https://github.com/goodmami/wn
+provides-extra: doc
+provides-extra: editor
+provides-extra: test
+provides-extra: web
+

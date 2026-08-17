@@ -1,3 +1,0 @@
-wheel
-setuptools_scm>=8
-setuptools>=61.0

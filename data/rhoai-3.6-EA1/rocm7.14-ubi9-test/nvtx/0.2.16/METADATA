@@ -1,0 +1,31 @@
+metadata-version: 2.4
+name: nvtx
+version: 0.2.16
+dynamic: license-file
+summary: Python NVTX - Python code annotation library
+author: NVIDIA Corporation
+license-expression: Apache-2.0 WITH LLVM-exception
+license-file: LICENSE.txt
+classifier: Intended Audience :: Developers
+classifier: Topic :: Database
+classifier: Topic :: Scientific/Engineering
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-dist: pytest; extra == "test"
+requires-dist: setuptools; extra == "test"
+requires-dist: sphinx; extra == "docs"
+requires-dist: nvidia_sphinx_theme; extra == "docs"
+requires-python: >=3.9
+project-url: Homepage, https://github.com/NVIDIA/NVTX
+project-url: Documentation, https://nvidia.github.io/NVTX/python/
+project-url: Repository, https://github.com/NVIDIA/NVTX
+project-url: License, https://nvidia.github.io/NVTX/LICENSE.txt
+project-url: Issues, https://github.com/NVIDIA/NVTX/issues
+provides-extra: test
+provides-extra: docs
+

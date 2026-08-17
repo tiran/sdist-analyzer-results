@@ -1,0 +1,43 @@
+metadata-version: 2.5
+name: magika
+version: 0.6.3
+summary: A tool to determine the content type of a file with deep learning
+keywords: content type detection,machine learning
+author-email: Magika Developers <magika-dev@google.com>
+license: Apache-2.0
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: Intended Audience :: System Administrators
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: MacOS
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: Unix
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+classifier: Topic :: Security
+classifier: Topic :: Software Development
+classifier: Typing :: Typed
+requires-dist: click>=8.1.7
+requires-dist: numpy>=1.24; python_version < "3.12"
+requires-dist: numpy>=1.26; python_version >= "3.12" and python_version < "3.13"
+requires-dist: numpy>=2.1.0; python_version >= "3.13"
+requires-dist: onnxruntime<1.20.0,>=1.17.0; python_version <= "3.9"
+requires-dist: onnxruntime<=1.20.1; sys_platform == "win32"
+requires-dist: onnxruntime>=1.17.0; python_version > "3.9"
+requires-dist: python-dotenv>=1.0.1
+requires-python: >=3.8
+project-url: Homepage, https://github.com/google/magika
+project-url: Documentation, https://github.com/google/magika/blob/main/python/README.md
+project-url: Repository, https://github.com/google/magika/
+project-url: Issues, https://github.com/google/magika/issues
+project-url: Changelog, https://github.com/google/magika/blob/main/python/CHANGELOG.md
+

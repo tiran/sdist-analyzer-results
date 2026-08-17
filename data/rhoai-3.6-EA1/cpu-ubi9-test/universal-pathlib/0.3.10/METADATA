@@ -1,0 +1,53 @@
+metadata-version: 2.4
+name: universal_pathlib
+version: 0.3.10
+dynamic: license-file
+summary: pathlib api extended to use fsspec backends
+keywords: filesystem-spec,pathlib
+author-email: Andrew Fulton <andrewfulton9@gmail.com>
+maintainer: Andreas Poehlmann, Norman Rzepka
+maintainer-email: Andreas Poehlmann <andreas@poehlmann.io>
+license-expression: MIT
+license-file: LICENSE
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Development Status :: 4 - Beta
+requires-dist: fsspec>=2024.5.0
+requires-dist: pathlib-abc<0.6.0,>=0.5.1
+requires-dist: pytest>=8; extra == "tests"
+requires-dist: pytest-sugar>=0.9.7; extra == "tests"
+requires-dist: pytest-cov>=4.1.0; extra == "tests"
+requires-dist: pytest-mock>=3.12.0; extra == "tests"
+requires-dist: pylint>=2.17.4; extra == "tests"
+requires-dist: mypy>=1.10.0; extra == "tests"
+requires-dist: pydantic>=2; extra == "tests"
+requires-dist: pytest-mypy-plugins>=3.1.2; extra == "tests"
+requires-dist: packaging; extra == "tests"
+requires-dist: mypy>=1.10.0; extra == "typechecking"
+requires-dist: pytest-mypy-plugins>=3.1.2; extra == "typechecking"
+requires-dist: fsspec[adl,gcs,github,http,s3,smb,ssh]>=2024.5.0; extra == "dev"
+requires-dist: s3fs>=2024.5.0; extra == "dev"
+requires-dist: gcsfs>=2024.5.0; extra == "dev"
+requires-dist: adlfs>=2024; extra == "dev"
+requires-dist: huggingface_hub; extra == "dev"
+requires-dist: webdav4[fsspec]; extra == "dev"
+requires-dist: moto[s3,server]; extra == "dev"
+requires-dist: wsgidav; extra == "dev"
+requires-dist: cheroot; extra == "dev"
+requires-dist: pyftpdlib; extra == "dev"
+requires-dist: typing_extensions; python_version < "3.11" and extra == "dev"
+requires-dist: pydantic; extra == "dev-third-party"
+requires-dist: pydantic-settings; extra == "dev-third-party"
+requires-python: >=3.9
+project-url: Homepage, https://github.com/fsspec/universal_pathlib
+project-url: Changelog, https://github.com/fsspec/universal_pathlib/blob/main/CHANGELOG.md
+provides-extra: tests
+provides-extra: typechecking
+provides-extra: dev
+provides-extra: dev-third-party
+

@@ -1,0 +1,31 @@
+metadata-version: 2.4
+name: whitebox
+version: 2.3.6
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: requires-dist
+dynamic: summary
+summary: An advanced geospatial data analysis platform 
+keywords: whitebox
+home-page: https://github.com/opengeos/whitebox-python
+author: Qiusheng Wu
+author-email: giswqs@gmail.com
+license: MIT license
+license-file: LICENSE
+license-file: AUTHORS.rst
+classifier: Development Status :: 2 - Pre-Alpha
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Natural Language :: English
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.4
+classifier: Programming Language :: Python :: 3.5
+classifier: Programming Language :: Python :: 3.6
+requires-dist: Click>=6.0
+

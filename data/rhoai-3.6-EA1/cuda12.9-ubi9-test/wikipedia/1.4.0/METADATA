@@ -1,0 +1,28 @@
+metadata-version: 2.4
+name: wikipedia
+version: 1.4.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: requires-dist
+dynamic: summary
+summary: Wikipedia API for Python
+keywords: python wikipedia API
+home-page: https://github.com/goldsmith/Wikipedia
+author: Jonathan Goldsmith
+author-email: jhghank@gmail.com
+license: MIT
+license-file: LICENSE
+classifier: Development Status :: 4 - Beta
+classifier: Topic :: Software Development :: Libraries
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+requires-dist: beautifulsoup4
+requires-dist: requests<3.0.0,>=2.0.0
+

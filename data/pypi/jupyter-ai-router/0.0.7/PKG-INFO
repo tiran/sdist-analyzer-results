@@ -1,0 +1,45 @@
+metadata-version: 2.4
+name: jupyter_ai_router
+version: 0.0.7
+summary: Core routing layer of Jupyter AI
+keywords: jupyter,jupyterlab,jupyterlab-extension
+author-email: Project Jupyter <jupyter@googlegroups.com>
+license: BSD 3-Clause License
+                 
+                 Copyright (c) 2025, Project Jupyter
+                 All rights reserved.
+                 
+                 Redistribution and use in source and binary forms, with or without
+                 modification, are permitted provided that the following conditions are met:
+                 
+                 1. Redistributions of source code must retain the above copyright notice, this
+                    list of conditions and the following disclaimer.
+                 
+                 2. Redistributions in binary form must reproduce the above copyri...
+license-file: LICENSE
+classifier: Framework :: Jupyter
+classifier: Framework :: Jupyter :: JupyterLab
+classifier: Framework :: Jupyter :: JupyterLab :: 4
+classifier: Framework :: Jupyter :: JupyterLab :: Extensions
+classifier: Framework :: Jupyter :: JupyterLab :: Extensions :: Prebuilt
+classifier: License :: OSI Approved :: BSD License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+requires-dist: jupyter-server<3,>=2.4.0
+requires-dist: jupyterlab-chat>=0.19.0
+requires-dist: coverage; extra == "test"
+requires-dist: pytest; extra == "test"
+requires-dist: pytest-asyncio; extra == "test"
+requires-dist: pytest-cov; extra == "test"
+requires-dist: pytest-jupyter[server]>=0.6.0; extra == "test"
+requires-python: >=3.9
+project-url: Homepage, https://github.com/jupyter-ai-contrib/jupyter-ai-router
+project-url: Bug Tracker, https://github.com/jupyter-ai-contrib/jupyter-ai-router/issues
+project-url: Repository, https://github.com/jupyter-ai-contrib/jupyter-ai-router.git
+provides-extra: test
+

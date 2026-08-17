@@ -1,0 +1,39 @@
+metadata-version: 2.4
+name: appdirs
+version: 1.4.4
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: maintainer
+dynamic: maintainer-email
+dynamic: summary
+summary: A small Python module for determining appropriate platform-specific dirs, e.g. a "user data dir".
+keywords: application directory log cache user
+home-page: http://github.com/ActiveState/appdirs
+author: Trent Mick
+author-email: trentm@gmail.com
+maintainer: Jeff Rouse
+maintainer-email: jr@its.to
+license: MIT
+license-file: LICENSE.txt
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 2
+classifier: Programming Language :: Python :: 2.7
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.4
+classifier: Programming Language :: Python :: 3.5
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+

@@ -1,0 +1,38 @@
+metadata-version: 2.4
+name: resampy
+version: 0.4.3
+dynamic: download-url
+dynamic: license-file
+summary: Efficient signal resampling
+home-page: https://github.com/bmcfee/resampy
+download-url: https://github.com/bmcfee/resampy/releases
+author: Brian McFee
+author-email: brian.mcfee@nyu.edu
+license: ISC
+license-file: LICENSE.md
+classifier: License :: OSI Approved :: ISC License (ISCL)
+classifier: Programming Language :: Python
+classifier: Development Status :: 3 - Alpha
+classifier: Intended Audience :: Developers
+classifier: Topic :: Multimedia :: Sound/Audio :: Analysis
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+requires-dist: numpy>=1.17
+requires-dist: numba>=0.53
+requires-dist: importlib_resources; python_version < "3.9"
+requires-dist: numpydoc; extra == "docs"
+requires-dist: sphinx!=1.3.1; extra == "docs"
+requires-dist: pytest<8; extra == "tests"
+requires-dist: pytest-cov; extra == "tests"
+requires-dist: scipy>=1.1; extra == "tests"
+requires-dist: optuna>=2.10.0; extra == "design"
+provides-extra: docs
+provides-extra: tests
+provides-extra: design
+

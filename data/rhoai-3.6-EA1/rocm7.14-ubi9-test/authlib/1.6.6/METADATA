@@ -1,0 +1,36 @@
+metadata-version: 2.4
+name: Authlib
+version: 1.6.6
+dynamic: license-file
+summary: The ultimate Python library in building OAuth and OpenID Connect servers and clients.
+author-email: Hsiaoming Yang <me@lepture.com>
+license: BSD-3-Clause
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Environment :: Web Environment
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: BSD License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Security
+classifier: Topic :: Security :: Cryptography
+classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Application
+requires-dist: cryptography
+requires-python: >=3.9
+project-url: Documentation, https://docs.authlib.org/
+project-url: Purchase, https://authlib.org/plans
+project-url: Issues, https://github.com/authlib/authlib/issues
+project-url: Source, https://github.com/authlib/authlib
+project-url: Donate, https://github.com/sponsors/lepture
+project-url: Blog, https://blog.authlib.org/
+

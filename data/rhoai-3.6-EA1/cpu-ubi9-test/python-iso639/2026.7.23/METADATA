@@ -1,0 +1,36 @@
+metadata-version: 2.4
+name: python-iso639
+version: 2026.7.23
+dynamic: license-file
+summary: ISO 639 language codes, names, and other associated information
+keywords: ISO 639,language codes,languages,linguistics
+author-email: "Jackson L. Lee" <jacksonlunlee@gmail.com>
+license-expression: Apache-2.0
+license-file: LICENSE.txt
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Education
+classifier: Intended Audience :: Information Technology
+classifier: Intended Audience :: Science/Research
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Text Processing
+classifier: Topic :: Text Processing :: General
+classifier: Topic :: Text Processing :: Indexing
+classifier: Topic :: Text Processing :: Linguistic
+requires-dist: black; extra == "dev"
+requires-dist: build; extra == "dev"
+requires-dist: flake8; extra == "dev"
+requires-dist: mypy; extra == "dev"
+requires-dist: pytest; extra == "dev"
+requires-dist: twine; extra == "dev"
+requires-python: >=3.10
+project-url: Source, https://github.com/jacksonllee/iso639
+provides-extra: dev
+

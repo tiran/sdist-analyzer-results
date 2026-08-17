@@ -1,0 +1,31 @@
+metadata-version: 2.4
+name: jaraco.classes
+version: 3.4.0
+dynamic: license-file
+summary: Utility functions for Python class constructs
+home-page: https://github.com/jaraco/jaraco.classes
+author: Jason R. Coombs
+author-email: jaraco@jaraco.com
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+requires-dist: more_itertools
+requires-dist: pytest>=6; extra == "testing"
+requires-dist: pytest-checkdocs>=2.4; extra == "testing"
+requires-dist: pytest-cov; extra == "testing"
+requires-dist: pytest-mypy; extra == "testing"
+requires-dist: pytest-enabler>=2.2; extra == "testing"
+requires-dist: pytest-ruff>=0.2.1; extra == "testing"
+requires-dist: sphinx>=3.5; extra == "docs"
+requires-dist: jaraco.packaging>=9.3; extra == "docs"
+requires-dist: rst.linker>=1.9; extra == "docs"
+requires-dist: furo; extra == "docs"
+requires-dist: sphinx-lint; extra == "docs"
+requires-dist: jaraco.tidelift>=1.4; extra == "docs"
+requires-python: >=3.8
+provides-extra: testing
+provides-extra: docs
+

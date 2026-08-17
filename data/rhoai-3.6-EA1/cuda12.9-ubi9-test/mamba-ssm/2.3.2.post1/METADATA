@@ -1,0 +1,46 @@
+metadata-version: 2.4
+name: mamba_ssm
+version: 2.3.2.post1
+dynamic: author
+dynamic: home-page
+dynamic: license-file
+dynamic: requires-python
+summary: Mamba state-space model
+keywords: cuda,pytorch,state-space model
+home-page: https://github.com/state-spaces/mamba
+author: Tri Dao, Albert Gu
+author-email: Tri Dao <tri@tridao.me>, Albert Gu <agu@cs.cmu.edu>
+license: Apache License
+                                            Version 2.0, January 2004
+                                         http://www.apache.org/licenses/
+                 
+                    TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+                 
+                    1. Definitions.
+                 
+                       "License" shall mean the terms and conditions for use, reproduction,
+                       and distribution as defined by Sections 1 through 9 of this document.
+                 
+                       "Licensor" shall mean the copyright owner or entity a...
+license-file: LICENSE
+license-file: AUTHORS
+classifier: Programming Language :: Python :: 3
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: Unix
+requires-dist: torch
+requires-dist: tilelang==0.1.8
+requires-dist: apache-tvm-ffi<=0.1.9
+requires-dist: quack-kernels>=0.3.4
+requires-dist: triton>=3.5.0
+requires-dist: ninja
+requires-dist: einops
+requires-dist: transformers
+requires-dist: packaging
+requires-dist: setuptools>=61.0.0
+requires-dist: causal-conv1d>=1.2.0; extra == "causal-conv1d"
+requires-dist: pytest; extra == "dev"
+requires-python: >=3.9
+project-url: Repository, https://github.com/state-spaces/mamba
+provides-extra: causal-conv1d
+provides-extra: dev
+

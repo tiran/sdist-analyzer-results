@@ -1,0 +1,46 @@
+metadata-version: 2.5
+name: hatch
+version: 1.18.0
+summary: Modern, extensible Python project management
+keywords: build,dependency,environment,hatch,packaging,plugin,publishing,release,versioning
+author-email: Ofek Lev <oss@ofek.dev>, Cary Hawkins <hawkinscary23@gmail.com>
+license-expression: MIT
+license-file: LICENSE.txt
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Natural Language :: English
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Software Development :: Build Tools
+requires-dist: backports-zstd>=1.0.0; python_version < "3.14"
+requires-dist: click>=8.0.6
+requires-dist: distro>=1.0.0; sys_platform == "linux"
+requires-dist: hatchling>=1.27.0
+requires-dist: httpx2>=0.22.0
+requires-dist: hyperlink>=21.0.0
+requires-dist: keyring>=23.5.0
+requires-dist: packaging>=24.2
+requires-dist: pexpect~=4.8
+requires-dist: platformdirs>=2.5.0
+requires-dist: pyproject-hooks
+requires-dist: python-discovery>=1.1
+requires-dist: rich>=11.2.0
+requires-dist: shellingham>=1.4.0
+requires-dist: tomli-w>=1.0
+requires-dist: tomlkit>=0.11.1
+requires-dist: userpath~=1.7
+requires-dist: uv>=0.5.23
+requires-dist: virtualenv>=21
+requires-python: >=3.10
+project-url: Homepage, https://hatch.pypa.io/latest/
+project-url: Sponsor, https://github.com/sponsors/ofek
+project-url: History, https://hatch.pypa.io/dev/history/hatch/
+project-url: Tracker, https://github.com/pypa/hatch/issues
+project-url: Source, https://github.com/pypa/hatch
+

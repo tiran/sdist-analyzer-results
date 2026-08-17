@@ -1,0 +1,31 @@
+metadata-version: 2.4
+name: flashinfer-python
+version: 0.6.12
+dynamic: license-file
+summary: FlashInfer: Kernel Library for LLM Serving
+author: FlashInfer team
+license-expression: Apache-2.0
+license-file: LICENSE
+requires-dist: apache-tvm-ffi!=0.1.8,!=0.1.8.post0,<0.2,>=0.1.6
+requires-dist: click
+requires-dist: cuda-tile[tileiras]
+requires-dist: einops
+requires-dist: ninja
+requires-dist: numpy
+requires-dist: nvidia-cudnn-frontend>=1.13.0
+requires-dist: nvidia-cutlass-dsl>=4.5.0
+requires-dist: nvidia-ml-py
+requires-dist: packaging>=24.2
+requires-dist: requests
+requires-dist: tabulate
+requires-dist: torch
+requires-dist: tqdm
+requires-dist: nvidia-cutlass-dsl>=4.5.0; extra == "cu12"
+requires-dist: nvidia-cutlass-dsl[cu13]>=4.5.0; extra == "cu13"
+requires-dist: cuda-python>=13.0; extra == "nvep"
+requires-python: <4.0,>=3.10
+project-url: Homepage, https://github.com/flashinfer-ai/flashinfer
+provides-extra: cu12
+provides-extra: cu13
+provides-extra: nvep
+

@@ -1,0 +1,39 @@
+metadata-version: 2.4
+name: cffi
+version: 1.17.1
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: Foreign Function Interface for Python calling C code.
+home-page: http://cffi.readthedocs.org
+author: Armin Rigo, Maciej Fijalkowski
+author-email: python-cffi@googlegroups.com
+license: MIT
+license-file: LICENSE
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: License :: OSI Approved :: MIT License
+requires-dist: pycparser
+requires-python: >=3.8
+project-url: Documentation, http://cffi.readthedocs.org/
+project-url: Source Code, https://github.com/python-cffi/cffi
+project-url: Issue Tracker, https://github.com/python-cffi/cffi/issues
+project-url: Changelog, https://cffi.readthedocs.io/en/latest/whatsnew.html
+project-url: Downloads, https://github.com/python-cffi/cffi/releases
+project-url: Contact, https://groups.google.com/forum/#!forum/python-cffi
+

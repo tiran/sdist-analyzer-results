@@ -1,0 +1,26 @@
+metadata-version: 2.1
+name: tensorboard-data-server
+version: 0.7.2
+platform: UNKNOWN
+summary: Fast data loading for TensorBoard
+keywords: tensorflow tensorboard tensor machine learning visualizer
+home-page: https://github.com/tensorflow/tensorboard/tree/master/tensorboard/data/server
+author: Google Inc.
+author-email: packages@tensorflow.org
+license: Apache 2.0
+classifier: Development Status :: 2 - Pre-Alpha
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Education
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Rust
+classifier: Topic :: Scientific/Engineering :: Mathematics
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: Software Development :: Libraries
+requires-python: >=3.7
+

@@ -1,4 +1,0 @@
-pybind11
-setuptools>=61.0
-setuptools
-torch

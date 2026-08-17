@@ -1,0 +1,10 @@
+metadata-version: 2.5
+name: llama-index-vector-stores-faiss
+version: 0.6.0
+summary: llama-index vector_stores faiss integration
+author-email: Your Name <you@example.com>
+license-expression: MIT
+license-file: LICENSE
+requires-dist: llama-index-core<0.15,>=0.13.0
+requires-python: <4.0,>=3.10
+

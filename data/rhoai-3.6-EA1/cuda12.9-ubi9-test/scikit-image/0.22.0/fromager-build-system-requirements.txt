@@ -1,8 +1,0 @@
-lazy_loader>=0.3
-numpy; python_version >= "3.12"
-packaging>=21
-setuptools>=67
-wheel
-Cython>=0.29.32
-pythran
-meson-python>=0.14

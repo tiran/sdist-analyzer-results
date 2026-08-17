@@ -1,0 +1,40 @@
+metadata-version: 2.4
+name: mpmath
+version: 1.3.0
+dynamic: license-file
+summary: Python library for arbitrary-precision floating-point arithmetic
+home-page: http://mpmath.org/
+author: Fredrik Johansson
+author-email: fredrik.johansson@gmail.com
+license: BSD
+license-file: LICENSE
+classifier: License :: OSI Approved :: BSD License
+classifier: Topic :: Scientific/Engineering :: Mathematics
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 2
+classifier: Programming Language :: Python :: 2.7
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.5
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+requires-dist: pytest>=4.6; extra == "tests"
+requires-dist: pytest>=4.6; extra == "develop"
+requires-dist: pycodestyle; extra == "develop"
+requires-dist: pytest-cov; extra == "develop"
+requires-dist: codecov; extra == "develop"
+requires-dist: wheel; extra == "develop"
+requires-dist: gmpy2>=2.1.0a4; platform_python_implementation != "PyPy" and extra == "gmpy"
+requires-dist: sphinx; extra == "docs"
+project-url: Source, https://github.com/fredrik-johansson/mpmath
+project-url: Tracker, https://github.com/fredrik-johansson/mpmath/issues
+project-url: Documentation, http://mpmath.org/doc/current/
+provides-extra: tests
+provides-extra: develop
+provides-extra: gmpy
+provides-extra: docs
+

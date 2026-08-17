@@ -1,0 +1,40 @@
+metadata-version: 2.4
+name: sse-starlette
+version: 3.4.8
+dynamic: license-file
+summary: SSE plugin for Starlette
+author-email: sysid <sysid@gmx.de>
+license-expression: BSD-3-Clause
+license-file: LICENSE
+license-file: AUTHORS
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Web Environment
+classifier: Intended Audience :: Developers
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Topic :: Internet :: WWW/HTTP
+requires-dist: starlette>=0.49.1
+requires-dist: anyio>=4.7.0
+requires-dist: uvicorn>=0.34.0; extra == "examples"
+requires-dist: fastapi>=0.115.12; extra == "examples"
+requires-dist: pydantic>=2; extra == "examples"
+requires-dist: sqlalchemy[asyncio]>=2.0.41; extra == "examples-db"
+requires-dist: aiosqlite>=0.21.0; extra == "examples-db"
+requires-dist: uvicorn>=0.34.0; extra == "uvicorn"
+requires-dist: granian>=2.3.1; extra == "granian"
+requires-dist: daphne>=4.2.0; extra == "daphne"
+requires-python: >=3.10
+project-url: Homepage, https://github.com/sysid/sse-starlette
+project-url: Repository, https://github.com/sysid/sse-starlette
+project-url: Issues, https://github.com/sysid/sse-starlette/issues
+project-url: Source, https://github.com/sysid/sse-starlette
+provides-extra: examples
+provides-extra: examples-db
+provides-extra: uvicorn
+provides-extra: granian
+provides-extra: daphne
+

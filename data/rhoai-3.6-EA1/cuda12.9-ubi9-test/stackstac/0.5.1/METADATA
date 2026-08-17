@@ -1,0 +1,27 @@
+metadata-version: 2.1
+name: stackstac
+version: 0.5.1
+summary: Load a STAC collection into xarray with dask
+author-email: Gabe Joseph <gjoseph92@gmail.com>
+license: MIT
+requires-dist: dask[array]>=2022.1.1
+requires-dist: numpy<3,>1.23
+requires-dist: pandas<3,>=2
+requires-dist: pyproj<4.0.0,>=3.0.0
+requires-dist: rasterio<2.0.0,>=1.3.0
+requires-dist: xarray>=0.18
+requires-dist: Pillow<10.0.0,>=9.0.1; extra == "viz"
+requires-dist: aiohttp<4.0.0,>=3.7.4; extra == "viz"
+requires-dist: distributed>=2022.1.1; extra == "viz"
+requires-dist: cachetools<5.0.0,>=4.2.2; extra == "viz"
+requires-dist: mercantile<2.0.0,>=1.1.6; extra == "viz"
+requires-dist: scipy<2.0.0,>=1.6.1; extra == "viz"
+requires-dist: ipyleaflet<1.0.0,>=0.13.6; extra == "viz"
+requires-dist: ipywidgets<8.0.0,>=7.6.3; extra == "viz"
+requires-dist: matplotlib>=3.4.1; extra == "viz"
+requires-dist: jupyter-server-proxy>=3.2; extra == "viz"
+requires-python: <4.0,>=3.8
+project-url: homepage, https://stackstac.readthedocs.io/en/latest/index.html
+project-url: repository, https://github.com/gjoseph92/stackstac
+provides-extra: viz
+

@@ -1,0 +1,46 @@
+metadata-version: 2.1
+name: matplotlib
+version: 3.11.1
+summary: Python plotting package
+author: John D. Hunter, Michael Droettboom
+author-email: Unknown <matplotlib-users@python.org>
+license: License agreement for matplotlib versions 1.3.0 and later
+                  =========================================================
+                  
+                  1. This LICENSE AGREEMENT is between the Matplotlib Development Team
+                  ("MDT"), and the Individual or Organization ("Licensee") accessing and
+                  otherwise using matplotlib software in source or binary form and its
+                  associated documentation.
+                  
+                  2. Subject to the terms and conditions of this License Agreement, MDT
+                  hereb...
+classifier: Development Status :: 5 - Production/Stable
+classifier: Framework :: Matplotlib
+classifier: Intended Audience :: Science/Research
+classifier: Intended Audience :: Education
+classifier: License :: OSI Approved :: Python Software Foundation License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Scientific/Engineering :: Visualization
+requires-dist: contourpy>=1.0.1
+requires-dist: cycler>=0.10
+requires-dist: fonttools>=4.28.2
+requires-dist: kiwisolver>=1.3.1
+requires-dist: numpy>=1.25
+requires-dist: packaging>=20.0
+requires-dist: pillow>=9
+requires-dist: pyparsing>=3
+requires-dist: python-dateutil>=2.7
+requires-python: >=3.11
+project-url: Homepage, https://matplotlib.org
+project-url: Download, https://matplotlib.org/stable/install/index.html
+project-url: Documentation, https://matplotlib.org
+project-url: Source Code, https://github.com/matplotlib/matplotlib
+project-url: Bug Tracker, https://github.com/matplotlib/matplotlib/issues
+project-url: Forum, https://discourse.matplotlib.org/
+project-url: Donate, https://numfocus.org/donate-to-matplotlib
+

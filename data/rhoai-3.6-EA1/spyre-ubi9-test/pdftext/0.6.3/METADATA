@@ -1,0 +1,23 @@
+metadata-version: 2.4
+name: pdftext
+version: 0.6.3
+summary: Extract structured text from pdfs quickly
+keywords: pdf,text,extraction
+author: Vik Paruchuri
+author-email: vik.paruchuri@gmail.com
+license: Apache-2.0
+license-file: LICENSE
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-dist: click<9.0.0,>=8.1.8
+requires-dist: pydantic<3.0.0,>=2.7.1
+requires-dist: pydantic-settings<3.0.0,>=2.2.1
+requires-dist: pypdfium2==4.30.0
+requires-python: <4.0,>=3.10
+project-url: Repository, https://github.com/VikParuchuri/pdftext
+

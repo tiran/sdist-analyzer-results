@@ -1,0 +1,39 @@
+metadata-version: 2.4
+name: ibm-cos-sdk-core
+version: 2.14.3
+dynamic: author
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: Low-level, data-driven core of IBM SDK for Python
+home-page: https://github.com/ibm/ibm-cos-sdk-python-core
+author: IBM
+license: Apache License 2.0
+license-file: LICENSE.txt
+license-file: NOTICE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: System Administrators
+classifier: Natural Language :: English
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+requires-dist: jmespath<=1.0.1,>=0.10.0
+requires-dist: python-dateutil<3.0.0,>=2.9.0
+requires-dist: requests<3.0.0,>=2.32.4
+requires-dist: urllib3<3,>=2.5.0
+requires-python: >=3.6
+

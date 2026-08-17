@@ -1,6 +1,6 @@
-pandas
+vcs_versioning
 ninja
+pandas
+setuptools_scm
 psutil
 packaging
-vcs_versioning
-setuptools_scm

@@ -1,0 +1,22 @@
+metadata-version: 2.4
+name: crewai-core
+version: 1.15.15
+summary: Shared utilities for CrewAI — version, paths, user-data, telemetry, printer.
+author-email: "Greyson R. LaLonde" <greyson@crewai.com>
+requires-dist: appdirs~=1.4.4
+requires-dist: cryptography>=42.0
+requires-dist: httpx~=0.28.1
+requires-dist: opentelemetry-api~=1.42.0
+requires-dist: opentelemetry-exporter-otlp-proto-http~=1.42.0
+requires-dist: opentelemetry-sdk~=1.42.0
+requires-dist: packaging>=23.0
+requires-dist: portalocker~=2.7.0
+requires-dist: pydantic<2.13,>=2.11.9
+requires-dist: pyjwt<3,>=2.13.0
+requires-dist: rich>=13.7.1
+requires-dist: tomli~=2.0.2
+requires-python: <3.14,>=3.10
+project-url: Homepage, https://crewai.com
+project-url: Documentation, https://docs.crewai.com
+project-url: Repository, https://github.com/crewAIInc/crewAI
+

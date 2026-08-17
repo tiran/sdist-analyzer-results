@@ -1,8 +1,9 @@
-Metadata-Version: 2.1
-Name: antlr4-python3-runtime
-Version: 4.13.1
-Summary: ANTLR 4.13.1 runtime for Python 3
-Author: Terence Parr, Sam Harwell
-Author-email: Eric Vergnaud <eric.vergnaud@wanadoo.fr>
-License: BSD
-Project-URL: Homepage, http://www.antlr.org
+metadata-version: 2.1
+name: antlr4-python3-runtime
+version: 4.13.1
+summary: ANTLR 4.13.1 runtime for Python 3
+author: Terence Parr, Sam Harwell
+author-email: Eric Vergnaud <eric.vergnaud@wanadoo.fr>
+license: BSD
+project-url: Homepage, http://www.antlr.org
+

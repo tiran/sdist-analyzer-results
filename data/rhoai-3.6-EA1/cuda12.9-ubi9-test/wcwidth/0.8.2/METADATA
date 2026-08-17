@@ -1,0 +1,30 @@
+metadata-version: 2.5
+name: wcwidth
+version: 0.8.2
+summary: Measures the displayed width of unicode strings in a terminal
+keywords: cjk,combining,console,eastasian,emoji,emulator,terminal,unicode,wcswidth,wcwidth,xterm
+author-email: Jeff Quast <contact@jeffquast.com>
+license-expression: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Intended Audience :: Developers
+classifier: Natural Language :: English
+classifier: Operating System :: POSIX
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: 3.15
+classifier: Topic :: Software Development :: Internationalization
+classifier: Topic :: Software Development :: Libraries
+classifier: Topic :: Software Development :: Localization
+classifier: Topic :: Terminals
+classifier: Typing :: Typed
+requires-python: >=3.8
+project-url: Homepage, https://github.com/jquast/wcwidth
+

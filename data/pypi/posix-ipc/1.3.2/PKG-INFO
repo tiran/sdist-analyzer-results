@@ -1,0 +1,22 @@
+metadata-version: 2.4
+name: posix_ipc
+version: 1.3.2
+dynamic: license
+dynamic: license-file
+summary: POSIX IPC primitives (semaphores, shared memory and message queues) for Python
+author-email: Philip Semanchuk <philip@semanchuk.com>
+license: BSD-3-Clause
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Operating System :: POSIX :: BSD :: FreeBSD
+classifier: Operating System :: POSIX :: Linux
+classifier: Operating System :: POSIX :: SunOS/Solaris
+classifier: Operating System :: POSIX
+classifier: Operating System :: Unix
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Topic :: Utilities
+project-url: Homepage, https://github.com/osvenskan/posix_ipc/
+

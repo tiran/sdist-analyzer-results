@@ -1,0 +1,9 @@
+packaging>=24.2
+torch
+ninja
+setuptools-scm>=8.0
+setuptools
+setuptools<81.0.0,>=77.0.3
+filelock
+wheel
+jinja2

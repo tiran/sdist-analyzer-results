@@ -1,0 +1,30 @@
+metadata-version: 2.4
+name: dunamai
+version: 1.26.2
+summary: Dynamic version generation
+keywords: version,versioning,dynamic
+author: Matthew T. Kennerly
+author-email: mtkennerly@gmail.com
+license: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: End Users/Desktop
+classifier: License :: OSI Approved :: MIT License
+classifier: Natural Language :: English
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.5
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-dist: importlib-metadata>=1.6.0; python_version < "3.8"
+requires-dist: packaging>=20.9
+requires-python: >=3.5
+project-url: Repository, https://github.com/mtkennerly/dunamai
+

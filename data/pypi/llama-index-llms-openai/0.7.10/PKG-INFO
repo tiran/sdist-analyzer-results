@@ -1,0 +1,11 @@
+metadata-version: 2.4
+name: llama-index-llms-openai
+version: 0.7.10
+summary: llama-index llms openai integration
+author: llama-index
+license-expression: MIT
+license-file: LICENSE
+requires-dist: llama-index-core<0.15,>=0.14.5
+requires-dist: openai<3,>=1.108.1
+requires-python: <4.0,>=3.10
+

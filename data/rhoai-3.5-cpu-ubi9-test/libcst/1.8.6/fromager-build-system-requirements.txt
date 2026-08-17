@@ -1,4 +1,0 @@
-setuptools-rust
-wheel
-setuptools
-setuptools-scm

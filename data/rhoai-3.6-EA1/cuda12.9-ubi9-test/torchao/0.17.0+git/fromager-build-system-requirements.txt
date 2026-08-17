@@ -1,4 +1,0 @@
-filelock
-setuptools
-torch
-wheel

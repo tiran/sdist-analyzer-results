@@ -1,0 +1,21 @@
+metadata-version: 2.4
+name: lxml_html_clean
+version: 0.4.5
+dynamic: license-file
+summary: HTML cleaner from lxml project
+home-page: https://github.com/fedora-python/lxml_html_clean/
+author: Lumír Balhar
+author-email: lbalhar@redhat.com
+license: BSD-3-Clause
+license-file: LICENSE.txt
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-dist: lxml>=6.1.1
+project-url: Documentation, https://lxml-html-clean.readthedocs.io/
+

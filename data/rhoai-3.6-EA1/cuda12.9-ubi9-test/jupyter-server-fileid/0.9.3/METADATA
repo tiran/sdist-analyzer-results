@@ -1,0 +1,39 @@
+metadata-version: 2.5
+name: jupyter_server_fileid
+version: 0.9.3
+summary: Jupyter Server extension providing an implementation of the File ID service.
+keywords: Extension,Jupyter
+author-email: "David L. Qiu" <david@qiu.dev>
+license: BSD 3-Clause License
+                 
+                 Copyright (c) 2022, David L. Qiu
+                 All rights reserved.
+                 
+                 Redistribution and use in source and binary forms, with or without
+                 modification, are permitted provided that the following conditions are met:
+                 
+                 1. Redistributions of source code must retain the above copyright notice, this
+                    list of conditions and the following disclaimer.
+                 
+                 2. Redistributions in binary form must reproduce the above copyright...
+license-file: LICENSE
+classifier: Framework :: Jupyter
+classifier: License :: OSI Approved :: BSD License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+requires-dist: jupyter-events>=0.5.0
+requires-dist: jupyter-server<3,>=1.15
+requires-dist: click; extra == "cli"
+requires-dist: jupyter-server[test]<3,>=1.15; extra == "test"
+requires-dist: pytest; extra == "test"
+requires-dist: pytest-cov; extra == "test"
+requires-dist: pytest-jupyter; extra == "test"
+requires-python: >=3.7
+project-url: Home, https://github.com/jupyter-server/jupyter_server_fileid
+provides-extra: cli
+provides-extra: test
+

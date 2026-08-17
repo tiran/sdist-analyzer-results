@@ -1,0 +1,110 @@
+[build-system]
+requires = [
+    # any change here should be reflected in the build dependencies below
+    "build",
+    "setuptools>=70.1.0,<80.0",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ibm-aiu-smi"
+authors = [
+    {name = "Torch-Spyre Authors"}
+]
+description = "A tool to collect performance metrics from IBM Spyre during an execution of AI workload"
+readme = "README.md"
+dependencies = [
+    "spyremetrics>=0.5.0",
+    "psutil>=5.9.6"
+]
+requires-python = ">=3.12"
+dynamic = ["version"]
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+keywords = ["IBM Spyre", "monitoring", "performance", "device"]
+classifiers=[
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: System :: Monitoring",
+]
+
+[project.urls]
+#Homepage = "https://github.com/torch-spyre/torch-spyre/tree/main/extensions/aiu-smi"
+#Issues   = "https://github.com/torch-spyre/torch-spyre/issues?q=is%3Aissue%20state%3Aopen%20(aiu-smi%20OR%20aiu_smi)"
+#Documentation = "https://torch-spyre.readthedocs.io/en/latest/user_guide/profiling/device_monitoring.html"
+
+[project.optional-dependencies]
+build = [ # no-isolation build 
+    # any change here should be reflected in the build system above
+    "build",
+    "setuptools>=70.1.0,<80.0",
+    "wheel"
+]
+test = [
+    "pytest~=9.0.0",
+    "pydantic",             # needed by test framework to support pydantic models for config
+    "pytest-xdist",         # -n1 worker isolation for segfault resilience
+    "transformers~=4.57.1"
+]
+lint = [
+    "mypy~=1.13.0",
+    "pre-commit~=4.5.0",
+    "types-PyYAML~=6.0.12.20250915",
+    "uv~=0.10.0",
+]
+
+[tool.setuptools]
+package-dir = {ibm_aiu_smi = "aiu_smi"}
+
+[tool.setuptools.packages.find]
+namespaces = false
+
+[tool.setuptools.dynamic]
+version = {attr = "aiu_smi.aiu_smi_main.aiu_smi_version"}  # any module attribute compatible with ast.literal_eval
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+show-fixes = true
+
+[tool.ruff.lint]
+ignore = [
+    "DTZ005", # call-datetime-now-without-tzinfo
+    "DTZ006", # call-datetime-fromtimestamp
+    "E701", # Multiple statements on one line (colon)
+    "E702", # Multiple statements on one line (semicolon)
+    "EXE001", # shebang-not-executable
+    "F401", # Imported but unused
+]
+
+[tool.ruff.lint.per-file-ignores]
+"llm_calc/*" = [
+    "BLE001", # blind-except
+    "COM812", # missing-trailing-comma
+    "F541", # f-string without any placeholders
+]
+"pt_active_model/*" = [
+    "BLE001", # blind-except
+    "COM812", # missing-trailing-comma
+    "F541", # f-string without any placeholders
+]
+
+[tool.ruff.format]
+quote-style = "double"
+
+[tool.mypy]
+ignore_missing_imports = true
+python_version = "3.12"
+exclude = ["^dist", ".data/", ".dist-info/"]
+
+[tool.uv]
+package = true
+required-version = ">=0.9.0"
+index-strategy = "unsafe-best-match"
+override-dependencies = ["setuptools>=70.1.0,<80.0"]
+
+[tool.uv.pip]
+universal = true

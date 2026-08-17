@@ -1,0 +1,61 @@
+metadata-version: 2.5
+name: jupyter_ai
+version: 3.1.2
+summary: A set of extensions providing agentic AI in JupyterLab
+keywords: jupyter,jupyter-ai,jupyterlab,jupyterlab-extension
+author-email: Project Jupyter <jupyter@googlegroups.com>
+license: BSD 3-Clause License
+                 
+                 Copyright (c) 2023, author_a
+                 All rights reserved.
+                 
+                 Redistribution and use in source and binary forms, with or without
+                 modification, are permitted provided that the following conditions are met:
+                 
+                 1. Redistributions of source code must retain the above copyright notice, this
+                    list of conditions and the following disclaimer.
+                 
+                 2. Redistributions in binary form must reproduce the above copyright not...
+license-file: LICENSE
+classifier: Framework :: Jupyter
+classifier: Framework :: Jupyter :: JupyterLab
+classifier: Framework :: Jupyter :: JupyterLab :: 4
+classifier: Framework :: Jupyter :: JupyterLab :: Extensions
+classifier: Framework :: Jupyter :: JupyterLab :: Extensions :: Prebuilt
+classifier: License :: OSI Approved :: BSD License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+requires-dist: jupyter-ai-acp-client<0.3.0,>=0.2.1
+requires-dist: jupyter-ai-chat-commands<0.1.0,>=0.0.4
+requires-dist: jupyter-ai-persona-manager<0.2.0,>=0.1.2
+requires-dist: jupyter-ai-router<0.1.0,>=0.0.6
+requires-dist: jupyter-ai-tools<0.7.0,>=0.6.1
+requires-dist: jupyter-server-documents<0.4.0,>=0.3.2
+requires-dist: jupyter-server-mcp<0.4.0,>=0.2.1
+requires-dist: jupyterlab-chat<0.24.0,>=0.23.1
+requires-dist: jupyterlab-commands-toolkit<0.2.0,>=0.1.6
+requires-dist: jupyterlab-notebook-awareness<0.3.0,>=0.2.0
+requires-dist: autodoc-pydantic; extra == "docs"
+requires-dist: myst-parser; extra == "docs"
+requires-dist: shibuya; extra == "docs"
+requires-dist: sphinx; extra == "docs"
+requires-dist: sphinx-copybutton; extra == "docs"
+requires-dist: sphinx-design; extra == "docs"
+requires-dist: sphinx-tabs; extra == "docs"
+requires-dist: jupyter-ai-jupyternaut<0.2.0,>=0.1.0b0; extra == "jupyternaut"
+requires-dist: jupyter-ai-litellm<0.1.0,>=0.0.2; extra == "jupyternaut"
+requires-dist: jupyter-ai-litellm<0.1.0,>=0.0.2; extra == "magics"
+requires-dist: jupyter-ai-magic-commands<0.1.0,>=0.0.4; extra == "magics"
+requires-python: >=3.9
+project-url: Documentation, https://jupyter-ai.readthedocs.io/en/stable/
+project-url: Source, https://github.com/jupyterlab/jupyter-ai
+project-url: Tracker, https://github.com/jupyterlab/jupyter-ai/issues
+provides-extra: docs
+provides-extra: jupyternaut
+provides-extra: magics
+

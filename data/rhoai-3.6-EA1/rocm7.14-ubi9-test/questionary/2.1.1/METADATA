@@ -1,0 +1,30 @@
+metadata-version: 2.4
+name: questionary
+version: 2.1.1
+summary: Python library to build pretty command line user prompts ⭐️
+keywords: cli,ui,inquirer,questions,prompt
+author: Tom Bocklisch
+author-email: tombocklisch@gmail.com
+maintainer: Tom Bocklisch
+maintainer-email: tombocklisch@gmail.com
+license: MIT
+license-file: LICENSE
+license-file: NOTICE
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: 3.8
+classifier: Topic :: Software Development :: Libraries
+requires-dist: prompt_toolkit<4.0,>=2.0
+requires-python: >=3.9
+project-url: Documentation, https://questionary.readthedocs.io/
+project-url: Repository, https://github.com/tmbo/questionary
+

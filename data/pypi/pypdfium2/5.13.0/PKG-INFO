@@ -1,0 +1,31 @@
+metadata-version: 2.4
+name: pypdfium2
+version: 5.13.0
+dynamic: license
+dynamic: license-file
+dynamic: requires-python
+dynamic: summary
+summary: Python bindings to PDFium
+keywords: pdf,pdfium
+home-page: https://github.com/pypdfium2-team/pypdfium2
+author: pypdfium2-team
+author-email: geisserml@gmail.com
+license: BSD-3-Clause, Apache-2.0, dependency licenses
+license-file: LICENSES/Apache-2.0.txt
+license-file: LICENSES/BSD-3-Clause.txt
+license-file: LICENSES/CC-BY-4.0.txt
+license-file: REUSE.toml
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Information Technology
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Topic :: Multimedia :: Graphics
+classifier: Topic :: Software Development :: Libraries
+requires-python: >=3.6
+project-url: Source, https://github.com/pypdfium2-team/pypdfium2
+project-url: Tracker, https://github.com/pypdfium2-team/pypdfium2/issues
+project-url: Documentation, https://pypdfium2.readthedocs.io
+project-url: Changelog, https://pypdfium2.readthedocs.io/en/stable/changelog.html
+

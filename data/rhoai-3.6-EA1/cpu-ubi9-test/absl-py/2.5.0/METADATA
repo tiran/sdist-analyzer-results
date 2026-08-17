@@ -1,0 +1,25 @@
+metadata-version: 2.5
+name: absl-py
+version: 2.5.0
+summary: Abseil Python Common Libraries, see https://github.com/abseil/abseil-py.
+author: The Abseil Authors
+license-expression: Apache-2.0
+license-file: AUTHORS
+license-file: LICENSE
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-python: >=3.10
+project-url: Changelog, https://github.com/abseil/abseil-py/blob/main/CHANGELOG.md
+project-url: Documentation, https://abseil.io/docs/python/
+project-url: Issues, https://github.com/abseil/abseil-py/issues
+project-url: Source, https://github.com/abseil/abseil-py
+

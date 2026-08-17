@@ -1,0 +1,21 @@
+metadata-version: 2.4
+name: z3-solver
+version: 4.15.4.0
+dynamic: author
+dynamic: description
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: maintainer
+dynamic: maintainer-email
+dynamic: requires-dist
+dynamic: summary
+summary: an efficient SMT solver library
+keywords: z3,smt,sat,prover,theorem
+home-page: https://github.com/Z3Prover/z3
+author: The Z3 Theorem Prover Project
+maintainer: Audrey Dutcher and Nikolaj Bjorner
+maintainer-email: audrey@rhelmot.io
+license: MIT License
+requires-dist: importlib-resources; python_version < "3.9"
+

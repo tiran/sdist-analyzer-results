@@ -1,0 +1,48 @@
+metadata-version: 2.4
+name: portalocker
+version: 2.7.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: platform
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+platform: any
+summary: Wraps the portalocker recipe for easy usage
+keywords: locking,locks,with statement,windows,linux,unix
+home-page: https://github.com/WoLpH/portalocker
+author: Rick van Hattem
+author-email: wolph@wol.ph
+license: BSD-3-Clause
+license-file: LICENSE
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3.5
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+requires-dist: pywin32>=226; platform_system == "Windows"
+requires-dist: sphinx>=1.7.1; extra == "docs"
+requires-dist: pytest>=5.4.1; extra == "tests"
+requires-dist: pytest-cov>=2.8.1; extra == "tests"
+requires-dist: pytest-timeout>=2.1.0; extra == "tests"
+requires-dist: sphinx>=6.0.0; extra == "tests"
+requires-dist: pytest-mypy>=0.8.0; extra == "tests"
+requires-dist: redis; extra == "tests"
+requires-dist: redis; extra == "redis"
+requires-python: >=3.5
+provides-extra: docs
+provides-extra: tests
+provides-extra: redis
+

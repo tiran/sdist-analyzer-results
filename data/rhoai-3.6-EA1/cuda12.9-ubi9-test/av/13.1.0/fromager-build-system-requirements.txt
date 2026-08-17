@@ -1,2 +1,2 @@
-cython
 setuptools
+cython

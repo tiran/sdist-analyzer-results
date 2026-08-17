@@ -1,0 +1,10 @@
+metadata-version: 2.4
+name: antlr4-python3-runtime
+version: 4.13.2
+summary: ANTLR 4.13.2 runtime for Python 3
+author: Terence Parr, Sam Harwell
+author-email: Eric Vergnaud <eric.vergnaud@wanadoo.fr>
+license: BSD
+requires-dist: typing; python_version < "3.5"
+project-url: Homepage, http://www.antlr.org
+

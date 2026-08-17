@@ -1,0 +1,16 @@
+metadata-version: 2.5
+name: ftfy
+version: 6.3.1
+summary: Fixes mojibake and other problems with Unicode, after the fact
+author-email: Robyn Speer <rspeer@arborelia.net>
+license: Apache-2.0
+license-file: LICENSE.txt
+requires-dist: wcwidth
+requires-python: >=3.9
+project-url: Homepage, https://ftfy.readthedocs.io/en/latest/
+project-url: Documentation, https://ftfy.readthedocs.io/en/latest/
+project-url: Repository, https://github.com/rspeer/python-ftfy
+project-url: Issues, https://github.com/rspeer/python-ftfy/issues/
+project-url: Changelog, https://github.com/rspeer/python-ftfy/blob/main/CHANGELOG.md
+project-url: Blog, https://posts.arborelia.net
+

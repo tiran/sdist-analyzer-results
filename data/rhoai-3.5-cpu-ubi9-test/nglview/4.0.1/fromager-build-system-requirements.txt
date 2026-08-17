@@ -1,3 +1,0 @@
-setuptools>=75.6.0
-wheel
-jupyter_packaging>=0.7.9; python_version < "3.13"

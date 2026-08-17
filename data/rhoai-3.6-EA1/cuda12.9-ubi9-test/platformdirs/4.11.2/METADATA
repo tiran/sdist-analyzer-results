@@ -1,0 +1,30 @@
+metadata-version: 2.5
+name: platformdirs
+version: 4.11.2
+summary: A small Python package for determining appropriate platform-specific dirs, e.g. a `user data dir`.
+keywords: appdirs,application,cache,directory,log,user
+maintainer-email: Bernát Gábor <gaborjbernat@gmail.com>, Julian Berman <Julian@GrayVines.com>, Ofek Lev <oss@ofek.dev>, Ronny Pfannschmidt <opensource@ronnypfannschmidt.de>
+license-expression: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: 3.15
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-python: >=3.10
+project-url: Changelog, https://platformdirs.readthedocs.io/en/latest/changelog.html
+project-url: Documentation, https://platformdirs.readthedocs.io
+project-url: Homepage, https://github.com/tox-dev/platformdirs
+project-url: Source, https://github.com/tox-dev/platformdirs
+project-url: Tracker, https://github.com/tox-dev/platformdirs/issues
+

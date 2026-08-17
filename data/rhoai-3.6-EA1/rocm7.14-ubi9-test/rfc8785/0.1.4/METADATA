@@ -1,0 +1,30 @@
+metadata-version: 2.4
+name: rfc8785
+version: 0.1.4
+summary: A pure-Python implementation of RFC 8785 (JSON Canonicalization Scheme)
+author-email: Trail of Bits <opensource@trailofbits.com>
+license-file: LICENSE
+classifier: Development Status :: 4 - Beta
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Programming Language :: Python :: 3
+classifier: Topic :: File Formats :: JSON
+classifier: Topic :: Security :: Cryptography
+requires-dist: rfc8785[doc,lint,test]; extra == "dev"
+requires-dist: build; extra == "dev"
+requires-dist: pdoc; extra == "doc"
+requires-dist: ruff~=0.3; extra == "lint"
+requires-dist: mypy>=1.0; extra == "lint"
+requires-dist: interrogate; extra == "lint"
+requires-dist: pytest; extra == "test"
+requires-dist: pytest-cov; extra == "test"
+requires-dist: coverage; extra == "test"
+requires-python: >=3.8
+project-url: Documentation, https://trailofbits.github.io/rfc8785.py/
+project-url: Homepage, https://pypi.org/project/rfc8785
+project-url: Issues, https://github.com/trailofbits/rfc8785.py/issues
+project-url: Source, https://github.com/trailofbits/rfc8785.py
+provides-extra: dev
+provides-extra: doc
+provides-extra: lint
+provides-extra: test
+

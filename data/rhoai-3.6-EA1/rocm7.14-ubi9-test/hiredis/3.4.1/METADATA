@@ -1,0 +1,43 @@
+metadata-version: 2.4
+name: hiredis
+version: 3.4.1
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: project-url
+dynamic: requires-python
+dynamic: summary
+summary: Python wrapper for hiredis
+keywords: Redis
+home-page: https://github.com/redis/hiredis-py
+author: Jan-Erik Rediger, Pieter Noordhuis
+author-email: janerik@fnordig.de, pcnoordhuis@gmail.com
+license: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: MacOS
+classifier: Operating System :: POSIX
+classifier: Programming Language :: C
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Topic :: Software Development
+requires-python: >=3.8
+project-url: Changes, https://github.com/redis/hiredis-py/releases
+project-url: Issue tracker, https://github.com/redis/hiredis-py/issues
+

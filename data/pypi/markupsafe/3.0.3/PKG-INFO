@@ -1,0 +1,23 @@
+metadata-version: 2.4
+name: MarkupSafe
+version: 3.0.3
+dynamic: license-file
+summary: Safely add untrusted strings to HTML/XML markup.
+maintainer-email: Pallets <contact@palletsprojects.com>
+license-expression: BSD-3-Clause
+license-file: LICENSE.txt
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Web Environment
+classifier: Intended Audience :: Developers
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+classifier: Topic :: Text Processing :: Markup :: HTML
+classifier: Typing :: Typed
+requires-python: >=3.9
+project-url: Donate, https://palletsprojects.com/donate
+project-url: Documentation, https://markupsafe.palletsprojects.com/
+project-url: Changes, https://markupsafe.palletsprojects.com/page/changes/
+project-url: Source, https://github.com/pallets/markupsafe/
+project-url: Chat, https://discord.gg/pallets
+

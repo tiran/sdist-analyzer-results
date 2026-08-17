@@ -1,0 +1,43 @@
+metadata-version: 2.5
+name: mcp
+version: 1.26.0
+summary: Model Context Protocol SDK
+keywords: automation,git,llm,mcp
+author: Anthropic, PBC.
+maintainer-email: David Soria Parra <davidsp@anthropic.com>, Justin Spahr-Summers <justin@anthropic.com>
+license: MIT
+license-file: LICENSE
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+requires-dist: anyio>=4.5
+requires-dist: httpx-sse>=0.4
+requires-dist: httpx>=0.27.1
+requires-dist: jsonschema>=4.20.0
+requires-dist: pydantic-settings>=2.5.2
+requires-dist: pydantic<3.0.0,>=2.11.0
+requires-dist: pyjwt[crypto]>=2.10.1
+requires-dist: python-multipart>=0.0.9
+requires-dist: pywin32>=310; sys_platform == "win32"
+requires-dist: sse-starlette>=1.6.1
+requires-dist: starlette>=0.27
+requires-dist: typing-extensions>=4.9.0
+requires-dist: typing-inspection>=0.4.1
+requires-dist: uvicorn>=0.31.1; sys_platform != "emscripten"
+requires-dist: python-dotenv>=1.0.0; extra == "cli"
+requires-dist: typer>=0.16.0; extra == "cli"
+requires-dist: rich>=13.9.4; extra == "rich"
+requires-dist: websockets>=15.0.1; extra == "ws"
+requires-python: >=3.10
+project-url: Homepage, https://modelcontextprotocol.io
+project-url: Repository, https://github.com/modelcontextprotocol/python-sdk
+project-url: Issues, https://github.com/modelcontextprotocol/python-sdk/issues
+provides-extra: cli
+provides-extra: rich
+provides-extra: ws
+

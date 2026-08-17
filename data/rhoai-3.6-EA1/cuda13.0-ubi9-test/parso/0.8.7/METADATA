@@ -1,0 +1,56 @@
+metadata-version: 2.4
+name: parso
+version: 0.8.7
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: maintainer
+dynamic: maintainer-email
+dynamic: platform
+dynamic: provides-extra
+dynamic: requires-python
+dynamic: summary
+platform: any
+summary: A Python Parser
+keywords: python parser parsing
+home-page: https://github.com/davidhalter/parso
+author: David Halter
+author-email: davidhalter88@gmail.com
+maintainer: David Halter
+maintainer-email: davidhalter88@gmail.com
+license: MIT
+license-file: LICENSE.txt
+license-file: AUTHORS.txt
+classifier: Development Status :: 4 - Beta
+classifier: Environment :: Plugins
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: Text Editors :: Integrated Development Environments (IDE)
+classifier: Topic :: Utilities
+classifier: Typing :: Typed
+requires-dist: pytest; extra == "testing"
+requires-dist: docopt; extra == "testing"
+requires-dist: flake8==5.0.4; extra == "qa"
+requires-dist: zuban==0.5.1; extra == "qa"
+requires-dist: types-setuptools==67.2.0.1; extra == "qa"
+requires-python: >=3.6
+provides-extra: testing
+provides-extra: qa
+

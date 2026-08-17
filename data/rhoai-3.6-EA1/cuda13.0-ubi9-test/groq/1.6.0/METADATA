@@ -1,0 +1,33 @@
+metadata-version: 2.3
+name: groq
+version: 1.6.0
+summary: The official Python library for the groq API
+author-email: Groq <support@groq.com>
+license: Apache-2.0
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: MacOS
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: OS Independent
+classifier: Operating System :: POSIX
+classifier: Operating System :: POSIX :: Linux
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Typing :: Typed
+requires-dist: anyio<5,>=3.5.0
+requires-dist: distro<2,>=1.7.0
+requires-dist: httpx<1,>=0.23.0
+requires-dist: pydantic<3,>=1.9.0
+requires-dist: sniffio
+requires-dist: typing-extensions<5,>=4.14
+requires-dist: aiohttp; extra == "aiohttp"
+requires-dist: httpx-aiohttp>=0.1.9; extra == "aiohttp"
+requires-python: >=3.10
+project-url: Homepage, https://github.com/groq/groq-python
+project-url: Repository, https://github.com/groq/groq-python
+provides-extra: aiohttp
+

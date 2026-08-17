@@ -1,0 +1,46 @@
+metadata-version: 2.4
+name: pyotp
+version: 2.9.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: platform
+dynamic: project-url
+dynamic: provides-extra
+dynamic: requires-python
+dynamic: summary
+platform: MacOS X
+platform: Posix
+summary: Python One Time Password Library
+home-page: https://github.com/pyotp/pyotp
+author: PyOTP contributors
+author-email: kislyuk@gmail.com
+license: MIT License
+license-file: LICENSE
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Operating System :: POSIX
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: coverage; extra == "test"
+requires-dist: wheel; extra == "test"
+requires-dist: ruff; extra == "test"
+requires-dist: mypy; extra == "test"
+requires-python: >=3.7
+project-url: Documentation, https://pyauth.github.io/pyotp
+project-url: Source Code, https://github.com/pyauth/pyotp
+project-url: Issue Tracker, https://github.com/pyauth/pyotp/issues
+project-url: Change Log, https://github.com/pyauth/pyotp/blob/master/Changes.rst
+provides-extra: test
+

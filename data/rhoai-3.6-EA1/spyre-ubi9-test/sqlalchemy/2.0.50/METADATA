@@ -1,0 +1,84 @@
+metadata-version: 2.4
+name: SQLAlchemy
+version: 2.0.50
+dynamic: license-file
+summary: Database Abstraction Library
+home-page: https://www.sqlalchemy.org
+author: Mike Bayer
+author-email: mike_mp@zzzcomputing.com
+license: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Database :: Front-Ends
+requires-dist: importlib-metadata; python_version < "3.8"
+requires-dist: greenlet>=1; platform_machine == "aarch64" or (platform_machine == "ppc64le" or (platform_machine == "x86_64" or (platform_machine == "amd64" or (platform_machine == "AMD64" or (platform_machine == "win32" or platform_machine == "WIN32")))))
+requires-dist: typing-extensions>=4.6.0
+requires-dist: greenlet>=1; extra == "asyncio"
+requires-dist: mypy>=0.910; extra == "mypy"
+requires-dist: pyodbc; extra == "mssql"
+requires-dist: pymssql; extra == "mssql-pymssql"
+requires-dist: pyodbc; extra == "mssql-pyodbc"
+requires-dist: mysqlclient>=1.4.0; extra == "mysql"
+requires-dist: mysql-connector-python; extra == "mysql-connector"
+requires-dist: mariadb!=1.1.10,!=1.1.2,!=1.1.5,>=1.0.1; extra == "mariadb-connector"
+requires-dist: cx_oracle>=8; extra == "oracle"
+requires-dist: oracledb>=1.0.1; extra == "oracle-oracledb"
+requires-dist: psycopg2>=2.7; extra == "postgresql"
+requires-dist: pg8000>=1.29.1; extra == "postgresql-pg8000"
+requires-dist: greenlet>=1; extra == "postgresql-asyncpg"
+requires-dist: asyncpg; extra == "postgresql-asyncpg"
+requires-dist: psycopg2-binary; extra == "postgresql-psycopg2binary"
+requires-dist: psycopg2cffi; extra == "postgresql-psycopg2cffi"
+requires-dist: psycopg>=3.0.7; extra == "postgresql-psycopg"
+requires-dist: psycopg[binary]>=3.0.7; extra == "postgresql-psycopgbinary"
+requires-dist: pymysql; extra == "pymysql"
+requires-dist: greenlet>=1; extra == "aiomysql"
+requires-dist: aiomysql>=0.2.0; extra == "aiomysql"
+requires-dist: greenlet>=1; extra == "aioodbc"
+requires-dist: aioodbc; extra == "aioodbc"
+requires-dist: greenlet>=1; extra == "asyncmy"
+requires-dist: asyncmy!=0.2.4,!=0.2.6,>=0.2.3; extra == "asyncmy"
+requires-dist: greenlet>=1; extra == "aiosqlite"
+requires-dist: aiosqlite; extra == "aiosqlite"
+requires-dist: typing_extensions!=3.10.0.1; extra == "aiosqlite"
+requires-dist: sqlcipher3_binary; extra == "sqlcipher"
+requires-python: >=3.7
+project-url: Documentation, https://docs.sqlalchemy.org
+project-url: Issue Tracker, https://github.com/sqlalchemy/sqlalchemy/
+provides-extra: asyncio
+provides-extra: mypy
+provides-extra: mssql
+provides-extra: mssql-pymssql
+provides-extra: mssql-pyodbc
+provides-extra: mysql
+provides-extra: mysql-connector
+provides-extra: mariadb-connector
+provides-extra: oracle
+provides-extra: oracle-oracledb
+provides-extra: postgresql
+provides-extra: postgresql-pg8000
+provides-extra: postgresql-asyncpg
+provides-extra: postgresql-psycopg2binary
+provides-extra: postgresql-psycopg2cffi
+provides-extra: postgresql-psycopg
+provides-extra: postgresql-psycopgbinary
+provides-extra: pymysql
+provides-extra: aiomysql
+provides-extra: aioodbc
+provides-extra: asyncmy
+provides-extra: aiosqlite
+provides-extra: sqlcipher
+

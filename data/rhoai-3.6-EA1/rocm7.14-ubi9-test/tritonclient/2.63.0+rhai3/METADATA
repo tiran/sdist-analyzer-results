@@ -1,0 +1,27 @@
+metadata-version: 2.4
+name: tritonclient
+version: 2.63.0+rhai3
+dynamic: license-file
+summary: Python client library and utilities for communicating with Triton Inference Server
+license-file: LICENSE
+requires-dist: numpy>=1.19.1
+requires-dist: python-rapidjson>=0.9.1
+requires-dist: urllib3>=2.0.7
+requires-dist: grpcio<1.68,>=1.63.0; extra == "grpc"
+requires-dist: packaging>=14.1; extra == "grpc"
+requires-dist: protobuf<6.0dev,>=5.26.1; extra == "grpc"
+requires-dist: aiohttp<4.0.0,>=3.8.1; extra == "http"
+requires-dist: geventhttpclient>=2.3.3; extra == "http"
+requires-dist: cuda-python; extra == "cuda"
+requires-dist: grpcio<1.68,>=1.63.0; extra == "all"
+requires-dist: packaging>=14.1; extra == "all"
+requires-dist: protobuf<6.0dev,>=5.26.1; extra == "all"
+requires-dist: aiohttp<4.0.0,>=3.8.1; extra == "all"
+requires-dist: geventhttpclient>=2.3.3; extra == "all"
+requires-dist: cuda-python; extra == "all"
+requires-python: >=3.6
+provides-extra: grpc
+provides-extra: http
+provides-extra: cuda
+provides-extra: all
+

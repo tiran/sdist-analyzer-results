@@ -1,0 +1,39 @@
+metadata-version: 2.4
+name: greenlet
+version: 3.5.4
+dynamic: license-file
+summary: Lightweight in-process concurrent programming
+keywords: greenlet,coroutine,concurrency,threads,cooperative
+author-email: Alexey Borzenkov <snaury@gmail.com>
+maintainer-email: Jason Madden <jason@seecoresoftware.com>
+license-expression: MIT AND PSF-2.0
+license-file: LICENSE
+license-file: LICENSE.PSF
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Natural Language :: English
+classifier: Programming Language :: C
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: 3.15
+classifier: Operating System :: OS Independent
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: Sphinx; extra == "docs"
+requires-dist: furo; extra == "docs"
+requires-dist: objgraph; extra == "test"
+requires-dist: psutil; extra == "test"
+requires-dist: setuptools; extra == "test"
+requires-python: >=3.10
+project-url: Homepage, https://greenlet.readthedocs.io
+project-url: Documentation, https://greenlet.readthedocs.io
+project-url: Repository, https://github.com/python-greenlet/greenlet
+project-url: Issues, https://github.com/python-greenlet/greenlet/issues
+project-url: Changelog, https://greenlet.readthedocs.io/en/latest/changes.html
+provides-extra: docs
+provides-extra: test
+

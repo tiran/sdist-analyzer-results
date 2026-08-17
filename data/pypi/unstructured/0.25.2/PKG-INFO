@@ -1,0 +1,160 @@
+metadata-version: 2.4
+name: unstructured
+version: 0.25.2
+summary: A library that prepares raw documents for downstream ML tasks.
+keywords: CV,HTML,NLP,PDF,XML,parsing,preprocessing
+author-email: Unstructured Technologies <devops@unstructuredai.io>
+license-expression: Apache-2.0
+license-file: LICENSE.md
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Education
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+requires-dist: beautifulsoup4<5.0.0,>=4.14.3
+requires-dist: charset-normalizer<4.0.0,>=3.4.4
+requires-dist: emoji<3.0.0,>=2.15.0
+requires-dist: filelock<4.0.0,>=3.12.0
+requires-dist: filetype<2.0.0,>=1.2.0
+requires-dist: html5lib<2.0.0,>=1.1
+requires-dist: installer<1.0.0,>=0.7.0
+requires-dist: langdetect<2.0.0,>=1.0.9
+requires-dist: lxml<7.0.0,>=5.0.0
+requires-dist: nh3<1.0.0,>=0.3.0
+requires-dist: numba<1.0.0,>=0.60.0
+requires-dist: numpy<3.0.0,>=1.26.0
+requires-dist: psutil<8.0.0,>=7.2.2
+requires-dist: python-iso639<2027.0.0,>=2026.1.31
+requires-dist: python-magic<1.0.0,>=0.4.27
+requires-dist: python-oxmsg<1.0.0,>=0.0.2
+requires-dist: rapidfuzz<4.0.0,>=3.14.3
+requires-dist: regex<2027.0.0,>=2024.0.0
+requires-dist: requests<3.0.0,>=2.32.5
+requires-dist: spacy<4.0.0,>=3.7.0
+requires-dist: tqdm<5.0.0,>=4.67.3
+requires-dist: typing-extensions<5.0.0,>=4.15.0
+requires-dist: unstructured-client<1.0.0,>=0.25.9
+requires-dist: wrapt<3.0.0,>=2.1.1
+requires-dist: google-cloud-vision<4.0.0,>=3.12.1; extra == "all-docs"
+requires-dist: markdown<4.0.0,>=3.10.1; extra == "all-docs"
+requires-dist: msoffcrypto-tool<7.0.0,>=6.0.0; extra == "all-docs"
+requires-dist: networkx<4.0.0,>=3.2.0; extra == "all-docs"
+requires-dist: openai-whisper<20270000,>=20231117; extra == "all-docs"
+requires-dist: openpyxl<4.0.0,>=3.1.5; extra == "all-docs"
+requires-dist: pandas<3.0.0,>=2.0.0; extra == "all-docs"
+requires-dist: pdf2image<2.0.0,>=1.17.0; extra == "all-docs"
+requires-dist: pdfminer-six<20270000,>=20251230; extra == "all-docs"
+requires-dist: pi-heif<2.0.0,>=1.2.0; extra == "all-docs"
+requires-dist: pikepdf<11.0.0,>=10.3.0; extra == "all-docs"
+requires-dist: pypandoc-binary<2.0.0,>=1.16.2; platform_system != "Windows" and extra == "all-docs"
+requires-dist: pypandoc-binary<2.0.0,>=1.16.2; (platform_system == "Windows" and python_version < "3.13") and extra == "all-docs"
+requires-dist: pypdf<7.0.0,>=6.6.2; extra == "all-docs"
+requires-dist: python-docx<2.0.0,>=1.2.0; extra == "all-docs"
+requires-dist: python-pptx<2.0.0,>=1.0.2; extra == "all-docs"
+requires-dist: unstructured-inference<2.0.0,>=1.6.12; platform_system != "Windows" and extra == "all-docs"
+requires-dist: unstructured-inference<2.0.0,>=1.6.12; (platform_system == "Windows" and python_version >= "3.12" and python_version < "3.13") and extra == "all-docs"
+requires-dist: unstructured-pytesseract<1.0.0,>=0.3.15; extra == "all-docs"
+requires-dist: xlrd<3.0.0,>=2.0.1; extra == "all-docs"
+requires-dist: openai-whisper<20270000,>=20231117; extra == "audio"
+requires-dist: tiktoken<1.0.0,>=0.12.0; extra == "chunking-tokens"
+requires-dist: pandas<3.0.0,>=2.0.0; extra == "csv"
+requires-dist: python-docx<2.0.0,>=1.2.0; extra == "doc"
+requires-dist: python-docx<2.0.0,>=1.2.0; extra == "docx"
+requires-dist: pypandoc-binary<2.0.0,>=1.16.2; platform_system != "Windows" and extra == "epub"
+requires-dist: pypandoc-binary<2.0.0,>=1.16.2; (platform_system == "Windows" and python_version < "3.13") and extra == "epub"
+requires-dist: sentencepiece<1.0.0,>=0.2.0; extra == "huggingface"
+requires-dist: torch<3.0.0,>=2.10.0; platform_system != "Windows" and extra == "huggingface"
+requires-dist: torch<3.0.0,>=2.10.0; (platform_system == "Windows" and python_version < "3.13") and extra == "huggingface"
+requires-dist: transformers<6.0.0,>=5.2.0; extra == "huggingface"
+requires-dist: google-cloud-vision<4.0.0,>=3.12.1; extra == "image"
+requires-dist: pdf2image<2.0.0,>=1.17.0; extra == "image"
+requires-dist: pdfminer-six<20270000,>=20251230; extra == "image"
+requires-dist: pi-heif<2.0.0,>=1.2.0; extra == "image"
+requires-dist: pikepdf<11.0.0,>=10.3.0; extra == "image"
+requires-dist: pypdf<7.0.0,>=6.6.2; extra == "image"
+requires-dist: unstructured-inference<2.0.0,>=1.6.12; platform_system != "Windows" and extra == "image"
+requires-dist: unstructured-inference<2.0.0,>=1.6.12; (platform_system == "Windows" and python_version >= "3.12" and python_version < "3.13") and extra == "image"
+requires-dist: unstructured-pytesseract<1.0.0,>=0.3.15; extra == "image"
+requires-dist: unstructured-ingest[airtable,astradb,azure,azure-ai-search,bedrock,biomed,box,chroma,confluence,couchbase,databricks-volumes,delta-table,discord,dropbox,elasticsearch,gcs,github,gitlab,google-drive,hubspot,huggingface,jira,kafka,kdbai,milvus,mongodb,notion,octoai,onedrive,openai,opensearch,outlook,pinecone,postgres,qdrant,reddit,remote,s3,salesforce,sftp,sharepoint,singlestore,slack,vectara,vertexai,voyageai,weaviate,wikipedia]<2.0.0,>=1.4.0; platform_system != "Windows" and extra == "ingest"
+requires-dist: unstructured-ingest[airtable,astradb,azure,azure-ai-search,bedrock,biomed,box,chroma,confluence,couchbase,databricks-volumes,delta-table,discord,dropbox,elasticsearch,gcs,github,gitlab,google-drive,hubspot,huggingface,jira,kafka,kdbai,milvus,mongodb,notion,octoai,onedrive,openai,opensearch,outlook,pinecone,postgres,qdrant,reddit,remote,s3,salesforce,sftp,sharepoint,singlestore,slack,vectara,vertexai,voyageai,weaviate,wikipedia]<2.0.0,>=1.4.0; (platform_system == "Windows" and python_version < "3.13") and extra == "ingest"
+requires-dist: google-cloud-vision<4.0.0,>=3.12.1; extra == "local-inference"
+requires-dist: markdown<4.0.0,>=3.10.1; extra == "local-inference"
+requires-dist: msoffcrypto-tool<7.0.0,>=6.0.0; extra == "local-inference"
+requires-dist: networkx<4.0.0,>=3.2.0; extra == "local-inference"
+requires-dist: openai-whisper<20270000,>=20231117; extra == "local-inference"
+requires-dist: openpyxl<4.0.0,>=3.1.5; extra == "local-inference"
+requires-dist: pandas<3.0.0,>=2.0.0; extra == "local-inference"
+requires-dist: pdf2image<2.0.0,>=1.17.0; extra == "local-inference"
+requires-dist: pdfminer-six<20270000,>=20251230; extra == "local-inference"
+requires-dist: pi-heif<2.0.0,>=1.2.0; extra == "local-inference"
+requires-dist: pikepdf<11.0.0,>=10.3.0; extra == "local-inference"
+requires-dist: pypandoc-binary<2.0.0,>=1.16.2; platform_system != "Windows" and extra == "local-inference"
+requires-dist: pypandoc-binary<2.0.0,>=1.16.2; (platform_system == "Windows" and python_version < "3.13") and extra == "local-inference"
+requires-dist: pypdf<7.0.0,>=6.6.2; extra == "local-inference"
+requires-dist: python-docx<2.0.0,>=1.2.0; extra == "local-inference"
+requires-dist: python-pptx<2.0.0,>=1.0.2; extra == "local-inference"
+requires-dist: unstructured-inference<2.0.0,>=1.6.12; platform_system != "Windows" and extra == "local-inference"
+requires-dist: unstructured-inference<2.0.0,>=1.6.12; (platform_system == "Windows" and python_version >= "3.12" and python_version < "3.13") and extra == "local-inference"
+requires-dist: unstructured-pytesseract<1.0.0,>=0.3.15; extra == "local-inference"
+requires-dist: xlrd<3.0.0,>=2.0.1; extra == "local-inference"
+requires-dist: markdown<4.0.0,>=3.10.1; extra == "md"
+requires-dist: pypandoc-binary<2.0.0,>=1.16.2; platform_system != "Windows" and extra == "odt"
+requires-dist: pypandoc-binary<2.0.0,>=1.16.2; (platform_system == "Windows" and python_version < "3.13") and extra == "odt"
+requires-dist: python-docx<2.0.0,>=1.2.0; extra == "odt"
+requires-dist: pypandoc-binary<2.0.0,>=1.16.2; platform_system != "Windows" and extra == "org"
+requires-dist: pypandoc-binary<2.0.0,>=1.16.2; (platform_system == "Windows" and python_version < "3.13") and extra == "org"
+requires-dist: paddlepaddle<4.0.0,>=3.3.0; (platform_machine != "aarch64" and platform_system != "Windows") and extra == "paddleocr"
+requires-dist: paddlepaddle<4.0.0,>=3.3.0; (platform_system == "Windows" and python_version < "3.13") and extra == "paddleocr"
+requires-dist: unstructured-paddleocr==2.10.0; extra == "paddleocr"
+requires-dist: google-cloud-vision<4.0.0,>=3.12.1; extra == "pdf"
+requires-dist: pdf2image<2.0.0,>=1.17.0; extra == "pdf"
+requires-dist: pdfminer-six<20270000,>=20251230; extra == "pdf"
+requires-dist: pi-heif<2.0.0,>=1.2.0; extra == "pdf"
+requires-dist: pikepdf<11.0.0,>=10.3.0; extra == "pdf"
+requires-dist: pypdf<7.0.0,>=6.6.2; extra == "pdf"
+requires-dist: unstructured-inference<2.0.0,>=1.6.12; platform_system != "Windows" and extra == "pdf"
+requires-dist: unstructured-inference<2.0.0,>=1.6.12; (platform_system == "Windows" and python_version >= "3.12" and python_version < "3.13") and extra == "pdf"
+requires-dist: unstructured-pytesseract<1.0.0,>=0.3.15; extra == "pdf"
+requires-dist: python-pptx<2.0.0,>=1.0.2; extra == "ppt"
+requires-dist: python-pptx<2.0.0,>=1.0.2; extra == "pptx"
+requires-dist: pypandoc-binary<2.0.0,>=1.16.2; platform_system != "Windows" and extra == "rst"
+requires-dist: pypandoc-binary<2.0.0,>=1.16.2; (platform_system == "Windows" and python_version < "3.13") and extra == "rst"
+requires-dist: pypandoc-binary<2.0.0,>=1.16.2; platform_system != "Windows" and extra == "rtf"
+requires-dist: pypandoc-binary<2.0.0,>=1.16.2; (platform_system == "Windows" and python_version < "3.13") and extra == "rtf"
+requires-dist: pandas<3.0.0,>=2.0.0; extra == "tsv"
+requires-dist: msoffcrypto-tool<7.0.0,>=6.0.0; extra == "xlsx"
+requires-dist: networkx<4.0.0,>=3.2.0; extra == "xlsx"
+requires-dist: openpyxl<4.0.0,>=3.1.5; extra == "xlsx"
+requires-dist: pandas<3.0.0,>=2.0.0; extra == "xlsx"
+requires-dist: xlrd<3.0.0,>=2.0.1; extra == "xlsx"
+requires-python: <3.14,>=3.11
+project-url: Homepage, https://github.com/Unstructured-IO/unstructured
+provides-extra: all-docs
+provides-extra: audio
+provides-extra: chunking-tokens
+provides-extra: csv
+provides-extra: doc
+provides-extra: docx
+provides-extra: epub
+provides-extra: huggingface
+provides-extra: image
+provides-extra: ingest
+provides-extra: local-inference
+provides-extra: md
+provides-extra: odt
+provides-extra: org
+provides-extra: paddleocr
+provides-extra: pdf
+provides-extra: ppt
+provides-extra: pptx
+provides-extra: rst
+provides-extra: rtf
+provides-extra: tsv
+provides-extra: xlsx
+

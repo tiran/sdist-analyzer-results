@@ -1,0 +1,51 @@
+metadata-version: 2.4
+name: coverage
+version: 7.15.4
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: project-url
+dynamic: provides-extra
+dynamic: requires-python
+dynamic: summary
+summary: Code coverage measurement for Python
+keywords: code coverage testing
+home-page: https://github.com/coveragepy/coveragepy
+author: Ned Batchelder and 263 others
+author-email: ned@nedbatchelder.com
+license: Apache-2.0
+license-file: LICENSE.txt
+license-file: NOTICE.txt
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Intended Audience :: Developers
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: 3.15
+classifier: Programming Language :: Python :: 3.16
+classifier: Programming Language :: Python :: Free Threading :: 3 - Stable
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Software Development :: Quality Assurance
+classifier: Topic :: Software Development :: Testing
+requires-dist: tomli; python_full_version <= "3.11.0a6" and extra == "toml"
+requires-python: >=3.10
+project-url: Documentation, https://coverage.readthedocs.io/en/7.15.4
+project-url: Funding, https://tidelift.com/subscription/pkg/pypi-coverage?utm_source=pypi-coverage&utm_medium=referral&utm_campaign=pypi
+project-url: Issues, https://github.com/coveragepy/coveragepy/issues
+project-url: Mastodon, https://hachyderm.io/@coveragepy
+project-url: Mastodon (nedbat), https://hachyderm.io/@nedbat
+provides-extra: toml
+

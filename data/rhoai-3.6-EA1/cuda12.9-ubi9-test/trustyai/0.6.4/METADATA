@@ -1,0 +1,57 @@
+metadata-version: 2.4
+name: trustyai
+version: 0.6.4
+dynamic: license-file
+summary: Python bindings to the TrustyAI explainability library.
+keywords: trustyai,xai,explainability,ml
+author-email: Rui Vieira <rui@redhat.com>
+license: Apache License Version 2.0
+license-file: LICENSE
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: Programming Language :: Java
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+classifier: Topic :: Software Development :: Libraries :: Java Libraries
+requires-dist: Jpype1==1.5.0
+requires-dist: pyarrow>=20.0.0
+requires-dist: matplotlib~=3.10.3
+requires-dist: pandas>=2.1.0
+requires-dist: numpy>=1.26.4
+requires-dist: jupyter-bokeh~=4.0.5
+requires-dist: JPype1==1.5.0; extra == "dev"
+requires-dist: black~=25.11; extra == "dev"
+requires-dist: click==8.0.4; extra == "dev"
+requires-dist: joblib~=1.2.0; extra == "dev"
+requires-dist: jupyterlab~=4.4.4; extra == "dev"
+requires-dist: numpydoc==1.5.0; extra == "dev"
+requires-dist: pylint==3.2.0; extra == "dev"
+requires-dist: pytest~=7.2.1; extra == "dev"
+requires-dist: pytest-benchmark==4.0.0; extra == "dev"
+requires-dist: pytest-forked~=1.6.0; extra == "dev"
+requires-dist: scikit-learn~=1.7.0; extra == "dev"
+requires-dist: setuptools; extra == "dev"
+requires-dist: twine==3.4.2; extra == "dev"
+requires-dist: wheel~=0.38.4; extra == "dev"
+requires-dist: xgboost~=3.0.2; extra == "dev"
+requires-dist: aix360[default,tsice,tslime,tssaliency]==0.3.0; extra == "extras"
+requires-dist: transformers~=4.36.2; extra == "detoxify"
+requires-dist: datasets; extra == "detoxify"
+requires-dist: scipy~=1.12.0; extra == "detoxify"
+requires-dist: torch~=2.2.1; extra == "detoxify"
+requires-dist: evaluate; extra == "detoxify"
+requires-dist: trl; extra == "detoxify"
+requires-dist: kubernetes; extra == "api"
+requires-python: >=3.10
+project-url: homepage, https://github.com/trustyai-explainability/trustyai-explainability-python
+project-url: documentation, https://trustyai-explainability-python.readthedocs.io/en/latest/
+project-url: repository, https://github.com/trustyai-explainability/trustyai-explainability-python
+provides-extra: dev
+provides-extra: extras
+provides-extra: detoxify
+provides-extra: api
+

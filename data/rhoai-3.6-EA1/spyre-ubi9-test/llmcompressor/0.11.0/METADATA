@@ -1,0 +1,74 @@
+metadata-version: 2.4
+name: llmcompressor
+version: 0.11.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: A library for compressing large language models utilizing the latest techniques and research in the field for both training aware and post training techniques. The library is designed to be flexible and easy to use on top of PyTorch and HuggingFace Transformers, allowing for quick experimentation.
+keywords: llmcompressor,llms,large language models,transformers,pytorch,huggingface,compressors,compression,quantization,pruning,sparsity,optimization,model optimization,model compression,
+home-page: https://github.com/vllm-project/llm-compressor
+author: The vLLM Project
+author-email: vllm-questions@lists.berkeley.edu
+license: Apache 2.0
+license-file: LICENSE
+license-file: NOTICE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Education
+classifier: Intended Audience :: Information Technology
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: POSIX :: Linux
+classifier: Topic :: Scientific/Engineering
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+classifier: Topic :: Scientific/Engineering :: Mathematics
+classifier: Topic :: Software Development
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: loguru<=0.7.3,>=0.7.2
+requires-dist: pyyaml<=6.0.3,>=6.0.1
+requires-dist: numpy<=2.4.6,>=2.0.0
+requires-dist: requests<=2.34.2,>=2.32.2
+requires-dist: tqdm<=4.67.3,>=4.66.3
+requires-dist: torch<=2.11.0,>=2.10.0
+requires-dist: transformers<=4.57.6,>=4.56.1
+requires-dist: datasets<=4.8.5,>=4.8.4
+requires-dist: auto-round<=0.12.3,>=0.10.2
+requires-dist: accelerate<=1.13.0,>=1.6.0
+requires-dist: nvidia-ml-py<=13.595.45,>=12.560.30
+requires-dist: pillow<=12.2.0,>=10.4.0
+requires-dist: compressed-tensors==0.16.0
+requires-dist: pytest>=6.0.0; extra == "dev"
+requires-dist: pytest-mock>=3.6.0; extra == "dev"
+requires-dist: pytest-rerunfailures>=13.0; extra == "dev"
+requires-dist: beautifulsoup4~=4.12.3; extra == "dev"
+requires-dist: cmarkgfm>=2024.1.14; extra == "dev"
+requires-dist: trl>=0.10.1; extra == "dev"
+requires-dist: pandas<2.3.0; extra == "dev"
+requires-dist: torchvision; extra == "dev"
+requires-dist: librosa==0.11.0; extra == "dev"
+requires-dist: soundfile; extra == "dev"
+requires-dist: torchcodec; extra == "dev"
+requires-dist: mypy~=1.10.0; extra == "dev"
+requires-dist: ruff~=0.4.8; extra == "dev"
+requires-dist: pre-commit; extra == "dev"
+requires-dist: mkdocstrings-python; extra == "dev"
+requires-dist: zensical; extra == "dev"
+requires-dist: markdown; extra == "dev"
+requires-dist: pymdown-extensions; extra == "dev"
+requires-dist: qwen_vl_utils; extra == "qwen"
+requires-python: >=3.10
+provides-extra: dev
+provides-extra: qwen
+

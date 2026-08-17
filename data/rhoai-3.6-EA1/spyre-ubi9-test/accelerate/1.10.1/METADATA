@@ -1,0 +1,119 @@
+metadata-version: 2.4
+name: accelerate
+version: 1.10.1
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: Accelerate
+keywords: deep learning
+home-page: https://github.com/huggingface/accelerate
+author: The HuggingFace team
+author-email: zach.mueller@huggingface.co
+license: Apache
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Education
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+requires-dist: numpy<3.0.0,>=1.17
+requires-dist: packaging>=20.0
+requires-dist: psutil
+requires-dist: pyyaml
+requires-dist: torch>=2.0.0
+requires-dist: huggingface_hub>=0.21.0
+requires-dist: safetensors>=0.4.3
+requires-dist: black~=23.1; extra == "quality"
+requires-dist: hf-doc-builder>=0.3.0; extra == "quality"
+requires-dist: ruff~=0.11.2; extra == "quality"
+requires-dist: pytest<=8.0.0,>=7.2.0; extra == "test-prod"
+requires-dist: pytest-xdist; extra == "test-prod"
+requires-dist: pytest-subtests; extra == "test-prod"
+requires-dist: parameterized; extra == "test-prod"
+requires-dist: pytest-order; extra == "test-prod"
+requires-dist: datasets; extra == "test-dev"
+requires-dist: diffusers; extra == "test-dev"
+requires-dist: evaluate; extra == "test-dev"
+requires-dist: torchdata>=0.8.0; extra == "test-dev"
+requires-dist: torchpippy>=0.2.0; extra == "test-dev"
+requires-dist: transformers; extra == "test-dev"
+requires-dist: scipy; extra == "test-dev"
+requires-dist: scikit-learn; extra == "test-dev"
+requires-dist: tqdm; extra == "test-dev"
+requires-dist: bitsandbytes; extra == "test-dev"
+requires-dist: timm; extra == "test-dev"
+requires-dist: pytest<=8.0.0,>=7.2.0; extra == "testing"
+requires-dist: pytest-xdist; extra == "testing"
+requires-dist: pytest-subtests; extra == "testing"
+requires-dist: parameterized; extra == "testing"
+requires-dist: pytest-order; extra == "testing"
+requires-dist: datasets; extra == "testing"
+requires-dist: diffusers; extra == "testing"
+requires-dist: evaluate; extra == "testing"
+requires-dist: torchdata>=0.8.0; extra == "testing"
+requires-dist: torchpippy>=0.2.0; extra == "testing"
+requires-dist: transformers; extra == "testing"
+requires-dist: scipy; extra == "testing"
+requires-dist: scikit-learn; extra == "testing"
+requires-dist: tqdm; extra == "testing"
+requires-dist: bitsandbytes; extra == "testing"
+requires-dist: timm; extra == "testing"
+requires-dist: deepspeed; extra == "deepspeed"
+requires-dist: rich; extra == "rich"
+requires-dist: torchao; extra == "test-fp8"
+requires-dist: wandb; extra == "test-trackers"
+requires-dist: comet-ml; extra == "test-trackers"
+requires-dist: tensorboard; extra == "test-trackers"
+requires-dist: dvclive; extra == "test-trackers"
+requires-dist: mlflow; extra == "test-trackers"
+requires-dist: matplotlib; extra == "test-trackers"
+requires-dist: swanlab; extra == "test-trackers"
+requires-dist: trackio; extra == "test-trackers"
+requires-dist: black~=23.1; extra == "dev"
+requires-dist: hf-doc-builder>=0.3.0; extra == "dev"
+requires-dist: ruff~=0.11.2; extra == "dev"
+requires-dist: pytest<=8.0.0,>=7.2.0; extra == "dev"
+requires-dist: pytest-xdist; extra == "dev"
+requires-dist: pytest-subtests; extra == "dev"
+requires-dist: parameterized; extra == "dev"
+requires-dist: pytest-order; extra == "dev"
+requires-dist: datasets; extra == "dev"
+requires-dist: diffusers; extra == "dev"
+requires-dist: evaluate; extra == "dev"
+requires-dist: torchdata>=0.8.0; extra == "dev"
+requires-dist: torchpippy>=0.2.0; extra == "dev"
+requires-dist: transformers; extra == "dev"
+requires-dist: scipy; extra == "dev"
+requires-dist: scikit-learn; extra == "dev"
+requires-dist: tqdm; extra == "dev"
+requires-dist: bitsandbytes; extra == "dev"
+requires-dist: timm; extra == "dev"
+requires-dist: rich; extra == "dev"
+requires-dist: sagemaker; extra == "sagemaker"
+requires-python: >=3.9.0
+provides-extra: quality
+provides-extra: docs
+provides-extra: test-prod
+provides-extra: test-dev
+provides-extra: testing
+provides-extra: deepspeed
+provides-extra: rich
+provides-extra: test-fp8
+provides-extra: test-trackers
+provides-extra: dev
+provides-extra: sagemaker
+

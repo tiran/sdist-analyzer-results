@@ -1,0 +1,29 @@
+metadata-version: 2.4
+name: utm
+version: 0.9.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: keywords
+dynamic: license-file
+dynamic: requires-python
+dynamic: summary
+summary: Bidirectional UTM-WGS84 converter for python
+keywords: utm,wgs84,coordinate,converter
+home-page: https://github.com/Turbo87/utm
+author: Tobias Bieniek
+author-email: Tobias.Bieniek@gmx.de
+license-file: LICENSE
+classifier: Programming Language :: Python
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+classifier: Development Status :: 4 - Beta
+classifier: Environment :: Other Environment
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: Topic :: Scientific/Engineering :: GIS
+requires-python: >=3.10
+

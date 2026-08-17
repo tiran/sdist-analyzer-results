@@ -1,0 +1,36 @@
+metadata-version: 2.4
+name: jaraco.context
+version: 6.1.2
+dynamic: license-file
+summary: Useful decorators and context managers
+author-email: "Jason R. Coombs" <jaraco@jaraco.com>
+license-expression: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+requires-dist: backports.tarfile; python_version < "3.12"
+requires-dist: pytest!=8.1.*,>=6; extra == "test"
+requires-dist: jaraco.test>=5.6.0; extra == "test"
+requires-dist: portend; extra == "test"
+requires-dist: sphinx>=3.5; extra == "doc"
+requires-dist: jaraco.packaging>=9.3; extra == "doc"
+requires-dist: rst.linker>=1.9; extra == "doc"
+requires-dist: furo; extra == "doc"
+requires-dist: sphinx-lint; extra == "doc"
+requires-dist: jaraco.tidelift>=1.4; extra == "doc"
+requires-dist: pytest-checkdocs>=2.14; extra == "check"
+requires-dist: pytest-ruff>=0.2.1; sys_platform != "cygwin" and extra == "check"
+requires-dist: pytest-cov; extra == "cover"
+requires-dist: pytest-enabler>=3.4; extra == "enabler"
+requires-dist: pytest-mypy>=1.0.1; platform_python_implementation != "PyPy" and extra == "type"
+requires-python: >=3.10
+project-url: Source, https://github.com/jaraco/jaraco.context
+provides-extra: test
+provides-extra: doc
+provides-extra: check
+provides-extra: cover
+provides-extra: enabler
+provides-extra: type
+

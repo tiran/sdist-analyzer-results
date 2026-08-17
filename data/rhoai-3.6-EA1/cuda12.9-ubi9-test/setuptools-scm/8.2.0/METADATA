@@ -1,0 +1,53 @@
+metadata-version: 2.4
+name: setuptools-scm
+version: 8.2.0
+dynamic: license-file
+summary: the blessed package to manage your versions by scm tags
+author-email: Ronny Pfannschmidt <opensource@ronnypfannschmidt.de>
+license: Permission is hereby granted, free of charge, to any person obtaining a copy
+                 of this software and associated documentation files (the "Software"), to deal
+                 in the Software without restriction, including without limitation the rights
+                 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+                 copies of the Software, and to permit persons to whom the Software is
+                 furnished to do so, subject to the following conditions:
+                 
+                 The above copyright...
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Topic :: Software Development :: Libraries
+classifier: Topic :: Software Development :: Version Control
+classifier: Topic :: System :: Software Distribution
+classifier: Topic :: Utilities
+requires-dist: packaging>=20
+requires-dist: setuptools>=61
+requires-dist: tomli>=1; python_version < "3.11"
+requires-dist: typing-extensions; python_version < "3.10"
+requires-dist: entangled-cli~=2.0; extra == "docs"
+requires-dist: mkdocs; extra == "docs"
+requires-dist: mkdocs-entangled-plugin; extra == "docs"
+requires-dist: mkdocs-material; extra == "docs"
+requires-dist: mkdocstrings[python]; extra == "docs"
+requires-dist: pygments; extra == "docs"
+requires-dist: rich; extra == "rich"
+requires-dist: build; extra == "test"
+requires-dist: pytest; extra == "test"
+requires-dist: rich; extra == "test"
+requires-dist: typing-extensions; python_version < "3.11" and extra == "test"
+requires-dist: wheel; extra == "test"
+requires-python: >=3.8
+project-url: documentation, https://setuptools-scm.readthedocs.io/
+project-url: repository, https://github.com/pypa/setuptools-scm/
+provides-extra: docs
+provides-extra: rich
+provides-extra: test
+provides-extra: toml
+

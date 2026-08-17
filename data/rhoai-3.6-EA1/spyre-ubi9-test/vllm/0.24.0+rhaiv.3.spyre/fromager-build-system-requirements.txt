@@ -1,10 +1,10 @@
-setuptools
-ninja
 setuptools<81.0.0,>=77.0.3
-packaging>=24.2
 wheel
 jinja2
-torch
+packaging>=24.2
 setuptools-rust>=1.9.0
 filelock
+torch
+ninja
+setuptools
 setuptools-scm>=8.0

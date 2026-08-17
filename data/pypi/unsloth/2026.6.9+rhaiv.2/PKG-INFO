@@ -1,0 +1,573 @@
+metadata-version: 2.4
+name: unsloth
+version: 2026.6.9
+dynamic: license-file
+summary: 2-5X faster training, reinforcement learning & finetuning
+keywords: ai,llm,reinforcement learning,machine learning,artificial intelligence,pytorch
+author: Unsloth AI team
+author-email: info@unsloth.ai
+maintainer-email: Daniel Han <daniel@unsloth.ai>, Michael Han <info@unsloth.ai>
+license-expression: Apache-2.0
+license-file: LICENSE
+license-file: COPYING
+classifier: Programming Language :: Python
+classifier: Environment :: GPU
+classifier: Environment :: GPU :: NVIDIA CUDA
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+requires-dist: unsloth_zoo>=2026.6.7
+requires-dist: wheel>=0.42.0
+requires-dist: packaging
+requires-dist: torch<2.11.0,>=2.4.0
+requires-dist: torchvision
+requires-dist: numpy
+requires-dist: tqdm
+requires-dist: psutil
+requires-dist: tyro
+requires-dist: protobuf
+requires-dist: xformers>=0.0.27.post2; ("linux" in sys_platform or sys_platform == "win32") and (platform_machine == "AMD64" or platform_machine == "x86_64")
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5
+requires-dist: triton>=3.0.0; "linux" in sys_platform
+requires-dist: triton-windows; sys_platform == "win32" and (platform_machine == "AMD64" or platform_machine == "x86_64")
+requires-dist: sentencepiece>=0.2.0
+requires-dist: datasets!=4.0.*,!=4.1.0,<4.4.0,>=3.4.1
+requires-dist: accelerate>=0.34.1
+requires-dist: peft!=0.11.0,>=0.18.0
+requires-dist: huggingface_hub>=0.34.0
+requires-dist: hf_transfer
+requires-dist: diffusers
+requires-dist: transformers!=4.52.0,!=4.52.1,!=4.52.2,!=4.52.3,!=4.53.0,!=4.54.0,!=4.55.0,!=4.55.1,!=4.57.0,!=4.57.4,!=4.57.5,!=5.0.0,!=5.1.0,<=5.5.0,>=4.51.3
+requires-dist: trl!=0.19.0,<=0.24.0,>=0.18.2
+requires-dist: typer
+requires-dist: pydantic
+requires-dist: pyyaml
+requires-dist: nest-asyncio
+requires-dist: triton>=3.0.0; "linux" in sys_platform and extra == "triton"
+requires-dist: triton-windows; (sys_platform == "win32" and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "triton"
+requires-dist: unsloth_zoo>=2026.6.7; extra == "huggingface"
+requires-dist: wheel>=0.42.0; extra == "huggingface"
+requires-dist: packaging; extra == "huggingface"
+requires-dist: torchvision; extra == "huggingface"
+requires-dist: numpy; extra == "huggingface"
+requires-dist: tqdm; extra == "huggingface"
+requires-dist: psutil; extra == "huggingface"
+requires-dist: tyro; extra == "huggingface"
+requires-dist: protobuf; extra == "huggingface"
+requires-dist: sentencepiece>=0.2.0; extra == "huggingface"
+requires-dist: datasets!=4.0.*,!=4.1.0,<4.4.0,>=3.4.1; extra == "huggingface"
+requires-dist: accelerate>=0.34.1; extra == "huggingface"
+requires-dist: peft!=0.11.0,>=0.18.0; extra == "huggingface"
+requires-dist: huggingface_hub>=0.34.0; extra == "huggingface"
+requires-dist: hf_transfer; extra == "huggingface"
+requires-dist: diffusers; extra == "huggingface"
+requires-dist: transformers!=4.52.0,!=4.52.1,!=4.52.2,!=4.52.3,!=4.53.0,!=4.54.0,!=4.55.0,!=4.55.1,!=4.57.0,!=4.57.4,!=4.57.5,!=5.0.0,!=5.1.0,<=5.5.0,>=4.51.3; extra == "huggingface"
+requires-dist: trl!=0.19.0,<=0.24.0,>=0.18.2; extra == "huggingface"
+requires-dist: sentence-transformers; extra == "huggingface"
+requires-dist: typer; extra == "huggingface"
+requires-dist: pydantic; extra == "huggingface"
+requires-dist: pyyaml; extra == "huggingface"
+requires-dist: nest-asyncio; extra == "huggingface"
+requires-dist: unsloth[huggingface]; extra == "windows"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; sys_platform == "win32" and extra == "windows"
+requires-dist: xformers>=0.0.22.post7; sys_platform == "win32" and extra == "windows"
+requires-dist: unsloth[huggingface]; extra == "base"
+requires-dist: xformers==0.0.22.post7; (("linux" in sys_platform or sys_platform == "win32") and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "cu118only"
+requires-dist: xformers==0.0.22.post7; (("linux" in sys_platform or sys_platform == "win32") and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "cu121only"
+requires-dist: xformers==0.0.23; (("linux" in sys_platform or sys_platform == "win32") and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "cu118onlytorch211"
+requires-dist: xformers==0.0.23; (("linux" in sys_platform or sys_platform == "win32") and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "cu121onlytorch211"
+requires-dist: xformers==0.0.23.post1; (("linux" in sys_platform or sys_platform == "win32") and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "cu118onlytorch212"
+requires-dist: xformers==0.0.23.post1; (("linux" in sys_platform or sys_platform == "win32") and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "cu121onlytorch212"
+requires-dist: xformers==0.0.24; (("linux" in sys_platform or sys_platform == "win32") and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "cu118onlytorch220"
+requires-dist: xformers==0.0.24; (("linux" in sys_platform or sys_platform == "win32") and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "cu121onlytorch220"
+requires-dist: xformers==0.0.27; (("linux" in sys_platform or sys_platform == "win32") and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "cu118onlytorch230"
+requires-dist: xformers==0.0.27; (("linux" in sys_platform or sys_platform == "win32") and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "cu121onlytorch230"
+requires-dist: xformers==0.0.27.post2; (("linux" in sys_platform or sys_platform == "win32") and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "cu118onlytorch240"
+requires-dist: xformers==0.0.27.post2; (("linux" in sys_platform or sys_platform == "win32") and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "cu121onlytorch240"
+requires-dist: xformers==0.0.28.post1; (("linux" in sys_platform or sys_platform == "win32") and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "cu124onlytorch240"
+requires-dist: xformers==0.0.28.post2; (("linux" in sys_platform or sys_platform == "win32") and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "cu118onlytorch250"
+requires-dist: xformers==0.0.28.post2; (("linux" in sys_platform or sys_platform == "win32") and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "cu121onlytorch250"
+requires-dist: xformers==0.0.28.post2; (("linux" in sys_platform or sys_platform == "win32") and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "cu124onlytorch250"
+requires-dist: xformers==0.0.29.post1; (("linux" in sys_platform or sys_platform == "win32") and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "cu118onlytorch251"
+requires-dist: xformers==0.0.29.post1; (("linux" in sys_platform or sys_platform == "win32") and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "cu121onlytorch251"
+requires-dist: xformers==0.0.29.post1; (("linux" in sys_platform or sys_platform == "win32") and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "cu124onlytorch251"
+requires-dist: xformers==0.0.29.post3; (("linux" in sys_platform or sys_platform == "win32") and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "cu118onlytorch260"
+requires-dist: xformers==0.0.29.post3; (("linux" in sys_platform or sys_platform == "win32") and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "cu124onlytorch260"
+requires-dist: xformers==0.0.29.post3; (("linux" in sys_platform or sys_platform == "win32") and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "cu126onlytorch260"
+requires-dist: xformers==0.0.30; (("linux" in sys_platform or sys_platform == "win32") and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "cu118onlytorch270"
+requires-dist: xformers==0.0.30; (("linux" in sys_platform or sys_platform == "win32") and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "cu126onlytorch270"
+requires-dist: xformers==0.0.30; (("linux" in sys_platform or sys_platform == "win32") and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "cu128onlytorch270"
+requires-dist: xformers==0.0.31.post1; (("linux" in sys_platform or sys_platform == "win32") and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "cu118onlytorch271"
+requires-dist: xformers==0.0.31.post1; (("linux" in sys_platform or sys_platform == "win32") and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "cu126onlytorch271"
+requires-dist: xformers==0.0.31.post1; (("linux" in sys_platform or sys_platform == "win32") and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "cu128onlytorch271"
+requires-dist: xformers==0.0.32.post2; (("linux" in sys_platform or sys_platform == "win32") and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "cu118onlytorch280"
+requires-dist: xformers==0.0.32.post2; (("linux" in sys_platform or sys_platform == "win32") and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "cu126onlytorch280"
+requires-dist: xformers==0.0.32.post2; (("linux" in sys_platform or sys_platform == "win32") and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "cu128onlytorch280"
+requires-dist: xformers==0.0.33.post1; (("linux" in sys_platform or sys_platform == "win32") and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "cu126onlytorch290"
+requires-dist: xformers==0.0.33.post1; (("linux" in sys_platform or sys_platform == "win32") and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "cu128onlytorch290"
+requires-dist: xformers==0.0.33.post1; (("linux" in sys_platform or sys_platform == "win32") and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "cu130onlytorch290"
+requires-dist: xformers==0.0.33.post2; (("linux" in sys_platform or sys_platform == "win32") and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "cu126onlytorch291"
+requires-dist: xformers==0.0.33.post2; (("linux" in sys_platform or sys_platform == "win32") and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "cu128onlytorch291"
+requires-dist: xformers==0.0.33.post2; (("linux" in sys_platform or sys_platform == "win32") and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "cu130onlytorch291"
+requires-dist: xformers==0.0.34; (("linux" in sys_platform or sys_platform == "win32") and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "cu126onlytorch2100"
+requires-dist: xformers==0.0.34; (("linux" in sys_platform or sys_platform == "win32") and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "cu128onlytorch2100"
+requires-dist: xformers==0.0.34; (("linux" in sys_platform or sys_platform == "win32") and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "cu130onlytorch2100"
+requires-dist: unsloth[huggingface]; extra == "cu118"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu118"
+requires-dist: unsloth[cu118only]; extra == "cu118"
+requires-dist: unsloth[huggingface]; extra == "cu121"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu121"
+requires-dist: unsloth[cu121only]; extra == "cu121"
+requires-dist: unsloth[huggingface]; extra == "cu118-torch211"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu118-torch211"
+requires-dist: unsloth[cu118onlytorch211]; extra == "cu118-torch211"
+requires-dist: unsloth[huggingface]; extra == "cu121-torch211"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu121-torch211"
+requires-dist: unsloth[cu121onlytorch211]; extra == "cu121-torch211"
+requires-dist: unsloth[huggingface]; extra == "cu118-torch212"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu118-torch212"
+requires-dist: unsloth[cu118onlytorch212]; extra == "cu118-torch212"
+requires-dist: unsloth[huggingface]; extra == "cu121-torch212"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu121-torch212"
+requires-dist: unsloth[cu121onlytorch212]; extra == "cu121-torch212"
+requires-dist: unsloth[huggingface]; extra == "cu118-torch220"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu118-torch220"
+requires-dist: unsloth[cu118onlytorch220]; extra == "cu118-torch220"
+requires-dist: unsloth[huggingface]; extra == "cu121-torch220"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu121-torch220"
+requires-dist: unsloth[cu121onlytorch220]; extra == "cu121-torch220"
+requires-dist: unsloth[huggingface]; extra == "cu118-torch230"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu118-torch230"
+requires-dist: unsloth[cu118onlytorch230]; extra == "cu118-torch230"
+requires-dist: unsloth[huggingface]; extra == "cu121-torch230"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu121-torch230"
+requires-dist: unsloth[cu121onlytorch230]; extra == "cu121-torch230"
+requires-dist: unsloth[huggingface]; extra == "cu118-torch240"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu118-torch240"
+requires-dist: unsloth[cu118onlytorch240]; extra == "cu118-torch240"
+requires-dist: unsloth[huggingface]; extra == "cu121-torch240"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu121-torch240"
+requires-dist: unsloth[cu121onlytorch240]; extra == "cu121-torch240"
+requires-dist: unsloth[huggingface]; extra == "cu124-torch240"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu124-torch240"
+requires-dist: unsloth[cu124onlytorch240]; extra == "cu124-torch240"
+requires-dist: unsloth[huggingface]; extra == "cu118-torch250"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu118-torch250"
+requires-dist: unsloth[cu118onlytorch250]; extra == "cu118-torch250"
+requires-dist: unsloth[huggingface]; extra == "cu121-torch250"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu121-torch250"
+requires-dist: unsloth[cu121onlytorch250]; extra == "cu121-torch250"
+requires-dist: unsloth[huggingface]; extra == "cu124-torch250"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu124-torch250"
+requires-dist: unsloth[cu124onlytorch250]; extra == "cu124-torch250"
+requires-dist: unsloth[huggingface]; extra == "cu118-torch251"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu118-torch251"
+requires-dist: unsloth[cu118onlytorch251]; extra == "cu118-torch251"
+requires-dist: unsloth[huggingface]; extra == "cu121-torch251"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu121-torch251"
+requires-dist: unsloth[cu121onlytorch251]; extra == "cu121-torch251"
+requires-dist: unsloth[huggingface]; extra == "cu124-torch251"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu124-torch251"
+requires-dist: unsloth[cu124onlytorch251]; extra == "cu124-torch251"
+requires-dist: unsloth[huggingface]; extra == "cu118-torch260"
+requires-dist: bitsandbytes>=0.45.1; extra == "cu118-torch260"
+requires-dist: unsloth[cu118onlytorch260]; extra == "cu118-torch260"
+requires-dist: unsloth[huggingface]; extra == "cu124-torch260"
+requires-dist: bitsandbytes>=0.45.1; extra == "cu124-torch260"
+requires-dist: unsloth[cu124onlytorch260]; extra == "cu124-torch260"
+requires-dist: unsloth[huggingface]; extra == "cu126-torch260"
+requires-dist: bitsandbytes>=0.45.1; extra == "cu126-torch260"
+requires-dist: unsloth[cu126onlytorch260]; extra == "cu126-torch260"
+requires-dist: unsloth[huggingface]; extra == "cu118-torch270"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu118-torch270"
+requires-dist: unsloth[cu118onlytorch270]; extra == "cu118-torch270"
+requires-dist: unsloth[huggingface]; extra == "cu126-torch270"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu126-torch270"
+requires-dist: unsloth[cu126onlytorch270]; extra == "cu126-torch270"
+requires-dist: unsloth[huggingface]; extra == "cu128-torch270"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu128-torch270"
+requires-dist: unsloth[cu128onlytorch270]; extra == "cu128-torch270"
+requires-dist: unsloth[huggingface]; extra == "cu118-torch271"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu118-torch271"
+requires-dist: unsloth[cu118onlytorch271]; extra == "cu118-torch271"
+requires-dist: unsloth[huggingface]; extra == "cu126-torch271"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu126-torch271"
+requires-dist: unsloth[cu126onlytorch271]; extra == "cu126-torch271"
+requires-dist: unsloth[huggingface]; extra == "cu128-torch271"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu128-torch271"
+requires-dist: unsloth[cu128onlytorch271]; extra == "cu128-torch271"
+requires-dist: unsloth[huggingface]; extra == "cu118-torch280"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu118-torch280"
+requires-dist: unsloth[cu118onlytorch280]; extra == "cu118-torch280"
+requires-dist: unsloth[huggingface]; extra == "cu126-torch280"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu126-torch280"
+requires-dist: unsloth[cu126onlytorch280]; extra == "cu126-torch280"
+requires-dist: unsloth[huggingface]; extra == "cu128-torch280"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu128-torch280"
+requires-dist: unsloth[cu128onlytorch280]; extra == "cu128-torch280"
+requires-dist: unsloth[huggingface]; extra == "cu130-torch280"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu130-torch280"
+requires-dist: unsloth[cu130onlytorch280]; extra == "cu130-torch280"
+requires-dist: unsloth[huggingface]; extra == "cu126-torch290"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu126-torch290"
+requires-dist: unsloth[cu126onlytorch290]; extra == "cu126-torch290"
+requires-dist: unsloth[huggingface]; extra == "cu128-torch290"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu128-torch290"
+requires-dist: unsloth[cu128onlytorch290]; extra == "cu128-torch290"
+requires-dist: unsloth[huggingface]; extra == "cu130-torch290"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu130-torch290"
+requires-dist: unsloth[cu130onlytorch290]; extra == "cu130-torch290"
+requires-dist: unsloth[huggingface]; extra == "cu126-torch291"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu126-torch291"
+requires-dist: unsloth[cu126onlytorch291]; extra == "cu126-torch291"
+requires-dist: unsloth[huggingface]; extra == "cu128-torch291"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu128-torch291"
+requires-dist: unsloth[cu128onlytorch291]; extra == "cu128-torch291"
+requires-dist: unsloth[huggingface]; extra == "cu130-torch291"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu130-torch291"
+requires-dist: unsloth[cu130onlytorch291]; extra == "cu130-torch291"
+requires-dist: unsloth[huggingface]; extra == "cu126-torch2100"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu126-torch2100"
+requires-dist: unsloth[cu126onlytorch2100]; extra == "cu126-torch2100"
+requires-dist: unsloth[huggingface]; extra == "cu128-torch2100"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu128-torch2100"
+requires-dist: unsloth[cu128onlytorch2100]; extra == "cu128-torch2100"
+requires-dist: unsloth[huggingface]; extra == "cu130-torch2100"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu130-torch2100"
+requires-dist: unsloth[cu130onlytorch2100]; extra == "cu130-torch2100"
+requires-dist: unsloth[huggingface]; extra == "kaggle"
+requires-dist: unsloth[huggingface]; extra == "kaggle-new"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "kaggle-new"
+requires-dist: unsloth[huggingface]; extra == "conda"
+requires-dist: unsloth[huggingface]; extra == "colab-torch211"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "colab-torch211"
+requires-dist: unsloth[cu121onlytorch211]; extra == "colab-torch211"
+requires-dist: packaging; "linux" in sys_platform and extra == "flashattention"
+requires-dist: ninja; "linux" in sys_platform and extra == "flashattention"
+requires-dist: flash-attn>=2.6.3; "linux" in sys_platform and extra == "flashattention"
+requires-dist: unsloth[huggingface]; extra == "colab-ampere-torch211"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "colab-ampere-torch211"
+requires-dist: unsloth[cu121onlytorch211]; extra == "colab-ampere-torch211"
+requires-dist: unsloth[flashattention]; extra == "colab-ampere-torch211"
+requires-dist: unsloth[huggingface]; extra == "colab-torch220"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "colab-torch220"
+requires-dist: unsloth[cu121onlytorch220]; extra == "colab-torch220"
+requires-dist: unsloth[huggingface]; extra == "colab-ampere-torch220"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "colab-ampere-torch220"
+requires-dist: unsloth[cu121onlytorch220]; extra == "colab-ampere-torch220"
+requires-dist: unsloth[flashattention]; extra == "colab-ampere-torch220"
+requires-dist: unsloth_zoo>=2026.6.7; extra == "colab-new"
+requires-dist: packaging; extra == "colab-new"
+requires-dist: tyro; extra == "colab-new"
+requires-dist: transformers!=4.52.0,!=4.52.1,!=4.52.2,!=4.52.3,!=4.53.0,!=4.54.0,!=4.55.0,!=4.55.1,!=4.57.0,!=4.57.4,!=4.57.5,!=5.0.0,!=5.1.0,<=5.5.0,>=4.51.3; extra == "colab-new"
+requires-dist: datasets!=4.0.*,!=4.1.0,<4.4.0,>=3.4.1; extra == "colab-new"
+requires-dist: sentencepiece>=0.2.0; extra == "colab-new"
+requires-dist: tqdm; extra == "colab-new"
+requires-dist: psutil; extra == "colab-new"
+requires-dist: wheel>=0.42.0; extra == "colab-new"
+requires-dist: numpy; extra == "colab-new"
+requires-dist: protobuf; extra == "colab-new"
+requires-dist: huggingface_hub>=0.34.0; extra == "colab-new"
+requires-dist: hf_transfer; extra == "colab-new"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "colab-new"
+requires-dist: unsloth[triton]; extra == "colab-new"
+requires-dist: sentence-transformers; extra == "colab-new"
+requires-dist: typer; extra == "colab-new"
+requires-dist: pydantic; extra == "colab-new"
+requires-dist: pyyaml; extra == "colab-new"
+requires-dist: nest-asyncio; extra == "colab-new"
+requires-dist: accelerate>=0.34.1; extra == "colab-no-deps"
+requires-dist: trl!=0.19.0,<=0.24.0,>=0.18.2; extra == "colab-no-deps"
+requires-dist: peft>=0.18.0; extra == "colab-no-deps"
+requires-dist: xformers; (("linux" in sys_platform or sys_platform == "win32") and (platform_machine == "AMD64" or platform_machine == "x86_64")) and extra == "colab-no-deps"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "colab-no-deps"
+requires-dist: protobuf; extra == "colab-no-deps"
+requires-dist: unsloth[cu121]; extra == "colab"
+requires-dist: unsloth[colab-ampere-torch220]; extra == "colab-ampere"
+requires-dist: unsloth[flashattention]; extra == "colab-ampere"
+requires-dist: unsloth[huggingface]; extra == "cu118-ampere"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu118-ampere"
+requires-dist: unsloth[cu118only]; extra == "cu118-ampere"
+requires-dist: unsloth[flashattention]; extra == "cu118-ampere"
+requires-dist: unsloth[huggingface]; extra == "cu121-ampere"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu121-ampere"
+requires-dist: unsloth[cu121only]; extra == "cu121-ampere"
+requires-dist: unsloth[flashattention]; extra == "cu121-ampere"
+requires-dist: unsloth[huggingface]; extra == "cu118-ampere-torch211"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu118-ampere-torch211"
+requires-dist: unsloth[cu118onlytorch211]; extra == "cu118-ampere-torch211"
+requires-dist: unsloth[flashattention]; extra == "cu118-ampere-torch211"
+requires-dist: unsloth[huggingface]; extra == "cu121-ampere-torch211"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu121-ampere-torch211"
+requires-dist: unsloth[cu121onlytorch211]; extra == "cu121-ampere-torch211"
+requires-dist: unsloth[flashattention]; extra == "cu121-ampere-torch211"
+requires-dist: unsloth[huggingface]; extra == "cu118-ampere-torch220"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu118-ampere-torch220"
+requires-dist: unsloth[cu118onlytorch220]; extra == "cu118-ampere-torch220"
+requires-dist: unsloth[flashattention]; extra == "cu118-ampere-torch220"
+requires-dist: unsloth[huggingface]; extra == "cu121-ampere-torch220"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu121-ampere-torch220"
+requires-dist: unsloth[cu121onlytorch220]; extra == "cu121-ampere-torch220"
+requires-dist: unsloth[flashattention]; extra == "cu121-ampere-torch220"
+requires-dist: unsloth[huggingface]; extra == "cu118-ampere-torch230"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu118-ampere-torch230"
+requires-dist: unsloth[cu118onlytorch230]; extra == "cu118-ampere-torch230"
+requires-dist: unsloth[flashattention]; extra == "cu118-ampere-torch230"
+requires-dist: unsloth[huggingface]; extra == "cu121-ampere-torch230"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu121-ampere-torch230"
+requires-dist: unsloth[cu121onlytorch230]; extra == "cu121-ampere-torch230"
+requires-dist: unsloth[flashattention]; extra == "cu121-ampere-torch230"
+requires-dist: unsloth[huggingface]; extra == "cu118-ampere-torch240"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu118-ampere-torch240"
+requires-dist: unsloth[cu118onlytorch240]; extra == "cu118-ampere-torch240"
+requires-dist: unsloth[flashattention]; extra == "cu118-ampere-torch240"
+requires-dist: unsloth[huggingface]; extra == "cu121-ampere-torch240"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu121-ampere-torch240"
+requires-dist: unsloth[cu121onlytorch240]; extra == "cu121-ampere-torch240"
+requires-dist: unsloth[flashattention]; extra == "cu121-ampere-torch240"
+requires-dist: unsloth[huggingface]; extra == "cu124-ampere-torch240"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu124-ampere-torch240"
+requires-dist: unsloth[cu124onlytorch240]; extra == "cu124-ampere-torch240"
+requires-dist: unsloth[flashattention]; extra == "cu124-ampere-torch240"
+requires-dist: unsloth[huggingface]; extra == "cu118-ampere-torch250"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu118-ampere-torch250"
+requires-dist: unsloth[cu118onlytorch250]; extra == "cu118-ampere-torch250"
+requires-dist: unsloth[flashattention]; extra == "cu118-ampere-torch250"
+requires-dist: unsloth[huggingface]; extra == "cu121-ampere-torch250"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu121-ampere-torch250"
+requires-dist: unsloth[cu121onlytorch250]; extra == "cu121-ampere-torch250"
+requires-dist: unsloth[flashattention]; extra == "cu121-ampere-torch250"
+requires-dist: unsloth[huggingface]; extra == "cu124-ampere-torch250"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu124-ampere-torch250"
+requires-dist: unsloth[cu124onlytorch250]; extra == "cu124-ampere-torch250"
+requires-dist: unsloth[flashattention]; extra == "cu124-ampere-torch250"
+requires-dist: unsloth[huggingface]; extra == "cu118-ampere-torch251"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu118-ampere-torch251"
+requires-dist: unsloth[cu118onlytorch251]; extra == "cu118-ampere-torch251"
+requires-dist: unsloth[flashattention]; extra == "cu118-ampere-torch251"
+requires-dist: unsloth[huggingface]; extra == "cu121-ampere-torch251"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu121-ampere-torch251"
+requires-dist: unsloth[cu121onlytorch251]; extra == "cu121-ampere-torch251"
+requires-dist: unsloth[flashattention]; extra == "cu121-ampere-torch251"
+requires-dist: unsloth[huggingface]; extra == "cu124-ampere-torch251"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu124-ampere-torch251"
+requires-dist: unsloth[cu124onlytorch251]; extra == "cu124-ampere-torch251"
+requires-dist: unsloth[flashattention]; extra == "cu124-ampere-torch251"
+requires-dist: unsloth[huggingface]; extra == "cu118-ampere-torch260"
+requires-dist: bitsandbytes>=0.45.1; extra == "cu118-ampere-torch260"
+requires-dist: unsloth[cu118onlytorch260]; extra == "cu118-ampere-torch260"
+requires-dist: unsloth[flashattention]; extra == "cu118-ampere-torch260"
+requires-dist: unsloth[huggingface]; extra == "cu124-ampere-torch260"
+requires-dist: bitsandbytes>=0.45.1; extra == "cu124-ampere-torch260"
+requires-dist: unsloth[cu124onlytorch260]; extra == "cu124-ampere-torch260"
+requires-dist: unsloth[flashattention]; extra == "cu124-ampere-torch260"
+requires-dist: unsloth[huggingface]; extra == "cu126-ampere-torch260"
+requires-dist: bitsandbytes>=0.45.1; extra == "cu126-ampere-torch260"
+requires-dist: unsloth[cu126onlytorch260]; extra == "cu126-ampere-torch260"
+requires-dist: unsloth[flashattention]; extra == "cu126-ampere-torch260"
+requires-dist: unsloth[huggingface]; extra == "cu118-ampere-torch270"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu118-ampere-torch270"
+requires-dist: unsloth[cu118onlytorch270]; extra == "cu118-ampere-torch270"
+requires-dist: unsloth[flashattention]; extra == "cu118-ampere-torch270"
+requires-dist: unsloth[huggingface]; extra == "cu126-ampere-torch270"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu126-ampere-torch270"
+requires-dist: unsloth[cu126onlytorch270]; extra == "cu126-ampere-torch270"
+requires-dist: unsloth[flashattention]; extra == "cu126-ampere-torch270"
+requires-dist: unsloth[huggingface]; extra == "cu128-ampere-torch270"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu128-ampere-torch270"
+requires-dist: unsloth[cu128onlytorch270]; extra == "cu128-ampere-torch270"
+requires-dist: unsloth[flashattention]; extra == "cu128-ampere-torch270"
+requires-dist: unsloth[huggingface]; extra == "cu118-ampere-torch271"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu118-ampere-torch271"
+requires-dist: unsloth[cu118onlytorch271]; extra == "cu118-ampere-torch271"
+requires-dist: unsloth[flashattention]; extra == "cu118-ampere-torch271"
+requires-dist: unsloth[huggingface]; extra == "cu126-ampere-torch271"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu126-ampere-torch271"
+requires-dist: unsloth[cu126onlytorch271]; extra == "cu126-ampere-torch271"
+requires-dist: unsloth[flashattention]; extra == "cu126-ampere-torch271"
+requires-dist: unsloth[huggingface]; extra == "cu128-ampere-torch271"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu128-ampere-torch271"
+requires-dist: unsloth[cu128onlytorch271]; extra == "cu128-ampere-torch271"
+requires-dist: unsloth[flashattention]; extra == "cu128-ampere-torch271"
+requires-dist: unsloth[huggingface]; extra == "cu118-ampere-torch280"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu118-ampere-torch280"
+requires-dist: unsloth[cu118onlytorch280]; extra == "cu118-ampere-torch280"
+requires-dist: unsloth[flashattention]; extra == "cu118-ampere-torch280"
+requires-dist: unsloth[huggingface]; extra == "cu126-ampere-torch280"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu126-ampere-torch280"
+requires-dist: unsloth[cu126onlytorch280]; extra == "cu126-ampere-torch280"
+requires-dist: unsloth[flashattention]; extra == "cu126-ampere-torch280"
+requires-dist: unsloth[huggingface]; extra == "cu128-ampere-torch280"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu128-ampere-torch280"
+requires-dist: unsloth[cu128onlytorch280]; extra == "cu128-ampere-torch280"
+requires-dist: unsloth[flashattention]; extra == "cu128-ampere-torch280"
+requires-dist: unsloth[huggingface]; extra == "cu130-ampere-torch280"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu130-ampere-torch280"
+requires-dist: unsloth[cu130onlytorch280]; extra == "cu130-ampere-torch280"
+requires-dist: unsloth[huggingface]; extra == "cu126-ampere-torch290"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu126-ampere-torch290"
+requires-dist: unsloth[cu126onlytorch290]; extra == "cu126-ampere-torch290"
+requires-dist: unsloth[huggingface]; extra == "cu128-ampere-torch290"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu128-ampere-torch290"
+requires-dist: unsloth[cu128onlytorch290]; extra == "cu128-ampere-torch290"
+requires-dist: unsloth[huggingface]; extra == "cu130-ampere-torch290"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu130-ampere-torch290"
+requires-dist: unsloth[cu130onlytorch290]; extra == "cu130-ampere-torch290"
+requires-dist: unsloth[huggingface]; extra == "cu126-ampere-torch291"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu126-ampere-torch291"
+requires-dist: unsloth[cu126onlytorch291]; extra == "cu126-ampere-torch291"
+requires-dist: unsloth[huggingface]; extra == "cu128-ampere-torch291"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu128-ampere-torch291"
+requires-dist: unsloth[cu128onlytorch291]; extra == "cu128-ampere-torch291"
+requires-dist: unsloth[huggingface]; extra == "cu130-ampere-torch291"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu130-ampere-torch291"
+requires-dist: unsloth[cu130onlytorch291]; extra == "cu130-ampere-torch291"
+requires-dist: unsloth[huggingface]; extra == "cu126-ampere-torch2100"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu126-ampere-torch2100"
+requires-dist: unsloth[cu126onlytorch2100]; extra == "cu126-ampere-torch2100"
+requires-dist: unsloth[huggingface]; extra == "cu128-ampere-torch2100"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu128-ampere-torch2100"
+requires-dist: unsloth[cu128onlytorch2100]; extra == "cu128-ampere-torch2100"
+requires-dist: unsloth[huggingface]; extra == "cu130-ampere-torch2100"
+requires-dist: bitsandbytes!=0.46.0,!=0.48.0,>=0.45.5; extra == "cu130-ampere-torch2100"
+requires-dist: unsloth[cu130onlytorch2100]; extra == "cu130-ampere-torch2100"
+requires-python: <3.15,>=3.9
+project-url: homepage, https://unsloth.ai
+project-url: documentation, https://unsloth.ai/docs
+project-url: repository, https://github.com/unslothai/unsloth
+provides-extra: triton
+provides-extra: huggingface
+provides-extra: windows
+provides-extra: base
+provides-extra: cu118only
+provides-extra: cu121only
+provides-extra: cu118onlytorch211
+provides-extra: cu121onlytorch211
+provides-extra: cu118onlytorch212
+provides-extra: cu121onlytorch212
+provides-extra: cu118onlytorch220
+provides-extra: cu121onlytorch220
+provides-extra: cu118onlytorch230
+provides-extra: cu121onlytorch230
+provides-extra: cu118onlytorch240
+provides-extra: cu121onlytorch240
+provides-extra: cu124onlytorch240
+provides-extra: cu118onlytorch250
+provides-extra: cu121onlytorch250
+provides-extra: cu124onlytorch250
+provides-extra: cu118onlytorch251
+provides-extra: cu121onlytorch251
+provides-extra: cu124onlytorch251
+provides-extra: cu118onlytorch260
+provides-extra: cu124onlytorch260
+provides-extra: cu126onlytorch260
+provides-extra: cu118onlytorch270
+provides-extra: cu126onlytorch270
+provides-extra: cu128onlytorch270
+provides-extra: cu118onlytorch271
+provides-extra: cu126onlytorch271
+provides-extra: cu128onlytorch271
+provides-extra: cu118onlytorch280
+provides-extra: cu126onlytorch280
+provides-extra: cu128onlytorch280
+provides-extra: cu130onlytorch280
+provides-extra: cu126onlytorch290
+provides-extra: cu128onlytorch290
+provides-extra: cu130onlytorch290
+provides-extra: cu126onlytorch291
+provides-extra: cu128onlytorch291
+provides-extra: cu130onlytorch291
+provides-extra: cu126onlytorch2100
+provides-extra: cu128onlytorch2100
+provides-extra: cu130onlytorch2100
+provides-extra: cu118
+provides-extra: cu121
+provides-extra: cu118-torch211
+provides-extra: cu121-torch211
+provides-extra: cu118-torch212
+provides-extra: cu121-torch212
+provides-extra: cu118-torch220
+provides-extra: cu121-torch220
+provides-extra: cu118-torch230
+provides-extra: cu121-torch230
+provides-extra: cu118-torch240
+provides-extra: cu121-torch240
+provides-extra: cu124-torch240
+provides-extra: cu118-torch250
+provides-extra: cu121-torch250
+provides-extra: cu124-torch250
+provides-extra: cu118-torch251
+provides-extra: cu121-torch251
+provides-extra: cu124-torch251
+provides-extra: cu118-torch260
+provides-extra: cu124-torch260
+provides-extra: cu126-torch260
+provides-extra: cu118-torch270
+provides-extra: cu126-torch270
+provides-extra: cu128-torch270
+provides-extra: cu118-torch271
+provides-extra: cu126-torch271
+provides-extra: cu128-torch271
+provides-extra: cu118-torch280
+provides-extra: cu126-torch280
+provides-extra: cu128-torch280
+provides-extra: cu130-torch280
+provides-extra: cu126-torch290
+provides-extra: cu128-torch290
+provides-extra: cu130-torch290
+provides-extra: cu126-torch291
+provides-extra: cu128-torch291
+provides-extra: cu130-torch291
+provides-extra: cu126-torch2100
+provides-extra: cu128-torch2100
+provides-extra: cu130-torch2100
+provides-extra: kaggle
+provides-extra: kaggle-new
+provides-extra: conda
+provides-extra: colab-torch211
+provides-extra: flashattention
+provides-extra: colab-ampere-torch211
+provides-extra: colab-torch220
+provides-extra: colab-ampere-torch220
+provides-extra: colab-new
+provides-extra: colab-no-deps
+provides-extra: colab
+provides-extra: colab-ampere
+provides-extra: cu118-ampere
+provides-extra: cu121-ampere
+provides-extra: cu118-ampere-torch211
+provides-extra: cu121-ampere-torch211
+provides-extra: cu118-ampere-torch220
+provides-extra: cu121-ampere-torch220
+provides-extra: cu118-ampere-torch230
+provides-extra: cu121-ampere-torch230
+provides-extra: cu118-ampere-torch240
+provides-extra: cu121-ampere-torch240
+provides-extra: cu124-ampere-torch240
+provides-extra: cu118-ampere-torch250
+provides-extra: cu121-ampere-torch250
+provides-extra: cu124-ampere-torch250
+provides-extra: cu118-ampere-torch251
+provides-extra: cu121-ampere-torch251
+provides-extra: cu124-ampere-torch251
+provides-extra: cu118-ampere-torch260
+provides-extra: cu124-ampere-torch260
+provides-extra: cu126-ampere-torch260
+provides-extra: cu118-ampere-torch270
+provides-extra: cu126-ampere-torch270
+provides-extra: cu128-ampere-torch270
+provides-extra: cu118-ampere-torch271
+provides-extra: cu126-ampere-torch271
+provides-extra: cu128-ampere-torch271
+provides-extra: cu118-ampere-torch280
+provides-extra: cu126-ampere-torch280
+provides-extra: cu128-ampere-torch280
+provides-extra: cu130-ampere-torch280
+provides-extra: cu126-ampere-torch290
+provides-extra: cu128-ampere-torch290
+provides-extra: cu130-ampere-torch290
+provides-extra: cu126-ampere-torch291
+provides-extra: cu128-ampere-torch291
+provides-extra: cu130-ampere-torch291
+provides-extra: cu126-ampere-torch2100
+provides-extra: cu128-ampere-torch2100
+provides-extra: cu130-ampere-torch2100
+

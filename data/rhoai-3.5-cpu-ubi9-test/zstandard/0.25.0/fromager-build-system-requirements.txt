@@ -1,3 +1,0 @@
-packaging
-setuptools
-cffi~=1.17; platform_python_implementation != "PyPy" and python_version < "3.14"

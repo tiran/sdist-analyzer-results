@@ -1,0 +1,143 @@
+metadata-version: 2.4
+name: sentry-sdk
+version: 2.66.1
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: license-file
+dynamic: license-expression
+dynamic: project-url
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: Python client for Sentry (https://sentry.io)
+home-page: https://github.com/getsentry/sentry-python
+author: Sentry Team and Contributors
+author-email: hello@sentry.io
+license-expression: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Web Environment
+classifier: Intended Audience :: Developers
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: urllib3>=1.26.11
+requires-dist: certifi
+requires-dist: aiohttp>=3.5; extra == "aiohttp"
+requires-dist: anthropic>=0.16; extra == "anthropic"
+requires-dist: arq>=0.23; extra == "arq"
+requires-dist: asyncpg>=0.23; extra == "asyncpg"
+requires-dist: apache-beam>=2.12; extra == "beam"
+requires-dist: bottle>=0.12.13; extra == "bottle"
+requires-dist: celery>=3; extra == "celery"
+requires-dist: celery-redbeat>=2; extra == "celery-redbeat"
+requires-dist: chalice>=1.16.0; extra == "chalice"
+requires-dist: clickhouse-driver>=0.2.0; extra == "clickhouse-driver"
+requires-dist: django>=1.8; extra == "django"
+requires-dist: falcon>=1.4; extra == "falcon"
+requires-dist: fastapi>=0.79.0; extra == "fastapi"
+requires-dist: flask>=0.11; extra == "flask"
+requires-dist: blinker>=1.1; extra == "flask"
+requires-dist: markupsafe; extra == "flask"
+requires-dist: grpcio>=1.21.1; extra == "grpcio"
+requires-dist: protobuf>=3.8.0; extra == "grpcio"
+requires-dist: httpcore[http2]==1.*; extra == "http2"
+requires-dist: httpcore[asyncio]==1.*; extra == "asyncio"
+requires-dist: httpx>=0.16.0; extra == "httpx"
+requires-dist: huey>=2; extra == "huey"
+requires-dist: huggingface_hub>=0.22; extra == "huggingface-hub"
+requires-dist: langchain>=0.0.210; extra == "langchain"
+requires-dist: langgraph>=0.6.6; extra == "langgraph"
+requires-dist: launchdarkly-server-sdk>=9.8.0; extra == "launchdarkly"
+requires-dist: litellm!=1.82.7,!=1.82.8,>=1.77.5; extra == "litellm"
+requires-dist: litestar>=2.0.0; extra == "litestar"
+requires-dist: loguru>=0.5; extra == "loguru"
+requires-dist: mcp>=1.15.0; extra == "mcp"
+requires-dist: openai>=1.0.0; extra == "openai"
+requires-dist: tiktoken>=0.3.0; extra == "openai"
+requires-dist: openfeature-sdk>=0.7.1; extra == "openfeature"
+requires-dist: opentelemetry-distro>=0.35b0; extra == "opentelemetry"
+requires-dist: opentelemetry-distro; extra == "opentelemetry-experimental"
+requires-dist: opentelemetry-distro[otlp]>=0.35b0; extra == "opentelemetry-otlp"
+requires-dist: pure_eval; extra == "pure-eval"
+requires-dist: executing; extra == "pure-eval"
+requires-dist: asttokens; extra == "pure-eval"
+requires-dist: pydantic-ai>=1.0.0; extra == "pydantic-ai"
+requires-dist: pymongo>=3.1; extra == "pymongo"
+requires-dist: pyspark>=2.4.4; extra == "pyspark"
+requires-dist: quart>=0.16.1; extra == "quart"
+requires-dist: blinker>=1.1; extra == "quart"
+requires-dist: rq>=0.6; extra == "rq"
+requires-dist: sanic>=0.8; extra == "sanic"
+requires-dist: sqlalchemy>=1.2; extra == "sqlalchemy"
+requires-dist: starlette>=0.19.1; extra == "starlette"
+requires-dist: starlite>=1.48; extra == "starlite"
+requires-dist: statsig>=0.55.3; extra == "statsig"
+requires-dist: tornado>=6; extra == "tornado"
+requires-dist: UnleashClient>=6.0.1; extra == "unleash"
+requires-dist: google-genai>=1.29.0; extra == "google-genai"
+requires-python: >=3.6
+project-url: Documentation, https://docs.sentry.io/platforms/python/
+project-url: Changelog, https://github.com/getsentry/sentry-python/blob/master/CHANGELOG.md
+provides-extra: aiohttp
+provides-extra: anthropic
+provides-extra: arq
+provides-extra: asyncpg
+provides-extra: beam
+provides-extra: bottle
+provides-extra: celery
+provides-extra: celery-redbeat
+provides-extra: chalice
+provides-extra: clickhouse-driver
+provides-extra: django
+provides-extra: falcon
+provides-extra: fastapi
+provides-extra: flask
+provides-extra: grpcio
+provides-extra: http2
+provides-extra: asyncio
+provides-extra: httpx
+provides-extra: huey
+provides-extra: huggingface-hub
+provides-extra: langchain
+provides-extra: langgraph
+provides-extra: launchdarkly
+provides-extra: litellm
+provides-extra: litestar
+provides-extra: loguru
+provides-extra: mcp
+provides-extra: openai
+provides-extra: openfeature
+provides-extra: opentelemetry
+provides-extra: opentelemetry-experimental
+provides-extra: opentelemetry-otlp
+provides-extra: pure-eval
+provides-extra: pydantic-ai
+provides-extra: pymongo
+provides-extra: pyspark
+provides-extra: quart
+provides-extra: rq
+provides-extra: sanic
+provides-extra: sqlalchemy
+provides-extra: starlette
+provides-extra: starlite
+provides-extra: statsig
+provides-extra: tornado
+provides-extra: unleash
+provides-extra: google-genai
+

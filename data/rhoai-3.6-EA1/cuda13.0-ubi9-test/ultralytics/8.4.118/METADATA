@@ -1,0 +1,122 @@
+metadata-version: 2.4
+name: ultralytics
+version: 8.4.118
+dynamic: license-file
+summary: Ultralytics YOLO 🚀 for SOTA object detection, multi-object tracking, instance segmentation, pose estimation, classification, and oriented object detection.
+keywords: machine-learning,deep-learning,computer-vision,ML,DL,AI,RT-DETR,SAM3,YOLO,YOLOv3,YOLOv5,YOLOv8,YOLO11,YOLO26,Platform,Ultralytics
+author-email: Glenn Jocher <glenn.jocher@ultralytics.com>, Jing Qiu <jing.qiu@ultralytics.com>
+maintainer-email: Ultralytics <hello@ultralytics.com>
+license: AGPL-3.0
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Education
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Topic :: Software Development
+classifier: Topic :: Scientific/Engineering
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+classifier: Topic :: Scientific/Engineering :: Image Recognition
+classifier: Operating System :: POSIX :: Linux
+classifier: Operating System :: MacOS
+classifier: Operating System :: Microsoft :: Windows
+requires-dist: filelock>=3.16.1
+requires-dist: numpy>=1.23.0
+requires-dist: matplotlib>=3.3.0
+requires-dist: opencv-python!=4.13.0.90,>=4.7.0
+requires-dist: pillow>=7.1.2
+requires-dist: pyyaml>=5.3.1
+requires-dist: requests>=2.23.0
+requires-dist: torch>=1.8.0
+requires-dist: torch!=2.4.0,>=1.8.0; sys_platform == "win32"
+requires-dist: torchvision>=0.9.0
+requires-dist: psutil>=5.8.0
+requires-dist: polars>=0.20.0
+requires-dist: nvidia-ml-py>=12.0.0
+requires-dist: ultralytics-thop>=2.1.6
+requires-dist: ipython; extra == "dev"
+requires-dist: pytest; extra == "dev"
+requires-dist: pytest-cov; extra == "dev"
+requires-dist: pytest-xdist>=3.0.0; extra == "dev"
+requires-dist: coverage[toml]; extra == "dev"
+requires-dist: zensical>=0.0.53; python_version >= "3.10" and extra == "dev"
+requires-dist: minijinja>=2.0.0; extra == "dev"
+requires-dist: onnx>=1.12.0; platform_system != "Darwin" and extra == "export-base"
+requires-dist: onnx<1.18.0,>=1.12.0; (platform_system == "Darwin" and python_version < "3.13") and extra == "export-base"
+requires-dist: onnx>=1.20.0; (platform_system == "Darwin" and python_version >= "3.13") and extra == "export-base"
+requires-dist: onnxslim>=0.1.82; extra == "export-base"
+requires-dist: onnxruntime<1.20.0; (python_version < "3.11" and (platform_machine != "aarch64" or platform_system != "Linux")) and extra == "export-base"
+requires-dist: onnxruntime>=1.20.0; python_version >= "3.11" and extra == "export-base"
+requires-dist: nncf<3.0.0,>=2.14.0; python_version >= "3.9" and extra == "export-base"
+requires-dist: openvino>=2024.0.0; extra == "export-base"
+requires-dist: packaging>=26.0; (platform_machine == "aarch64" and platform_system == "Linux" and python_version >= "3.9") and extra == "export-base"
+requires-dist: numpy<2; extra == "export-legacy-torch"
+requires-dist: setuptools<81.0.0; python_version >= "3.9" and extra == "export-legacy-torch"
+requires-dist: numpy<2.0.0; python_version < "3.13" and extra == "export-tensorflow"
+requires-dist: tensorflow<=2.19.0,>=2.0.0; python_version < "3.13" and extra == "export-tensorflow"
+requires-dist: tensorflow>2.19.0; python_version >= "3.13" and extra == "export-tensorflow"
+requires-dist: ydf<0.13.0; (platform_machine != "aarch64" and python_version <= "3.12") and extra == "export-tensorflow"
+requires-dist: googleapis-common-protos<1.74.0; python_version <= "3.12" and extra == "export-tensorflow"
+requires-dist: tensorstore>=0.1.63; (platform_machine == "aarch64" and python_version >= "3.9") and extra == "export-tensorflow"
+requires-dist: h5py!=3.11.0; platform_machine == "aarch64" and extra == "export-tensorflow"
+requires-dist: numpy<=2.3.5; (platform_system != "Windows" and python_version <= "3.13") and extra == "export-coreml"
+requires-dist: coremltools>=9.0; (platform_system != "Windows" and python_version <= "3.13") and extra == "export-coreml"
+requires-dist: scikit-learn>=1.3.2; (platform_system != "Windows" and python_version <= "3.13") and extra == "export-coreml"
+requires-dist: executorch; extra == "export-executorch"
+requires-dist: torch<2.13.0,>=2.12.0; (platform_system == "Linux" and platform_machine == "aarch64") and extra == "export-executorch"
+requires-dist: numpy<=2.3.5; extra == "export-executorch"
+requires-dist: dx_com; extra == "export-deepx"
+requires-dist: numpy<2; extra == "export-deepx"
+requires-dist: litert-torch>=0.9.0; ((platform_system == "Linux" and platform_machine == "x86_64") or platform_system == "Darwin") and extra == "export-litert"
+requires-dist: ai-edge-litert>=2.1.4; ((platform_system == "Linux" and platform_machine == "x86_64") or platform_system == "Darwin") and extra == "export-litert"
+requires-dist: ai-edge-quantizer>=0.6.0; ((platform_system == "Linux" and platform_machine == "x86_64") or platform_system == "Darwin") and extra == "export-litert"
+requires-dist: ultralytics[export-base]; extra == "export"
+requires-dist: ultralytics[export-tensorflow]; extra == "export"
+requires-dist: ultralytics[export-coreml]; extra == "export"
+requires-dist: ultralytics[export-litert]; extra == "export"
+requires-dist: torch<2.13.0,>=2.12.0; (platform_system == "Linux" and platform_machine == "aarch64" and python_version == "3.11") and extra == "export"
+requires-dist: shapely>=2.0.0; extra == "solutions"
+requires-dist: lap>=0.5.12; extra == "solutions"
+requires-dist: streamlit>=1.51.0; python_version >= "3.10" and extra == "solutions"
+requires-dist: streamlit<1.51.0,>=1.29.0; (python_version < "3.10" and (platform_machine != "aarch64" or platform_system != "Linux")) and extra == "solutions"
+requires-dist: flask>=3.0.1; extra == "solutions"
+requires-dist: openai>=2.0.0; extra == "llm"
+requires-dist: wandb; extra == "logging"
+requires-dist: tensorboard; extra == "logging"
+requires-dist: mlflow; extra == "logging"
+requires-dist: ipython; extra == "extra"
+requires-dist: albumentations>=1.4.6; extra == "extra"
+requires-dist: faster-coco-eval>=1.6.7; extra == "extra"
+requires-dist: types-pillow; extra == "typing"
+requires-dist: types-psutil; extra == "typing"
+requires-dist: types-pyyaml; extra == "typing"
+requires-dist: types-requests; extra == "typing"
+requires-dist: types-shapely; extra == "typing"
+requires-python: >=3.8
+project-url: Homepage, https://ultralytics.com
+project-url: Source, https://github.com/ultralytics/ultralytics
+project-url: Documentation, https://docs.ultralytics.com
+project-url: Bug Reports, https://github.com/ultralytics/ultralytics/issues
+project-url: Changelog, https://github.com/ultralytics/ultralytics/releases
+provides-extra: dev
+provides-extra: export-base
+provides-extra: export-legacy-torch
+provides-extra: export-tensorflow
+provides-extra: export-coreml
+provides-extra: export-executorch
+provides-extra: export-deepx
+provides-extra: export-litert
+provides-extra: export
+provides-extra: solutions
+provides-extra: llm
+provides-extra: logging
+provides-extra: extra
+provides-extra: typing
+

@@ -1,0 +1,39 @@
+metadata-version: 2.4
+name: google-auth-httplib2
+version: 0.4.1
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: Google Authentication Library: httplib2 transport
+keywords: google auth oauth client
+home-page: https://github.com/googleapis/google-cloud-python/packages/google-auth-httplib2
+author: Google Cloud Platform
+author-email: googleapis-packages@google.com
+license: Apache 2.0
+license-file: LICENSE
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Development Status :: 3 - Alpha
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: POSIX
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Operating System :: OS Independent
+classifier: Topic :: Internet :: WWW/HTTP
+requires-dist: google-auth<3.0.0,>=2.14.1
+requires-dist: httplib2<1.0.0,>=0.19.0
+requires-python: >=3.10
+

@@ -1,0 +1,131 @@
+metadata-version: 2.4
+name: apache-airflow-core
+version: 3.3.1
+summary: Core packages for Apache Airflow, schedule and API server
+keywords: airflow,automation,dag,data,orchestration,pipelines,workflow
+author-email: Apache Software Foundation <dev@airflow.apache.org>
+maintainer-email: Apache Software Foundation <dev@airflow.apache.org>
+license-expression: Apache-2.0
+license-file: LICENSE
+license-file: NOTICE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Environment :: Web Environment
+classifier: Framework :: Apache Airflow
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: System Administrators
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: System :: Monitoring
+requires-dist: a2wsgi>=1.10.8
+requires-dist: aiosqlite!=0.22.0,>=0.20.0
+requires-dist: alembic<2.0,>=1.13.1
+requires-dist: apache-airflow-providers-common-compat>=1.7.4
+requires-dist: apache-airflow-providers-common-io>=1.6.3
+requires-dist: apache-airflow-providers-common-sql>=1.28.1
+requires-dist: apache-airflow-providers-smtp>=2.3.1
+requires-dist: apache-airflow-providers-standard>=1.9.0
+requires-dist: apache-airflow-task-sdk==1.3.1
+requires-dist: argcomplete>=1.10
+requires-dist: asgiref>=2.3.0; python_version < "3.14"
+requires-dist: asgiref>=3.11.1; python_version >= "3.14"
+requires-dist: attrs!=25.2.0,>=22.1.0
+requires-dist: cachetools>=6.0.0
+requires-dist: cadwyn>=6.1.1
+requires-dist: colorlog>=6.8.2
+requires-dist: cron-descriptor>=1.2.24
+requires-dist: croniter>=6.2.2
+requires-dist: cryptography>=44.0.3
+requires-dist: deprecated>=1.2.13
+requires-dist: dill>=0.2.2
+requires-dist: fastapi[standard-no-fastapi-cloud-cli]<0.137.0,>=0.129.0
+requires-dist: httpx>=0.25.0
+requires-dist: importlib-metadata>=6.5; python_version < "3.12"
+requires-dist: importlib-metadata>=7.0; python_version >= "3.12"
+requires-dist: isoduration>=20.11.0
+requires-dist: itsdangerous>=2.0
+requires-dist: jinja2>=3.1.5
+requires-dist: jsonschema>=4.19.1
+requires-dist: lazy-object-proxy>=1.2.0
+requires-dist: libcst>=1.8.2; python_version < "3.14"
+requires-dist: libcst>=1.8.6; python_version >= "3.14"
+requires-dist: linkify-it-py>=2.0.0
+requires-dist: lockfile>=0.12.2
+requires-dist: methodtools>=0.4.7
+requires-dist: msgspec>=0.19.0
+requires-dist: natsort>=8.4.0
+requires-dist: opentelemetry-api>=1.27.0
+requires-dist: opentelemetry-exporter-otlp>=1.27.0
+requires-dist: opentelemetry-proto<9999,>=1.27.0
+requires-dist: packaging>=25.0
+requires-dist: pathspec>=0.9.0
+requires-dist: pendulum>=3.1.0
+requires-dist: pluggy>=1.5.0
+requires-dist: psutil>=5.8.0
+requires-dist: pydantic>=2.11.0
+requires-dist: pygments!=2.19.0,>=2.0.1
+requires-dist: pygtrie>=2.5.0
+requires-dist: pyjwt>=2.11.0
+requires-dist: python-daemon>=3.0.0
+requires-dist: python-dateutil>=2.7.0
+requires-dist: python-slugify>=5.0
+requires-dist: pyyaml>=6.0.3
+requires-dist: requests<3,>=2.32.0
+requires-dist: rich-argparse>=1.0.0
+requires-dist: rich>=13.6.0
+requires-dist: setproctitle>=1.3.3
+requires-dist: sqlalchemy[asyncio]>=2.0.50
+requires-dist: starlette>=1.0.1
+requires-dist: structlog>=26.1.0
+requires-dist: svcs>=25.1.0
+requires-dist: tabulate>=0.9.0
+requires-dist: tenacity>=8.3.0
+requires-dist: termcolor>=3.0.0
+requires-dist: typing-extensions>=4.14.1
+requires-dist: universal-pathlib>=0.3.8
+requires-dist: uuid6>=2024.7.10
+requires-dist: uvicorn>=0.37.0
+requires-dist: graphviz>=0.20; sys_platform != "darwin" and extra == "all"
+requires-dist: gunicorn!=25.1.0,>=23.0.0; extra == "all"
+requires-dist: opentelemetry-exporter-prometheus>=0.47b0; extra == "all"
+requires-dist: pykerberos>=1.1.13; extra == "all"
+requires-dist: requests-kerberos>=0.14.0; extra == "all"
+requires-dist: statsd>=3.3.0; extra == "all"
+requires-dist: thrift-sasl>=0.4.2; extra == "all"
+requires-dist: eventlet>=0.37.0; extra == "async"
+requires-dist: gevent>=25.4.1; extra == "async"
+requires-dist: greenback>=1.2.1; extra == "async"
+requires-dist: greenlet>=3.1.0; python_version < "3.14" and extra == "async"
+requires-dist: greenlet>=3.3.2; python_version >= "3.14" and extra == "async"
+requires-dist: graphviz>=0.20; sys_platform != "darwin" and extra == "graphviz"
+requires-dist: gunicorn!=25.1.0,>=23.0.0; extra == "gunicorn"
+requires-dist: pykerberos>=1.1.13; extra == "kerberos"
+requires-dist: requests-kerberos>=0.14.0; extra == "kerberos"
+requires-dist: thrift-sasl>=0.4.2; extra == "kerberos"
+requires-dist: memray>=1.19.0; extra == "memray"
+requires-dist: opentelemetry-exporter-prometheus>=0.47b0; extra == "otel"
+requires-dist: statsd>=3.3.0; extra == "statsd"
+requires-python: !=3.15,>=3.10
+project-url: Bug Tracker, https://github.com/apache/airflow/issues
+project-url: Documentation, https://airflow.apache.org/docs/
+project-url: Downloads, https://archive.apache.org/dist/airflow/
+project-url: Homepage, https://airflow.apache.org/
+project-url: Release Notes, https://airflow.apache.org/docs/apache-airflow/stable/release_notes.html
+project-url: Slack Chat, https://s.apache.org/airflow-slack
+project-url: Source Code, https://github.com/apache/airflow
+project-url: LinkedIn, https://www.linkedin.com/company/apache-airflow/
+project-url: Mastodon, https://fosstodon.org/@airflow
+project-url: Bluesky, https://bsky.app/profile/apache-airflow.bsky.social
+project-url: YouTube, https://www.youtube.com/channel/UCSXwxpWZQ7XZ1WL3wqevChA/
+provides-extra: all
+provides-extra: async
+provides-extra: graphviz
+provides-extra: gunicorn
+provides-extra: kerberos
+provides-extra: memray
+provides-extra: otel
+provides-extra: statsd
+

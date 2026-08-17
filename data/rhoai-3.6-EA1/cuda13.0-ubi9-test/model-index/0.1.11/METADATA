@@ -1,0 +1,29 @@
+metadata-version: 2.4
+name: model-index
+version: 0.1.11
+dynamic: author
+dynamic: author-email
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: license
+dynamic: maintainer
+dynamic: maintainer-email
+dynamic: platform
+dynamic: requires-dist
+dynamic: summary
+platform: Windows
+platform: POSIX
+platform: MacOSX
+summary: Create a source of truth for ML model results and browse it on Papers with Code
+home-page: https://github.com/paperswithcode/model-index
+author: Robert Stojnic
+author-email: hello@paperswithcode.com
+maintainer: Robert Stojnic
+maintainer-email: hello@paperswithcode.com
+license: MIT
+requires-dist: pyyaml
+requires-dist: markdown
+requires-dist: ordered-set
+requires-dist: click
+

@@ -1,0 +1,33 @@
+metadata-version: 2.4
+name: PyPika
+version: 0.51.1
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: requires-dist
+dynamic: summary
+summary: A SQL query builder API for Python
+keywords: pypika python query builder querybuilder sql mysql postgres psql oracle vertica aggregated relational database rdbms business analytics bi data science analysis pandas orm object mapper
+home-page: https://github.com/kayak/pypika
+author: Timothy Heys
+author-email: theys@kayak.com
+license: Apache License Version 2.0
+license-file: LICENSE.txt
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: PL/SQL
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: Scientific/Engineering :: Information Analysis
+classifier: Topic :: Scientific/Engineering :: Mathematics
+classifier: Operating System :: POSIX
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Operating System :: Microsoft :: Windows
+requires-dist: typing_extensions>=4.5.0; python_version < "3.11"
+

@@ -1,0 +1,38 @@
+metadata-version: 2.4
+name: whiteboxgui
+version: 2.3.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: An interactive GUI for whitebox-tools in a Jupyter-based environment
+keywords: whiteboxgui
+home-page: https://github.com/giswqs/whiteboxgui
+author: Qiusheng Wu
+author-email: giswqs@gmail.com
+license: MIT license
+license-file: LICENSE
+classifier: Development Status :: 2 - Pre-Alpha
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Natural Language :: English
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+requires-dist: ipyfilechooser
+requires-dist: ipywidgets
+requires-dist: ipytree
+requires-dist: whitebox
+requires-python: >=3.5
+

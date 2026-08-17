@@ -1,0 +1,52 @@
+metadata-version: 2.4
+name: lightning-utilities
+version: 0.15.3
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: download-url
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: project-url
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: Lightning toolbox for across the our ecosystem.
+keywords: Utilities,DevOps,CI/CD
+home-page: https://github.com/Lightning-AI/utilities
+download-url: https://github.com/Lightning-AI/utilities
+author: Lightning AI et al.
+author-email: developer@lightning.ai
+license: Apache-2.0
+license-file: LICENSE
+classifier: Environment :: Console
+classifier: Natural Language :: English
+classifier: Development Status :: 3 - Alpha
+classifier: Intended Audience :: Developers
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-dist: packaging>=22
+requires-dist: typing_extensions
+requires-dist: jsonargparse[signatures]>=4.38.0; extra == "cli"
+requires-dist: tomlkit; extra == "cli"
+requires-dist: mypy>=1.0.0; extra == "typing"
+requires-dist: types-setuptools; extra == "typing"
+requires-dist: requests>=2.0.0; extra == "docs"
+requires-python: >=3.10
+project-url: Bug Tracker, https://github.com/Lightning-AI/utilities/issues
+project-url: Documentation, https://dev-toolbox.rtfd.io/en/latest/
+project-url: Source Code, https://github.com/Lightning-AI/utilities
+provides-extra: cli
+provides-extra: typing
+provides-extra: docs
+

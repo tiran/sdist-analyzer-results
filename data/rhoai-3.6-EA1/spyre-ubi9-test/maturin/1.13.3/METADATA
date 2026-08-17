@@ -1,0 +1,25 @@
+metadata-version: 2.4
+name: maturin
+version: 1.13.3
+dynamic: license-file
+summary: Build and publish crates with pyo3, cffi and uniffi bindings as well as rust binaries as python packages
+author-email: konstin <konstin@mailbox.org>
+license-expression: MIT OR Apache-2.0
+license-file: license-mit
+license-file: license-apache
+classifier: Topic :: Software Development :: Build Tools
+classifier: Programming Language :: Rust
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Programming Language :: Python :: Implementation :: GraalPy
+requires-dist: tomli>=1.1.0; python_version < "3.11"
+requires-dist: ziglang>=0.10.0; extra == "zig"
+requires-dist: patchelf; extra == "patchelf"
+requires-python: >=3.7
+project-url: Source Code, https://github.com/PyO3/maturin
+project-url: Issues, https://github.com/PyO3/maturin/issues
+project-url: Documentation, https://maturin.rs
+project-url: Changelog, https://maturin.rs/changelog.html
+provides-extra: zig
+provides-extra: patchelf
+

@@ -1,0 +1,5 @@
+sphinx!=4.0.0
+pybindgen==0.22.0
+wheel>=0.46.2
+setuptools_scm>=6.2
+setuptools<81,>=60

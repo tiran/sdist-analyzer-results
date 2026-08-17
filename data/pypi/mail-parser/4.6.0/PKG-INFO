@@ -1,0 +1,26 @@
+metadata-version: 2.4
+name: mail-parser
+version: 4.6.0
+summary: A tool that parses emails by enhancing the Python standard library, extracting all details into a comprehensive object.
+keywords: email,forensics,mail,malware,parser,phishing,security,spam,threat detection
+author-email: Fedele Mantuano <mantuano.fedele@gmail.com>
+maintainer-email: Fedele Mantuano <mantuano.fedele@gmail.com>
+license-expression: Apache-2.0
+license-file: LICENSE.txt
+license-file: NOTICE.txt
+classifier: Natural Language :: English
+classifier: Operating System :: MacOS
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: Unix
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-dist: extract-msg>=0.54; extra == "outlook"
+requires-python: <3.15,>=3.9
+provides-extra: outlook
+

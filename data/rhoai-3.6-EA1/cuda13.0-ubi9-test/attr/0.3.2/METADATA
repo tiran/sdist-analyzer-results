@@ -1,0 +1,23 @@
+metadata-version: 2.4
+name: attr
+version: 0.3.2
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: summary
+summary: Simple decorator to set attributes of target function or class in a DRY way.
+home-page: https://github.com/denis-ryzhkov/attr
+author: Denis Ryzhkov
+author-email: denisr@denisr.com
+license: MIT
+license-file: LICENSE
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 2.7
+classifier: Programming Language :: Python :: 3
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+

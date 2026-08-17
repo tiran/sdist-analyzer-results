@@ -1,0 +1,17 @@
+metadata-version: 2.4
+name: runai-model-streamer
+version: 0.16.1
+dynamic: license-file
+dynamic: provides-extra
+dynamic: requires-dist
+license-file: LICENSE
+requires-dist: torch<3.0.0,>=2.0.0
+requires-dist: humanize
+requires-dist: numpy
+requires-dist: runai_model_streamer_s3==0.16.1; extra == "s3"
+requires-dist: runai_model_streamer_gcs==0.16.1; extra == "gcs"
+requires-dist: runai_model_streamer_azure==0.16.1; extra == "azure"
+provides-extra: s3
+provides-extra: gcs
+provides-extra: azure
+

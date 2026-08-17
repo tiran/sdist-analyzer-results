@@ -1,0 +1,34 @@
+metadata-version: 2.5
+name: beautifulsoup4
+version: 4.15.0
+summary: Screen-scraping library
+keywords: HTML,XML,parse,soup
+author-email: Leonard Richardson <leonardr@segfault.org>
+license: MIT License
+license-file: AUTHORS
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: Text Processing :: Markup :: HTML
+classifier: Topic :: Text Processing :: Markup :: SGML
+classifier: Topic :: Text Processing :: Markup :: XML
+requires-dist: soupsieve>=1.6.1
+requires-dist: typing-extensions>=4.0.0
+requires-dist: cchardet; extra == "cchardet"
+requires-dist: chardet; extra == "chardet"
+requires-dist: charset-normalizer; extra == "charset-normalizer"
+requires-dist: html5lib; extra == "html5lib"
+requires-dist: lxml; extra == "lxml"
+requires-python: >=3.7.0
+project-url: Download, https://www.crummy.com/software/BeautifulSoup/bs4/download/
+project-url: Homepage, https://www.crummy.com/software/BeautifulSoup/bs4/
+provides-extra: cchardet
+provides-extra: chardet
+provides-extra: charset-normalizer
+provides-extra: html5lib
+provides-extra: lxml
+

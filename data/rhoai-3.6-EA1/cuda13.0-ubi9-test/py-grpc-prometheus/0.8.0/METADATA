@@ -1,0 +1,20 @@
+metadata-version: 2.4
+name: py_grpc_prometheus
+version: 0.8.0
+dynamic: author
+dynamic: author-email
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: license-file
+dynamic: requires-dist
+dynamic: summary
+summary: Python gRPC Prometheus Interceptors
+home-page: https://github.com/lchenn/py-grpc-prometheus
+author: Lin Chen
+author-email: linchen04@gmail.com
+license-file: LICENSE
+requires-dist: setuptools>=39.0.1
+requires-dist: grpcio>=1.10.0
+requires-dist: prometheus_client>=0.3.0
+

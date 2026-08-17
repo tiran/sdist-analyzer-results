@@ -1,0 +1,11 @@
+metadata-version: 2.1
+name: InstructorEmbedding
+version: 1.0.1
+platform: UNKNOWN
+summary: Text embedding tool
+keywords: sentence,embedding,text,nlp,instructor
+home-page: https://github.com/HKUNLP/instructor-embedding
+author: Hongjin SU
+author-email: hjsu@cs.hku.hk
+license: Apache License 2.0
+

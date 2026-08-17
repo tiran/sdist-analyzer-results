@@ -1,0 +1,82 @@
+metadata-version: 2.4
+name: nltk
+version: 3.10.2
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: maintainer
+dynamic: maintainer-email
+dynamic: project-url
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: Natural Language Toolkit
+keywords: NLP,CL,natural language processing,computational linguistics,parsing,tagging,tokenizing,syntax,linguistics,language,natural language,text analytics
+home-page: https://www.nltk.org/
+author: NLTK Team
+author-email: nltk.team@gmail.com
+maintainer: NLTK Team
+maintainer-email: nltk.team@gmail.com
+license: Apache License, Version 2.0
+license-file: LICENSE.txt
+license-file: AUTHORS.md
+license-file: README.md
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Education
+classifier: Intended Audience :: Information Technology
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Scientific/Engineering
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+classifier: Topic :: Scientific/Engineering :: Human Machine Interfaces
+classifier: Topic :: Scientific/Engineering :: Information Analysis
+classifier: Topic :: Text Processing
+classifier: Topic :: Text Processing :: Filters
+classifier: Topic :: Text Processing :: General
+classifier: Topic :: Text Processing :: Indexing
+classifier: Topic :: Text Processing :: Linguistic
+requires-dist: defusedxml
+requires-dist: click
+requires-dist: joblib
+requires-dist: regex>=2021.8.3
+requires-dist: tqdm
+requires-dist: numpy; extra == "machine-learning"
+requires-dist: python-crfsuite; extra == "machine-learning"
+requires-dist: scikit-learn; extra == "machine-learning"
+requires-dist: scipy; extra == "machine-learning"
+requires-dist: matplotlib; extra == "plot"
+requires-dist: pyparsing; extra == "tgrep"
+requires-dist: twython; extra == "twitter"
+requires-dist: requests; extra == "corenlp"
+requires-dist: python-crfsuite; extra == "all"
+requires-dist: requests; extra == "all"
+requires-dist: scikit-learn; extra == "all"
+requires-dist: pyparsing; extra == "all"
+requires-dist: scipy; extra == "all"
+requires-dist: numpy; extra == "all"
+requires-dist: twython; extra == "all"
+requires-dist: matplotlib; extra == "all"
+requires-python: >=3.10
+project-url: Documentation, https://www.nltk.org/
+project-url: Source Code, https://github.com/nltk/nltk
+project-url: Issue Tracker, https://github.com/nltk/nltk/issues
+provides-extra: machine-learning
+provides-extra: plot
+provides-extra: tgrep
+provides-extra: twitter
+provides-extra: corenlp
+provides-extra: all
+

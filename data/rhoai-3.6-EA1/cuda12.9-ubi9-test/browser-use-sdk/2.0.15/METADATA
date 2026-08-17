@@ -1,0 +1,28 @@
+metadata-version: 2.4
+name: browser-use-sdk
+version: 2.0.15
+summary: The official Python library for the Browser Use API
+classifier: Intended Audience :: Developers
+classifier: Operating System :: MacOS
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: OS Independent
+classifier: Operating System :: POSIX
+classifier: Operating System :: POSIX :: Linux
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Typing :: Typed
+requires-dist: httpx>=0.21.2
+requires-dist: pydantic>=1.9.2
+requires-dist: pydantic-core>=2.18.2
+requires-dist: typing_extensions>=4.0.0
+requires-python: <4.0,>=3.8
+project-url: Repository, https://github.com/browser-use/browser-use-python
+

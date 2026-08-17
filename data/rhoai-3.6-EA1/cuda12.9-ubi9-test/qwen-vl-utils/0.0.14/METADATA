@@ -1,0 +1,22 @@
+metadata-version: 2.5
+name: qwen-vl-utils
+version: 0.0.14
+summary: Qwen Vision Language Model Utils - PyTorch
+keywords: large language model,pytorch,qwen-vl,vision language model
+author-email: Qwen Team <chenkeqin.ckq@alibaba-inc.com>
+license: Apache-2.0
+classifier: Development Status :: 4 - Beta
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Programming Language :: Python :: 3
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+requires-dist: av
+requires-dist: packaging
+requires-dist: pillow
+requires-dist: requests
+requires-dist: decord; extra == "decord"
+requires-python: >=3.8
+project-url: Homepage, https://github.com/QwenLM/Qwen2-VL/tree/main/qwen-vl-utils
+project-url: Repository, https://github.com/QwenLM/Qwen2-VL.git
+project-url: Issues, https://github.com/QwenLM/Qwen2-VL/issues
+provides-extra: decord
+

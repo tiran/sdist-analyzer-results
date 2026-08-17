@@ -1,0 +1,56 @@
+metadata-version: 2.4
+name: jupyter_server_terminals
+version: 0.5.4
+summary: A Jupyter Server Extension Providing Terminals.
+keywords: ipython,jupyter
+author-email: Jupyter Development Team <jupyter@googlegroups.com>
+license: BSD 3-Clause License
+                 
+                 - Copyright (c) 2021-, Jupyter Development Team
+                 
+                 Redistribution and use in source and binary forms, with or without
+                 modification, are permitted provided that the following conditions are met:
+                 
+                 All rights reserved.
+                 
+                 1. Redistributions of source code must retain the above copyright notice, this
+                    list of conditions and the following disclaimer.
+                 
+                 2. Redistributions in binary form must repro...
+license-file: LICENSE
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: Intended Audience :: System Administrators
+classifier: License :: OSI Approved :: BSD License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+requires-dist: pywinpty>=2.0.3; os_name == "nt"
+requires-dist: terminado>=0.8.3
+requires-dist: jinja2; extra == "docs"
+requires-dist: jupyter-server; extra == "docs"
+requires-dist: mistune<4.0; extra == "docs"
+requires-dist: myst-parser; extra == "docs"
+requires-dist: nbformat; extra == "docs"
+requires-dist: packaging; extra == "docs"
+requires-dist: pydata-sphinx-theme; extra == "docs"
+requires-dist: sphinxcontrib-github-alt; extra == "docs"
+requires-dist: sphinxcontrib-openapi; extra == "docs"
+requires-dist: sphinxcontrib-spelling; extra == "docs"
+requires-dist: sphinxemoji; extra == "docs"
+requires-dist: tornado; extra == "docs"
+requires-dist: jupyter-server>=2.0.0; extra == "test"
+requires-dist: pytest-jupyter[server]>=0.5.3; extra == "test"
+requires-dist: pytest-timeout; extra == "test"
+requires-dist: pytest>=7.0; extra == "test"
+requires-python: >=3.8
+project-url: Homepage, https://jupyter.org
+project-url: Documentation, https://jupyter-server-terminals.readthedocs.io
+project-url: Funding, https://jupyter.org/about#donate
+project-url: Source, https://github.com/jupyter-server/jupyter_server_terminals
+project-url: Tracker, https://github.com/jupyter-server/jupyter_server_terminals/issues
+provides-extra: docs
+provides-extra: test
+

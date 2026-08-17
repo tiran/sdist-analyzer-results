@@ -1,0 +1,109 @@
+metadata-version: 2.4
+name: statsforecast
+version: 2.0.1
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: Time series forecasting suite using statistical models
+keywords: time-series forecasting arima ets
+home-page: https://github.com/Nixtla/statsforecast/
+author: Nixtla
+author-email: business@nixtla.io
+license: Apache Software License 2.0
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Natural Language :: English
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: License :: OSI Approved :: Apache Software License
+requires-dist: cloudpickle
+requires-dist: coreforecast>=0.0.12
+requires-dist: numba>=0.55.0
+requires-dist: numpy>=1.21.6
+requires-dist: pandas>=1.3.5
+requires-dist: scipy>=1.7.3
+requires-dist: statsmodels>=0.13.2
+requires-dist: tqdm
+requires-dist: fugue>=0.8.1
+requires-dist: utilsforecast>=0.1.4
+requires-dist: threadpoolctl>=3
+requires-dist: black; extra == "dev"
+requires-dist: datasetsforecast; extra == "dev"
+requires-dist: fire; extra == "dev"
+requires-dist: nbdev==2.3.25; extra == "dev"
+requires-dist: nbformat; extra == "dev"
+requires-dist: nbdev_plotly; extra == "dev"
+requires-dist: pandas[plot]; extra == "dev"
+requires-dist: pmdarima; extra == "dev"
+requires-dist: polars[numpy]; extra == "dev"
+requires-dist: pre-commit; extra == "dev"
+requires-dist: prophet; extra == "dev"
+requires-dist: pyarrow; extra == "dev"
+requires-dist: pybind11; extra == "dev"
+requires-dist: pytest; extra == "dev"
+requires-dist: scikit-learn; extra == "dev"
+requires-dist: setuptools<70; extra == "dev"
+requires-dist: supersmoother; extra == "dev"
+requires-dist: yfinance; extra == "dev"
+requires-dist: dask<=2024.12.1; extra == "dask"
+requires-dist: fugue[dask]>=0.8.1; extra == "dask"
+requires-dist: fugue[ray]>=0.8.1; python_version < "3.12" and extra == "ray"
+requires-dist: protobuf<4.0.0,>=3.15.3; python_version < "3.12" and extra == "ray"
+requires-dist: numpy<2; python_version < "3.12" and extra == "ray"
+requires-dist: pandas<2.2; python_version < "3.12" and extra == "ray"
+requires-dist: ray<=2.10; python_version < "3.12" and extra == "ray"
+requires-dist: fugue[spark]>=0.8.1; extra == "spark"
+requires-dist: plotly; extra == "plotly"
+requires-dist: plotly-resampler; extra == "plotly"
+requires-dist: polars[numpy]; extra == "polars"
+requires-dist: dask<=2024.12.1; extra == "all"
+requires-dist: fugue[dask]>=0.8.1; extra == "all"
+requires-dist: fugue[spark]>=0.8.1; extra == "all"
+requires-dist: plotly; extra == "all"
+requires-dist: plotly-resampler; extra == "all"
+requires-dist: polars[numpy]; extra == "all"
+requires-dist: black; extra == "all"
+requires-dist: datasetsforecast; extra == "all"
+requires-dist: fire; extra == "all"
+requires-dist: nbdev==2.3.25; extra == "all"
+requires-dist: nbformat; extra == "all"
+requires-dist: nbdev_plotly; extra == "all"
+requires-dist: pandas[plot]; extra == "all"
+requires-dist: pmdarima; extra == "all"
+requires-dist: polars[numpy]; extra == "all"
+requires-dist: pre-commit; extra == "all"
+requires-dist: prophet; extra == "all"
+requires-dist: pyarrow; extra == "all"
+requires-dist: pybind11; extra == "all"
+requires-dist: pytest; extra == "all"
+requires-dist: scikit-learn; extra == "all"
+requires-dist: setuptools<70; extra == "all"
+requires-dist: supersmoother; extra == "all"
+requires-dist: yfinance; extra == "all"
+requires-dist: fugue[ray]>=0.8.1; python_version < "3.12" and extra == "all"
+requires-dist: protobuf<4.0.0,>=3.15.3; python_version < "3.12" and extra == "all"
+requires-dist: numpy<2; python_version < "3.12" and extra == "all"
+requires-dist: pandas<2.2; python_version < "3.12" and extra == "all"
+requires-dist: ray<=2.10; python_version < "3.12" and extra == "all"
+requires-python: >=3.9
+provides-extra: dev
+provides-extra: dask
+provides-extra: ray
+provides-extra: spark
+provides-extra: plotly
+provides-extra: polars
+provides-extra: all
+

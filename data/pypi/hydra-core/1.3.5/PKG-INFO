@@ -1,0 +1,36 @@
+metadata-version: 2.4
+name: hydra-core
+version: 1.3.5
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: requires-dist
+dynamic: summary
+summary: A framework for elegantly configuring complex applications
+keywords: command-line configuration yaml tab-completion
+home-page: https://github.com/facebookresearch/hydra
+author: Omry Yadan
+author-email: omry@fb.com
+license: MIT
+license-file: LICENSE
+classifier: License :: OSI Approved :: MIT License
+classifier: Development Status :: 4 - Beta
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Operating System :: POSIX :: Linux
+classifier: Operating System :: MacOS
+classifier: Operating System :: Microsoft :: Windows
+requires-dist: omegaconf<2.4,>=2.2
+requires-dist: antlr4-python3-runtime==4.9.*
+requires-dist: importlib-resources; python_version < "3.9"
+requires-dist: packaging
+

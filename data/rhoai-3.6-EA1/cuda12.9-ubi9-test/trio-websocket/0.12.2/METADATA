@@ -1,0 +1,42 @@
+metadata-version: 2.4
+name: trio-websocket
+version: 0.12.2
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: keywords
+dynamic: license-file
+dynamic: project-url
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: WebSocket library for Trio
+keywords: websocket client server trio
+home-page: https://github.com/python-trio/trio-websocket
+author: Mark E. Haase
+author-email: mehaase@gmail.com
+license-file: LICENSE
+classifier: Development Status :: 3 - Alpha
+classifier: Intended Audience :: Developers
+classifier: Topic :: Software Development :: Libraries
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Typing :: Typed
+requires-dist: exceptiongroup; python_version < "3.11"
+requires-dist: outcome>=1.2.0
+requires-dist: trio>=0.11
+requires-dist: wsproto>=0.14
+requires-python: >=3.8
+project-url: Bug Reports, https://github.com/python-trio/trio-websocket/issues
+project-url: Source, https://github.com/python-trio/trio-websocket
+

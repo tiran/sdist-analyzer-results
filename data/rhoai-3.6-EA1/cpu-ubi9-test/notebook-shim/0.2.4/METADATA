@@ -1,0 +1,39 @@
+metadata-version: 2.5
+name: notebook_shim
+version: 0.2.4
+summary: A shim layer for notebook traits and config
+keywords: ipython,jupyter
+author-email: Jupyter Development Team <jupyter@googlegroups.com>
+license: BSD 3-Clause License
+                 
+                 Copyright (c) 2022 Project Jupyter Contributors
+                 All rights reserved.
+                 
+                 Redistribution and use in source and binary forms, with or without
+                 modification, are permitted provided that the following conditions are met:
+                 
+                 1. Redistributions of source code must retain the above copyright notice, this
+                    list of conditions and the following disclaimer.
+                 
+                 2. Redistributions in binary form must reproduce the ...
+license-file: LICENSE
+classifier: Framework :: Jupyter
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: Intended Audience :: System Administrators
+classifier: License :: OSI Approved :: BSD License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+requires-dist: jupyter-server<3,>=1.8
+requires-dist: pytest; extra == "test"
+requires-dist: pytest-console-scripts; extra == "test"
+requires-dist: pytest-jupyter; extra == "test"
+requires-dist: pytest-tornasync; extra == "test"
+requires-python: >=3.7
+provides-extra: test
+

@@ -1,0 +1,56 @@
+metadata-version: 2.4
+name: black
+version: 21.4b2
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: project-url
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: The uncompromising code formatter.
+keywords: automation formatter yapf autopep8 pyfmt gofmt rustfmt
+home-page: https://github.com/psf/black
+author: Łukasz Langa
+author-email: lukasz@langa.pl
+license: MIT
+license-file: LICENSE
+classifier: Development Status :: 4 - Beta
+classifier: Environment :: Console
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: Software Development :: Quality Assurance
+requires-dist: click>=7.1.2
+requires-dist: appdirs
+requires-dist: toml>=0.10.1
+requires-dist: typed-ast>=1.4.2; python_version < "3.8"
+requires-dist: regex>=2020.1.8
+requires-dist: pathspec<1,>=0.8.1
+requires-dist: dataclasses>=0.6; python_version < "3.7"
+requires-dist: typing_extensions>=3.7.4; python_version < "3.8"
+requires-dist: mypy_extensions>=0.4.3
+requires-dist: aiohttp>=3.3.2; extra == "d"
+requires-dist: aiohttp-cors; extra == "d"
+requires-dist: colorama>=0.4.3; extra == "colorama"
+requires-dist: typed-ast>=1.4.2; extra == "python2"
+requires-python: >=3.6.2
+project-url: Changelog, https://github.com/psf/black/blob/master/CHANGES.md
+provides-extra: d
+provides-extra: colorama
+provides-extra: python2
+

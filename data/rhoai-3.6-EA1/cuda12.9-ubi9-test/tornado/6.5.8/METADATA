@@ -1,0 +1,32 @@
+metadata-version: 2.4
+name: tornado
+version: 6.5.8
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: project-url
+dynamic: requires-python
+dynamic: summary
+summary: Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed.
+home-page: http://www.tornadoweb.org/
+author: Facebook
+author-email: python-tornado@googlegroups.com
+license: Apache-2.0
+license-file: LICENSE
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+requires-python: >=3.9
+project-url: Source, https://github.com/tornadoweb/tornado
+

@@ -1,0 +1,15 @@
+metadata-version: 2.1
+name: nanobind
+version: 2.14.0
+summary: nanobind: tiny and efficient C++/Python bindings
+author-email: Wenzel Jakob <wenzel.jakob@epfl.ch>
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: BSD License
+classifier: Programming Language :: C++
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: Utilities
+project-url: Homepage, https://github.com/wjakob/nanobind
+

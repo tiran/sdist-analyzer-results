@@ -1,0 +1,44 @@
+metadata-version: 2.4
+name: tacoreader
+version: 2.4.21
+summary: Query engine for AI-ready datasets.
+keywords: earth-observation,geospatial,machine-learning,satellite-imagery,remote-sensing,ai-ready-datasets,duckdb,stac
+author: Cesar Aybar
+author-email: cesar.aybar@uv.es
+license-expression: MIT
+license-file: LICENSE
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+classifier: Topic :: Scientific/Engineering :: GIS
+classifier: Typing :: Typed
+requires-dist: duckdb>=1.3.2
+requires-dist: numpy>=1.24; extra == "all"
+requires-dist: numpy>=1.24; extra == "stats"
+requires-dist: obstore>=0.8.1
+requires-dist: pandas>=2.0.0; extra == "all"
+requires-dist: pandas>=2.0.0; extra == "pandas"
+requires-dist: platformdirs<5.0.0,>=4.5.1
+requires-dist: polars>=1.0.0; extra == "all"
+requires-dist: polars>=1.0.0; extra == "polars"
+requires-dist: pyarrow>=21.0.0
+requires-dist: pydantic>=2.0
+requires-dist: tacozip>=0.11.4
+requires-dist: tqdm>=4.67.1
+requires-python: <3.14,>=3.10
+project-url: Bug Tracker, https://github.com/tacofoundation/tacoreader/issues
+project-url: Changelog, https://github.com/tacofoundation/tacoreader/releases
+project-url: Documentation, https://tacofoundation.github.io/tacoreader/
+project-url: Repository, https://github.com/tacofoundation/tacoreader
+provides-extra: all
+provides-extra: pandas
+provides-extra: polars
+provides-extra: stats
+

@@ -1,0 +1,4 @@
+changelog-chug
+setuptools>=62.4.0
+wheel
+docutils

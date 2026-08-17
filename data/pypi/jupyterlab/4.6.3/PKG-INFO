@@ -1,0 +1,95 @@
+metadata-version: 2.4
+name: jupyterlab
+version: 4.6.3
+summary: JupyterLab computational environment
+keywords: ipython,jupyter
+author-email: Jupyter Development Team <jupyter@googlegroups.com>
+license: Copyright (c) 2015-2025 Project Jupyter Contributors
+                 All rights reserved.
+                 
+                 Redistribution and use in source and binary forms, with or without
+                 modification, are permitted provided that the following conditions are met:
+                 
+                 1. Redistributions of source code must retain the above copyright notice, this
+                    list of conditions and the following disclaimer.
+                 
+                 2. Redistributions in binary form must reproduce the above copyright notice,
+                  ...
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Framework :: Jupyter
+classifier: Framework :: Jupyter :: JupyterLab
+classifier: Framework :: Jupyter :: JupyterLab :: 4
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: Intended Audience :: System Administrators
+classifier: License :: OSI Approved :: BSD License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-dist: async-lru>=1.0.0
+requires-dist: httpx<1,>=0.25.0
+requires-dist: ipykernel!=6.30.0,>=6.5.0
+requires-dist: jinja2>=3.0.3
+requires-dist: jupyter-builder>=1.0.2
+requires-dist: jupyter-core
+requires-dist: jupyter-lsp>=2.0.0
+requires-dist: jupyter-server<3,>=2.19.0
+requires-dist: jupyterlab-server<3,>=2.28.0
+requires-dist: notebook-shim>=0.2
+requires-dist: packaging>=23.2
+requires-dist: tomli>=1.2.2; python_version < "3.11"
+requires-dist: tornado>=6.2.0
+requires-dist: traitlets
+requires-dist: typing-extensions>=4.4.0; python_version < "3.12"
+requires-dist: build; extra == "dev"
+requires-dist: bump2version; extra == "dev"
+requires-dist: coverage; extra == "dev"
+requires-dist: hatch; extra == "dev"
+requires-dist: pre-commit; extra == "dev"
+requires-dist: pytest-cov; extra == "dev"
+requires-dist: ruff==0.15.15; extra == "dev"
+requires-dist: shellcheck-py; extra == "dev"
+requires-dist: altair==6.0.0; extra == "docs-screenshots"
+requires-dist: ipykernel<7.0; extra == "docs-screenshots"
+requires-dist: ipython==8.16.1; extra == "docs-screenshots"
+requires-dist: ipywidgets==8.1.5; extra == "docs-screenshots"
+requires-dist: jupyterlab-geojson==3.4.0; extra == "docs-screenshots"
+requires-dist: jupyterlab-language-pack-zh-cn==4.3.post1; extra == "docs-screenshots"
+requires-dist: matplotlib==3.10.0; extra == "docs-screenshots"
+requires-dist: nbconvert>=7.0.0; extra == "docs-screenshots"
+requires-dist: pandas==2.2.3; extra == "docs-screenshots"
+requires-dist: scipy==1.15.1; extra == "docs-screenshots"
+requires-dist: coverage; extra == "test"
+requires-dist: pytest-check-links>=0.7; extra == "test"
+requires-dist: pytest-console-scripts; extra == "test"
+requires-dist: pytest-cov; extra == "test"
+requires-dist: pytest-jupyter>=0.5.3; extra == "test"
+requires-dist: pytest-timeout; extra == "test"
+requires-dist: pytest-tornasync; extra == "test"
+requires-dist: pytest-xdist; extra == "test"
+requires-dist: pytest>=7.0; extra == "test"
+requires-dist: requests; extra == "test"
+requires-dist: requests-cache; extra == "test"
+requires-dist: virtualenv; extra == "test"
+requires-dist: copier<10,>=9; extra == "upgrade-extension"
+requires-dist: jinja2-time<0.3; extra == "upgrade-extension"
+requires-dist: pydantic<3.0; extra == "upgrade-extension"
+requires-dist: pyyaml-include<3.0; extra == "upgrade-extension"
+requires-dist: tomli-w<2.0; extra == "upgrade-extension"
+requires-python: >=3.10
+project-url: Homepage, https://jupyter.org
+project-url: Changelog, https://jupyterlab.readthedocs.io/en/stable/getting_started/changelog.html
+project-url: Documentation, https://jupyterlab.readthedocs.io
+project-url: Source, https://github.com/jupyterlab/jupyterlab
+project-url: Issues, https://github.com/jupyterlab/jupyterlab/issues/new/choose
+project-url: Zulip, https://jupyter.zulipchat.com/#narrow/channel/469762-jupyterlab
+project-url: Pypi, https://pypi.org/project/jupyterlab
+provides-extra: dev
+provides-extra: docs-screenshots
+provides-extra: test
+provides-extra: upgrade-extension
+

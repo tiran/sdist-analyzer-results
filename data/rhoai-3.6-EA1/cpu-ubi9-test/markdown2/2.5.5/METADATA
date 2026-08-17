@@ -1,0 +1,51 @@
+metadata-version: 2.4
+name: markdown2
+version: 2.5.5
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: maintainer
+dynamic: maintainer-email
+dynamic: platform
+dynamic: provides-extra
+dynamic: requires-python
+dynamic: summary
+platform: any
+summary: A fast and complete Python implementation of Markdown
+home-page: https://github.com/trentm/python-markdown2
+author: Trent Mick
+author-email: trentm@gmail.com
+maintainer: Trent Mick
+maintainer-email: trentm@gmail.com
+license: MIT
+license-file: LICENSE.txt
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Operating System :: OS Independent
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: Software Development :: Documentation
+classifier: Topic :: Text Processing :: Filters
+classifier: Topic :: Text Processing :: Markup :: HTML
+requires-dist: pygments>=2.7.3; extra == "code-syntax-highlighting"
+requires-dist: wavedrom; extra == "wavedrom"
+requires-dist: latex2mathml; python_version >= "3.8.1" and extra == "latex"
+requires-dist: pygments>=2.7.3; extra == "all"
+requires-dist: wavedrom; extra == "all"
+requires-dist: latex2mathml; python_version >= "3.8.1" and extra == "all"
+requires-python: <4,>=3.9
+provides-extra: code-syntax-highlighting
+provides-extra: wavedrom
+provides-extra: latex
+provides-extra: all
+

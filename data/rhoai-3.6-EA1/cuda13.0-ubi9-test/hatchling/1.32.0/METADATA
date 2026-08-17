@@ -1,0 +1,34 @@
+metadata-version: 2.5
+name: hatchling
+version: 1.32.0
+summary: Modern, extensible Python build backend
+keywords: build,hatch,packaging
+author-email: Ofek Lev <oss@ofek.dev>
+license-expression: MIT
+license-file: LICENSE.txt
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Natural Language :: English
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Software Development :: Build Tools
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: packaging>=24.2
+requires-dist: pathspec>=0.10.1
+requires-dist: pluggy>=1.0.0
+requires-dist: tomli>=1.2.2; python_version < "3.11"
+requires-dist: tomlkit>=0.11.1
+requires-dist: trove-classifiers
+requires-python: >=3.10
+project-url: Homepage, https://hatch.pypa.io/latest/
+project-url: Sponsor, https://github.com/sponsors/ofek
+project-url: History, https://hatch.pypa.io/dev/history/hatchling/
+project-url: Tracker, https://github.com/pypa/hatch/issues
+project-url: Source, https://github.com/pypa/hatch/tree/master/backend
+

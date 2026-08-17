@@ -1,0 +1,19 @@
+metadata-version: 2.4
+name: onnx-ir
+version: 1.0.0
+dynamic: license-file
+summary: Efficient in-memory representation for ONNX
+author-email: ONNX Contributors <onnx-technical-discuss@lists.lfaidata.foundation>
+license-expression: Apache-2.0
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+requires-dist: numpy
+requires-dist: onnx>=1.16
+requires-dist: typing_extensions>=4.10
+requires-dist: ml_dtypes>=0.5.0
+requires-dist: sympy>=1.13
+requires-python: >=3.9
+project-url: Homepage, https://onnx.ai/ir-py
+project-url: Issues, https://github.com/onnx/ir-py/issues
+project-url: Repository, https://github.com/onnx/ir-py
+

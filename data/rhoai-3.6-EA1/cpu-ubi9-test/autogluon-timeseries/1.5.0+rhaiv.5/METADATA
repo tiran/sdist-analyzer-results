@@ -1,0 +1,83 @@
+metadata-version: 2.4
+name: autogluon.timeseries
+version: 1.5.0+rhaiv.5
+dynamic: author
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: license
+dynamic: project-url
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: Fast and Accurate ML in 3 Lines of Code
+home-page: https://github.com/autogluon/autogluon
+author: AutoGluon Community
+license: Apache-2.0
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Education
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: Intended Audience :: Customer Service
+classifier: Intended Audience :: Financial and Insurance Industry
+classifier: Intended Audience :: Healthcare Industry
+classifier: Intended Audience :: Telecommunications Industry
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: MacOS
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: POSIX
+classifier: Operating System :: Unix
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Topic :: Software Development
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+classifier: Topic :: Scientific/Engineering :: Information Analysis
+classifier: Topic :: Scientific/Engineering :: Image Recognition
+requires-dist: joblib<1.7,>=1.2
+requires-dist: numpy<2.4.0,>=1.25.0
+requires-dist: scipy<1.17,>=1.5.4
+requires-dist: pandas<2.4.0,>=2.0.0
+requires-dist: torch<2.12,>=2.6
+requires-dist: lightning<2.8,>=2.5.1
+requires-dist: transformers[sentencepiece]<6,>=5.10.1
+requires-dist: accelerate<2.0,>=0.34.0
+requires-dist: gluonts<0.17,>=0.15.0
+requires-dist: networkx<4,>=3.0
+requires-dist: statsforecast<2.0.2,>=1.7.0
+requires-dist: mlforecast<0.15.0,>=0.14.0
+requires-dist: utilsforecast<0.2.12,>=0.2.3
+requires-dist: coreforecast<0.0.17,>=0.0.12
+requires-dist: fugue>=0.9.0
+requires-dist: tqdm<5,>=4.38
+requires-dist: orjson~=3.9
+requires-dist: einops<1,>=0.7
+requires-dist: chronos-forecasting<2.4,>=2.2.2
+requires-dist: peft<0.20,>=0.18.1
+requires-dist: tensorboard<3,>=2.9
+requires-dist: autogluon.core==1.5.0+rhaiv.5
+requires-dist: autogluon.common==1.5.0+rhaiv.5
+requires-dist: autogluon.features==1.5.0+rhaiv.5
+requires-dist: autogluon.tabular[lightgbm,xgboost]==1.5.0+rhaiv.5
+requires-dist: autogluon.tabular[catboost]==1.5.0+rhaiv.5; extra == "catboost"
+requires-dist: pytest; extra == "tests"
+requires-dist: ruff>=0.0.285; extra == "tests"
+requires-dist: flaky<4,>=3.7; extra == "tests"
+requires-dist: pytest-timeout<3,>=2.1; extra == "tests"
+requires-dist: autogluon.core[raytune]==1.5.0+rhaiv.5; extra == "ray"
+requires-dist: autogluon.tabular[catboost]==1.5.0+rhaiv.5; extra == "all"
+requires-dist: autogluon.core[raytune]==1.5.0+rhaiv.5; extra == "all"
+requires-python: <3.14,>=3.10
+project-url: Documentation, https://auto.gluon.ai
+project-url: Bug Reports, https://github.com/autogluon/autogluon/issues
+project-url: Source, https://github.com/autogluon/autogluon/
+project-url: Contribute!, https://github.com/autogluon/autogluon/blob/master/CONTRIBUTING.md
+provides-extra: catboost
+provides-extra: tests
+provides-extra: ray
+provides-extra: all
+

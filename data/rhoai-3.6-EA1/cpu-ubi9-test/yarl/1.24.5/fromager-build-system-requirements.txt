@@ -1,4 +1,4 @@
 expandvars
-setuptools>=47
 Cython>=3.0.0
+setuptools>=47
 setuptools

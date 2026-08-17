@@ -1,0 +1,38 @@
+metadata-version: 2.4
+name: sqlitedict
+version: 2.1.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: download-url
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: maintainer
+dynamic: maintainer-email
+dynamic: platform
+dynamic: summary
+platform: any
+summary: Persistent dict in Python, backed up by sqlite3 and pickle, multithread-safe.
+keywords: sqlite,persistent dict,multithreaded
+home-page: https://github.com/piskvorky/sqlitedict
+download-url: http://pypi.python.org/pypi/sqlitedict
+author: Radim Rehurek, Victor R. Escobar, Andrey Usov, Prasanna Swaminathan, Jeff Quast
+author-email: me@radimrehurek.com
+maintainer: Radim Rehurek
+maintainer-email: me@radimrehurek.com
+license: Apache 2.0
+license-file: LICENSE.md
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Topic :: Database :: Front-Ends
+

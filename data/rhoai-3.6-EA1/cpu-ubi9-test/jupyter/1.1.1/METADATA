@@ -1,0 +1,36 @@
+metadata-version: 2.4
+name: jupyter
+version: 1.1.1
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: requires-dist
+dynamic: summary
+summary: Jupyter metapackage. Install all the Jupyter components in one go.
+home-page: https://jupyter.org
+author: Jupyter Development Team
+author-email: jupyter@googlegroups.org
+license: BSD
+license-file: LICENSE
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: System Administrators
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: BSD License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+requires-dist: notebook
+requires-dist: jupyter-console
+requires-dist: nbconvert
+requires-dist: ipykernel
+requires-dist: ipywidgets
+requires-dist: jupyterlab
+

@@ -1,0 +1,26 @@
+metadata-version: 2.4
+name: kubeflow_spark_api
+version: 2.4.0
+summary: Kubeflow Spark Operator API models for Kubernetes resources to interact with Kubeflow APIs.
+keywords: api,data-processing,kubeflow,spark,spark-operator
+author-email: The Kubeflow Authors <kubeflow-discuss@googlegroups.com>
+license-expression: Apache-2.0
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Education
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Topic :: Scientific/Engineering
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+classifier: Topic :: Software Development
+classifier: Topic :: Software Development :: Libraries
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: pydantic>=2.10.0
+requires-python: >=3.9
+project-url: Homepage, https://github.com/kubeflow/spark-operator
+project-url: Documentation, https://www.kubeflow.org/docs/components/spark-operator/
+project-url: Source, https://github.com/kubeflow/spark-operator
+

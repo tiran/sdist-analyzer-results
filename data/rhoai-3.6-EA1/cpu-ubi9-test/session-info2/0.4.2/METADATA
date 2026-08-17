@@ -1,0 +1,24 @@
+metadata-version: 2.5
+name: session-info2
+version: 0.4.2
+summary: Print versions of imported packages.
+keywords: jupyter,session-info
+author-email: "Philipp A." <flying-sheep@web.de>
+license-expression: MPL-2.0
+license-file: LICENSE.rst
+classifier: Development Status :: 4 - Beta
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Typing :: Typed
+requires-dist: ipywidgets; extra == "jupyter"
+requires-python: >=3.12
+project-url: Documentation, https://session-info2.readthedocs.io/
+project-url: Issues, https://github.com/flying-sheep/session-info2/issues
+project-url: Source, https://github.com/flying-sheep/session-info2
+provides-extra: jupyter
+

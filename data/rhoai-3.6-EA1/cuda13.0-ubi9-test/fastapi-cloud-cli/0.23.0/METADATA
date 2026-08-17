@@ -1,0 +1,45 @@
+metadata-version: 2.1
+name: fastapi-cloud-cli
+version: 0.23.0
+summary: Deploy and manage FastAPI Cloud apps from the command line 🚀
+author-email: Patrick Arminio <patrick@fastapilabs.com>
+license: MIT
+classifier: Intended Audience :: Information Technology
+classifier: Intended Audience :: System Administrators
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python
+classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: Software Development :: Libraries
+classifier: Topic :: Software Development
+classifier: Typing :: Typed
+classifier: Development Status :: 4 - Beta
+classifier: Framework :: FastAPI
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+requires-dist: typer>=0.16.0
+requires-dist: uvicorn[standard]>=0.17.6
+requires-dist: rignore>=0.5.1
+requires-dist: httpx>=0.27.0
+requires-dist: rich-toolkit>=0.20.3
+requires-dist: pydantic[email]>=2.7.4; python_version < "3.13"
+requires-dist: pydantic[email]>=2.8.0; python_version == "3.13"
+requires-dist: pydantic[email]>=2.12.0; python_version >= "3.14"
+requires-dist: sentry-sdk>=2.20.0
+requires-dist: fastar>=0.10.0
+requires-dist: detect-installer>=0.1.0
+requires-dist: uvicorn[standard]>=0.15.0; extra == "standard"
+requires-python: >=3.10
+project-url: Homepage, https://github.com/fastapilabs/fastapi-cloud-cli
+project-url: Documentation, https://fastapi.tiangolo.com/fastapi-cloud-cli/
+project-url: Repository, https://github.com/fastapilabs/fastapi-cloud-cli
+project-url: Issues, https://github.com/fastapilabs/fastapi-cloud-cli/issues
+project-url: Changelog, https://github.com/fastapilabs/fastapi-cloud-cli/blob/main/release-notes.md
+provides-extra: standard
+

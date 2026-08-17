@@ -1,0 +1,37 @@
+metadata-version: 2.4
+name: importlib_resources
+version: 7.1.0
+dynamic: license-file
+summary: Read resources from Python packages
+author-email: Barry Warsaw <barry@python.org>
+maintainer-email: "Jason R. Coombs" <jaraco@jaraco.com>
+license-expression: Apache-2.0
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+requires-dist: zipp>=3.1.0; python_version < "3.10"
+requires-dist: pytest!=8.1.*,>=6; extra == "test"
+requires-dist: zipp>=3.17; extra == "test"
+requires-dist: jaraco.test>=5.4; extra == "test"
+requires-dist: sphinx>=3.5; extra == "doc"
+requires-dist: jaraco.packaging>=9.3; extra == "doc"
+requires-dist: rst.linker>=1.9; extra == "doc"
+requires-dist: furo; extra == "doc"
+requires-dist: sphinx-lint; extra == "doc"
+requires-dist: jaraco.tidelift>=1.4; extra == "doc"
+requires-dist: pytest-checkdocs>=2.14; extra == "check"
+requires-dist: pytest-ruff>=0.2.1; sys_platform != "cygwin" and extra == "check"
+requires-dist: pytest-cov; extra == "cover"
+requires-dist: pytest-enabler>=3.4; extra == "enabler"
+requires-dist: pytest-mypy>=1.0.1; platform_python_implementation != "PyPy" and extra == "type"
+requires-python: >=3.10
+project-url: Source, https://github.com/python/importlib_resources
+provides-extra: test
+provides-extra: doc
+provides-extra: check
+provides-extra: cover
+provides-extra: enabler
+provides-extra: type
+

@@ -1,0 +1,48 @@
+metadata-version: 2.4
+name: Faker
+version: 40.28.1
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: platform
+dynamic: project-url
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+platform: any
+summary: Faker is a Python package that generates fake data for you.
+keywords: faker fixtures data test mock generator
+home-page: https://github.com/joke2k/faker
+author: joke2k
+author-email: joke2k@gmail.com
+license: MIT License
+license-file: LICENSE.txt
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: Software Development :: Testing
+classifier: Topic :: Utilities
+classifier: License :: OSI Approved :: MIT License
+requires-dist: tzdata; platform_system == "Windows"
+requires-dist: tzdata; extra == "tzdata"
+requires-python: >=3.10
+project-url: Bug Tracker, https://github.com/joke2k/faker/issues
+project-url: Changes, https://github.com/joke2k/faker/blob/master/CHANGELOG.md
+project-url: Documentation, http://faker.rtfd.org/
+project-url: Source Code, https://github.com/joke2k/faker
+provides-extra: tzdata
+

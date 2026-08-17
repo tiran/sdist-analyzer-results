@@ -1,0 +1,103 @@
+metadata-version: 2.4
+name: lightly
+version: 1.5.26
+dynamic: license-file
+summary: A deep learning package for self-supervised learning
+author-email: Lightly Team <team@lightly.ai>
+license: Copyright (c) 2018 The Python Packaging Authority
+                 
+                 Permission is hereby granted, free of charge, to any person obtaining a copy
+                 of this software and associated documentation files (the "Software"), to deal
+                 in the Software without restriction, including without limitation the rights
+                 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+                 copies of the Software, and to permit persons to whom the Software is
+                 furnished to do so, subjec...
+license-file: LICENSE.txt
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Education
+classifier: Intended Audience :: Science/Research
+classifier: Topic :: Scientific/Engineering
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+classifier: Topic :: Scientific/Engineering :: Image Processing
+classifier: Topic :: Scientific/Engineering :: Mathematics
+classifier: Topic :: Software Development
+classifier: Topic :: Software Development :: Libraries
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: License :: OSI Approved :: MIT License
+requires-dist: certifi>=14.05.14
+requires-dist: hydra-core>=1.0.0
+requires-dist: lightly_utils~=0.0.0
+requires-dist: numpy>=1.18.1
+requires-dist: python_dateutil>=2.5.3
+requires-dist: requests>=2.27.0
+requires-dist: six>=1.10
+requires-dist: tqdm>=4.44
+requires-dist: torch
+requires-dist: torchvision
+requires-dist: pydantic>=1.10.5
+requires-dist: pytorch_lightning>=1.0.4
+requires-dist: urllib3>=1.25.3
+requires-dist: aenum>=3.1.11
+requires-dist: lightly[dev,matplotlib,minimal,timm,video]; extra == "all"
+requires-dist: sphinx; extra == "dev"
+requires-dist: pytest; extra == "dev"
+requires-dist: pytest-forked; extra == "dev"
+requires-dist: pytest-xdist; extra == "dev"
+requires-dist: pytest-mock; extra == "dev"
+requires-dist: responses; extra == "dev"
+requires-dist: docutils<=0.16; extra == "dev"
+requires-dist: sphinx-copybutton; extra == "dev"
+requires-dist: sphinx-design; extra == "dev"
+requires-dist: sphinx-gallery; extra == "dev"
+requires-dist: sphinx-tabs; extra == "dev"
+requires-dist: sphinx-reredirects; extra == "dev"
+requires-dist: sphinx_rtd_theme; extra == "dev"
+requires-dist: matplotlib; extra == "dev"
+requires-dist: pre-commit; extra == "dev"
+requires-dist: opencv-python; extra == "dev"
+requires-dist: scikit-learn; extra == "dev"
+requires-dist: pandas; extra == "dev"
+requires-dist: toml; extra == "dev"
+requires-dist: torchmetrics; extra == "dev"
+requires-dist: ruff==0.12.7; extra == "dev"
+requires-dist: mypy==1.4.1; extra == "dev"
+requires-dist: types-python-dateutil; extra == "dev"
+requires-dist: types-toml; extra == "dev"
+requires-dist: types-requests; extra == "dev"
+requires-dist: types-PyYAML; extra == "dev"
+requires-dist: nbformat; extra == "dev"
+requires-dist: jupytext; extra == "dev"
+requires-dist: torch>=1.10.0; extra == "minimal"
+requires-dist: torchvision>=0.11.0; extra == "minimal"
+requires-dist: pytorch_lightning>=1.6; extra == "minimal"
+requires-dist: python_dateutil>=2.5.3; extra == "openapi"
+requires-dist: setuptools>=21.0.0; extra == "openapi"
+requires-dist: urllib3>=1.25.3; extra == "openapi"
+requires-dist: pydantic>=1.10.5; extra == "openapi"
+requires-dist: aenum>=3.1.11; extra == "openapi"
+requires-dist: timm>=0.9.9; extra == "timm"
+requires-dist: av>=8.0.3; python_version >= "3.8" and extra == "video"
+requires-dist: matplotlib>=3; extra == "matplotlib"
+requires-python: >=3.6
+project-url: Homepage, https://www.lightly.ai
+project-url: Web-App, https://app.lightly.ai
+project-url: Documentation, https://docs.lightly.ai
+project-url: Github, https://github.com/lightly-ai/lightly
+project-url: Discord, https://discord.gg/xvNJW94
+provides-extra: all
+provides-extra: dev
+provides-extra: minimal
+provides-extra: openapi
+provides-extra: timm
+provides-extra: video
+provides-extra: matplotlib
+

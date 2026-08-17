@@ -1,0 +1,39 @@
+metadata-version: 2.4
+name: pandas
+version: 1.5.3
+dynamic: license-file
+platform: any
+summary: Powerful data structures for data analysis, time series, and statistics
+home-page: https://pandas.pydata.org
+author: The Pandas Development Team
+author-email: pandas-dev@python.org
+license: BSD-3-Clause
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: BSD License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Cython
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Topic :: Scientific/Engineering
+requires-dist: numpy>=1.20.3; python_version < "3.10"
+requires-dist: numpy>=1.21.0; python_version >= "3.10"
+requires-dist: numpy>=1.23.2; python_version >= "3.11"
+requires-dist: python-dateutil>=2.8.1
+requires-dist: pytz>=2020.1
+requires-dist: hypothesis>=5.5.3; extra == "test"
+requires-dist: pytest>=6.0; extra == "test"
+requires-dist: pytest-xdist>=1.31; extra == "test"
+requires-python: >=3.8
+project-url: Bug Tracker, https://github.com/pandas-dev/pandas/issues
+project-url: Documentation, https://pandas.pydata.org/docs/
+project-url: Source Code, https://github.com/pandas-dev/pandas
+provides-extra: test
+

@@ -1,0 +1,50 @@
+metadata-version: 2.3
+name: openai
+version: 2.54.0
+summary: The official Python library for the openai API
+author-email: OpenAI <support@openai.com>
+license: Apache-2.0
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: MacOS
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: OS Independent
+classifier: Operating System :: POSIX
+classifier: Operating System :: POSIX :: Linux
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Typing :: Typed
+requires-dist: anyio<5,>=3.5.0
+requires-dist: distro<2,>=1.7.0
+requires-dist: httpx<1,>=0.23.0
+requires-dist: jiter<1,>=0.10.0
+requires-dist: pydantic<3,>=1.9.0
+requires-dist: sniffio
+requires-dist: tqdm>4
+requires-dist: typing-extensions<5,>=4.14
+requires-dist: aiohttp>=3.14.1; extra == "aiohttp"
+requires-dist: httpx-aiohttp>=0.1.9; extra == "aiohttp"
+requires-dist: botocore<2,>=1.40.0; extra == "bedrock"
+requires-dist: numpy>=1; extra == "datalib"
+requires-dist: pandas-stubs>=1.1.0.11; extra == "datalib"
+requires-dist: pandas>=1.2.3; extra == "datalib"
+requires-dist: anyio<5,>=4.10.0; extra == "httpx2"
+requires-dist: httpx2<3,>=2.7.0; extra == "httpx2"
+requires-dist: httpx<1,>=0.25.1; extra == "httpx2"
+requires-dist: websockets<16,>=13; extra == "realtime"
+requires-dist: numpy>=2.0.2; extra == "voice-helpers"
+requires-dist: sounddevice>=0.5.1; extra == "voice-helpers"
+requires-python: >=3.10
+project-url: Homepage, https://github.com/openai/openai-python
+project-url: Repository, https://github.com/openai/openai-python
+provides-extra: aiohttp
+provides-extra: bedrock
+provides-extra: datalib
+provides-extra: httpx2
+provides-extra: realtime
+provides-extra: voice-helpers
+

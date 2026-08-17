@@ -1,0 +1,36 @@
+metadata-version: 2.4
+name: adagio
+version: 0.2.6
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: The Dag IO Framework for Fugue projects
+keywords: adagio dag directed acyclic graph workflow
+home-page: http://github.com/fugue-project/adagio
+author: Han Wang
+author-email: goodwanghan@gmail.com
+license: Apache-2.0
+license-file: LICENSE
+classifier: Development Status :: 3 - Alpha
+classifier: Intended Audience :: Developers
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3 :: Only
+requires-dist: triad>=0.6.1
+requires-python: >=3.8
+

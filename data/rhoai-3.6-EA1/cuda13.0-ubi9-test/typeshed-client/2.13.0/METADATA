@@ -1,0 +1,39 @@
+metadata-version: 2.4
+name: typeshed_client
+version: 2.13.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: project-url
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: A library for accessing stubs in typeshed.
+keywords: typeshed typing annotations
+home-page: https://github.com/JelleZijlstra/typeshed_client
+author: Jelle Zijlstra
+author-email: jelle.zijlstra@gmail.com
+license: MIT
+license-file: LICENSE
+classifier: Development Status :: 3 - Alpha
+classifier: Environment :: Console
+classifier: Intended Audience :: Developers
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Software Development
+requires-dist: typing-extensions>=4.5.0
+requires-python: >=3.9
+project-url: Bug Tracker, https://github.com/JelleZijlstra/typeshed_client/issues
+

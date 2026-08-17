@@ -1,2 +1,0 @@
-libtvm_ffi.so()(64bit)
-libtvm_ffi_testing.so()(64bit)

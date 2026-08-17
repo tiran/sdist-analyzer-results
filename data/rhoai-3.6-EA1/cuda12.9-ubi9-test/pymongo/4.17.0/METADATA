@@ -1,0 +1,62 @@
+metadata-version: 2.5
+name: pymongo
+version: 4.17.0
+summary: PyMongo - the Official MongoDB Python driver
+keywords: bson,gridfs,mongo,mongodb,pymongo
+author: The MongoDB Python Team
+license-expression: Apache-2.0
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: POSIX
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Database
+classifier: Typing :: Typed
+requires-dist: dnspython<3.0.0,>=2.6.1
+requires-dist: pymongo-auth-aws<2.0.0,>=1.1.0; extra == "aws"
+requires-dist: furo==2025.12.19; extra == "docs"
+requires-dist: readthedocs-sphinx-search~=0.3; extra == "docs"
+requires-dist: sphinx-autobuild>=2020.9.1; extra == "docs"
+requires-dist: sphinx-rtd-theme<4,>=2; extra == "docs"
+requires-dist: sphinx<9,>=5.3; extra == "docs"
+requires-dist: sphinxcontrib-shellcheck<2,>=1; extra == "docs"
+requires-dist: certifi>=2023.7.22; (os_name == "nt" or sys_platform == "darwin") and extra == "encryption"
+requires-dist: pymongo-auth-aws<2.0.0,>=1.1.0; extra == "encryption"
+requires-dist: pymongocrypt<2.0.0,>=1.13.0; extra == "encryption"
+requires-dist: pykerberos>=1.2.4; os_name != "nt" and extra == "gssapi"
+requires-dist: winkerberos>=0.5.0; os_name == "nt" and extra == "gssapi"
+requires-dist: certifi>=2023.7.22; (os_name == "nt" or sys_platform == "darwin") and extra == "ocsp"
+requires-dist: cryptography>=42.0.0; extra == "ocsp"
+requires-dist: pyopenssl>=23.2.0; extra == "ocsp"
+requires-dist: requests<3.0,>=2.23.0; extra == "ocsp"
+requires-dist: service-identity>=23.1.0; extra == "ocsp"
+requires-dist: python-snappy>=0.6.0; extra == "snappy"
+requires-dist: importlib-metadata>=7.0; python_version < "3.13" and extra == "test"
+requires-dist: pytest-asyncio>=0.24.0; extra == "test"
+requires-dist: pytest>=8.2; extra == "test"
+requires-dist: backports-zstd>=1.0.0; python_version < "3.14" and extra == "zstd"
+requires-python: >=3.9
+project-url: Homepage, https://www.mongodb.org
+project-url: Documentation, https://www.mongodb.com/docs/languages/python/pymongo-driver/current/
+project-url: Source, https://github.com/mongodb/mongo-python-driver
+project-url: Tracker, https://jira.mongodb.org/projects/PYTHON/issues
+provides-extra: aws
+provides-extra: docs
+provides-extra: encryption
+provides-extra: gssapi
+provides-extra: ocsp
+provides-extra: snappy
+provides-extra: test
+provides-extra: zstd
+

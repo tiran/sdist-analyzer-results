@@ -1,0 +1,57 @@
+metadata-version: 2.4
+name: smart_open
+version: 7.6.1
+dynamic: license-file
+summary: Utils for streaming large files (S3, HDFS, GCS, SFTP, Azure Blob Storage, gzip, bz2, zst...)
+author-email: Radim Rehurek <me@radimrehurek.com>
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: System :: Distributed Computing
+classifier: Topic :: Database :: Front-Ends
+requires-dist: wrapt
+requires-dist: boto3>=1.9.17; extra == "s3"
+requires-dist: google-cloud-storage>=2.6.0; extra == "gcs"
+requires-dist: google-api-core<2.28; python_version < "3.10" and extra == "gcs"
+requires-dist: azure-storage-blob>=12.7.0; extra == "azure"
+requires-dist: azure-common; extra == "azure"
+requires-dist: azure-core; extra == "azure"
+requires-dist: requests; extra == "http"
+requires-dist: requests; extra == "webhdfs"
+requires-dist: paramiko; extra == "ssh"
+requires-dist: backports.zstd>=1.0.0; python_version < "3.14" and extra == "zst"
+requires-dist: smart_open[azure,gcs,http,s3,ssh,webhdfs,zst]; extra == "all"
+requires-dist: smart_open[all]; extra == "test"
+requires-dist: moto[server]; extra == "test"
+requires-dist: responses; extra == "test"
+requires-dist: pytest; extra == "test"
+requires-dist: pytest-rerunfailures; extra == "test"
+requires-dist: pytest_benchmark; extra == "test"
+requires-dist: pytest-timeout; extra == "test"
+requires-dist: pytest-xdist[psutil]; extra == "test"
+requires-dist: awscli; extra == "test"
+requires-dist: pyopenssl; extra == "test"
+requires-dist: numpy; extra == "test"
+requires-dist: flake8; extra == "test"
+requires-python: <4.0,>=3.10
+project-url: Repository, https://github.com/piskvorky/smart_open
+provides-extra: s3
+provides-extra: gcs
+provides-extra: azure
+provides-extra: http
+provides-extra: webhdfs
+provides-extra: ssh
+provides-extra: zst
+provides-extra: all
+provides-extra: test
+

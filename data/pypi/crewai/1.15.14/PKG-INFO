@@ -1,0 +1,84 @@
+metadata-version: 2.4
+name: crewai
+version: 1.15.14
+summary: Cutting-edge framework for orchestrating role-playing, autonomous AI agents. By fostering collaborative intelligence, CrewAI empowers agents to work together seamlessly, tackling complex tasks.
+author-email: Joao Moura <joao@crewai.com>
+requires-dist: aiofiles~=24.1.0
+requires-dist: aiosqlite~=0.21.0
+requires-dist: appdirs~=1.4.4
+requires-dist: cel-python<0.6,>=0.5.0
+requires-dist: chromadb~=1.1.0
+requires-dist: click<9,>=8.1.7
+requires-dist: crewai-cli==1.15.14
+requires-dist: crewai-core==1.15.14
+requires-dist: httpx~=0.28.1
+requires-dist: instructor>=1.3.3
+requires-dist: json-repair~=0.60.1
+requires-dist: json5~=0.10.0
+requires-dist: jsonref~=1.1.0
+requires-dist: lancedb<0.30.1,>=0.29.2
+requires-dist: mcp~=1.28.1
+requires-dist: openai<3,>=2.30.0
+requires-dist: openpyxl~=3.1.5
+requires-dist: opentelemetry-api~=1.42.0
+requires-dist: opentelemetry-exporter-otlp-proto-http~=1.42.0
+requires-dist: opentelemetry-sdk~=1.42.0
+requires-dist: pdfplumber~=0.11.4
+requires-dist: portalocker~=2.7.0
+requires-dist: pydantic-settings<3,>=2.14.2
+requires-dist: pydantic<2.13,>=2.11.9
+requires-dist: pyjwt<3,>=2.13.0
+requires-dist: python-dotenv<2,>=1.2.2
+requires-dist: pyyaml~=6.0
+requires-dist: regex~=2026.1.15
+requires-dist: tokenizers<1,>=0.21
+requires-dist: tomli-w~=1.1.0
+requires-dist: tomli~=2.0.2
+requires-dist: a2a-sdk~=0.3.10; extra == "a2a"
+requires-dist: aiocache[memcached,redis]~=0.12.3; extra == "a2a"
+requires-dist: httpx-auth~=0.23.1; extra == "a2a"
+requires-dist: httpx-sse~=0.4.0; extra == "a2a"
+requires-dist: anthropic~=0.73.0; extra == "anthropic"
+requires-dist: aiobotocore~=3.8.0; extra == "aws"
+requires-dist: boto3~=1.43.46; extra == "aws"
+requires-dist: azure-ai-inference~=1.0.0b9; extra == "azure-ai-inference"
+requires-dist: azure-identity<2,>=1.17.0; extra == "azure-ai-inference"
+requires-dist: aiobotocore~=3.8.0; extra == "bedrock"
+requires-dist: boto3~=1.43.46; extra == "bedrock"
+requires-dist: docling-core[chunking]>=2.74.1; extra == "docling"
+requires-dist: docling~=2.97.0; extra == "docling"
+requires-dist: tiktoken<0.13,>=0.8.0; extra == "embeddings"
+requires-dist: crewai-files; extra == "file-processing"
+requires-dist: google-genai~=1.65.0; extra == "google-genai"
+requires-dist: litellm<2,>=1.84.0; extra == "litellm"
+requires-dist: mem0ai<3,>=2.0.0; extra == "mem0"
+requires-dist: openpyxl~=3.1.5; extra == "openpyxl"
+requires-dist: pandas~=2.2.3; extra == "pandas"
+requires-dist: qdrant-client[fastembed]~=1.14.3; extra == "qdrant"
+requires-dist: qdrant-edge-py>=0.6.0; extra == "qdrant-edge"
+requires-dist: crewai-tools==1.15.14; extra == "tools"
+requires-dist: voyageai~=0.3.5; extra == "voyageai"
+requires-dist: ibm-watsonx-ai~=1.3.39; extra == "watson"
+requires-python: <3.14,>=3.10
+project-url: Homepage, https://crewai.com
+project-url: Documentation, https://docs.crewai.com
+project-url: Repository, https://github.com/crewAIInc/crewAI
+provides-extra: a2a
+provides-extra: anthropic
+provides-extra: aws
+provides-extra: azure-ai-inference
+provides-extra: bedrock
+provides-extra: docling
+provides-extra: embeddings
+provides-extra: file-processing
+provides-extra: google-genai
+provides-extra: litellm
+provides-extra: mem0
+provides-extra: openpyxl
+provides-extra: pandas
+provides-extra: qdrant
+provides-extra: qdrant-edge
+provides-extra: tools
+provides-extra: voyageai
+provides-extra: watson
+

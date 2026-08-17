@@ -1,0 +1,161 @@
+metadata-version: 2.4
+name: huggingface_hub
+version: 1.26.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: Client library to download and publish models, datasets and other repos on the huggingface.co hub
+keywords: model-hub machine-learning models natural-language-processing deep-learning pytorch pretrained-models
+home-page: https://github.com/huggingface/huggingface_hub
+author: Hugging Face, Inc.
+author-email: julien@huggingface.co
+license: Apache-2.0
+license-file: LICENSE
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Education
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+requires-dist: click<9.0.0,>=8.4.2
+requires-dist: filelock>=3.10.0
+requires-dist: fsspec>=2023.5.0
+requires-dist: hf-xet<2.0.0,>=1.5.1; platform_machine == "x86_64" or platform_machine == "amd64" or platform_machine == "AMD64" or platform_machine == "arm64" or platform_machine == "aarch64"
+requires-dist: httpx<1,>=0.23.0
+requires-dist: packaging>=20.9
+requires-dist: pyyaml>=5.1
+requires-dist: tqdm>=4.42.1
+requires-dist: typing-extensions>=4.1.0
+requires-dist: authlib>=1.3.2; extra == "oauth"
+requires-dist: fastapi; extra == "oauth"
+requires-dist: httpx; extra == "oauth"
+requires-dist: itsdangerous; extra == "oauth"
+requires-dist: torch; extra == "torch"
+requires-dist: safetensors[torch]; extra == "torch"
+requires-dist: toml; extra == "fastai"
+requires-dist: fastai>=2.4; extra == "fastai"
+requires-dist: fastcore>=1.3.27; extra == "fastai"
+requires-dist: hf-xet<2.0.0,>=1.5.1; extra == "hf-xet"
+requires-dist: mcp>=1.8.0; extra == "mcp"
+requires-dist: authlib>=1.3.2; extra == "testing"
+requires-dist: fastapi; extra == "testing"
+requires-dist: httpx; extra == "testing"
+requires-dist: itsdangerous; extra == "testing"
+requires-dist: jedi; extra == "testing"
+requires-dist: Jinja2; extra == "testing"
+requires-dist: pytest>=8.4.2; extra == "testing"
+requires-dist: pytest-cov; extra == "testing"
+requires-dist: pytest-env; extra == "testing"
+requires-dist: pytest-xdist; extra == "testing"
+requires-dist: pytest-vcr; extra == "testing"
+requires-dist: pytest-asyncio; extra == "testing"
+requires-dist: pytest-rerunfailures>=16.2; extra == "testing"
+requires-dist: pytest-mock; extra == "testing"
+requires-dist: urllib3<2.0; extra == "testing"
+requires-dist: soundfile; extra == "testing"
+requires-dist: Pillow; extra == "testing"
+requires-dist: numpy; extra == "testing"
+requires-dist: duckdb; extra == "testing"
+requires-dist: fastapi; extra == "testing"
+requires-dist: gradio>=5.0.0; extra == "gradio"
+requires-dist: requests; extra == "gradio"
+requires-dist: typing-extensions>=4.8.0; extra == "typing"
+requires-dist: types-PyYAML; extra == "typing"
+requires-dist: types-simplejson; extra == "typing"
+requires-dist: types-toml; extra == "typing"
+requires-dist: types-tqdm; extra == "typing"
+requires-dist: types-urllib3; extra == "typing"
+requires-dist: ruff>=0.9.0; extra == "quality"
+requires-dist: mypy==1.15.0; extra == "quality"
+requires-dist: libcst>=1.4.0; extra == "quality"
+requires-dist: ty; extra == "quality"
+requires-dist: authlib>=1.3.2; extra == "all"
+requires-dist: fastapi; extra == "all"
+requires-dist: httpx; extra == "all"
+requires-dist: itsdangerous; extra == "all"
+requires-dist: jedi; extra == "all"
+requires-dist: Jinja2; extra == "all"
+requires-dist: pytest>=8.4.2; extra == "all"
+requires-dist: pytest-cov; extra == "all"
+requires-dist: pytest-env; extra == "all"
+requires-dist: pytest-xdist; extra == "all"
+requires-dist: pytest-vcr; extra == "all"
+requires-dist: pytest-asyncio; extra == "all"
+requires-dist: pytest-rerunfailures>=16.2; extra == "all"
+requires-dist: pytest-mock; extra == "all"
+requires-dist: urllib3<2.0; extra == "all"
+requires-dist: soundfile; extra == "all"
+requires-dist: Pillow; extra == "all"
+requires-dist: numpy; extra == "all"
+requires-dist: duckdb; extra == "all"
+requires-dist: fastapi; extra == "all"
+requires-dist: ruff>=0.9.0; extra == "all"
+requires-dist: mypy==1.15.0; extra == "all"
+requires-dist: libcst>=1.4.0; extra == "all"
+requires-dist: ty; extra == "all"
+requires-dist: typing-extensions>=4.8.0; extra == "all"
+requires-dist: types-PyYAML; extra == "all"
+requires-dist: types-simplejson; extra == "all"
+requires-dist: types-toml; extra == "all"
+requires-dist: types-tqdm; extra == "all"
+requires-dist: types-urllib3; extra == "all"
+requires-dist: authlib>=1.3.2; extra == "dev"
+requires-dist: fastapi; extra == "dev"
+requires-dist: httpx; extra == "dev"
+requires-dist: itsdangerous; extra == "dev"
+requires-dist: jedi; extra == "dev"
+requires-dist: Jinja2; extra == "dev"
+requires-dist: pytest>=8.4.2; extra == "dev"
+requires-dist: pytest-cov; extra == "dev"
+requires-dist: pytest-env; extra == "dev"
+requires-dist: pytest-xdist; extra == "dev"
+requires-dist: pytest-vcr; extra == "dev"
+requires-dist: pytest-asyncio; extra == "dev"
+requires-dist: pytest-rerunfailures>=16.2; extra == "dev"
+requires-dist: pytest-mock; extra == "dev"
+requires-dist: urllib3<2.0; extra == "dev"
+requires-dist: soundfile; extra == "dev"
+requires-dist: Pillow; extra == "dev"
+requires-dist: numpy; extra == "dev"
+requires-dist: duckdb; extra == "dev"
+requires-dist: fastapi; extra == "dev"
+requires-dist: ruff>=0.9.0; extra == "dev"
+requires-dist: mypy==1.15.0; extra == "dev"
+requires-dist: libcst>=1.4.0; extra == "dev"
+requires-dist: ty; extra == "dev"
+requires-dist: typing-extensions>=4.8.0; extra == "dev"
+requires-dist: types-PyYAML; extra == "dev"
+requires-dist: types-simplejson; extra == "dev"
+requires-dist: types-toml; extra == "dev"
+requires-dist: types-tqdm; extra == "dev"
+requires-dist: types-urllib3; extra == "dev"
+requires-python: >=3.10.0
+provides-extra: oauth
+provides-extra: torch
+provides-extra: fastai
+provides-extra: hf-xet
+provides-extra: mcp
+provides-extra: testing
+provides-extra: gradio
+provides-extra: typing
+provides-extra: quality
+provides-extra: all
+provides-extra: dev
+

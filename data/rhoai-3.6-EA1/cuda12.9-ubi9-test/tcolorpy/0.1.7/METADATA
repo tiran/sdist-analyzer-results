@@ -1,0 +1,49 @@
+metadata-version: 2.4
+name: tcolorpy
+version: 0.1.7
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: project-url
+dynamic: provides-extra
+dynamic: requires-python
+dynamic: summary
+summary: tcolopy is a Python library to apply true color for terminal text.
+keywords: ANSI escape,terminal color,truecolor
+home-page: https://github.com/thombashi/tcolorpy
+author: Tsuyoshi Hombashi
+author-email: tsuyoshi.hombashi@gmail.com
+license: MIT License
+license-file: LICENSE
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Information Technology
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Software Development :: Libraries
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: Terminals
+classifier: Topic :: Text Processing
+classifier: Typing :: Typed
+requires-dist: pytest>=6.0.1; extra == "test"
+requires-dist: pytest-md-report>=0.6.2; extra == "test"
+requires-python: >=3.9
+project-url: Changelog, https://github.com/thombashi/tcolorpy/blob/master/CHANGELOG.md
+project-url: Source, https://github.com/thombashi/tcolorpy
+project-url: Tracker, https://github.com/thombashi/tcolorpy/issues
+provides-extra: test
+

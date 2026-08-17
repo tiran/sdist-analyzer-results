@@ -1,0 +1,24 @@
+metadata-version: 2.4
+name: pystac-ext-classification
+version: 2.0.1
+summary: Classification extension for PySTAC
+keywords: STAC,catalog,classification,imagery,pystac,raster
+license: Apache-2.0
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Natural Language :: English
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+requires-dist: pystac-core
+requires-dist: pystac-ext-raster
+requires-python: >=3.10
+project-url: Documentation, https://pystac.readthedocs.io
+project-url: Repository, https://github.com/stac-utils/pystac
+project-url: Issues, https://github.com/stac-utils/pystac/issues
+project-url: Changelog, https://github.com/stac-utils/pystac/blob/main/CHANGELOG.md
+project-url: Discussions, https://github.com/radiantearth/stac-spec/discussions/categories/stac-software
+

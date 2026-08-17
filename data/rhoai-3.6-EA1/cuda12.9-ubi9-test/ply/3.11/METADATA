@@ -1,0 +1,22 @@
+metadata-version: 2.4
+name: ply
+version: 3.11
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: license
+dynamic: maintainer
+dynamic: maintainer-email
+dynamic: summary
+summary: Python Lex & Yacc
+home-page: http://www.dabeaz.com/ply/
+author: David Beazley
+author-email: dave@dabeaz.com
+maintainer: David Beazley
+maintainer-email: dave@dabeaz.com
+license: BSD
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 2
+

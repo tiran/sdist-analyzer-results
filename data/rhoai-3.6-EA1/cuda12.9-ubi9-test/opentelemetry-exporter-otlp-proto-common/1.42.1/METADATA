@@ -1,0 +1,23 @@
+metadata-version: 2.5
+name: opentelemetry-exporter-otlp-proto-common
+version: 1.42.1
+summary: OpenTelemetry Protobuf encoding
+author-email: OpenTelemetry Authors <cncf-opentelemetry-contributors@lists.cncf.io>
+license-expression: Apache-2.0
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Framework :: OpenTelemetry
+classifier: Framework :: OpenTelemetry :: Exporters
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-dist: opentelemetry-proto==1.42.1
+requires-python: >=3.10
+project-url: Homepage, https://github.com/open-telemetry/opentelemetry-python/tree/main/exporter/opentelemetry-exporter-otlp-proto-common
+project-url: Repository, https://github.com/open-telemetry/opentelemetry-python
+

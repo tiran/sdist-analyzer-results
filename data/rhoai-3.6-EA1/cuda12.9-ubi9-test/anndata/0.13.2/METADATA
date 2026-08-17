@@ -1,0 +1,53 @@
+metadata-version: 2.5
+name: anndata
+version: 0.13.2
+summary: Annotated data.
+author: Philipp Angerer, Alex Wolf, Isaac Virshup, Sergei Rybakov, Ilan Gold
+maintainer-email: Philipp Angerer <philipp.angerer@helmholtz-munich.de>, Ilan Gold <ilan.gold@helmholtz-munich.de>
+license-expression: BSD-3-Clause
+license-file: LICENSE
+classifier: Environment :: Console
+classifier: Framework :: Jupyter
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: Natural Language :: English
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: POSIX :: Linux
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+classifier: Topic :: Scientific/Engineering :: Visualization
+requires-dist: array-api-compat>=1.7.1
+requires-dist: h5py>=3.11
+requires-dist: legacy-api-wrap
+requires-dist: natsort
+requires-dist: numpy>=2.1
+requires-dist: packaging>=24.2
+requires-dist: pandas>=2.3
+requires-dist: scipy!=1.17.0,>=1.14
+requires-dist: scverse-misc[settings]>=0.1.0
+requires-dist: typing-extensions>=4.16; python_version <= "3.14"
+requires-dist: zarr>=3.1
+requires-dist: cupy-cuda11x; extra == "cu11"
+requires-dist: cupy-cuda12x; extra == "cu12"
+requires-dist: cupy-cuda13x; extra == "cu13"
+requires-dist: dask[array]!=2024.8.*,!=2024.9.*,!=2025.2.*,!=2025.3.*,!=2025.4.*,!=2025.5.*,!=2025.6.*,!=2025.7.*,!=2025.8.*,>=2024.5.1; extra == "dask"
+requires-dist: cupy; extra == "gpu"
+requires-dist: aiohttp; extra == "lazy"
+requires-dist: dask[array]!=2024.8.*,!=2024.9.*,!=2025.2.*,!=2025.3.*,!=2025.4.*,!=2025.5.*,!=2025.6.*,!=2025.7.*,!=2025.8.*,>=2024.5.1; extra == "lazy"
+requires-dist: requests; extra == "lazy"
+requires-dist: xarray>=2025.06.1; extra == "lazy"
+requires-python: >=3.12
+project-url: Documentation, https://anndata.readthedocs.io/
+project-url: Source, https://github.com/scverse/anndata
+project-url: Home-page, https://github.com/scverse/anndata
+provides-extra: cu11
+provides-extra: cu12
+provides-extra: cu13
+provides-extra: dask
+provides-extra: gpu
+provides-extra: lazy
+

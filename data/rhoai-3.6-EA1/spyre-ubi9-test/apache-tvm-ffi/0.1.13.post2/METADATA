@@ -1,0 +1,19 @@
+metadata-version: 2.1
+name: apache-tvm-ffi
+version: 0.1.13.post2
+summary: tvm ffi
+keywords: machine learning,inference
+author: TVM FFI team
+license: Apache 2.0
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Education
+classifier: Intended Audience :: Science/Research
+requires-dist: typing-extensions>=4.5
+requires-dist: ninja; extra == "cpp"
+requires-python: >=3.9
+project-url: Homepage, https://github.com/apache/tvm-ffi
+project-url: GitHub, https://github.com/apache/tvm-ffi
+provides-extra: cpp
+

@@ -1,0 +1,35 @@
+metadata-version: 2.5
+name: versioningit
+version: 3.3.0
+summary: Versioning It with your Version In Git
+keywords: Git,Mercurial,VCS,packaging,version
+author-email: John Thorvald Wodder II <versioningit@varonathe.org>
+license-expression: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Framework :: Hatch
+classifier: Framework :: Setuptools Plugin
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Software Development :: Build Tools
+classifier: Topic :: Software Development :: Version Control
+classifier: Topic :: Software Development :: Version Control :: Git
+classifier: Topic :: Software Development :: Version Control :: Mercurial
+classifier: Typing :: Typed
+requires-dist: importlib-metadata>=3.6; python_version < "3.10"
+requires-dist: packaging>=17.1
+requires-dist: tomli<3.0,>=1.2; python_version < "3.11"
+requires-python: >=3.8
+project-url: Source Code, https://github.com/jwodder/versioningit
+project-url: Bug Tracker, https://github.com/jwodder/versioningit/issues
+project-url: Documentation, https://versioningit.readthedocs.io
+

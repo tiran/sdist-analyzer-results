@@ -1,4 +1,4 @@
-setuptools
+setuptools>=64
 torch
 wheel
-setuptools>=64
+setuptools

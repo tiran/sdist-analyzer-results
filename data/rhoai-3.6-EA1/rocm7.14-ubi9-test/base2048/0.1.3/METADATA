@@ -1,0 +1,23 @@
+metadata-version: 2.4
+name: base2048
+version: 0.1.3
+summary: Binary encoding with Base2048 in Rust.
+keywords: base2048,base64,base-encoding,encoding,decoding
+license: MIT
+license-file: LICENSE
+classifier: Programming Language :: Rust
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+requires-dist: maturin; extra == "dev"
+requires-dist: pytest; extra == "dev"
+requires-dist: pytest-cov; extra == "dev"
+requires-dist: frelatage; extra == "fuzz"
+requires-python: >=3.7
+provides-extra: dev
+provides-extra: fuzz
+

@@ -1,0 +1,135 @@
+metadata-version: 2.4
+name: pytablewriter
+version: 1.2.1
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: project-url
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: pytablewriter is a Python library to write a table in various formats: AsciiDoc / CSV / Elasticsearch / HTML / JavaScript / JSON / LaTeX / LDJSON / LTSV / Markdown / MediaWiki / NumPy / Excel / Pandas / Python / reStructuredText / SQLite / TOML / TSV / YAML.
+keywords: AsciiDoc,table,CSV,Excel,JavaScript,JSON,LaTeX,LTSV,Markdown,MediaWiki,HTML,pandas,reStructuredText,SQLite,TSV,TOML
+home-page: https://github.com/thombashi/pytablewriter
+author: Tsuyoshi Hombashi
+author-email: tsuyoshi.hombashi@gmail.com
+license: MIT License
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Information Technology
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Software Development :: Code Generators
+classifier: Topic :: Software Development :: Libraries
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: Text Processing
+classifier: Topic :: Text Processing :: Markup :: HTML
+classifier: Topic :: Text Processing :: Markup :: LaTeX
+classifier: Topic :: Text Processing :: Markup :: Markdown
+classifier: Topic :: Text Processing :: Markup :: reStructuredText
+classifier: Typing :: Typed
+requires-dist: setuptools>=38.3.0
+requires-dist: DataProperty<2,>=1.1.0
+requires-dist: mbstrdecoder<2,>=1.0.0
+requires-dist: pathvalidate<4,>=2.3.0
+requires-dist: tabledata<2,>=1.3.1
+requires-dist: tcolorpy<1,>=0.0.5
+requires-dist: typepy[datetime]<2,>=1.3.2
+requires-dist: xlwt; extra == "all"
+requires-dist: XlsxWriter<4,>=0.9.6; extra == "all"
+requires-dist: elasticsearch<9,>=8.0.1; extra == "all"
+requires-dist: pytablereader<2,>=0.31.3; extra == "all"
+requires-dist: dominate<3,>=2.1.5; extra == "all"
+requires-dist: loguru<1,>=0.4.1; extra == "all"
+requires-dist: SimpleSQLite<2,>=1.3.2; extra == "all"
+requires-dist: pytablewriter-altrow-theme<1,>=0.2.0; extra == "all"
+requires-dist: pytablewriter-altcol-theme<1,>=0.1.0; extra == "all"
+requires-dist: toml<1,>=0.9.3; extra == "all"
+requires-dist: PyYAML<7,>=3.11; extra == "all"
+requires-dist: simplejson<4,>=3.8.1; extra == "all"
+requires-dist: pandas<3,>=0.25.3; extra == "all"
+requires-dist: sphinx_rtd_theme>=1.2.2; extra == "docs"
+requires-dist: Sphinx>=2.4; extra == "docs"
+requires-dist: xlwt; extra == "docs"
+requires-dist: XlsxWriter<4,>=0.9.6; extra == "docs"
+requires-dist: elasticsearch<9,>=8.0.1; extra == "docs"
+requires-dist: pytablereader<2,>=0.31.3; extra == "docs"
+requires-dist: dominate<3,>=2.1.5; extra == "docs"
+requires-dist: loguru<1,>=0.4.1; extra == "docs"
+requires-dist: SimpleSQLite<2,>=1.3.2; extra == "docs"
+requires-dist: pytablewriter-altrow-theme<1,>=0.2.0; extra == "docs"
+requires-dist: pytablewriter-altcol-theme<1,>=0.1.0; extra == "docs"
+requires-dist: toml<1,>=0.9.3; extra == "docs"
+requires-dist: PyYAML<7,>=3.11; extra == "docs"
+requires-dist: simplejson<4,>=3.8.1; extra == "docs"
+requires-dist: pandas<3,>=0.25.3; extra == "docs"
+requires-dist: elasticsearch<9,>=8.0.1; extra == "es"
+requires-dist: elasticsearch<9,>=8.0.1; extra == "es8"
+requires-dist: xlwt; extra == "excel"
+requires-dist: XlsxWriter<4,>=0.9.6; extra == "excel"
+requires-dist: pytablereader<2,>=0.31.3; extra == "from"
+requires-dist: dominate<3,>=2.1.5; extra == "html"
+requires-dist: loguru<1,>=0.4.1; extra == "logging"
+requires-dist: pandas<3,>=0.25.3; extra == "pandas"
+requires-dist: SimpleSQLite<2,>=1.3.2; extra == "sqlite"
+requires-dist: sqliteschema>=2; extra == "test"
+requires-dist: toml<1,>=0.9.3; extra == "test"
+requires-dist: elasticsearch<9,>=8.0.1; extra == "test"
+requires-dist: PyYAML<7,>=3.11; extra == "test"
+requires-dist: beautifulsoup4>=4.10; extra == "test"
+requires-dist: tablib>=3.2.0; extra == "test"
+requires-dist: SimpleSQLite<2,>=1.3.2; extra == "test"
+requires-dist: simplejson<4,>=3.8.1; extra == "test"
+requires-dist: dominate<3,>=2.1.5; extra == "test"
+requires-dist: pytablereader[excel,sqlite]>=0.31.3; extra == "test"
+requires-dist: pytest-md-report>=0.6.2; extra == "test"
+requires-dist: pandas<3,>=0.25.3; extra == "test"
+requires-dist: pytablereader<2,>=0.31.3; extra == "test"
+requires-dist: pytablewriter-altcol-theme<1,>=0.1.0; extra == "test"
+requires-dist: pytablewriter-altrow-theme<1,>=0.2.0; extra == "test"
+requires-dist: pytest>=6.0.1; extra == "test"
+requires-dist: loguru<1,>=0.4.1; extra == "test"
+requires-dist: xlwt; extra == "test"
+requires-dist: XlsxWriter<4,>=0.9.6; extra == "test"
+requires-dist: pytablewriter-altrow-theme<1,>=0.2.0; extra == "theme"
+requires-dist: pytablewriter-altcol-theme<1,>=0.1.0; extra == "theme"
+requires-dist: toml<1,>=0.9.3; extra == "toml"
+requires-dist: PyYAML<7,>=3.11; extra == "yaml"
+requires-python: >=3.9
+project-url: Changelog, https://github.com/thombashi/pytablewriter/blob/master/CHANGELOG.md
+project-url: Documentation, https://pytablewriter.rtfd.io/
+project-url: Funding, https://github.com/sponsors/thombashi
+project-url: Source, https://github.com/thombashi/pytablewriter
+project-url: Tracker, https://github.com/thombashi/pytablewriter/issues
+provides-extra: all
+provides-extra: docs
+provides-extra: es
+provides-extra: es8
+provides-extra: excel
+provides-extra: from
+provides-extra: html
+provides-extra: logging
+provides-extra: pandas
+provides-extra: sqlite
+provides-extra: test
+provides-extra: theme
+provides-extra: toml
+provides-extra: yaml
+

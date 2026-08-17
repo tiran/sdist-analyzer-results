@@ -1,0 +1,411 @@
+metadata-version: 2.4
+name: apache-airflow
+version: 3.3.1
+summary: Programmatically author, schedule and monitor data pipelines
+keywords: airflow,automation,dag,data,orchestration,pipelines,workflow
+author-email: Apache Software Foundation <dev@airflow.apache.org>
+maintainer-email: Apache Software Foundation <dev@airflow.apache.org>
+license-expression: Apache-2.0
+license-file: LICENSE
+license-file: NOTICE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Environment :: Web Environment
+classifier: Framework :: Apache Airflow
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: System Administrators
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: System :: Monitoring
+requires-dist: apache-airflow-core==3.3.1
+requires-dist: apache-airflow-task-sdk==1.3.1
+requires-dist: apache-airflow-providers-amazon[aiobotocore]>=9.6.0; extra == "aiobotocore"
+requires-dist: apache-airflow-providers-airbyte>=5.0.0; extra == "airbyte"
+requires-dist: apache-airflow-providers-akeyless>=0.1.0; extra == "akeyless"
+requires-dist: apache-airflow-providers-alibaba>=3.0.0; extra == "alibaba"
+requires-dist: amqp>=5.2.0; extra == "all"
+requires-dist: apache-airflow-core[all]; extra == "all"
+requires-dist: apache-airflow-core[async]; extra == "all"
+requires-dist: apache-airflow-core[graphviz]; extra == "all"
+requires-dist: apache-airflow-core[gunicorn]; extra == "all"
+requires-dist: apache-airflow-core[kerberos]; extra == "all"
+requires-dist: apache-airflow-core[memray]; extra == "all"
+requires-dist: apache-airflow-core[otel]; extra == "all"
+requires-dist: apache-airflow-core[statsd]; extra == "all"
+requires-dist: apache-airflow-providers-airbyte>=5.0.0; extra == "all"
+requires-dist: apache-airflow-providers-akeyless>=0.1.0; extra == "all"
+requires-dist: apache-airflow-providers-alibaba>=3.0.0; extra == "all"
+requires-dist: apache-airflow-providers-amazon>=9.0.0; extra == "all"
+requires-dist: apache-airflow-providers-amazon[aiobotocore]>=9.6.0; extra == "all"
+requires-dist: apache-airflow-providers-amazon[python3-saml]; extra == "all"
+requires-dist: apache-airflow-providers-amazon[s3fs]; extra == "all"
+requires-dist: apache-airflow-providers-apache-cassandra>=3.7.0; python_version != "3.14" and extra == "all"
+requires-dist: apache-airflow-providers-apache-drill>=2.8.1; extra == "all"
+requires-dist: apache-airflow-providers-apache-druid>=3.12.0; extra == "all"
+requires-dist: apache-airflow-providers-apache-flink>=1.6.0; extra == "all"
+requires-dist: apache-airflow-providers-apache-hdfs; extra == "all"
+requires-dist: apache-airflow-providers-apache-hdfs>=4.6.0; extra == "all"
+requires-dist: apache-airflow-providers-apache-hive>=8.2.1; extra == "all"
+requires-dist: apache-airflow-providers-apache-iceberg>=1.2.0; extra == "all"
+requires-dist: apache-airflow-providers-apache-impala>=1.5.2; extra == "all"
+requires-dist: apache-airflow-providers-apache-kafka>=1.6.1; extra == "all"
+requires-dist: apache-airflow-providers-apache-kylin>=3.8.0; extra == "all"
+requires-dist: apache-airflow-providers-apache-livy>=3.9.2; extra == "all"
+requires-dist: apache-airflow-providers-apache-pig>=4.6.0; extra == "all"
+requires-dist: apache-airflow-providers-apache-pinot>=4.5.1; extra == "all"
+requires-dist: apache-airflow-providers-apache-spark>=4.11.1; extra == "all"
+requires-dist: apache-airflow-providers-apache-tinkerpop>=1.0.0; extra == "all"
+requires-dist: apache-airflow-providers-apprise>=1.4.1; extra == "all"
+requires-dist: apache-airflow-providers-arangodb>=2.7.0; extra == "all"
+requires-dist: apache-airflow-providers-asana>=2.7.0; extra == "all"
+requires-dist: apache-airflow-providers-atlassian-jira>=2.7.1; extra == "all"
+requires-dist: apache-airflow-providers-celery>=3.8.3; extra == "all"
+requires-dist: apache-airflow-providers-clickhousedb>=1.0.0; extra == "all"
+requires-dist: apache-airflow-providers-cloudant>=4.0.1; extra == "all"
+requires-dist: apache-airflow-providers-cncf-kubernetes>=9.0.0; extra == "all"
+requires-dist: apache-airflow-providers-cohere>=1.4.0; extra == "all"
+requires-dist: apache-airflow-providers-common-ai>=0.1.0; extra == "all"
+requires-dist: apache-airflow-providers-common-compat>=1.2.1; extra == "all"
+requires-dist: apache-airflow-providers-common-io>=1.4.2; extra == "all"
+requires-dist: apache-airflow-providers-common-messaging>=2.0.0; extra == "all"
+requires-dist: apache-airflow-providers-common-sql>=1.18.0; extra == "all"
+requires-dist: apache-airflow-providers-common-sql[pandas]; extra == "all"
+requires-dist: apache-airflow-providers-common-sql[polars]; extra == "all"
+requires-dist: apache-airflow-providers-databricks>=6.11.0; extra == "all"
+requires-dist: apache-airflow-providers-datadog>=3.8.0; extra == "all"
+requires-dist: apache-airflow-providers-dbt-cloud>=3.11.0; extra == "all"
+requires-dist: apache-airflow-providers-dingding>=3.7.0; extra == "all"
+requires-dist: apache-airflow-providers-discord>=3.9.0; extra == "all"
+requires-dist: apache-airflow-providers-docker>=3.14.1; extra == "all"
+requires-dist: apache-airflow-providers-edge3>=1.0.0; extra == "all"
+requires-dist: apache-airflow-providers-elasticsearch>=6.6.0; extra == "all"
+requires-dist: apache-airflow-providers-exasol>=4.6.1; extra == "all"
+requires-dist: apache-airflow-providers-fab>=2.2.0; extra == "all"
+requires-dist: apache-airflow-providers-fab>=3.6.0; extra == "all"
+requires-dist: apache-airflow-providers-facebook>=3.7.0; extra == "all"
+requires-dist: apache-airflow-providers-ftp>=3.12.0; extra == "all"
+requires-dist: apache-airflow-providers-git>=0.0.2; extra == "all"
+requires-dist: apache-airflow-providers-github>=2.8.0; extra == "all"
+requires-dist: apache-airflow-providers-google>=10.24.0; extra == "all"
+requires-dist: apache-airflow-providers-grpc>=3.7.0; extra == "all"
+requires-dist: apache-airflow-providers-hashicorp>=4.0.0; extra == "all"
+requires-dist: apache-airflow-providers-http>=4.13.2; extra == "all"
+requires-dist: apache-airflow-providers-imap>=3.8.0; extra == "all"
+requires-dist: apache-airflow-providers-influxdb>=2.8.0; extra == "all"
+requires-dist: apache-airflow-providers-informatica>=0.1.1; extra == "all"
+requires-dist: apache-airflow-providers-jdbc>=4.5.2; extra == "all"
+requires-dist: apache-airflow-providers-jenkins>=3.7.2; extra == "all"
+requires-dist: apache-airflow-providers-keycloak>=0.0.1; extra == "all"
+requires-dist: apache-airflow-providers-microsoft-azure>=10.5.1; extra == "all"
+requires-dist: apache-airflow-providers-microsoft-mssql>=3.9.2; extra == "all"
+requires-dist: apache-airflow-providers-microsoft-psrp>=3.0.0; extra == "all"
+requires-dist: apache-airflow-providers-microsoft-winrm>=3.6.1; extra == "all"
+requires-dist: apache-airflow-providers-mongo>=4.2.2; extra == "all"
+requires-dist: apache-airflow-providers-mysql>=5.7.2; extra == "all"
+requires-dist: apache-airflow-providers-neo4j>=3.8.0; extra == "all"
+requires-dist: apache-airflow-providers-odbc>=4.8.0; extra == "all"
+requires-dist: apache-airflow-providers-openai>=1.5.0; extra == "all"
+requires-dist: apache-airflow-providers-openfaas>=3.7.0; extra == "all"
+requires-dist: apache-airflow-providers-openlineage>=2.3.0; extra == "all"
+requires-dist: apache-airflow-providers-opensearch>=1.9.3; extra == "all"
+requires-dist: apache-airflow-providers-opsgenie>=5.8.0; extra == "all"
+requires-dist: apache-airflow-providers-oracle>=3.12.0; extra == "all"
+requires-dist: apache-airflow-providers-pagerduty>=3.8.1; extra == "all"
+requires-dist: apache-airflow-providers-papermill>=3.8.2; extra == "all"
+requires-dist: apache-airflow-providers-pgvector>=1.4.0; extra == "all"
+requires-dist: apache-airflow-providers-pinecone>=2.1.1; extra == "all"
+requires-dist: apache-airflow-providers-postgres>=5.13.1; extra == "all"
+requires-dist: apache-airflow-providers-presto>=5.7.0; extra == "all"
+requires-dist: apache-airflow-providers-qdrant>=1.3.0; extra == "all"
+requires-dist: apache-airflow-providers-redis>=4.0.0; extra == "all"
+requires-dist: apache-airflow-providers-salesforce>=5.9.0; extra == "all"
+requires-dist: apache-airflow-providers-samba>=4.9.0; extra == "all"
+requires-dist: apache-airflow-providers-segment>=3.7.0; extra == "all"
+requires-dist: apache-airflow-providers-sendgrid>=4.0.0; extra == "all"
+requires-dist: apache-airflow-providers-sftp>=5.0.0; extra == "all"
+requires-dist: apache-airflow-providers-singularity>=3.7.0; extra == "all"
+requires-dist: apache-airflow-providers-slack>=8.9.1; extra == "all"
+requires-dist: apache-airflow-providers-smtp>=1.8.1; extra == "all"
+requires-dist: apache-airflow-providers-snowflake>=5.8.0; extra == "all"
+requires-dist: apache-airflow-providers-sqlite>=3.9.1; extra == "all"
+requires-dist: apache-airflow-providers-ssh>=3.14.0; extra == "all"
+requires-dist: apache-airflow-providers-standard>=0.0.1; extra == "all"
+requires-dist: apache-airflow-providers-tableau>=5.0.0; extra == "all"
+requires-dist: apache-airflow-providers-telegram>=4.7.0; extra == "all"
+requires-dist: apache-airflow-providers-teradata>=2.6.1; extra == "all"
+requires-dist: apache-airflow-providers-trino>=5.8.1; extra == "all"
+requires-dist: apache-airflow-providers-vertica>=3.9.1; extra == "all"
+requires-dist: apache-airflow-providers-vespa>=0.1.0; extra == "all"
+requires-dist: apache-airflow-providers-weaviate>=3.0.0; extra == "all"
+requires-dist: apache-airflow-providers-yandex>=4.0.0; extra == "all"
+requires-dist: apache-airflow-providers-ydb>=1.4.0; extra == "all"
+requires-dist: apache-airflow-providers-zendesk>=4.9.0; extra == "all"
+requires-dist: atlasclient>=0.1.2; extra == "all"
+requires-dist: authlib>=1.0.0; extra == "all"
+requires-dist: cloudpickle>=2.2.1; extra == "all"
+requires-dist: python-ldap>=3.4.4; extra == "all"
+requires-dist: sentry-sdk>=2.30.0; extra == "all"
+requires-dist: uv>=0.11.21; extra == "all"
+requires-dist: apache-airflow-core[all]; extra == "all-core"
+requires-dist: apache-airflow-task-sdk[all]; extra == "all-task-sdk"
+requires-dist: apache-airflow-providers-amazon>=9.0.0; extra == "amazon"
+requires-dist: apache-airflow-providers-amazon[python3-saml]; extra == "amazon-aws-auth"
+requires-dist: atlasclient>=0.1.2; extra == "apache-atlas"
+requires-dist: apache-airflow-providers-apache-cassandra>=3.7.0; python_version != "3.14" and extra == "apache-cassandra"
+requires-dist: apache-airflow-providers-apache-drill>=2.8.1; extra == "apache-drill"
+requires-dist: apache-airflow-providers-apache-druid>=3.12.0; extra == "apache-druid"
+requires-dist: apache-airflow-providers-apache-flink>=1.6.0; extra == "apache-flink"
+requires-dist: apache-airflow-providers-apache-hdfs>=4.6.0; extra == "apache-hdfs"
+requires-dist: apache-airflow-providers-apache-hive>=8.2.1; extra == "apache-hive"
+requires-dist: apache-airflow-providers-apache-iceberg>=1.2.0; extra == "apache-iceberg"
+requires-dist: apache-airflow-providers-apache-impala>=1.5.2; extra == "apache-impala"
+requires-dist: apache-airflow-providers-apache-kafka>=1.6.1; extra == "apache-kafka"
+requires-dist: apache-airflow-providers-apache-kylin>=3.8.0; extra == "apache-kylin"
+requires-dist: apache-airflow-providers-apache-livy>=3.9.2; extra == "apache-livy"
+requires-dist: apache-airflow-providers-apache-pig>=4.6.0; extra == "apache-pig"
+requires-dist: apache-airflow-providers-apache-pinot>=4.5.1; extra == "apache-pinot"
+requires-dist: apache-airflow-providers-apache-spark>=4.11.1; extra == "apache-spark"
+requires-dist: apache-airflow-providers-apache-tinkerpop>=1.0.0; extra == "apache-tinkerpop"
+requires-dist: apache-airflow-providers-apache-hdfs; extra == "apache-webhdfs"
+requires-dist: apache-airflow-providers-apprise>=1.4.1; extra == "apprise"
+requires-dist: apache-airflow-providers-arangodb>=2.7.0; extra == "arangodb"
+requires-dist: apache-airflow-providers-asana>=2.7.0; extra == "asana"
+requires-dist: apache-airflow-core[async]; extra == "async"
+requires-dist: apache-airflow-providers-atlassian-jira>=2.7.1; extra == "atlassian-jira"
+requires-dist: apache-airflow-providers-celery>=3.8.3; extra == "celery"
+requires-dist: apache-airflow-providers-clickhousedb>=1.0.0; extra == "clickhousedb"
+requires-dist: apache-airflow-providers-cloudant>=4.0.1; extra == "cloudant"
+requires-dist: cloudpickle>=2.2.1; extra == "cloudpickle"
+requires-dist: apache-airflow-providers-cncf-kubernetes>=9.0.0; extra == "cncf-kubernetes"
+requires-dist: apache-airflow-providers-cohere>=1.4.0; extra == "cohere"
+requires-dist: apache-airflow-providers-common-ai>=0.1.0; extra == "common-ai"
+requires-dist: apache-airflow-providers-common-compat>=1.2.1; extra == "common-compat"
+requires-dist: apache-airflow-providers-common-io>=1.4.2; extra == "common-io"
+requires-dist: apache-airflow-providers-common-messaging>=2.0.0; extra == "common-messaging"
+requires-dist: apache-airflow-providers-common-sql>=1.18.0; extra == "common-sql"
+requires-dist: apache-airflow-providers-databricks>=6.11.0; extra == "databricks"
+requires-dist: apache-airflow-providers-datadog>=3.8.0; extra == "datadog"
+requires-dist: apache-airflow-providers-dbt-cloud>=3.11.0; extra == "dbt-cloud"
+requires-dist: apache-airflow-providers-dingding>=3.7.0; extra == "dingding"
+requires-dist: apache-airflow-providers-discord>=3.9.0; extra == "discord"
+requires-dist: apache-airflow-providers-docker>=3.14.1; extra == "docker"
+requires-dist: apache-airflow-providers-edge3>=1.0.0; extra == "edge3"
+requires-dist: apache-airflow-providers-elasticsearch>=6.6.0; extra == "elasticsearch"
+requires-dist: apache-airflow-providers-exasol>=4.6.1; extra == "exasol"
+requires-dist: apache-airflow-providers-fab>=3.6.0; extra == "fab"
+requires-dist: apache-airflow-providers-facebook>=3.7.0; extra == "facebook"
+requires-dist: apache-airflow-providers-ftp>=3.12.0; extra == "ftp"
+requires-dist: apache-airflow-providers-git>=0.0.2; extra == "git"
+requires-dist: apache-airflow-providers-github>=2.8.0; extra == "github"
+requires-dist: apache-airflow-providers-fab>=2.2.0; extra == "github-enterprise"
+requires-dist: authlib>=1.0.0; extra == "github-enterprise"
+requires-dist: apache-airflow-providers-google>=10.24.0; extra == "google"
+requires-dist: apache-airflow-providers-fab>=2.2.0; extra == "google-auth"
+requires-dist: authlib>=1.0.0; extra == "google-auth"
+requires-dist: apache-airflow-core[graphviz]; extra == "graphviz"
+requires-dist: apache-airflow-providers-grpc>=3.7.0; extra == "grpc"
+requires-dist: apache-airflow-core[gunicorn]; extra == "gunicorn"
+requires-dist: apache-airflow-providers-hashicorp>=4.0.0; extra == "hashicorp"
+requires-dist: apache-airflow-providers-http>=4.13.2; extra == "http"
+requires-dist: apache-airflow-providers-imap>=3.8.0; extra == "imap"
+requires-dist: apache-airflow-providers-influxdb>=2.8.0; extra == "influxdb"
+requires-dist: apache-airflow-providers-informatica>=0.1.1; extra == "informatica"
+requires-dist: apache-airflow-providers-jdbc>=4.5.2; extra == "jdbc"
+requires-dist: apache-airflow-providers-jenkins>=3.7.2; extra == "jenkins"
+requires-dist: apache-airflow-core[kerberos]; extra == "kerberos"
+requires-dist: apache-airflow-providers-keycloak>=0.0.1; extra == "keycloak"
+requires-dist: python-ldap>=3.4.4; extra == "ldap"
+requires-dist: apache-airflow-core[memray]; extra == "memray"
+requires-dist: apache-airflow-providers-microsoft-azure>=10.5.1; extra == "microsoft-azure"
+requires-dist: apache-airflow-providers-microsoft-mssql>=3.9.2; extra == "microsoft-mssql"
+requires-dist: apache-airflow-providers-microsoft-psrp>=3.0.0; extra == "microsoft-psrp"
+requires-dist: apache-airflow-providers-microsoft-winrm>=3.6.1; extra == "microsoft-winrm"
+requires-dist: apache-airflow-providers-mongo>=4.2.2; extra == "mongo"
+requires-dist: apache-airflow-providers-mysql>=5.7.2; extra == "mysql"
+requires-dist: apache-airflow-providers-neo4j>=3.8.0; extra == "neo4j"
+requires-dist: apache-airflow-providers-odbc>=4.8.0; extra == "odbc"
+requires-dist: apache-airflow-providers-openai>=1.5.0; extra == "openai"
+requires-dist: apache-airflow-providers-openfaas>=3.7.0; extra == "openfaas"
+requires-dist: apache-airflow-providers-openlineage>=2.3.0; extra == "openlineage"
+requires-dist: apache-airflow-providers-opensearch>=1.9.3; extra == "opensearch"
+requires-dist: apache-airflow-providers-opsgenie>=5.8.0; extra == "opsgenie"
+requires-dist: apache-airflow-providers-oracle>=3.12.0; extra == "oracle"
+requires-dist: apache-airflow-core[otel]; extra == "otel"
+requires-dist: apache-airflow-providers-pagerduty>=3.8.1; extra == "pagerduty"
+requires-dist: apache-airflow-providers-common-sql[pandas]; extra == "pandas"
+requires-dist: apache-airflow-providers-papermill>=3.8.2; extra == "papermill"
+requires-dist: apache-airflow-providers-pgvector>=1.4.0; extra == "pgvector"
+requires-dist: apache-airflow-providers-pinecone>=2.1.1; extra == "pinecone"
+requires-dist: apache-airflow-providers-common-sql[polars]; extra == "polars"
+requires-dist: apache-airflow-providers-postgres>=5.13.1; extra == "postgres"
+requires-dist: apache-airflow-providers-presto>=5.7.0; extra == "presto"
+requires-dist: apache-airflow-providers-qdrant>=1.3.0; extra == "qdrant"
+requires-dist: amqp>=5.2.0; extra == "rabbitmq"
+requires-dist: apache-airflow-providers-redis>=4.0.0; extra == "redis"
+requires-dist: apache-airflow-providers-amazon[s3fs]; extra == "s3fs"
+requires-dist: apache-airflow-providers-salesforce>=5.9.0; extra == "salesforce"
+requires-dist: apache-airflow-providers-samba>=4.9.0; extra == "samba"
+requires-dist: apache-airflow-providers-segment>=3.7.0; extra == "segment"
+requires-dist: apache-airflow-providers-sendgrid>=4.0.0; extra == "sendgrid"
+requires-dist: sentry-sdk>=2.30.0; extra == "sentry"
+requires-dist: apache-airflow-providers-sftp>=5.0.0; extra == "sftp"
+requires-dist: apache-airflow-providers-singularity>=3.7.0; extra == "singularity"
+requires-dist: apache-airflow-providers-slack>=8.9.1; extra == "slack"
+requires-dist: apache-airflow-providers-smtp>=1.8.1; extra == "smtp"
+requires-dist: apache-airflow-providers-snowflake>=5.8.0; extra == "snowflake"
+requires-dist: apache-airflow-providers-sqlite>=3.9.1; extra == "sqlite"
+requires-dist: apache-airflow-providers-ssh>=3.14.0; extra == "ssh"
+requires-dist: apache-airflow-providers-standard>=0.0.1; extra == "standard"
+requires-dist: apache-airflow-core[statsd]; extra == "statsd"
+requires-dist: apache-airflow-providers-tableau>=5.0.0; extra == "tableau"
+requires-dist: apache-airflow-providers-telegram>=4.7.0; extra == "telegram"
+requires-dist: apache-airflow-providers-teradata>=2.6.1; extra == "teradata"
+requires-dist: apache-airflow-providers-trino>=5.8.1; extra == "trino"
+requires-dist: uv>=0.11.21; extra == "uv"
+requires-dist: apache-airflow-providers-vertica>=3.9.1; extra == "vertica"
+requires-dist: apache-airflow-providers-vespa>=0.1.0; extra == "vespa"
+requires-dist: apache-airflow-providers-weaviate>=3.0.0; extra == "weaviate"
+requires-dist: apache-airflow-providers-yandex>=4.0.0; extra == "yandex"
+requires-dist: apache-airflow-providers-ydb>=1.4.0; extra == "ydb"
+requires-dist: apache-airflow-providers-zendesk>=4.9.0; extra == "zendesk"
+requires-python: !=3.15,>=3.10
+project-url: Bug Tracker, https://github.com/apache/airflow/issues
+project-url: Documentation, https://airflow.apache.org/docs/
+project-url: Downloads, https://archive.apache.org/dist/airflow/
+project-url: Homepage, https://airflow.apache.org/
+project-url: Release Notes, https://airflow.apache.org/docs/apache-airflow/stable/release_notes.html
+project-url: Slack Chat, https://s.apache.org/airflow-slack
+project-url: Source Code, https://github.com/apache/airflow
+project-url: LinkedIn, https://www.linkedin.com/company/apache-airflow/
+project-url: Mastodon, https://fosstodon.org/@airflow
+project-url: Bluesky, https://bsky.app/profile/apache-airflow.bsky.social
+project-url: YouTube, https://www.youtube.com/channel/UCSXwxpWZQ7XZ1WL3wqevChA/
+provides-extra: aiobotocore
+provides-extra: airbyte
+provides-extra: akeyless
+provides-extra: alibaba
+provides-extra: all
+provides-extra: all-core
+provides-extra: all-task-sdk
+provides-extra: amazon
+provides-extra: amazon-aws-auth
+provides-extra: apache-atlas
+provides-extra: apache-cassandra
+provides-extra: apache-drill
+provides-extra: apache-druid
+provides-extra: apache-flink
+provides-extra: apache-hdfs
+provides-extra: apache-hive
+provides-extra: apache-iceberg
+provides-extra: apache-impala
+provides-extra: apache-kafka
+provides-extra: apache-kylin
+provides-extra: apache-livy
+provides-extra: apache-pig
+provides-extra: apache-pinot
+provides-extra: apache-spark
+provides-extra: apache-tinkerpop
+provides-extra: apache-webhdfs
+provides-extra: apprise
+provides-extra: arangodb
+provides-extra: asana
+provides-extra: async
+provides-extra: atlassian-jira
+provides-extra: celery
+provides-extra: clickhousedb
+provides-extra: cloudant
+provides-extra: cloudpickle
+provides-extra: cncf-kubernetes
+provides-extra: cohere
+provides-extra: common-ai
+provides-extra: common-compat
+provides-extra: common-io
+provides-extra: common-messaging
+provides-extra: common-sql
+provides-extra: databricks
+provides-extra: datadog
+provides-extra: dbt-cloud
+provides-extra: dingding
+provides-extra: discord
+provides-extra: docker
+provides-extra: edge3
+provides-extra: elasticsearch
+provides-extra: exasol
+provides-extra: fab
+provides-extra: facebook
+provides-extra: ftp
+provides-extra: git
+provides-extra: github
+provides-extra: github-enterprise
+provides-extra: google
+provides-extra: google-auth
+provides-extra: graphviz
+provides-extra: grpc
+provides-extra: gunicorn
+provides-extra: hashicorp
+provides-extra: http
+provides-extra: imap
+provides-extra: influxdb
+provides-extra: informatica
+provides-extra: jdbc
+provides-extra: jenkins
+provides-extra: kerberos
+provides-extra: keycloak
+provides-extra: ldap
+provides-extra: memray
+provides-extra: microsoft-azure
+provides-extra: microsoft-mssql
+provides-extra: microsoft-psrp
+provides-extra: microsoft-winrm
+provides-extra: mongo
+provides-extra: mysql
+provides-extra: neo4j
+provides-extra: odbc
+provides-extra: openai
+provides-extra: openfaas
+provides-extra: openlineage
+provides-extra: opensearch
+provides-extra: opsgenie
+provides-extra: oracle
+provides-extra: otel
+provides-extra: pagerduty
+provides-extra: pandas
+provides-extra: papermill
+provides-extra: pgvector
+provides-extra: pinecone
+provides-extra: polars
+provides-extra: postgres
+provides-extra: presto
+provides-extra: qdrant
+provides-extra: rabbitmq
+provides-extra: redis
+provides-extra: s3fs
+provides-extra: salesforce
+provides-extra: samba
+provides-extra: segment
+provides-extra: sendgrid
+provides-extra: sentry
+provides-extra: sftp
+provides-extra: singularity
+provides-extra: slack
+provides-extra: smtp
+provides-extra: snowflake
+provides-extra: sqlite
+provides-extra: ssh
+provides-extra: standard
+provides-extra: statsd
+provides-extra: tableau
+provides-extra: telegram
+provides-extra: teradata
+provides-extra: trino
+provides-extra: uv
+provides-extra: vertica
+provides-extra: vespa
+provides-extra: weaviate
+provides-extra: yandex
+provides-extra: ydb
+provides-extra: zendesk
+

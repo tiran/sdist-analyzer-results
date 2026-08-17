@@ -1,0 +1,81 @@
+metadata-version: 2.5
+name: nbconvert
+version: 7.17.1
+summary: Convert Jupyter Notebooks (.ipynb files) to other formats.
+keywords: Interactive,Interpreter,Shell,Web
+author-email: Jupyter Development Team <jupyter@googlegroups.com>
+license: BSD 3-Clause License
+                 
+                 - Copyright (c) 2001-2015, IPython Development Team
+                 - Copyright (c) 2015-, Jupyter Development Team
+                 
+                 All rights reserved.
+                 
+                 Redistribution and use in source and binary forms, with or without
+                 modification, are permitted provided that the following conditions are met:
+                 
+                 1. Redistributions of source code must retain the above copyright notice, this
+                    list of conditions and the following disclaimer.
+          ...
+license-file: LICENSE
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: Intended Audience :: System Administrators
+classifier: License :: OSI Approved :: BSD License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+requires-dist: beautifulsoup4
+requires-dist: bleach[css]!=5.0.0
+requires-dist: defusedxml
+requires-dist: importlib-metadata>=3.6; python_version < "3.10"
+requires-dist: jinja2>=3.0
+requires-dist: jupyter-core>=4.7
+requires-dist: jupyterlab-pygments
+requires-dist: markupsafe>=2.0
+requires-dist: mistune<4,>=2.0.3
+requires-dist: nbclient>=0.5.0
+requires-dist: nbformat>=5.7
+requires-dist: packaging
+requires-dist: pandocfilters>=1.4.1
+requires-dist: pygments>=2.4.1
+requires-dist: traitlets>=5.1
+requires-dist: flaky; extra == "all"
+requires-dist: intersphinx-registry; extra == "all"
+requires-dist: ipykernel; extra == "all"
+requires-dist: ipython; extra == "all"
+requires-dist: ipywidgets>=7.5; extra == "all"
+requires-dist: myst-parser; extra == "all"
+requires-dist: nbsphinx>=0.2.12; extra == "all"
+requires-dist: playwright; extra == "all"
+requires-dist: pydata-sphinx-theme; extra == "all"
+requires-dist: pyqtwebengine>=5.15; extra == "all"
+requires-dist: pytest>=7; extra == "all"
+requires-dist: sphinx>=5.0.2; extra == "all"
+requires-dist: sphinxcontrib-spelling; extra == "all"
+requires-dist: tornado>=6.1; extra == "all"
+requires-dist: intersphinx-registry; extra == "docs"
+requires-dist: ipykernel; extra == "docs"
+requires-dist: ipython; extra == "docs"
+requires-dist: myst-parser; extra == "docs"
+requires-dist: nbsphinx>=0.2.12; extra == "docs"
+requires-dist: pydata-sphinx-theme; extra == "docs"
+requires-dist: sphinx>=5.0.2; extra == "docs"
+requires-dist: sphinxcontrib-spelling; extra == "docs"
+requires-dist: pyqtwebengine>=5.15; extra == "qtpdf"
+requires-dist: pyqtwebengine>=5.15; extra == "qtpng"
+requires-dist: tornado>=6.1; extra == "serve"
+requires-dist: flaky; extra == "test"
+requires-dist: ipykernel; extra == "test"
+requires-dist: ipywidgets>=7.5; extra == "test"
+requires-dist: pytest>=7; extra == "test"
+requires-dist: playwright; extra == "webpdf"
+requires-python: >=3.9
+project-url: Homepage, https://jupyter.org
+provides-extra: all
+provides-extra: docs
+provides-extra: qtpdf
+provides-extra: qtpng
+provides-extra: serve
+provides-extra: test
+provides-extra: webpdf
+

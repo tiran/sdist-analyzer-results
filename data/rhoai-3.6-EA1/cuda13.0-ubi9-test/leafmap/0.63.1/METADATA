@@ -1,0 +1,135 @@
+metadata-version: 2.4
+name: leafmap
+version: 0.63.1
+dynamic: license-file
+summary: A Python package for geospatial analysis and interactive mapping in a Jupyter environment.
+keywords: leafmap
+author-email: Qiusheng Wu <giswqs@gmail.com>
+license: MIT license
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Natural Language :: English
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+requires-dist: anywidget
+requires-dist: bqplot
+requires-dist: duckdb>=1.4.1
+requires-dist: folium
+requires-dist: gdown
+requires-dist: geojson
+requires-dist: geopandas
+requires-dist: ipyevents>=0.8.0
+requires-dist: ipyfilechooser
+requires-dist: ipyleaflet
+requires-dist: ipyvue>=1.12.0
+requires-dist: ipyvuetify
+requires-dist: ipywidgets
+requires-dist: maplibre
+requires-dist: matplotlib
+requires-dist: numpy
+requires-dist: pandas
+requires-dist: plotly
+requires-dist: pystac-client
+requires-dist: python-box
+requires-dist: scooby
+requires-dist: whiteboxgui
+requires-dist: xyzservices
+requires-dist: bokeh; extra == "backends"
+requires-dist: keplergl; extra == "backends"
+requires-dist: maplibre; extra == "backends"
+requires-dist: pydeck; extra == "backends"
+requires-dist: plotly; extra == "backends"
+requires-dist: geopandas; extra == "lidar"
+requires-dist: ipygany; extra == "lidar"
+requires-dist: ipyvtklink; extra == "lidar"
+requires-dist: laspy; extra == "lidar"
+requires-dist: panel; extra == "lidar"
+requires-dist: pyntcloud[LAS]; extra == "lidar"
+requires-dist: pyvista[all]; extra == "lidar"
+requires-dist: localtileserver>=0.10.6; extra == "raster"
+requires-dist: jupyter-server-proxy; extra == "raster"
+requires-dist: rio-cogeo; extra == "raster"
+requires-dist: rioxarray; extra == "raster"
+requires-dist: netcdf4; extra == "raster"
+requires-dist: d2spy; extra == "raster"
+requires-dist: h5netcdf; extra == "raster"
+requires-dist: h5py; extra == "raster"
+requires-dist: opera-utils; extra == "raster"
+requires-dist: psutil; extra == "raster"
+requires-dist: titiler; extra == "raster"
+requires-dist: uvicorn; extra == "raster"
+requires-dist: localtileserver; extra == "viewer"
+requires-dist: fiona; extra == "viewer"
+requires-dist: pynhd; extra == "usgs"
+requires-dist: py3dep; extra == "usgs"
+requires-dist: psycopg2; extra == "sql"
+requires-dist: sqlalchemy; extra == "sql"
+requires-dist: streamlit-folium; extra == "apps"
+requires-dist: voila; extra == "apps"
+requires-dist: solara; extra == "apps"
+requires-dist: geopandas; extra == "vector"
+requires-dist: osmnx; extra == "vector"
+requires-dist: pmtiles; extra == "vector"
+requires-dist: flask; extra == "vector"
+requires-dist: flask-cors; extra == "vector"
+requires-dist: lonboard; extra == "vector"
+requires-dist: mapclassify; extra == "vector"
+requires-dist: fiona; extra == "vector"
+requires-dist: pmtiles; extra == "pmtiles"
+requires-dist: flask; extra == "pmtiles"
+requires-dist: flask-cors; extra == "pmtiles"
+requires-dist: geopandas; extra == "ai"
+requires-dist: osmnx; extra == "ai"
+requires-dist: localtileserver>=0.10.4; extra == "ai"
+requires-dist: rastervision; extra == "ai"
+requires-dist: pytorch-lightning; extra == "ai"
+requires-dist: torchgeo; extra == "ai"
+requires-dist: anywidget; extra == "maplibre"
+requires-dist: geopandas; extra == "maplibre"
+requires-dist: fiona; extra == "maplibre"
+requires-dist: h3; extra == "maplibre"
+requires-dist: ipyvue>=1.12.0; extra == "maplibre"
+requires-dist: ipyvuetify; extra == "maplibre"
+requires-dist: localtileserver; extra == "maplibre"
+requires-dist: mapclassify; extra == "maplibre"
+requires-dist: maplibre>=0.3.1; extra == "maplibre"
+requires-dist: pmtiles; extra == "maplibre"
+requires-dist: rioxarray; extra == "maplibre"
+requires-dist: xarray; extra == "maplibre"
+requires-dist: gdal; extra == "gdal"
+requires-dist: pyproj; extra == "gdal"
+requires-dist: duckdb; extra == "duckdb"
+requires-dist: duckdb-engine; extra == "duckdb"
+requires-dist: jupysql; extra == "duckdb"
+requires-dist: flask; extra == "duckdb"
+requires-dist: flask-cors; extra == "duckdb"
+requires-dist: jupyter-server-proxy; extra == "duckdb"
+requires-dist: titiler; extra == "titiler"
+requires-dist: uvicorn; extra == "titiler"
+requires-dist: polars; extra == "polars"
+requires-dist: geopandas; extra == "polars"
+requires-dist: shapely; extra == "polars"
+requires-python: >=3.9
+project-url: Homepage, https://github.com/opengeos/leafmap
+provides-extra: backends
+provides-extra: lidar
+provides-extra: raster
+provides-extra: viewer
+provides-extra: usgs
+provides-extra: sql
+provides-extra: apps
+provides-extra: vector
+provides-extra: pmtiles
+provides-extra: ai
+provides-extra: maplibre
+provides-extra: gdal
+provides-extra: duckdb
+provides-extra: titiler
+provides-extra: polars
+

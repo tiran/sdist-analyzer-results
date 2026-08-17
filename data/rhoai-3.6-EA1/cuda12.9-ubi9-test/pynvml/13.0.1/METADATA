@@ -1,0 +1,28 @@
+metadata-version: 2.4
+name: pynvml
+version: 13.0.1
+dynamic: license-file
+summary: Python utilities for the NVIDIA Management Library
+author: NVIDIA Corporation
+license: BSD-3-Clause
+license-file: LICENSE.txt
+classifier: Development Status :: 7 - Inactive
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: System Administrators
+classifier: License :: OSI Approved :: BSD License
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: POSIX :: Linux
+classifier: Programming Language :: Python
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: System :: Hardware
+classifier: Topic :: System :: Systems Administration
+classifier: Programming Language :: Python :: 3
+requires-dist: nvidia-ml-py>=12.0.0
+requires-dist: pytest>=3.6; extra == "test"
+requires-dist: pytest-runner; extra == "test"
+requires-dist: pytest-cov; extra == "test"
+requires-python: >=3.9
+project-url: Homepage, https://github.com/gpuopenanalytics/pynvml
+project-url: Source, https://github.com/gpuopenanalytics/pynvml
+provides-extra: test
+

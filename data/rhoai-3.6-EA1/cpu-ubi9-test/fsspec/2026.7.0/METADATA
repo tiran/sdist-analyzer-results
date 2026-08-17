@@ -1,0 +1,150 @@
+metadata-version: 2.4
+name: fsspec
+version: 2026.7.0
+summary: File-system specification
+keywords: file
+maintainer-email: Martin Durant <mdurant@anaconda.com>
+license-expression: BSD-3-Clause
+license-file: LICENSE
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-dist: adlfs; extra == "abfs"
+requires-dist: adlfs; extra == "adl"
+requires-dist: pyarrow>=1; extra == "arrow"
+requires-dist: dask; extra == "dask"
+requires-dist: distributed; extra == "dask"
+requires-dist: pre-commit; extra == "dev"
+requires-dist: ruff>=0.5; extra == "dev"
+requires-dist: numpydoc; extra == "doc"
+requires-dist: sphinx; extra == "doc"
+requires-dist: sphinx-design; extra == "doc"
+requires-dist: sphinx-rtd-theme; extra == "doc"
+requires-dist: yarl; extra == "doc"
+requires-dist: dropbox; extra == "dropbox"
+requires-dist: dropboxdrivefs; extra == "dropbox"
+requires-dist: requests; extra == "dropbox"
+requires-dist: adlfs; extra == "full"
+requires-dist: aiohttp!=4.0.0a0,!=4.0.0a1; extra == "full"
+requires-dist: dask; extra == "full"
+requires-dist: distributed; extra == "full"
+requires-dist: dropbox; extra == "full"
+requires-dist: dropboxdrivefs; extra == "full"
+requires-dist: fusepy; extra == "full"
+requires-dist: gcsfs>=2026.4.0; extra == "full"
+requires-dist: libarchive-c; extra == "full"
+requires-dist: ocifs; extra == "full"
+requires-dist: panel; extra == "full"
+requires-dist: paramiko; extra == "full"
+requires-dist: pyarrow>=1; extra == "full"
+requires-dist: pygit2; extra == "full"
+requires-dist: requests; extra == "full"
+requires-dist: s3fs>=2026.6.0; extra == "full"
+requires-dist: smbprotocol; extra == "full"
+requires-dist: tqdm; extra == "full"
+requires-dist: fusepy; extra == "fuse"
+requires-dist: gcsfs>=2026.4.0; extra == "gcs"
+requires-dist: pygit2; extra == "git"
+requires-dist: requests; extra == "github"
+requires-dist: gcsfs>=2026.4.0; extra == "gs"
+requires-dist: panel; extra == "gui"
+requires-dist: pyarrow>=1; extra == "hdfs"
+requires-dist: aiohttp!=4.0.0a0,!=4.0.0a1; extra == "http"
+requires-dist: libarchive-c; extra == "libarchive"
+requires-dist: ocifs; extra == "oci"
+requires-dist: s3fs>=2026.6.0; extra == "s3"
+requires-dist: paramiko; extra == "sftp"
+requires-dist: smbprotocol; extra == "smb"
+requires-dist: paramiko; extra == "ssh"
+requires-dist: aiohttp!=4.0.0a0,!=4.0.0a1; extra == "test"
+requires-dist: numpy; extra == "test"
+requires-dist: pytest; extra == "test"
+requires-dist: pytest-asyncio!=0.22.0; extra == "test"
+requires-dist: pytest-benchmark; extra == "test"
+requires-dist: pytest-cov; extra == "test"
+requires-dist: pytest-mock; extra == "test"
+requires-dist: pytest-recording; extra == "test"
+requires-dist: pytest-rerunfailures; extra == "test"
+requires-dist: requests; extra == "test"
+requires-dist: aiobotocore<3.0.0,>=2.5.4; extra == "test-downstream"
+requires-dist: dask[dataframe,test]; extra == "test-downstream"
+requires-dist: moto[server]<5,>4; extra == "test-downstream"
+requires-dist: pytest-timeout; extra == "test-downstream"
+requires-dist: xarray; extra == "test-downstream"
+requires-dist: adlfs; extra == "test-full"
+requires-dist: aiohttp!=4.0.0a0,!=4.0.0a1; extra == "test-full"
+requires-dist: backports-zstd; python_version < "3.14" and extra == "test-full"
+requires-dist: cloudpickle; extra == "test-full"
+requires-dist: dask; extra == "test-full"
+requires-dist: distributed; extra == "test-full"
+requires-dist: dropbox; extra == "test-full"
+requires-dist: dropboxdrivefs; extra == "test-full"
+requires-dist: fastparquet; extra == "test-full"
+requires-dist: fusepy; extra == "test-full"
+requires-dist: gcsfs>=2026.4.0; extra == "test-full"
+requires-dist: jinja2; extra == "test-full"
+requires-dist: kerchunk; extra == "test-full"
+requires-dist: libarchive-c; extra == "test-full"
+requires-dist: lz4; extra == "test-full"
+requires-dist: notebook; extra == "test-full"
+requires-dist: numpy; extra == "test-full"
+requires-dist: ocifs; extra == "test-full"
+requires-dist: pandas<3.0.0; extra == "test-full"
+requires-dist: panel; extra == "test-full"
+requires-dist: paramiko; extra == "test-full"
+requires-dist: pyarrow>=1; extra == "test-full"
+requires-dist: pyftpdlib; extra == "test-full"
+requires-dist: pygit2; extra == "test-full"
+requires-dist: pytest; extra == "test-full"
+requires-dist: pytest-asyncio!=0.22.0; extra == "test-full"
+requires-dist: pytest-benchmark; extra == "test-full"
+requires-dist: pytest-cov; extra == "test-full"
+requires-dist: pytest-mock; extra == "test-full"
+requires-dist: pytest-recording; extra == "test-full"
+requires-dist: pytest-rerunfailures; extra == "test-full"
+requires-dist: python-snappy; extra == "test-full"
+requires-dist: requests; extra == "test-full"
+requires-dist: s3fs>=2026.6.0; extra == "test-full"
+requires-dist: smbprotocol; extra == "test-full"
+requires-dist: tqdm; extra == "test-full"
+requires-dist: urllib3; extra == "test-full"
+requires-dist: zarr<3.2.0; extra == "test-full"
+requires-dist: zstandard; python_version < "3.14" and extra == "test-full"
+requires-dist: tqdm; extra == "tqdm"
+requires-python: >=3.10
+project-url: Changelog, https://filesystem-spec.readthedocs.io/en/latest/changelog.html
+project-url: Documentation, https://filesystem-spec.readthedocs.io/en/latest/
+project-url: Homepage, https://github.com/fsspec/filesystem_spec
+provides-extra: abfs
+provides-extra: adl
+provides-extra: arrow
+provides-extra: dask
+provides-extra: dev
+provides-extra: doc
+provides-extra: dropbox
+provides-extra: entrypoints
+provides-extra: full
+provides-extra: fuse
+provides-extra: gcs
+provides-extra: git
+provides-extra: github
+provides-extra: gs
+provides-extra: gui
+provides-extra: hdfs
+provides-extra: http
+provides-extra: libarchive
+provides-extra: oci
+provides-extra: s3
+provides-extra: sftp
+provides-extra: smb
+provides-extra: ssh
+provides-extra: test
+provides-extra: test-downstream
+provides-extra: test-full
+provides-extra: tqdm
+

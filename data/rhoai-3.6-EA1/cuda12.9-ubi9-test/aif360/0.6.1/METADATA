@@ -1,0 +1,123 @@
+metadata-version: 2.4
+name: aif360
+version: 0.6.1
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: IBM AI Fairness 360
+home-page: https://github.com/Trusted-AI/AIF360
+author: aif360 developers
+author-email: aif360@us.ibm.com
+license: Apache License 2.0
+license-file: LICENSE
+classifier: Development Status :: 3 - Alpha
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Education
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+requires-dist: numpy>=1.16
+requires-dist: scipy>=1.2.0
+requires-dist: pandas>=0.24.0
+requires-dist: scikit-learn>=1.0
+requires-dist: matplotlib
+requires-dist: cvxpy>=1.0; extra == "optimpreproc"
+requires-dist: tensorflow>=1.13.1; extra == "adversarialdebiasing"
+requires-dist: BlackBoxAuditing; extra == "disparateimpactremover"
+requires-dist: torch; extra == "lfr"
+requires-dist: lime; extra == "lime"
+requires-dist: adversarial-robustness-toolbox>=1.0.0; extra == "art"
+requires-dist: fairlearn~=0.7; extra == "reductions"
+requires-dist: rpy2; extra == "fairadapt"
+requires-dist: skorch; extra == "infairness"
+requires-dist: inFairness>=0.2.2; extra == "infairness"
+requires-dist: jupyter; extra == "notebooks"
+requires-dist: tqdm; extra == "notebooks"
+requires-dist: igraph[plotting]; extra == "notebooks"
+requires-dist: lightgbm; extra == "notebooks"
+requires-dist: seaborn; extra == "notebooks"
+requires-dist: ipympl; extra == "notebooks"
+requires-dist: pot; extra == "optimaltransport"
+requires-dist: mlxtend; extra == "facts"
+requires-dist: colorama; extra == "facts"
+requires-dist: tqdm; extra == "facts"
+requires-dist: cvxpy>=1.0; extra == "tests"
+requires-dist: tensorflow>=1.13.1; extra == "tests"
+requires-dist: BlackBoxAuditing; extra == "tests"
+requires-dist: torch; extra == "tests"
+requires-dist: lime; extra == "tests"
+requires-dist: adversarial-robustness-toolbox>=1.0.0; extra == "tests"
+requires-dist: fairlearn~=0.7; extra == "tests"
+requires-dist: rpy2; extra == "tests"
+requires-dist: skorch; extra == "tests"
+requires-dist: inFairness>=0.2.2; extra == "tests"
+requires-dist: jupyter; extra == "tests"
+requires-dist: tqdm; extra == "tests"
+requires-dist: igraph[plotting]; extra == "tests"
+requires-dist: lightgbm; extra == "tests"
+requires-dist: seaborn; extra == "tests"
+requires-dist: ipympl; extra == "tests"
+requires-dist: pot; extra == "tests"
+requires-dist: mlxtend; extra == "tests"
+requires-dist: colorama; extra == "tests"
+requires-dist: tqdm; extra == "tests"
+requires-dist: pytest>=3.5; extra == "tests"
+requires-dist: pytest-cov>=2.8.1; extra == "tests"
+requires-dist: sphinx; extra == "docs"
+requires-dist: jinja2>3.1.0; extra == "docs"
+requires-dist: sphinx_rtd_theme; extra == "docs"
+requires-dist: fairlearn~=0.7; extra == "docs"
+requires-dist: igraph[plotting]; extra == "all"
+requires-dist: inFairness>=0.2.2; extra == "all"
+requires-dist: pytest-cov>=2.8.1; extra == "all"
+requires-dist: tensorflow>=1.13.1; extra == "all"
+requires-dist: rpy2; extra == "all"
+requires-dist: jupyter; extra == "all"
+requires-dist: mlxtend; extra == "all"
+requires-dist: tqdm; extra == "all"
+requires-dist: cvxpy>=1.0; extra == "all"
+requires-dist: torch; extra == "all"
+requires-dist: lightgbm; extra == "all"
+requires-dist: BlackBoxAuditing; extra == "all"
+requires-dist: lime; extra == "all"
+requires-dist: ipympl; extra == "all"
+requires-dist: colorama; extra == "all"
+requires-dist: skorch; extra == "all"
+requires-dist: sphinx_rtd_theme; extra == "all"
+requires-dist: jinja2>3.1.0; extra == "all"
+requires-dist: sphinx; extra == "all"
+requires-dist: adversarial-robustness-toolbox>=1.0.0; extra == "all"
+requires-dist: seaborn; extra == "all"
+requires-dist: fairlearn~=0.7; extra == "all"
+requires-dist: pytest>=3.5; extra == "all"
+requires-dist: pot; extra == "all"
+requires-python: >=3.8
+provides-extra: optimpreproc
+provides-extra: adversarialdebiasing
+provides-extra: disparateimpactremover
+provides-extra: lfr
+provides-extra: lime
+provides-extra: art
+provides-extra: reductions
+provides-extra: fairadapt
+provides-extra: infairness
+provides-extra: notebooks
+provides-extra: optimaltransport
+provides-extra: facts
+provides-extra: tests
+provides-extra: docs
+provides-extra: all
+

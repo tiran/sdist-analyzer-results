@@ -1,0 +1,47 @@
+metadata-version: 2.4
+name: redis
+version: 8.1.0
+summary: Python client for Redis database and key-value store
+keywords: Redis,database,key-value-store
+author-email: "Redis Inc." <oss@redis.com>
+license-expression: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+requires-dist: async-timeout>=4.0.3; python_full_version < "3.11.3"
+requires-dist: pybreaker>=1.4.0; extra == "circuit-breaker"
+requires-dist: hiredis>=3.2.0; extra == "hiredis"
+requires-dist: pyjwt>=2.13.0; extra == "jwt"
+requires-dist: cryptography>=36.0.1; extra == "ocsp"
+requires-dist: pyopenssl>=20.0.1; extra == "ocsp"
+requires-dist: requests>=2.31.0; extra == "ocsp"
+requires-dist: opentelemetry-api>=1.39.1; extra == "otel"
+requires-dist: opentelemetry-exporter-otlp-proto-http>=1.39.1; extra == "otel"
+requires-dist: opentelemetry-sdk>=1.39.1; extra == "otel"
+requires-dist: xxhash~=3.6.0; extra == "xxhash"
+requires-python: >=3.10
+project-url: Changes, https://github.com/redis/redis-py/releases
+project-url: Code, https://github.com/redis/redis-py
+project-url: Documentation, https://redis.readthedocs.io/en/latest/
+project-url: Homepage, https://github.com/redis/redis-py
+project-url: Issue tracker, https://github.com/redis/redis-py/issues
+provides-extra: circuit-breaker
+provides-extra: hiredis
+provides-extra: jwt
+provides-extra: ocsp
+provides-extra: otel
+provides-extra: xxhash
+

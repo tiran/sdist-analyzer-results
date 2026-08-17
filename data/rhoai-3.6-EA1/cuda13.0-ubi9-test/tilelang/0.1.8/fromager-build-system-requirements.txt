@@ -1,5 +1,5 @@
-scikit-build-core
 z3-solver<4.15.5,>=4.13.0
 setuptools
-cython>=3.1.0
+scikit-build-core
 patchelf>=0.17.2
+cython>=3.1.0

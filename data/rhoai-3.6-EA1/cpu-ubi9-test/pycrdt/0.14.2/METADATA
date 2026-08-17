@@ -1,0 +1,25 @@
+metadata-version: 2.4
+name: pycrdt
+version: 0.14.2
+summary: Python bindings for Yrs
+keywords: crdt
+author-email: David Brochart <david.brochart@gmail.com>
+license-file: LICENSE
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Rust
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+requires-dist: anyio<5.0.0,>=4.4.0
+requires-dist: exceptiongroup; python_full_version < "3.11"
+requires-dist: typing-extensions<5.0.0,>=4.15.0; python_full_version < "3.11"
+requires-python: >=3.10
+project-url: Homepage, https://github.com/y-crdt/pycrdt
+

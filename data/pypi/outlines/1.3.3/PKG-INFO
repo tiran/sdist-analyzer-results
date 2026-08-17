@@ -1,0 +1,110 @@
+metadata-version: 2.4
+name: outlines
+version: 1.3.3
+dynamic: license-file
+summary: Probabilistic Generative Model Programming
+keywords: machine learning,deep learning,language models,structured generation
+author: Outlines Developers
+license: Apache-2.0
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Information Technology
+classifier: Intended Audience :: Science/Research
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+requires-dist: jinja2
+requires-dist: cloudpickle
+requires-dist: diskcache
+requires-dist: pydantic>=2.0
+requires-dist: jsonschema
+requires-dist: pillow
+requires-dist: typing_extensions
+requires-dist: outlines_core==0.2.14
+requires-dist: genson
+requires-dist: anthropic; extra == "anthropic"
+requires-dist: dottxt; extra == "dottxt"
+requires-dist: google-genai; extra == "gemini"
+requires-dist: huggingface-hub; extra == "llamacpp"
+requires-dist: llama-cpp-python; extra == "llamacpp"
+requires-dist: numba; extra == "llamacpp"
+requires-dist: datasets; extra == "mlxlm"
+requires-dist: mlx; extra == "mlxlm"
+requires-dist: mlx-lm; extra == "mlxlm"
+requires-dist: lmstudio; extra == "lmstudio"
+requires-dist: ollama; extra == "ollama"
+requires-dist: openai; extra == "openai"
+requires-dist: mistralai; extra == "mistral"
+requires-dist: openai; extra == "sglang"
+requires-dist: huggingface_hub; extra == "tgi"
+requires-dist: accelerate; extra == "transformers"
+requires-dist: datasets; extra == "transformers"
+requires-dist: transformers; extra == "transformers"
+requires-dist: setuptools; extra == "transformers"
+requires-dist: sentencepiece; extra == "transformers"
+requires-dist: openai; extra == "vllm"
+requires-dist: xgrammar; extra == "xgrammar"
+requires-dist: llguidance; extra == "llguidance"
+requires-dist: airportsdata; extra == "airports"
+requires-dist: iso3166; extra == "countries"
+requires-dist: pre-commit; extra == "test"
+requires-dist: pytest; extra == "test"
+requires-dist: pytest-cov; extra == "test"
+requires-dist: pytest-mock; extra == "test"
+requires-dist: pytest-asyncio; extra == "test"
+requires-dist: coverage[toml]>=5.1; extra == "test"
+requires-dist: diff-cover; extra == "test"
+requires-dist: accelerate; extra == "test"
+requires-dist: beartype<0.16.0; extra == "test"
+requires-dist: responses; extra == "test"
+requires-dist: llama-cpp-python; extra == "test"
+requires-dist: mlx-lm>=0.19.2; (platform_machine == "arm64" and sys_platform == "darwin") and extra == "test"
+requires-dist: huggingface_hub; extra == "test"
+requires-dist: openai>=1.0.0; extra == "test"
+requires-dist: datasets; extra == "test"
+requires-dist: anthropic; extra == "test"
+requires-dist: google-genai; extra == "test"
+requires-dist: mistralai; extra == "test"
+requires-dist: transformers; extra == "test"
+requires-dist: pillow; extra == "test"
+requires-dist: jax; extra == "test"
+requires-dist: flax; extra == "test"
+requires-dist: numpy<2.2.0,>=2.0.0; extra == "test"
+requires-dist: numba; extra == "test"
+requires-dist: torch>2.3.0; extra == "test"
+requires-dist: tensorflow; extra == "test"
+requires-dist: tf-keras; extra == "test"
+requires-dist: ollama; extra == "test"
+requires-dist: lmstudio; extra == "test"
+requires-dist: dottxt>=0.2.0; extra == "test"
+requires-dist: sentencepiece; extra == "test"
+requires-dist: mkdocs_gen_files; extra == "test"
+requires-dist: llguidance; extra == "test"
+requires-dist: xgrammar; extra == "test"
+requires-dist: airportsdata; extra == "test"
+requires-dist: iso3166; extra == "test"
+requires-dist: requests; extra == "test"
+requires-python: <3.14,>=3.10
+project-url: homepage, https://github.com/dottxt-ai/outlines
+project-url: documentation, https://dottxt-ai.github.io/outlines/
+project-url: repository, https://github.com/dottxt-ai/outlines
+provides-extra: anthropic
+provides-extra: dottxt
+provides-extra: gemini
+provides-extra: llamacpp
+provides-extra: mlxlm
+provides-extra: lmstudio
+provides-extra: ollama
+provides-extra: openai
+provides-extra: mistral
+provides-extra: sglang
+provides-extra: tgi
+provides-extra: transformers
+provides-extra: vllm
+provides-extra: xgrammar
+provides-extra: llguidance
+provides-extra: airports
+provides-extra: countries
+provides-extra: test
+

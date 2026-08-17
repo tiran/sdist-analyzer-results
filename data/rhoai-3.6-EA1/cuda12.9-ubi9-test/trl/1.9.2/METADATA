@@ -1,0 +1,92 @@
+metadata-version: 2.4
+name: trl
+version: 1.9.2
+dynamic: license-file
+summary: Train transformer language models with reinforcement learning.
+keywords: transformers,huggingface,language modeling,post-training,rlhf,sft,dpo,grpo
+author-email: Leandro von Werra <leandro.vonwerra@gmail.com>
+license-expression: Apache-2.0
+license-file: LICENSE
+classifier: Development Status :: 2 - Pre-Alpha
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: Natural Language :: English
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-dist: accelerate>=1.4.0
+requires-dist: datasets>=4.7.0
+requires-dist: jinja2
+requires-dist: packaging>20.0
+requires-dist: transformers>=4.56.2
+requires-dist: scikit-learn; extra == "bco"
+requires-dist: joblib; extra == "bco"
+requires-dist: deepspeed>=0.14.4; extra == "deepspeed"
+requires-dist: transformers!=5.1.0; extra == "deepspeed"
+requires-dist: transformers[kernels]; extra == "kernels"
+requires-dist: transformers[hub-kernels]; extra == "kernels"
+requires-dist: liger-kernel!=0.8.1,>=0.8.0; extra == "liger"
+requires-dist: peft>=0.8.0; extra == "peft"
+requires-dist: pre-commit; extra == "quality"
+requires-dist: hf-doc-builder; extra == "quality"
+requires-dist: bitsandbytes; extra == "quantization"
+requires-dist: scikit-learn; extra == "scikit"
+requires-dist: pytest-cov; extra == "test"
+requires-dist: pytest-datadir>=1.7.0; extra == "test"
+requires-dist: pytest-rerunfailures==15.1; extra == "test"
+requires-dist: pytest-xdist; extra == "test"
+requires-dist: pytest; extra == "test"
+requires-dist: vllm<=0.25.1,>=0.17.0; extra == "vllm"
+requires-dist: fastapi; extra == "vllm"
+requires-dist: pydantic; extra == "vllm"
+requires-dist: aiohttp>=3.13.3; extra == "vllm"
+requires-dist: requests; extra == "vllm"
+requires-dist: uvicorn; extra == "vllm"
+requires-dist: Pillow; extra == "vlm"
+requires-dist: torchvision; extra == "vlm"
+requires-dist: num2words==0.5.14; extra == "vlm"
+requires-dist: math-verify>=0.5.2; extra == "math-verify"
+requires-dist: openreward>=0.1.109; python_version >= "3.11" and extra == "openreward"
+requires-dist: harbor>=0.13.0; python_version >= "3.12" and extra == "harbor"
+requires-dist: scikit-learn; extra == "dev"
+requires-dist: joblib; extra == "dev"
+requires-dist: deepspeed>=0.14.4; extra == "dev"
+requires-dist: transformers[kernels]; extra == "dev"
+requires-dist: transformers[hub-kernels]; extra == "dev"
+requires-dist: liger-kernel!=0.8.1,>=0.8.0; extra == "dev"
+requires-dist: openreward>=0.1.109; python_version >= "3.11" and extra == "dev"
+requires-dist: peft>=0.8.0; extra == "dev"
+requires-dist: pre-commit; extra == "dev"
+requires-dist: hf-doc-builder; extra == "dev"
+requires-dist: bitsandbytes; extra == "dev"
+requires-dist: pytest-cov; extra == "dev"
+requires-dist: pytest-datadir>=1.7.0; extra == "dev"
+requires-dist: pytest-rerunfailures==15.1; extra == "dev"
+requires-dist: pytest-xdist; extra == "dev"
+requires-dist: pytest; extra == "dev"
+requires-dist: Pillow; extra == "dev"
+requires-dist: torchvision; extra == "dev"
+requires-dist: num2words==0.5.14; extra == "dev"
+requires-dist: jmespath; extra == "dev"
+requires-python: >=3.10
+project-url: Homepage, https://github.com/huggingface/trl
+provides-extra: bco
+provides-extra: deepspeed
+provides-extra: kernels
+provides-extra: liger
+provides-extra: peft
+provides-extra: quality
+provides-extra: quantization
+provides-extra: scikit
+provides-extra: test
+provides-extra: vllm
+provides-extra: vlm
+provides-extra: math-verify
+provides-extra: openreward
+provides-extra: harbor
+provides-extra: dev
+

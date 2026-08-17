@@ -1,0 +1,16 @@
+metadata-version: 2.1
+name: pbs-installer
+version: 2026.8.7
+summary: Installer for Python Build Standalone
+author-email: Frost Ming <me@frostming.com>
+license: MIT
+requires-dist: httpx<1,>=0.27.0; extra == "download"
+requires-dist: backports.zstd>=1.0.0; python_version < "3.14" and extra == "install"
+requires-dist: pbs-installer[download,install]; extra == "all"
+requires-python: >=3.9
+project-url: Repository, https://github.com/frostming/pbs-installer
+project-url: Documentation, http://pbs-installer.readthedocs.io
+provides-extra: download
+provides-extra: install
+provides-extra: all
+

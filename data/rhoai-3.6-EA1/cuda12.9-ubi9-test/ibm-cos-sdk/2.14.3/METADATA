@@ -1,0 +1,39 @@
+metadata-version: 2.4
+name: ibm-cos-sdk
+version: 2.14.3
+dynamic: author
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: project-url
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: IBM SDK for Python
+home-page: https://github.com/ibm/ibm-cos-sdk-python
+author: IBM
+license: Apache License 2.0
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Natural Language :: English
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+requires-dist: ibm-cos-sdk-core==2.14.3
+requires-dist: ibm-cos-sdk-s3transfer==2.14.3
+requires-dist: jmespath<=1.0.1,>=0.10.0
+requires-python: >=3.8
+project-url: Documentation, https://cloud.ibm.com/docs/cloud-object-storage?topic=cloud-object-storage-python
+project-url: Source, https://github.com/IBM/ibm-cos-sdk-python
+

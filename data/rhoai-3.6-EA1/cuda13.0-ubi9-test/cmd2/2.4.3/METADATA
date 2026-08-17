@@ -1,0 +1,73 @@
+metadata-version: 2.4
+name: cmd2
+version: 2.4.3
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: platform
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+platform: any
+summary: cmd2 - quickly build feature-rich and user-friendly interactive command line applications in Python
+keywords: command prompt console cmd
+home-page: https://github.com/python-cmd2/cmd2
+author: Catherine Devlin
+author-email: catherine.devlin@gmail.com
+license: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Operating System :: OS Independent
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: System Administrators
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: attrs>=16.3.0
+requires-dist: importlib_metadata>=1.6.0; python_version < "3.8"
+requires-dist: pyperclip>=1.6
+requires-dist: typing_extensions; python_version < "3.8"
+requires-dist: wcwidth>=0.1.7
+requires-dist: pyreadline3; sys_platform == "win32"
+requires-dist: gnureadline; sys_platform == "darwin" and extra == "test"
+requires-dist: codecov; extra == "test"
+requires-dist: coverage; extra == "test"
+requires-dist: pytest>=4.6; extra == "test"
+requires-dist: pytest-cov; extra == "test"
+requires-dist: pytest-mock; extra == "test"
+requires-dist: codecov; extra == "dev"
+requires-dist: doc8; extra == "dev"
+requires-dist: flake8; extra == "dev"
+requires-dist: invoke; extra == "dev"
+requires-dist: mypy; extra == "dev"
+requires-dist: nox; extra == "dev"
+requires-dist: pytest>=4.6; extra == "dev"
+requires-dist: pytest-cov; extra == "dev"
+requires-dist: pytest-mock; extra == "dev"
+requires-dist: sphinx; extra == "dev"
+requires-dist: sphinx-rtd-theme; extra == "dev"
+requires-dist: sphinx-autobuild; extra == "dev"
+requires-dist: twine>=1.11; extra == "dev"
+requires-dist: flake8; extra == "validate"
+requires-dist: mypy; extra == "validate"
+requires-dist: types-pkg-resources; extra == "validate"
+requires-python: >=3.6
+provides-extra: test
+provides-extra: dev
+provides-extra: validate
+

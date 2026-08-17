@@ -1,0 +1,202 @@
+metadata-version: 2.4
+name: torchmetrics
+version: 1.8.2
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: download-url
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: project-url
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: PyTorch native Metrics
+keywords: deep learning,machine learning,pytorch,metrics,AI
+home-page: https://github.com/Lightning-AI/torchmetrics
+download-url: https://github.com/Lightning-AI/torchmetrics/archive/master.zip
+author: Lightning-AI et al.
+author-email: name@pytorchlightning.ai
+license: Apache-2.0
+license-file: LICENSE
+classifier: Environment :: Console
+classifier: Natural Language :: English
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+classifier: Topic :: Scientific/Engineering :: Image Recognition
+classifier: Topic :: Scientific/Engineering :: Information Analysis
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+requires-dist: numpy>1.20.0
+requires-dist: packaging>17.1
+requires-dist: torch>=2.0.0
+requires-dist: lightning-utilities>=0.8.0
+requires-dist: pystoi>=0.4.0; extra == "audio"
+requires-dist: onnxruntime>=1.12.0; extra == "audio"
+requires-dist: pesq>=0.0.4; extra == "audio"
+requires-dist: gammatone>=1.0.0; extra == "audio"
+requires-dist: requests>=2.19.0; extra == "audio"
+requires-dist: torchaudio>=2.0.1; extra == "audio"
+requires-dist: librosa>=0.10.0; extra == "audio"
+requires-dist: torch_linear_assignment>=0.0.2; extra == "clustering"
+requires-dist: pycocotools>2.0.0; extra == "detection"
+requires-dist: torchvision>=0.15.1; extra == "detection"
+requires-dist: torchvision>=0.15.1; extra == "image"
+requires-dist: torch-fidelity<=0.4.0; extra == "image"
+requires-dist: scipy>1.0.0; extra == "image"
+requires-dist: transformers>=4.43.0; extra == "multimodal"
+requires-dist: timm>=0.9.0; extra == "multimodal"
+requires-dist: einops>=0.7.0; extra == "multimodal"
+requires-dist: piq<=0.8.0; extra == "multimodal"
+requires-dist: transformers>=4.43.0; extra == "text"
+requires-dist: regex>=2021.9.24; extra == "text"
+requires-dist: ipadic>=1.0.0; extra == "text"
+requires-dist: sentencepiece>=0.2.0; extra == "text"
+requires-dist: nltk>3.8.1; extra == "text"
+requires-dist: mecab-python3>=1.0.6; extra == "text"
+requires-dist: tqdm<4.68.0; extra == "text"
+requires-dist: types-six; extra == "typing"
+requires-dist: types-emoji; extra == "typing"
+requires-dist: mypy==1.17.1; extra == "typing"
+requires-dist: types-tabulate; extra == "typing"
+requires-dist: types-protobuf; extra == "typing"
+requires-dist: types-setuptools; extra == "typing"
+requires-dist: types-PyYAML; extra == "typing"
+requires-dist: types-requests; extra == "typing"
+requires-dist: torch==2.8.0; extra == "typing"
+requires-dist: vmaf-torch>=1.1.0; extra == "video"
+requires-dist: einops>=0.7.0; extra == "video"
+requires-dist: matplotlib>=3.6.0; extra == "visual"
+requires-dist: SciencePlots>=2.0.0; extra == "visual"
+requires-dist: pystoi>=0.4.0; extra == "all"
+requires-dist: onnxruntime>=1.12.0; extra == "all"
+requires-dist: pesq>=0.0.4; extra == "all"
+requires-dist: gammatone>=1.0.0; extra == "all"
+requires-dist: requests>=2.19.0; extra == "all"
+requires-dist: torchaudio>=2.0.1; extra == "all"
+requires-dist: librosa>=0.10.0; extra == "all"
+requires-dist: torch_linear_assignment>=0.0.2; extra == "all"
+requires-dist: pycocotools>2.0.0; extra == "all"
+requires-dist: torchvision>=0.15.1; extra == "all"
+requires-dist: torchvision>=0.15.1; extra == "all"
+requires-dist: torch-fidelity<=0.4.0; extra == "all"
+requires-dist: scipy>1.0.0; extra == "all"
+requires-dist: transformers>=4.43.0; extra == "all"
+requires-dist: timm>=0.9.0; extra == "all"
+requires-dist: einops>=0.7.0; extra == "all"
+requires-dist: piq<=0.8.0; extra == "all"
+requires-dist: transformers>=4.43.0; extra == "all"
+requires-dist: regex>=2021.9.24; extra == "all"
+requires-dist: ipadic>=1.0.0; extra == "all"
+requires-dist: sentencepiece>=0.2.0; extra == "all"
+requires-dist: nltk>3.8.1; extra == "all"
+requires-dist: mecab-python3>=1.0.6; extra == "all"
+requires-dist: tqdm<4.68.0; extra == "all"
+requires-dist: types-six; extra == "all"
+requires-dist: types-emoji; extra == "all"
+requires-dist: mypy==1.17.1; extra == "all"
+requires-dist: types-tabulate; extra == "all"
+requires-dist: types-protobuf; extra == "all"
+requires-dist: types-setuptools; extra == "all"
+requires-dist: types-PyYAML; extra == "all"
+requires-dist: types-requests; extra == "all"
+requires-dist: torch==2.8.0; extra == "all"
+requires-dist: vmaf-torch>=1.1.0; extra == "all"
+requires-dist: einops>=0.7.0; extra == "all"
+requires-dist: matplotlib>=3.6.0; extra == "all"
+requires-dist: SciencePlots>=2.0.0; extra == "all"
+requires-dist: pystoi>=0.4.0; extra == "dev"
+requires-dist: onnxruntime>=1.12.0; extra == "dev"
+requires-dist: pesq>=0.0.4; extra == "dev"
+requires-dist: gammatone>=1.0.0; extra == "dev"
+requires-dist: requests>=2.19.0; extra == "dev"
+requires-dist: torchaudio>=2.0.1; extra == "dev"
+requires-dist: librosa>=0.10.0; extra == "dev"
+requires-dist: torch_linear_assignment>=0.0.2; extra == "dev"
+requires-dist: pycocotools>2.0.0; extra == "dev"
+requires-dist: torchvision>=0.15.1; extra == "dev"
+requires-dist: torchvision>=0.15.1; extra == "dev"
+requires-dist: torch-fidelity<=0.4.0; extra == "dev"
+requires-dist: scipy>1.0.0; extra == "dev"
+requires-dist: transformers>=4.43.0; extra == "dev"
+requires-dist: timm>=0.9.0; extra == "dev"
+requires-dist: einops>=0.7.0; extra == "dev"
+requires-dist: piq<=0.8.0; extra == "dev"
+requires-dist: transformers>=4.43.0; extra == "dev"
+requires-dist: regex>=2021.9.24; extra == "dev"
+requires-dist: ipadic>=1.0.0; extra == "dev"
+requires-dist: sentencepiece>=0.2.0; extra == "dev"
+requires-dist: nltk>3.8.1; extra == "dev"
+requires-dist: mecab-python3>=1.0.6; extra == "dev"
+requires-dist: tqdm<4.68.0; extra == "dev"
+requires-dist: types-six; extra == "dev"
+requires-dist: types-emoji; extra == "dev"
+requires-dist: mypy==1.17.1; extra == "dev"
+requires-dist: types-tabulate; extra == "dev"
+requires-dist: types-protobuf; extra == "dev"
+requires-dist: types-setuptools; extra == "dev"
+requires-dist: types-PyYAML; extra == "dev"
+requires-dist: types-requests; extra == "dev"
+requires-dist: torch==2.8.0; extra == "dev"
+requires-dist: vmaf-torch>=1.1.0; extra == "dev"
+requires-dist: einops>=0.7.0; extra == "dev"
+requires-dist: matplotlib>=3.6.0; extra == "dev"
+requires-dist: SciencePlots>=2.0.0; extra == "dev"
+requires-dist: mecab-ko-dic>=1.0.0; python_version < "3.12" and extra == "dev"
+requires-dist: fairlearn; extra == "dev"
+requires-dist: pytorch-msssim==1.0.0; extra == "dev"
+requires-dist: mecab-ko<1.1.0,>=1.0.0; python_version < "3.12" and extra == "dev"
+requires-dist: mir-eval>=0.6; extra == "dev"
+requires-dist: huggingface-hub<0.35; extra == "dev"
+requires-dist: scipy>1.0.0; extra == "dev"
+requires-dist: dists-pytorch==0.1; extra == "dev"
+requires-dist: fast-bss-eval>=0.1.0; extra == "dev"
+requires-dist: sacrebleu>=2.3.0; extra == "dev"
+requires-dist: scikit-image>=0.19.0; extra == "dev"
+requires-dist: properscoring==0.1; extra == "dev"
+requires-dist: kornia>=0.6.7; extra == "dev"
+requires-dist: bert_score==0.3.13; extra == "dev"
+requires-dist: dython==0.7.9; extra == "dev"
+requires-dist: torch_complex<0.5.0; extra == "dev"
+requires-dist: numpy<2.4.0; extra == "dev"
+requires-dist: aeon>=1.0.0; python_version > "3.10" and extra == "dev"
+requires-dist: PyTDC==0.4.1; (python_version < "3.10" or (platform_system == "Windows" and python_version < "3.12")) and extra == "dev"
+requires-dist: rouge-score>0.1.0; extra == "dev"
+requires-dist: sewar>=0.4.4; extra == "dev"
+requires-dist: jiwer>=2.3.0; extra == "dev"
+requires-dist: netcal>1.0.0; extra == "dev"
+requires-dist: faster-coco-eval>=1.6.3; extra == "dev"
+requires-dist: pandas>1.4.0; extra == "dev"
+requires-dist: monai==1.4.0; extra == "dev"
+requires-dist: lpips<=0.1.4; extra == "dev"
+requires-dist: statsmodels>0.13.5; extra == "dev"
+requires-dist: permetrics==2.0.0; extra == "dev"
+requires-python: >=3.9
+project-url: Bug Tracker, https://github.com/Lightning-AI/torchmetrics/issues
+project-url: Documentation, https://torchmetrics.rtfd.io/en/latest/
+project-url: Source Code, https://github.com/Lightning-AI/torchmetrics
+provides-extra: audio
+provides-extra: clustering
+provides-extra: debug
+provides-extra: detection
+provides-extra: image
+provides-extra: integrate
+provides-extra: multimodal
+provides-extra: text
+provides-extra: typing
+provides-extra: video
+provides-extra: visual
+provides-extra: all
+provides-extra: dev
+

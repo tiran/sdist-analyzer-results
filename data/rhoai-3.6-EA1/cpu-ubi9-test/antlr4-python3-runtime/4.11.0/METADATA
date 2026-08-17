@@ -1,0 +1,16 @@
+metadata-version: 2.4
+name: antlr4-python3-runtime
+version: 4.11.0
+dynamic: author
+dynamic: author-email
+dynamic: home-page
+dynamic: license
+dynamic: requires-dist
+dynamic: summary
+summary: ANTLR 4.11.0 runtime for Python 3
+home-page: http://www.antlr.org
+author: Eric Vergnaud, Terence Parr, Sam Harwell
+author-email: eric.vergnaud@wanadoo.fr
+license: BSD
+requires-dist: typing; python_version < "3.5"
+

@@ -1,0 +1,20 @@
+metadata-version: 2.4
+name: olot
+version: 0.1.15
+summary: oci layers on top
+author: tarilabs
+author-email: matteo.mortari@gmail.com
+license-file: LICENSE
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-dist: click<9.0.0,>=8.1.7
+requires-dist: modelcar-base-image<0.2.0,>=0.1.0; extra == "modelcar-base-image"
+requires-dist: pydantic<3.0.0,>=2.10.3
+requires-python: <4.0,>=3.9
+provides-extra: modelcar-base-image
+

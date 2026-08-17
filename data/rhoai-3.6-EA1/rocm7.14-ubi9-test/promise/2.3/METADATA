@@ -1,0 +1,48 @@
+metadata-version: 2.4
+name: promise
+version: 2.3
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: download-url
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: summary
+summary: Promises/A+ implementation for Python
+keywords: concurrent future deferred promise
+home-page: https://github.com/syrusakbary/promise
+download-url: https://github.com/syrusakbary/promise/releases
+author: Syrus Akbary
+author-email: me@syrusakbary.com
+license: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Topic :: Software Development :: Libraries
+classifier: Programming Language :: Python :: 2
+classifier: Programming Language :: Python :: 2.7
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.3
+classifier: Programming Language :: Python :: 3.4
+classifier: Programming Language :: Python :: 3.5
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: License :: OSI Approved :: MIT License
+requires-dist: typing>=3.6.4; python_version < "3.5"
+requires-dist: six
+requires-dist: pytest>=2.7.3; extra == "test"
+requires-dist: pytest-cov; extra == "test"
+requires-dist: coveralls; extra == "test"
+requires-dist: futures; extra == "test"
+requires-dist: pytest-benchmark; extra == "test"
+requires-dist: mock; extra == "test"
+requires-dist: pytest-asyncio; extra == "test"
+provides-extra: test
+

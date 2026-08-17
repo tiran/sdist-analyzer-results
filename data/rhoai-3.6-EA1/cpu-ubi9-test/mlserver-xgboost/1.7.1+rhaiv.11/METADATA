@@ -1,0 +1,17 @@
+metadata-version: 2.4
+name: mlserver-xgboost
+version: 1.7.1+rhaiv.11
+summary: XGBoost runtime for MLServer
+author: Seldon Technologies Ltd.
+author-email: hello@seldon.io
+license: Apache-2.0
+license-file: LICENSE
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+requires-dist: mlserver
+requires-dist: xgboost[scikit-learn]
+requires-python: <3.13,>=3.10
+

@@ -1,0 +1,11 @@
+metadata-version: 2.3
+name: ipython_pygments_lexers
+version: 1.1.1
+summary: Defines a variety of Pygments lexers for highlighting IPython code.
+author-email: The IPython Development Team <ipython-dev@python.org>
+classifier: Framework :: IPython
+classifier: License :: OSI Approved :: BSD License
+requires-dist: pygments
+requires-python: >=3.8
+project-url: Source, https://github.com/ipython/ipython-pygments-lexers
+

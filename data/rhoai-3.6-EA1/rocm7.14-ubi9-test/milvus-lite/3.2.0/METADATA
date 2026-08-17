@@ -1,0 +1,33 @@
+metadata-version: 2.5
+name: milvus-lite
+version: 3.2.0
+summary: Lightweight version of Milvus for local development and testing
+keywords: bm25,database,embedding,milvus,search,vector
+author: Milvus Contributors
+license: Apache-2.0
+license-file: LICENSE
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Topic :: Database
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+requires-dist: faiss-cpu>=1.7.4
+requires-dist: grpcio>=1.50
+requires-dist: numpy>=1.24
+requires-dist: pyarrow>=15.0
+requires-dist: tomli>=2.0; python_version < "3.11"
+requires-dist: jieba>=0.42; extra == "chinese"
+requires-dist: build>=1.0; extra == "dev"
+requires-dist: pytest-cov>=5.0; extra == "dev"
+requires-dist: pytest>=8.0; extra == "dev"
+requires-python: >=3.10
+project-url: Homepage, https://github.com/milvus-io/milvus-lite
+project-url: Repository, https://github.com/milvus-io/milvus-lite
+provides-extra: chinese
+provides-extra: dev
+

@@ -1,0 +1,37 @@
+metadata-version: 2.4
+name: guardrails-detectors
+version: 0.3.0
+summary: A collection of detectors for the FMS Guardrails Orchestrator
+license-expression: Apache-2.0
+requires-dist: urllib3==2.7.0
+requires-dist: fastapi==0.136.3
+requires-dist: uvicorn==0.34.0
+requires-dist: httpx==0.28.1
+requires-dist: prometheus_client>=0.18.0
+requires-dist: prometheus-fastapi-instrumentator>=7.0.0
+requires-dist: PyYAML==6.0.3
+requires-dist: transformers==4.57.3; extra == "huggingface"
+requires-dist: sentencepiece==0.2.1; extra == "huggingface"
+requires-dist: tiktoken==0.12.0; extra == "huggingface"
+requires-dist: torch==2.11.0; extra == "huggingface"
+requires-dist: markdown==3.8.2; extra == "built-in"
+requires-dist: jsonschema==4.24.0; extra == "built-in"
+requires-dist: xmlschema==4.1.0; extra == "built-in"
+requires-dist: requests==2.32.5; extra == "built-in"
+requires-dist: guardrails-detectors[built-in,huggingface]; extra == "all"
+requires-dist: vllm-judge[jinja2]==0.1.8; extra == "llm-judge"
+requires-dist: coverage==7.6.1; extra == "dev"
+requires-dist: locust==2.31.1; extra == "dev"
+requires-dist: pre-commit==3.8.0; extra == "dev"
+requires-dist: pytest==8.3.2; extra == "dev"
+requires-dist: pytest-cov>=4.0; extra == "dev"
+requires-dist: tls-test-tools; extra == "dev"
+requires-dist: protobuf==6.33.0; extra == "dev"
+requires-dist: torch==2.11.0; extra == "dev"
+requires-python: >=3.11
+provides-extra: huggingface
+provides-extra: built-in
+provides-extra: all
+provides-extra: llm-judge
+provides-extra: dev
+

@@ -1,0 +1,29 @@
+metadata-version: 2.4
+name: overrides
+version: 7.7.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: A decorator to automatically detect mismatch when overriding a method.
+keywords: override,inheritence,OOP
+home-page: https://github.com/mkorpela/overrides
+author: Mikko Korpela
+author-email: mikko.korpela@gmail.com
+license: Apache License, Version 2.0
+license-file: LICENSE
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+requires-dist: typing; python_version < "3.5"
+requires-python: >=3.6
+

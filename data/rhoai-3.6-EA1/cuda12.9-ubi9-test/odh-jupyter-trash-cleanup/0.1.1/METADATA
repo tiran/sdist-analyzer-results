@@ -1,0 +1,33 @@
+metadata-version: 2.5
+name: odh_jupyter_trash_cleanup
+version: 0.1.1
+dynamic: summary
+keywords: jupyter,jupyterlab,jupyterlab-extension
+author: odh
+license-expression: Apache-2.0
+license-file: LICENSE
+classifier: Framework :: Jupyter
+classifier: Framework :: Jupyter :: JupyterLab
+classifier: Framework :: Jupyter :: JupyterLab :: 4
+classifier: Framework :: Jupyter :: JupyterLab :: Extensions
+classifier: Framework :: Jupyter :: JupyterLab :: Extensions :: Prebuilt
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+requires-dist: jupyter-server<3,>=2.4.0
+requires-dist: coverage; extra == "test"
+requires-dist: pytest; extra == "test"
+requires-dist: pytest-asyncio; extra == "test"
+requires-dist: pytest-cov; extra == "test"
+requires-dist: pytest-jupyter[server]>=0.6.0; extra == "test"
+requires-python: >=3.9
+project-url: Homepage, https://github.com/opendatahub-io/odh-ide-extensions/tree/main/odh-jupyter-trash-cleanup
+project-url: Bug Tracker, https://github.com/opendatahub-io/odh-ide-extensions/issues
+project-url: Repository, https://github.com/opendatahub-io/odh-ide-extensions.git
+provides-extra: test
+

@@ -1,0 +1,36 @@
+metadata-version: 2.4
+name: astunparse
+version: 1.6.3
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: maintainer
+dynamic: maintainer-email
+dynamic: requires-dist
+dynamic: summary
+summary: An AST unparser for Python
+keywords: astunparse
+home-page: https://github.com/simonpercivall/astunparse
+maintainer: Simon Percivall
+maintainer-email: percivall@gmail.com
+license: BSD
+license-file: LICENSE
+license-file: AUTHORS.rst
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: BSD License
+classifier: Natural Language :: English
+classifier: Programming Language :: Python :: 2
+classifier: Programming Language :: Python :: 2.7
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.5
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Topic :: Software Development :: Code Generators
+requires-dist: wheel<1.0,>=0.23.0
+requires-dist: six<2.0,>=1.6.1
+

@@ -1,0 +1,46 @@
+metadata-version: 2.4
+name: tensorboard
+version: 2.19.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: TensorBoard lets you watch Tensors Flow
+keywords: tensorflow tensorboard tensor machine learning visualizer
+home-page: https://github.com/tensorflow/tensorboard
+author: Google Inc.
+author-email: packages@tensorflow.org
+license: Apache 2.0
+license-file: LICENSE
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Education
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Topic :: Scientific/Engineering :: Mathematics
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: Software Development :: Libraries
+requires-dist: absl-py>=0.4
+requires-dist: grpcio>=1.48.2
+requires-dist: markdown>=2.6.8
+requires-dist: numpy>=1.12.0
+requires-dist: packaging
+requires-dist: protobuf!=4.24.0,>=3.19.6
+requires-dist: setuptools>=41.0.0
+requires-dist: six>1.9
+requires-dist: tensorboard-data-server<0.8.0,>=0.7.0
+requires-dist: werkzeug>=1.0.1
+requires-python: >=3.9
+

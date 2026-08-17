@@ -1,0 +1,30 @@
+metadata-version: 2.4
+name: tensorizer
+version: 2.10.1
+dynamic: license-file
+summary: A tool for fast PyTorch module, model, and tensor serialization + deserialization.
+keywords: tensorizer,machine learning,serialization,tensor,pytorch
+author: CoreWeave
+license: MIT License
+license-file: LICENSE
+classifier: Programming Language :: Python :: 3
+classifier: License :: OSI Approved :: MIT License
+classifier: Development Status :: 5 - Production/Stable
+classifier: Operating System :: OS Independent
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+classifier: Topic :: System :: Distributed Computing
+classifier: Topic :: Internet
+classifier: Intended Audience :: Developers
+requires-dist: torch>=1.9.0
+requires-dist: numpy>=1.19.5
+requires-dist: protobuf>=3.19.5
+requires-dist: psutil>=5.9.4
+requires-dist: boto3>=1.26.0
+requires-dist: redis>=4.5.5
+requires-dist: hiredis>=2.2.0
+requires-dist: libnacl>=2.1.0
+requires-python: >=3.8
+project-url: Homepage, https://github.com/coreweave/tensorizer
+project-url: Repository, https://github.com/coreweave/tensorizer
+project-url: Changelog, https://github.com/coreweave/tensorizer/blob/main/CHANGELOG.md
+

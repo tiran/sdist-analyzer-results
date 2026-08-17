@@ -1,0 +1,26 @@
+metadata-version: 2.4
+name: rfc3986
+version: 2.0.0
+dynamic: license-file
+summary: Validating URI References per RFC 3986
+home-page: http://rfc3986.readthedocs.io
+author: Ian Stapleton Cordasco
+author-email: graffatcolmingov@gmail.com
+license: Apache 2.0
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Natural Language :: English
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: Implementation :: CPython
+requires-dist: idna; extra == "idna2008"
+requires-python: >=3.7
+provides-extra: idna2008
+

@@ -1,0 +1,23 @@
+metadata-version: 2.4
+name: starlette_exporter
+version: 0.24.0
+dynamic: author
+dynamic: author-email
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: Prometheus metrics exporter for Starlette applications.
+home-page: https://github.com/stephenhillier/starlette_exporter
+author: Stephen Hillier
+author-email: stephenhillier@gmail.com
+license: Apache License 2.0
+license-file: LICENSE
+requires-dist: prometheus_client>=0.12
+requires-dist: starlette>=0.35
+requires-python: >=3.8
+

@@ -1,0 +1,32 @@
+metadata-version: 2.4
+name: pysnow
+version: 0.7.17
+summary: ServiceNow HTTP client library
+author: Robert Wikman
+author-email: rbw@vault13.org
+license: MIT
+license-file: LICENSE
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python :: 2
+classifier: Programming Language :: Python :: 2.7
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.5
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-dist: ijson<3.0.0,>=2.5.1
+requires-dist: oauthlib<4.0.0,>=3.1.0
+requires-dist: python-magic<0.5.0,>=0.4.15
+requires-dist: pytz<2020.0,>=2019.3
+requires-dist: requests<3.0.0,>=2.21.0
+requires-dist: requests-oauthlib<2.0.0,>=1.3.0
+requires-dist: six<2.0.0,>=1.13.0
+requires-python: !=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,>=2.7
+project-url: Homepage, https://github.com/rbw/pysnow
+

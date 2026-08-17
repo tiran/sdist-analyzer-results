@@ -1,0 +1,35 @@
+metadata-version: 2.4
+name: algorithm-nexus
+version: 0.2.1
+dynamic: license-file
+summary: A comprehensive library for AI model delivery, testing, and benchmarking
+author-email: Christian Pinto <christian.pinto@ibm.com>
+maintainer-email: Christian Pinto <christian.pinto@ibm.com>
+license-file: LICENSE
+requires-dist: bmfm-targets[vllm]>=0.20.0; extra == "candidate"
+requires-dist: opencv-python-headless!=5.0.0.93; extra == "candidate"
+requires-dist: terrakit==0.2.0; extra == "candidate"
+requires-dist: terratorch[vllm]==1.2.10; extra == "candidate"
+requires-dist: vllm==0.24.0; extra == "candidate"
+requires-dist: ado-core>=2.0; extra == "cli"
+requires-dist: pydantic>=2.13.3; extra == "cli"
+requires-dist: pyyaml>=6.0.3; extra == "cli"
+requires-dist: rich>=15.0.0; extra == "cli"
+requires-dist: typer>=0.25.0; extra == "cli"
+requires-dist: bmfm-targets; extra == "ecosystem"
+requires-dist: terrakit>=0.2.0; extra == "ecosystem"
+requires-dist: terratorch>=1.2.7; extra == "ecosystem"
+requires-dist: tokamind; extra == "ecosystem"
+requires-dist: opencv-python-headless!=5.0.0.93; extra == "product"
+requires-dist: terrakit==0.2.0; extra == "product"
+requires-dist: terratorch[vllm]==1.2.10; extra == "product"
+requires-dist: vllm==0.24.0; extra == "product"
+requires-python: <3.14,>=3.12
+project-url: Homepage, https://github.com/IBM/algorithm-nexus
+project-url: Issues, https://github.com/IBM/algorithm-nexus/issues
+project-url: Repository, https://github.com/IBM/algorithm-nexus
+provides-extra: candidate
+provides-extra: cli
+provides-extra: ecosystem
+provides-extra: product
+

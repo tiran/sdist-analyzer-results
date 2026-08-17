@@ -1,0 +1,46 @@
+metadata-version: 2.4
+name: colorlog
+version: 6.12.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: provides-extra
+dynamic: requires-python
+dynamic: summary
+summary: Add colours to the output of Python's logging module.
+home-page: https://github.com/borntyping/python-colorlog
+author: Sam Clements
+author-email: sam@borntyping.co.uk
+license: MIT License
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Topic :: Terminals
+classifier: Topic :: Utilities
+requires-dist: colorama; sys_platform == "win32"
+requires-dist: black; extra == "development"
+requires-dist: flake8; extra == "development"
+requires-dist: mypy; extra == "development"
+requires-dist: pytest; extra == "development"
+requires-dist: types-colorama; extra == "development"
+requires-python: >=3.6
+provides-extra: development
+

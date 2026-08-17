@@ -1,0 +1,37 @@
+metadata-version: 2.4
+name: uvicorn
+version: 0.52.1
+summary: The lightning-fast ASGI server.
+author-email: Tom Christie <tom@tomchristie.com>
+maintainer-email: Marcelo Trylesinski <marcelotryle@gmail.com>
+license-expression: BSD-3-Clause
+license-file: LICENSE.md
+classifier: Development Status :: 4 - Beta
+classifier: Environment :: Web Environment
+classifier: Intended Audience :: Developers
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Internet :: WWW/HTTP
+requires-dist: click>=7.0
+requires-dist: h11>=0.8
+requires-dist: typing-extensions>=4.0; python_version < "3.11"
+requires-dist: httptools>=0.8.0; extra == "standard"
+requires-dist: python-dotenv>=0.13; extra == "standard"
+requires-dist: pyyaml>=5.1; extra == "standard"
+requires-dist: uvloop>=0.15.1; (sys_platform != "win32" and (sys_platform != "cygwin" and platform_python_implementation != "PyPy")) and extra == "standard"
+requires-dist: watchfiles>=0.20; extra == "standard"
+requires-dist: websockets>=13.0; extra == "standard"
+requires-python: >=3.10
+project-url: Changelog, https://uvicorn.dev/release-notes
+project-url: Funding, https://github.com/sponsors/encode
+project-url: Homepage, https://uvicorn.dev/
+project-url: Source, https://github.com/Kludex/uvicorn
+provides-extra: standard
+

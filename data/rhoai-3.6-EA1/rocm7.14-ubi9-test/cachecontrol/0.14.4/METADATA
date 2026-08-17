@@ -1,0 +1,43 @@
+metadata-version: 2.4
+name: CacheControl
+version: 0.14.4
+summary: httplib2 caching for requests
+keywords: requests,http,caching,web
+author: Eric Larson, Frost Ming, William Woodruff
+author-email: Eric Larson <ericlarson@ionrock.com>, Frost Ming <me@frostming.com>, William Woodruff <william@yossarian.net>
+license-expression: Apache-2.0
+license-file: LICENSE.txt
+classifier: Development Status :: 4 - Beta
+classifier: Environment :: Web Environment
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Internet :: WWW/HTTP
+requires-dist: requests>=2.16.0
+requires-dist: msgpack<2.0.0,>=0.5.2
+requires-dist: cachecontrol[filecache,redis]; extra == "dev"
+requires-dist: cherrypy; extra == "dev"
+requires-dist: cheroot>=11.1.2; extra == "dev"
+requires-dist: codespell; extra == "dev"
+requires-dist: furo; extra == "dev"
+requires-dist: mypy; extra == "dev"
+requires-dist: pytest; extra == "dev"
+requires-dist: pytest-cov; extra == "dev"
+requires-dist: ruff; extra == "dev"
+requires-dist: sphinx; extra == "dev"
+requires-dist: sphinx-copybutton; extra == "dev"
+requires-dist: types-redis; extra == "dev"
+requires-dist: types-requests; extra == "dev"
+requires-dist: filelock>=3.8.0; extra == "filecache"
+requires-dist: redis>=2.10.5; extra == "redis"
+requires-python: >=3.10
+project-url: Homepage, https://pypi.org/project/CacheControl/
+project-url: Issues, https://github.com/psf/cachecontrol/issues
+project-url: Source, https://github.com/psf/cachecontrol
+provides-extra: dev
+provides-extra: filecache
+provides-extra: redis
+

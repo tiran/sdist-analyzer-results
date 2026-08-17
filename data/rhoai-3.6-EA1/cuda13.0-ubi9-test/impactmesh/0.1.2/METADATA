@@ -1,0 +1,13 @@
+metadata-version: 2.4
+name: impactmesh
+version: 0.1.2
+dynamic: license-file
+summary: ImpactMesh package for mesh-based impact analysis
+author-email: Benedikt Blumenstiel <benedikt.blumenstiel@ibm.com>, Paul Höhn <paul.hoehn@dlr.com>
+license: Apache-2.0
+license-file: LICENSE
+requires-dist: terratorch>=1.1.1
+requires-dist: zarr==2.18.0
+requires-dist: numcodecs==0.15.1
+requires-python: >=3.8
+

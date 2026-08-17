@@ -1,0 +1,49 @@
+metadata-version: 2.4
+name: torch
+version: 2.11.0
+dynamic: license-file
+dynamic: requires-dist
+summary: Tensors and Dynamic neural networks in Python with strong GPU acceleration
+keywords: pytorch,machine learning
+author-email: PyTorch Team <packages@pytorch.org>
+license: BSD-3-Clause
+license-file: LICENSE
+license-file: NOTICE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Education
+classifier: Intended Audience :: Science/Research
+classifier: Topic :: Scientific/Engineering
+classifier: Topic :: Scientific/Engineering :: Mathematics
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+classifier: Topic :: Software Development
+classifier: Topic :: Software Development :: Libraries
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Programming Language :: C++
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-dist: filelock
+requires-dist: typing-extensions>=4.10.0
+requires-dist: setuptools<82
+requires-dist: sympy>=1.13.3
+requires-dist: networkx>=2.5.1
+requires-dist: jinja2
+requires-dist: fsspec>=0.8.5
+requires-dist: triton==3.6.0; platform_machine != "s390x"
+requires-dist: optree>=0.13.0; extra == "optree"
+requires-dist: opt-einsum>=3.3; extra == "opt-einsum"
+requires-dist: pyyaml; extra == "pyyaml"
+requires-python: >=3.10
+project-url: Homepage, https://pytorch.org
+project-url: Repository, https://github.com/pytorch/pytorch
+project-url: Documentation, https://pytorch.org/docs
+project-url: Issue Tracker, https://github.com/pytorch/pytorch/issues
+project-url: Forum, https://discuss.pytorch.org
+provides-extra: optree
+provides-extra: opt-einsum
+provides-extra: pyyaml
+

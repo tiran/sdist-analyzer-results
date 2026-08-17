@@ -1,0 +1,27 @@
+metadata-version: 2.4
+name: causal_conv1d
+version: 1.6.2.post1
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: license-file
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: Causal depthwise conv1d in CUDA, with a PyTorch interface
+home-page: https://github.com/Dao-AILab/causal-conv1d
+author: Tri Dao
+author-email: tri@tridao.me
+license-file: LICENSE
+license-file: AUTHORS
+classifier: Programming Language :: Python :: 3
+classifier: License :: OSI Approved :: BSD License
+classifier: Operating System :: Unix
+requires-dist: torch
+requires-dist: packaging
+requires-dist: ninja
+requires-python: >=3.9
+

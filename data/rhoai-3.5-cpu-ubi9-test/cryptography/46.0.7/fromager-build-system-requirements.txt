@@ -1,3 +1,0 @@
-maturin<2,>=1.9.4
-cffi>=2.0.0; platform_python_implementation != "PyPy" and python_version >= "3.9"
-setuptools!=74.0.0,!=74.1.0,!=74.1.1,!=74.1.2

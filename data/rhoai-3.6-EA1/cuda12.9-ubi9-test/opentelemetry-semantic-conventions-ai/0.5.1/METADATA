@@ -1,0 +1,10 @@
+metadata-version: 2.5
+name: opentelemetry-semantic-conventions-ai
+version: 0.5.1
+summary: OpenTelemetry Semantic Conventions Extension for Large Language Models
+author-email: Gal Kleinman <gal@traceloop.com>, Nir Gazit <nir@traceloop.com>, Tomer Friedman <tomer@traceloop.com>
+license-expression: Apache-2.0
+requires-dist: opentelemetry-sdk<2,>=1.38.0
+requires-dist: opentelemetry-semantic-conventions>=0.59b0
+requires-python: <4,>=3.9
+

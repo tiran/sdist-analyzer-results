@@ -1,0 +1,32 @@
+metadata-version: 2.4
+name: py4j
+version: 0.10.9.9
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: summary
+summary: Enables Python programs to dynamically access arbitrary Java objects
+home-page: https://www.py4j.org/
+author: Barthelemy Dagenais
+author-email: barthelemy@infobart.com
+license: BSD License
+license-file: LICENSE.txt
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: BSD License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 2
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Java
+classifier: Topic :: Software Development :: Libraries
+classifier: Topic :: Software Development :: Object Brokering
+

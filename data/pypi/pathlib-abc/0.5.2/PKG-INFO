@@ -1,0 +1,22 @@
+metadata-version: 2.4
+name: pathlib_abc
+version: 0.5.2
+summary: Backport of pathlib ABCs
+author-email: Barney Gale <barney.gale@gmail.com>
+license: 1. This LICENSE AGREEMENT is between the Python Software Foundation
+                 ("PSF"), and the Individual or Organization ("Licensee") accessing and
+                 otherwise using this software ("Python") in source or binary form and
+                 its associated documentation.
+                 
+                 2. Subject to the terms and conditions of this License Agreement, PSF hereby
+                 grants Licensee a nonexclusive, royalty-free, world-wide license to reproduce,
+                 analyze, test, perform and/or display publicly, prepare d...
+license-file: LICENSE.txt
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Python Software Foundation License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+requires-python: >=3.9
+project-url: Homepage, https://github.com/barneygale/pathlib-abc
+project-url: Issues, https://github.com/barneygale/pathlib-abc/issues
+

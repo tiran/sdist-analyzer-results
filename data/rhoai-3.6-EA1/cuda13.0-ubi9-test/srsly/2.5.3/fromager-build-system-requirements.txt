@@ -1,2 +1,2 @@
-setuptools
 cython>=0.25
+setuptools

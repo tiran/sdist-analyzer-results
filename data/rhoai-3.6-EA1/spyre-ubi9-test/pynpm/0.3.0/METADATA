@@ -1,0 +1,22 @@
+metadata-version: 2.4
+name: pynpm
+version: 0.3.0
+dynamic: license-file
+platform: any
+summary: "Python interface to your NPM and package.json."
+keywords: npm node package.json
+home-page: https://github.com/inveniosoftware/pynpm
+author: CERN
+author-email: info@inveniosoftware.org
+license: BSD
+license-file: LICENSE
+license-file: AUTHORS.rst
+classifier: Development Status :: 5 - Production/Stable
+requires-dist: pytest-black>=0.6.0; extra == "tests"
+requires-dist: pytest-cache>=1.0; extra == "tests"
+requires-dist: pytest-invenio>=1.4.0; extra == "tests"
+requires-dist: sphinx>=4.5; extra == "tests"
+requires-python: >=3.7
+provides-extra: tests
+provides-extra: docs
+

@@ -1,0 +1,36 @@
+metadata-version: 2.1
+name: dill
+version: 0.3.8
+platform: Linux
+platform: Windows
+platform: Mac
+summary: serialize all of Python
+home-page: https://github.com/uqfoundation/dill
+download-url: https://pypi.org/project/dill/#files
+author: Mike McKerns
+author-email: mmckerns@uqfoundation.org
+maintainer: Mike McKerns
+maintainer-email: mmckerns@uqfoundation.org
+license: BSD-3-Clause
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: BSD License
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Scientific/Engineering
+classifier: Topic :: Software Development
+requires-python: >=3.8
+project-url: Documentation, http://dill.rtfd.io
+project-url: Source Code, https://github.com/uqfoundation/dill
+project-url: Bug Tracker, https://github.com/uqfoundation/dill/issues
+provides-extra: graph
+provides-extra: readline
+provides-extra: profile
+

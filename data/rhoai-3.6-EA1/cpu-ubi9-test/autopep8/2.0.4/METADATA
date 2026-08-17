@@ -1,0 +1,40 @@
+metadata-version: 2.4
+name: autopep8
+version: 2.0.4
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: A tool that automatically formats Python code to conform to the PEP 8 style guide
+keywords: automation,pep8,format,pycodestyle
+home-page: https://github.com/hhatto/autopep8
+author: Hideo Hattori
+author-email: hhatto.jp@gmail.com
+license: Expat License
+license-file: LICENSE
+license-file: AUTHORS.rst
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: Software Development :: Quality Assurance
+requires-dist: pycodestyle>=2.10.0
+requires-dist: tomli; python_version < "3.11"
+requires-python: >=3.6
+

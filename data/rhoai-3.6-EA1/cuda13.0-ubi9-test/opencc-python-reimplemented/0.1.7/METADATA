@@ -1,0 +1,32 @@
+metadata-version: 2.4
+name: opencc-python-reimplemented
+version: 0.1.7
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: summary
+summary: OpenCC made with Python
+keywords: chinese conversion
+home-page: https://github.com/yichen0831/opencc-python
+author: Yichen Huang (Eugene)
+author-email: yichen0831@gmail.com
+license: Apache License
+license-file: LICENSE.txt
+classifier: Development Status :: 3 - Alpha
+classifier: Intended Audience :: Developers
+classifier: Topic :: Software Development :: Libraries
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Programming Language :: Python :: 2
+classifier: Programming Language :: Python :: 2.7
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.2
+classifier: Programming Language :: Python :: 3.3
+classifier: Programming Language :: Python :: 3.4
+classifier: Programming Language :: Python :: 3.5
+

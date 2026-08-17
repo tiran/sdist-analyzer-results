@@ -1,0 +1,3 @@
+setuptools-git-versioning
+setuptools>=77
+colorama

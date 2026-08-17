@@ -1,5 +1,5 @@
+numpy
 scipy
 cython<=3.0.12
-numpy
-setuptools
 pytest-runner
+setuptools

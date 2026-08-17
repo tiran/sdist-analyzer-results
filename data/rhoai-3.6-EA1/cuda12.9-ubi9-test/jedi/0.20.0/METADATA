@@ -1,0 +1,86 @@
+metadata-version: 2.4
+name: jedi
+version: 0.20.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: maintainer
+dynamic: maintainer-email
+dynamic: platform
+dynamic: project-url
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+platform: any
+summary: An autocompletion tool for Python that can be used for text editors.
+keywords: python completion refactoring vim
+home-page: https://github.com/davidhalter/jedi
+author: David Halter
+author-email: davidhalter88@gmail.com
+maintainer: David Halter
+maintainer-email: davidhalter88@gmail.com
+license: MIT
+license-file: LICENSE.txt
+license-file: AUTHORS.txt
+classifier: Development Status :: 4 - Beta
+classifier: Environment :: Plugins
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: Text Editors :: Integrated Development Environments (IDE)
+classifier: Topic :: Utilities
+requires-dist: parso<0.9.0,>=0.8.6
+requires-dist: pytest<9.0.0; extra == "dev"
+requires-dist: docopt; extra == "dev"
+requires-dist: colorama; extra == "dev"
+requires-dist: Django; extra == "dev"
+requires-dist: attrs; extra == "dev"
+requires-dist: typing_extensions; extra == "dev"
+requires-dist: flake8==7.1.2; extra == "dev"
+requires-dist: zuban==0.7.0; extra == "dev"
+requires-dist: types-setuptools==80.9.0.20250529; extra == "dev"
+requires-dist: alabaster==1.0.0; extra == "docs"
+requires-dist: babel==2.18.0; extra == "docs"
+requires-dist: certifi==2026.4.22; extra == "docs"
+requires-dist: charset-normalizer==3.4.7; extra == "docs"
+requires-dist: docutils==0.22.4; extra == "docs"
+requires-dist: idna==3.13; extra == "docs"
+requires-dist: imagesize==2.0.0; extra == "docs"
+requires-dist: iniconfig==2.3.0; extra == "docs"
+requires-dist: Jinja2==3.1.6; extra == "docs"
+requires-dist: MarkupSafe==3.0.3; extra == "docs"
+requires-dist: packaging==26.2; extra == "docs"
+requires-dist: pluggy==1.6.0; extra == "docs"
+requires-dist: Pygments==2.20.0; extra == "docs"
+requires-dist: pytest==9.0.3; extra == "docs"
+requires-dist: requests==2.33.1; extra == "docs"
+requires-dist: roman-numerals==4.1.0; extra == "docs"
+requires-dist: snowballstemmer==3.0.1; extra == "docs"
+requires-dist: Sphinx==9.1.0; extra == "docs"
+requires-dist: sphinx_rtd_theme==3.1.0; extra == "docs"
+requires-dist: sphinxcontrib-applehelp==2.0.0; extra == "docs"
+requires-dist: sphinxcontrib-devhelp==2.0.0; extra == "docs"
+requires-dist: sphinxcontrib-htmlhelp==2.1.0; extra == "docs"
+requires-dist: sphinxcontrib-jquery==4.1; extra == "docs"
+requires-dist: sphinxcontrib-jsmath==1.0.1; extra == "docs"
+requires-dist: sphinxcontrib-qthelp==2.0.0; extra == "docs"
+requires-dist: sphinxcontrib-serializinghtml==2.0.0; extra == "docs"
+requires-dist: urllib3==2.6.3; extra == "docs"
+requires-python: >=3.10
+project-url: Documentation, https://jedi.readthedocs.io/en/latest/
+provides-extra: dev
+provides-extra: docs
+

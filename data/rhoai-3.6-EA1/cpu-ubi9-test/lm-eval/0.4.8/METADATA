@@ -1,0 +1,67 @@
+metadata-version: 2.4
+name: lm_eval
+version: 0.4.8
+summary: A framework for evaluating language models
+author-email: EleutherAI <contact@eleuther.ai>
+license: MIT
+classifier: Development Status :: 3 - Alpha
+classifier: Programming Language :: Python :: 3
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+requires-dist: urllib3==2.6.3
+requires-dist: accelerate>=1.0.1
+requires-dist: evaluate>=0.4.3
+requires-dist: eval-hub-sdk[adapter]==0.4.4
+requires-dist: datasets<4.0.0,>=3.1.0
+requires-dist: jsonlines==4.0.0
+requires-dist: numexpr==2.10.1
+requires-dist: peft>=0.13.2
+requires-dist: pybind11==2.13.6
+requires-dist: pytablewriter==1.2.0
+requires-dist: rouge-score==0.1.2
+requires-dist: sacrebleu==2.4.3
+requires-dist: scikit-learn==1.5.2
+requires-dist: sqlitedict==2.1.0
+requires-dist: torch>=2.6.0
+requires-dist: tqdm-multiprocess==0.0.11
+requires-dist: transformers<5.0.0,>=4.48.0
+requires-dist: zstandard==0.23.0
+requires-dist: dill==0.3.8
+requires-dist: word2number==1.1
+requires-dist: more_itertools==10.5.0
+requires-dist: unitxt==1.17.2
+requires-dist: jiwer==3.0.5
+requires-dist: boto3==1.42.12
+requires-dist: olot==0.1.15
+requires-dist: requests==2.32.5; extra == "api"
+requires-dist: aiohttp==3.13.3; extra == "api"
+requires-dist: tenacity==9.0.0; extra == "api"
+requires-dist: tqdm==4.66.6; extra == "api"
+requires-dist: tiktoken==0.8.0; extra == "api"
+requires-dist: langdetect==1.0.9; extra == "ifeval"
+requires-dist: immutabledict==4.2.1; extra == "ifeval"
+requires-dist: nltk==3.9.3; extra == "ifeval"
+requires-dist: sympy>=1.12; extra == "math"
+requires-dist: antlr4-python3-runtime==4.11; extra == "math"
+requires-dist: math_verify[antlr4_11_0]; extra == "math"
+requires-dist: pytest==8.3.3; extra == "dev"
+requires-dist: pytest-cov==6.0.0; extra == "dev"
+requires-dist: pytest-xdist==3.6.1; extra == "dev"
+requires-dist: pre-commit==4.0.1; extra == "dev"
+requires-dist: mypy==1.13.0; extra == "dev"
+requires-dist: hf-transfer==0.1.9; extra == "hf-transfer"
+requires-dist: pytest==8.3.3; extra == "testing"
+requires-dist: pytest-cov==6.0.0; extra == "testing"
+requires-dist: pytest-xdist==3.6.1; extra == "testing"
+requires-dist: ibm-watsonx-ai==1.4.11; extra == "ibm-watsonx-ai"
+requires-python: <3.13,>=3.11
+project-url: Homepage, https://github.com/EleutherAI/lm-evaluation-harness
+project-url: Repository, https://github.com/EleutherAI/lm-evaluation-harness
+provides-extra: api
+provides-extra: ifeval
+provides-extra: math
+provides-extra: dev
+provides-extra: hf-transfer
+provides-extra: testing
+provides-extra: ibm-watsonx-ai
+

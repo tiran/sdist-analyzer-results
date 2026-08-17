@@ -1,0 +1,33 @@
+metadata-version: 2.4
+name: fastdownload
+version: 0.0.7
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: A general purpose data downloading library.
+keywords: fastdownload,dataset,fastai,download
+home-page: https://github.com/fastai/fastdownload/tree/master/
+author: Jeremy Howard
+author-email: info@fast.ai
+license: Apache Software License 2.0
+license-file: LICENSE
+classifier: Development Status :: 3 - Alpha
+classifier: Intended Audience :: Developers
+classifier: Natural Language :: English
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: License :: OSI Approved :: Apache Software License
+requires-dist: fastprogress
+requires-dist: fastcore>=1.3.26
+requires-python: >=3.6
+

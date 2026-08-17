@@ -1,2 +1,2 @@
-hatchling>=1.12.1
 packaging>=21.3
+hatchling>=1.12.1

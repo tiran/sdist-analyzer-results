@@ -1,0 +1,15 @@
+metadata-version: 2.4
+name: condense-json
+version: 1.1
+dynamic: license-file
+summary: Python function for condensing JSON using replacement strings
+author: Simon Willison
+license-expression: Apache-2.0
+license-file: LICENSE
+classifier: Typing :: Typed
+requires-python: >=3.10
+project-url: Homepage, https://github.com/simonw/condense-json
+project-url: Changelog, https://github.com/simonw/condense-json/releases
+project-url: Issues, https://github.com/simonw/condense-json/issues
+project-url: CI, https://github.com/simonw/condense-json/actions
+

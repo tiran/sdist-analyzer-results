@@ -1,0 +1,80 @@
+metadata-version: 2.5
+name: elasticsearch
+version: 9.5.0
+summary: Python client for Elasticsearch
+keywords: REST,client,elastic,elasticsearch,index,kibana,mapping,search
+author-email: Elastic Client Library Maintainers <client-libs@elastic.co>
+maintainer-email: Elastic Client Library Maintainers <client-libs@elastic.co>
+license-expression: Apache-2.0
+license-file: LICENSE
+license-file: NOTICE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+requires-dist: anyio
+requires-dist: elastic-transport<10,>=9.4.1
+requires-dist: python-dateutil
+requires-dist: sniffio
+requires-dist: typing-extensions
+requires-dist: aiohttp<4,>=3; extra == "async"
+requires-dist: aiohttp; extra == "dev"
+requires-dist: anyio[trio]; extra == "dev"
+requires-dist: black; extra == "dev"
+requires-dist: build; extra == "dev"
+requires-dist: coverage; extra == "dev"
+requires-dist: httpx; extra == "dev"
+requires-dist: isort; extra == "dev"
+requires-dist: jinja2; extra == "dev"
+requires-dist: mapbox-vector-tile; extra == "dev"
+requires-dist: mypy; extra == "dev"
+requires-dist: nox; extra == "dev"
+requires-dist: numpy; extra == "dev"
+requires-dist: orjson; extra == "dev"
+requires-dist: pandas; extra == "dev"
+requires-dist: pyarrow; python_version < "3.14" and extra == "dev"
+requires-dist: pydantic; extra == "dev"
+requires-dist: pyright; extra == "dev"
+requires-dist: pytest; extra == "dev"
+requires-dist: pytest-asyncio; extra == "dev"
+requires-dist: pytest-cov; extra == "dev"
+requires-dist: pytest-mock; extra == "dev"
+requires-dist: python-dateutil; extra == "dev"
+requires-dist: pyyaml>=5.4; extra == "dev"
+requires-dist: requests<3,>=2; extra == "dev"
+requires-dist: simsimd; extra == "dev"
+requires-dist: tqdm; extra == "dev"
+requires-dist: twine; extra == "dev"
+requires-dist: types-python-dateutil; extra == "dev"
+requires-dist: types-tqdm; extra == "dev"
+requires-dist: unasync; extra == "dev"
+requires-dist: sphinx; extra == "docs"
+requires-dist: sphinx-autodoc-typehints; extra == "docs"
+requires-dist: sphinx-rtd-theme>=2.0; extra == "docs"
+requires-dist: orjson>=3; extra == "orjson"
+requires-dist: pyarrow>=1; extra == "pyarrow"
+requires-dist: requests!=2.32.2,<3.0.0,>=2.4.0; extra == "requests"
+requires-dist: numpy>=1; extra == "vectorstore-mmr"
+requires-dist: simsimd>=3; extra == "vectorstore-mmr"
+requires-python: >=3.10
+project-url: Documentation, https://elasticsearch-py.readthedocs.io/
+project-url: Homepage, https://github.com/elastic/elasticsearch-py
+project-url: Issue Tracker, https://github.com/elastic/elasticsearch-py/issues
+project-url: Source Code, https://github.com/elastic/elasticsearch-py
+provides-extra: async
+provides-extra: dev
+provides-extra: docs
+provides-extra: orjson
+provides-extra: pyarrow
+provides-extra: requests
+provides-extra: vectorstore-mmr
+

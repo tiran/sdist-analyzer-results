@@ -1,0 +1,14 @@
+metadata-version: 2.5
+name: jupyter-ydoc
+version: 3.4.1
+summary: Document structures for collaborative editing using Ypy
+keywords: jupyter,pycrdt,yjs
+author-email: Jupyter Development Team <jupyter@googlegroups.com>
+license: BSD 3-Clause License
+license-file: LICENSE
+requires-dist: anyio<5.0.0,>=4.12.1
+requires-dist: pycrdt<0.13.0,>=0.10.1
+requires-python: >=3.10
+project-url: Homepage, https://jupyter.org
+project-url: Source, https://github.com/jupyter-server/jupyter_ydoc
+

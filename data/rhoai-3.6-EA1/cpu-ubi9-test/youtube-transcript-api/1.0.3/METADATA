@@ -1,0 +1,24 @@
+metadata-version: 2.4
+name: youtube-transcript-api
+version: 1.0.3
+summary: This is an python API which allows you to get the transcripts/subtitles for a given YouTube video. It also works for automatically generated subtitles, supports translating subtitles and it does not require a headless browser, like other selenium based solutions do!
+keywords: cli,subtitle,subtitles,transcript,transcripts,youtube,youtube-api,youtube-subtitles,youtube-transcripts
+author: Jonas Depoix
+author-email: jonas.depoix@web.de
+license: MIT
+license-file: LICENSE
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+requires-dist: defusedxml<0.8.0,>=0.7.1
+requires-dist: requests
+requires-python: <3.14,>=3.8
+project-url: Homepage, https://github.com/jdepoix/youtube-transcript-api
+project-url: Repository, https://github.com/jdepoix/youtube-transcript-api
+

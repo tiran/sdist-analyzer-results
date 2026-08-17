@@ -1,0 +1,81 @@
+metadata-version: 2.4
+name: setuptools
+version: 84.0.0
+dynamic: license-file
+summary: Most extensible Python build backend with support for C/C++ extension modules
+keywords: CPAN PyPI distutils eggs package management
+author-email: Python Packaging Authority <distutils-sig@python.org>
+license-expression: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: System :: Archiving :: Packaging
+classifier: Topic :: System :: Systems Administration
+classifier: Topic :: Utilities
+requires-dist: pytest!=8.1.*,>=6; extra == "test"
+requires-dist: virtualenv>=13.0.0; extra == "test"
+requires-dist: wheel>=0.44.0; extra == "test"
+requires-dist: pip>=19.1; extra == "test"
+requires-dist: packaging>=24.2; extra == "test"
+requires-dist: jaraco.envs>=2.2; extra == "test"
+requires-dist: pytest-xdist>=3; extra == "test"
+requires-dist: jaraco.path>=3.7.2; extra == "test"
+requires-dist: build[virtualenv]>=1.0.3; extra == "test"
+requires-dist: filelock>=3.4.0; extra == "test"
+requires-dist: ini2toml[lite]>=0.14; extra == "test"
+requires-dist: tomli-w>=1.0.0; extra == "test"
+requires-dist: pytest-timeout; extra == "test"
+requires-dist: pytest-perf; sys_platform != "cygwin" and extra == "test"
+requires-dist: jaraco.develop>=7.21; (python_version >= "3.9" and sys_platform != "cygwin") and extra == "test"
+requires-dist: pytest-home>=0.5; extra == "test"
+requires-dist: pytest-subprocess; extra == "test"
+requires-dist: pyproject-hooks!=1.1; extra == "test"
+requires-dist: jaraco.test>=5.5; extra == "test"
+requires-dist: sphinx>=3.5; extra == "doc"
+requires-dist: jaraco.packaging>=9.3; extra == "doc"
+requires-dist: rst.linker>=1.9; extra == "doc"
+requires-dist: furo; extra == "doc"
+requires-dist: sphinx-lint; extra == "doc"
+requires-dist: jaraco.tidelift>=1.4; extra == "doc"
+requires-dist: pygments-github-lexers==0.0.5; extra == "doc"
+requires-dist: sphinx-favicon; extra == "doc"
+requires-dist: sphinx-inline-tabs; extra == "doc"
+requires-dist: sphinx-reredirects; extra == "doc"
+requires-dist: sphinxcontrib-towncrier; extra == "doc"
+requires-dist: sphinx-notfound-page<2,>=1; extra == "doc"
+requires-dist: pyproject-hooks!=1.1; extra == "doc"
+requires-dist: towncrier<24.7; extra == "doc"
+requires-dist: packaging>=24.2; extra == "core"
+requires-dist: more_itertools>=8.8; extra == "core"
+requires-dist: jaraco.text>=3.7; extra == "core"
+requires-dist: importlib_metadata>=6; python_version < "3.10" and extra == "core"
+requires-dist: tomli>=2.0.1; python_version < "3.11" and extra == "core"
+requires-dist: wheel>=0.43.0; extra == "core"
+requires-dist: jaraco.functools>=4; extra == "core"
+requires-dist: more_itertools; extra == "core"
+requires-dist: pytest-checkdocs>=2.14; extra == "check"
+requires-dist: pytest-ruff>=0.2.1; sys_platform != "cygwin" and extra == "check"
+requires-dist: ruff>=0.13.0; sys_platform != "cygwin" and extra == "check"
+requires-dist: pytest-cov; extra == "cover"
+requires-dist: pytest-enabler>=3.4; extra == "enabler"
+requires-dist: pytest-mypy>=1.0.1; platform_python_implementation != "PyPy" and extra == "type"
+requires-dist: mypy==1.18.*; extra == "type"
+requires-dist: importlib_metadata>=7.0.2; python_version < "3.10" and extra == "type"
+requires-dist: jaraco.develop>=7.21; sys_platform != "cygwin" and extra == "type"
+requires-python: >=3.10
+project-url: Source, https://github.com/pypa/setuptools
+project-url: Documentation, https://setuptools.pypa.io/
+project-url: Changelog, https://setuptools.pypa.io/en/stable/history.html
+provides-extra: test
+provides-extra: doc
+provides-extra: ssl
+provides-extra: certs
+provides-extra: core
+provides-extra: check
+provides-extra: cover
+provides-extra: enabler
+provides-extra: type
+

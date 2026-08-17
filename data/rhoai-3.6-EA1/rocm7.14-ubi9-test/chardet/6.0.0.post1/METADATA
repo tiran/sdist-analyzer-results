@@ -1,0 +1,31 @@
+metadata-version: 2.5
+name: chardet
+version: 6.0.0.post1
+summary: Universal encoding detector for Python 3
+keywords: encoding,i18n,xml
+author-email: Mark Pilgrim <mark@diveintomark.org>
+maintainer: Ian Cordasco
+maintainer-email: Dan Blanchard <dan.blanchard@gmail.com>
+license: LGPL-2.1-or-later
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: Text Processing :: Linguistic
+requires-python: >=3.10
+project-url: Documentation, https://chardet.readthedocs.io/
+project-url: Homepage, http://chardet.github.io
+project-url: Issues, https://github.com/chardet/chardet/issues
+project-url: Repository, https://github.com/chardet/chardet
+

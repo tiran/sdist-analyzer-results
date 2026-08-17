@@ -1,0 +1,44 @@
+metadata-version: 2.4
+name: fastjsonschema
+version: 2.22.1
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: provides-extra
+dynamic: requires-python
+dynamic: summary
+summary: Fastest Python implementation of JSON schema
+home-page: https://github.com/horejsek/python-fastjsonschema
+author: Michal Horejsek
+author-email: fastjsonschema@horejsek.com
+license: BSD-3-Clause
+license-file: LICENSE
+license-file: AUTHORS
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: License :: OSI Approved :: BSD License
+classifier: Operating System :: OS Independent
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: colorama; extra == "devel"
+requires-dist: jsonschema; extra == "devel"
+requires-dist: json-spec; extra == "devel"
+requires-dist: pylint; extra == "devel"
+requires-dist: pytest; extra == "devel"
+requires-dist: pytest-benchmark; extra == "devel"
+requires-dist: pytest-cache; extra == "devel"
+requires-dist: validictory; extra == "devel"
+requires-python: >=3.10
+provides-extra: devel
+

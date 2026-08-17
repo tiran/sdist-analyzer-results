@@ -1,0 +1,29 @@
+metadata-version: 2.4
+name: lomond
+version: 0.3.3
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: platform
+dynamic: requires-dist
+dynamic: summary
+platform: any
+summary: Websocket Client Library
+home-page: https://github.com/wildfoundry/dataplicity-lomond
+author: WildFoundry
+author-email: willmcgugan@gmail.com
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Python
+classifier: License :: OSI Approved :: BSD License
+classifier: Programming Language :: Python :: 2.7
+classifier: Programming Language :: Python :: 3.3
+classifier: Programming Language :: Python :: 3.4
+classifier: Programming Language :: Python :: 3.5
+classifier: Programming Language :: Python :: 3.6
+classifier: Topic :: Internet
+requires-dist: six>=1.10.0
+

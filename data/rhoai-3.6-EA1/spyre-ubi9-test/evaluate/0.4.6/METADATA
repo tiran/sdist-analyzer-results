@@ -1,0 +1,135 @@
+metadata-version: 2.4
+name: evaluate
+version: 0.4.6
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: download-url
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: HuggingFace community-driven open-source library of evaluation
+keywords: metrics machine learning evaluate evaluation
+home-page: https://github.com/huggingface/evaluate
+download-url: https://github.com/huggingface/evaluate/tags
+author: HuggingFace Inc.
+author-email: leandro@huggingface.co
+license: Apache 2.0
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Education
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+requires-dist: datasets>=2.0.0
+requires-dist: numpy>=1.17
+requires-dist: dill
+requires-dist: pandas
+requires-dist: requests>=2.19.0
+requires-dist: tqdm>=4.62.1
+requires-dist: xxhash
+requires-dist: multiprocess
+requires-dist: importlib_metadata; python_version < "3.8"
+requires-dist: fsspec[http]>=2021.05.0
+requires-dist: huggingface-hub>=0.7.0
+requires-dist: packaging
+requires-dist: tensorflow!=2.6.0,!=2.6.1,>=2.2.0; extra == "tensorflow"
+requires-dist: tensorflow-gpu!=2.6.0,!=2.6.1,>=2.2.0; extra == "tensorflow-gpu"
+requires-dist: torch; extra == "torch"
+requires-dist: absl-py; extra == "dev"
+requires-dist: charcut>=1.1.1; extra == "dev"
+requires-dist: cer>=1.2.0; extra == "dev"
+requires-dist: nltk; extra == "dev"
+requires-dist: pytest; extra == "dev"
+requires-dist: pytest-datadir; extra == "dev"
+requires-dist: pytest-xdist; extra == "dev"
+requires-dist: numpy<2.0.0; extra == "dev"
+requires-dist: tensorflow!=2.6.0,!=2.6.1,<=2.10,>=2.3; extra == "dev"
+requires-dist: torch; extra == "dev"
+requires-dist: accelerate; extra == "dev"
+requires-dist: bert_score>=0.3.6; extra == "dev"
+requires-dist: rouge_score>=0.1.2; extra == "dev"
+requires-dist: sacrebleu; extra == "dev"
+requires-dist: sacremoses; extra == "dev"
+requires-dist: scipy>=1.10.0; extra == "dev"
+requires-dist: seqeval; extra == "dev"
+requires-dist: scikit-learn; extra == "dev"
+requires-dist: jiwer; extra == "dev"
+requires-dist: sentencepiece; extra == "dev"
+requires-dist: transformers; extra == "dev"
+requires-dist: mauve-text; extra == "dev"
+requires-dist: trectools; extra == "dev"
+requires-dist: toml>=0.10.1; extra == "dev"
+requires-dist: requests_file>=1.5.1; extra == "dev"
+requires-dist: tldextract>=3.1.0; extra == "dev"
+requires-dist: texttable>=1.6.3; extra == "dev"
+requires-dist: unidecode>=1.3.4; extra == "dev"
+requires-dist: Werkzeug>=1.0.1; extra == "dev"
+requires-dist: six~=1.15.0; extra == "dev"
+requires-dist: black~=22.0; extra == "dev"
+requires-dist: flake8>=3.8.3; extra == "dev"
+requires-dist: isort>=5.0.0; extra == "dev"
+requires-dist: pyyaml>=5.3.1; extra == "dev"
+requires-dist: absl-py; extra == "tests"
+requires-dist: charcut>=1.1.1; extra == "tests"
+requires-dist: cer>=1.2.0; extra == "tests"
+requires-dist: nltk; extra == "tests"
+requires-dist: pytest; extra == "tests"
+requires-dist: pytest-datadir; extra == "tests"
+requires-dist: pytest-xdist; extra == "tests"
+requires-dist: numpy<2.0.0; extra == "tests"
+requires-dist: tensorflow!=2.6.0,!=2.6.1,<=2.10,>=2.3; extra == "tests"
+requires-dist: torch; extra == "tests"
+requires-dist: accelerate; extra == "tests"
+requires-dist: bert_score>=0.3.6; extra == "tests"
+requires-dist: rouge_score>=0.1.2; extra == "tests"
+requires-dist: sacrebleu; extra == "tests"
+requires-dist: sacremoses; extra == "tests"
+requires-dist: scipy>=1.10.0; extra == "tests"
+requires-dist: seqeval; extra == "tests"
+requires-dist: scikit-learn; extra == "tests"
+requires-dist: jiwer; extra == "tests"
+requires-dist: sentencepiece; extra == "tests"
+requires-dist: transformers; extra == "tests"
+requires-dist: mauve-text; extra == "tests"
+requires-dist: trectools; extra == "tests"
+requires-dist: toml>=0.10.1; extra == "tests"
+requires-dist: requests_file>=1.5.1; extra == "tests"
+requires-dist: tldextract>=3.1.0; extra == "tests"
+requires-dist: texttable>=1.6.3; extra == "tests"
+requires-dist: unidecode>=1.3.4; extra == "tests"
+requires-dist: Werkzeug>=1.0.1; extra == "tests"
+requires-dist: six~=1.15.0; extra == "tests"
+requires-dist: black~=22.0; extra == "quality"
+requires-dist: flake8>=3.8.3; extra == "quality"
+requires-dist: isort>=5.0.0; extra == "quality"
+requires-dist: pyyaml>=5.3.1; extra == "quality"
+requires-dist: s3fs; extra == "docs"
+requires-dist: cookiecutter; extra == "template"
+requires-dist: gradio>=3.0.0; extra == "template"
+requires-dist: transformers; extra == "evaluator"
+requires-dist: scipy>=1.7.1; extra == "evaluator"
+requires-python: >=3.8.0
+provides-extra: tensorflow
+provides-extra: tensorflow-gpu
+provides-extra: torch
+provides-extra: dev
+provides-extra: tests
+provides-extra: quality
+provides-extra: docs
+provides-extra: template
+provides-extra: evaluator
+

@@ -1,0 +1,70 @@
+metadata-version: 2.4
+name: cryptography
+version: 46.0.7
+summary: cryptography is a package which provides cryptographic recipes and primitives to Python developers.
+author-email: The Python Cryptographic Authority and individual contributors <cryptography-dev@python.org>
+license-expression: Apache-2.0 OR BSD-3-Clause
+license-file: LICENSE
+license-file: LICENSE.APACHE
+license-file: LICENSE.BSD
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Natural Language :: English
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Operating System :: POSIX
+classifier: Operating System :: POSIX :: BSD
+classifier: Operating System :: POSIX :: Linux
+classifier: Operating System :: Microsoft :: Windows
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Programming Language :: Python :: Free Threading :: 3 - Stable
+classifier: Topic :: Security :: Cryptography
+requires-dist: cffi>=1.14; python_full_version == "3.8.*" and platform_python_implementation != "PyPy"
+requires-dist: cffi>=2.0.0; python_full_version >= "3.9" and platform_python_implementation != "PyPy"
+requires-dist: typing-extensions>=4.13.2; python_full_version < "3.11"
+requires-dist: sphinx>=5.3.0; extra == "docs"
+requires-dist: sphinx-rtd-theme>=3.0.0; extra == "docs"
+requires-dist: sphinx-inline-tabs; extra == "docs"
+requires-dist: pyenchant>=3; extra == "docstest"
+requires-dist: readme-renderer>=30.0; extra == "docstest"
+requires-dist: sphinxcontrib-spelling>=7.3.1; extra == "docstest"
+requires-dist: nox[uv]>=2024.4.15; extra == "nox"
+requires-dist: ruff>=0.11.11; extra == "pep8test"
+requires-dist: mypy>=1.14; extra == "pep8test"
+requires-dist: check-sdist; extra == "pep8test"
+requires-dist: click>=8.0.1; extra == "pep8test"
+requires-dist: build>=1.0.0; extra == "sdist"
+requires-dist: bcrypt>=3.1.5; extra == "ssh"
+requires-dist: cryptography-vectors==46.0.7; extra == "test"
+requires-dist: pytest>=7.4.0; extra == "test"
+requires-dist: pytest-benchmark>=4.0; extra == "test"
+requires-dist: pytest-cov>=2.10.1; extra == "test"
+requires-dist: pytest-xdist>=3.5.0; extra == "test"
+requires-dist: pretend>=0.7; extra == "test"
+requires-dist: certifi>=2024; extra == "test"
+requires-dist: pytest-randomly; extra == "test-randomorder"
+requires-python: !=3.9.0,!=3.9.1,>=3.8
+project-url: changelog, https://cryptography.io/en/latest/changelog/
+project-url: documentation, https://cryptography.io/
+project-url: homepage, https://github.com/pyca/cryptography
+project-url: issues, https://github.com/pyca/cryptography/issues
+project-url: source, https://github.com/pyca/cryptography/
+provides-extra: docs
+provides-extra: docstest
+provides-extra: nox
+provides-extra: pep8test
+provides-extra: sdist
+provides-extra: ssh
+provides-extra: test
+provides-extra: test-randomorder
+

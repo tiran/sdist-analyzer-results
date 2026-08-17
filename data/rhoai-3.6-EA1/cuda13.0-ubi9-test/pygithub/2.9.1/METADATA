@@ -1,0 +1,33 @@
+metadata-version: 2.4
+name: PyGithub
+version: 2.9.1
+dynamic: license-file
+summary: Use the full Github API v3
+keywords: github
+author-email: Vincent Jacques <vincent@vincent-jacques.net>
+license-file: COPYING
+license-file: COPYING.LESSER
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Web Environment
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Topic :: Software Development
+requires-dist: pynacl>=1.4.0
+requires-dist: requests>=2.14.0
+requires-dist: pyjwt[crypto]>=2.4.0
+requires-dist: typing-extensions>=4.5.0
+requires-dist: urllib3>=1.26.0
+requires-python: >=3.9
+project-url: Documentation, https://pygithub.readthedocs.io/en/stable/
+project-url: Source, https://github.com/pygithub/pygithub
+project-url: Tracker, https://github.com/pygithub/pygithub/issues
+provides-extra: integrations
+

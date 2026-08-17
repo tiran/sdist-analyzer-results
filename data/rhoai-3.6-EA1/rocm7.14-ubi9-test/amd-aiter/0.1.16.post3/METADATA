@@ -1,0 +1,23 @@
+metadata-version: 2.4
+name: amd-aiter
+version: 0.1.16.post3
+dynamic: classifier
+dynamic: license-file
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+license-file: LICENSE
+classifier: Programming Language :: Python :: 3
+classifier: License :: OSI Approved :: BSD License
+classifier: Operating System :: Unix
+requires-dist: pybind11>=3.0.1
+requires-dist: ninja
+requires-dist: pandas
+requires-dist: einops
+requires-dist: psutil
+requires-dist: packaging
+requires-dist: flydsl==0.2.0
+requires-python: >=3.8
+provides-extra: triton-comms
+provides-extra: all
+

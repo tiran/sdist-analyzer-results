@@ -1,0 +1,89 @@
+metadata-version: 2.4
+name: scikit-base
+version: 1.1.0
+dynamic: license-file
+summary: Base classes for sklearn-like parametric objects
+keywords: data-science,machine-learning,scikit-learn
+author-email: sktime developers <sktime.toolbox@gmail.com>
+maintainer: Franz Király
+maintainer-email: sktime developers <sktime.toolbox@gmail.com>
+license: BSD 3-Clause License
+                 
+                 Copyright (c) 2022, skbase Developers
+                 All rights reserved.
+                 
+                 Redistribution and use in source and binary forms, with or without
+                 modification, are permitted provided that the following conditions are met:
+                 
+                 1. Redistributions of source code must retain the above copyright notice, this
+                    list of conditions and the following disclaimer.
+                 
+                 2. Redistributions in binary form must reproduce the above copy...
+license-file: LICENSE
+classifier: Intended Audience :: Science/Research
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: BSD License
+classifier: Programming Language :: Python
+classifier: Topic :: Software Development
+classifier: Topic :: Scientific/Engineering
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: POSIX
+classifier: Operating System :: Unix
+classifier: Operating System :: MacOS
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-dist: numpy; extra == "all-extras"
+requires-dist: pandas; extra == "all-extras"
+requires-dist: scikit-learn>=0.24.0; extra == "dev"
+requires-dist: pre-commit; extra == "dev"
+requires-dist: pytest; extra == "dev"
+requires-dist: pytest-cov; extra == "dev"
+requires-dist: mypy; extra == "linters"
+requires-dist: isort; extra == "linters"
+requires-dist: flake8; extra == "linters"
+requires-dist: black; extra == "linters"
+requires-dist: pydocstyle; extra == "linters"
+requires-dist: nbqa; extra == "linters"
+requires-dist: flake8-bugbear; extra == "linters"
+requires-dist: flake8-builtins; extra == "linters"
+requires-dist: flake8-quotes; extra == "linters"
+requires-dist: flake8-comprehensions; extra == "linters"
+requires-dist: pandas-vet; extra == "linters"
+requires-dist: flake8-print; extra == "linters"
+requires-dist: pep8-naming; extra == "linters"
+requires-dist: doc8; extra == "linters"
+requires-dist: jupyter; extra == "binder"
+requires-dist: jupyter; extra == "docs"
+requires-dist: myst-parser; extra == "docs"
+requires-dist: nbsphinx>=0.8.6; extra == "docs"
+requires-dist: numpydoc; extra == "docs"
+requires-dist: pydata-sphinx-theme; extra == "docs"
+requires-dist: sphinx-issues<7.0.0; extra == "docs"
+requires-dist: sphinx-gallery<0.22.0; extra == "docs"
+requires-dist: sphinx-panels; extra == "docs"
+requires-dist: sphinx-design<0.7.0; extra == "docs"
+requires-dist: Sphinx!=7.2.0,<10.0.0; extra == "docs"
+requires-dist: tabulate; extra == "docs"
+requires-dist: pytest; extra == "test"
+requires-dist: coverage; extra == "test"
+requires-dist: pytest-cov; extra == "test"
+requires-dist: safety; extra == "test"
+requires-dist: numpy; extra == "test"
+requires-dist: scipy; extra == "test"
+requires-dist: pandas; extra == "test"
+requires-dist: scikit-learn>=0.24.0; extra == "test"
+requires-python: <3.15,>=3.10
+project-url: homepage, https://github.com/sktime/skbase
+project-url: repository, https://github.com/sktime/skbase
+project-url: documentation, https://github.com/sktime/skbase
+project-url: download, https://pypi.org/project/skbase/#files
+provides-extra: all-extras
+provides-extra: dev
+provides-extra: linters
+provides-extra: binder
+provides-extra: docs
+provides-extra: test
+

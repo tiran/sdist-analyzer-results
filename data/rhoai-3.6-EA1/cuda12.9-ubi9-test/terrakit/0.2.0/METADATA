@@ -1,0 +1,45 @@
+metadata-version: 2.3
+name: terrakit
+version: 0.2.0
+summary: A Python package for finding and getting geospatial data.
+author: Blair Edwards, Rosie Lickorish, Leonardo Pondian Tizzei, Fred Ochieng Otieno, Beldine Moturi, Catherine Wanjiru, Benedikt Blumenstiel, Brian Ogolla, Romeo Kienzler
+author-email: Blair Edwards <bedwards@uk.ibm.com>
+requires-dist: aiohttp>=3.14.0
+requires-dist: boto3>=1.36.0
+requires-dist: contextily>=1.6.2
+requires-dist: cdsapi>=0.7.7
+requires-dist: click>=8.3.3
+requires-dist: dask>=2025.7.0
+requires-dist: folium>=0.20.0
+requires-dist: huggingface-hub
+requires-dist: geojson>=3.2.0
+requires-dist: geopandas>=1.1.2
+requires-dist: idna>=3.15
+requires-dist: joblib>=1.5.2
+requires-dist: jsonargparse>=4.40.2
+requires-dist: netcdf4>=1.7.3
+requires-dist: nest-asyncio>=1.6.0
+requires-dist: numpy>=1.26.4
+requires-dist: pillow>=12.3.0
+requires-dist: pydantic>=2.11.7
+requires-dist: pystac-client>=0.9.0
+requires-dist: python-dotenv>=1.2.2
+requires-dist: rasterio>=1.4.3
+requires-dist: requests>=2.33.0
+requires-dist: rioxarray[interp]>=0.19.0
+requires-dist: s3fs>=2025.1.0
+requires-dist: scikit-learn>=1.7.1
+requires-dist: sentinelhub>=3.11.1
+requires-dist: shapely>=2.1.1
+requires-dist: stackstac>=0.5.1
+requires-dist: tacoreader==2.4.21
+requires-dist: tacotoolbox==0.26.9
+requires-dist: tqdm>=4.67.1
+requires-dist: xarray>=2023.1.0
+requires-dist: urllib3>=2.7.0
+requires-dist: zarr>=2.18.0
+requires-python: >=3.11
+project-url: Documentation, https://torchgeo.github.io/terrakit/
+project-url: Issues, https://github.com/torchgeo/terrakit/issues
+project-url: Source, https://github.com/torchgeo/terrakit
+

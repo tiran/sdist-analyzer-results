@@ -1,0 +1,32 @@
+metadata-version: 2.4
+name: py3Dmol
+version: 2.5.5
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: provides-extra
+dynamic: summary
+summary: An IPython interface for embedding 3Dmol.js views in Jupyter notebooks
+keywords: molecule protein visualization
+home-page: https://3dmol.org
+author: David Koes
+author-email: dkoes@pitt.edu
+license: MIT
+license-file: LICENSE.txt
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: Topic :: Scientific/Engineering :: Chemistry
+classifier: Topic :: Scientific/Engineering :: Visualization
+classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python :: 2
+classifier: Programming Language :: Python :: 3
+requires-dist: IPython; extra == "ipython"
+provides-extra: ipython
+

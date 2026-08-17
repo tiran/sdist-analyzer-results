@@ -1,0 +1,30 @@
+metadata-version: 2.5
+name: opentelemetry-instrumentation-botocore
+version: 0.65b0
+summary: OpenTelemetry Botocore instrumentation
+author-email: OpenTelemetry Authors <cncf-opentelemetry-contributors@lists.cncf.io>
+license-expression: Apache-2.0
+license-file: LICENSE
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-dist: opentelemetry-api~=1.37
+requires-dist: opentelemetry-instrumentation==0.65b0
+requires-dist: opentelemetry-propagator-aws-xray~=1.0
+requires-dist: opentelemetry-semantic-conventions==0.65b0
+requires-dist: wrapt<3.0.0,>=1.0.0
+requires-dist: aiobotocore<4.0,>=2.0; extra == "instruments-any"
+requires-dist: botocore~=1.0; extra == "instruments-any"
+requires-python: >=3.10
+project-url: Homepage, https://github.com/open-telemetry/opentelemetry-python-contrib/tree/main/instrumentation/opentelemetry-instrumentation-botocore
+project-url: Repository, https://github.com/open-telemetry/opentelemetry-python-contrib
+provides-extra: instruments
+provides-extra: instruments-any
+

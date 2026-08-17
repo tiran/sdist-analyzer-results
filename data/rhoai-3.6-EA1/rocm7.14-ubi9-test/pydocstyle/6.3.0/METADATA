@@ -1,0 +1,33 @@
+metadata-version: 2.4
+name: pydocstyle
+version: 6.3.0
+summary: Python docstring style checker
+author: Amir Rachum
+author-email: amir@rachum.com
+license: MIT
+license-file: LICENSE-MIT
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-dist: importlib-metadata<5.0.0,>=2.0.0; python_version < "3.8"
+requires-dist: snowballstemmer>=2.2.0
+requires-dist: tomli>=1.2.3; python_version < "3.11" and extra == "toml"
+requires-python: >=3.6
+project-url: Documentation, https://www.pydocstyle.org/en/stable/
+project-url: Homepage, https://www.pydocstyle.org/en/stable/
+project-url: Repository, https://github.com/PyCQA/pydocstyle
+project-url: Release Notes, https://www.pydocstyle.org/en/stable/release_notes.html
+provides-extra: toml
+

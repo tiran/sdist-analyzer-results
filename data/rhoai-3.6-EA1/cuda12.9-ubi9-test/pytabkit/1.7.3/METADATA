@@ -1,0 +1,72 @@
+metadata-version: 2.5
+name: pytabkit
+version: 1.7.3
+summary: ML models + benchmark for tabular data classification and regression
+keywords: RealMLP,deep learning,gradient boosting,scikit-learn,tabular data
+author: David Holzmüller, Léo Grinsztajn, Ingo Steinwart
+license-expression: Apache-2.0
+license-file: LICENSE.txt
+classifier: Development Status :: 4 - Beta
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+requires-dist: numpy>=1.25
+requires-dist: pandas>=2.0
+requires-dist: psutil>=5.0
+requires-dist: pytorch-lightning>=2.0
+requires-dist: scikit-learn>=1.3
+requires-dist: torch>=2.0
+requires-dist: torchmetrics>=1.2.1
+requires-dist: autogluon-multimodal>=1.0; extra == "autogluon"
+requires-dist: autogluon-tabular[all]>=1.0; extra == "autogluon"
+requires-dist: adjusttext>=1.0; extra == "bench"
+requires-dist: autorank>=1.0; extra == "bench"
+requires-dist: fire; extra == "bench"
+requires-dist: matplotlib>=3.0; extra == "bench"
+requires-dist: openml>=0.14; extra == "bench"
+requires-dist: openpyxl>=3.0; extra == "bench"
+requires-dist: patool>=1.0; extra == "bench"
+requires-dist: ray>=2.8; extra == "bench"
+requires-dist: requests>=2.0; extra == "bench"
+requires-dist: seaborn>=0.0.13; extra == "bench"
+requires-dist: tueplots>=0.0.12; extra == "bench"
+requires-dist: xlrd>=2.0; extra == "bench"
+requires-dist: myst-parser>=3.0; extra == "dev"
+requires-dist: pytest-cov>=4.0; extra == "dev"
+requires-dist: pytest>=7.0; extra == "dev"
+requires-dist: sphinx-rtd-theme>=2.0; extra == "dev"
+requires-dist: sphinx>=7.0; extra == "dev"
+requires-dist: kditransform>=0.2; extra == "extra"
+requires-dist: configspace>=0.7; extra == "hpo"
+requires-dist: hyperopt>=0.2; extra == "hpo"
+requires-dist: smac>=2.0; extra == "hpo"
+requires-dist: catboost>=1.2; extra == "models"
+requires-dist: dask[dataframe]>=2023; extra == "models"
+requires-dist: dill; extra == "models"
+requires-dist: lightgbm>=4.1; extra == "models"
+requires-dist: msgpack>=1.0; extra == "models"
+requires-dist: numba>=0.59.0; extra == "models"
+requires-dist: probmetrics>=0.0.1; extra == "models"
+requires-dist: pyyaml>=5.0; extra == "models"
+requires-dist: skorch>=0.15; extra == "models"
+requires-dist: torch>=2.0; extra == "models"
+requires-dist: tqdm; extra == "models"
+requires-dist: xgboost>=2.0; extra == "models"
+requires-dist: xrfm>=0.4.3; extra == "models"
+requires-python: >=3.9
+project-url: Documentation, https://github.com/dholzmueller/pytabkit#readme
+project-url: Issues, https://github.com/dholzmueller/pytabkit/issues
+project-url: Source, https://github.com/dholzmueller/pytabkit
+provides-extra: autogluon
+provides-extra: bench
+provides-extra: dev
+provides-extra: extra
+provides-extra: hpo
+provides-extra: models
+

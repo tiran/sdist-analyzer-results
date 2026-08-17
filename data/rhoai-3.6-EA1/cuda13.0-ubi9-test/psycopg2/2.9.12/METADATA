@@ -1,0 +1,54 @@
+metadata-version: 2.4
+name: psycopg2
+version: 2.9.12
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: maintainer
+dynamic: maintainer-email
+dynamic: platform
+dynamic: project-url
+dynamic: requires-python
+dynamic: summary
+platform: any
+summary: psycopg2 - Python-PostgreSQL Database Adapter
+home-page: https://psycopg.org/
+author: Federico Di Gregorio
+author-email: fog@initd.org
+maintainer: Daniele Varrazzo
+maintainer-email: daniele.varrazzo@gmail.com
+license: LGPL with exceptions
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: C
+classifier: Programming Language :: SQL
+classifier: Topic :: Database
+classifier: Topic :: Database :: Front-Ends
+classifier: Topic :: Software Development
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: Unix
+requires-python: >=3.9
+project-url: Homepage, https://psycopg.org/
+project-url: Changes, https://www.psycopg.org/docs/news.html
+project-url: Documentation, https://www.psycopg.org/docs/
+project-url: Code, https://github.com/psycopg/psycopg2
+project-url: Issue Tracker, https://github.com/psycopg/psycopg2/issues
+project-url: Download, https://pypi.org/project/psycopg2/
+

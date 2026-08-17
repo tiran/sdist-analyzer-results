@@ -1,0 +1,29 @@
+metadata-version: 2.5
+name: graphemeu
+version: 0.7.2
+summary: Unicode grapheme helpers
+keywords: grapheme,unicode
+author-email: Alvin Lindstam <alvin.lindstam@gmail.com>
+maintainer: Timendum
+license: Copyright (c) 2017 The Python Packaging Authority (PyPA)
+                 Copyright (c) 2014 Mapbox
+                 Copyright (c) 2017 Alvin Lindstam
+                 Copyright (c) 2025 Timendum
+                 
+                 Permission is hereby granted, free of charge, to any person obtaining a copy
+                 of this software and associated documentation files (the "Software"), to deal
+                 in the Software without restriction, including without limitation the rights
+                 to use, copy, modify, merge, publish, distribute, sublicense, and/o...
+license-file: LICENSE
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Python
+requires-dist: pytest; extra == "dev"
+requires-dist: sphinx; extra == "docs"
+requires-dist: sphinx-autobuild; extra == "docs"
+requires-python: >=3.7
+project-url: Homepage, https://github.com/timendum/grapheme
+project-url: Documentation, https://graphemeu.readthedocs.io/
+provides-extra: dev
+provides-extra: docs
+

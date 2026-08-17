@@ -1,0 +1,116 @@
+metadata-version: 2.4
+name: vllm
+version: 0.20.1+rhaiv.0.spyre
+dynamic: license-file
+dynamic: provides-extra
+dynamic: requires-dist
+summary: A high-throughput and memory-efficient inference and serving engine for LLMs
+author: vLLM Team
+license-expression: Apache-2.0
+license-file: LICENSE
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Information Technology
+classifier: Intended Audience :: Science/Research
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+classifier: Topic :: Scientific/Engineering :: Information Analysis
+requires-dist: regex
+requires-dist: cachetools
+requires-dist: psutil
+requires-dist: sentencepiece
+requires-dist: numpy
+requires-dist: requests>=2.26.0
+requires-dist: tqdm
+requires-dist: blake3
+requires-dist: py-cpuinfo
+requires-dist: transformers!=5.0.*,!=5.1.*,!=5.2.*,!=5.3.*,!=5.4.*,!=5.5.0,>=4.56.0
+requires-dist: tokenizers>=0.21.1
+requires-dist: protobuf!=6.30.*,!=6.31.*,!=6.32.*,!=6.33.0.*,!=6.33.1.*,!=6.33.2.*,!=6.33.3.*,!=6.33.4.*,>=5.29.6
+requires-dist: fastapi[standard]>=0.115.0
+requires-dist: aiohttp>=3.13.3
+requires-dist: openai>=2.0.0
+requires-dist: pydantic>=2.12.0
+requires-dist: prometheus_client>=0.18.0
+requires-dist: pillow
+requires-dist: prometheus-fastapi-instrumentator>=7.0.0
+requires-dist: tiktoken>=0.6.0
+requires-dist: lm-format-enforcer==0.11.3
+requires-dist: llguidance<1.4.0,>=1.3.0; platform_machine == "x86_64" or platform_machine == "arm64" or platform_machine == "aarch64" or platform_machine == "ppc64le"
+requires-dist: outlines_core==0.2.14
+requires-dist: diskcache==5.6.3
+requires-dist: lark==1.2.2
+requires-dist: xgrammar<1.0.0,>=0.1.32; platform_machine == "x86_64" or platform_machine == "aarch64" or platform_machine == "arm64" or platform_machine == "s390x" or platform_machine == "ppc64le"
+requires-dist: typing_extensions>=4.10
+requires-dist: filelock>=3.16.1
+requires-dist: partial-json-parser
+requires-dist: pyzmq>=25.0.0
+requires-dist: msgspec
+requires-dist: gguf>=0.17.0
+requires-dist: mistral_common[image]>=1.11.0
+requires-dist: opencv-python-headless>=4.13.0
+requires-dist: pyyaml
+requires-dist: six>=1.16.0; python_version > "3.11"
+requires-dist: setuptools<81.0.0,>=77.0.3; python_version > "3.11"
+requires-dist: einops
+requires-dist: compressed-tensors==0.15.0.1
+requires-dist: depyf==0.20.0
+requires-dist: cloudpickle
+requires-dist: watchfiles
+requires-dist: python-json-logger
+requires-dist: ninja
+requires-dist: pybase64
+requires-dist: cbor2
+requires-dist: ijson
+requires-dist: setproctitle
+requires-dist: openai-harmony>=0.0.3
+requires-dist: anthropic>=0.71.0
+requires-dist: model-hosting-container-standards<1.0.0,>=0.1.13
+requires-dist: mcp
+requires-dist: grpcio>=1.76.0
+requires-dist: grpcio-reflection>=1.76.0
+requires-dist: opentelemetry-sdk>=1.27.0; platform_machine != "s390x"
+requires-dist: opentelemetry-api>=1.27.0; platform_machine != "s390x"
+requires-dist: opentelemetry-exporter-otlp>=1.27.0; platform_machine != "s390x"
+requires-dist: opentelemetry-semantic-conventions-ai>=0.4.1; platform_machine != "s390x"
+requires-dist: zentorch-weekly==5.2.1.dev20260408; extra == "zen"
+requires-dist: pandas; extra == "bench"
+requires-dist: matplotlib; extra == "bench"
+requires-dist: seaborn; extra == "bench"
+requires-dist: datasets; extra == "bench"
+requires-dist: scipy; extra == "bench"
+requires-dist: plotly; extra == "bench"
+requires-dist: tensorizer==2.10.1; extra == "tensorizer"
+requires-dist: fastsafetensors>=0.2.2; extra == "fastsafetensors"
+requires-dist: instanttensor>=0.1.5; extra == "instanttensor"
+requires-dist: runai-model-streamer[azure,gcs,s3]>=0.15.7; extra == "runai"
+requires-dist: av; extra == "audio"
+requires-dist: scipy; extra == "audio"
+requires-dist: soundfile; extra == "audio"
+requires-dist: mistral_common[audio]; extra == "audio"
+requires-dist: helion==1.0.0; extra == "helion"
+requires-dist: smg-grpc-servicer[vllm]>=0.5.2; extra == "grpc"
+requires-dist: opentelemetry-sdk>=1.26.0; extra == "otel"
+requires-dist: opentelemetry-api>=1.26.0; extra == "otel"
+requires-dist: opentelemetry-exporter-otlp>=1.26.0; extra == "otel"
+requires-dist: opentelemetry-semantic-conventions-ai>=0.4.1; extra == "otel"
+requires-python: <3.15,>=3.10
+project-url: Homepage, https://github.com/vllm-project/vllm
+project-url: Documentation, https://docs.vllm.ai/en/latest/
+project-url: Slack, https://slack.vllm.ai/
+provides-extra: zen
+provides-extra: bench
+provides-extra: tensorizer
+provides-extra: fastsafetensors
+provides-extra: instanttensor
+provides-extra: runai
+provides-extra: audio
+provides-extra: video
+provides-extra: flashinfer
+provides-extra: helion
+provides-extra: grpc
+provides-extra: otel
+

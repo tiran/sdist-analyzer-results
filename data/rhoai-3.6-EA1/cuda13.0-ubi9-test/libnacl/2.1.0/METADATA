@@ -1,0 +1,33 @@
+metadata-version: 2.4
+name: libnacl
+version: 2.1.0
+summary: Python bindings for libsodium based on ctypes
+author: Thomas S Hatch
+author-email: thatch45@gmail.com
+license: Apache-2.0
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.4
+classifier: Programming Language :: Python :: 3.5
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: 2.6
+classifier: Programming Language :: Python :: 2.7
+classifier: Topic :: Security :: Cryptography
+requires-python: <4.0,>=3.4
+project-url: Documentation, https://libnacl.readthedocs.org
+project-url: Homepage, https://libnacl.readthedocs.org
+project-url: Repository, https://github.com/saltstack/libnacl
+

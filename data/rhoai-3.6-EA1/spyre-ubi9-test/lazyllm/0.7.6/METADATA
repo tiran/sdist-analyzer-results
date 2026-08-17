@@ -1,0 +1,24 @@
+metadata-version: 2.4
+name: lazyllm
+version: 0.7.6
+summary: A Low-code Development Tool For Building Multi-agent LLMs Applications.
+author-email: wangzhihong <wangzhihong@sensetime.com>
+license-expression: Apache-2.0
+requires-dist: toml
+requires-dist: tqdm
+requires-dist: filelock
+requires-dist: pyyaml
+requires-dist: packaging
+requires-dist: fastapi>=0.111.0
+requires-dist: loguru>=0.7.2
+requires-dist: pydantic<3.0.0,>=2.11.7
+requires-dist: requests>=2.32.2
+requires-dist: uvicorn>=0.23.2
+requires-dist: cloudpickle>=3.0.0
+requires-dist: docstring-parser<0.17,>=0.16
+requires-dist: json5<0.10.0,>=0.9.25
+requires-dist: pyjwt>=2.8.0
+requires-dist: psutil<7.0.0,>=6.0.0
+requires-dist: deepdiff>=8.6.1
+requires-python: <3.14,>=3.10
+

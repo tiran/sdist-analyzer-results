@@ -1,0 +1,84 @@
+metadata-version: 2.5
+name: altair
+version: 6.2.2
+summary: Vega-Altair: A declarative statistical visualization library for Python.
+keywords: declarative,interactive,json,statistics,vega-lite,visualization
+author: Vega-Altair Contributors
+license: Copyright (c) 2015-2025, Vega-Altair Developers
+                 All rights reserved.
+                 
+                 Redistribution and use in source and binary forms, with or without
+                 modification, are permitted provided that the following conditions are met:
+                 
+                 * Redistributions of source code must retain the above copyright notice, this
+                   list of conditions and the following disclaimer.
+                 
+                 * Redistributions in binary form must reproduce the above copyright notice,
+                   this li...
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: BSD License
+classifier: Natural Language :: English
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Typing :: Typed
+requires-dist: jinja2
+requires-dist: jsonschema>=3.0
+requires-dist: narwhals>=2.4.0
+requires-dist: packaging
+requires-dist: typing-extensions>=4.12.0; python_version < "3.15"
+requires-dist: altair-tiles>=0.3.0; extra == "all"
+requires-dist: anywidget>=0.9.0; extra == "all"
+requires-dist: numpy; extra == "all"
+requires-dist: pandas>=1.1.3; extra == "all"
+requires-dist: pyarrow>=11; extra == "all"
+requires-dist: vegafusion>=2.0.3; extra == "all"
+requires-dist: vl-convert-python>=1.9.0; extra == "all"
+requires-dist: duckdb>=1.0; extra == "dev"
+requires-dist: geopandas>=0.14.3; extra == "dev"
+requires-dist: hatch>=1.13.0; extra == "dev"
+requires-dist: ipykernel; extra == "dev"
+requires-dist: ipython; extra == "dev"
+requires-dist: mistune; extra == "dev"
+requires-dist: mypy; extra == "dev"
+requires-dist: pandas-stubs<2.3.3; python_version < "3.11" and extra == "dev"
+requires-dist: pandas-stubs>=3.0.3.260530; python_version >= "3.11" and extra == "dev"
+requires-dist: pandas>=1.1.3; extra == "dev"
+requires-dist: polars>=0.20.3; extra == "dev"
+requires-dist: pyarrow-stubs; extra == "dev"
+requires-dist: pytest; extra == "dev"
+requires-dist: pytest-cov; extra == "dev"
+requires-dist: pytest-xdist[psutil]~=3.5; extra == "dev"
+requires-dist: ruff>=0.9.5; extra == "dev"
+requires-dist: taskipy>=1.14.1; extra == "dev"
+requires-dist: tomli>=2.2.1; extra == "dev"
+requires-dist: ty; extra == "dev"
+requires-dist: types-jsonschema; extra == "dev"
+requires-dist: types-setuptools; extra == "dev"
+requires-dist: docutils; extra == "doc"
+requires-dist: jinja2; extra == "doc"
+requires-dist: myst-parser; extra == "doc"
+requires-dist: numpydoc; extra == "doc"
+requires-dist: pillow; extra == "doc"
+requires-dist: pydata-sphinx-theme>=0.14.1; extra == "doc"
+requires-dist: scipy; extra == "doc"
+requires-dist: scipy-stubs; python_version >= "3.10" and extra == "doc"
+requires-dist: sphinx; extra == "doc"
+requires-dist: sphinx-autobuild; extra == "doc"
+requires-dist: sphinx-copybutton; extra == "doc"
+requires-dist: sphinx-design; extra == "doc"
+requires-dist: sphinxext-altair; extra == "doc"
+requires-dist: vl-convert-python>=1.9.0; extra == "save"
+requires-python: >=3.10
+project-url: Documentation, https://altair-viz.github.io
+project-url: Source, https://github.com/vega/altair
+provides-extra: all
+provides-extra: dev
+provides-extra: doc
+provides-extra: save
+

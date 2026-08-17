@@ -1,0 +1,53 @@
+metadata-version: 2.5
+name: jupyter-server-ydoc
+version: 2.4.2
+summary: jupyter-server extension integrating collaborative shared models.
+author-email: Jupyter Development Team <jupyter@googlegroups.com>
+license: # Licensing terms
+                 
+                 This project is licensed under the terms of the Modified BSD License
+                 (also known as New or Revised or 3-Clause BSD), as follows:
+                 
+                 - Copyright (c) 2021-, Jupyter Development Team
+                 
+                 All rights reserved.
+                 
+                 Redistribution and use in source and binary forms, with or without
+                 modification, are permitted provided that the following conditions are met:
+                 
+                 Redistributions of source code must retain the ab...
+license-file: LICENSE
+classifier: Framework :: Jupyter
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: Intended Audience :: System Administrators
+classifier: License :: OSI Approved :: BSD License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-dist: jsonschema>=4.18.0
+requires-dist: jupyter-events>=0.11.0
+requires-dist: jupyter-server-fileid<1,>=0.7.0
+requires-dist: jupyter-server<3.0.0,>=2.15.0
+requires-dist: jupyter-ydoc<4.0.0,>=3.5.0
+requires-dist: pycrdt
+requires-dist: pycrdt-websocket<0.17.0,>=0.16.2
+requires-dist: anyio; extra == "test"
+requires-dist: coverage; extra == "test"
+requires-dist: dirty-equals; extra == "test"
+requires-dist: httpx-ws>=0.9.0; extra == "test"
+requires-dist: jupyter-server-fileid[test]; extra == "test"
+requires-dist: jupyter-server[test]>=2.15.0; extra == "test"
+requires-dist: pytest-cov; extra == "test"
+requires-dist: pytest>=7.0; extra == "test"
+requires-python: >=3.10
+project-url: Documentation, https://jupyterlab-realtime-collaboration.readthedocs.io/
+project-url: Repository, https://github.com/jupyterlab/jupyter-collaboration
+project-url: Changelog, https://jupyterlab-realtime-collaboration.readthedocs.io/en/latest/changelog.html
+project-url: Source, https://github.com/jupyterlab/jupyter-collaboration/tree/main/projects/jupyter-server-ydoc
+project-url: Issues, https://github.com/jupyterlab/jupyter-collaboration/issues/new/choose
+provides-extra: test
+

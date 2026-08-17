@@ -1,0 +1,35 @@
+metadata-version: 2.4
+name: apache-airflow-providers-smtp
+version: 3.0.3
+summary: Provider package apache-airflow-providers-smtp for Apache Airflow
+keywords: airflow-provider,smtp,airflow,integration
+author-email: Apache Software Foundation <dev@airflow.apache.org>
+maintainer-email: Apache Software Foundation <dev@airflow.apache.org>
+license-expression: Apache-2.0
+license-file: LICENSE
+license-file: NOTICE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Environment :: Web Environment
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: System Administrators
+classifier: Framework :: Apache Airflow
+classifier: Framework :: Apache Airflow :: Provider
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: System :: Monitoring
+requires-dist: apache-airflow>=2.11.0
+requires-dist: apache-airflow-providers-common-compat>=1.10.1
+requires-dist: aiosmtplib>=0.1.6
+requires-python: >=3.10
+project-url: Bug Tracker, https://github.com/apache/airflow/issues
+project-url: Changelog, https://airflow.apache.org/docs/apache-airflow-providers-smtp/3.0.3/changelog.html
+project-url: Documentation, https://airflow.apache.org/docs/apache-airflow-providers-smtp/3.0.3
+project-url: Mastodon, https://fosstodon.org/@airflow
+project-url: Slack Chat, https://s.apache.org/airflow-slack
+project-url: Source Code, https://github.com/apache/airflow
+project-url: YouTube, https://www.youtube.com/channel/UCSXwxpWZQ7XZ1WL3wqevChA/
+

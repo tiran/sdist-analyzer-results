@@ -1,0 +1,285 @@
+metadata-version: 2.4
+name: lightning
+version: 2.6.5
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: download-url
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: project-url
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: The Deep Learning framework to train, deploy, and ship AI products Lightning fast.
+keywords: deep learning,pytorch,AI
+home-page: https://github.com/Lightning-AI/lightning
+download-url: https://github.com/Lightning-AI/lightning
+author: Lightning AI et al.
+author-email: developer@lightning.ai
+license: Apache-2.0
+license-file: LICENSE
+classifier: Environment :: Console
+classifier: Natural Language :: English
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+classifier: Topic :: Scientific/Engineering :: Information Analysis
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+requires-dist: PyYAML<8.0,>5.4
+requires-dist: fsspec[http]<2028.0,>=2022.5.0
+requires-dist: lightning-utilities<2.0,>=0.10.0
+requires-dist: packaging<27.0,>=23.0
+requires-dist: torch<4.0,>=2.1.0
+requires-dist: torchmetrics<3.0,>0.7.0
+requires-dist: tqdm<6.0,>=4.57.0
+requires-dist: typing-extensions<6.0,>4.5.0
+requires-dist: pytorch-lightning
+requires-dist: hydra-core<2.0,>=1.2.0; extra == "fabric-extra"
+requires-dist: bitsandbytes<1.0,>=0.45.2; platform_system != "Darwin" and extra == "fabric-strategies"
+requires-dist: deepspeed<0.17.0,>=0.15.0; (platform_system != "Windows" and platform_system != "Darwin") and extra == "fabric-strategies"
+requires-dist: torchmetrics<2.0,>=0.10.0; extra == "fabric-examples"
+requires-dist: torchvision<1.0,>=0.16.0; extra == "fabric-examples"
+requires-dist: click==8.1.8; python_version < "3.11" and extra == "fabric-test"
+requires-dist: click==8.3.1; python_version > "3.10" and extra == "fabric-test"
+requires-dist: coverage==7.10.7; python_version < "3.10" and extra == "fabric-test"
+requires-dist: coverage==7.13.4; python_version >= "3.10" and extra == "fabric-test"
+requires-dist: huggingface-hub; extra == "fabric-test"
+requires-dist: numpy<2.0,>1.21.0; python_version < "3.12" and extra == "fabric-test"
+requires-dist: numpy<3.0,>2.1.0; python_version >= "3.12" and extra == "fabric-test"
+requires-dist: pytest-cov==7.0.0; extra == "fabric-test"
+requires-dist: pytest-random-order==1.2.0; extra == "fabric-test"
+requires-dist: pytest-rerunfailures==16.0.1; python_version < "3.10" and extra == "fabric-test"
+requires-dist: pytest-rerunfailures==16.1; python_version >= "3.10" and extra == "fabric-test"
+requires-dist: pytest-timeout==2.4.0; extra == "fabric-test"
+requires-dist: pytest==9.0.2; extra == "fabric-test"
+requires-dist: tensorboardX<3.0,>=2.6; extra == "fabric-test"
+requires-dist: bitsandbytes<1.0,>=0.45.2; platform_system != "Darwin" and extra == "pytorch-extra"
+requires-dist: hydra-core<2.0,>=1.2.0; extra == "pytorch-extra"
+requires-dist: jsonargparse[jsonnet,signatures]<5.0,>=4.39.0; extra == "pytorch-extra"
+requires-dist: matplotlib<4.0,>3.1; extra == "pytorch-extra"
+requires-dist: omegaconf<3.0,>=2.2.3; extra == "pytorch-extra"
+requires-dist: rich<15.0,>=12.3.0; extra == "pytorch-extra"
+requires-dist: tensorboardX<3.0,>=2.2; extra == "pytorch-extra"
+requires-dist: torch-tensorrt; (platform_system != "Darwin" and python_version >= "3.12") and extra == "pytorch-test-gpu"
+requires-dist: deepspeed<0.17.0,>=0.15.0; (platform_system != "Windows" and platform_system != "Darwin") and extra == "pytorch-strategies"
+requires-dist: ipython[all]<11.0,>=8.0.0; extra == "pytorch-examples"
+requires-dist: requests<3.0; extra == "pytorch-examples"
+requires-dist: torchmetrics<2.0,>=0.10.0; extra == "pytorch-examples"
+requires-dist: torchvision<1.0,>=0.16.0; extra == "pytorch-examples"
+requires-dist: cloudpickle<4.0,>=1.3; extra == "pytorch-test"
+requires-dist: coverage==7.10.7; python_version < "3.10" and extra == "pytorch-test"
+requires-dist: coverage==7.13.4; python_version >= "3.10" and extra == "pytorch-test"
+requires-dist: fastapi; extra == "pytorch-test"
+requires-dist: huggingface-hub; extra == "pytorch-test"
+requires-dist: numpy<2.0,>1.21.0; python_version < "3.12" and extra == "pytorch-test"
+requires-dist: numpy<3.0,>2.1.0; python_version >= "3.12" and extra == "pytorch-test"
+requires-dist: onnx-ir<1.0; extra == "pytorch-test"
+requires-dist: onnx<2.0,>1.12.0; extra == "pytorch-test"
+requires-dist: onnxruntime<2.0,>=1.12.0; extra == "pytorch-test"
+requires-dist: onnxscript<1.0,>=0.1.0; extra == "pytorch-test"
+requires-dist: pandas<4.0,>2.0; extra == "pytorch-test"
+requires-dist: psutil<8.0; extra == "pytorch-test"
+requires-dist: pytest-cov==7.0.0; extra == "pytorch-test"
+requires-dist: pytest-random-order==1.2.0; extra == "pytorch-test"
+requires-dist: pytest-rerunfailures==16.0.1; python_version < "3.10" and extra == "pytorch-test"
+requires-dist: pytest-rerunfailures==16.1; python_version >= "3.10" and extra == "pytorch-test"
+requires-dist: pytest-timeout==2.4.0; extra == "pytorch-test"
+requires-dist: pytest==9.0.2; extra == "pytorch-test"
+requires-dist: scikit-learn<2.0,>0.22.1; extra == "pytorch-test"
+requires-dist: tensorboard<3.0,>=2.11; extra == "pytorch-test"
+requires-dist: uvicorn; extra == "pytorch-test"
+requires-dist: bitsandbytes<1.0,>=0.45.2; platform_system != "Darwin" and extra == "fabric-all"
+requires-dist: deepspeed<0.17.0,>=0.15.0; (platform_system != "Windows" and platform_system != "Darwin") and extra == "fabric-all"
+requires-dist: hydra-core<2.0,>=1.2.0; extra == "fabric-all"
+requires-dist: torchmetrics<2.0,>=0.10.0; extra == "fabric-all"
+requires-dist: torchvision<1.0,>=0.16.0; extra == "fabric-all"
+requires-dist: bitsandbytes<1.0,>=0.45.2; platform_system != "Darwin" and extra == "fabric-dev"
+requires-dist: click==8.1.8; python_version < "3.11" and extra == "fabric-dev"
+requires-dist: click==8.3.1; python_version > "3.10" and extra == "fabric-dev"
+requires-dist: coverage==7.10.7; python_version < "3.10" and extra == "fabric-dev"
+requires-dist: coverage==7.13.4; python_version >= "3.10" and extra == "fabric-dev"
+requires-dist: deepspeed<0.17.0,>=0.15.0; (platform_system != "Windows" and platform_system != "Darwin") and extra == "fabric-dev"
+requires-dist: huggingface-hub; extra == "fabric-dev"
+requires-dist: hydra-core<2.0,>=1.2.0; extra == "fabric-dev"
+requires-dist: numpy<2.0,>1.21.0; python_version < "3.12" and extra == "fabric-dev"
+requires-dist: numpy<3.0,>2.1.0; python_version >= "3.12" and extra == "fabric-dev"
+requires-dist: pytest-cov==7.0.0; extra == "fabric-dev"
+requires-dist: pytest-random-order==1.2.0; extra == "fabric-dev"
+requires-dist: pytest-rerunfailures==16.0.1; python_version < "3.10" and extra == "fabric-dev"
+requires-dist: pytest-rerunfailures==16.1; python_version >= "3.10" and extra == "fabric-dev"
+requires-dist: pytest-timeout==2.4.0; extra == "fabric-dev"
+requires-dist: pytest==9.0.2; extra == "fabric-dev"
+requires-dist: tensorboardX<3.0,>=2.6; extra == "fabric-dev"
+requires-dist: torchmetrics<2.0,>=0.10.0; extra == "fabric-dev"
+requires-dist: torchvision<1.0,>=0.16.0; extra == "fabric-dev"
+requires-dist: bitsandbytes<1.0,>=0.45.2; platform_system != "Darwin" and extra == "pytorch-all"
+requires-dist: deepspeed<0.17.0,>=0.15.0; (platform_system != "Windows" and platform_system != "Darwin") and extra == "pytorch-all"
+requires-dist: hydra-core<2.0,>=1.2.0; extra == "pytorch-all"
+requires-dist: ipython[all]<11.0,>=8.0.0; extra == "pytorch-all"
+requires-dist: jsonargparse[jsonnet,signatures]<5.0,>=4.39.0; extra == "pytorch-all"
+requires-dist: matplotlib<4.0,>3.1; extra == "pytorch-all"
+requires-dist: omegaconf<3.0,>=2.2.3; extra == "pytorch-all"
+requires-dist: requests<3.0; extra == "pytorch-all"
+requires-dist: rich<15.0,>=12.3.0; extra == "pytorch-all"
+requires-dist: tensorboardX<3.0,>=2.2; extra == "pytorch-all"
+requires-dist: torchmetrics<2.0,>=0.10.0; extra == "pytorch-all"
+requires-dist: torchvision<1.0,>=0.16.0; extra == "pytorch-all"
+requires-dist: bitsandbytes<1.0,>=0.45.2; platform_system != "Darwin" and extra == "pytorch-dev"
+requires-dist: cloudpickle<4.0,>=1.3; extra == "pytorch-dev"
+requires-dist: coverage==7.10.7; python_version < "3.10" and extra == "pytorch-dev"
+requires-dist: coverage==7.13.4; python_version >= "3.10" and extra == "pytorch-dev"
+requires-dist: deepspeed<0.17.0,>=0.15.0; (platform_system != "Windows" and platform_system != "Darwin") and extra == "pytorch-dev"
+requires-dist: fastapi; extra == "pytorch-dev"
+requires-dist: huggingface-hub; extra == "pytorch-dev"
+requires-dist: hydra-core<2.0,>=1.2.0; extra == "pytorch-dev"
+requires-dist: ipython[all]<11.0,>=8.0.0; extra == "pytorch-dev"
+requires-dist: jsonargparse[jsonnet,signatures]<5.0,>=4.39.0; extra == "pytorch-dev"
+requires-dist: matplotlib<4.0,>3.1; extra == "pytorch-dev"
+requires-dist: numpy<2.0,>1.21.0; python_version < "3.12" and extra == "pytorch-dev"
+requires-dist: numpy<3.0,>2.1.0; python_version >= "3.12" and extra == "pytorch-dev"
+requires-dist: omegaconf<3.0,>=2.2.3; extra == "pytorch-dev"
+requires-dist: onnx-ir<1.0; extra == "pytorch-dev"
+requires-dist: onnx<2.0,>1.12.0; extra == "pytorch-dev"
+requires-dist: onnxruntime<2.0,>=1.12.0; extra == "pytorch-dev"
+requires-dist: onnxscript<1.0,>=0.1.0; extra == "pytorch-dev"
+requires-dist: pandas<4.0,>2.0; extra == "pytorch-dev"
+requires-dist: psutil<8.0; extra == "pytorch-dev"
+requires-dist: pytest-cov==7.0.0; extra == "pytorch-dev"
+requires-dist: pytest-random-order==1.2.0; extra == "pytorch-dev"
+requires-dist: pytest-rerunfailures==16.0.1; python_version < "3.10" and extra == "pytorch-dev"
+requires-dist: pytest-rerunfailures==16.1; python_version >= "3.10" and extra == "pytorch-dev"
+requires-dist: pytest-timeout==2.4.0; extra == "pytorch-dev"
+requires-dist: pytest==9.0.2; extra == "pytorch-dev"
+requires-dist: requests<3.0; extra == "pytorch-dev"
+requires-dist: rich<15.0,>=12.3.0; extra == "pytorch-dev"
+requires-dist: scikit-learn<2.0,>0.22.1; extra == "pytorch-dev"
+requires-dist: tensorboard<3.0,>=2.11; extra == "pytorch-dev"
+requires-dist: tensorboardX<3.0,>=2.2; extra == "pytorch-dev"
+requires-dist: torchmetrics<2.0,>=0.10.0; extra == "pytorch-dev"
+requires-dist: torchvision<1.0,>=0.16.0; extra == "pytorch-dev"
+requires-dist: uvicorn; extra == "pytorch-dev"
+requires-dist: bitsandbytes<1.0,>=0.45.2; platform_system != "Darwin" and extra == "extra"
+requires-dist: hydra-core<2.0,>=1.2.0; extra == "extra"
+requires-dist: jsonargparse[jsonnet,signatures]<5.0,>=4.39.0; extra == "extra"
+requires-dist: matplotlib<4.0,>3.1; extra == "extra"
+requires-dist: omegaconf<3.0,>=2.2.3; extra == "extra"
+requires-dist: rich<15.0,>=12.3.0; extra == "extra"
+requires-dist: tensorboardX<3.0,>=2.2; extra == "extra"
+requires-dist: bitsandbytes<1.0,>=0.45.2; platform_system != "Darwin" and extra == "strategies"
+requires-dist: deepspeed<0.17.0,>=0.15.0; (platform_system != "Windows" and platform_system != "Darwin") and extra == "strategies"
+requires-dist: ipython[all]<11.0,>=8.0.0; extra == "examples"
+requires-dist: requests<3.0; extra == "examples"
+requires-dist: torchmetrics<2.0,>=0.10.0; extra == "examples"
+requires-dist: torchvision<1.0,>=0.16.0; extra == "examples"
+requires-dist: click==8.1.8; python_version < "3.11" and extra == "test"
+requires-dist: click==8.3.1; python_version > "3.10" and extra == "test"
+requires-dist: cloudpickle<4.0,>=1.3; extra == "test"
+requires-dist: coverage==7.10.7; python_version < "3.10" and extra == "test"
+requires-dist: coverage==7.13.4; python_version >= "3.10" and extra == "test"
+requires-dist: fastapi; extra == "test"
+requires-dist: huggingface-hub; extra == "test"
+requires-dist: numpy<2.0,>1.21.0; python_version < "3.12" and extra == "test"
+requires-dist: numpy<3.0,>2.1.0; python_version >= "3.12" and extra == "test"
+requires-dist: onnx-ir<1.0; extra == "test"
+requires-dist: onnx<2.0,>1.12.0; extra == "test"
+requires-dist: onnxruntime<2.0,>=1.12.0; extra == "test"
+requires-dist: onnxscript<1.0,>=0.1.0; extra == "test"
+requires-dist: pandas<4.0,>2.0; extra == "test"
+requires-dist: psutil<8.0; extra == "test"
+requires-dist: pytest-cov==7.0.0; extra == "test"
+requires-dist: pytest-random-order==1.2.0; extra == "test"
+requires-dist: pytest-rerunfailures==16.0.1; python_version < "3.10" and extra == "test"
+requires-dist: pytest-rerunfailures==16.1; python_version >= "3.10" and extra == "test"
+requires-dist: pytest-timeout==2.4.0; extra == "test"
+requires-dist: pytest==9.0.2; extra == "test"
+requires-dist: scikit-learn<2.0,>0.22.1; extra == "test"
+requires-dist: tensorboard<3.0,>=2.11; extra == "test"
+requires-dist: tensorboardX<3.0,>=2.6; extra == "test"
+requires-dist: uvicorn; extra == "test"
+requires-dist: torch-tensorrt; (platform_system != "Darwin" and python_version >= "3.12") and extra == "test-gpu"
+requires-dist: bitsandbytes<1.0,>=0.45.2; platform_system != "Darwin" and extra == "all"
+requires-dist: deepspeed<0.17.0,>=0.15.0; (platform_system != "Windows" and platform_system != "Darwin") and extra == "all"
+requires-dist: hydra-core<2.0,>=1.2.0; extra == "all"
+requires-dist: ipython[all]<11.0,>=8.0.0; extra == "all"
+requires-dist: jsonargparse[jsonnet,signatures]<5.0,>=4.39.0; extra == "all"
+requires-dist: matplotlib<4.0,>3.1; extra == "all"
+requires-dist: omegaconf<3.0,>=2.2.3; extra == "all"
+requires-dist: requests<3.0; extra == "all"
+requires-dist: rich<15.0,>=12.3.0; extra == "all"
+requires-dist: tensorboardX<3.0,>=2.2; extra == "all"
+requires-dist: torchmetrics<2.0,>=0.10.0; extra == "all"
+requires-dist: torchvision<1.0,>=0.16.0; extra == "all"
+requires-dist: bitsandbytes<1.0,>=0.45.2; platform_system != "Darwin" and extra == "dev"
+requires-dist: click==8.1.8; python_version < "3.11" and extra == "dev"
+requires-dist: click==8.3.1; python_version > "3.10" and extra == "dev"
+requires-dist: cloudpickle<4.0,>=1.3; extra == "dev"
+requires-dist: coverage==7.10.7; python_version < "3.10" and extra == "dev"
+requires-dist: coverage==7.13.4; python_version >= "3.10" and extra == "dev"
+requires-dist: deepspeed<0.17.0,>=0.15.0; (platform_system != "Windows" and platform_system != "Darwin") and extra == "dev"
+requires-dist: fastapi; extra == "dev"
+requires-dist: huggingface-hub; extra == "dev"
+requires-dist: hydra-core<2.0,>=1.2.0; extra == "dev"
+requires-dist: ipython[all]<11.0,>=8.0.0; extra == "dev"
+requires-dist: jsonargparse[jsonnet,signatures]<5.0,>=4.39.0; extra == "dev"
+requires-dist: matplotlib<4.0,>3.1; extra == "dev"
+requires-dist: numpy<2.0,>1.21.0; python_version < "3.12" and extra == "dev"
+requires-dist: numpy<3.0,>2.1.0; python_version >= "3.12" and extra == "dev"
+requires-dist: omegaconf<3.0,>=2.2.3; extra == "dev"
+requires-dist: onnx-ir<1.0; extra == "dev"
+requires-dist: onnx<2.0,>1.12.0; extra == "dev"
+requires-dist: onnxruntime<2.0,>=1.12.0; extra == "dev"
+requires-dist: onnxscript<1.0,>=0.1.0; extra == "dev"
+requires-dist: pandas<4.0,>2.0; extra == "dev"
+requires-dist: psutil<8.0; extra == "dev"
+requires-dist: pytest-cov==7.0.0; extra == "dev"
+requires-dist: pytest-random-order==1.2.0; extra == "dev"
+requires-dist: pytest-rerunfailures==16.0.1; python_version < "3.10" and extra == "dev"
+requires-dist: pytest-rerunfailures==16.1; python_version >= "3.10" and extra == "dev"
+requires-dist: pytest-timeout==2.4.0; extra == "dev"
+requires-dist: pytest==9.0.2; extra == "dev"
+requires-dist: requests<3.0; extra == "dev"
+requires-dist: rich<15.0,>=12.3.0; extra == "dev"
+requires-dist: scikit-learn<2.0,>0.22.1; extra == "dev"
+requires-dist: tensorboard<3.0,>=2.11; extra == "dev"
+requires-dist: tensorboardX<3.0,>=2.2; extra == "dev"
+requires-dist: tensorboardX<3.0,>=2.6; extra == "dev"
+requires-dist: torchmetrics<2.0,>=0.10.0; extra == "dev"
+requires-dist: torchvision<1.0,>=0.16.0; extra == "dev"
+requires-dist: uvicorn; extra == "dev"
+requires-python: >=3.10
+project-url: Bug Tracker, https://github.com/Lightning-AI/pytorch-lightning/issues
+project-url: Documentation, https://lightning.ai/lightning-docs
+project-url: Source Code, https://github.com/Lightning-AI/lightning
+provides-extra: fabric-extra
+provides-extra: fabric-strategies
+provides-extra: fabric-examples
+provides-extra: fabric-test
+provides-extra: pytorch-extra
+provides-extra: pytorch-test-gpu
+provides-extra: pytorch-strategies
+provides-extra: pytorch-examples
+provides-extra: pytorch-test
+provides-extra: fabric-all
+provides-extra: fabric-dev
+provides-extra: pytorch-all
+provides-extra: pytorch-dev
+provides-extra: extra
+provides-extra: strategies
+provides-extra: examples
+provides-extra: test
+provides-extra: test-gpu
+provides-extra: all
+provides-extra: dev
+

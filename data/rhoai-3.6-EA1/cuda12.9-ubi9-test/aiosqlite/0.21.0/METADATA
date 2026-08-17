@@ -1,0 +1,30 @@
+metadata-version: 2.4
+name: aiosqlite
+version: 0.21.0
+summary: asyncio bridge to the standard sqlite3 module
+author-email: Amethyst Reese <amethyst@n7.gg>
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Framework :: AsyncIO
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Topic :: Software Development :: Libraries
+requires-dist: typing_extensions>=4.0
+requires-dist: attribution==1.7.1; extra == "dev"
+requires-dist: black==24.3.0; extra == "dev"
+requires-dist: build>=1.2; extra == "dev"
+requires-dist: coverage[toml]==7.6.10; extra == "dev"
+requires-dist: flake8==7.0.0; extra == "dev"
+requires-dist: flake8-bugbear==24.12.12; extra == "dev"
+requires-dist: flit==3.10.1; extra == "dev"
+requires-dist: mypy==1.14.1; extra == "dev"
+requires-dist: ufmt==2.5.1; extra == "dev"
+requires-dist: usort==1.0.8.post1; extra == "dev"
+requires-dist: sphinx==8.1.3; extra == "docs"
+requires-dist: sphinx-mdinclude==0.6.1; extra == "docs"
+requires-python: >=3.9
+project-url: Documentation, https://aiosqlite.omnilib.dev
+project-url: Github, https://github.com/omnilib/aiosqlite
+provides-extra: dev
+provides-extra: docs
+

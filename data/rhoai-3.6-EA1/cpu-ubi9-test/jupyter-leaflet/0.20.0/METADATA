@@ -1,0 +1,28 @@
+metadata-version: 2.5
+name: jupyter-leaflet
+version: 0.20.0
+summary: ipyleaflet extensions for JupyterLab and Jupyter Notebook
+keywords: GIS,graphics,ipython,jupyter,widgets
+author-email: Project Jupyter <jupyter@googlegroups.com>
+license: The MIT License (MIT)
+                 
+                 Copyright (c) 2014-2018, Project Jupyter Contributors
+                 
+                 Permission is hereby granted, free of charge, to any person obtaining a copy
+                 of this software and associated documentation files (the "Software"), to deal
+                 in the Software without restriction, including without limitation the rights
+                 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+                 copies of the Software, and to permit persons to whom the Sof...
+license-file: LICENSE
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Topic :: Multimedia :: Graphics
+requires-python: >=3.8
+project-url: Homepage, https://github.com/jupyter-widgets/ipyleaflet
+

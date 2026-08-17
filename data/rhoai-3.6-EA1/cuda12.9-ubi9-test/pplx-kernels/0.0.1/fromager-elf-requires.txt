@@ -1,5 +1,6 @@
 libc.so.6()(64bit)
-libc.so.6(GLIBC_2.17)(64bit)
+libc.so.6(GLIBC_2.14)(64bit)
+libc.so.6(GLIBC_2.2.5)(64bit)
 libc.so.6(GLIBC_2.32)(64bit)
 libc.so.6(GLIBC_2.34)(64bit)
 libc10.so()(64bit)

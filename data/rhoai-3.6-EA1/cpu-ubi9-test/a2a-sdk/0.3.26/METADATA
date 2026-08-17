@@ -1,0 +1,71 @@
+metadata-version: 2.5
+name: a2a-sdk
+version: 0.3.26
+summary: A2A Python SDK
+keywords: A2A,A2A Protocol,A2A SDK,Agent 2 Agent,Agent2Agent
+author-email: Google LLC <googleapis-packages@google.com>
+license-expression: Apache-2.0
+license-file: LICENSE
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: google-api-core>=1.26.0
+requires-dist: httpx-sse>=0.4.0
+requires-dist: httpx>=0.28.1
+requires-dist: protobuf>=5.29.5
+requires-dist: pydantic>=2.11.3
+requires-dist: cryptography>=43.0.0; extra == "all"
+requires-dist: fastapi>=0.115.2; extra == "all"
+requires-dist: google-cloud-aiplatform>=1.140.0; extra == "all"
+requires-dist: grpcio-reflection>=1.7.0; extra == "all"
+requires-dist: grpcio-tools>=1.60; extra == "all"
+requires-dist: grpcio>=1.60; extra == "all"
+requires-dist: opentelemetry-api>=1.33.0; extra == "all"
+requires-dist: opentelemetry-sdk>=1.33.0; extra == "all"
+requires-dist: pyjwt>=2.0.0; extra == "all"
+requires-dist: sqlalchemy[aiomysql,asyncio]>=2.0.0; extra == "all"
+requires-dist: sqlalchemy[aiosqlite,asyncio]>=2.0.0; extra == "all"
+requires-dist: sqlalchemy[asyncio,postgresql-asyncpg]>=2.0.0; extra == "all"
+requires-dist: sse-starlette; extra == "all"
+requires-dist: starlette; extra == "all"
+requires-dist: cryptography>=43.0.0; extra == "encryption"
+requires-dist: grpcio-reflection>=1.7.0; extra == "grpc"
+requires-dist: grpcio-tools>=1.60; extra == "grpc"
+requires-dist: grpcio>=1.60; extra == "grpc"
+requires-dist: fastapi>=0.115.2; extra == "http-server"
+requires-dist: sse-starlette; extra == "http-server"
+requires-dist: starlette; extra == "http-server"
+requires-dist: sqlalchemy[aiomysql,asyncio]>=2.0.0; extra == "mysql"
+requires-dist: sqlalchemy[asyncio,postgresql-asyncpg]>=2.0.0; extra == "postgresql"
+requires-dist: pyjwt>=2.0.0; extra == "signing"
+requires-dist: sqlalchemy[aiomysql,asyncio]>=2.0.0; extra == "sql"
+requires-dist: sqlalchemy[aiosqlite,asyncio]>=2.0.0; extra == "sql"
+requires-dist: sqlalchemy[asyncio,postgresql-asyncpg]>=2.0.0; extra == "sql"
+requires-dist: sqlalchemy[aiosqlite,asyncio]>=2.0.0; extra == "sqlite"
+requires-dist: opentelemetry-api>=1.33.0; extra == "telemetry"
+requires-dist: opentelemetry-sdk>=1.33.0; extra == "telemetry"
+requires-dist: google-cloud-aiplatform>=1.140.0; extra == "vertex"
+requires-python: >=3.10
+project-url: homepage, https://a2a-protocol.org/
+project-url: repository, https://github.com/a2aproject/a2a-python
+project-url: changelog, https://github.com/a2aproject/a2a-python/blob/main/CHANGELOG.md
+project-url: documentation, https://a2a-protocol.org/latest/sdk/python/
+provides-extra: all
+provides-extra: encryption
+provides-extra: grpc
+provides-extra: http-server
+provides-extra: mysql
+provides-extra: postgresql
+provides-extra: signing
+provides-extra: sql
+provides-extra: sqlite
+provides-extra: telemetry
+provides-extra: vertex
+

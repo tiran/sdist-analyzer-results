@@ -1,0 +1,23 @@
+metadata-version: 2.4
+name: huey
+version: 3.3.3
+dynamic: license-file
+summary: a little task queue
+author-email: Charles Leifer <coleifer@gmail.com>
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Python :: 3
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: redis>=3.0.0; extra == "backends"
+requires-dist: redis>=3.0.0; extra == "redis"
+requires-dist: psycopg>=3.2; extra == "postgres"
+requires-dist: cysqlite>=0.3.5; extra == "cysqlite"
+project-url: Repository, https://github.com/coleifer/huey
+project-url: Documentation, https://huey.readthedocs.io/
+project-url: Changelog, https://github.com/coleifer/huey/blob/master/CHANGELOG.md
+provides-extra: backends
+provides-extra: redis
+provides-extra: postgres
+provides-extra: cysqlite
+

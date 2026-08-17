@@ -1,0 +1,35 @@
+metadata-version: 2.4
+name: pybind11
+version: 3.1.0
+summary: Seamless operability between C++11 and Python
+keywords: C++11,Python bindings
+author-email: Wenzel Jakob <wenzel.jakob@epfl.ch>
+license-expression: BSD-3-Clause
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: Utilities
+classifier: Programming Language :: C++
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: 3.15
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: C++
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: pybind11-global==3.1.0; extra == "global"
+requires-python: >=3.9
+project-url: Homepage, https://github.com/pybind/pybind11
+project-url: Documentation, https://pybind11.readthedocs.io/
+project-url: Issue Tracker, https://github.com/pybind/pybind11/issues
+project-url: Discussions, https://github.com/pybind/pybind11/discussions
+project-url: Changelog, https://pybind11.readthedocs.io/en/latest/changelog.html
+project-url: Chat, https://gitter.im/pybind/Lobby
+provides-extra: global
+

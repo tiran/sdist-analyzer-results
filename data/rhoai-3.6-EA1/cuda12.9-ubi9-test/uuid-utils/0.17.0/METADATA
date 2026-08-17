@@ -1,0 +1,25 @@
+metadata-version: 2.4
+name: uuid_utils
+version: 0.17.0
+summary: Fast, drop-in replacement for Python's uuid module, powered by Rust.
+keywords: rust,uuid
+author-email: Amin Alaee <mohammadamin.alaee@gmail.com>
+license-expression: BSD-3-Clause
+license-file: LICENSE.md
+classifier: Development Status :: 5 - Production/Stable
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Rust
+classifier: Intended Audience :: Developers
+classifier: Operating System :: OS Independent
+requires-python: >=3.10
+project-url: Documentation, https://github.com/aminalaee/uuid-utils
+project-url: Issues, https://github.com/aminalaee/uuid-utils/issues
+project-url: Source, https://github.com/aminalaee/uuid-utils
+

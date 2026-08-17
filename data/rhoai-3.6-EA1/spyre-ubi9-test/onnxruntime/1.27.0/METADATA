@@ -1,0 +1,52 @@
+metadata-version: 2.4
+name: onnxruntime
+version: 1.27.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: download-url
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: ONNX Runtime is a runtime accelerator for Machine Learning models
+keywords: onnx machine learning
+home-page: https://onnxruntime.ai
+download-url: https://github.com/microsoft/onnxruntime/tags
+author: Microsoft Corporation
+author-email: onnxruntime@microsoft.com
+license: MIT License
+license-file: ThirdPartyNotices.txt
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: POSIX :: Linux
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: MacOS
+classifier: Topic :: Scientific/Engineering
+classifier: Topic :: Scientific/Engineering :: Mathematics
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+classifier: Topic :: Software Development
+classifier: Topic :: Software Development :: Libraries
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-dist: flatbuffers
+requires-dist: numpy>=1.21.6
+requires-dist: packaging
+requires-dist: protobuf>=4.25.8
+requires-dist: sympy; extra == "symbolic"
+requires-dist: ml_dtypes; extra == "quantization"
+requires-python: >=3.11
+provides-extra: symbolic
+provides-extra: quantization
+

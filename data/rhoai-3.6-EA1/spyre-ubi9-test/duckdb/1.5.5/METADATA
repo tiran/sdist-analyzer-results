@@ -1,0 +1,39 @@
+metadata-version: 2.1
+name: duckdb
+version: 1.5.5
+summary: DuckDB in-process database
+keywords: DuckDB,Database,SQL,OLAP
+author: DuckDB Foundation
+maintainer: DuckDB Foundation
+classifier: Development Status :: 5 - Production/Stable
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+classifier: Topic :: Database
+classifier: Topic :: Database :: Database Engines/Servers
+classifier: Topic :: Scientific/Engineering
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Education
+classifier: Intended Audience :: Information Technology
+classifier: Intended Audience :: Science/Research
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: C++
+requires-dist: ipython; extra == "all"
+requires-dist: fsspec; extra == "all"
+requires-dist: numpy; extra == "all"
+requires-dist: pandas; extra == "all"
+requires-dist: pyarrow; extra == "all"
+requires-dist: adbc-driver-manager; extra == "all"
+requires-python: >=3.10.0
+project-url: Documentation, https://duckdb.org/docs/stable/clients/python/overview
+project-url: Source, https://github.com/duckdb/duckdb-python
+project-url: Issues, https://github.com/duckdb/duckdb-python/issues
+project-url: Changelog, https://github.com/duckdb/duckdb-python/releases
+provides-extra: all
+

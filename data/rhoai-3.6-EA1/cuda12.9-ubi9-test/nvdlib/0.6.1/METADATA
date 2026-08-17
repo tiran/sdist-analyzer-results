@@ -1,0 +1,24 @@
+metadata-version: 2.4
+name: nvdlib
+version: 0.6.1
+dynamic: author
+dynamic: author-email
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: license
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: National Vulnerability Database CPE/CVE API Library
+home-page: https://github.com/Vehemont/nvdlib/
+author: Vehemont
+author-email: brad@nvdlib.com
+license: MIT
+requires-dist: requests
+requires-dist: responses==0.18.0; extra == "dev"
+requires-dist: pytest==7.0.1; extra == "dev"
+requires-python: >3.7.9
+provides-extra: dev
+

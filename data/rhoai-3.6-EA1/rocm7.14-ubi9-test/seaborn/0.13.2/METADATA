@@ -1,0 +1,46 @@
+metadata-version: 2.4
+name: seaborn
+version: 0.13.2
+summary: Statistical data visualization
+author-email: Michael Waskom <mwaskom@gmail.com>
+license-file: LICENSE.md
+classifier: Intended Audience :: Science/Research
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: License :: OSI Approved :: BSD License
+classifier: Topic :: Scientific/Engineering :: Visualization
+classifier: Topic :: Multimedia :: Graphics
+classifier: Operating System :: OS Independent
+classifier: Framework :: Matplotlib
+requires-dist: numpy!=1.24.0,>=1.20
+requires-dist: pandas>=1.2
+requires-dist: matplotlib!=3.6.1,>=3.4
+requires-dist: pytest; extra == "dev"
+requires-dist: pytest-cov; extra == "dev"
+requires-dist: pytest-xdist; extra == "dev"
+requires-dist: flake8; extra == "dev"
+requires-dist: mypy; extra == "dev"
+requires-dist: pandas-stubs; extra == "dev"
+requires-dist: pre-commit; extra == "dev"
+requires-dist: flit; extra == "dev"
+requires-dist: numpydoc; extra == "docs"
+requires-dist: nbconvert; extra == "docs"
+requires-dist: ipykernel; extra == "docs"
+requires-dist: sphinx<6.0.0; extra == "docs"
+requires-dist: sphinx-copybutton; extra == "docs"
+requires-dist: sphinx-issues; extra == "docs"
+requires-dist: sphinx-design; extra == "docs"
+requires-dist: pyyaml; extra == "docs"
+requires-dist: pydata_sphinx_theme==0.10.0rc2; extra == "docs"
+requires-dist: scipy>=1.7; extra == "stats"
+requires-dist: statsmodels>=0.12; extra == "stats"
+requires-python: >=3.8
+project-url: Docs, http://seaborn.pydata.org
+project-url: Source, https://github.com/mwaskom/seaborn
+provides-extra: dev
+provides-extra: docs
+provides-extra: stats
+

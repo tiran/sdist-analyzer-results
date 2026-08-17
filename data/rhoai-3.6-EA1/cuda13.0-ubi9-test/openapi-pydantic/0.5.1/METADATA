@@ -1,0 +1,25 @@
+metadata-version: 2.4
+name: openapi-pydantic
+version: 0.5.1
+summary: Pydantic OpenAPI schema implementation
+keywords: openapi,schema,parser,pydantic,validation
+author: Mike Oakley
+author-email: mike-oakley@users.noreply.github.com
+license: MIT
+license-file: LICENSE
+classifier: Framework :: Pydantic
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-dist: pydantic>=1.8
+requires-python: <4.0,>=3.8
+project-url: Repository, https://github.com/mike-oakley/openapi-pydantic
+project-url: changelog, https://github.com/mike-oakley/openapi-pydantic/releases
+

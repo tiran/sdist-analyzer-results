@@ -1,0 +1,30 @@
+metadata-version: 2.4
+name: immutabledict
+version: 4.2.1
+summary: Immutable wrapper around dictionaries (a fork of frozendict)
+keywords: immutable,dictionary
+author: Corentin Garcia
+author-email: corenting@gmail.com
+license: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-python: >=3.8
+project-url: Bug Tracker, https://github.com/corenting/immutabledict/issues
+project-url: Changelog, https://github.com/corenting/immutabledict/blob/master/CHANGELOG.md
+project-url: Documentation, https://immutabledict.corenting.fr
+project-url: Donation, https://corenting.fr/donate
+project-url: Repository, https://github.com/corenting/immutabledict
+

@@ -1,0 +1,10 @@
+metadata-version: 1.0
+name: asciitree
+version: 0.3.3
+platform: UNKNOWN
+summary: Draws ASCII trees.
+home-page: http://github.com/mbr/asciitree
+author: Marc Brinkmann
+author-email: git@marcbrinkmann.de
+license: MIT
+

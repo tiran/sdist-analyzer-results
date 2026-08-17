@@ -1,0 +1,116 @@
+metadata-version: 2.4
+name: vllm-omni
+version: 0.26.0+rhaiv.1
+dynamic: license-file
+dynamic: requires-dist
+summary: A framework for efficient model inference with omni-modality models
+keywords: vllm,multimodal,diffusion,transformer,inference,serving
+author: vLLM-Omni Team
+license-expression: Apache-2.0
+license-file: LICENSE
+classifier: Development Status :: 3 - Alpha
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: transformers>=5.5.3
+requires-dist: av>=13.1.0
+requires-dist: omegaconf>=2.3.0
+requires-dist: diffusers==0.38.0
+requires-dist: safetensors>=0.8.0
+requires-dist: accelerate==1.12.0
+requires-dist: soundfile>=0.13.1
+requires-dist: cache-dit==1.3.0
+requires-dist: tqdm>=4.66.0
+requires-dist: torchsde>=0.2.6
+requires-dist: openai-whisper>=20250625
+requires-dist: imageio[ffmpeg]>=2.37.2
+requires-dist: x-transformers>=2.12.2
+requires-dist: einops>=0.8.1
+requires-dist: prettytable>=3.8.0
+requires-dist: aenum==3.1.16
+requires-dist: pyzmq>=25.0.0
+requires-dist: janus>=1.0.0
+requires-dist: msgpack>=1.0.0
+requires-dist: pydantic>=2.1.0
+requires-dist: pydantic-settings>=2.0.0
+requires-dist: gguf>=0.10.0
+requires-dist: onnxruntime>=1.23.2
+requires-dist: pytest==9.1.1; extra == "dev"
+requires-dist: pytest-asyncio==1.4.0; extra == "dev"
+requires-dist: pytest-cov==7.1.0; extra == "dev"
+requires-dist: pytest-mock==3.15.1; extra == "dev"
+requires-dist: websockets==16.1; extra == "dev"
+requires-dist: pytest-subtests==0.15.0; extra == "dev"
+requires-dist: datasets==3.6.0; extra == "dev"
+requires-dist: mypy==1.11.1; extra == "dev"
+requires-dist: pre-commit==4.0.1; extra == "dev"
+requires-dist: openai-whisper==20250625; extra == "dev"
+requires-dist: psutil==7.2.2; extra == "dev"
+requires-dist: soundfile==0.14.0; extra == "dev"
+requires-dist: imageio[ffmpeg]==2.37.4; extra == "dev"
+requires-dist: opencv-python==5.0.0.93; extra == "dev"
+requires-dist: mooncake-transfer-engine-cuda13==0.3.11.post1; extra == "dev"
+requires-dist: av==18.0.0; extra == "dev"
+requires-dist: openpyxl==3.1.5; extra == "dev"
+requires-dist: pyttsx3==2.99; extra == "dev"
+requires-dist: opencc==1.4.1; extra == "dev"
+requires-dist: mistune==3.3.4; extra == "dev"
+requires-dist: torchmetrics==1.9.0; extra == "dev"
+requires-dist: ray[default]==2.56.1; extra == "dev"
+requires-dist: jiwer==4.0.0; extra == "dev"
+requires-dist: zhon==2.1.1; extra == "dev"
+requires-dist: zhconv==1.4.3; extra == "dev"
+requires-dist: scipy==1.18.0; extra == "dev"
+requires-dist: funasr==1.3.29; extra == "dev"
+requires-dist: lpips==0.1.4; extra == "dev"
+requires-dist: orjson==3.11.9; extra == "dev"
+requires-dist: voxcpm==2.0.3; extra == "dev"
+requires-dist: torchdiffeq==0.2.5; extra == "dev"
+requires-dist: FlagEmbedding==1.4.0; extra == "dev"
+requires-dist: kernels==0.14.1; extra == "dev"
+requires-dist: s3tokenizer==0.3.0; extra == "dev"
+requires-dist: step-audio2==1.0.0; extra == "dev"
+requires-dist: stepaudio2-minicpmo; extra == "dev"
+requires-dist: gradio>=6.7.0; extra == "demo"
+requires-dist: opencv-python>=4.12.0.88; extra == "demo"
+requires-dist: requests>=2.28.0; extra == "demo"
+requires-dist: cn2an>=0.5.22; extra == "demo"
+requires-dist: qwen-asr>=0.0.6; extra == "forced-aligner"
+requires-dist: FlagEmbedding; extra == "local"
+requires-dist: quack-kernels>=0.3.11; extra == "quack"
+requires-dist: flash-attn-4[cu13]==4.0.0b18; extra == "fa4"
+requires-dist: mkdocs>=1.5.0; extra == "docs"
+requires-dist: mkdocs-api-autonav; extra == "docs"
+requires-dist: mkdocs-material; extra == "docs"
+requires-dist: mkdocstrings-python; extra == "docs"
+requires-dist: mkdocs-gen-files; extra == "docs"
+requires-dist: mkdocs-awesome-nav; extra == "docs"
+requires-dist: mkdocs-glightbox; extra == "docs"
+requires-dist: mkdocs-git-revision-date-localized-plugin; extra == "docs"
+requires-dist: mkdocs-minify-plugin; extra == "docs"
+requires-dist: regex; extra == "docs"
+requires-dist: ruff; extra == "docs"
+requires-dist: pydantic; extra == "docs"
+requires-dist: funasr>=1.0.0; extra == "soulx-svs"
+requires-dist: g2pM>=0.1.2.5; extra == "soulx-svs"
+requires-dist: g2p-en>=2.1.0; extra == "soulx-svs"
+requires-dist: ToJyutping>=3.2.0; extra == "soulx-svs"
+requires-python: <3.14,>=3.10
+project-url: Homepage, https://github.com/vllm-project/vllm-omni
+project-url: Repository, https://github.com/vllm-project/vllm-omni
+project-url: Documentation, https://vllm-omni.readthedocs.io
+project-url: Bug Tracker, https://github.com/vllm-project/vllm-omni/issues
+provides-extra: dev
+provides-extra: demo
+provides-extra: forced-aligner
+provides-extra: local
+provides-extra: quack
+provides-extra: fa4
+provides-extra: docs
+provides-extra: soulx-svs
+

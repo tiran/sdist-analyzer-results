@@ -1,13 +1,11 @@
-Metadata-Version: 2.4
-Name: llama-index-embeddings-openai
-Version: 0.6.0
-Summary: llama-index embeddings openai integration
-Author-email: Your Name <you@example.com>
-License-Expression: MIT
-License-File: LICENSE
-Requires-Python: <4.0,>=3.10
-Requires-Dist: llama-index-core<0.15,>=0.13.0
-Requires-Dist: openai>=1.1.0
-Description-Content-Type: text/markdown
+metadata-version: 2.4
+name: llama-index-embeddings-openai
+version: 0.6.0
+summary: llama-index embeddings openai integration
+author-email: Your Name <you@example.com>
+license-expression: MIT
+license-file: LICENSE
+requires-dist: llama-index-core<0.15,>=0.13.0
+requires-dist: openai>=1.1.0
+requires-python: <4.0,>=3.10
 
-# LlamaIndex Embeddings Integration: Openai

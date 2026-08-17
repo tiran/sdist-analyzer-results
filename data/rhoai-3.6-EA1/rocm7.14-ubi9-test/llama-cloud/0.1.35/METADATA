@@ -1,0 +1,22 @@
+metadata-version: 2.4
+name: llama-cloud
+version: 0.1.35
+summary: 
+author: Logan Markewich
+author-email: logan@runllama.ai
+license: MIT
+license-file: LICENSE
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-dist: certifi>=2024.7.4
+requires-dist: httpx>=0.20.0
+requires-dist: pydantic>=1.10
+requires-python: <4,>=3.8
+

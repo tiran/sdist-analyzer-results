@@ -1,0 +1,32 @@
+metadata-version: 2.4
+name: phonenumbers
+version: 9.0.36
+dynamic: license-file
+summary: Python version of Google's common library for parsing, formatting, storing and validating international phone numbers.
+author-email: David Drysdale <dmd@lurklurk.org>
+license-expression: Apache-2.0
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Operating System :: OS Independent
+classifier: Topic :: Communications :: Telephony
+classifier: Programming Language :: Python :: 2
+classifier: Programming Language :: Python :: 2.5
+classifier: Programming Language :: Python :: 2.6
+classifier: Programming Language :: Python :: 2.7
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.3
+classifier: Programming Language :: Python :: 3.4
+classifier: Programming Language :: Python :: 3.5
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+requires-python: >=2.5
+project-url: homepage, https://github.com/daviddrysdale/python-phonenumbers
+

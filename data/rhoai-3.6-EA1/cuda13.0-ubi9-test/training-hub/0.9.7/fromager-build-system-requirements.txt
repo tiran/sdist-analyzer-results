@@ -1,0 +1,4 @@
+setuptools>=64
+wheel>=0.43
+setuptools_scm>=8
+packaging>=20.9

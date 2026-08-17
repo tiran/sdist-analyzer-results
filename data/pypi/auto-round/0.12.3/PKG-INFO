@@ -1,0 +1,42 @@
+metadata-version: 2.4
+name: auto-round
+version: 0.12.3
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: Repository of AutoRound: Advanced Weight-Only Quantization Algorithm for LLMs
+keywords: quantization,auto-around,LLM,SignRound
+home-page: https://github.com/intel/auto-round
+author: Intel AIPT Team
+author-email: wenhua.cheng@intel.com, weiwei1.zhang@intel.com, heng.guo@intel.com
+license: Apache 2.0
+license-file: LICENSE
+license-file: third-party-programs.txt
+classifier: Intended Audience :: Science/Research
+classifier: Programming Language :: Python :: 3
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+classifier: License :: OSI Approved :: Apache Software License
+requires-dist: accelerate
+requires-dist: datasets
+requires-dist: numpy
+requires-dist: py-cpuinfo
+requires-dist: torch
+requires-dist: tqdm
+requires-dist: transformers>=4.38
+requires-dist: pydantic
+requires-dist: numba; extra == "cpu"
+requires-dist: tbb; extra == "cpu"
+requires-dist: auto-round-lib; extra == "cpu"
+requires-python: >=3.10.0
+provides-extra: cpu
+

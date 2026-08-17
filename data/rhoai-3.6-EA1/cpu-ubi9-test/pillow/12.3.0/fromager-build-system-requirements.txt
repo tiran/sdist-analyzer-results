@@ -1,2 +1,2 @@
-setuptools>=77
 pybind11
+setuptools>=77

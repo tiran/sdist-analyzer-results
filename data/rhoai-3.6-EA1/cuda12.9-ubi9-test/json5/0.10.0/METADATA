@@ -1,0 +1,44 @@
+metadata-version: 2.4
+name: json5
+version: 0.10.0
+dynamic: license-file
+summary: A Python implementation of the JSON5 data format.
+author-email: Dirk Pranke <dpranke@chromium.org>
+license: Files: Everything except for the benchmarks/*.json files.
+                 
+                 Apache License
+                                            Version 2.0, January 2004
+                                         http://www.apache.org/licenses/
+                 
+                    TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+                 
+                    1. Definitions.
+                 
+                       "License" shall mean the terms and conditions for use, reproduction,
+                       and distribution as defined by Sections 1 through 9 of this document.
+          ...
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+requires-dist: build==1.2.2.post1; extra == "dev"
+requires-dist: coverage==7.5.3; extra == "dev"
+requires-dist: mypy==1.13.0; extra == "dev"
+requires-dist: pip==24.3.1; extra == "dev"
+requires-dist: pylint==3.2.3; extra == "dev"
+requires-dist: ruff==0.7.3; extra == "dev"
+requires-dist: twine==5.1.1; extra == "dev"
+requires-dist: uv==0.5.1; extra == "dev"
+requires-python: >=3.8.0
+project-url: Repository, https://github.com/dpranke/pyjson5
+project-url: Issues, https://github.com/dpranke/pyjson5/issues
+project-url: Changelog, https://github.com/dpranke/pyjson5/blob/master/README.md
+provides-extra: dev
+

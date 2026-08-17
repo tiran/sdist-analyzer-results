@@ -1,0 +1,31 @@
+metadata-version: 2.1
+name: asyncer
+version: 0.0.8
+summary: Asyncer, async and await, focused on developer experience.
+author-email: =?utf-8?q?Sebasti=C3=A1n_Ram=C3=ADrez?= <tiangolo@gmail.com>
+classifier: Development Status :: 4 - Beta
+classifier: Framework :: AsyncIO
+classifier: Framework :: Trio
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Education
+classifier: Intended Audience :: Information Technology
+classifier: Intended Audience :: Science/Research
+classifier: Intended Audience :: System Administrators
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Topic :: Internet
+classifier: Typing :: Typed
+requires-dist: anyio<5.0,>=3.4.0
+requires-dist: typing_extensions>=4.8.0; python_version < "3.10"
+requires-python: >=3.8
+project-url: Homepage, https://github.com/fastapi/asyncer
+project-url: Documentation, https://asyncer.tiangolo.com
+project-url: Repository, https://github.com/fastapi/asyncer
+project-url: Issues, https://github.com/fastapi/asyncer/issues
+project-url: Changelog, https://asyncer.tiangolo.com/release-notes/
+

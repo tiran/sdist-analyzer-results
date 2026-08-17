@@ -1,0 +1,22 @@
+metadata-version: 2.5
+name: hatch-docstring-description
+version: 1.1.1
+summary: A hatchling plugin to read the description from the package docstring
+author-email: "Philipp A." <flying-sheep@web.de>
+license-expression: GPL-3.0-or-later
+license-file: LICENSE.md
+classifier: Development Status :: 5 - Production/Stable
+classifier: Framework :: Hatch
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Typing :: Typed
+requires-dist: hatchling
+requires-python: >=3.9
+project-url: Issues, https://github.com/flying-sheep/hatch-docstring-description/issues
+project-url: Source, https://github.com/flying-sheep/hatch-docstring-description
+

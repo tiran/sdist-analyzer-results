@@ -1,0 +1,30 @@
+metadata-version: 2.4
+name: pydantic-monty
+version: 0.0.21
+summary: The Monty sandboxed Python interpreter: bindings plus the worker binary
+license-expression: MIT
+classifier: Development Status :: 3 - Alpha
+classifier: Environment :: MacOS X
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Information Technology
+classifier: Intended Audience :: System Administrators
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: POSIX :: Linux
+classifier: Operating System :: Unix
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Implementation
+classifier: Topic :: Internet
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: pydantic-monty-client==0.0.21
+requires-dist: pydantic-monty-runtime==0.0.21
+requires-python: >=3.10
+project-url: Homepage, https://github.com/pydantic/monty
+project-url: Source, https://github.com/pydantic/monty
+

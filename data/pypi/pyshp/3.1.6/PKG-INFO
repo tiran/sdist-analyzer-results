@@ -1,0 +1,21 @@
+metadata-version: 2.4
+name: pyshp
+version: 3.1.6
+summary: Pure Python read/write support for ESRI Shapefile format
+keywords: geographic,geospatial,gis,shapefile,shapefiles
+author-email: Joel Lawhead <jlawhead@geospatialpython.com>
+maintainer-email: James Parrott <james@jamesparrott.dev>, Karim Bahgat <karim.bahgat.norway@gmail.com>
+license-expression: MIT
+license-file: LICENSE.TXT
+classifier: Development Status :: 5 - Production/Stable
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Topic :: Scientific/Engineering :: GIS
+classifier: Topic :: Software Development :: Libraries
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: pyshp-stubs; extra == "stubs"
+requires-python: >=3.9
+project-url: Repository, https://github.com/GeospatialPython/pyshp
+provides-extra: stubs
+

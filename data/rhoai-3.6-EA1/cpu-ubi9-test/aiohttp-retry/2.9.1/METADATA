@@ -1,0 +1,31 @@
+metadata-version: 2.4
+name: aiohttp_retry
+version: 2.9.1
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: platform
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+platform: any
+summary: Simple retry client for aiohttp
+keywords: aiohttp retry client
+home-page: https://github.com/inyutin/aiohttp_retry
+author: Dmitry Inyutin
+author-email: inyutin.da@gmail.com
+license: MIT
+license-file: LICENSE
+license-file: AUTHORS
+classifier: Programming Language :: Python :: 3
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+requires-dist: aiohttp
+requires-python: >=3.7
+

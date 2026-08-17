@@ -1,0 +1,22 @@
+metadata-version: 2.4
+name: openvino-telemetry
+version: 2025.2.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: summary
+summary: OpenVINO™ Telemetry package for sending statistics with user's consent, used in combination with other OpenVINO™ packages.
+home-page: https://github.com/openvinotoolkit/telemetry
+author: Intel® Corporation
+author-email: openvino_pushbot@intel.com
+license: OSI Approved :: Apache Software License
+license-file: LICENSE
+classifier: Programming Language :: Python :: 3
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: OS Independent
+

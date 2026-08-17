@@ -1,0 +1,192 @@
+metadata-version: 2.4
+name: datasets
+version: 3.6.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: download-url
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: HuggingFace community-driven open-source library of datasets
+keywords: datasets machine learning datasets
+home-page: https://github.com/huggingface/datasets
+download-url: https://github.com/huggingface/datasets/tags
+author: HuggingFace Inc.
+author-email: thomas@huggingface.co
+license: Apache 2.0
+license-file: LICENSE
+license-file: AUTHORS
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Education
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+requires-dist: filelock
+requires-dist: numpy>=1.17
+requires-dist: pyarrow>=15.0.0
+requires-dist: dill<0.3.9,>=0.3.0
+requires-dist: pandas
+requires-dist: requests>=2.32.2
+requires-dist: tqdm>=4.66.3
+requires-dist: xxhash
+requires-dist: multiprocess<0.70.17
+requires-dist: fsspec[http]<=2025.3.0,>=2023.1.0
+requires-dist: huggingface-hub>=0.24.0
+requires-dist: packaging
+requires-dist: pyyaml>=5.1
+requires-dist: soundfile>=0.12.1; extra == "audio"
+requires-dist: librosa; extra == "audio"
+requires-dist: soxr>=0.4.0; extra == "audio"
+requires-dist: Pillow>=9.4.0; extra == "vision"
+requires-dist: tensorflow>=2.6.0; extra == "tensorflow"
+requires-dist: tensorflow>=2.6.0; extra == "tensorflow-gpu"
+requires-dist: torch; extra == "torch"
+requires-dist: jax>=0.3.14; extra == "jax"
+requires-dist: jaxlib>=0.3.14; extra == "jax"
+requires-dist: s3fs; extra == "s3"
+requires-dist: absl-py; extra == "dev"
+requires-dist: decorator; extra == "dev"
+requires-dist: joblib<1.3.0; extra == "dev"
+requires-dist: joblibspark; extra == "dev"
+requires-dist: pytest; extra == "dev"
+requires-dist: pytest-datadir; extra == "dev"
+requires-dist: pytest-xdist; extra == "dev"
+requires-dist: aiohttp; extra == "dev"
+requires-dist: elasticsearch<8.0.0,>=7.17.12; extra == "dev"
+requires-dist: faiss-cpu>=1.8.0.post1; extra == "dev"
+requires-dist: jax>=0.3.14; sys_platform != "win32" and extra == "dev"
+requires-dist: jaxlib>=0.3.14; sys_platform != "win32" and extra == "dev"
+requires-dist: lz4; extra == "dev"
+requires-dist: moto[server]; extra == "dev"
+requires-dist: pyspark>=3.4; extra == "dev"
+requires-dist: py7zr; extra == "dev"
+requires-dist: rarfile>=4.0; extra == "dev"
+requires-dist: sqlalchemy; extra == "dev"
+requires-dist: s3fs>=2021.11.1; extra == "dev"
+requires-dist: protobuf<4.0.0; extra == "dev"
+requires-dist: tensorflow>=2.6.0; python_version < "3.10" and extra == "dev"
+requires-dist: tensorflow>=2.16.0; python_version >= "3.10" and extra == "dev"
+requires-dist: tiktoken; extra == "dev"
+requires-dist: torch>=2.0.0; extra == "dev"
+requires-dist: torchdata; extra == "dev"
+requires-dist: soundfile>=0.12.1; extra == "dev"
+requires-dist: transformers>=4.42.0; extra == "dev"
+requires-dist: zstandard; extra == "dev"
+requires-dist: polars[timezone]>=0.20.0; extra == "dev"
+requires-dist: torchvision; extra == "dev"
+requires-dist: pyav; extra == "dev"
+requires-dist: Pillow>=9.4.0; extra == "dev"
+requires-dist: soundfile>=0.12.1; extra == "dev"
+requires-dist: librosa; extra == "dev"
+requires-dist: soxr>=0.4.0; extra == "dev"
+requires-dist: ruff>=0.3.0; extra == "dev"
+requires-dist: s3fs; extra == "dev"
+requires-dist: transformers; extra == "dev"
+requires-dist: torch; extra == "dev"
+requires-dist: tensorflow>=2.6.0; extra == "dev"
+requires-dist: absl-py; extra == "tests"
+requires-dist: decorator; extra == "tests"
+requires-dist: joblib<1.3.0; extra == "tests"
+requires-dist: joblibspark; extra == "tests"
+requires-dist: pytest; extra == "tests"
+requires-dist: pytest-datadir; extra == "tests"
+requires-dist: pytest-xdist; extra == "tests"
+requires-dist: aiohttp; extra == "tests"
+requires-dist: elasticsearch<8.0.0,>=7.17.12; extra == "tests"
+requires-dist: faiss-cpu>=1.8.0.post1; extra == "tests"
+requires-dist: jax>=0.3.14; sys_platform != "win32" and extra == "tests"
+requires-dist: jaxlib>=0.3.14; sys_platform != "win32" and extra == "tests"
+requires-dist: lz4; extra == "tests"
+requires-dist: moto[server]; extra == "tests"
+requires-dist: pyspark>=3.4; extra == "tests"
+requires-dist: py7zr; extra == "tests"
+requires-dist: rarfile>=4.0; extra == "tests"
+requires-dist: sqlalchemy; extra == "tests"
+requires-dist: s3fs>=2021.11.1; extra == "tests"
+requires-dist: protobuf<4.0.0; extra == "tests"
+requires-dist: tensorflow>=2.6.0; python_version < "3.10" and extra == "tests"
+requires-dist: tensorflow>=2.16.0; python_version >= "3.10" and extra == "tests"
+requires-dist: tiktoken; extra == "tests"
+requires-dist: torch>=2.0.0; extra == "tests"
+requires-dist: torchdata; extra == "tests"
+requires-dist: soundfile>=0.12.1; extra == "tests"
+requires-dist: transformers>=4.42.0; extra == "tests"
+requires-dist: zstandard; extra == "tests"
+requires-dist: polars[timezone]>=0.20.0; extra == "tests"
+requires-dist: torchvision; extra == "tests"
+requires-dist: pyav; extra == "tests"
+requires-dist: Pillow>=9.4.0; extra == "tests"
+requires-dist: soundfile>=0.12.1; extra == "tests"
+requires-dist: librosa; extra == "tests"
+requires-dist: soxr>=0.4.0; extra == "tests"
+requires-dist: absl-py; extra == "tests-numpy2"
+requires-dist: decorator; extra == "tests-numpy2"
+requires-dist: joblib<1.3.0; extra == "tests-numpy2"
+requires-dist: joblibspark; extra == "tests-numpy2"
+requires-dist: pytest; extra == "tests-numpy2"
+requires-dist: pytest-datadir; extra == "tests-numpy2"
+requires-dist: pytest-xdist; extra == "tests-numpy2"
+requires-dist: aiohttp; extra == "tests-numpy2"
+requires-dist: elasticsearch<8.0.0,>=7.17.12; extra == "tests-numpy2"
+requires-dist: jax>=0.3.14; sys_platform != "win32" and extra == "tests-numpy2"
+requires-dist: jaxlib>=0.3.14; sys_platform != "win32" and extra == "tests-numpy2"
+requires-dist: lz4; extra == "tests-numpy2"
+requires-dist: moto[server]; extra == "tests-numpy2"
+requires-dist: pyspark>=3.4; extra == "tests-numpy2"
+requires-dist: py7zr; extra == "tests-numpy2"
+requires-dist: rarfile>=4.0; extra == "tests-numpy2"
+requires-dist: sqlalchemy; extra == "tests-numpy2"
+requires-dist: s3fs>=2021.11.1; extra == "tests-numpy2"
+requires-dist: protobuf<4.0.0; extra == "tests-numpy2"
+requires-dist: tiktoken; extra == "tests-numpy2"
+requires-dist: torch>=2.0.0; extra == "tests-numpy2"
+requires-dist: torchdata; extra == "tests-numpy2"
+requires-dist: soundfile>=0.12.1; extra == "tests-numpy2"
+requires-dist: transformers>=4.42.0; extra == "tests-numpy2"
+requires-dist: zstandard; extra == "tests-numpy2"
+requires-dist: polars[timezone]>=0.20.0; extra == "tests-numpy2"
+requires-dist: torchvision; extra == "tests-numpy2"
+requires-dist: pyav; extra == "tests-numpy2"
+requires-dist: Pillow>=9.4.0; extra == "tests-numpy2"
+requires-dist: soundfile>=0.12.1; extra == "tests-numpy2"
+requires-dist: soxr>=0.4.0; extra == "tests-numpy2"
+requires-dist: ruff>=0.3.0; extra == "quality"
+requires-dist: tensorflow==2.12.0; extra == "benchmarks"
+requires-dist: torch==2.0.1; extra == "benchmarks"
+requires-dist: transformers==4.30.1; extra == "benchmarks"
+requires-dist: s3fs; extra == "docs"
+requires-dist: transformers; extra == "docs"
+requires-dist: torch; extra == "docs"
+requires-dist: tensorflow>=2.6.0; extra == "docs"
+requires-dist: pdfplumber>=0.11.4; extra == "pdfs"
+requires-python: >=3.9.0
+provides-extra: audio
+provides-extra: vision
+provides-extra: tensorflow
+provides-extra: tensorflow-gpu
+provides-extra: torch
+provides-extra: jax
+provides-extra: s3
+provides-extra: streaming
+provides-extra: dev
+provides-extra: tests
+provides-extra: tests-numpy2
+provides-extra: quality
+provides-extra: benchmarks
+provides-extra: docs
+provides-extra: pdfs
+

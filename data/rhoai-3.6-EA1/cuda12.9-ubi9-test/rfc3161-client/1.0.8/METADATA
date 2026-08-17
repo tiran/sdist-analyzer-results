@@ -1,0 +1,20 @@
+metadata-version: 2.4
+name: rfc3161-client
+version: 1.0.8
+author-email: Trail of Bits <opensource@trailofbits.com>
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Programming Language :: Rust
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Typing :: Typed
+requires-dist: cryptography>=43
+requires-python: >=3.9
+project-url: Documentation, https://trailofbits.github.io/rfc3161-client/
+project-url: Homepage, https://pypi.org/project/rfc3161-client
+project-url: Issues, https://github.com/trailofbits/rfc3161-client/issues
+project-url: Source, https://github.com/trailofbits/rfc3161-client
+

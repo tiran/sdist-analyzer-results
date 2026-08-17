@@ -1,0 +1,41 @@
+metadata-version: 2.4
+name: zope.interface
+version: 8.5
+dynamic: license-file
+summary: Interfaces for Python
+keywords: interface,components,plugins
+author-email: Zope Foundation and contributors <zope-dev@zope.dev>
+maintainer-email: Plone Foundation and contributors <zope-dev@zope.dev>
+license-expression: ZPL-2.1
+license-file: LICENSE.txt
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+requires-dist: Sphinx; extra == "docs"
+requires-dist: repoze.sphinx.autointerface; extra == "docs"
+requires-dist: furo; extra == "docs"
+requires-dist: coverage[toml]; extra == "test"
+requires-dist: zope.event; extra == "test"
+requires-dist: zope.testing; extra == "test"
+requires-dist: coverage[toml]; extra == "testing"
+requires-dist: zope.event; extra == "testing"
+requires-dist: zope.testing; extra == "testing"
+requires-python: >=3.10
+project-url: Documentation, https://zopeinterface.readthedocs.io
+project-url: Issues, https://github.com/zopefoundation/zope.interface/issues
+project-url: Source, https://github.com/zopefoundation/zope.interface
+project-url: Changelog, https://github.com/zopefoundation/zope.interface/blob/master/CHANGES.rst
+provides-extra: docs
+provides-extra: test
+provides-extra: testing
+

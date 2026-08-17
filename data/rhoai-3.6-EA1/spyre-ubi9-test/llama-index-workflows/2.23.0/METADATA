@@ -1,0 +1,14 @@
+metadata-version: 2.4
+name: llama-index-workflows
+version: 2.23.0
+summary: An event-driven, async-first, step-based way to control the execution flow of AI applications like Agents.
+license-expression: MIT
+requires-dist: llama-index-instrumentation>=0.4.3
+requires-dist: pydantic>=2.11.5
+requires-dist: typing-extensions>=4.6.0
+requires-dist: llama-agents-client<1.0.0,>=0.1.0; extra == "client"
+requires-dist: llama-agents-server<1.0.0,>=0.1.0; extra == "server"
+requires-python: >=3.10
+provides-extra: client
+provides-extra: server
+

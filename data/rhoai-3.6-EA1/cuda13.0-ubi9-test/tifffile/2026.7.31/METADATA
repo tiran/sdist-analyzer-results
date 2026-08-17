@@ -1,0 +1,74 @@
+metadata-version: 2.4
+name: tifffile
+version: 2026.7.31
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: platform
+dynamic: project-url
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+platform: any
+summary: Read and write TIFF files
+home-page: https://www.cgohlke.com
+author: Christoph Gohlke
+author-email: cgohlke@cgohlke.com
+license: BSD-3-Clause
+license-file: LICENSE
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Science/Research
+classifier: Intended Audience :: Developers
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: 3.15
+requires-dist: numpy>=2.1
+requires-dist: imagecodecs>=2026.5.10; extra == "codecs"
+requires-dist: lxml; extra == "xml"
+requires-dist: zarr>=3.2.0; extra == "zarr"
+requires-dist: fsspec; extra == "zarr"
+requires-dist: kerchunk; extra == "zarr"
+requires-dist: matplotlib; extra == "plot"
+requires-dist: imagecodecs>=2026.5.10; extra == "all"
+requires-dist: matplotlib; extra == "all"
+requires-dist: lxml; extra == "all"
+requires-dist: zarr>=3.2.0; extra == "all"
+requires-dist: xarray; extra == "all"
+requires-dist: fsspec; extra == "all"
+requires-dist: kerchunk; extra == "all"
+requires-dist: cmapfile; extra == "test"
+requires-dist: czifile; extra == "test"
+requires-dist: dask; extra == "test"
+requires-dist: fsspec; extra == "test"
+requires-dist: imagecodecs; extra == "test"
+requires-dist: kerchunk; extra == "test"
+requires-dist: lfdfiles; extra == "test"
+requires-dist: lxml; extra == "test"
+requires-dist: ndtiff; extra == "test"
+requires-dist: oiffile; extra == "test"
+requires-dist: psdtags; extra == "test"
+requires-dist: pytest; extra == "test"
+requires-dist: requests; extra == "test"
+requires-dist: roifile; extra == "test"
+requires-dist: xarray; extra == "test"
+requires-dist: zarr>=3.2.0; extra == "test"
+requires-python: >=3.12
+project-url: Bug Tracker, https://github.com/cgohlke/tifffile/issues
+project-url: Source Code, https://github.com/cgohlke/tifffile
+project-url: Documentation, https://www.cgohlke.com/docs/tifffile/
+provides-extra: codecs
+provides-extra: xml
+provides-extra: zarr
+provides-extra: plot
+provides-extra: all
+provides-extra: test
+

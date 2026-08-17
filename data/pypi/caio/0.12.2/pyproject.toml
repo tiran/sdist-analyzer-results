@@ -1,0 +1,61 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "caio"
+version = "0.12.2"
+license = "Apache-2.0"
+license-files = ["COPYING"]
+description = "Asynchronous file IO for Linux MacOS or Windows."
+readme = "README.md"
+authors = [{ name = "Dmitry Orlov", email = "me@mosquito.su"}]
+requires-python = ">=3.10"
+classifiers = [
+  "Topic :: Software Development",
+  "Topic :: Software Development :: Libraries",
+  "Intended Audience :: Developers",
+  "Natural Language :: English",
+  "Operating System :: MacOS",
+  "Operating System :: POSIX",
+  "Operating System :: Microsoft",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Free Threading :: 2 - Beta",
+]
+
+[project.urls]
+"Source Code" = "https://github.com/mosquito/caio/"
+
+[project.optional-dependencies]
+develop = [
+  "aiomisc-pytest",
+  "coveralls",
+  "pytest",
+  "pytest-cov",
+  "pytest-rerunfailures",
+  "setuptools",
+]
+
+[tool.pytest.ini_options]
+asyncio_default_fixture_loop_scope = "function"
+
+[tool.setuptools.packages.find]
+include = ["caio*", "tests"]
+
+[tool.ruff]
+line-length = 80
+
+[tool.ruff.lint]
+ignore = ["C901", "E252"]
+
+[dependency-groups]
+dev = [
+    "rich",
+]

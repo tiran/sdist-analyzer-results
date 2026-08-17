@@ -1,0 +1,40 @@
+metadata-version: 2.4
+name: pbr
+version: 7.0.3
+dynamic: author
+dynamic: author-email
+dynamic: license
+dynamic: license-file
+dynamic: project-url
+dynamic: requires-dist
+dynamic: summary
+summary: Python Build Reasonableness
+home-page: https://docs.openstack.org/pbr/latest/
+author: OpenStack
+author-email: openstack-discuss@lists.openstack.org
+license: Apache-2.0
+license-file: LICENSE
+license-file: AUTHORS
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Environment :: OpenStack
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Information Technology
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 2
+classifier: Programming Language :: Python :: 2.7
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.5
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+requires-dist: setuptools
+requires-python: >=2.6
+project-url: Bug Tracker, https://bugs.launchpad.net/pbr/
+project-url: Documentation, https://docs.openstack.org/pbr/
+project-url: Source Code, https://opendev.org/openstack/pbr
+

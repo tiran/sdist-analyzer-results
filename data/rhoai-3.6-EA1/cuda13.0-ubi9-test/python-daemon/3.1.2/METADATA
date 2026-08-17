@@ -1,0 +1,65 @@
+metadata-version: 2.4
+name: python-daemon
+version: 3.1.2
+dynamic: description
+dynamic: description-content-type
+dynamic: license-file
+dynamic: maintainer
+dynamic: maintainer-email
+dynamic: summary
+summary: Library to implement a well-behaved Unix daemon process.
+keywords: daemon,fork,unix
+author-email: Ben Finney <ben+python@benfinney.id.au>
+maintainer: Ben Finney
+maintainer-email: ben+python@benfinney.id.au
+license: Copying this work
+                 #################
+                 
+                 ‘python-daemon’ is under Copyright © 2008–2024 Ben Finney and others.
+                 
+                 This work, ‘python-daemon’, is free software: you may copy, modify,
+                 and/or distribute this work under certain conditions; see the relevant
+                 files for specific grant of license. No warranty expressed or implied.
+                 
+                 ‘daemon’ library
+                 ================
+                 
+                 The files ‘daemon/*’ constitute the Python ‘daemon’ library...
+license-file: LICENSE.ASF-2
+license-file: LICENSE.GPL-3
+classifier: Development Status :: 5 - Production/Stable
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: POSIX
+classifier: Programming Language :: Python :: 3
+classifier: Intended Audience :: Developers
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: lockfile>=0.10
+requires-dist: pip-check; extra == "static-analysis"
+requires-dist: pycodestyle~=2.12; extra == "static-analysis"
+requires-dist: pydocstyle~=6.3; extra == "static-analysis"
+requires-dist: pyupgrade~=3.17; extra == "static-analysis"
+requires-dist: isort~=5.13; extra == "static-analysis"
+requires-dist: python-daemon[doc]; extra == "build"
+requires-dist: wheel; extra == "build"
+requires-dist: build; extra == "build"
+requires-dist: docutils; extra == "build"
+requires-dist: changelog-chug; extra == "build"
+requires-dist: python-daemon[build,static-analysis]; extra == "test"
+requires-dist: testtools; extra == "test"
+requires-dist: testscenarios>=0.4; extra == "test"
+requires-dist: coverage; extra == "test"
+requires-dist: python-daemon[build]; extra == "dist"
+requires-dist: twine; extra == "dist"
+requires-dist: python-daemon[dist,test]; extra == "devel"
+requires-python: >=3.7
+project-url: Home Page, https://pagure.io/python-daemon/
+project-url: Change Log, https://pagure.io/python-daemon/blob/main/f/ChangeLog
+project-url: Source, https://pagure.io/python-daemon/
+project-url: Issue Tracker, https://pagure.io/python-daemon/issues
+provides-extra: doc
+provides-extra: static-analysis
+provides-extra: build
+provides-extra: test
+provides-extra: dist
+provides-extra: devel
+

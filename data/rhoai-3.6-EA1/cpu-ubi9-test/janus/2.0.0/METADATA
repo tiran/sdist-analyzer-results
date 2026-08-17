@@ -1,0 +1,33 @@
+metadata-version: 2.4
+name: janus
+version: 2.0.0
+dynamic: license-file
+summary: Mixed sync-async queue to interoperate between asyncio tasks and classic threads
+keywords: janus,queue,asyncio
+home-page: https://github.com/aio-libs/janus
+author: Andrew Svetlov <andrew.svetlov@gmail.com>
+author-email: andrew.svetlov@gmail.com
+license: Apache 2
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Framework :: AsyncIO
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: POSIX
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Operating System :: Microsoft :: Windows
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Topic :: Software Development :: Libraries
+requires-python: >=3.9
+project-url: Chat: Gitter, https://gitter.im/aio-libs/Lobby
+project-url: CI: GitHub Actions, https://github.com/aio-libs/janus/actions/workflows/ci.yml
+project-url: Coverage: codecov, https://codecov.io/github/aio-libs/janus
+project-url: GitHub: issues, https://github.com/aio-libs/janus/issues
+project-url: GitHub: repo, https://github.com/aio-libs/janus
+

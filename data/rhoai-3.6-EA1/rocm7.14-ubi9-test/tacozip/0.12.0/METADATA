@@ -1,0 +1,32 @@
+metadata-version: 2.4
+name: tacozip
+version: 0.12.0
+summary: The ZIP container for TACO files
+keywords: zip,archive,parquet,metadata
+author-email: Cesar Aybar <csaybar@gmail.com>
+license-expression: MIT
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: Operating System :: POSIX :: Linux
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Operating System :: Microsoft :: Windows
+classifier: Programming Language :: C
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Topic :: System :: Archiving :: Compression
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: pytest>=6.0; extra == "dev"
+requires-dist: pytest-cov; extra == "dev"
+requires-dist: black; extra == "dev"
+requires-dist: flake8; extra == "dev"
+requires-dist: mypy; extra == "dev"
+requires-python: >=3.8
+project-url: Homepage, https://tacofoundation.github.io/
+project-url: Repository, https://github.com/tacofoundation/tacozip
+project-url: Issues, https://github.com/tacofoundation/tacozip/issues
+provides-extra: dev
+

@@ -1,0 +1,42 @@
+metadata-version: 2.4
+name: soundfile
+version: 0.14.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: platform
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+platform: any
+summary: An audio library based on libsndfile, CFFI and NumPy
+keywords: audio,libsndfile
+home-page: https://github.com/bastibe/python-soundfile
+author: Bastian Bechtold
+author-email: bastibe.dev@mailbox.org
+license: BSD 3-Clause License
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: BSD License
+classifier: Natural Language :: English
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Topic :: Multimedia :: Sound/Audio
+requires-dist: cffi>=1.0
+requires-dist: numpy
+requires-dist: typing-extensions
+requires-python: >=3.10
+provides-extra: numpy
+

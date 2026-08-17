@@ -1,0 +1,57 @@
+metadata-version: 2.5
+name: kubeflow-kale
+version: 2.2.0
+summary: Convert JupyterNotebooks to Kubeflow Pipelines deployments
+author-email: Stefano Fioravanzo <stefano.fioravanzo@gmail.com>
+license: Apache License Version 2.0
+license-file: LICENSE
+classifier: Framework :: Jupyter
+classifier: Framework :: Jupyter :: JupyterLab
+classifier: Framework :: Jupyter :: JupyterLab :: 4
+classifier: Framework :: Jupyter :: JupyterLab :: Extensions
+classifier: Framework :: Jupyter :: JupyterLab :: Extensions :: Prebuilt
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+requires-dist: astor>=0.8.1
+requires-dist: autopep8>=2.0.0
+requires-dist: dill>=0.3.8
+requires-dist: ipykernel>=6.29.5
+requires-dist: ipython>=8.30.0
+requires-dist: jinja2>=3.0.0
+requires-dist: jupyter-client>=8.6.3
+requires-dist: jupyter-core>=5.8.1
+requires-dist: kfp[kubernetes]>=2.16.0
+requires-dist: kubernetes>=30.0.0
+requires-dist: nbconvert>=7.16.0
+requires-dist: nbformat>=5.10.4
+requires-dist: networkx>=3.0.0
+requires-dist: notebook>=7.4.4
+requires-dist: packaging>=25.0
+requires-dist: progress>=1.5
+requires-dist: pyflakes>=3.0.0
+requires-dist: coverage; extra == "dev"
+requires-dist: pre-commit; extra == "dev"
+requires-dist: pytest; extra == "dev"
+requires-dist: pytest-asyncio; extra == "dev"
+requires-dist: pytest-clarity; extra == "dev"
+requires-dist: pytest-cov; extra == "dev"
+requires-dist: pytest-jupyter[server]>=0.6.0; extra == "dev"
+requires-dist: ruff; extra == "dev"
+requires-dist: testfixtures; extra == "dev"
+requires-dist: furo>=2025.0; extra == "docs"
+requires-dist: linkify-it-py>=2.0; extra == "docs"
+requires-dist: myst-parser>=3.0; extra == "docs"
+requires-dist: sphinx-autodoc-typehints>=2.0; extra == "docs"
+requires-dist: sphinx-copybutton>=0.5; extra == "docs"
+requires-dist: sphinx-design>=0.6; extra == "docs"
+requires-dist: sphinx>=9.0; extra == "docs"
+requires-dist: jupyter-server<3,>=2.4.0; extra == "jupyter"
+requires-python: >=3.11
+project-url: Homepage, https://github.com/kubeflow/kale
+provides-extra: dev
+provides-extra: docs
+provides-extra: jupyter
+

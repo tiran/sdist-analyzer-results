@@ -1,0 +1,50 @@
+metadata-version: 2.1
+name: lightgbm
+version: 4.6.0
+summary: LightGBM Python-package
+maintainer-email: Yu Shi <yushi@microsoft.com>
+license: The MIT License (MIT)
+                  
+                  Copyright (c) Microsoft Corporation
+                  
+                  Permission is hereby granted, free of charge, to any person obtaining a copy
+                  of this software and associated documentation files (the "Software"), to deal
+                  in the Software without restriction, including without limitation the rights
+                  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+                  copies of the Software, and to permit persons to whom the Software is
+          ...
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: MIT License
+classifier: Natural Language :: English
+classifier: Operating System :: MacOS
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: POSIX
+classifier: Operating System :: Unix
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+requires-dist: numpy>=1.17.0
+requires-dist: scipy
+requires-dist: cffi>=1.15.1; extra == "arrow"
+requires-dist: pyarrow>=6.0.1; extra == "arrow"
+requires-dist: dask[array,dataframe,distributed]>=2.0.0; extra == "dask"
+requires-dist: pandas>=0.24.0; extra == "dask"
+requires-dist: pandas>=0.24.0; extra == "pandas"
+requires-dist: scikit-learn>=0.24.2; extra == "scikit-learn"
+requires-python: >=3.7
+project-url: homepage, https://github.com/microsoft/LightGBM
+project-url: documentation, https://lightgbm.readthedocs.io/en/latest/
+project-url: repository, https://github.com/microsoft/LightGBM.git
+project-url: changelog, https://github.com/microsoft/LightGBM/releases
+provides-extra: arrow
+provides-extra: dask
+provides-extra: pandas
+provides-extra: scikit-learn
+

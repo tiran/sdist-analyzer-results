@@ -1,0 +1,5 @@
+pyyaml
+click
+ordered-set
+markdown
+setuptools>=40.8.0

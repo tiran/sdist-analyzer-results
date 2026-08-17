@@ -1,0 +1,63 @@
+metadata-version: 2.4
+name: docling-jobkit
+version: 3.3.1
+summary: Running a distributed job processing documents with Docling.
+author-email: Michele Dolfi <dol@zurich.ibm.com>, Viktor Kuropiatnyk <vku@zurich.ibm.com>, Tiago Santana <Tiago.Santana@ibm.com>, Cesar Berrospi Ramis <ceb@zurich.ibm.com>, Panos Vagenas <pva@zurich.ibm.com>, Christoph Auer <cau@zurich.ibm.com>, Peter Staar <taa@zurich.ibm.com>
+maintainer-email: Michele Dolfi <dol@zurich.ibm.com>, Cesar Berrospi Ramis <ceb@zurich.ibm.com>, Panos Vagenas <pva@zurich.ibm.com>, Christoph Auer <cau@zurich.ibm.com>, Peter Staar <taa@zurich.ibm.com>
+license-expression: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+classifier: Topic :: Scientific/Engineering :: Information Analysis
+classifier: Topic :: Software Development :: Build Tools
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Typing :: Typed
+requires-dist: boto3~=1.35
+requires-dist: docling-slim[standard]<3.0.0,>=2.118.0
+requires-dist: httpx<1,>=0.28
+requires-dist: pandas~=2.2
+requires-dist: pydantic-settings~=2.4
+requires-dist: pydantic~=2.10
+requires-dist: typer<1,>=0.12.5
+requires-dist: astrapy<2,>=1.0.0; extra == "astradb"
+requires-dist: azure-storage-blob>=12.19.0; extra == "azure"
+requires-dist: google-cloud-storage>=2.10.0; extra == "gcloudstorage"
+requires-dist: google-api-python-client>=2.183.0; extra == "gdrive"
+requires-dist: google-auth-oauthlib>=1.2.2; extra == "gdrive"
+requires-dist: docling-slim[models-onnxruntime]<3.0.0,>=2.94.0; extra == "onnxruntime"
+requires-dist: opensearch-py<3,>=2.8.0; extra == "opensearch"
+requires-dist: codeflare-sdk>=0.20.0; (python_version >= "3.11" and python_version < "3.14") and extra == "ray"
+requires-dist: msgpack~=1.1; extra == "ray"
+requires-dist: psutil>=6.0.0; extra == "ray"
+requires-dist: ray[serve]~=2.52; python_version < "3.14" and extra == "ray"
+requires-dist: redis[hiredis]<8.0.0,>=4.2; extra == "ray"
+requires-dist: msgpack~=1.1; extra == "rq"
+requires-dist: rq~=2.4; extra == "rq"
+requires-dist: office365-rest-python-client<3.0.0,>=2.6.2; python_version < "3.11" and extra == "sharepoint"
+requires-dist: office365-rest-python-client>=2.6.2; python_version >= "3.11" and extra == "sharepoint"
+requires-dist: docling-slim[models-vlm-inline]<3.0.0,>=2.95.0; extra == "vlm"
+requires-python: >=3.10
+project-url: Homepage, https://github.com/docling-project/docling-jobkit
+project-url: Documentation, https://docling-project.github.io/docling/usage/jobkit/
+project-url: Repository, https://github.com/docling-project/docling-jobkit
+project-url: Issues, https://github.com/docling-project/docling-jobkit/issues
+project-url: Changelog, https://github.com/docling-project/docling-jobkit/blob/main/CHANGELOG.md
+provides-extra: astradb
+provides-extra: azure
+provides-extra: gcloudstorage
+provides-extra: gdrive
+provides-extra: onnxruntime
+provides-extra: opensearch
+provides-extra: ray
+provides-extra: rq
+provides-extra: sharepoint
+provides-extra: vlm
+

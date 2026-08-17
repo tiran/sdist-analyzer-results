@@ -1,0 +1,23 @@
+metadata-version: 2.5
+name: alchemy-logging
+version: 1.6.0
+summary: A wrapper around the logging package to provide Alchemy Logging functionality
+keywords: logging
+author-email: Gabe Goodhart <ghart@us.ibm.com>
+license-expression: MIT
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Topic :: Software Development :: User Interfaces
+requires-dist: pytest-cov<8,>=4.0.0; extra == "test"
+requires-dist: pytest<10,>=7.0.1; extra == "test"
+requires-dist: munch<5,>=2.5.0; extra == "util"
+requires-python: >=3.9
+project-url: Homepage, https://github.com/IBM/alchemy-logging
+provides-extra: test
+provides-extra: util
+

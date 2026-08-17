@@ -1,0 +1,39 @@
+metadata-version: 2.4
+name: conch-triton-kernels
+version: 1.2.1
+dynamic: license-file
+dynamic: provides-extra
+dynamic: requires-dist
+summary: Triton kernel repository
+author-email: Jacob Manning <jmanning+oss@stackav.com>, Ryan Hsu <rhsu+oss@stackav.com>
+license-expression: Apache-2.0
+license-file: LICENSE
+classifier: Programming Language :: Python :: 3
+classifier: Operating System :: OS Independent
+requires-dist: numpy>=1.26.4
+requires-dist: click>=8.1.8; extra == "dev"
+requires-dist: coverage>=7.8.0; extra == "dev"
+requires-dist: einops>=0.8.0; extra == "dev"
+requires-dist: matplotlib>=3.10.1; extra == "dev"
+requires-dist: mypy>=1.15.0; extra == "dev"
+requires-dist: pandas>=2.2.3; extra == "dev"
+requires-dist: pre-commit>=4.2.0; extra == "dev"
+requires-dist: pytest>=8.3.4; extra == "dev"
+requires-dist: ruff>=0.4.10; extra == "dev"
+requires-dist: torch==2.7.0; extra == "cpu"
+requires-dist: triton>=3.3.0; extra == "cpu"
+requires-dist: torch==2.7.0; extra == "cuda"
+requires-dist: triton>=3.3.0; extra == "cuda"
+requires-dist: torch==2.7.0+rocm6.2.4; extra == "rocm"
+requires-dist: pytorch-triton-rocm>=3.3.0; extra == "rocm"
+requires-dist: torch==2.7.0+xpu; extra == "xpu"
+requires-dist: pytorch-triton-xpu>=3.3.0; extra == "xpu"
+requires-python: >=3.10
+project-url: Homepage, https://github.com/stackav-oss/conch
+project-url: Issues, https://github.com/stackav-oss/conch/issues
+provides-extra: dev
+provides-extra: cpu
+provides-extra: cuda
+provides-extra: rocm
+provides-extra: xpu
+

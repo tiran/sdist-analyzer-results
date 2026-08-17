@@ -1,0 +1,20 @@
+metadata-version: 2.4
+name: tomli
+version: 2.0.2
+summary: A lil' TOML parser
+keywords: toml
+author-email: Taneli Hukkinen <hukkin@users.noreply.github.com>
+license-file: LICENSE
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: MacOS
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: POSIX :: Linux
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Typing :: Typed
+requires-python: >=3.8
+project-url: Changelog, https://github.com/hukkin/tomli/blob/master/CHANGELOG.md
+project-url: Homepage, https://github.com/hukkin/tomli
+

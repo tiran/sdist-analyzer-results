@@ -1,0 +1,25 @@
+metadata-version: 2.4
+name: llm-d-latency-predictor
+version: 0.1.0
+dynamic: license-file
+summary: Latency prediction service for the llm-d ecosystem
+license: Apache-2.0
+license-file: LICENSE
+requires-dist: fastapi
+requires-dist: uvicorn[standard]
+requires-dist: scikit-learn
+requires-dist: numpy
+requires-dist: pandas
+requires-dist: joblib
+requires-dist: pydantic
+requires-dist: requests
+requires-dist: xgboost
+requires-dist: lightgbm
+requires-dist: orjson
+requires-dist: pytest; extra == "test"
+requires-dist: pytest-asyncio; extra == "test"
+requires-dist: httpx; extra == "test"
+requires-dist: aiohttp; extra == "test"
+requires-python: >=3.11
+provides-extra: test
+

@@ -1,0 +1,33 @@
+metadata-version: 2.5
+name: semchunk
+version: 4.1.1
+summary: A Python library for splitting text into smaller chunks while preserving as much local semantic context as possible.
+keywords: ai,chunk,chunker,chunking,chunks,nlp,split,splits,splitter,splitting,text
+author-email: Isaacus <hello@isaacus.com>, Umar Butler <umar@isaacus.com>
+license: MIT
+license-file: LICENCE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Information Technology
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: Text Processing :: General
+classifier: Topic :: Utilities
+classifier: Typing :: Typed
+requires-dist: dill; sys_platform == "win32"
+requires-dist: tqdm
+requires-python: >=3.10
+project-url: Homepage, https://github.com/isaacus-dev/semchunk
+project-url: Documentation, https://github.com/isaacus-dev/semchunk/blob/main/README.md
+project-url: Issues, https://github.com/isaacus-dev/semchunk/issues
+project-url: Source, https://github.com/isaacus-dev/semchunk
+

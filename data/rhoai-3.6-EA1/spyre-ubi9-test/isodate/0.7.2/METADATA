@@ -1,0 +1,37 @@
+metadata-version: 2.4
+name: isodate
+version: 0.7.2
+dynamic: license-file
+summary: An ISO 8601 date/time/duration parser and formatter
+author: Gerhard Weis
+license: Copyright (c) 2021, Hugo van Kemenade and contributors
+                 Copyright (c) 2009-2018, Gerhard Weis and contributors
+                 Copyright (c) 2009, Gerhard Weis
+                 All rights reserved.
+                 
+                 Redistribution and use in source and binary forms, with or without
+                 modification, are permitted provided that the following conditions are met:
+                     * Redistributions of source code must retain the above copyright
+                       notice, this list of conditions and the following disclaimer.
+         ...
+license-file: LICENSE
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: BSD License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Internet
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-python: >=3.7
+project-url: Homepage, https://github.com/gweis/isodate/
+

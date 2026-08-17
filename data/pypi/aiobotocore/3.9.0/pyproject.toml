@@ -1,0 +1,345 @@
+[build-system]
+requires = ["hatchling>=1.27.0", "hatch-fancy-pypi-readme>=24.1.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "aiobotocore"
+description = "Async client for aws services using botocore and aiohttp"
+requires-python = ">=3.10"
+authors = [
+    { name = "Nikolay Novik", email = "nickolainovik@gmail.com" },
+]
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+classifiers = [
+    'Development Status :: 4 - Beta',
+    'Intended Audience :: Developers',
+    'Intended Audience :: System Administrators',
+    'Natural Language :: English',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: 3.12',
+    'Programming Language :: Python :: 3.13',
+    'Programming Language :: Python :: 3.14',
+    'Environment :: Web Environment',
+    'Framework :: AsyncIO',
+]
+
+dynamic = ["version", "readme"]
+
+dependencies = [
+    "aiohttp >= 3.14.0, < 4.0.0",
+    "aioitertools >= 0.5.1, < 1.0.0",
+    "botocore >= 1.43.3, < 1.43.57",
+    "python-dateutil >= 2.1, < 3.0.0",
+    "jmespath >= 0.7.1, < 2.0.0",
+    "multidict >= 6.0.0, < 7.0.0",
+    "typing-extensions >= 4.14.0, < 5.0.0; python_version<'3.11'",
+    "wrapt >= 1.10.10, < 3.0.0",
+]
+
+[project.optional-dependencies]
+# Recommended httpx backend: httpx2 is Pydantic's maintained fork of httpx.
+httpx2 = [
+    "anyio >= 4.11.0, < 5",
+    "httpx2 >= 2.0, < 3.0.0",
+]
+# Deprecated: the httpx backend now prefers httpx2. This extra installs the
+# legacy httpx package, which emits a DeprecationWarning when used as a backend.
+httpx = [
+    "anyio >= 4.11.0, < 5",
+    "httpx >= 0.25.1, < 0.29",
+]
+
+[project.urls]
+Repository = "https://github.com/aio-libs/aiobotocore"
+Documentation = "https://aiobotocore.aio-libs.org"
+
+[dependency-groups]
+botocore-dev = [
+    # keep in sync with https://github.com/boto/botocore/blob/develop/requirements-dev.txt
+    # "wheel==0.46.3",
+    # "behave==1.2.5",
+    # "jsonschema==4.23.0",
+    # Deliberately ahead of botocore's ==7.2.7: that release ships no C tracer
+    # for 3.12+, so coverage silently falls back to the pure-Python tracer and
+    # costs +158% on 3.12 instead of +20%. Measured on tests/botocore_tests:
+    # 14.08s pinned vs 5.50s here. Test-only, so it cannot affect users.
+    "coverage>=7.10,<8",
+    # "setuptools==71.1.0;python_version>='3.12'",
+    # "packaging==24.1;python_version>='3.12'", # Requirement for setuptools>=71
+
+    # Pytest specific deps
+    "pytest==9.0.3",
+    "pytest-cov==5.0.0",
+    "pytest-xdist==3.5.0",
+    # "atomicwrites>=1.0", # Windows requirement
+    # "colorama>0.3.0", # Windows requirement
+]
+# Everything needed to run the suite and nothing else, so CI (and a downstream
+# packager) can set up against an unpacked sdist without repo-only tooling.
+test = [
+    { include-group = "botocore-dev" },
+    "anyio >= 4.11.0, < 5",
+    "dill >= 0.3.3, < 0.5", # Used in test_patches.py
+    "docker >= 7.1, < 8",
+    "moto[server,s3,sqs,awslambda,dynamodb,cloudformation,sns,batch,ec2,rds] >= 5.1.8, < 6",
+    "packaging >= 24.1, < 27", # Used in test_version.py
+    "poethepoet >= 0.29, < 1", # Runs [tool.poe.tasks]; CI drives the suite through it
+    "pytest-mock >= 3.14.1, < 4", # Used in test_session.py
+    "time-machine >= 2.15.0, < 4", # Used in test_signers.py
+    "tiny-proxy >= 0.3.0, < 0.4", # CONNECT proxy for tests/test_proxy.py
+    "trio >= 0.27, < 1", # anyio_backend parametrization in tests/conftest.py
+    "trustme >= 1.2.1, < 2", # TLS certs for tests/test_proxy.py
+]
+dev = [
+    { include-group = "test" },
+    "pre-commit >= 3.5.0, < 5",
+]
+awscrt = [
+    "botocore[crt]",
+]
+docs = [
+    "sphinx >= 8, < 10",
+]
+# Kept out of default-groups so the default env has no httpx: anthropic pulls in
+# httpx transitively, which would defeat the no-httpx CI job. Only the evals
+# workflow installs this group. See plugins/aiobotocore-bot/evals/.
+evals = [
+    { include-group = "dev" },
+    "anthropic >= 0.40.0", # Used in plugins/aiobotocore-bot/evals/
+]
+
+[tool.uv]
+default-groups = ["dev"]  # transitively pulls in ``test`` and ``botocore-dev``
+required-version = ">=0.8.4,<0.13"
+
+[tool.hatch.version]
+path = "aiobotocore/__init__.py"
+
+[tool.hatch.metadata.hooks.fancy-pypi-readme]
+content-type = "text/x-rst"
+
+[[tool.hatch.metadata.hooks.fancy-pypi-readme.fragments]]
+path = "README.rst"
+
+# README.rst ends on link targets; without a blank line RST reads the CHANGES
+# title as a continuation and PyPI refuses to render the description.
+[[tool.hatch.metadata.hooks.fancy-pypi-readme.fragments]]
+text = "\n\n"
+
+[[tool.hatch.metadata.hooks.fancy-pypi-readme.fragments]]
+path = "CHANGES.rst"
+
+[tool.hatch.build.targets.wheel]
+packages = ["aiobotocore"]
+
+# The sdist has to be self-sufficient: a downstream packager unpacks it, runs
+# ``uv sync --frozen`` (hence uv.lock) and gets a runnable suite. CI relies on
+# the same property to test the dist instead of the checkout. Keep in sync with
+# ``[tool.check-sdist] git-only``.
+[tool.hatch.build.targets.sdist]
+include = [
+    "/aiobotocore",
+    "/docs",
+    "/examples",
+    "/scripts",
+    "/tests",
+    "/CHANGES.rst",
+    "/CONTRIBUTING.rst",
+    "/README.rst",
+    "/uv.lock",
+]
+# Exercises plugins/aiobotocore-bot/, which is repo tooling and isn't shipped.
+exclude = ["/tests/evals"]
+
+[tool.check-sdist]
+git-only = [
+    ".*",
+    "AGENTS.md",
+    "CLAUDE.md",
+    "plugins",
+    "tests/evals",
+]
+
+[tool.pytest.ini_options]
+cache_dir = "/tmp/pytest_aiobotocore_cache"
+anyio_mode = "auto"
+testpaths = ["tests"]
+# ``importlib`` stops pytest prepending the rootdir to sys.path, so a checkout
+# sitting next to an installed aiobotocore can't shadow it. Without that the
+# suite silently tests the source tree instead of the dist it was handed.
+addopts = [
+    "--strict-config",
+    "--strict-markers",
+    "--import-mode=importlib",
+    # Surface the slowest tests on every run, so a regression in suite time has
+    # a visible owner rather than showing up as "CI got slower".
+    "--durations=15",
+    "--durations-min=1.0",
+]
+# ``scripts`` and not ``.``: the rootdir on sys.path re-introduces the shadowing
+# above. Lets tests do ``from changelog import ...`` (the CHANGES.rst parser
+# shared with .github/workflows/auto-release-on-merge.yml).
+pythonpath = ["scripts"]
+# A never-awaited coroutine or a leaked socket is always a test bug, so fail on
+# it rather than let it scroll past. A ResourceWarning usually fires from a
+# __del__ during GC, which reaches pytest as PytestUnraisableExceptionWarning --
+# promoting ResourceWarning alone would miss every one of them.
+filterwarnings = [
+    "default",
+    "error:coroutine .* was never awaited:RuntimeWarning",
+    "error::ResourceWarning",
+    "error::pytest.PytestUnraisableExceptionWarning",
+]
+xfail_strict = true
+markers = [
+    "localonly",
+    "config_kwargs",
+    "patch_attributes",
+]
+
+# Task definitions, run with ``uv run poe <task>``. CI drives these same tasks,
+# so what you run locally is what CI runs. Anything that is a property of the
+# suite rather than of one invocation belongs in the sections above, not here.
+[tool.poe.tasks]
+# ``lint`` and ``clean`` need a git repo, so they are not tasks the test tasks
+# may depend on: the suite has to stay runnable from an unpacked sdist.
+lint = "pre-commit run --all --show-diff-on-failure"
+test = "pytest -s -vv"
+vtest.cmd = "pytest -s -vv"
+vtest.env = { PYTHONTRACEMALLOC = "5", PYTHONFAULTHANDLER = "1" }
+cov = "pytest -s -vv --cov --cov-report=term --cov-report=html"
+docs = "uv run --group docs sphinx-build -W -b html docs docs/_build/html"
+
+# What the CI matrix runs. ``--http-backend`` defaults to exercising both
+# backends; CI overrides it to aiohttp on the no-httpx job.
+# No --reruns: retrying hides flakes instead of fixing them, and doubles the
+# cost of every failure. Nothing is marked flaky, so nothing needs it.
+# ``worksteal`` rather than the default ``load``: the server-heavy tests sort
+# late, so load hands them out together and the last 10% of the suite takes
+# ~44% of the wall clock -- with every expensive test running at once, which is
+# also when they start timing out. Idle workers steal instead.
+mototest.cmd = """
+  pytest -vv -m "not localonly" -n auto --dist worksteal
+  ${COV_ARGS}
+  --log-cli-level=DEBUG --http-backend=${HTTP_BACKEND}
+"""
+# COV_ARGS is emptied by CI on the jobs that do not report coverage; measuring
+# it on every interpreter costs ~20% for a near-identical report.
+mototest.env = { HTTP_BACKEND.default = "all", PYTHONTRACEMALLOC = "5", PYTHONFAULTHANDLER = "1", COV_ARGS.default = "--cov --cov-report=term --cov-report=xml" }
+
+clean.shell = "git clean -Xdf"
+
+# ``tests`` belongs in source_pkgs, not source: as a source *path* it becomes an
+# XML <source> root, so files are written bare (``test_utils.py``) and Codecov
+# can't tell them from their tests/botocore_tests/unit/ namesakes -- it drops the
+# ambiguous ones. As a package the rootdir stays the root and paths stay prefixed.
+[tool.coverage.run]
+relative_files = true
+source_pkgs = ["aiobotocore", "tests"]
+
+# Reports the wheel installed into site-packages under its repo-relative path
+# so Codecov can line it up with the checkout.
+[tool.coverage.paths]
+aiobotocore = ["aiobotocore/", "*/site-packages/aiobotocore/"]
+
+[tool.ruff]
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".hg",
+    ".ipynb_checkpoints",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pyenv",
+    ".pytest_cache",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    ".vscode",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "site-packages",
+    "venv",
+]
+
+# Format same as Black.
+line-length = 79
+indent-width = 4
+
+target-version = "py310"
+
+[tool.ruff.lint]
+# Unlike Flake8, Ruff doesn't enable pycodestyle warnings (`W`) or
+# McCabe complexity (`C901`) by default.
+select = [
+    "E4", # pycodestyle
+    "E7", # pycodestyle
+    "E9", # pycodestyle
+    "F", # Pyflakes
+    "I", # Import sorting
+    "UP", # PyUpgrade
+    "G", # Log formatting
+]
+ignore = []
+
+# Allow fix for all enabled rules (when `--fix`) is provided.
+fixable = ["ALL"]
+unfixable = []
+
+# Allow unused variables when underscore-prefixed.
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+[tool.ruff.format]
+# Like Black, use double quotes for strings, spaces for indents
+# and trailing commas.
+quote-style = "preserve"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
+
+docstring-code-format = false
+docstring-code-line-length = "dynamic"
+
+[tool.coverage.report]
+exclude_also = [
+    "if TYPE_CHECKING",
+    "@pytest.mark.localonly",
+]
+
+[tool.rumdl]
+line-length = 120
+disable = [
+    # CLAUDE.md uses flat # per section; Anthropic's docs don't
+    # prescribe a single-H1 structure either.
+    "MD025",
+    # .github/*.md prompts and .claude/commands/*.md slash commands
+    # are fragments loaded into a larger prompt, not standalone docs
+    # with a title.
+    "MD041",
+    # .github/pull_request_template.md uses `*Replace this text...*`
+    # as placeholder text and .github/ISSUE_TEMPLATE/bug_report.md
+    # uses **Describe the bug** / **Checklist** as bold labels.
+    # Both are conventional GitHub template styling, not
+    # emphasis-used-as-heading.
+    "MD036",
+]
+
+[tool.rumdl.MD013]
+# Long table rows are legitimate in docs/ai-workflows.md; don't force
+# prose-length limits on them. Same for code blocks (mermaid diagrams,
+# shell examples) where line breaks can alter meaning.
+tables = false
+code_blocks = false

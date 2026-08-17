@@ -1,6 +1,6 @@
-torch
-wheel
-psutil
-ninja
 setuptools
 packaging
+ninja
+wheel
+torch
+psutil

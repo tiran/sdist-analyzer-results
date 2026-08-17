@@ -1,0 +1,27 @@
+metadata-version: 2.5
+name: py_to_proto
+version: 0.7.0
+summary: A tool to dynamically create protobuf message classes from python data schemas
+keywords: dataclass,json,json typedef,jtd,proto,protobuf
+author-email: Gabe Goodhart <ghart@us.ibm.com>
+license-expression: MIT
+license-file: LICENSE
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-dist: alchemy-logging>=1.0.3
+requires-dist: protobuf<7.0.0,>=3.19.0
+requires-dist: grpcio-tools>=1.46.3; extra == "test"
+requires-dist: pytest-cov>=3.0.0; extra == "test"
+requires-dist: pytest-xdist>=2.5.0; extra == "test"
+requires-dist: pytest>=6.2.5; extra == "test"
+requires-dist: tls-test-tools>=0.1.1; extra == "test"
+requires-python: >=3.9
+project-url: Homepage, https://github.com/IBM/py-to-proto
+provides-extra: test
+

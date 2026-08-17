@@ -1,0 +1,15 @@
+metadata-version: 2.4
+name: puccinialin
+version: 0.1.14
+summary: Install rust into a temporary directory for boostrapping a rust-based build backend
+author-email: konstin <konstin@mailbox.org>
+license-expression: MIT OR Apache-2.0
+license-file: license-apache
+license-file: license-mit
+requires-dist: filelock<4.0.0,>=3.19.1
+requires-dist: httpx<0.29,>=0.28.1
+requires-dist: platformdirs<5,>=4.3.6
+requires-dist: tqdm<5,>=4.67.1
+requires-python: >=3.9
+project-url: repository, https://github.com/konstin/puccinialin
+

@@ -1,0 +1,41 @@
+metadata-version: 2.4
+name: twine
+version: 7.0.0
+dynamic: license-file
+summary: Collection of utilities for publishing packages on PyPI
+author-email: Donald Stufft and individual contributors <donald@stufft.io>
+license-expression: Apache-2.0
+license-file: LICENSE
+classifier: Intended Audience :: Developers
+classifier: Natural Language :: English
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Operating System :: POSIX
+classifier: Operating System :: POSIX :: BSD
+classifier: Operating System :: POSIX :: Linux
+classifier: Operating System :: Microsoft :: Windows
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Implementation :: CPython
+requires-dist: readme-renderer>=35.0
+requires-dist: requests>=2.20
+requires-dist: requests-toolbelt!=0.9.0,>=0.8.0
+requires-dist: urllib3>=1.26.0
+requires-dist: keyring>=21.2.0; platform_machine != "ppc64le" and platform_machine != "s390x"
+requires-dist: rfc3986>=1.4.0
+requires-dist: rich>=14.3.3
+requires-dist: packaging>=26.1
+requires-dist: id
+requires-dist: keyring>=21.2.0; extra == "keyring"
+requires-python: >=3.10
+project-url: Homepage, https://twine.readthedocs.io/
+project-url: Source, https://github.com/pypa/twine/
+project-url: Documentation, https://twine.readthedocs.io/en/latest/
+project-url: Packaging tutorial, https://packaging.python.org/tutorials/packaging-projects/
+provides-extra: keyring
+

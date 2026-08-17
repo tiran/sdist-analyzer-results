@@ -1,0 +1,39 @@
+metadata-version: 2.4
+name: ultralytics-thop
+version: 2.1.6
+dynamic: license-file
+summary: Ultralytics THOP package for fast computation of PyTorch model FLOPs and parameters.
+keywords: FLOPs,PyTorch,Model Analysis
+author-email: Ligeng Zhu <ligeng.zhu+github@gmail.com>
+maintainer-email: Ultralytics <hello@ultralytics.com>
+license: AGPL-3.0
+license-file: LICENSE
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Education
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Software Development
+classifier: Topic :: Scientific/Engineering
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+classifier: Topic :: Scientific/Engineering :: Image Recognition
+classifier: Operating System :: POSIX :: Linux
+classifier: Operating System :: MacOS
+classifier: Operating System :: Microsoft :: Windows
+requires-dist: numpy
+requires-dist: torch
+requires-python: >=3.8
+project-url: Homepage, https://ultralytics.com
+project-url: Source, https://github.com/ultralytics/thop
+project-url: Documentation, https://docs.ultralytics.com
+project-url: Bug Reports, https://github.com/ultralytics/thop/issues
+project-url: Changelog, https://github.com/ultralytics/thop/releases
+

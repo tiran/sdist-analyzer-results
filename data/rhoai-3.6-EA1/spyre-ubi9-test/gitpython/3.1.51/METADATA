@@ -1,0 +1,58 @@
+metadata-version: 2.4
+name: GitPython
+version: 3.1.51
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: GitPython is a Python library used to interact with Git repositories
+home-page: https://github.com/gitpython-developers/GitPython
+author: Sebastian Thiel, Michael Trier
+author-email: byronimo@gmail.com, mtrier@gmail.com
+license: BSD-3-Clause
+license-file: LICENSE
+license-file: AUTHORS
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Intended Audience :: Developers
+classifier: Operating System :: OS Independent
+classifier: Operating System :: POSIX
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Typing :: Typed
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+requires-dist: gitdb<5,>=4.0.1
+requires-dist: typing-extensions>=3.10.0.2; python_version < "3.10"
+requires-dist: coverage[toml]; extra == "test"
+requires-dist: ddt!=1.4.3,>=1.1.1; extra == "test"
+requires-dist: mock; python_version < "3.8" and extra == "test"
+requires-dist: mypy==1.18.2; python_version >= "3.9" and extra == "test"
+requires-dist: pre-commit; extra == "test"
+requires-dist: pytest>=7.3.1; extra == "test"
+requires-dist: pytest-cov; extra == "test"
+requires-dist: pytest-instafail; extra == "test"
+requires-dist: pytest-mock; extra == "test"
+requires-dist: pytest-sugar; extra == "test"
+requires-dist: typing-extensions; python_version < "3.11" and extra == "test"
+requires-dist: sphinx<8,>=7.4.7; extra == "doc"
+requires-dist: sphinx_rtd_theme; extra == "doc"
+requires-dist: sphinx-autodoc-typehints; extra == "doc"
+requires-python: >=3.7
+provides-extra: test
+provides-extra: doc
+

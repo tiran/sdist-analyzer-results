@@ -1,0 +1,2 @@
+setuptools<70,>=59
+poetry_core<2,>=1

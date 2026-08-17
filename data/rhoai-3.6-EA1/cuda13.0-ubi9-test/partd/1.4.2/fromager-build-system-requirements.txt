@@ -1,0 +1,2 @@
+versioneer[toml]==0.29
+setuptools>=61.2

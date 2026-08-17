@@ -1,0 +1,31 @@
+metadata-version: 2.5
+name: execnet
+version: 2.1.2
+summary: execnet: rapid multi-Python deployment
+author: holger krekel and others
+license-expression: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: POSIX
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Software Development :: Libraries
+classifier: Topic :: System :: Distributed Computing
+classifier: Topic :: System :: Networking
+requires-dist: hatch; extra == "testing"
+requires-dist: pre-commit; extra == "testing"
+requires-dist: pytest; extra == "testing"
+requires-dist: tox; extra == "testing"
+requires-python: >=3.8
+project-url: Homepage, https://execnet.readthedocs.io/en/latest/
+provides-extra: testing
+

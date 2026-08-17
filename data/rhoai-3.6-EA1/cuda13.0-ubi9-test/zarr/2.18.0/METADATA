@@ -1,0 +1,44 @@
+metadata-version: 2.4
+name: zarr
+version: 2.18.0
+dynamic: license-file
+summary: An implementation of chunked, compressed, N-dimensional arrays for Python
+maintainer-email: Alistair Miles <alimanfoo@googlemail.com>
+license: MIT
+license-file: LICENSE.txt
+classifier: Development Status :: 6 - Mature
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Information Technology
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Operating System :: Unix
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+requires-dist: asciitree
+requires-dist: numpy>=1.23
+requires-dist: fasteners; sys_platform != "emscripten"
+requires-dist: numcodecs>=0.10.0
+requires-dist: notebook; extra == "jupyter"
+requires-dist: ipytree>=0.2.2; extra == "jupyter"
+requires-dist: ipywidgets>=8.0.0; extra == "jupyter"
+requires-dist: sphinx; extra == "docs"
+requires-dist: sphinx-automodapi; extra == "docs"
+requires-dist: sphinx_design; extra == "docs"
+requires-dist: sphinx-issues; extra == "docs"
+requires-dist: sphinx-copybutton; extra == "docs"
+requires-dist: pydata-sphinx-theme; extra == "docs"
+requires-dist: numpydoc; extra == "docs"
+requires-dist: numcodecs[msgpack]; extra == "docs"
+requires-python: >=3.9
+project-url: Bug Tracker, https://github.com/zarr-developers/zarr-python/issues
+project-url: Changelog, https://zarr.readthedocs.io/en/stable/release.html
+project-url: Discussions, https://github.com/zarr-developers/zarr-python/discussions
+project-url: Documentation, https://zarr.readthedocs.io/
+project-url: Homepage, https://github.com/zarr-developers/zarr-python
+provides-extra: jupyter
+provides-extra: docs
+

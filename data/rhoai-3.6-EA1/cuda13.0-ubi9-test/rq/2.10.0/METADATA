@@ -1,0 +1,39 @@
+metadata-version: 2.5
+name: rq
+version: 2.10.0
+summary: RQ is a simple, lightweight, library for creating background jobs, and processing them.
+author-email: Selwin Ong <selwin.ong@gmail.com>, Vincent Driessen <vincent@3rdcloud.com>
+maintainer: Selwin Ong
+license-expression: BSD-2-Clause
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: End Users/Desktop
+classifier: Intended Audience :: Information Technology
+classifier: Intended Audience :: Science/Research
+classifier: Intended Audience :: System Administrators
+classifier: License :: OSI Approved :: BSD License
+classifier: Operating System :: MacOS
+classifier: Operating System :: POSIX
+classifier: Operating System :: Unix
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Topic :: Internet
+classifier: Topic :: Scientific/Engineering
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: System :: Distributed Computing
+classifier: Topic :: System :: Monitoring
+classifier: Topic :: System :: Systems Administration
+requires-dist: click>=5
+requires-dist: croniter
+requires-dist: redis!=6,>=3.5
+requires-python: >=3.10
+project-url: changelog, https://github.com/rq/rq/blob/master/CHANGES.md
+project-url: documentation, https://python-rq.org/docs/
+project-url: homepage, https://python-rq.org/
+project-url: repository, https://github.com/rq/rq/
+

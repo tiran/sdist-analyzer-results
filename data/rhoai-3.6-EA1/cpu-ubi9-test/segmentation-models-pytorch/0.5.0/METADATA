@@ -1,0 +1,47 @@
+metadata-version: 2.4
+name: segmentation_models_pytorch
+version: 0.5.0
+dynamic: license-file
+summary: Image segmentation models with pre-trained backbones. PyTorch.
+author-email: Pavel Iakubovskii <qubvel@gmail.com>
+license: The MIT License
+                 
+                 Copyright (c) 2019, Pavel Iakubovskii
+                 
+                 Permission is hereby granted, free of charge, to any person obtaining a copy
+                 of this software and associated documentation files (the "Software"), to deal
+                 in the Software without restriction, including without limitation the rights
+                 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+                 copies of the Software, and to permit persons to whom the Software is
+                 furni...
+license-file: LICENSE
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+requires-dist: huggingface-hub>=0.24
+requires-dist: numpy>=1.19.3
+requires-dist: pillow>=8
+requires-dist: safetensors>=0.3.1
+requires-dist: timm>=0.9
+requires-dist: torch>=1.8
+requires-dist: torchvision>=0.9
+requires-dist: tqdm>=4.42.1
+requires-dist: autodocsumm; extra == "docs"
+requires-dist: huggingface-hub; extra == "docs"
+requires-dist: six; extra == "docs"
+requires-dist: sphinx; extra == "docs"
+requires-dist: sphinx-book-theme; extra == "docs"
+requires-dist: gitpython; extra == "test"
+requires-dist: packaging; extra == "test"
+requires-dist: pytest; extra == "test"
+requires-dist: pytest-cov; extra == "test"
+requires-dist: pytest-xdist; extra == "test"
+requires-dist: ruff>=0.9; extra == "test"
+requires-dist: setuptools; extra == "test"
+requires-python: >=3.9
+project-url: Homepage, https://github.com/qubvel-org/segmentation_models.pytorch
+provides-extra: docs
+provides-extra: test
+

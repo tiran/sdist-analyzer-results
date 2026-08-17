@@ -1,0 +1,25 @@
+metadata-version: 2.4
+name: eval_type_backport
+version: 0.4.0
+dynamic: license-file
+summary: Like `typing._eval_type`, but lets older Python versions use newer typing features.
+home-page: https://github.com/alexmojaki/eval_type_backport
+author: Alex Hall
+author-email: alex.mojaki@gmail.com
+license: MIT
+license-file: LICENSE.txt
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-dist: pytest; extra == "tests"
+requires-python: >=3.7
+provides-extra: tests
+

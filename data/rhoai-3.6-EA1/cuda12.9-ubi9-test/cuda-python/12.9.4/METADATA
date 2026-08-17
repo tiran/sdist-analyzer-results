@@ -1,0 +1,35 @@
+metadata-version: 2.4
+name: cuda-python
+version: 12.9.4
+dynamic: license-file
+dynamic: provides-extra
+dynamic: requires-dist
+summary: CUDA Python: Performance meets Productivity
+author-email: NVIDIA Corporation <cuda-python-conduct@nvidia.com>
+license-expression: LicenseRef-NVIDIA-SOFTWARE-LICENSE
+license-file: LICENSE
+classifier: Operating System :: POSIX :: Linux
+classifier: Operating System :: Microsoft :: Windows
+classifier: Topic :: Software Development :: Libraries
+classifier: Topic :: Education
+classifier: Topic :: Scientific/Engineering
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: Intended Audience :: End Users/Desktop
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Environment :: GPU :: NVIDIA CUDA
+classifier: Environment :: GPU :: NVIDIA CUDA :: 12
+requires-dist: cuda-bindings~=12.9.4
+requires-dist: cuda-bindings[all]~=12.9.4; extra == "all"
+project-url: homepage, https://nvidia.github.io/cuda-python/
+project-url: documentation, https://nvidia.github.io/cuda-python/
+project-url: repository, https://github.com/NVIDIA/cuda-python/
+project-url: issues, https://github.com/NVIDIA/cuda-python/issues/
+provides-extra: all
+

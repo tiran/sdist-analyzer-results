@@ -1,4 +1,0 @@
-wheel
-setuptools<82
-torch
-setuptools

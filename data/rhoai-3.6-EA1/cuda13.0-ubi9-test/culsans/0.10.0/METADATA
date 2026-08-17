@@ -1,0 +1,33 @@
+metadata-version: 2.5
+name: culsans
+version: 0.10.0
+summary: Thread-safe async-aware queue for Python
+keywords: anyio,async,async-await,asyncio,communication,concurrency,eventlet,gevent,greenlet,library,mypy,python,queue,thread-safety,threading,trio
+author-email: Ilya Egorov <0x42005e1f@gmail.com>
+classifier: Development Status :: 3 - Alpha
+classifier: Framework :: AnyIO
+classifier: Framework :: AsyncIO
+classifier: Framework :: Trio
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: ISC License (ISCL)
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Free Threading :: 2 - Beta
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Typing :: Typed
+requires-dist: aiologic>=0.13.0
+requires-dist: typing-extensions>=4.5.0; python_version < "3.12"
+requires-python: >=3.8
+project-url: Homepage, https://github.com/x42005e1f/culsans
+project-url: Documentation, https://culsans.readthedocs.io
+project-url: Changelog, https://culsans.readthedocs.io/latest/changelog.html
+

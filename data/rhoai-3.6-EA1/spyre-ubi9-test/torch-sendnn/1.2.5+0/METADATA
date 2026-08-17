@@ -1,0 +1,9 @@
+metadata-version: 2.4
+name: torch_sendnn
+version: 1.2.5+0
+dynamic: license-file
+summary: The Python interface to the Spyre runtime stack.
+author: IBM
+license-file: LICENSE.txt
+requires-dist: torch<=2.11.0,>=2.5.1
+

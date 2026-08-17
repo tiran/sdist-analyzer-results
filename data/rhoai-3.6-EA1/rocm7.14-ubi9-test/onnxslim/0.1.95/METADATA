@@ -1,0 +1,20 @@
+metadata-version: 2.4
+name: onnxslim
+version: 0.1.95
+summary: OnnxSlim: A Toolkit to Help Optimize Onnx Model
+author-email: inisis <desmond.yao@buaa.edu.cn>
+license-expression: MIT
+license-file: LICENSE
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python :: 3
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+requires-dist: colorama
+requires-dist: ml-dtypes
+requires-dist: onnx
+requires-dist: packaging
+requires-dist: sympy>=1.13.1
+requires-python: >=3.8
+project-url: homepage, https://github.com/inisis/OnnxSlim
+project-url: issues, https://github.com/inisis/OnnxSlim/issues
+

@@ -1,0 +1,48 @@
+metadata-version: 2.4
+name: oras
+version: 0.2.43
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: maintainer
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: summary
+summary: OCI Registry as Storage Python SDK
+keywords: oci,registry,storage
+home-page: https://github.com/oras-project/oras-py
+author: Vanessa Sochat
+author-email: vsoch@users.noreply.github.com
+maintainer: Vanessa Sochat
+license: LICENSE
+license-file: LICENSE
+classifier: Intended Audience :: Science/Research
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Programming Language :: Python
+classifier: Topic :: Software Development
+classifier: Topic :: Scientific/Engineering
+classifier: Operating System :: Unix
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.7
+requires-dist: jsonschema
+requires-dist: requests
+requires-dist: jsonschema; extra == "all"
+requires-dist: requests; extra == "all"
+requires-dist: pytest>=4.6.2; extra == "all"
+requires-dist: docker==5.0.1; extra == "all"
+requires-dist: boto3>=1.33.0; extra == "all"
+requires-dist: pytest>=4.6.2; extra == "tests"
+requires-dist: docker==5.0.1; extra == "docker"
+requires-dist: boto3>=1.33.0; extra == "ecr"
+provides-extra: all
+provides-extra: tests
+provides-extra: docker
+provides-extra: ecr
+

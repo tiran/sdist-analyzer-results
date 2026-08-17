@@ -1,0 +1,100 @@
+metadata-version: 2.4
+name: terratorch
+version: 1.2.11
+dynamic: license-file
+summary: TerraTorch - The geospatial foundation model fine-tuning toolkit
+keywords: fine-tuning,geospatial foundation models,artificial intelligence
+author: Carlos Gomes, Joao Lucas de Sousa Almeida, Romeo Kienzler, Benedikt Blumenstiel, Francesc Martí Escofet, Paolo Fraccaro, Pedro Henrique Conrado, Jaione Tirapu Azpiroz, Daniela Szwarcman, Bianca Zadrozny, Þorsteinn Elí Gíslason, Raunak Bhansali, Takao Moriyama, Þorsteinn Elí Gíslason, Isabelle Wittmann, Christian Pinto, Rosie Lickorish
+author-email: terratorch@ibm.com
+license-expression: Apache-2.0 AND MIT
+license-file: LICENSE
+license-file: MIT_FILES.txt
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+requires-dist: torch>2.0
+requires-dist: numpy>=2.2
+requires-dist: torchvision
+requires-dist: rioxarray
+requires-dist: albumentations
+requires-dist: albucore
+requires-dist: rasterio
+requires-dist: torchmetrics
+requires-dist: geopandas
+requires-dist: lightly==1.5.22
+requires-dist: h5py
+requires-dist: lightning>=2.6.0
+requires-dist: segmentation-models-pytorch>=0.5.0
+requires-dist: jsonargparse>=4.40.0
+requires-dist: torchgeo
+requires-dist: einops
+requires-dist: timm>=1.0.15
+requires-dist: pycocotools
+requires-dist: huggingface_hub
+requires-dist: tifffile
+requires-dist: python-box
+requires-dist: tqdm
+requires-dist: tensorboard
+requires-dist: diffusers
+requires-dist: scikit-learn>=1.3.2
+requires-dist: scikit-image
+requires-dist: pyarrow
+requires-dist: rich
+requires-dist: termcolor
+requires-dist: wandb>=0.18.0; extra == "logging"
+requires-dist: black; extra == "dev"
+requires-dist: mkdocs-material; extra == "dev"
+requires-dist: mkdocstrings[python]; extra == "dev"
+requires-dist: mike; extra == "dev"
+requires-dist: mkdocs-git-revision-date-localized-plugin; extra == "dev"
+requires-dist: pre-commit; extra == "dev"
+requires-dist: pytest; extra == "test"
+requires-dist: pytest-coverage; extra == "test"
+requires-dist: coverage-badge; extra == "test"
+requires-dist: peft>=0.15.0; extra == "test"
+requires-dist: diffusers; extra == "test"
+requires-dist: tokenizers; extra == "test"
+requires-dist: dask; extra == "test"
+requires-dist: numba; extra == "test"
+requires-dist: hdf5plugin; extra == "test"
+requires-dist: h5netcdf; extra == "test"
+requires-dist: terratorch-surya>=0.1.0; extra == "test"
+requires-dist: numba; extra == "surya"
+requires-dist: hdf5plugin; extra == "surya"
+requires-dist: h5netcdf; extra == "surya"
+requires-dist: terratorch-surya==0.1.0; extra == "surya"
+requires-dist: mmcv; extra == "mmseg"
+requires-dist: ftfy; extra == "mmseg"
+requires-dist: regex; extra == "mmseg"
+requires-dist: openmim; extra == "mmseg"
+requires-dist: PrithviWxC; extra == "wxc"
+requires-dist: granitewxc; extra == "wxc"
+requires-dist: torchview; extra == "visualize"
+requires-dist: graphviz; extra == "visualize"
+requires-dist: peft>=0.15.0; extra == "peft"
+requires-dist: rfdetr<2,>=1.6.5.post0; extra == "rfdetr"
+requires-dist: geobenchv2==0.9; extra == "geobenchv2"
+requires-dist: mlflow; extra == "geobenchv2"
+requires-dist: impactmesh>0.1.0; extra == "vllm"
+requires-dist: vllm>=0.19.0; extra == "vllm"
+requires-dist: pillow; extra == "vllm-test"
+requires-dist: imagehash; extra == "vllm-test"
+requires-dist: tacoreader==0.5.6; extra == "tortilla"
+requires-python: >=3.10
+project-url: Documentation, https://torchgeo.github.io/terratorch/
+project-url: Issues, https://github.com/torchgeo/terratorch/issues
+project-url: Source, https://github.com/torchgeo/terratorch
+provides-extra: logging
+provides-extra: dev
+provides-extra: test
+provides-extra: surya
+provides-extra: mmseg
+provides-extra: wxc
+provides-extra: visualize
+provides-extra: peft
+provides-extra: rfdetr
+provides-extra: geobenchv2
+provides-extra: vllm
+provides-extra: vllm-test
+provides-extra: tortilla
+

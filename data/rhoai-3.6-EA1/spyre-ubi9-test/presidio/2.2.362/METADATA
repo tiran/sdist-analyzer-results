@@ -1,0 +1,19 @@
+metadata-version: 2.4
+name: presidio
+version: 2.2.362
+summary: Presidio - Data Protection and De-identification SDK
+keywords: presidio
+author: Presidio
+author-email: presidio@microsoft.com
+license-expression: MIT
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+requires-dist: presidio-analyzer>=2.2
+requires-dist: presidio-anonymizer>=2.2
+requires-python: <3.14,>=3.10
+project-url: Homepage, https://github.com/Microsoft/presidio
+

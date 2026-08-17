@@ -1,0 +1,41 @@
+metadata-version: 2.5
+name: jupyterlab_commands_toolkit
+version: 0.1.6
+summary: A Jupyter extension that provides an AI toolkit for JupyterLab commands.
+keywords: jupyter,jupyterlab,jupyterlab-extension
+author-email: Project Jupyter Team <jupyter@googlegroups.com>
+license: BSD 3-Clause License
+                 
+                 Copyright (c) 2025, Project Jupyter Team
+                 All rights reserved.
+                 
+                 Redistribution and use in source and binary forms, with or without
+                 modification, are permitted provided that the following conditions are met:
+                 
+                 1. Redistributions of source code must retain the above copyright notice, this
+                    list of conditions and the following disclaimer.
+                 
+                 2. Redistributions in binary form must reproduce the above c...
+license-file: LICENSE
+classifier: Framework :: Jupyter
+classifier: Framework :: Jupyter :: JupyterLab
+classifier: Framework :: Jupyter :: JupyterLab :: 4
+classifier: Framework :: Jupyter :: JupyterLab :: Extensions
+classifier: Framework :: Jupyter :: JupyterLab :: Extensions :: Prebuilt
+classifier: License :: OSI Approved :: BSD License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+requires-dist: jupyter-server<3,>=2.4.0
+requires-dist: jupyterlab-eventlistener
+requires-dist: jupyter-server-mcp>=0.1.2; extra == "mcp"
+requires-python: >=3.9
+project-url: Homepage, https://github.com/jupyter-ai-contrib/jupyterlab-commands-toolkit
+project-url: Bug Tracker, https://github.com/jupyter-ai-contrib/jupyterlab-commands-toolkit/issues
+project-url: Repository, https://github.com/jupyter-ai-contrib/jupyterlab-commands-toolkit.git
+provides-extra: mcp
+

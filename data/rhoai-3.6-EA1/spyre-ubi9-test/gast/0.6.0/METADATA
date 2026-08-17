@@ -1,0 +1,36 @@
+metadata-version: 2.4
+name: gast
+version: 0.6.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: requires-python
+dynamic: summary
+summary: Python AST that abstracts the underlying Python version
+home-page: https://github.com/serge-sans-paille/gast/
+author: serge-sans-paille
+author-email: serge.guelton@telecom-bretagne.eu
+license: BSD 3-Clause
+license-file: LICENSE
+classifier: Development Status :: 4 - Beta
+classifier: Environment :: Console
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: BSD License
+classifier: Natural Language :: English
+classifier: Programming Language :: Python :: 2
+classifier: Programming Language :: Python :: 2.7
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.4
+classifier: Programming Language :: Python :: 3.5
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+requires-python: !=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,>=2.7
+

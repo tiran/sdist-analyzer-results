@@ -1,0 +1,51 @@
+metadata-version: 2.4
+name: databricks-sdk
+version: 0.126.0
+dynamic: license-file
+summary: Databricks SDK for Python (Beta)
+keywords: databricks,sdk
+license-file: LICENSE
+license-file: NOTICE
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: Intended Audience :: System Administrators
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Operating System :: OS Independent
+requires-dist: requests<3,>=2.28.1
+requires-dist: google-auth~=2.0
+requires-dist: protobuf!=5.26.*,!=5.27.*,!=5.28.*,!=5.29.0,!=5.29.1,!=5.29.2,!=5.29.3,!=5.29.4,!=6.30.0,!=6.30.1,!=6.31.0,<7.0,>=4.25.8
+requires-dist: urllib3<3,>=1.26
+requires-dist: pytest; extra == "dev"
+requires-dist: pytest-cov; extra == "dev"
+requires-dist: pytest-xdist<4.0,>=3.6.1; extra == "dev"
+requires-dist: pytest-mock; extra == "dev"
+requires-dist: ruff==0.5.6; extra == "dev"
+requires-dist: pycodestyle; extra == "dev"
+requires-dist: wheel; extra == "dev"
+requires-dist: ipython; extra == "dev"
+requires-dist: ipywidgets; extra == "dev"
+requires-dist: requests-mock; extra == "dev"
+requires-dist: pyfakefs; extra == "dev"
+requires-dist: databricks-connect; extra == "dev"
+requires-dist: pytest-rerunfailures; extra == "dev"
+requires-dist: openai; extra == "dev"
+requires-dist: langchain-openai; extra == "dev"
+requires-dist: httpx; extra == "dev"
+requires-dist: build; extra == "dev"
+requires-dist: check-manifest; extra == "dev"
+requires-dist: ipython<10,>=8; extra == "notebook"
+requires-dist: ipywidgets<9,>=8; extra == "notebook"
+requires-dist: openai; extra == "openai"
+requires-dist: langchain-openai; extra == "openai"
+requires-dist: httpx; extra == "openai"
+requires-python: >=3.10
+project-url: Documentation, https://databricks-sdk-py.readthedocs.io
+provides-extra: dev
+provides-extra: notebook
+provides-extra: openai
+

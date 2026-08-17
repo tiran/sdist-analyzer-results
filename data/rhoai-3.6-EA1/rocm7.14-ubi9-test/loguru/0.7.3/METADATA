@@ -1,0 +1,59 @@
+metadata-version: 2.4
+name: loguru
+version: 0.7.3
+summary: Python logging made (stupidly) simple
+keywords: loguru,logging,logger,log
+author-email: Delgan <delgan.py@gmail.com>
+classifier: Development Status :: 5 - Production/Stable
+classifier: Topic :: System :: Logging
+classifier: Intended Audience :: Developers
+classifier: Natural Language :: English
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.5
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Programming Language :: Python :: Implementation :: CPython
+requires-dist: colorama>=0.3.4; sys_platform == "win32"
+requires-dist: aiocontextvars>=0.2.0; python_version < "3.7"
+requires-dist: win32-setctime>=1.0.0; sys_platform == "win32"
+requires-dist: pre-commit==4.0.1; extra == "dev" and python_version >= "3.9"
+requires-dist: tox==3.27.1; extra == "dev" and python_version < "3.8"
+requires-dist: tox==4.23.2; extra == "dev" and python_version >= "3.8"
+requires-dist: pytest==6.1.2; extra == "dev" and python_version < "3.8"
+requires-dist: pytest==8.3.2; extra == "dev" and python_version >= "3.8"
+requires-dist: pytest-cov==2.12.1; extra == "dev" and python_version < "3.8"
+requires-dist: pytest-cov==5.0.0; extra == "dev" and (python_version >= "3.8" and python_version < "3.9")
+requires-dist: pytest-cov==6.0.0; extra == "dev" and python_version >= "3.9"
+requires-dist: pytest-mypy-plugins==1.9.3; extra == "dev" and (python_version >= "3.6" and python_version < "3.8")
+requires-dist: pytest-mypy-plugins==3.1.0; extra == "dev" and python_version >= "3.8"
+requires-dist: colorama==0.4.5; extra == "dev" and python_version < "3.8"
+requires-dist: colorama==0.4.6; extra == "dev" and python_version >= "3.8"
+requires-dist: freezegun==1.1.0; extra == "dev" and python_version < "3.8"
+requires-dist: freezegun==1.5.0; extra == "dev" and python_version >= "3.8"
+requires-dist: exceptiongroup==1.1.3; extra == "dev" and (python_version >= "3.7" and python_version < "3.11")
+requires-dist: mypy==v0.910; extra == "dev" and python_version < "3.6"
+requires-dist: mypy==v0.971; extra == "dev" and (python_version >= "3.6" and python_version < "3.7")
+requires-dist: mypy==v1.4.1; extra == "dev" and (python_version >= "3.7" and python_version < "3.8")
+requires-dist: mypy==v1.13.0; extra == "dev" and python_version >= "3.8"
+requires-dist: Sphinx==8.1.3; extra == "dev" and python_version >= "3.11"
+requires-dist: sphinx-rtd-theme==3.0.2; extra == "dev" and python_version >= "3.11"
+requires-dist: myst-parser==4.0.0; extra == "dev" and python_version >= "3.11"
+requires-dist: build==1.2.2; extra == "dev" and python_version >= "3.11"
+requires-dist: twine==6.0.1; extra == "dev" and python_version >= "3.11"
+requires-python: <4.0,>=3.5
+project-url: Changelog, https://github.com/Delgan/loguru/blob/master/CHANGELOG.rst
+project-url: Documentation, https://loguru.readthedocs.io/en/stable/index.html
+project-url: Homepage, https://github.com/Delgan/loguru
+provides-extra: dev
+

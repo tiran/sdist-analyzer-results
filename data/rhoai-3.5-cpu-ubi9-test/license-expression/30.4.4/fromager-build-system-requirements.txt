@@ -1,3 +1,0 @@
-wheel
-setuptools>=50
-setuptools_scm[toml]>=6

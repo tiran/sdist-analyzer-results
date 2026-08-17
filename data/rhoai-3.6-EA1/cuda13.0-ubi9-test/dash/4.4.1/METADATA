@@ -1,0 +1,121 @@
+metadata-version: 2.4
+name: dash
+version: 4.4.1
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: project-url
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: A Python framework for building reactive web-apps. Developed by Plotly.
+home-page: https://plotly.com/dash
+author: Chris Parmer
+author-email: chris@plotly.com
+license: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Web Environment
+classifier: Framework :: Dash
+classifier: Framework :: Flask
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Education
+classifier: Intended Audience :: Financial and Insurance Industry
+classifier: Intended Audience :: Healthcare Industry
+classifier: Intended Audience :: Manufacturing
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Topic :: Database :: Front-Ends
+classifier: Topic :: Office/Business :: Financial :: Spreadsheet
+classifier: Topic :: Scientific/Engineering :: Visualization
+classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+classifier: Topic :: Software Development :: Widget Sets
+requires-dist: Flask<3.2,>=1.0.4
+requires-dist: Werkzeug<3.2
+requires-dist: plotly>=5.0.0
+requires-dist: importlib-metadata
+requires-dist: typing_extensions>=4.1.1
+requires-dist: requests
+requires-dist: retrying
+requires-dist: nest-asyncio
+requires-dist: setuptools
+requires-dist: janus>=1.0.0
+requires-dist: pydantic>=2.10
+requires-dist: comm
+requires-dist: flask[async]; extra == "async"
+requires-dist: black==22.3.0; extra == "ci"
+requires-dist: flake8==7.0.0; extra == "ci"
+requires-dist: flaky==3.8.1; extra == "ci"
+requires-dist: flask-talisman==1.0.0; extra == "ci"
+requires-dist: ipython<9.0.0; extra == "ci"
+requires-dist: mimesis<=11.1.0; extra == "ci"
+requires-dist: mock==4.0.3; extra == "ci"
+requires-dist: numpy<=1.26.3; extra == "ci"
+requires-dist: orjson>=3.10.11; extra == "ci"
+requires-dist: openpyxl; extra == "ci"
+requires-dist: pandas>=1.4.0; extra == "ci"
+requires-dist: pyarrow; extra == "ci"
+requires-dist: pylint==3.0.3; extra == "ci"
+requires-dist: pytest-mock; extra == "ci"
+requires-dist: pytest-split; extra == "ci"
+requires-dist: pytest-sugar==1.1.1; extra == "ci"
+requires-dist: pyzmq>=26.0.0; extra == "ci"
+requires-dist: xlrd>=2.0.1; extra == "ci"
+requires-dist: pytest-rerunfailures; extra == "ci"
+requires-dist: jupyterlab<4.0.0; extra == "ci"
+requires-dist: pyright==1.1.398; python_version >= "3.7" and extra == "ci"
+requires-dist: mypy==1.15.0; python_version >= "3.12" and extra == "ci"
+requires-dist: coloredlogs>=15.0.1; extra == "dev"
+requires-dist: fire>=0.4.0; extra == "dev"
+requires-dist: PyYAML>=5.4.1; extra == "dev"
+requires-dist: beautifulsoup4>=4.8.2; extra == "testing"
+requires-dist: cryptography; extra == "testing"
+requires-dist: lxml>=4.6.2; extra == "testing"
+requires-dist: percy-python-selenium>=1.0.0; extra == "testing"
+requires-dist: pytest>=6.0.2; extra == "testing"
+requires-dist: requests[security]>=2.21.0; extra == "testing"
+requires-dist: selenium<=4.2.0,>=3.141.0; extra == "testing"
+requires-dist: waitress>=1.4.4; extra == "testing"
+requires-dist: multiprocess>=0.70.12; extra == "testing"
+requires-dist: psutil>=5.8.0; extra == "testing"
+requires-dist: dash_testing_stub>=0.0.2; extra == "testing"
+requires-dist: redis<=5.0.4,>=3.5.3; extra == "celery"
+requires-dist: kombu<5.4.0; extra == "celery"
+requires-dist: celery[redis]<5.4.0,>=5.1.2; extra == "celery"
+requires-dist: diskcache>=5.2.1; extra == "diskcache"
+requires-dist: multiprocess>=0.70.12; extra == "diskcache"
+requires-dist: psutil>=5.8.0; extra == "diskcache"
+requires-dist: flask-compress; extra == "compress"
+requires-dist: fastapi; extra == "fastapi"
+requires-dist: uvicorn[standard]; extra == "fastapi"
+requires-dist: quart; extra == "quart"
+requires-dist: plotly-cloud; extra == "cloud"
+requires-dist: dash-ag-grid; extra == "ag-grid"
+requires-python: >=3.9
+project-url: Documentation, https://dash.plotly.com
+project-url: Source, https://github.com/plotly/dash
+project-url: Issue Tracker, https://github.com/plotly/dash/issues
+provides-extra: async
+provides-extra: ci
+provides-extra: dev
+provides-extra: testing
+provides-extra: celery
+provides-extra: diskcache
+provides-extra: compress
+provides-extra: fastapi
+provides-extra: quart
+provides-extra: cloud
+provides-extra: ag-grid
+

@@ -1,0 +1,24 @@
+metadata-version: 2.4
+name: tldextract
+version: 5.3.2
+dynamic: license-file
+summary: Accurately separates a URL's subdomain, domain, and public suffix, using the Public Suffix List (PSL). By default, this includes the public ICANN TLDs and their exceptions. You can optionally support the Public Suffix List's private domains as well.
+keywords: tld,domain,subdomain,url,parse,extract,urlparse,urlsplit,public,suffix,list,publicsuffix,publicsuffixlist
+author-email: John Kurkowski <john.kurkowski@gmail.com>
+license-expression: BSD-3-Clause
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Topic :: Utilities
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-dist: idna
+requires-dist: requests>=2.1.0
+requires-dist: requests-file>=1.4
+requires-dist: filelock>=3.0.8
+requires-python: >=3.10
+project-url: Homepage, https://github.com/john-kurkowski/tldextract
+

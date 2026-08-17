@@ -1,0 +1,10 @@
+metadata-version: 2.4
+name: minify_html
+version: 0.18.1
+summary: Extremely fast and smart HTML + JS + CSS minifier
+home-page: https://github.com/wilsonzlin/minify-html
+author: Wilson Lin <code@wilsonl.in>
+author-email: Wilson Lin <code@wilsonl.in>
+license: MIT
+project-url: Source Code, https://github.com/wilsonzlin/minify-html.git
+

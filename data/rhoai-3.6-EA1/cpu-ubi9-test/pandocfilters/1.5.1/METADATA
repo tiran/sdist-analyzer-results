@@ -1,0 +1,39 @@
+metadata-version: 2.4
+name: pandocfilters
+version: 1.5.1
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: requires-python
+dynamic: summary
+summary: Utilities for writing pandoc filters in python
+keywords: pandoc
+home-page: http://github.com/jgm/pandocfilters
+author: John MacFarlane
+author-email: fiddlosopher@gmail.com
+license: BSD-3-Clause
+license-file: LICENSE
+classifier: Development Status :: 3 - Alpha
+classifier: Environment :: Console
+classifier: Intended Audience :: End Users/Desktop
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: BSD License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Topic :: Text Processing :: Filters
+classifier: Programming Language :: Python :: 2
+classifier: Programming Language :: Python :: 2.7
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.4
+classifier: Programming Language :: Python :: 3.5
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+requires-python: !=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,>=2.7
+

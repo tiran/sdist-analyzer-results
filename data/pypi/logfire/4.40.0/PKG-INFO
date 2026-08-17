@@ -1,0 +1,107 @@
+metadata-version: 2.4
+name: logfire
+version: 4.40.0
+summary: The best Python observability tool! 🪵🔥
+author-email: Pydantic Team <engineering@pydantic.dev>, Samuel Colvin <samuel@pydantic.dev>, Hasan Ramezani <hasan@pydantic.dev>, Adrian Garcia Badaracco <adrian@pydantic.dev>, David Montague <david@pydantic.dev>, Marcelo Trylesinski <marcelo@pydantic.dev>, David Hewitt <david.hewitt@pydantic.dev>, Alex Hall <alex@pydantic.dev>, Jiri Kuncar <jiri@pydantic.dev>
+license-expression: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Environment :: MacOS X
+classifier: Framework :: OpenTelemetry
+classifier: Framework :: OpenTelemetry :: Distros
+classifier: Framework :: OpenTelemetry :: Exporters
+classifier: Framework :: OpenTelemetry :: Instrumentations
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Information Technology
+classifier: Intended Audience :: System Administrators
+classifier: Operating System :: POSIX :: Linux
+classifier: Operating System :: Unix
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Internet
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: executing>=2.0.1
+requires-dist: opentelemetry-exporter-otlp-proto-http<1.45.0,>=1.39.0
+requires-dist: opentelemetry-instrumentation>=0.41b0
+requires-dist: opentelemetry-sdk<1.45.0,>=1.39.0
+requires-dist: protobuf>=4.23.4
+requires-dist: rich>=13.4.2
+requires-dist: tomli>=2.0.1; python_version < "3.11"
+requires-dist: typing-extensions>=4.1.0
+requires-dist: opentelemetry-instrumentation-aiohttp-client>=0.42b0; extra == "aiohttp"
+requires-dist: opentelemetry-instrumentation-aiohttp-client>=0.42b0; extra == "aiohttp-client"
+requires-dist: opentelemetry-instrumentation-aiohttp-server>=0.55b0; extra == "aiohttp-server"
+requires-dist: opentelemetry-instrumentation-asgi>=0.42b0; extra == "asgi"
+requires-dist: opentelemetry-instrumentation-asyncpg>=0.42b0; extra == "asyncpg"
+requires-dist: opentelemetry-instrumentation-aws-lambda>=0.42b0; extra == "aws-lambda"
+requires-dist: opentelemetry-instrumentation-celery>=0.42b0; extra == "celery"
+requires-dist: httpx>=0.27.2; extra == "datasets"
+requires-dist: pydantic-evals>=1.0.0; extra == "datasets"
+requires-dist: pydantic>=2; extra == "datasets"
+requires-dist: opentelemetry-instrumentation-asgi>=0.42b0; extra == "django"
+requires-dist: opentelemetry-instrumentation-django>=0.42b0; extra == "django"
+requires-dist: openinference-instrumentation-dspy>=0; extra == "dspy"
+requires-dist: opentelemetry-instrumentation-fastapi>=0.42b0; extra == "fastapi"
+requires-dist: opentelemetry-instrumentation-flask>=0.42b0; extra == "flask"
+requires-dist: httpx>=0.27.0; extra == "gateway"
+requires-dist: starlette>=0.37.0; extra == "gateway"
+requires-dist: uvicorn>=0.30.0; extra == "gateway"
+requires-dist: opentelemetry-instrumentation-google-genai<1.0b0,>=0.4b0; extra == "google-genai"
+requires-dist: opentelemetry-instrumentation-httpx>=0.42b0; extra == "httpx"
+requires-dist: openinference-instrumentation-litellm>=0; extra == "litellm"
+requires-dist: opentelemetry-instrumentation-mysql>=0.42b0; extra == "mysql"
+requires-dist: opentelemetry-instrumentation-psycopg>=0.42b0; extra == "psycopg"
+requires-dist: packaging; extra == "psycopg"
+requires-dist: opentelemetry-instrumentation-psycopg2>=0.42b0; extra == "psycopg2"
+requires-dist: packaging; extra == "psycopg2"
+requires-dist: opentelemetry-instrumentation-pymongo>=0.42b0; extra == "pymongo"
+requires-dist: opentelemetry-instrumentation-redis>=0.42b0; extra == "redis"
+requires-dist: opentelemetry-instrumentation-requests>=0.42b0; extra == "requests"
+requires-dist: opentelemetry-instrumentation-sqlalchemy>=0.42b0; extra == "sqlalchemy"
+requires-dist: opentelemetry-instrumentation-sqlite3>=0.42b0; extra == "sqlite3"
+requires-dist: opentelemetry-instrumentation-starlette>=0.42b0; extra == "starlette"
+requires-dist: opentelemetry-instrumentation-system-metrics>=0.42b0; extra == "system-metrics"
+requires-dist: pydantic-handlebars>=0.2.1; extra == "variables"
+requires-dist: pydantic>=2; extra == "variables"
+requires-dist: opentelemetry-instrumentation-wsgi>=0.42b0; extra == "wsgi"
+requires-python: >=3.10
+project-url: Homepage, https://pydantic.dev/logfire
+project-url: Source, https://github.com/pydantic/logfire
+project-url: Documentation, https://pydantic.dev/docs/logfire/
+project-url: Changelog, https://github.com/pydantic/logfire/blob/main/CHANGELOG.md
+provides-extra: aiohttp
+provides-extra: aiohttp-client
+provides-extra: aiohttp-server
+provides-extra: asgi
+provides-extra: asyncpg
+provides-extra: aws-lambda
+provides-extra: celery
+provides-extra: datasets
+provides-extra: django
+provides-extra: dspy
+provides-extra: fastapi
+provides-extra: flask
+provides-extra: gateway
+provides-extra: google-genai
+provides-extra: httpx
+provides-extra: litellm
+provides-extra: mysql
+provides-extra: psycopg
+provides-extra: psycopg2
+provides-extra: pymongo
+provides-extra: redis
+provides-extra: requests
+provides-extra: sqlalchemy
+provides-extra: sqlite3
+provides-extra: starlette
+provides-extra: system-metrics
+provides-extra: variables
+provides-extra: wsgi
+

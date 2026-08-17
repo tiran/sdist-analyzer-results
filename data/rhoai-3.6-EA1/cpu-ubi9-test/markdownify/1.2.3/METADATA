@@ -1,0 +1,24 @@
+metadata-version: 2.4
+name: markdownify
+version: 1.2.3
+dynamic: license-file
+summary: Convert HTML to markdown.
+author-email: Matthew Tretter <m@tthewwithanm.com>
+license-file: LICENSE
+classifier: Environment :: Web Environment
+classifier: Framework :: Django
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 2.5
+classifier: Programming Language :: Python :: 2.6
+classifier: Programming Language :: Python :: 2.7
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Topic :: Utilities
+requires-dist: beautifulsoup4<5,>=4.9
+requires-dist: six<2,>=1.15
+project-url: Homepage, http://github.com/matthewwithanm/python-markdownify
+project-url: Download, http://github.com/matthewwithanm/python-markdownify/tarball/master
+

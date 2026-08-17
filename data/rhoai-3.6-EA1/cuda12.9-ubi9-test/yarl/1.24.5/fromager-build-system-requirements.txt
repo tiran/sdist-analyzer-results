@@ -1,4 +1,4 @@
-Cython>=3.0.0
-setuptools
-expandvars
 setuptools>=47
+expandvars
+setuptools
+Cython>=3.0.0

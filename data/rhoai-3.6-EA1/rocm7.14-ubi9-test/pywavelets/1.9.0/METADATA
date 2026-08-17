@@ -1,0 +1,28 @@
+metadata-version: 2.4
+name: PyWavelets
+version: 1.9.0
+summary: PyWavelets, wavelet transform module
+maintainer-email: The PyWavelets Developers <pywavelets@googlegroups.com>
+license-expression: MIT AND BSD-3-Clause
+license-file: LICENSE
+license-file: licenses_bundled/LICENSE_numpy.txt
+license-file: licenses_bundled/LICENSE_scipy.txt
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Education
+classifier: Intended Audience :: Science/Research
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: C
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: numpy<3,>=1.25
+requires-python: >=3.11
+project-url: homepage, https://github.com/PyWavelets/pywt
+project-url: source, https://github.com/PyWavelets/pywt
+project-url: documentation, https://pywavelets.readthedocs.io/
+

@@ -1,0 +1,30 @@
+metadata-version: 2.5
+name: pytest-repeat
+version: 0.9.4
+summary: pytest plugin for repeating tests
+author: Bob Silverberg
+license: This Source Code Form is subject to the terms of the Mozilla Public
+                 License, v. 2.0. If a copy of the MPL was not distributed with this
+                 file, You can obtain one at https://www.mozilla.org/en-US/MPL/2.0/.
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Framework :: Pytest
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: POSIX
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Topic :: Software Development :: Quality Assurance
+classifier: Topic :: Software Development :: Testing
+classifier: Topic :: Utilities
+requires-dist: pytest
+requires-python: >=3.9
+project-url: Home, https://github.com/pytest-dev/pytest-repeat
+

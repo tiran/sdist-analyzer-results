@@ -1,0 +1,23 @@
+metadata-version: 2.4
+name: cpu-load-generator
+version: 1.2.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: requires-dist
+dynamic: summary
+summary: CPU load generator
+home-page: https://github.com/sirtyman/CPULoadGenerator
+author: Marcin Tyman
+author-email: marcin.tyman@gmail.com
+license: MIT
+license-file: LICENCE
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python :: 3
+requires-dist: psutil
+

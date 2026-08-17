@@ -1,0 +1,46 @@
+metadata-version: 2.5
+name: aiologic
+version: 0.17.1
+summary: GIL-powered* locking library for Python
+keywords: anyio,async,async-await,asyncio,concurrency,eventlet,gevent,greenlet,library,locking,mypy,python,synchronization,thread-safety,threading,trio
+author-email: Ilya Egorov <0x42005e1f@gmail.com>
+classifier: Development Status :: 3 - Alpha
+classifier: Framework :: AnyIO
+classifier: Framework :: AsyncIO
+classifier: Framework :: Trio
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: ISC License (ISCL)
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Free Threading :: 2 - Beta
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Typing :: Typed
+requires-dist: sniffio>=1.3.0
+requires-dist: typing-extensions>=4.10.0; python_version < "3.13"
+requires-dist: wrapt>=1.16.0
+requires-dist: anyio>=3.0.0; extra == "anyio"
+requires-dist: curio>=1.4; extra == "curio"
+requires-dist: eventlet>=0.17.0; extra == "eventlet"
+requires-dist: gevent>=21.1.0; extra == "gevent"
+requires-dist: trio>=0.23.0; extra == "trio"
+requires-dist: trio-asyncio>=0.13.0; extra == "trio-asyncio"
+requires-python: >=3.8
+project-url: Homepage, https://github.com/x42005e1f/aiologic
+project-url: Documentation, https://aiologic.readthedocs.io
+project-url: Changelog, https://aiologic.readthedocs.io/latest/changelog.html
+provides-extra: anyio
+provides-extra: curio
+provides-extra: eventlet
+provides-extra: gevent
+provides-extra: trio
+provides-extra: trio-asyncio
+

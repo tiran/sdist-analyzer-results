@@ -1,0 +1,52 @@
+metadata-version: 2.4
+name: presidio_analyzer
+version: 2.2.362
+summary: Presidio Analyzer package
+keywords: presidio_analyzer
+author: Presidio
+author-email: presidio@microsoft.com
+license-expression: MIT
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+requires-dist: accelerate; extra == "transformers"
+requires-dist: azure-ai-textanalytics; extra == "azure-ai-language"
+requires-dist: azure-core; extra == "azure-ai-language"
+requires-dist: azure-health-deidentification<2.0.0,>=1.1.0b1; extra == "ahds"
+requires-dist: azure-identity>=1.18.0; extra == "langextract"
+requires-dist: azure-identity<2.0.0,>=1.23.0; extra == "ahds"
+requires-dist: flask>=1.1; extra == "server"
+requires-dist: gliner<1.0.0,>=0.2.13; extra == "gliner"
+requires-dist: gunicorn; platform_system != "Windows" and extra == "server"
+requires-dist: huggingface_hub; extra == "gliner"
+requires-dist: huggingface_hub; extra == "transformers"
+requires-dist: jinja2>=3.0.0; extra == "langextract"
+requires-dist: langextract>=1.0.0; extra == "langextract"
+requires-dist: more-itertools>=10.0.0; extra == "langextract"
+requires-dist: onnxruntime>=1.19; python_version > "3.10" and extra == "gliner"
+requires-dist: onnxruntime<1.24.1,>=1.19; python_version == "3.10" and extra == "gliner"
+requires-dist: openai>=1.50.0; extra == "langextract"
+requires-dist: phonenumbers<10.0.0,>=8.12
+requires-dist: pydantic<3.0.0,>=2.0.0
+requires-dist: pyyaml
+requires-dist: regex
+requires-dist: spacy!=3.7.0,>=3.4.4
+requires-dist: spacy_huggingface_pipelines; extra == "transformers"
+requires-dist: stanza<2.0.0,>=1.10.1; extra == "stanza"
+requires-dist: tldextract
+requires-dist: transformers; extra == "gliner"
+requires-dist: transformers; extra == "transformers"
+requires-dist: waitress; platform_system == "Windows" and extra == "server"
+requires-python: <3.14,>=3.10
+project-url: Homepage, https://github.com/Microsoft/presidio
+provides-extra: ahds
+provides-extra: azure-ai-language
+provides-extra: gliner
+provides-extra: langextract
+provides-extra: server
+provides-extra: stanza
+provides-extra: transformers
+

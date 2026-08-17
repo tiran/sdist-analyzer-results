@@ -1,0 +1,34 @@
+metadata-version: 2.4
+name: dateparser
+version: 1.4.2
+dynamic: description
+dynamic: license-file
+summary: Date parsing library designed to parse dates from HTML pages
+keywords: dateparser
+author-email: Scrapinghub <opensource@zyte.com>
+license-expression: BSD-3-Clause
+license-file: LICENSE
+license-file: AUTHORS.rst
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Natural Language :: English
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Implementation :: CPython
+requires-dist: python-dateutil>=2.7.0
+requires-dist: pytz>=2024.2
+requires-dist: regex>=2024.9.11
+requires-dist: tzlocal>=0.2
+requires-dist: convertdate>=2.2.1; extra == "calendars"
+requires-dist: hijridate; extra == "calendars"
+requires-dist: langdetect>=1.0.0; extra == "langdetect"
+requires-python: >=3.10
+project-url: Source, https://github.com/scrapinghub/dateparser
+project-url: History, https://dateparser.readthedocs.io/en/latest/history.html
+provides-extra: calendars
+provides-extra: langdetect
+

@@ -1,2 +1,0 @@
-setuptools
-cython<4,>=3.0.11

@@ -1,0 +1,24 @@
+metadata-version: 2.4
+name: iopath
+version: 0.1.10
+dynamic: author
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: A library for providing I/O abstraction.
+home-page: https://github.com/facebookresearch/iopath
+author: FAIR
+license: MIT licensed, as found in the LICENSE file
+license-file: LICENSE
+requires-dist: tqdm
+requires-dist: typing_extensions
+requires-dist: portalocker
+requires-dist: dataclasses; python_version < "3.7"
+requires-dist: boto3; extra == "aws"
+requires-python: >=3.6
+provides-extra: aws
+

@@ -1,0 +1,34 @@
+metadata-version: 2.4
+name: annotated-doc
+version: 0.0.5
+summary: Document parameters, class attributes, return types, and variables inline, with Annotated.
+author-email: =?utf-8?q?Sebasti=C3=A1n_Ram=C3=ADrez?= <tiangolo@gmail.com>
+license-expression: MIT
+license-file: LICENSE
+classifier: Intended Audience :: Information Technology
+classifier: Intended Audience :: System Administrators
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python
+classifier: Topic :: Internet
+classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: Software Development :: Libraries
+classifier: Topic :: Software Development
+classifier: Typing :: Typed
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-python: >=3.9
+project-url: Homepage, https://github.com/fastapi/annotated-doc
+project-url: Documentation, https://github.com/fastapi/annotated-doc
+project-url: Repository, https://github.com/fastapi/annotated-doc
+project-url: Issues, https://github.com/fastapi/annotated-doc/issues
+project-url: Changelog, https://github.com/fastapi/annotated-doc/release-notes.md
+

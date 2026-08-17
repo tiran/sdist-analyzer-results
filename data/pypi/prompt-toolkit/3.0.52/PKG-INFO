@@ -1,0 +1,27 @@
+metadata-version: 2.4
+name: prompt_toolkit
+version: 3.0.52
+dynamic: license-file
+summary: Library for building powerful interactive command lines in Python
+author: Jonathan Slenders
+license-file: LICENSE
+license-file: AUTHORS.rst
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: BSD License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python
+classifier: Topic :: Software Development
+requires-dist: wcwidth
+requires-python: >=3.8
+project-url: Homepage, https://github.com/prompt-toolkit/python-prompt-toolkit
+project-url: Documentation, https://python-prompt-toolkit.readthedocs.io/en/stable/
+

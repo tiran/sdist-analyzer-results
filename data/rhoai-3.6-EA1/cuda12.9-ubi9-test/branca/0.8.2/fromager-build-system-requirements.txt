@@ -1,0 +1,2 @@
+setuptools_scm
+setuptools>=41.2

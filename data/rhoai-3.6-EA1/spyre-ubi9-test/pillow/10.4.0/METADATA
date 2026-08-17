@@ -1,0 +1,60 @@
+metadata-version: 2.4
+name: pillow
+version: 10.4.0
+dynamic: license-file
+summary: Python Imaging Library (Fork)
+keywords: Imaging
+author-email: "Jeffrey A. Clark" <aclark@aclark.net>
+license: HPND
+license-file: LICENSE
+classifier: Development Status :: 6 - Mature
+classifier: License :: OSI Approved :: Historical Permission Notice and Disclaimer (HPND)
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Multimedia :: Graphics
+classifier: Topic :: Multimedia :: Graphics :: Capture :: Digital Camera
+classifier: Topic :: Multimedia :: Graphics :: Capture :: Screen Capture
+classifier: Topic :: Multimedia :: Graphics :: Graphics Conversion
+classifier: Topic :: Multimedia :: Graphics :: Viewers
+classifier: Typing :: Typed
+requires-dist: furo; extra == "docs"
+requires-dist: olefile; extra == "docs"
+requires-dist: sphinx>=7.3; extra == "docs"
+requires-dist: sphinx-copybutton; extra == "docs"
+requires-dist: sphinx-inline-tabs; extra == "docs"
+requires-dist: sphinxext-opengraph; extra == "docs"
+requires-dist: olefile; extra == "fpx"
+requires-dist: olefile; extra == "mic"
+requires-dist: check-manifest; extra == "tests"
+requires-dist: coverage; extra == "tests"
+requires-dist: defusedxml; extra == "tests"
+requires-dist: markdown2; extra == "tests"
+requires-dist: olefile; extra == "tests"
+requires-dist: packaging; extra == "tests"
+requires-dist: pyroma; extra == "tests"
+requires-dist: pytest; extra == "tests"
+requires-dist: pytest-cov; extra == "tests"
+requires-dist: pytest-timeout; extra == "tests"
+requires-dist: typing-extensions; python_version < "3.10" and extra == "typing"
+requires-dist: defusedxml; extra == "xmp"
+requires-python: >=3.8
+project-url: Changelog, https://github.com/python-pillow/Pillow/blob/main/CHANGES.rst
+project-url: Documentation, https://pillow.readthedocs.io
+project-url: Funding, https://tidelift.com/subscription/pkg/pypi-pillow?utm_source=pypi-pillow&utm_medium=pypi
+project-url: Homepage, https://python-pillow.org
+project-url: Mastodon, https://fosstodon.org/@pillow
+project-url: Release notes, https://pillow.readthedocs.io/en/stable/releasenotes/index.html
+project-url: Source, https://github.com/python-pillow/Pillow
+provides-extra: docs
+provides-extra: fpx
+provides-extra: mic
+provides-extra: tests
+provides-extra: typing
+provides-extra: xmp
+

@@ -1,0 +1,42 @@
+metadata-version: 2.4
+name: hdfs
+version: 2.7.3
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: summary
+summary: HdfsCLI: API and command line interface for HDFS.
+home-page: https://hdfscli.readthedocs.io
+author: Matthieu Monsch
+author-email: mtth@apache.org
+license: MIT
+license-file: LICENSE
+license-file: AUTHORS
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+requires-dist: docopt
+requires-dist: requests>=2.7.0
+requires-dist: six>=1.9.0
+requires-dist: fastavro>=0.21.19; extra == "avro"
+requires-dist: requests-kerberos>=0.7.0; extra == "kerberos"
+requires-dist: fastavro>=0.21.19; extra == "dataframe"
+requires-dist: pandas>=0.14.1; extra == "dataframe"
+provides-extra: avro
+provides-extra: kerberos
+provides-extra: dataframe
+

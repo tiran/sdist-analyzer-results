@@ -1,0 +1,27 @@
+metadata-version: 2.4
+name: fvcore
+version: 0.1.5.post20221221
+dynamic: author
+dynamic: home-page
+dynamic: license
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: Collection of common code shared among different research projects in FAIR computer vision team
+home-page: https://github.com/facebookresearch/fvcore
+author: FAIR
+license: Apache 2.0
+requires-dist: numpy
+requires-dist: yacs>=0.1.6
+requires-dist: pyyaml>=5.1
+requires-dist: tqdm
+requires-dist: termcolor>=1.1
+requires-dist: Pillow
+requires-dist: tabulate
+requires-dist: iopath>=0.1.7
+requires-dist: dataclasses; python_version < "3.7"
+requires-dist: shapely; extra == "all"
+requires-python: >=3.6
+provides-extra: all
+

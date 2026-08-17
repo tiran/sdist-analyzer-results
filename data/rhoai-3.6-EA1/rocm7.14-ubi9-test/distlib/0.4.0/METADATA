@@ -1,0 +1,33 @@
+metadata-version: 2.4
+name: distlib
+version: 0.4.0
+dynamic: license-file
+platform: any
+summary: Distribution utilities
+home-page: https://github.com/pypa/distlib
+author: Vinay Sajip
+author-email: vinay_sajip@red-dove.com
+license: PSF-2.0
+license-file: LICENSE.txt
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Python Software Foundation License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 2
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 2.7
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Topic :: Software Development
+project-url: Documentation, https://distlib.readthedocs.io/
+project-url: Source, https://github.com/pypa/distlib
+project-url: Tracker, https://github.com/pypa/distlib/issues
+

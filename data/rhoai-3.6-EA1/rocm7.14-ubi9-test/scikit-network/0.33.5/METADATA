@@ -1,0 +1,35 @@
+metadata-version: 2.4
+name: scikit-network
+version: 0.33.5
+dynamic: license-file
+summary: Graph algorithms
+keywords: sknetwork
+author: Scikit-network team
+maintainer-email: Thomas Bonald <bonald@enst.fr>
+license: BSD License
+license-file: LICENSE
+license-file: AUTHORS.rst
+classifier: Development Status :: 3 - Alpha
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Information Technology
+classifier: Intended Audience :: Education
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: BSD License
+classifier: Natural Language :: English
+classifier: Programming Language :: Cython
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-dist: numpy>=1.22.4
+requires-dist: scipy>=1.7.3
+requires-dist: pytest; extra == "test"
+requires-dist: note; extra == "test"
+requires-dist: pluggy>=0.7.1; extra == "test"
+requires-python: >=3.10
+project-url: Repository, https://github.com/sknetwork-team/scikit-network
+project-url: Documentation, https://scikit-network.readthedocs.io/
+project-url: Changelog, https://github.com/sknetwork-team/scikit-network/blob/master/HISTORY.rst
+provides-extra: test
+

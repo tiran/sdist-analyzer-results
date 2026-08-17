@@ -1,5 +1,5 @@
-pybind11[global]
 setuptools
-scikit-build-core>=0.11
+pybind11[global]
 nanobind
+scikit-build-core>=0.11
 protobuf==4.25.1

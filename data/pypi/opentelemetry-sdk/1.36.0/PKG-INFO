@@ -1,45 +1,25 @@
-Metadata-Version: 2.4
-Name: opentelemetry-sdk
-Version: 1.36.0
-Summary: OpenTelemetry Python SDK
-Project-URL: Homepage, https://github.com/open-telemetry/opentelemetry-python/tree/main/opentelemetry-sdk
-Project-URL: Repository, https://github.com/open-telemetry/opentelemetry-python
-Author-email: OpenTelemetry Authors <cncf-opentelemetry-contributors@lists.cncf.io>
-License-Expression: Apache-2.0
-License-File: LICENSE
-Classifier: Development Status :: 5 - Production/Stable
-Classifier: Framework :: OpenTelemetry
-Classifier: Intended Audience :: Developers
-Classifier: Programming Language :: Python
-Classifier: Programming Language :: Python :: 3
-Classifier: Programming Language :: Python :: 3.9
-Classifier: Programming Language :: Python :: 3.10
-Classifier: Programming Language :: Python :: 3.11
-Classifier: Programming Language :: Python :: 3.12
-Classifier: Programming Language :: Python :: 3.13
-Classifier: Typing :: Typed
-Requires-Python: >=3.9
-Requires-Dist: opentelemetry-api==1.36.0
-Requires-Dist: opentelemetry-semantic-conventions==0.57b0
-Requires-Dist: typing-extensions>=4.5.0
-Description-Content-Type: text/x-rst
+metadata-version: 2.4
+name: opentelemetry-sdk
+version: 1.36.0
+summary: OpenTelemetry Python SDK
+author-email: OpenTelemetry Authors <cncf-opentelemetry-contributors@lists.cncf.io>
+license-expression: Apache-2.0
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Framework :: OpenTelemetry
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Typing :: Typed
+requires-dist: opentelemetry-api==1.36.0
+requires-dist: opentelemetry-semantic-conventions==0.57b0
+requires-dist: typing-extensions>=4.5.0
+requires-python: >=3.9
+project-url: Homepage, https://github.com/open-telemetry/opentelemetry-python/tree/main/opentelemetry-sdk
+project-url: Repository, https://github.com/open-telemetry/opentelemetry-python
 
-OpenTelemetry Python SDK
-============================================================================
-
-|pypi|
-
-.. |pypi| image:: https://badge.fury.io/py/opentelemetry-sdk.svg
-   :target: https://pypi.org/project/opentelemetry-sdk/
-
-Installation
-------------
-
-::
-
-    pip install opentelemetry-sdk
-
-References
-----------
-
-* `OpenTelemetry Project <https://opentelemetry.io/>`_

@@ -1,3 +1,0 @@
-typing-extensions
-maturin<2,>=1.9.4
-setuptools

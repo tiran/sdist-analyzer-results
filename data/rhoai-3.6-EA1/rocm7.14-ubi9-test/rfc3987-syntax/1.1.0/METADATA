@@ -1,0 +1,32 @@
+metadata-version: 2.5
+name: rfc3987-syntax
+version: 1.1.0
+summary: Helper functions to syntactically validate strings according to RFC 3987.
+keywords: RFC 3987,RFC3987,parser,syntax,validator
+author: Jan Kowalleck
+author-email: Will Riley <wanderingwill@gmail.com>
+license-expression: MIT
+license-file: LICENSE
+classifier: Development Status :: 3 - Alpha
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Education
+classifier: Intended Audience :: Information Technology
+classifier: Intended Audience :: Science/Research
+classifier: Intended Audience :: System Administrators
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Natural Language :: English
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Topic :: Scientific/Engineering
+classifier: Topic :: Software Development
+classifier: Topic :: Utilities
+requires-dist: lark>=1.2.2
+requires-dist: pytest>=8.3.5; extra == "testing"
+requires-python: >=3.9
+project-url: Homepage, https://github.com/willynilly/rfc3987-syntax
+project-url: Documentation, https://github.com/willynilly/rfc3987-syntax#readme
+project-url: Issues, https://github.com/willynilly/rfc3987-syntax/issues
+project-url: Source, https://github.com/willynilly/rfc3987-syntax
+provides-extra: testing
+

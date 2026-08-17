@@ -1,0 +1,78 @@
+metadata-version: 2.5
+name: fickling
+version: 0.1.12
+summary: A static analyzer and interpreter for Python pickle data
+author-email: Trail of Bits <opensource@trailofbits.com>
+maintainer-email: Trail of Bits <opensource@trailofbits.com>
+license: GNU LESSER GENERAL PUBLIC LICENSE
+                                        Version 3, 29 June 2007
+                 
+                  Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
+                  Everyone is permitted to copy and distribute verbatim copies
+                  of this license document, but changing it is not allowed.
+                 
+                 
+                   This version of the GNU Lesser General Public License incorporates
+                 the terms and conditions of version 3 of the GNU General Public
+                 License, supplemented...
+license-file: LICENSE
+classifier: Development Status :: 4 - Beta
+classifier: Environment :: Console
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Security
+classifier: Topic :: Software Development :: Testing
+classifier: Topic :: Utilities
+requires-dist: py7zr!=1.1.2,>=1.1.0; extra == "archive"
+requires-dist: coverage[toml]>=7.0.0; extra == "dev"
+requires-dist: huggingface-hub>=0.20.0; extra == "dev"
+requires-dist: numpy<2.3,>=2.2.6; python_version == "3.10" and extra == "dev"
+requires-dist: numpy>=2.3.5; python_version >= "3.11" and extra == "dev"
+requires-dist: py7zr!=1.1.2,>=1.1.0; extra == "dev"
+requires-dist: pytest-cov>=5.0.0; extra == "dev"
+requires-dist: pytest>=8.0.0; extra == "dev"
+requires-dist: ruff>=0.8.0; extra == "dev"
+requires-dist: torch>=2.1.0; extra == "dev"
+requires-dist: torchvision>=0.24.1; extra == "dev"
+requires-dist: ty>=0.0.12; extra == "dev"
+requires-dist: typing-extensions; python_version < "3.12" and extra == "dev"
+requires-dist: numpy; extra == "examples"
+requires-dist: pytorchfi; extra == "examples"
+requires-dist: huggingface-hub>=0.20.0; extra == "huggingface"
+requires-dist: numpy<2.3,>=2.2.6; python_version == "3.10" and extra == "huggingface"
+requires-dist: numpy>=2.3.5; python_version >= "3.11" and extra == "huggingface"
+requires-dist: torch>=2.1.0; extra == "huggingface"
+requires-dist: torchvision>=0.24.1; extra == "huggingface"
+requires-dist: ruff>=0.8.0; extra == "lint"
+requires-dist: ty>=0.0.12; extra == "lint"
+requires-dist: typing-extensions; python_version < "3.12" and extra == "lint"
+requires-dist: coverage[toml]>=7.0.0; extra == "test"
+requires-dist: numpy<2.3,>=2.2.6; python_version == "3.10" and extra == "test"
+requires-dist: numpy>=2.3.5; python_version >= "3.11" and extra == "test"
+requires-dist: py7zr!=1.1.2,>=1.1.0; extra == "test"
+requires-dist: pytest-cov>=5.0.0; extra == "test"
+requires-dist: pytest>=8.0.0; extra == "test"
+requires-dist: torch>=2.1.0; extra == "test"
+requires-dist: torchvision>=0.24.1; extra == "test"
+requires-dist: numpy<2.3,>=2.2.6; python_version == "3.10" and extra == "torch"
+requires-dist: numpy>=2.3.5; python_version >= "3.11" and extra == "torch"
+requires-dist: torch>=2.1.0; extra == "torch"
+requires-dist: torchvision>=0.24.1; extra == "torch"
+requires-python: >=3.10
+project-url: Homepage, https://pypi.org/project/fickling
+project-url: Issues, https://github.com/trailofbits/fickling/issues
+project-url: Source, https://github.com/trailofbits/fickling
+provides-extra: archive
+provides-extra: dev
+provides-extra: examples
+provides-extra: huggingface
+provides-extra: lint
+provides-extra: test
+provides-extra: torch
+

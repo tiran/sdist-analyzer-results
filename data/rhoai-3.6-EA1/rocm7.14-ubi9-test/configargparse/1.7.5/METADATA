@@ -1,0 +1,45 @@
+metadata-version: 2.4
+name: ConfigArgParse
+version: 1.7.5
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: provides-extra
+dynamic: requires-python
+dynamic: summary
+summary: A drop-in replacement for argparse that allows options to also be set via config files and/or environment variables.
+keywords: options,argparse,ConfigArgParse,config,environment variables,envvars,ENV,environment,optparse,YAML,INI
+home-page: https://github.com/bw2/ConfigArgParse
+license: MIT
+license-file: LICENSE
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Natural Language :: English
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+requires-dist: PyYAML; extra == "yaml"
+requires-dist: black; extra == "test"
+requires-dist: mock; extra == "test"
+requires-dist: toml; extra == "test"
+requires-dist: PyYAML; extra == "test"
+requires-dist: pytest; extra == "test"
+requires-dist: pytest-cov; extra == "test"
+requires-dist: pytest-subtests; extra == "test"
+requires-python: >=3.6
+provides-extra: yaml
+provides-extra: test
+

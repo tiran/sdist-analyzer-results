@@ -1,0 +1,66 @@
+metadata-version: 2.4
+name: jupyter_server_proxy
+version: 4.5.0
+summary: A Jupyter server extension to run additional processes and proxy to them that comes bundled JupyterLab extension to launch pre-defined processes.
+keywords: jupyter,jupyterlab,jupyterlab-extension
+author-email: Ryan Lovett <rylo@berkeley.edu>, Yuvi Panda <yuvipanda@gmail.com>, Jupyter Development Team <jupyter@googlegroups.com>
+license: BSD 3-Clause License
+                 
+                 Copyright (c) 2017, Data Science 8
+                 All rights reserved.
+                 
+                 Redistribution and use in source and binary forms, with or without
+                 modification, are permitted provided that the following conditions are met:
+                 
+                 * Redistributions of source code must retain the above copyright notice, this
+                   list of conditions and the following disclaimer.
+                 
+                 * Redistributions in binary form must reproduce the above copyright ...
+license-file: LICENSE
+classifier: Framework :: Jupyter
+classifier: Framework :: Jupyter :: JupyterLab
+classifier: Framework :: Jupyter :: JupyterLab :: 3
+classifier: Framework :: Jupyter :: JupyterLab :: 4
+classifier: Framework :: Jupyter :: JupyterLab :: Extensions
+classifier: Framework :: Jupyter :: JupyterLab :: Extensions :: Prebuilt
+classifier: License :: OSI Approved :: BSD License
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: POSIX :: Linux
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+requires-dist: aiohttp
+requires-dist: importlib-metadata>=4.8.3; python_version < "3.10"
+requires-dist: jupyter-server>=1.24.0
+requires-dist: simpervisor>=1.0.0
+requires-dist: tornado>=6.1.0
+requires-dist: traitlets>=5.1.0
+requires-dist: jupyterhub; extra == "acceptance"
+requires-dist: pytest; extra == "acceptance"
+requires-dist: pytest-asyncio; extra == "acceptance"
+requires-dist: pytest-cov; extra == "acceptance"
+requires-dist: pytest-html; extra == "acceptance"
+requires-dist: robotframework-jupyterlibrary>=0.4.2; extra == "acceptance"
+requires-dist: jupyter-server<2; extra == "classic"
+requires-dist: jupyterlab<4.0.0a0,>=3.0.0; extra == "classic"
+requires-dist: notebook<7.0.0a0; extra == "classic"
+requires-dist: jupyter-server>=2; extra == "lab"
+requires-dist: jupyterlab<5.0.0a0,>=4.0.5; extra == "lab"
+requires-dist: nbclassic; extra == "lab"
+requires-dist: notebook>=7; extra == "lab"
+requires-dist: jupyterhub; extra == "standalone"
+requires-dist: jupyterhub; extra == "test"
+requires-dist: pytest; extra == "test"
+requires-dist: pytest-asyncio; extra == "test"
+requires-dist: pytest-cov; extra == "test"
+requires-dist: pytest-html; extra == "test"
+requires-python: >=3.8
+project-url: Documentation, https://jupyter-server-proxy.readthedocs.io
+project-url: Source, https://github.com/jupyterhub/jupyter-server-proxy
+project-url: Tracker, https://github.com/jupyterhub/jupyter-server-proxy/issues
+provides-extra: acceptance
+provides-extra: classic
+provides-extra: lab
+provides-extra: standalone
+provides-extra: test
+

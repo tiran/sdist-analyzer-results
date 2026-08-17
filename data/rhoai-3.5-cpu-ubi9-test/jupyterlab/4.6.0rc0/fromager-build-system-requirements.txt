@@ -1,2 +1,0 @@
-hatchling>=1.21.1
-jupyter-builder>=1.0.0b1

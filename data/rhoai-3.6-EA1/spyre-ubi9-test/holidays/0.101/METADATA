@@ -1,0 +1,36 @@
+metadata-version: 2.4
+name: holidays
+version: 0.101
+dynamic: license-file
+summary: Open World Holidays Framework
+keywords: calendar,holidays,l10n,vacation,worldwide
+author: Vacanza Team
+maintainer: Arkadii Yakovets, Panpakorn Siripanich, Serhii Murza
+license-expression: MIT
+license-file: CONTRIBUTORS
+license-file: LICENSE
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Education
+classifier: Intended Audience :: End Users/Desktop
+classifier: Intended Audience :: Financial and Insurance Industry
+classifier: Intended Audience :: Information Technology
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Topic :: File Formats :: JSON
+classifier: Topic :: Office/Business :: Financial :: Accounting
+classifier: Topic :: Office/Business :: Financial :: Investment
+classifier: Topic :: Office/Business :: Scheduling
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: python-dateutil<3,>=2.9.0.post0
+requires-python: >=3.10
+project-url: Changelog, https://github.com/vacanza/holidays/releases/
+project-url: Documentation, https://holidays.readthedocs.io/en/latest/
+project-url: Repository, https://github.com/vacanza/holidays/
+

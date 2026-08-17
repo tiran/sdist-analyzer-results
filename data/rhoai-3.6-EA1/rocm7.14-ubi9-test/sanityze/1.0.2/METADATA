@@ -1,0 +1,18 @@
+metadata-version: 2.4
+name: sanityze
+version: 1.0.2
+summary: Python package to help datascientists remove or redact Personal Identifiable Information (PII) 
+author: Caesar Wong, Jonah Hamilton and Tony Zoght
+license: MIT
+license-file: LICENSE
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-dist: pandas<2.0.0,>=1.5.2
+requires-python: <4.0,>=3.9
+

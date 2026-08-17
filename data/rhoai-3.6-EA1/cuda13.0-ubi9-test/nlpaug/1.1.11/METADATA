@@ -1,0 +1,27 @@
+metadata-version: 2.4
+name: nlpaug
+version: 1.1.11
+dynamic: author
+dynamic: author-email
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: Natural language processing augmentation library for deep neural networks
+keywords: deep learning,neural network,machine learning,nlp,natural language processing,text,audio,spectrogram,augmentation,adversarial attack,ai,ml
+home-page: https://github.com/makcedward/nlpaug
+author: Edward Ma
+author-email: makcedward@gmail.com
+license: MIT
+license-file: LICENSE
+requires-dist: numpy>=1.16.2
+requires-dist: pandas>=1.2.0
+requires-dist: requests>=2.22.0
+requires-dist: gdown>=4.0.0
+requires-python: >=3.7
+

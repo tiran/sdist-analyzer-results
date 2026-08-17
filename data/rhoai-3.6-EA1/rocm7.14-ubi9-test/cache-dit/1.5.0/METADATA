@@ -1,0 +1,64 @@
+metadata-version: 2.4
+name: cache_dit
+version: 1.5.0
+dynamic: license-file
+dynamic: requires-python
+summary: Cache-DiT: A PyTorch-native Inference Engine with Cache, Parallelism, Quantization and CPU Offload for DiTs.
+author: DefTruth, vipshop.com, etc.
+maintainer: DefTruth, vipshop.com, etc
+license-file: LICENSE
+requires-dist: packaging
+requires-dist: pyyaml
+requires-dist: torch>=2.7.1
+requires-dist: diffusers>=0.36.0
+requires-dist: transformers>=4.55.2
+requires-dist: einops>=0.8.1; extra == "parallelism"
+requires-dist: ray>=2.0; extra == "ray"
+requires-dist: safetensors>=0.5.3; extra == "ray"
+requires-dist: torchao>=0.14.1; extra == "quantization"
+requires-dist: bitsandbytes>=0.48.1; extra == "quantization"
+requires-dist: safetensors>=0.5.3; extra == "quantization"
+requires-dist: scipy; extra == "metrics"
+requires-dist: scikit-image; extra == "metrics"
+requires-dist: image-reward; extra == "metrics"
+requires-dist: lpips==0.1.4; extra == "metrics"
+requires-dist: packaging; extra == "dev"
+requires-dist: pre-commit; extra == "dev"
+requires-dist: pytest<8.0.0,>=7.0.0; extra == "dev"
+requires-dist: pytest-html; extra == "dev"
+requires-dist: expecttest; extra == "dev"
+requires-dist: hypothesis; extra == "dev"
+requires-dist: accelerate; extra == "dev"
+requires-dist: peft; extra == "dev"
+requires-dist: protobuf; extra == "dev"
+requires-dist: sentencepiece; extra == "dev"
+requires-dist: opencv-python-headless; extra == "dev"
+requires-dist: ftfy; extra == "dev"
+requires-dist: scikit-image; extra == "dev"
+requires-dist: mkdocs==1.6.1; extra == "docs"
+requires-dist: mkdocs-api-autonav; extra == "docs"
+requires-dist: mkdocs-material==9.7.1; extra == "docs"
+requires-dist: mkdocstrings-python; extra == "docs"
+requires-dist: mkdocs-gen-files; extra == "docs"
+requires-dist: mkdocs-awesome-nav; extra == "docs"
+requires-dist: mkdocs-glightbox; extra == "docs"
+requires-dist: mkdocs-git-revision-date-localized-plugin; extra == "docs"
+requires-dist: mkdocs-minify-plugin; extra == "docs"
+requires-dist: regex; extra == "docs"
+requires-dist: ruff; extra == "docs"
+requires-dist: pydantic; extra == "docs"
+requires-dist: cache-dit[parallelism]; extra == "all"
+requires-dist: cache-dit[quantization]; extra == "all"
+requires-dist: cache-dit[metrics]; extra == "all"
+requires-python: >=3.10
+project-url: Repository, https://github.com/vipshop/cache-dit
+project-url: Homepage, https://github.com/vipshop/cache-dit
+project-url: GitHub, https://github.com/vipshop/cache-dit
+provides-extra: parallelism
+provides-extra: ray
+provides-extra: quantization
+provides-extra: metrics
+provides-extra: dev
+provides-extra: docs
+provides-extra: all
+

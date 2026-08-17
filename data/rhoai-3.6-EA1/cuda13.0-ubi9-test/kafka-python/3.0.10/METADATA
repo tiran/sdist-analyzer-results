@@ -1,0 +1,44 @@
+metadata-version: 2.4
+name: kafka-python
+version: 3.0.10
+dynamic: license-file
+summary: Pure Python client for Apache Kafka
+keywords: apache kafka,kafka
+author-email: Dana Powers <dana.powers@gmail.com>
+license-expression: Apache-2.0
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: crc32c; extra == "crc32c"
+requires-dist: lz4; extra == "lz4"
+requires-dist: python-snappy; extra == "snappy"
+requires-dist: zstandard; extra == "zstd"
+requires-dist: pytest; extra == "testing"
+requires-dist: pytest-mock; extra == "testing"
+requires-dist: pytest-timeout; extra == "testing"
+requires-dist: pyperf; extra == "benchmarks"
+requires-python: >=3.8
+project-url: Homepage, https://github.com/dpkp/kafka-python
+project-url: Documentation, https://kafka-python.readthedocs.io
+project-url: Repository, https://github.com/dpkp/kafka-python
+project-url: Issues, https://github.com/dpkp/kafka-python/issues
+project-url: Changelog, https://github.com/dpkp/kafka-python/blob/master/CHANGES.md
+provides-extra: crc32c
+provides-extra: lz4
+provides-extra: snappy
+provides-extra: zstd
+provides-extra: testing
+provides-extra: benchmarks
+

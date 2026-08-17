@@ -1,0 +1,43 @@
+metadata-version: 2.5
+name: pytest-cov
+version: 7.1.0
+summary: Pytest plugin for measuring coverage.
+keywords: cover,coverage,distributed,parallel,py.test,pytest
+author-email: Marc Schlaich <marc.schlaich@gmail.com>
+maintainer-email: Ionel Cristian Mărieș <contact@ionelmc.ro>
+license-expression: MIT
+license-file: AUTHORS.rst
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Framework :: Pytest
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: POSIX
+classifier: Operating System :: Unix
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Software Development :: Testing
+classifier: Topic :: Utilities
+requires-dist: coverage[toml]>=7.10.6
+requires-dist: pluggy>=1.2
+requires-dist: pytest>=7
+requires-dist: process-tests; extra == "testing"
+requires-dist: pytest-xdist; extra == "testing"
+requires-dist: virtualenv; extra == "testing"
+requires-python: >=3.9
+project-url: Sources, https://github.com/pytest-dev/pytest-cov
+project-url: Documentation, https://pytest-cov.readthedocs.io/
+project-url: Changelog, https://pytest-cov.readthedocs.io/en/latest/changelog.html
+project-url: Issue Tracker, https://github.com/pytest-dev/pytest-cov/issues
+provides-extra: testing
+

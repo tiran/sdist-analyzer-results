@@ -1,5 +1,5 @@
-numpy>=2.0.0
-wheel
 Cython>=0.29.24
 setuptools>=77.0.3
+wheel
+numpy>=2.0.0
 setuptools_scm>=8.0.0

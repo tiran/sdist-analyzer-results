@@ -1,7 +1,0 @@
-Metadata-Version: 2.4
-Name: tlparse
-Version: 0.4.0
-Classifier: Programming Language :: Rust
-License-File: LICENSE
-Requires-Python: >=3.6
-Project-URL: repository, https://github.com/ezyang/tlparse

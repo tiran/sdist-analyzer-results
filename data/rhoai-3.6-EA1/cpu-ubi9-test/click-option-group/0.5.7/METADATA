@@ -1,0 +1,42 @@
+metadata-version: 2.5
+name: click-option-group
+version: 0.5.7
+summary: Option groups missing in Click
+author-email: Eugene Prilepin <esp.home@gmail.com>
+license-expression: BSD-3-Clause
+license-file: LICENSE
+classifier: Development Status :: 4 - Beta
+classifier: Environment :: Console
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: BSD License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Topic :: Software Development :: Libraries
+requires-dist: click>=7.0
+requires-dist: pre-commit; extra == "dev"
+requires-dist: pytest; extra == "dev"
+requires-dist: m2r2; extra == "docs"
+requires-dist: pallets-sphinx-themes; extra == "docs"
+requires-dist: sphinx; extra == "docs"
+requires-dist: pytest; extra == "test"
+requires-dist: pytest; extra == "test-cov"
+requires-dist: pytest-cov; extra == "test-cov"
+requires-python: >=3.7
+project-url: Homepage, https://github.com/click-contrib/click-option-group
+project-url: Code, https://github.com/click-contrib/click-option-group
+project-url: Documentation, https://click-option-group.readthedocs.io
+project-url: Issues, https://github.com/click-contrib/click-option-group/issues
+provides-extra: dev
+provides-extra: docs
+provides-extra: test
+provides-extra: test-cov
+

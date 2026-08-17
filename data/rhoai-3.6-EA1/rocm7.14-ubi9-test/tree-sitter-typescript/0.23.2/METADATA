@@ -1,0 +1,19 @@
+metadata-version: 2.4
+name: tree-sitter-typescript
+version: 0.23.2
+dynamic: license-file
+summary: TypeScript and TSX grammars for tree-sitter
+keywords: incremental,parsing,tree-sitter,typescript,tsx
+author-email: Max Brunsfeld <maxbrunsfeld@gmail.com>, Amaan Qureshi <amaanq12@gmail.com>
+license: MIT
+license-file: LICENSE
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Topic :: Software Development :: Compilers
+classifier: Topic :: Text Processing :: Linguistic
+classifier: Typing :: Typed
+requires-dist: tree-sitter~=0.23; extra == "core"
+requires-python: >=3.9
+project-url: Homepage, https://github.com/tree-sitter/tree-sitter-typescript
+provides-extra: core
+

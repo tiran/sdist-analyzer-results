@@ -1,0 +1,36 @@
+metadata-version: 2.5
+name: langchain-core
+version: 1.5.4
+summary: Building applications with LLMs through composability
+license: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: jsonpatch<2.0.0,>=1.33.0
+requires-dist: langchain-protocol>=0.0.17
+requires-dist: langsmith<1.0.0,>=0.3.45
+requires-dist: packaging>=23.2.0
+requires-dist: pydantic<3.0.0,>=2.7.4
+requires-dist: pyyaml<7.0.0,>=5.3.0
+requires-dist: tenacity!=8.4.0,<10.0.0,>=8.1.0
+requires-dist: typing-extensions<5.0.0,>=4.7.0
+requires-dist: uuid-utils<1.0,>=0.12.0
+requires-python: <4.0.0,>=3.10.0
+project-url: Homepage, https://docs.langchain.com/
+project-url: Documentation, https://reference.langchain.com/python/langchain_core/
+project-url: Repository, https://github.com/langchain-ai/langchain
+project-url: Issues, https://github.com/langchain-ai/langchain/issues
+project-url: Changelog, https://github.com/langchain-ai/langchain/releases?q=%22langchain-core%3D%3D1%22
+project-url: Twitter, https://x.com/langchain_oss
+project-url: Slack, https://www.langchain.com/join-community
+project-url: Reddit, https://www.reddit.com/r/LangChain/
+

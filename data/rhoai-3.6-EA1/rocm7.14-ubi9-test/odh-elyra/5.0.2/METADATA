@@ -1,0 +1,82 @@
+metadata-version: 2.5
+name: odh-elyra
+version: 5.0.2
+summary: Elyra provides AI Centric extensions to JupyterLab
+maintainer: ODH IDE Maintainers
+license-file: LICENSE
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Topic :: Scientific/Engineering
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+classifier: Topic :: Software Development
+classifier: Topic :: Software Development :: Libraries
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: autopep8>=1.5.0
+requires-dist: black>=22.8.0
+requires-dist: click>=8.4.0
+requires-dist: colorama
+requires-dist: deprecation
+requires-dist: entrypoints>=0.3
+requires-dist: jinja2>=3
+requires-dist: jsonschema>=3.2.0
+requires-dist: jupyter-client>=6.1.7
+requires-dist: jupyter-core>=4.11.0
+requires-dist: jupyter-events>=0.6.2
+requires-dist: jupyter-packaging>=0.10
+requires-dist: jupyter-resource-usage~=1.2.1
+requires-dist: jupyter-server>=1.7.0
+requires-dist: jupyterlab-git~=0.54.0
+requires-dist: jupyterlab-lsp~=5.1.0
+requires-dist: jupyterlab~=4.5.0
+requires-dist: kfp-kubernetes>=1.0.0
+requires-dist: kfp>=2.0.0
+requires-dist: markupsafe>=2.1
+requires-dist: minio!=7.2.1,>=7.0.0
+requires-dist: nbclient>=0.10.0
+requires-dist: nbconvert>=6.5.1
+requires-dist: nbdime~=4.0.1
+requires-dist: nbformat>=5.1.2
+requires-dist: networkx>=2.5.1
+requires-dist: papermill>=2.3.4
+requires-dist: pygithub
+requires-dist: python-lsp-server[all]>=1.11.0
+requires-dist: pyyaml>=5.3.1
+requires-dist: requests>=2.31
+requires-dist: rfc3986-validator>=0.1.1
+requires-dist: tornado>=6.1.0
+requires-dist: traitlets>=4.3.2
+requires-dist: typing-extensions<5,>=3.10
+requires-dist: urllib3>=2.6.0
+requires-dist: watchdog>=2.1.3
+requires-dist: websocket-client
+requires-dist: yaspin
+requires-dist: elyra-examples-kfp-catalog; extra == "all"
+requires-dist: python-gitlab; extra == "all"
+requires-dist: flake8-import-order>=0.18.1; extra == "dev"
+requires-dist: flake8-pyproject>=1.2.4; extra == "dev"
+requires-dist: flake8<7.2.0,>=3.5.0; extra == "dev"
+requires-dist: python-gitlab; extra == "gitlab"
+requires-dist: elyra-examples-kfp-catalog; extra == "kfp-examples"
+requires-dist: elyra-examples-kfp-catalog; extra == "test"
+requires-dist: git-python; extra == "test"
+requires-dist: importlib-resources; extra == "test"
+requires-dist: pytest-console-scripts; extra == "test"
+requires-dist: pytest-cov; extra == "test"
+requires-dist: pytest-jupyter; extra == "test"
+requires-dist: pytest-tornasync; extra == "test"
+requires-dist: pytest-virtualenv; extra == "test"
+requires-dist: pytest>=5.4.1; extra == "test"
+requires-dist: requests-mock; extra == "test"
+requires-dist: requests-unixsocket; extra == "test"
+requires-python: >=3.11
+project-url: Documentation, https://elyra.readthedocs.io/en/latest
+project-url: Homepage, https://github.com/opendatahub-io/elyra
+provides-extra: all
+provides-extra: dev
+provides-extra: gitlab
+provides-extra: kfp-examples
+provides-extra: test
+

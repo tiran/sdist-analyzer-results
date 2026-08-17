@@ -1,0 +1,40 @@
+metadata-version: 2.4
+name: charset-normalizer
+version: 3.5.0
+dynamic: license-file
+summary: The Real First Universal Charset Detector. Open, modern and actively maintained alternative to Chardet.
+keywords: encoding,charset,charset-detector,detector,normalization,unicode,chardet,detect
+author-email: "Ahmed R. TAHRI" <tahri.ahmed@proton.me>
+maintainer-email: "Ahmed R. TAHRI" <tahri.ahmed@proton.me>
+license: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: 3.15
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Programming Language :: Python :: Free Threading :: 4 - Resilient
+classifier: Environment :: WebAssembly
+classifier: Environment :: WebAssembly :: Emscripten
+classifier: Topic :: Text Processing :: Linguistic
+classifier: Topic :: Utilities
+classifier: Typing :: Typed
+requires-python: >=3.7
+project-url: Changelog, https://github.com/jawah/charset_normalizer/blob/master/CHANGELOG.md
+project-url: Documentation, https://charset-normalizer.readthedocs.io/
+project-url: Code, https://github.com/jawah/charset_normalizer
+project-url: Issue tracker, https://github.com/jawah/charset_normalizer/issues
+provides-extra: unicode-backport
+

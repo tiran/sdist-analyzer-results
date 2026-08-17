@@ -1,2 +1,0 @@
-uv-dynamic-versioning>=0.7.0
-hatchling

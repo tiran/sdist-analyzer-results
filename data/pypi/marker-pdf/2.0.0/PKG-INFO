@@ -1,0 +1,38 @@
+metadata-version: 2.4
+name: marker-pdf
+version: 2.0.0
+summary: Convert documents to markdown with high speed and accuracy.
+keywords: markdown,nlp,ocr,pdf
+author-email: Vik Paruchuri <github@vikas.sh>
+license: Apache-2.0
+license-file: LICENSE
+requires-dist: anthropic<1,>=0.69.0
+requires-dist: click<9,>=8.2.0
+requires-dist: filetype<2,>=1.2.0
+requires-dist: ftfy<7,>=6.1.1
+requires-dist: google-genai<3,>=1.40.0
+requires-dist: markdown2<3,>=2.5.2
+requires-dist: markdownify<2,>=1.1.0
+requires-dist: openai<3,>=2.2.0
+requires-dist: pdftext<0.8.0,>=0.7.0
+requires-dist: pillow<11,>=10.1.0
+requires-dist: psutil<8,>=7.0.0
+requires-dist: pydantic-settings<3,>=2.0.3
+requires-dist: pydantic<3,>=2.4.2
+requires-dist: python-dotenv<2,>=1.0.0
+requires-dist: rapidfuzz<4,>=3.8.1
+requires-dist: regex>=2024.4.28
+requires-dist: scikit-learn<2,>=1.6.1
+requires-dist: surya-ocr<0.23.0,>=0.22.1
+requires-dist: torch<3,>=2.7.0
+requires-dist: tqdm<5,>=4.66.1
+requires-dist: transformers<6,>=5.12.1
+requires-dist: ebooklib<0.19,>=0.18; extra == "full"
+requires-dist: mammoth<2,>=1.9.0; extra == "full"
+requires-dist: openpyxl<4,>=3.1.5; extra == "full"
+requires-dist: python-pptx<2,>=1.0.2; extra == "full"
+requires-dist: weasyprint<64,>=63.1; extra == "full"
+requires-python: <4,>=3.10
+project-url: Repository, https://github.com/datalab-to/marker
+provides-extra: full
+

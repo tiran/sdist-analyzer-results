@@ -1,0 +1,85 @@
+metadata-version: 2.4
+name: posthog
+version: 7.38.6
+dynamic: author
+dynamic: home-page
+dynamic: license-file
+dynamic: maintainer
+summary: Integrate PostHog into any python application.
+home-page: https://github.com/posthog/posthog-python
+author: Posthog
+author-email: PostHog <engineering@posthog.com>
+maintainer: PostHog
+maintainer-email: PostHog <engineering@posthog.com>
+license-expression: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-dist: requests<3.0,>=2.7
+requires-dist: backoff>=1.10.0
+requires-dist: distro>=1.5.0
+requires-dist: typing-extensions>=4.2.0
+requires-dist: langchain>=1.3.9; extra == "langchain"
+requires-dist: zstandard>=0.23.0; extra == "zstd"
+requires-dist: opentelemetry-sdk>=1.20.0; extra == "otel"
+requires-dist: opentelemetry-exporter-otlp-proto-http>=1.20.0; extra == "otel"
+requires-dist: django-stubs; extra == "dev"
+requires-dist: griffe; extra == "dev"
+requires-dist: lxml; extra == "dev"
+requires-dist: mypy; extra == "dev"
+requires-dist: mypy-baseline; extra == "dev"
+requires-dist: types-requests; extra == "dev"
+requires-dist: types-setuptools; extra == "dev"
+requires-dist: pre-commit; extra == "dev"
+requires-dist: pydantic>=2.12.0; extra == "dev"
+requires-dist: ruff; extra == "dev"
+requires-dist: setuptools; extra == "dev"
+requires-dist: packaging; extra == "dev"
+requires-dist: wheel; extra == "dev"
+requires-dist: twine; extra == "dev"
+requires-dist: tomli; extra == "dev"
+requires-dist: tomli_w; extra == "dev"
+requires-dist: freezegun==1.5.1; extra == "test"
+requires-dist: python-dateutil>=2.9.0.post0; extra == "test"
+requires-dist: tzdata; extra == "test"
+requires-dist: coverage; extra == "test"
+requires-dist: pytest; extra == "test"
+requires-dist: pytest-timeout; extra == "test"
+requires-dist: pytest-asyncio; extra == "test"
+requires-dist: django<6.0,>=5.2.15; extra == "test"
+requires-dist: openai-agents>=0.18; extra == "test"
+requires-dist: anthropic>=0.72; extra == "test"
+requires-dist: langgraph>=1.0; extra == "test"
+requires-dist: langgraph-checkpoint>=4.1.1; extra == "test"
+requires-dist: tiktoken>=0.12.0; extra == "test"
+requires-dist: langchain-core>=1.0; extra == "test"
+requires-dist: langchain-community>=0.4; extra == "test"
+requires-dist: langchain-openai>=1.1.14; extra == "test"
+requires-dist: langchain-anthropic>=1.0; extra == "test"
+requires-dist: google-genai; extra == "test"
+requires-dist: pydantic>=2.12.0; extra == "test"
+requires-dist: parameterized>=0.8.1; extra == "test"
+requires-dist: claude-agent-sdk; extra == "test"
+requires-dist: mcp<2,>=1.28.1; extra == "test"
+requires-dist: fastmcp>=2.0; extra == "test"
+requires-dist: opentelemetry-sdk>=1.20.0; extra == "test"
+requires-dist: opentelemetry-exporter-otlp-proto-http>=1.20.0; extra == "test"
+requires-dist: pytest-bdd>=8.1.0; extra == "test"
+requires-dist: zstandard>=0.23.0; extra == "test"
+requires-dist: gevent>=25.4.1; implementation_name == "cpython" and extra == "test"
+requires-python: >=3.10
+project-url: Homepage, https://github.com/posthog/posthog-python
+project-url: Repository, https://github.com/posthog/posthog-python
+provides-extra: langchain
+provides-extra: zstd
+provides-extra: otel
+provides-extra: dev
+provides-extra: test
+

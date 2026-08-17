@@ -1,2 +1,2 @@
-pkgconfig
 setuptools>=67.0
+pkgconfig

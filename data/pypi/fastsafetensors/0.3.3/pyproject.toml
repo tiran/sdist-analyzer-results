@@ -1,0 +1,55 @@
+[project]
+name = "fastsafetensors"
+version = "0.3.3"
+description = "High-performance safetensors model loader"
+authors = [{name = "Takeshi Yoshimura", email = "tyos@jp.ibm.com"}]
+maintainers = [{name = "Takeshi Yoshimura", email = "tyos@jp.ibm.com"}]
+readme = "README.md"
+license = {text = "Apache-2.0"}
+keywords = ["fastsafetensors", "safetensors", "GDS"]
+requires-python = ">= 3.10, < 3.15"
+classifiers = [
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+]
+dependencies = [
+    "typer>=0.9.0",
+]
+
+[project.optional-dependencies]
+progress = [
+    "tqdm>=4.66.3",
+]
+test = [
+    "torch>=2.10.0",
+    "pytest>=9.0.3",
+    "pytest-cov>=5.0.0",
+    "transformers>=5.0.0",
+    "safetensors>=0.4.0"
+]
+dev = [
+    "pre-commit>=3.6.0",
+    "black==26.3.1",
+    "isort==6.1.0",
+    "flake8==7.3.0",
+    "mypy==1.19.1"
+]
+threefs = [
+    "fastsafetensor-3fs-reader>=0.3.3",
+]
+
+[project.urls]
+Repository = "https://github.com/foundation-model-stack/fastsafetensors"
+
+[tool.pytest.ini_options]
+filterwarnings = ["ignore:Can't initialize NVML"]
+
+[build-system]
+requires = ["setuptools>=78.1.1", "pybind11"]
+build-backend = "setuptools.build_meta"
+
+[tool.isort]
+profile = "black"

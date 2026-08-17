@@ -1,0 +1,51 @@
+metadata-version: 2.4
+name: numpy
+version: 2.5.2
+summary: Fundamental package for array computing in Python
+author: Travis E. Oliphant et al.
+maintainer-email: NumPy Developers <numpy-discussion@python.org>
+license-expression: BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0
+license-file: LICENSE.txt
+license-file: numpy/_core/include/numpy/libdivide/LICENSE.txt
+license-file: numpy/_core/src/common/pythoncapi-compat/COPYING
+license-file: numpy/_core/src/highway/LICENSE
+license-file: numpy/_core/src/multiarray/dragon4_LICENSE.txt
+license-file: numpy/_core/src/npysort/x86-simd-sort/LICENSE.md
+license-file: numpy/_core/src/umath/svml/LICENSE
+license-file: numpy/fft/pocketfft/LICENSE.md
+license-file: numpy/linalg/lapack_lite/LICENSE.txt
+license-file: numpy/ma/LICENSE
+license-file: numpy/random/LICENSE.md
+license-file: numpy/random/src/distributions/LICENSE.md
+license-file: numpy/random/src/mt19937/LICENSE.md
+license-file: numpy/random/src/pcg64/LICENSE.md
+license-file: numpy/random/src/philox/LICENSE.md
+license-file: numpy/random/src/sfc64/LICENSE.md
+license-file: numpy/random/src/splitmix64/LICENSE.md
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Science/Research
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: C
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: 3.15
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Topic :: Software Development
+classifier: Topic :: Scientific/Engineering
+classifier: Typing :: Typed
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: POSIX
+classifier: Operating System :: Unix
+classifier: Operating System :: MacOS
+requires-python: >=3.12
+project-url: homepage, https://numpy.org
+project-url: documentation, https://numpy.org/doc/
+project-url: source, https://github.com/numpy/numpy
+project-url: download, https://pypi.org/project/numpy/#files
+project-url: tracker, https://github.com/numpy/numpy/issues
+project-url: release notes, https://numpy.org/doc/stable/release
+

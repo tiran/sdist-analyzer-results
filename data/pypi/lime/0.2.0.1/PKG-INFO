@@ -1,12 +1,12 @@
-Metadata-Version: 2.1
-Name: lime
-Version: 0.2.0.1
-Summary: Local Interpretable Model-Agnostic Explanations for machine learning classifiers
-Home-page: http://github.com/marcotcr/lime
-Author: Marco Tulio Ribeiro
-Author-email: marcotcr@gmail.com
-License: BSD
-Description: UNKNOWN
-Platform: UNKNOWN
-Requires-Python: >=3.5
-Provides-Extra: dev
+metadata-version: 2.1
+name: lime
+version: 0.2.0.1
+platform: UNKNOWN
+summary: Local Interpretable Model-Agnostic Explanations for machine learning classifiers
+home-page: http://github.com/marcotcr/lime
+author: Marco Tulio Ribeiro
+author-email: marcotcr@gmail.com
+license: BSD
+requires-python: >=3.5
+provides-extra: dev
+

@@ -1,0 +1,5 @@
+cmake
+torch
+setuptools
+ninja
+wheel

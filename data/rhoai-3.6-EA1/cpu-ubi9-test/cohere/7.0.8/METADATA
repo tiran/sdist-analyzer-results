@@ -1,0 +1,39 @@
+metadata-version: 2.4
+name: cohere
+version: 7.0.8
+summary: 
+license: MIT
+license-file: LICENSE
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: MacOS
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: OS Independent
+classifier: Operating System :: POSIX
+classifier: Operating System :: POSIX :: Linux
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: 3.15
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Typing :: Typed
+requires-dist: aiohttp<4,>=3.14.1; python_version >= "3.10" and extra == "aiohttp"
+requires-dist: fastavro<2.0.0,>=1.9.4
+requires-dist: httpx>=0.25.0
+requires-dist: httpx-aiohttp<0.2.0,>=0.1.8; python_version >= "3.10" and extra == "aiohttp"
+requires-dist: oci<3.0.0,>=2.165.0; extra == "oci"
+requires-dist: pydantic>=1.9.2
+requires-dist: pydantic-core<3.0.0,>=2.18.2
+requires-dist: requests<3.0.0,>=2.0.0
+requires-dist: tokenizers<1,>=0.15
+requires-dist: types-requests<3.0.0,>=2.0.0
+requires-dist: typing_extensions>=4.0.0
+requires-python: <4.0,>=3.10
+project-url: Repository, https://github.com/cohere-ai/cohere-python
+provides-extra: aiohttp
+provides-extra: oci
+

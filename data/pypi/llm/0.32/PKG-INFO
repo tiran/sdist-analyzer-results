@@ -1,0 +1,41 @@
+metadata-version: 2.4
+name: llm
+version: 0.32
+dynamic: license-file
+summary: CLI utility and Python library for interacting with Large Language Models from organizations like OpenAI, Anthropic and Gemini plus local models installed on your own machine.
+author: Simon Willison
+license-expression: Apache-2.0
+license-file: LICENSE
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: End Users/Desktop
+classifier: Intended Audience :: Science/Research
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+classifier: Topic :: Text Processing :: Linguistic
+classifier: Topic :: Utilities
+requires-dist: click
+requires-dist: condense-json>=1.1
+requires-dist: openai>=2.32.0
+requires-dist: click-default-group>=1.2.3
+requires-dist: sqlite-utils>=4.0
+requires-dist: pydantic>=2.0.0
+requires-dist: PyYAML
+requires-dist: pluggy
+requires-dist: python-ulid
+requires-dist: setuptools
+requires-dist: pip
+requires-dist: pyreadline3; sys_platform == "win32"
+requires-dist: puremagic
+requires-python: >=3.10
+project-url: Homepage, https://github.com/simonw/llm
+project-url: Documentation, https://llm.datasette.io/
+project-url: Issues, https://github.com/simonw/llm/issues
+project-url: CI, https://github.com/simonw/llm/actions
+project-url: Changelog, https://github.com/simonw/llm/releases
+

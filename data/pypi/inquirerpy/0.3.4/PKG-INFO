@@ -1,0 +1,38 @@
+metadata-version: 2.1
+name: inquirerpy
+version: 0.3.4
+summary: Python port of Inquirer.js (A collection of common interactive command-line user interfaces)
+keywords: cli,prompt-toolkit,commandline,inquirer,development
+home-page: https://github.com/kazhala/InquirerPy
+author: Kevin Zhuang
+author-email: kevin7441@gmail.com
+maintainer: Kevin Zhuang
+maintainer-email: kevin7441@gmail.com
+license: MIT
+classifier: Development Status :: 2 - Pre-Alpha
+classifier: Environment :: Console
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: Microsoft
+classifier: Operating System :: Unix
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Topic :: Software Development
+classifier: Topic :: Software Development :: Libraries
+classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+classifier: Topic :: Software Development :: User Interfaces
+requires-dist: Sphinx<5.0.0,>=4.1.2; extra == "docs"
+requires-dist: furo<2022.0.0,>=2021.8.17-beta.43; extra == "docs"
+requires-dist: myst-parser<0.16.0,>=0.15.1; extra == "docs"
+requires-dist: pfzy<0.4.0,>=0.3.1
+requires-dist: prompt-toolkit<4.0.0,>=3.0.1
+requires-dist: sphinx-autobuild<2022.0.0,>=2021.3.14; extra == "docs"
+requires-dist: sphinx-copybutton<0.5.0,>=0.4.0; extra == "docs"
+requires-python: <4.0,>=3.7
+project-url: Documentation, https://inquirerpy.readthedocs.io
+project-url: Repository, https://github.com/kazhala/InquirerPy
+provides-extra: docs
+

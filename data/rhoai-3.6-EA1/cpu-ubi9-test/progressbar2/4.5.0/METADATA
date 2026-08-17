@@ -1,0 +1,82 @@
+metadata-version: 2.4
+name: progressbar2
+version: 4.5.0
+dynamic: license-file
+summary: A Python Progressbar library to provide visual (yet text based) progress to long running operations.
+keywords: REPL,animated,bar,color,console,duration,efficient,elapsed,eta,feedback,live,meter,monitor,monitoring,multi-threaded,progress,progress-bar,progressbar,progressmeter,python,rate,simple,speed,spinner,stats,terminal,throughput,time,visual
+author-email: "Rick van Hattem (Wolph)" <wolph@wol.ph>
+license: BSD-3-Clause
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Development Status :: 6 - Mature
+classifier: Environment :: Console
+classifier: Environment :: MacOS X
+classifier: Environment :: Other Environment
+classifier: Environment :: Win32 (MS Windows)
+classifier: Environment :: X11 Applications
+classifier: Framework :: IPython
+classifier: Framework :: Jupyter
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Education
+classifier: Intended Audience :: End Users/Desktop
+classifier: Intended Audience :: Other Audience
+classifier: Intended Audience :: System Administrators
+classifier: License :: OSI Approved :: BSD License
+classifier: Natural Language :: English
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Operating System :: MacOS
+classifier: Operating System :: Microsoft :: MS-DOS
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: Microsoft
+classifier: Operating System :: POSIX :: BSD :: FreeBSD
+classifier: Operating System :: POSIX :: BSD
+classifier: Operating System :: POSIX :: Linux
+classifier: Operating System :: POSIX :: SunOS/Solaris
+classifier: Operating System :: POSIX
+classifier: Operating System :: Unix
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: Implementation :: IronPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Programming Language :: Python :: Implementation
+classifier: Programming Language :: Python
+classifier: Programming Language :: Unix Shell
+classifier: Topic :: Desktop Environment
+classifier: Topic :: Education :: Computer Aided Instruction (CAI)
+classifier: Topic :: Education :: Testing
+classifier: Topic :: Office/Business
+classifier: Topic :: Other/Nonlisted Topic
+classifier: Topic :: Software Development :: Build Tools
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: Software Development :: Libraries
+classifier: Topic :: Software Development :: Pre-processors
+classifier: Topic :: Software Development :: User Interfaces
+classifier: Topic :: System :: Installation/Setup
+classifier: Topic :: System :: Logging
+classifier: Topic :: System :: Monitoring
+classifier: Topic :: System :: Shells
+classifier: Topic :: Terminals
+classifier: Topic :: Utilities
+requires-dist: python-utils>=3.8.1
+requires-dist: sphinx>=1.8.5; extra == "docs"
+requires-dist: sphinx-autodoc-typehints>=1.6.0; extra == "docs"
+requires-dist: dill>=0.3.6; extra == "tests"
+requires-dist: flake8>=3.7.7; extra == "tests"
+requires-dist: freezegun>=0.3.11; extra == "tests"
+requires-dist: pytest-cov>=2.6.1; extra == "tests"
+requires-dist: pytest-mypy; extra == "tests"
+requires-dist: pytest>=4.6.9; extra == "tests"
+requires-dist: sphinx>=1.8.5; extra == "tests"
+requires-dist: pywin32; sys_platform == "win32" and extra == "tests"
+requires-python: >=3.8
+project-url: bugs, https://github.com/wolph/python-progressbar/issues
+project-url: documentation, https://progressbar-2.readthedocs.io/en/latest/
+project-url: repository, https://github.com/wolph/python-progressbar/
+provides-extra: docs
+provides-extra: tests
+

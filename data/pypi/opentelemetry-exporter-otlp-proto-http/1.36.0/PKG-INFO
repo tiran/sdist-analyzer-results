@@ -1,55 +1,29 @@
-Metadata-Version: 2.4
-Name: opentelemetry-exporter-otlp-proto-http
-Version: 1.36.0
-Summary: OpenTelemetry Collector Protobuf over HTTP Exporter
-Project-URL: Homepage, https://github.com/open-telemetry/opentelemetry-python/tree/main/exporter/opentelemetry-exporter-otlp-proto-http
-Project-URL: Repository, https://github.com/open-telemetry/opentelemetry-python
-Author-email: OpenTelemetry Authors <cncf-opentelemetry-contributors@lists.cncf.io>
-License-Expression: Apache-2.0
-License-File: LICENSE
-Classifier: Development Status :: 5 - Production/Stable
-Classifier: Framework :: OpenTelemetry
-Classifier: Framework :: OpenTelemetry :: Exporters
-Classifier: Intended Audience :: Developers
-Classifier: Programming Language :: Python
-Classifier: Programming Language :: Python :: 3
-Classifier: Programming Language :: Python :: 3.9
-Classifier: Programming Language :: Python :: 3.10
-Classifier: Programming Language :: Python :: 3.11
-Classifier: Programming Language :: Python :: 3.12
-Classifier: Programming Language :: Python :: 3.13
-Requires-Python: >=3.9
-Requires-Dist: googleapis-common-protos~=1.52
-Requires-Dist: opentelemetry-api~=1.15
-Requires-Dist: opentelemetry-exporter-otlp-proto-common==1.36.0
-Requires-Dist: opentelemetry-proto==1.36.0
-Requires-Dist: opentelemetry-sdk~=1.36.0
-Requires-Dist: requests~=2.7
-Requires-Dist: typing-extensions>=4.5.0
-Description-Content-Type: text/x-rst
+metadata-version: 2.4
+name: opentelemetry-exporter-otlp-proto-http
+version: 1.36.0
+summary: OpenTelemetry Collector Protobuf over HTTP Exporter
+author-email: OpenTelemetry Authors <cncf-opentelemetry-contributors@lists.cncf.io>
+license-expression: Apache-2.0
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Framework :: OpenTelemetry
+classifier: Framework :: OpenTelemetry :: Exporters
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+requires-dist: googleapis-common-protos~=1.52
+requires-dist: opentelemetry-api~=1.15
+requires-dist: opentelemetry-exporter-otlp-proto-common==1.36.0
+requires-dist: opentelemetry-proto==1.36.0
+requires-dist: opentelemetry-sdk~=1.36.0
+requires-dist: requests~=2.7
+requires-dist: typing-extensions>=4.5.0
+requires-python: >=3.9
+project-url: Homepage, https://github.com/open-telemetry/opentelemetry-python/tree/main/exporter/opentelemetry-exporter-otlp-proto-http
+project-url: Repository, https://github.com/open-telemetry/opentelemetry-python
 
-OpenTelemetry Collector Protobuf over HTTP Exporter
-===================================================
-
-|pypi|
-
-.. |pypi| image:: https://badge.fury.io/py/opentelemetry-exporter-otlp-proto-http.svg
-   :target: https://pypi.org/project/opentelemetry-exporter-otlp-proto-http/
-
-This library allows to export data to the OpenTelemetry Collector using the OpenTelemetry Protocol using Protobuf over HTTP.
-
-Installation
-------------
-
-::
-
-     pip install opentelemetry-exporter-otlp-proto-http
-
-
-References
-----------
-
-* `OpenTelemetry Collector Exporter <https://opentelemetry-python.readthedocs.io/en/latest/exporter/otlp/otlp.html>`_
-* `OpenTelemetry Collector <https://github.com/open-telemetry/opentelemetry-collector/>`_
-* `OpenTelemetry <https://opentelemetry.io/>`_
-* `OpenTelemetry Protocol Specification <https://github.com/open-telemetry/oteps/blob/main/text/0035-opentelemetry-protocol.md>`_

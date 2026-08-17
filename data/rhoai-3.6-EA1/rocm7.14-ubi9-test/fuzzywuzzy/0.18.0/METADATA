@@ -1,0 +1,29 @@
+metadata-version: 2.4
+name: fuzzywuzzy
+version: 0.18.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: provides-extra
+dynamic: summary
+summary: Fuzzy string matching in python
+home-page: https://github.com/seatgeek/fuzzywuzzy
+author: Adam Cohen
+author-email: adam@seatgeek.com
+license: GPLv2
+license-file: LICENSE.txt
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 2.7
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.4
+classifier: Programming Language :: Python :: 3.5
+classifier: Programming Language :: Python :: 3.6
+requires-dist: python-levenshtein>=0.12; extra == "speedup"
+provides-extra: speedup
+

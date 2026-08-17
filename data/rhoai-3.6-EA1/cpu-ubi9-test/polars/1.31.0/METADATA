@@ -1,0 +1,82 @@
+metadata-version: 2.4
+name: polars
+version: 1.31.0
+summary: Blazingly fast DataFrame library
+keywords: dataframe,arrow,out-of-core
+author-email: Ritchie Vink <ritchie46@gmail.com>
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Rust
+classifier: Topic :: Scientific/Engineering
+classifier: Typing :: Typed
+requires-dist: adbc-driver-manager[dbapi]; extra == "adbc"
+requires-dist: adbc-driver-sqlite[dbapi]; extra == "adbc"
+requires-dist: polars[async,cloudpickle,database,deltalake,excel,fsspec,graph,iceberg,numpy,pandas,plot,pyarrow,pydantic,style,timezone]; extra == "all"
+requires-dist: gevent; extra == "async"
+requires-dist: fastexcel>=0.9; extra == "calamine"
+requires-dist: cloudpickle; extra == "cloudpickle"
+requires-dist: connectorx>=0.3.2; extra == "connectorx"
+requires-dist: polars[adbc,connectorx,sqlalchemy]; extra == "database"
+requires-dist: deltalake>=1.0.0; extra == "deltalake"
+requires-dist: polars[calamine,openpyxl,xlsx2csv,xlsxwriter]; extra == "excel"
+requires-dist: fsspec; extra == "fsspec"
+requires-dist: cudf-polars-cu12; extra == "gpu"
+requires-dist: matplotlib; extra == "graph"
+requires-dist: pyiceberg>=0.7.1; extra == "iceberg"
+requires-dist: numpy>=1.16.0; extra == "numpy"
+requires-dist: openpyxl>=3.0.0; extra == "openpyxl"
+requires-dist: pandas; extra == "pandas"
+requires-dist: polars[pyarrow]; extra == "pandas"
+requires-dist: altair>=5.4.0; extra == "plot"
+requires-dist: polars-cloud>=0.0.1a1; extra == "polars-cloud"
+requires-dist: pyarrow>=7.0.0; extra == "pyarrow"
+requires-dist: pydantic; extra == "pydantic"
+requires-dist: sqlalchemy; extra == "sqlalchemy"
+requires-dist: polars[pandas]; extra == "sqlalchemy"
+requires-dist: great-tables>=0.8.0; extra == "style"
+requires-dist: tzdata; platform_system == "Windows" and extra == "timezone"
+requires-dist: xlsx2csv>=0.8.0; extra == "xlsx2csv"
+requires-dist: xlsxwriter; extra == "xlsxwriter"
+requires-python: >=3.9
+project-url: Changelog, https://github.com/pola-rs/polars/releases
+project-url: Documentation, https://docs.pola.rs/api/python/stable/reference/index.html
+project-url: Homepage, https://www.pola.rs/
+project-url: Repository, https://github.com/pola-rs/polars
+provides-extra: adbc
+provides-extra: all
+provides-extra: async
+provides-extra: calamine
+provides-extra: cloudpickle
+provides-extra: connectorx
+provides-extra: database
+provides-extra: deltalake
+provides-extra: excel
+provides-extra: fsspec
+provides-extra: gpu
+provides-extra: graph
+provides-extra: iceberg
+provides-extra: numpy
+provides-extra: openpyxl
+provides-extra: pandas
+provides-extra: plot
+provides-extra: polars-cloud
+provides-extra: pyarrow
+provides-extra: pydantic
+provides-extra: sqlalchemy
+provides-extra: style
+provides-extra: timezone
+provides-extra: xlsx2csv
+provides-extra: xlsxwriter
+

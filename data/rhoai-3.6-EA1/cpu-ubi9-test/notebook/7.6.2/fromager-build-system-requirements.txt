@@ -1,0 +1,3 @@
+jupyter-builder<2,>=1.0.2
+hatchling>=1.11
+hatch-jupyter-builder>=0.5

@@ -1,0 +1,34 @@
+metadata-version: 2.5
+name: pypi-simple
+version: 1.8.0
+summary: PyPI Simple Repository API client library
+keywords: packages,pep503,pip,pypi,simple repository api
+author-email: John Thorvald Wodder II <pypi-simple@varonathe.org>
+license-expression: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: System :: Software Distribution
+classifier: Topic :: Text Processing :: Markup :: HTML
+classifier: Typing :: Typed
+requires-dist: beautifulsoup4~=4.5
+requires-dist: mailbits~=0.2
+requires-dist: packaging>=20
+requires-dist: pydantic~=2.0
+requires-dist: requests~=2.20
+requires-dist: tqdm; extra == "tqdm"
+requires-python: >=3.8
+project-url: Source Code, https://github.com/jwodder/pypi-simple
+project-url: Bug Tracker, https://github.com/jwodder/pypi-simple/issues
+provides-extra: tqdm
+

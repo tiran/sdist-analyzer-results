@@ -1,0 +1,36 @@
+metadata-version: 2.4
+name: ldap3
+version: 2.9.1
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: requires-dist
+dynamic: summary
+summary: A strictly RFC 4510 conforming LDAP V3 pure Python client library
+keywords: python3 python2 ldap
+home-page: https://github.com/cannatag/ldap3
+author: Giovanni Cannata
+author-email: cannatag@gmail.com
+license: LGPL v3
+license-file: LICENSE.txt
+license-file: COPYING.LESSER.txt
+license-file: COPYING.txt
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: System Administrators
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: POSIX :: Linux
+classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 2
+classifier: Programming Language :: Python :: 3
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: System :: Systems Administration :: Authentication/Directory :: LDAP
+requires-dist: pyasn1>=0.4.6
+

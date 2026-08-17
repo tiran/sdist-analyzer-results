@@ -1,76 +1,15 @@
-Metadata-Version: 2.4
-Name: alchemy-config
-Version: 1.2.0
-Summary: Configuration framework in Python for general configuration use.
-Project-URL: Homepage, https://github.com/IBM/alchemy-config
-Author-email: Gabe Goodhart <ghart@us.ibm.com>
-License-Expression: MIT
-License-File: LICENSE
-Keywords: config
-Requires-Python: >=3.9
-Requires-Dist: pyyaml>=5.3.1
-Provides-Extra: test
-Requires-Dist: pytest-cov>=2.9.0; extra == 'test'
-Requires-Dist: pytest>=5.3.2; extra == 'test'
-Description-Content-Type: text/markdown
+metadata-version: 2.4
+name: alchemy-config
+version: 1.2.0
+summary: Configuration framework in Python for general configuration use.
+keywords: config
+author-email: Gabe Goodhart <ghart@us.ibm.com>
+license-expression: MIT
+license-file: LICENSE
+requires-dist: pyyaml>=5.3.1
+requires-dist: pytest-cov>=2.9.0; extra == "test"
+requires-dist: pytest>=5.3.2; extra == "test"
+requires-python: >=3.9
+project-url: Homepage, https://github.com/IBM/alchemy-config
+provides-extra: test
 
-# Alchemy Config
-The `aconfig` library provides simple `yaml` configuration in `python` with environment-based overrides.
-
-## Library advantages
-1. Easily reads environment variables with error handling, e.g. for absence of variables or boolean capitalization
-1. Allows users to easily access and traverse nested configuration without checking for key presence on every access
-1. Automatically handles overriding logic - environment variables take precedence over local configuration files
-
-## Installation
-
-To install, simply use `pip`
-
-```sh
-pip install alchemy-config
-```
-
-## Quick Start
-
-**config.yaml**
-```yaml
-foo: 1
-bar:
-    baz: "bat"
-```
-
-**main.py**
-```py
-import aconfig
-
-if __name__ == "__main__":
-    config = aconfig.Config.from_yaml("config.yaml")
-    print(config.foo)
-    print(config.bar.baz)
-```
-
-```sh
-export BAR_BAZ="buz"
-python3 main.py
-```
-
-## Corner-case Behavior
-
-You CAN set builtin method names as attributes on the `config`. However, you should only access/delete them via dictionary access methods.
-
-For example:
-
-```py
-import aconfig
-cfg = {"update": True}
-
-config = aconfig.Config(cfg)
-
-# DO NOT DO THIS:
-config.update
-
-# DO THIS INSTEAD:
-config["update"]
-```
-
-This is because there is no way in Python to tell whether you want the method or the attribute `"update"` when "getting" it from the object.

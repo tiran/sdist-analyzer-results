@@ -1,0 +1,5 @@
+trove-classifiers
+pathspec>=0.10.1
+pluggy>=1.0.0
+packaging>=24.2
+tomlkit>=0.11.1

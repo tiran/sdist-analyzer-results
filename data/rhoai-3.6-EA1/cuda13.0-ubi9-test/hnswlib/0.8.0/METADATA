@@ -1,0 +1,15 @@
+metadata-version: 2.4
+name: hnswlib
+version: 0.8.0
+dynamic: author
+dynamic: description
+dynamic: home-page
+dynamic: license-file
+dynamic: requires-dist
+dynamic: summary
+summary: hnswlib
+home-page: https://github.com/yurymalkov/hnsw
+author: Yury Malkov and others
+license-file: LICENSE
+requires-dist: numpy
+

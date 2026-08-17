@@ -1,0 +1,29 @@
+metadata-version: 2.4
+name: methodtools
+version: 0.4.7
+dynamic: license-file
+summary: Expand standard functools to methods
+keywords: ring,functools,lru_cache,method
+home-page: https://github.com/youknowone/methodtools
+author: Jeong YunWon
+author-email: methodtools@youknowone.org
+license: BSD 2-Clause License
+license-file: LICENSE
+classifier: License :: OSI Approved :: BSD License
+classifier: Programming Language :: Python :: 2
+classifier: Programming Language :: Python :: 2.7
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+requires-dist: wirerope>=0.4.7
+requires-dist: functools32>=3.2.3-2; python_version < "3" and extra == "test"
+requires-dist: pytest>=4.6.7; extra == "test"
+requires-dist: pytest-cov>=2.6.1; extra == "test"
+requires-dist: sphinx; extra == "doc"
+provides-extra: test
+provides-extra: doc
+

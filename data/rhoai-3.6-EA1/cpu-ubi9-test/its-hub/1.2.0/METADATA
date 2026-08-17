@@ -1,0 +1,58 @@
+metadata-version: 2.4
+name: its_hub
+version: 1.2.0
+dynamic: license-file
+summary: A Python library for inference-time scaling LLMs
+author-email: Kai Xu and the Red Hat AI Innovation Team <xuk@redhat.com>
+license-expression: Apache-2.0
+license-file: LICENSE
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Operating System :: OS Independent
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+requires-dist: numpy
+requires-dist: typing-extensions>=4.12.2
+requires-dist: openai>=1.68.2; extra == "lm"
+requires-dist: aiohttp>=3.9.0; extra == "lm"
+requires-dist: backoff>=2.2.0; extra == "lm"
+requires-dist: certifi>=2026.2.25; extra == "lm"
+requires-dist: requests; extra == "lm"
+requires-dist: its_hub[lm]; extra == "iaas"
+requires-dist: fastapi>=0.115.5; extra == "iaas"
+requires-dist: uvicorn; extra == "iaas"
+requires-dist: pydantic>=2.7.2; extra == "iaas"
+requires-dist: click>=8.1.0; extra == "iaas"
+requires-dist: its_hub[ext_proc,iaas]; extra == "envoy-iaas"
+requires-dist: its_hub[lm]; extra == "ext-proc"
+requires-dist: grpcio>=1.60.0; extra == "ext-proc"
+requires-dist: grpcio-tools>=1.60.0; extra == "ext-proc"
+requires-dist: grpcio-health-checking>=1.60.0; extra == "ext-proc"
+requires-dist: protobuf>=4.25.0; extra == "ext-proc"
+requires-dist: its_hub[ext_proc,iaas,lm]; extra == "dev"
+requires-dist: pytest>=7.0.0; extra == "dev"
+requires-dist: pytest-asyncio>=0.21.0; extra == "dev"
+requires-dist: pytest-cov>=4.1.0; extra == "dev"
+requires-dist: ruff>=0.10.0; extra == "dev"
+requires-dist: python-dotenv>=1.0.0; extra == "dev"
+requires-dist: jupytext>=1.15.0; extra == "dev"
+requires-dist: jupyter>=1.0.0; extra == "dev"
+requires-dist: scipy>=1.11.0; extra == "dev"
+requires-dist: its_hub[lm]; extra == "experimental"
+requires-dist: transformers>=4.53.2; extra == "experimental"
+requires-dist: reward-hub[prm]>=0.1.10; extra == "experimental"
+requires-dist: math-verify>=0.1.0; extra == "research"
+requires-dist: datasets>=2.0.0; extra == "research"
+requires-dist: matplotlib>=3.5.0; extra == "research"
+requires-python: >=3.11
+project-url: Homepage, https://ai-innovation.team/its_hub
+provides-extra: lm
+provides-extra: iaas
+provides-extra: envoy-iaas
+provides-extra: ext-proc
+provides-extra: dev
+provides-extra: experimental
+provides-extra: research
+

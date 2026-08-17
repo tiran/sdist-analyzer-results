@@ -1,0 +1,48 @@
+metadata-version: 2.4
+name: pytz
+version: 2019.3
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: download-url
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: maintainer
+dynamic: maintainer-email
+dynamic: platform
+dynamic: summary
+platform: Independent
+summary: World timezone definitions, modern and historical
+keywords: timezone,tzinfo,datetime,olson,time
+home-page: http://pythonhosted.org/pytz
+download-url: https://pypi.org/project/pytz/
+author: Stuart Bishop
+author-email: stuart@stuartbishop.net
+maintainer: Stuart Bishop
+maintainer-email: stuart@stuartbishop.net
+license: MIT
+license-file: LICENSE.txt
+classifier: Development Status :: 6 - Mature
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Natural Language :: English
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 2
+classifier: Programming Language :: Python :: 2.4
+classifier: Programming Language :: Python :: 2.5
+classifier: Programming Language :: Python :: 2.6
+classifier: Programming Language :: Python :: 2.7
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.0
+classifier: Programming Language :: Python :: 3.1
+classifier: Programming Language :: Python :: 3.2
+classifier: Programming Language :: Python :: 3.3
+classifier: Programming Language :: Python :: 3.4
+classifier: Programming Language :: Python :: 3.5
+classifier: Programming Language :: Python :: 3.6
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+

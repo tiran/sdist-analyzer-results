@@ -1,0 +1,32 @@
+metadata-version: 2.4
+name: banks
+version: 2.5.0
+summary: A prompt programming language
+author-email: Massimiliano Pippi <mpippi@gmail.com>
+license-expression: MIT
+license-file: LICENSE.txt
+classifier: Development Status :: 4 - Beta
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+requires-dist: deprecated
+requires-dist: eval-type-backport; python_version < "3.10"
+requires-dist: filetype>=1.2.0
+requires-dist: griffe
+requires-dist: jinja2
+requires-dist: platformdirs
+requires-dist: pydantic
+requires-dist: litellm; extra == "all"
+requires-dist: redis; extra == "all"
+requires-python: >=3.9
+project-url: Documentation, https://github.com/masci/banks#readme
+project-url: Issues, https://github.com/masci/banks/issues
+project-url: Source, https://github.com/masci/banks
+provides-extra: all
+

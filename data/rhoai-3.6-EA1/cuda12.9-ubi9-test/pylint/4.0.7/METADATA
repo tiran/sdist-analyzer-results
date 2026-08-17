@@ -1,0 +1,51 @@
+metadata-version: 2.4
+name: pylint
+version: 4.0.7
+dynamic: license-file
+summary: python code static checker
+keywords: lint,linter,python,static code analysis
+author-email: Python Code Quality Authority <code-quality@python.org>
+license-expression: GPL-2.0-or-later
+license-file: LICENSE
+license-file: CONTRIBUTORS.txt
+classifier: Development Status :: 6 - Mature
+classifier: Environment :: Console
+classifier: Intended Audience :: Developers
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Software Development :: Debuggers
+classifier: Topic :: Software Development :: Quality Assurance
+classifier: Topic :: Software Development :: Testing
+classifier: Typing :: Typed
+requires-dist: astroid<=4.1.dev0,>=4.0.2
+requires-dist: colorama>=0.4.5; sys_platform == "win32"
+requires-dist: dill>=0.2; python_version < "3.11"
+requires-dist: dill>=0.3.6; python_version >= "3.11"
+requires-dist: dill>=0.3.7; python_version >= "3.12"
+requires-dist: isort!=5.13,<9,>=5
+requires-dist: mccabe<0.8,>=0.6
+requires-dist: platformdirs>=2.2
+requires-dist: tomli>=1.1; python_version < "3.11"
+requires-dist: tomlkit>=0.10.1
+requires-dist: typing-extensions>=3.10; python_version < "3.10"
+requires-dist: pyenchant~=3.2; extra == "spelling"
+requires-dist: gitpython>3; extra == "testutils"
+requires-python: >=3.10.0
+project-url: Bug Tracker, https://github.com/pylint-dev/pylint/issues
+project-url: Discord Server, https://discord.com/invite/Egy6P8AMB5
+project-url: Docs: Contributor Guide, https://pylint.readthedocs.io/en/latest/development_guide/contributor_guide/index.html
+project-url: Docs: User Guide, https://pylint.readthedocs.io/en/latest/
+project-url: homepage, https://github.com/pylint-dev/pylint
+project-url: Source Code, https://github.com/pylint-dev/pylint
+project-url: What's New, https://pylint.readthedocs.io/en/latest/whatsnew/4/
+provides-extra: spelling
+provides-extra: testutils
+

@@ -1,8 +1,0 @@
-cmake
-pybind11>=2.10
-setuptools>=64
-numpy
-setuptools
-wheel
-nanobind>=2.0
-patchelf

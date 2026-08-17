@@ -1,21 +1,21 @@
-Metadata-Version: 1.1
-Name: google-pasta
-Version: 0.2.0
-Summary: pasta is an AST-based Python refactoring library
-Home-page: https://github.com/google/pasta
-Author: Nick Smith
-Author-email: smithnick@google.com
-License: Apache 2.0
-Description: UNKNOWN
-Keywords: python refactoring ast
-Platform: UNKNOWN
-Classifier: Development Status :: 2 - Pre-Alpha
-Classifier: License :: OSI Approved :: Apache Software License
-Classifier: Programming Language :: Python
-Classifier: Programming Language :: Python :: 2.7
-Classifier: Programming Language :: Python :: 3
-Classifier: Programming Language :: Python :: 3.4
-Classifier: Programming Language :: Python :: 3.5
-Classifier: Programming Language :: Python :: 3.6
-Classifier: Programming Language :: Python :: 3.7
-Classifier: Programming Language :: Python :: 3.8
+metadata-version: 1.1
+name: google-pasta
+version: 0.2.0
+platform: UNKNOWN
+summary: pasta is an AST-based Python refactoring library
+keywords: python refactoring ast
+home-page: https://github.com/google/pasta
+author: Nick Smith
+author-email: smithnick@google.com
+license: Apache 2.0
+classifier: Development Status :: 2 - Pre-Alpha
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 2.7
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.4
+classifier: Programming Language :: Python :: 3.5
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+

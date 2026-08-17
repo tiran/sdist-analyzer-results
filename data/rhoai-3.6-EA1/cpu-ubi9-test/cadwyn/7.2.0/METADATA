@@ -1,0 +1,47 @@
+metadata-version: 2.5
+name: cadwyn
+version: 7.2.0
+summary: Production-ready community-driven modern Stripe-like API versioning in FastAPI
+keywords: api,api-versioning,code-generation,fastapi,hints,json-schema,pydantic,python,python310,python311,python312,python313,python314,stripe,versioning
+author-email: Stanislav Zmiev <zmievsa@gmail.com>
+license-expression: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Web Environment
+classifier: Framework :: AsyncIO
+classifier: Framework :: FastAPI
+classifier: Framework :: Pydantic
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Information Technology
+classifier: Intended Audience :: System Administrators
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Internet
+classifier: Topic :: Internet :: WWW/HTTP
+classifier: Topic :: Internet :: WWW/HTTP :: HTTP Servers
+classifier: Topic :: Software Development
+classifier: Topic :: Software Development :: Libraries
+classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Typing :: Typed
+requires-dist: backports-strenum<2,>=1.3.1; python_version < "3.11"
+requires-dist: fastapi>=0.137.1
+requires-dist: jinja2>=3.1.2
+requires-dist: pydantic>=2.11.0
+requires-dist: starlette>=0.30.0
+requires-dist: typing-extensions>=4.8.0
+requires-dist: typing-inspection>=0.4.0
+requires-dist: fastapi[standard]>=0.137.1; extra == "standard"
+requires-dist: typer>=0.7.0; extra == "standard"
+requires-python: >=3.10
+project-url: Source code, https://github.com/zmievsa/cadwyn
+project-url: Documentation, https://docs.cadwyn.dev
+provides-extra: standard
+

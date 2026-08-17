@@ -1,0 +1,12 @@
+metadata-version: 2.4
+name: spacy-loggers
+version: 1.0.5
+dynamic: license-file
+summary: Logging utilities for SpaCy
+home-page: https://github.com/explosion/spacy-loggers
+author: Explosion
+author-email: contact@explosion.ai
+license: MIT
+license-file: LICENSE
+requires-python: >=3.6
+

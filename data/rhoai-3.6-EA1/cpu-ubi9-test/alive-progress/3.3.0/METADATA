@@ -1,0 +1,38 @@
+metadata-version: 2.4
+name: alive-progress
+version: 3.3.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: A new kind of Progress Bar, with real-time throughput, ETA, and very cool animations!
+keywords: progress,bar,progress-bar,progressbar,spinner,eta,monitoring,python,terminal,multithreaded,REPL,alive,animated,visual,feedback,simple,live,efficient,monitor,stats,elapsed,time,throughput
+home-page: https://github.com/rsalmei/alive-progress
+author: Rogério Sampaio de Almeida
+author-email: rsalmei@gmail.com
+license: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Environment :: Console
+classifier: Natural Language :: English
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-dist: about_time==4.2.1
+requires-dist: graphemeu==0.7.2
+requires-python: <4,>=3.9
+

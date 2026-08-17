@@ -1,0 +1,42 @@
+metadata-version: 2.4
+name: google-cloud-storage-control
+version: 1.13.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: platform
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+platform: Posix; MacOS X; Windows
+summary: Google Cloud Storage Control API client library
+home-page: https://github.com/googleapis/google-cloud-python/tree/main/packages/google-cloud-storage-control
+author: Google LLC
+author-email: googleapis-packages@google.com
+license: Apache-2.0
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Operating System :: OS Independent
+classifier: Topic :: Internet
+requires-dist: google-api-core[grpc]<3.0.0,>=2.25.0
+requires-dist: google-auth!=2.24.0,!=2.25.0,<3.0.0,>=2.14.1
+requires-dist: grpcio<2.0.0,>=1.59.0
+requires-dist: grpcio<2.0.0,>=1.75.1; python_version >= "3.14"
+requires-dist: proto-plus<2.0.0,>=1.26.1
+requires-dist: protobuf<8.0.0,>=6.33.5
+requires-dist: grpc-google-iam-v1<1.0.0,>=0.14.2
+requires-python: >=3.10
+

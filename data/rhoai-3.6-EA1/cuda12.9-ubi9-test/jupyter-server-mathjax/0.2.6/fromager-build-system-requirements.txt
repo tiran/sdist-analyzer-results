@@ -1,0 +1,3 @@
+setuptools
+jupyter_packaging<2,>=0.10
+wheel

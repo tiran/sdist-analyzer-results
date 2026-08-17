@@ -1,3 +1,0 @@
-cython
-wheel
-setuptools>=40.6.0

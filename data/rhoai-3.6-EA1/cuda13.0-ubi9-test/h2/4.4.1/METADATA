@@ -1,0 +1,28 @@
+metadata-version: 2.4
+name: h2
+version: 4.4.1
+dynamic: license-file
+summary: Pure-Python HTTP/2 protocol implementation
+author-email: Cory Benfield <cory@lukasa.co.uk>
+maintainer-email: Thomas Kriechbaumer <thomas@kriechbaumer.name>
+license-expression: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Implementation :: CPython
+requires-dist: hyperframe<7,>=6.1
+requires-dist: hpack<5,>=4.2
+requires-python: >=3.10
+project-url: Homepage, https://github.com/python-hyper/h2/
+project-url: Bug Reports, https://github.com/python-hyper/h2/issues
+project-url: Source, https://github.com/python-hyper/h2/
+project-url: Documentation, https://python-hyper.org/
+

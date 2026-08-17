@@ -1,0 +1,26 @@
+metadata-version: 2.4
+name: ipyfilechooser
+version: 0.6.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: requires-dist
+dynamic: summary
+summary: Python file chooser widget for use in Jupyter/IPython in conjunction with ipywidgets
+home-page: https://github.com/crahan/ipyfilechooser
+author: Thomas Bouve (@crahan)
+author-email: crahan@n00.be
+license: MIT
+license-file: LICENSE
+classifier: Programming Language :: Python :: 3
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+requires-dist: ipywidgets
+

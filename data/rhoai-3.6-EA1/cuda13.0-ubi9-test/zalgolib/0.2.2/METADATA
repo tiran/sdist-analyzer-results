@@ -1,0 +1,29 @@
+metadata-version: 2.4
+name: zalgolib
+version: 0.2.2
+dynamic: license-file
+summary: A Python library for a _FULL_ Zalgo experience
+keywords: diacritics,horror,language encoding,obfuscation,text processing,zalgo
+author-email: Yatri Trivedi <jivanyatra@gmail.com>
+license: MIT License
+                 
+                 Copyright (c) 2022 Yatri Trivedi
+                 Copyright (c) 2017 Greg Pritchard
+                 
+                 Permission is hereby granted, free of charge, to any person obtaining a copy
+                 of this software and associated documentation files (the "Software"), to deal
+                 in the Software without restriction, including without limitation the rights
+                 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+                 copies of the Software, and to permit persons to w...
+license-file: LICENSE
+classifier: Programming Language :: Python :: 3
+classifier: Topic :: Text Processing :: General
+classifier: Natural Language :: English
+classifier: Operating System :: POSIX :: Linux
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+requires-python: >=3.7
+project-url: Homepage, https://github.com/jivanyatra/zalgolib/
+project-url: Issues, https://github.com/jivanyatra/zalgolib/issues
+

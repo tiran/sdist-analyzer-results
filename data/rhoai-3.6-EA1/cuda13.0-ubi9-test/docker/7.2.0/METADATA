@@ -1,0 +1,45 @@
+metadata-version: 2.5
+name: docker
+version: 7.2.0
+summary: A Python library for the Docker Engine API.
+maintainer-email: "Docker Inc." <no-reply@docker.com>
+license-expression: Apache-2.0
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Other Environment
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Topic :: Software Development
+classifier: Topic :: Utilities
+requires-dist: pywin32>=304; sys_platform == "win32"
+requires-dist: requests>=2.26.0
+requires-dist: urllib3>=1.26.0
+requires-dist: coverage==7.2.7; extra == "dev"
+requires-dist: pytest-cov==4.1.0; extra == "dev"
+requires-dist: pytest-timeout==2.1.0; extra == "dev"
+requires-dist: pytest==7.4.2; extra == "dev"
+requires-dist: ruff==0.1.8; extra == "dev"
+requires-dist: myst-parser==0.18.0; extra == "docs"
+requires-dist: sphinx==5.1.1; extra == "docs"
+requires-dist: paramiko>=2.4.3; extra == "ssh"
+requires-dist: websocket-client>=1.3.0; extra == "websockets"
+requires-python: >=3.8
+project-url: Changelog, https://docker-py.readthedocs.io/en/stable/change-log.html
+project-url: Documentation, https://docker-py.readthedocs.io
+project-url: Homepage, https://github.com/docker/docker-py
+project-url: Source, https://github.com/docker/docker-py
+project-url: Tracker, https://github.com/docker/docker-py/issues
+provides-extra: dev
+provides-extra: docs
+provides-extra: ssh
+provides-extra: tls
+provides-extra: websockets
+

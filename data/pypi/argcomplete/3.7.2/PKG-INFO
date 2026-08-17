@@ -1,0 +1,43 @@
+metadata-version: 2.4
+name: argcomplete
+version: 3.7.2
+summary: Bash tab completion for argparse
+author: Andrey Kislyuk
+author-email: kislyuk@gmail.com
+maintainer: Andrey Kislyuk
+maintainer-email: kislyuk@gmail.com
+license: Apache Software License
+license-file: LICENSE.rst
+license-file: NOTICE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Operating System :: POSIX
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Software Development
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: System :: Shells
+classifier: Topic :: Terminals
+requires-dist: coverage; extra == "test"
+requires-dist: mypy; extra == "test"
+requires-dist: pexpect; extra == "test"
+requires-dist: ruff; extra == "test"
+requires-dist: wheel; extra == "test"
+requires-python: >=3.10
+project-url: Homepage, https://github.com/kislyuk/argcomplete
+project-url: Documentation, https://kislyuk.github.io/argcomplete
+project-url: Source Code, https://github.com/kislyuk/argcomplete
+project-url: Issue Tracker, https://github.com/kislyuk/argcomplete/issues
+project-url: Change Log, https://github.com/kislyuk/argcomplete/blob/develop/Changes.rst
+provides-extra: test
+

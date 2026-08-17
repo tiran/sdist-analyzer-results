@@ -1,0 +1,42 @@
+metadata-version: 2.4
+name: sphinx_rtd_theme
+version: 3.1.0
+dynamic: license-file
+summary: Read the Docs theme for Sphinx
+home-page: https://github.com/readthedocs/sphinx_rtd_theme
+author: Dave Snider, Read the Docs, Inc. & contributors
+author-email: dev@readthedocs.org
+license: MIT
+license-file: LICENSE
+classifier: Framework :: Sphinx
+classifier: Framework :: Sphinx :: Theme
+classifier: Development Status :: 5 - Production/Stable
+classifier: License :: OSI Approved :: MIT License
+classifier: Environment :: Console
+classifier: Environment :: Web Environment
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Operating System :: OS Independent
+classifier: Topic :: Documentation
+classifier: Topic :: Software Development :: Documentation
+requires-dist: sphinx<10,>=6
+requires-dist: docutils<0.23,>0.18
+requires-dist: sphinxcontrib-jquery<5,>=4
+requires-dist: transifex-client; extra == "dev"
+requires-dist: bump2version; extra == "dev"
+requires-dist: wheel; extra == "dev"
+requires-dist: twine; extra == "dev"
+requires-python: >=3.8
+project-url: Homepage, https://sphinx-rtd-theme.readthedocs.io/
+project-url: Source Code, https://github.com/readthedocs/sphinx_rtd_theme
+project-url: Issue Tracker, https://github.com/readthedocs/sphinx_rtd_theme/issues
+provides-extra: dev
+

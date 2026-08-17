@@ -1,0 +1,24 @@
+metadata-version: 2.4
+name: openvino
+version: 2026.3.0
+dynamic: download-url
+dynamic: home-page
+dynamic: license-file
+summary: OpenVINO(TM) Runtime
+home-page: https://docs.openvino.ai/2023.0/index.html
+download-url: https://github.com/openvinotoolkit/openvino/releases
+author-email: OpenVINO Developers <openvino@intel.com>
+license-expression: Apache-2.0
+license-file: LICENSE
+license-file: licensing/runtime-third-party-programs.txt
+license-file: licensing/onetbb_third-party-programs.txt
+license-file: licensing/onednn_third-party-programs.txt
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-dist: numpy<2.6.0,>=1.16.6
+requires-dist: openvino-telemetry>=2023.2.1
+requires-python: >=3.10
+

@@ -1,3 +1,4 @@
+setuptools>=40.8.0
 pybind11>=2.11.1
+setuptools
 ninja>=1.11.1
-setuptools<80.0.0

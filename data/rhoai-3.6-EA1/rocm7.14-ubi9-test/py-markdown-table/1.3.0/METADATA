@@ -1,0 +1,20 @@
+metadata-version: 2.4
+name: py-markdown-table
+version: 1.3.0
+summary: Package that generates markdown tables from a list of dicts
+author: hvalev
+license: MIT
+license-file: LICENSE
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-python: <4.0,>=3.8
+project-url: Homepage, https://github.com/hvalev/py-markdown-table
+

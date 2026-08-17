@@ -1,0 +1,28 @@
+metadata-version: 2.5
+name: opentelemetry-instrumentation-asgi
+version: 0.57b0
+summary: ASGI instrumentation for OpenTelemetry
+author-email: OpenTelemetry Authors <cncf-opentelemetry-contributors@lists.cncf.io>
+license-expression: Apache-2.0
+license-file: LICENSE
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+requires-dist: asgiref~=3.0
+requires-dist: opentelemetry-api~=1.12
+requires-dist: opentelemetry-instrumentation==0.57b0
+requires-dist: opentelemetry-semantic-conventions==0.57b0
+requires-dist: opentelemetry-util-http==0.57b0
+requires-dist: asgiref~=3.0; extra == "instruments"
+requires-python: >=3.9
+project-url: Homepage, https://github.com/open-telemetry/opentelemetry-python-contrib/tree/main/instrumentation/opentelemetry-instrumentation-asgi
+project-url: Repository, https://github.com/open-telemetry/opentelemetry-python-contrib
+provides-extra: instruments
+

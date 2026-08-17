@@ -1,0 +1,34 @@
+metadata-version: 2.4
+name: astor
+version: 0.8.1
+dynamic: license-file
+platform: Independent
+summary: Read/rewrite/write Python ASTs
+keywords: ast,codegen,PEP 8
+home-page: https://github.com/berkerpeksag/astor
+author: Patrick Maupin
+author-email: pmaupin@gmail.com
+license: BSD-3-Clause
+license-file: LICENSE
+license-file: AUTHORS
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: BSD License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 2
+classifier: Programming Language :: Python :: 2.7
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.4
+classifier: Programming Language :: Python :: 3.5
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: Implementation
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Software Development :: Code Generators
+classifier: Topic :: Software Development :: Compilers
+requires-python: !=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,>=2.7
+

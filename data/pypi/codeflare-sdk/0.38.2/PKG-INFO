@@ -1,0 +1,25 @@
+metadata-version: 2.1
+name: codeflare-sdk
+version: 0.38.2
+summary: Python SDK for codeflare client
+keywords: codeflare,python,sdk,client,batch,scale
+home-page: https://github.com/project-codeflare/codeflare-sdk
+author: Michael Clifford
+author-email: mcliffor@redhat.com
+license: Apache-2.0
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+requires-dist: cryptography>=46.0.7
+requires-dist: executing==2.2.1
+requires-dist: ipywidgets==8.1.2
+requires-dist: kube-authkit>=0.4.0
+requires-dist: kubernetes>=27.2.0
+requires-dist: openshift-client==1.0.18
+requires-dist: pydantic>=2.10.6
+requires-dist: ray[data,default]==2.55.1
+requires-dist: rich<15.0,>=12.5
+requires-python: <4.0,>=3.11
+project-url: Repository, https://github.com/project-codeflare/codeflare-sdk
+

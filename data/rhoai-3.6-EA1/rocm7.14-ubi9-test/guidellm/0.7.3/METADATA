@@ -1,0 +1,61 @@
+metadata-version: 2.4
+name: guidellm
+version: 0.7.3
+dynamic: license-file
+summary: Guidance platform for deploying and managing large language models.
+keywords: ai,benchmarking,deep-learning,deployment,evaluation,guidance,inference,language-models,large-language-model,llm,machine-learning,model-benchmark,model-evaluation,nlp,performance,vllm
+author: Red Hat
+license: Apache-2.0
+license-file: LICENSE
+requires-dist: click~=8.4.0
+requires-dist: culsans~=0.10.0
+requires-dist: datasets>=4.1.0
+requires-dist: eval_type_backport
+requires-dist: faker
+requires-dist: ftfy>=6.0.0
+requires-dist: httpx[http2]<1.0.0
+requires-dist: loguru
+requires-dist: msgpack
+requires-dist: numpy>=2.0.0
+requires-dist: protobuf
+requires-dist: pydantic>=2.11.7
+requires-dist: pydantic-settings>=2.0.0
+requires-dist: pyyaml>=6.0.0
+requires-dist: rich
+requires-dist: sanic
+requires-dist: tabulate
+requires-dist: transformers
+requires-dist: uvloop>=0.18
+requires-dist: torch
+requires-dist: more-itertools>=10.8.0
+requires-dist: typing-extensions>=4.15.0
+requires-dist: websockets>=13.0
+requires-dist: guidellm[audio,perf,plot,tokenizers,vision]; extra == "all"
+requires-dist: guidellm[perf,tokenizers]; extra == "recommended"
+requires-dist: matplotlib>=3.10.9; extra == "plot"
+requires-dist: orjson; extra == "perf"
+requires-dist: msgpack; extra == "perf"
+requires-dist: msgspec; extra == "perf"
+requires-dist: uvloop; extra == "perf"
+requires-dist: tiktoken; extra == "tokenizers"
+requires-dist: blobfile; extra == "tokenizers"
+requires-dist: mistral-common; extra == "tokenizers"
+requires-dist: datasets[audio]>=4.1.0; extra == "audio"
+requires-dist: torch>=2.11; extra == "audio"
+requires-dist: torchcodec>=0.11; extra == "audio"
+requires-dist: datasets[vision]; extra == "vision"
+requires-dist: pillow; extra == "vision"
+requires-dist: imageio[ffmpeg]; extra == "vision"
+requires-python: <4.0,>=3.10.0
+project-url: homepage, https://github.com/vllm-project/guidellm
+project-url: source, https://github.com/vllm-project/guidellm
+project-url: issues, https://github.com/vllm-project/guidellm/issues
+project-url: docs, https://github.com/vllm-project/guidellm/tree/main/docs
+provides-extra: all
+provides-extra: recommended
+provides-extra: plot
+provides-extra: perf
+provides-extra: tokenizers
+provides-extra: audio
+provides-extra: vision
+

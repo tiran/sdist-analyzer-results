@@ -1,0 +1,58 @@
+metadata-version: 2.5
+name: ipykernel
+version: 7.3.0
+summary: IPython Kernel for Jupyter
+keywords: Interactive,Interpreter,Shell,Web
+author-email: IPython Development Team <ipython-dev@scipy.org>
+license-expression: BSD-3-Clause
+license-file: LICENSE
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: Intended Audience :: System Administrators
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+requires-dist: appnope>=0.1.2; platform_system == "Darwin"
+requires-dist: comm>=0.1.1
+requires-dist: debugpy>=1.6.5
+requires-dist: ipython>=7.23.1
+requires-dist: jupyter-client>=8.9.0
+requires-dist: jupyter-core!=6.0.*,>=5.1
+requires-dist: matplotlib-inline>=0.1
+requires-dist: nest-asyncio2>=1.7.0
+requires-dist: packaging>=22
+requires-dist: psutil>=5.7
+requires-dist: pyzmq>=25
+requires-dist: tornado>=6.4.1
+requires-dist: traitlets>=5.4.0
+requires-dist: coverage[toml]; extra == "cov"
+requires-dist: matplotlib; extra == "cov"
+requires-dist: pytest-cov; extra == "cov"
+requires-dist: trio; extra == "cov"
+requires-dist: intersphinx-registry; extra == "docs"
+requires-dist: myst-parser; extra == "docs"
+requires-dist: pydata-sphinx-theme; extra == "docs"
+requires-dist: sphinx; extra == "docs"
+requires-dist: sphinx-autodoc-typehints; extra == "docs"
+requires-dist: sphinxcontrib-github-alt; extra == "docs"
+requires-dist: sphinxcontrib-spelling; extra == "docs"
+requires-dist: trio; extra == "docs"
+requires-dist: pyqt5; extra == "pyqt5"
+requires-dist: pyside6; extra == "pyside6"
+requires-dist: flaky; extra == "test"
+requires-dist: ipyparallel; extra == "test"
+requires-dist: pre-commit; extra == "test"
+requires-dist: pytest-asyncio>=0.23.5; extra == "test"
+requires-dist: pytest-cov; extra == "test"
+requires-dist: pytest-timeout; extra == "test"
+requires-dist: pytest<10,>=7.0; extra == "test"
+requires-python: >=3.10
+project-url: Homepage, https://ipython.org
+project-url: Documentation, https://ipykernel.readthedocs.io
+project-url: Source, https://github.com/ipython/ipykernel
+project-url: Tracker, https://github.com/ipython/ipykernel/issues
+provides-extra: cov
+provides-extra: docs
+provides-extra: pyqt5
+provides-extra: pyside6
+provides-extra: test
+

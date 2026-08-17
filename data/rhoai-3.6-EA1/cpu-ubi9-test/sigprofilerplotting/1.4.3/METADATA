@@ -1,0 +1,30 @@
+metadata-version: 2.4
+name: sigProfilerPlotting
+version: 1.4.3
+dynamic: author
+dynamic: author-email
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: SigProfiler plotting tool
+home-page: https://github.com/alexandrovlab/SigProfilerPlotting
+author: Erik Bergstrom
+author-email: ebergstr@eng.ucsd.edu
+license: UCSD
+license-file: LICENSE
+requires-dist: matplotlib>=3.4.3
+requires-dist: pandas>=2.0.0
+requires-dist: scikit-learn>=1.1.3
+requires-dist: pillow>=10.0.0
+requires-dist: pytest; extra == "tests"
+requires-dist: scikit-image>=0.21.0; extra == "tests"
+requires-dist: numpy>=2.0.0; extra == "tests"
+requires-python: >=3.9
+provides-extra: tests
+

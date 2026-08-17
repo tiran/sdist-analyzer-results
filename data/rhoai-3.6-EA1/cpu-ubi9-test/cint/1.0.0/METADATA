@@ -1,0 +1,19 @@
+metadata-version: 2.4
+name: cint
+version: 1.0.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: home-page
+dynamic: requires-python
+dynamic: summary
+summary: cint - make ctypes great again
+home-page: https://github.com/disconnect3d/cint
+author: disconnect3d
+author-email: dominik.b.czarnota+cint@gmail.com
+classifier: Development Status :: 5 - Production/Stable
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python :: 2.7
+classifier: Programming Language :: Python :: 3
+requires-python: !=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,>=2.7
+

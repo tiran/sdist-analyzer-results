@@ -1,0 +1,39 @@
+metadata-version: 2.4
+name: torchao
+version: 0.18.0+git
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: license-file
+dynamic: provides-extra
+dynamic: summary
+summary: Package for applying ao techniques to GPU models
+home-page: https://github.com/pytorch/ao
+license-file: LICENSE
+requires-dist: pytest==9.0.3; extra == "dev"
+requires-dist: unittest-xml-reporting; extra == "dev"
+requires-dist: parameterized; extra == "dev"
+requires-dist: packaging; extra == "dev"
+requires-dist: transformers; extra == "dev"
+requires-dist: hypothesis; extra == "dev"
+requires-dist: sentencepiece; extra == "dev"
+requires-dist: expecttest; extra == "dev"
+requires-dist: pyyaml; extra == "dev"
+requires-dist: bitsandbytes; extra == "dev"
+requires-dist: matplotlib; extra == "dev"
+requires-dist: pandas; extra == "dev"
+requires-dist: fire; extra == "dev"
+requires-dist: tabulate; extra == "dev"
+requires-dist: tiktoken; extra == "dev"
+requires-dist: blobfile; extra == "dev"
+requires-dist: lm_eval; extra == "dev"
+requires-dist: diskcache; extra == "dev"
+requires-dist: pycocotools; extra == "dev"
+requires-dist: tqdm; extra == "dev"
+requires-dist: importlib_metadata; extra == "dev"
+requires-dist: ninja; extra == "dev"
+requires-dist: cmake<4.0.0,>=3.19.0; extra == "dev"
+requires-dist: ruff==0.11.6; extra == "dev"
+requires-dist: pre-commit; extra == "dev"
+provides-extra: dev
+

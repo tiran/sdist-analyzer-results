@@ -1,0 +1,41 @@
+metadata-version: 2.4
+name: google-api-core
+version: 2.33.0
+dynamic: license-file
+summary: Google API client core library
+author-email: Google LLC <googleapis-packages@google.com>
+license: Apache 2.0
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Operating System :: OS Independent
+classifier: Topic :: Internet
+requires-dist: googleapis-common-protos<2.0.0,>=1.63.2
+requires-dist: protobuf<8.0.0,>=5.29.6
+requires-dist: proto-plus<2.0.0,>=1.24.0
+requires-dist: proto-plus<2.0.0,>=1.25.0; python_version >= "3.13"
+requires-dist: google-auth<3.0.0,>=2.14.1
+requires-dist: requests<3.0.0,>=2.33.0
+requires-dist: google-auth[aiohttp]<3.0.0,>=2.14.1; extra == "async-rest"
+requires-dist: aiohttp>=3.13.4; extra == "async-rest"
+requires-dist: grpcio<2.0.0,>=1.41.0; extra == "grpc"
+requires-dist: grpcio<2.0.0,>=1.49.1; python_version >= "3.11" and extra == "grpc"
+requires-dist: grpcio<2.0.0,>=1.75.1; python_version >= "3.14" and extra == "grpc"
+requires-dist: grpcio-status<2.0.0,>=1.41.0; extra == "grpc"
+requires-dist: grpcio-status<2.0.0,>=1.49.1; python_version >= "3.11" and extra == "grpc"
+requires-dist: grpcio-status<2.0.0,>=1.75.1; python_version >= "3.14" and extra == "grpc"
+requires-python: >=3.10
+project-url: Homepage, https://github.com/googleapis/google-cloud-python/tree/main/packages/google-api-core
+project-url: Documentation, https://googleapis.dev/python/google-api-core/latest/
+project-url: Repository, https://github.com/googleapis/google-cloud-python
+provides-extra: async-rest
+provides-extra: grpc
+

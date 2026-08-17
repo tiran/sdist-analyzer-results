@@ -1,0 +1,52 @@
+metadata-version: 2.4
+name: altgraph
+version: 0.17.5
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: download-url
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: maintainer
+dynamic: maintainer-email
+dynamic: platform
+dynamic: summary
+platform: any
+summary: Python graph (network) package
+keywords: graph
+home-page: https://altgraph.readthedocs.io
+download-url: http://pypi.python.org/pypi/altgraph
+author: Ronald Oussoren
+author-email: ronaldoussoren@mac.com
+maintainer: Ronald Oussoren
+maintainer-email: ronaldoussoren@mac.com
+license: MIT
+license-file: LICENSE
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 2
+classifier: Programming Language :: Python :: 2.7
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.4
+classifier: Programming Language :: Python :: 3.5
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: Scientific/Engineering :: Mathematics
+classifier: Topic :: Scientific/Engineering :: Visualization
+project-url: Documentation, https://altgraph.readthedocs.io/en/latest/
+project-url: Issue tracker, https://github.com/ronaldoussoren/altgraph/issues
+project-url: Repository, https://github.com/ronaldoussoren/altgraph
+

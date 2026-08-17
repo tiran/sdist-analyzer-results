@@ -1,0 +1,25 @@
+metadata-version: 2.4
+name: flashinfer-cubin
+version: 0.6.12
+summary: Pre-compiled cubins for FlashInfer
+author: FlashInfer team
+maintainer: FlashInfer team
+license: Apache-2.0
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-python: >=3.8
+project-url: Homepage, https://github.com/flashinfer-ai/flashinfer
+project-url: Documentation, https://github.com/flashinfer-ai/flashinfer
+project-url: Repository, https://github.com/flashinfer-ai/flashinfer
+project-url: Issue Tracker, https://github.com/flashinfer-ai/flashinfer/issues
+

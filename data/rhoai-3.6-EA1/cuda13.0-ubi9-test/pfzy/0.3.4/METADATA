@@ -1,0 +1,35 @@
+metadata-version: 2.4
+name: pfzy
+version: 0.3.4
+summary: Python port of the fzy fuzzy string matching algorithm
+keywords: fuzzy,string,fzy,search,development
+author: Kevin Zhuang
+author-email: kevin7441@gmail.com
+license: MIT
+license-file: LICENSE
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: Microsoft
+classifier: Operating System :: Unix
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Software Development
+classifier: Topic :: Software Development :: Libraries
+requires-dist: Sphinx<5.0.0,>=4.1.2; extra == "docs"
+requires-dist: furo<2022.0.0,>=2021.8.17b43; extra == "docs"
+requires-dist: myst-parser<0.16.0,>=0.15.1; extra == "docs"
+requires-dist: sphinx-autobuild<2022.0.0,>=2021.3.14; extra == "docs"
+requires-dist: sphinx-copybutton<0.5.0,>=0.4.0; extra == "docs"
+requires-python: <4.0,>=3.7
+project-url: Documentation, https://pfzy.readthedocs.io/
+project-url: Repository, https://github.com/kazhala/pfzy
+provides-extra: docs
+

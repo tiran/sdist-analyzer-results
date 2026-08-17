@@ -1,2 +1,2 @@
-setuptools>=42.0.0
 Cython==3.2.1
+setuptools>=42.0.0

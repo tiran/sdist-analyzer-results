@@ -1,0 +1,44 @@
+metadata-version: 2.4
+name: pecan
+version: 1.8.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: A WSGI object-dispatching web framework, designed to be lean and fast, with few dependencies.
+keywords: web framework wsgi object-dispatch http
+home-page: http://github.com/pecan/pecan
+author: Jonathan LaCour
+author-email: info@pecanpy.org
+license: BSD
+license-file: LICENSE
+license-file: AUTHORS
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Environment :: Web Environment
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: System Administrators
+classifier: License :: OSI Approved :: BSD License
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: POSIX
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Topic :: Internet :: WWW/HTTP :: WSGI
+classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+requires-dist: WebOb>=1.8
+requires-dist: Mako>=0.4.0
+requires-dist: setuptools
+requires-python: >=3.10
+

@@ -1,0 +1,33 @@
+metadata-version: 2.5
+name: referencing
+version: 0.37.0
+summary: JSON Referencing + Python
+keywords: asyncapi,json,jsonschema,openapi,referencing
+author-email: Julian Berman <Julian+referencing@GrayVines.com>
+license-expression: MIT
+license-file: COPYING
+classifier: Development Status :: 3 - Alpha
+classifier: Intended Audience :: Developers
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: File Formats :: JSON
+classifier: Topic :: File Formats :: JSON :: JSON Schema
+requires-dist: attrs>=22.2.0
+requires-dist: rpds-py>=0.7.0
+requires-dist: typing-extensions>=4.4.0; python_version < "3.13"
+requires-python: >=3.10
+project-url: Documentation, https://referencing.readthedocs.io/
+project-url: Homepage, https://github.com/python-jsonschema/referencing
+project-url: Issues, https://github.com/python-jsonschema/referencing/issues/
+project-url: Funding, https://github.com/sponsors/Julian
+project-url: Tidelift, https://tidelift.com/subscription/pkg/pypi-referencing?utm_source=pypi-referencing&utm_medium=referral&utm_campaign=pypi-link
+project-url: Changelog, https://referencing.readthedocs.io/en/stable/changes/
+project-url: Source, https://github.com/python-jsonschema/referencing
+

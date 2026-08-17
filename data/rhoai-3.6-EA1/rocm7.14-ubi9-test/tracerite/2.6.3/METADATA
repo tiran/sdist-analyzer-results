@@ -1,0 +1,27 @@
+metadata-version: 2.5
+name: tracerite
+version: 2.6.3
+summary: Human-readable HTML tracebacks for Python exceptions
+author-email: Sanic Community <tronic@noreply.users.github.com>
+license: Public Domain
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: License :: Public Domain
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Topic :: Software Development :: Debuggers
+requires-dist: html5tagger>=2.0.0
+requires-dist: ipykernel>=6.29.5; extra == "nb"
+requires-dist: ipywidgets>=8.1.8; extra == "nb"
+requires-dist: jupyter-client>=8.6.3; extra == "nb"
+requires-dist: jupyter>=1.1.1; extra == "nb"
+requires-dist: jupyterlab>=4.3.8; extra == "nb"
+requires-dist: notebook>=7.3.3; extra == "nb"
+requires-dist: numpy>=2.2.6; extra == "nb"
+requires-python: >=3.10
+project-url: Homepage, https://github.com/sanic-org/tracerite
+project-url: Repository, https://github.com/sanic-org/tracerite
+project-url: Issues, https://github.com/sanic-org/tracerite/issues
+provides-extra: nb
+

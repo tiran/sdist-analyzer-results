@@ -1,0 +1,46 @@
+metadata-version: 2.1
+name: numpy
+version: 2.0.2
+summary: Fundamental package for array computing in Python
+author: Travis E. Oliphant et al.
+maintainer-email: NumPy Developers <numpy-discussion@python.org>
+license: Copyright (c) 2005-2024, NumPy Developers.
+                  All rights reserved.
+                  
+                  Redistribution and use in source and binary forms, with or without
+                  modification, are permitted provided that the following conditions are
+                  met:
+                  
+                      * Redistributions of source code must retain the above copyright
+                         notice, this list of conditions and the following disclaimer.
+                  
+                      * Redistributions in binary form must reproduce the above
+                  ...
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Science/Research
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: BSD License
+classifier: Programming Language :: C
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Topic :: Software Development
+classifier: Topic :: Scientific/Engineering
+classifier: Typing :: Typed
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: POSIX
+classifier: Operating System :: Unix
+classifier: Operating System :: MacOS
+requires-python: >=3.9
+project-url: homepage, https://numpy.org
+project-url: documentation, https://numpy.org/doc/
+project-url: source, https://github.com/numpy/numpy
+project-url: download, https://pypi.org/project/numpy/#files
+project-url: tracker, https://github.com/numpy/numpy/issues
+project-url: release notes, https://numpy.org/doc/stable/release
+

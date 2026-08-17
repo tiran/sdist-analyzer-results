@@ -1,0 +1,23 @@
+metadata-version: 2.4
+name: sqlite-fts4
+version: 1.0.3
+dynamic: author
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: project-url
+dynamic: provides-extra
+dynamic: summary
+summary: Python functions for working with SQLite FTS4 search
+home-page: https://github.com/simonw/sqlite-fts4
+author: Simon Willison
+license: Apache License, Version 2.0
+license-file: LICENSE
+requires-dist: pytest; extra == "test"
+project-url: Issues, https://github.com/simonw/sqlite-fts4/issues
+project-url: CI, https://github.com/simonw/sqlite-fts4/actions
+project-url: Changelog, https://github.com/simonw/sqlite-fts4/releases
+provides-extra: test
+

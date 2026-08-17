@@ -1,0 +1,28 @@
+metadata-version: 2.1
+name: graphql-relay
+version: 3.2.0
+summary: Relay library for graphql-core
+keywords: graphql,relay,api
+home-page: https://github.com/graphql-python/graphql-relay-py
+author: Syrus Akbary
+author-email: me@syrusakbary.com
+license: MIT
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Topic :: Software Development :: Libraries
+requires-dist: graphql-core<3.3,>=3.2
+requires-dist: typing-extensions<5.0,>=4.1; python_version < "3.8"
+requires-python: <4.0,>=3.6
+project-url: Documentation, https://github.com/graphql-python/graphql-relay-py
+project-url: Repository, https://github.com/graphql-python/graphql-relay-py
+

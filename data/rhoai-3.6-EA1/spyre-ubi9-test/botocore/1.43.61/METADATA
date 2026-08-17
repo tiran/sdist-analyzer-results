@@ -1,0 +1,39 @@
+metadata-version: 2.4
+name: botocore
+version: 1.43.61
+dynamic: author
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: Low-level, data-driven core of boto 3.
+home-page: https://github.com/boto/botocore
+author: Amazon Web Services
+license: Apache-2.0
+license-file: LICENSE.txt
+license-file: NOTICE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: System Administrators
+classifier: Natural Language :: English
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Free Threading :: 2 - Beta
+requires-dist: jmespath<2.0.0,>=0.7.1
+requires-dist: python-dateutil<3.0.0,>=2.1
+requires-dist: urllib3!=2.2.0,<3,>=1.25.4
+requires-dist: awscrt==0.36.0; extra == "crt"
+requires-python: >=3.10
+provides-extra: crt
+

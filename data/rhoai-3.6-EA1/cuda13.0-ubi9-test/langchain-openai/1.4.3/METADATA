@@ -1,0 +1,29 @@
+metadata-version: 2.4
+name: langchain-openai
+version: 1.4.3
+summary: An integration package connecting OpenAI and LangChain
+license: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+requires-dist: langchain-core<2.0.0,>=1.5.3
+requires-dist: openai<3.0.0,>=2.45.0
+requires-dist: tiktoken<1.0.0,>=0.7.0
+requires-python: <4.0.0,>=3.10.0
+project-url: Homepage, https://docs.langchain.com/oss/python/integrations/providers/openai
+project-url: Documentation, https://reference.langchain.com/python/integrations/langchain_openai/
+project-url: Repository, https://github.com/langchain-ai/langchain
+project-url: Issues, https://github.com/langchain-ai/langchain/issues
+project-url: Changelog, https://github.com/langchain-ai/langchain/releases?q=%22langchain-openai%22
+project-url: Twitter, https://x.com/langchain_oss
+project-url: Slack, https://www.langchain.com/join-community
+project-url: Reddit, https://www.reddit.com/r/LangChain/
+

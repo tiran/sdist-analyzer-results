@@ -1,0 +1,41 @@
+metadata-version: 2.4
+name: jupyter-packaging
+version: 0.7.12
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: platform
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+platform: Linux
+platform: Mac OS X
+platform: Windows
+summary: Jupyter Packaging Utilities
+keywords: Jupyter,Packaging
+home-page: http://jupyter.org
+author: Jupyter Development Team
+author-email: jupyter@googlegroups.com
+license: BSD
+license-file: LICENSE
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: System Administrators
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: BSD License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+requires-dist: packaging
+requires-dist: pytest; extra == "test"
+requires-python: >=3.6
+provides-extra: test
+

@@ -1,0 +1,115 @@
+metadata-version: 2.4
+name: unitxt
+version: 1.17.2
+dynamic: license-file
+summary: Load any mixture of text to text data in one line of code
+author-email: IBM Research <elron.bandel@ibm.com>
+license: Apache License
+                                            Version 2.0, January 2004
+                                         http://www.apache.org/licenses/
+                 
+                    TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+                 
+                    1. Definitions.
+                 
+                       "License" shall mean the terms and conditions for use, reproduction,
+                       and distribution as defined by Sections 1 through 9 of this document.
+                 
+                       "Licensor" shall mean the copyright owner or entity a...
+license-file: LICENSE
+classifier: Programming Language :: Python :: 3
+classifier: Operating System :: OS Independent
+requires-dist: datasets>=2.16.0
+requires-dist: evaluate
+requires-dist: absl-py
+requires-dist: ipadic
+requires-dist: scipy
+requires-dist: ruff; extra == "dev"
+requires-dist: pre-commit; extra == "dev"
+requires-dist: detect-secrets; extra == "dev"
+requires-dist: tomli; extra == "dev"
+requires-dist: codespell; extra == "dev"
+requires-dist: fuzzywuzzy; extra == "dev"
+requires-dist: httpretty; extra == "dev"
+requires-dist: sphinx_rtd_theme; extra == "docs"
+requires-dist: piccolo_theme; extra == "docs"
+requires-dist: sphinxext-opengraph; extra == "docs"
+requires-dist: datasets; extra == "docs"
+requires-dist: evaluate; extra == "docs"
+requires-dist: nltk; extra == "docs"
+requires-dist: sacrebleu; extra == "docs"
+requires-dist: absl-py; extra == "docs"
+requires-dist: rouge_score; extra == "docs"
+requires-dist: scikit-learn; extra == "docs"
+requires-dist: jiwer; extra == "docs"
+requires-dist: editdistance; extra == "docs"
+requires-dist: fuzzywuzzy; extra == "docs"
+requires-dist: crfm-helm[unitxt]>=0.5.3; extra == "helm"
+requires-dist: torch==1.12.1; extra == "service"
+requires-dist: fastapi==0.109.0; extra == "service"
+requires-dist: uvicorn[standard]==0.27.0.post1; extra == "service"
+requires-dist: python-jose[cryptography]==3.3.0; extra == "service"
+requires-dist: transformers; extra == "service"
+requires-dist: bert_score; extra == "tests"
+requires-dist: transformers; extra == "tests"
+requires-dist: sentence_transformers; extra == "tests"
+requires-dist: ibm-cos-sdk; extra == "tests"
+requires-dist: kaggle==1.6.14; extra == "tests"
+requires-dist: opendatasets; extra == "tests"
+requires-dist: httpretty~=1.1.4; extra == "tests"
+requires-dist: editdistance; extra == "tests"
+requires-dist: rouge-score; extra == "tests"
+requires-dist: nltk; extra == "tests"
+requires-dist: mecab-python3; extra == "tests"
+requires-dist: sacrebleu[ko]; extra == "tests"
+requires-dist: scikit-learn<=1.5.2; extra == "tests"
+requires-dist: jiwer; extra == "tests"
+requires-dist: conllu; extra == "tests"
+requires-dist: llama-index-core; extra == "tests"
+requires-dist: llama-index-llms-openai; extra == "tests"
+requires-dist: pytrec-eval; extra == "tests"
+requires-dist: SentencePiece; extra == "tests"
+requires-dist: fuzzywuzzy; extra == "tests"
+requires-dist: openai; extra == "tests"
+requires-dist: ibm-generative-ai; extra == "tests"
+requires-dist: bs4; extra == "tests"
+requires-dist: tenacity==8.3.0; extra == "tests"
+requires-dist: accelerate; extra == "tests"
+requires-dist: spacy; extra == "tests"
+requires-dist: func_timeout==4.3.5; extra == "tests"
+requires-dist: Wikipedia-API; extra == "tests"
+requires-dist: sqlglot; extra == "tests"
+requires-dist: gradio; extra == "ui"
+requires-dist: transformers; extra == "ui"
+requires-dist: ibm-watsonx-ai==1.1.14; extra == "watsonx"
+requires-dist: litellm==v1.52.9; extra == "inference-tests"
+requires-dist: tenacity; extra == "inference-tests"
+requires-dist: diskcache; extra == "inference-tests"
+requires-dist: numpy==1.26.4; extra == "inference-tests"
+requires-dist: streamlit; extra == "assistant"
+requires-dist: watchdog; extra == "assistant"
+requires-dist: litellm; extra == "assistant"
+requires-dist: unitxt[base]; extra == "all"
+requires-dist: unitxt[dev]; extra == "all"
+requires-dist: unitxt[docs]; extra == "all"
+requires-dist: unitxt[helm]; extra == "all"
+requires-dist: unitxt[service]; extra == "all"
+requires-dist: unitxt[tests]; extra == "all"
+requires-dist: unitxt[ui]; extra == "all"
+requires-dist: unitxt[watsonx]; extra == "all"
+requires-dist: unitxt[assistant]; extra == "all"
+requires-python: >=3.8
+project-url: Homepage, https://www.unitxt.ai
+project-url: Documentation, https://www.unitxt.ai/en/latest/documentation.html
+project-url: Repository, https://github.com/ibm/unitxt
+provides-extra: dev
+provides-extra: docs
+provides-extra: helm
+provides-extra: service
+provides-extra: tests
+provides-extra: ui
+provides-extra: watsonx
+provides-extra: inference-tests
+provides-extra: assistant
+provides-extra: all
+

@@ -1,4 +1,4 @@
+setuptools
+pybind11[global]
 wheel
 setuptools_scm
-pybind11[global]
-setuptools

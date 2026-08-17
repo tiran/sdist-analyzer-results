@@ -1,5 +1,5 @@
-packaging
 setuptools
-scikit-build>=0.14.0
-pip
 numpy==2.0.2; python_version >= "3.9" and python_version < "3.13"
+packaging
+pip
+scikit-build>=0.14.0

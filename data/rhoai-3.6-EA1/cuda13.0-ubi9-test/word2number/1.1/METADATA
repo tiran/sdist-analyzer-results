@@ -1,0 +1,32 @@
+metadata-version: 2.4
+name: word2number
+version: 1.1
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: download-url
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: summary
+summary: Convert number words eg. three hundred and forty two to numbers (342).
+keywords: numbers,convert,words
+home-page: https://github.com/akshaynagpal/w2n
+download-url: https://github.com/akshaynagpal/w2n/tarball/1.1
+author: Akshay Nagpal
+author-email: akshay2626@gmail.com
+license: The MIT License (MIT)
+                 
+                 Copyright (c) 2016 Akshay Nagpal (https://github.com/akshaynagpal)
+                 
+                 Permission is hereby granted, free of charge, to any person obtaining a copy
+                 of this software and associated documentation files (the "Software"), to deal
+                 in the Software without restriction, including without limitation the rights
+                 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+                 copies of the Software, and to permit persons to...
+license-file: LICENSE.txt
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Python
+

@@ -1,5 +1,5 @@
-setuptools
-pytest-runner
-scipy
-cython<=3.0.12
 numpy
+cython<=3.0.12
+scipy
+pytest-runner
+setuptools

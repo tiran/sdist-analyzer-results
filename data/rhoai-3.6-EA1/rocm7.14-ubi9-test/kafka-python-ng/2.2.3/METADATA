@@ -1,0 +1,49 @@
+metadata-version: 2.4
+name: kafka-python-ng
+version: 2.2.3
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: maintainer
+dynamic: maintainer-email
+dynamic: provides-extra
+dynamic: requires-python
+dynamic: summary
+summary: Pure Python client for Apache Kafka
+keywords: apache kafka,kafka
+home-page: https://github.com/wbarnha/kafka-python-ng
+author: Dana Powers
+author-email: dana.powers@gmail.com
+maintainer: William Barnhart
+maintainer-email: williambbarnhart@gmail.com
+license: Apache License 2.0
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: crc32c; extra == "crc32c"
+requires-dist: lz4; extra == "lz4"
+requires-dist: python-snappy; extra == "snappy"
+requires-dist: zstandard; extra == "zstd"
+requires-dist: botocore; extra == "boto"
+requires-python: >=3.8
+provides-extra: crc32c
+provides-extra: lz4
+provides-extra: snappy
+provides-extra: zstd
+provides-extra: boto
+

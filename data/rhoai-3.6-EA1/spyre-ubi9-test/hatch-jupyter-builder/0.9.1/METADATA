@@ -1,0 +1,42 @@
+metadata-version: 2.4
+name: hatch-jupyter-builder
+version: 0.9.1
+summary: A hatch plugin to help build Jupyter packages
+keywords: hatch,jupyter,jupyterlab
+author-email: Jupyter Development Team <jupyter@googlegroups.com>
+license: Copyright (c) 2022 Project Jupyter Contributors
+                 All rights reserved.
+                 
+                 Redistribution and use in source and binary forms, with or without
+                 modification, are permitted provided that the following conditions are met:
+                 
+                 1. Redistributions of source code must retain the above copyright notice, this
+                    list of conditions and the following disclaimer.
+                 
+                 2. Redistributions in binary form must reproduce the above copyright notice,
+                    thi...
+license-file: LICENSE.txt
+classifier: Development Status :: 4 - Beta
+classifier: License :: OSI Approved :: BSD License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+requires-dist: hatchling>=1.17
+requires-dist: myst-parser; extra == "docs"
+requires-dist: pydata-sphinx-theme; extra == "docs"
+requires-dist: sphinx-autodoc-typehints; extra == "docs"
+requires-dist: sphinxcontrib-spelling; extra == "docs"
+requires-dist: hatch; extra == "test"
+requires-dist: pytest; extra == "test"
+requires-dist: pytest-cov; extra == "test"
+requires-dist: pytest-mock; extra == "test"
+requires-dist: tomli; python_version < "3.11" and extra == "test"
+requires-dist: twine; extra == "test"
+requires-python: >=3.8
+project-url: Documentation, https://github.com/jupyterlab/hatch-jupyter-builder#readme
+project-url: Issues, https://github.com/jupyterlab/hatch-jupyter-builder/issues
+project-url: Source, https://github.com/jupyterlab/hatch-jupyter-builder
+provides-extra: docs
+provides-extra: test
+

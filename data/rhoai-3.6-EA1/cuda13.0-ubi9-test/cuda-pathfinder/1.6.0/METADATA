@@ -1,0 +1,12 @@
+metadata-version: 2.4
+name: cuda-pathfinder
+version: 1.6.0
+dynamic: license-file
+summary: Pathfinder for CUDA components
+author-email: NVIDIA Corporation <cuda-python-conduct@nvidia.com>
+license-expression: Apache-2.0
+license-file: LICENSE
+requires-python: >=3.10
+project-url: Repository, https://github.com/NVIDIA/cuda-python
+project-url: Documentation, https://nvidia.github.io/cuda-python/
+

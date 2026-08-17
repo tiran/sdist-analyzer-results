@@ -1,339 +1,212 @@
-Metadata-Version: 2.4
-Name: docling-slim
-Version: 2.107.0
-Summary: Modular version of the Docling package: SDK and CLI for parsing PDF, DOCX, HTML, and more, to a unified document representation for powering downstream workflows such as gen AI applications.
-Project-URL: homepage, https://github.com/docling-project/docling
-Project-URL: repository, https://github.com/docling-project/docling
-Project-URL: issues, https://github.com/docling-project/docling/issues
-Project-URL: changelog, https://github.com/docling-project/docling/blob/main/CHANGELOG.md
-Author-email: Christoph Auer <cau@zurich.ibm.com>, Michele Dolfi <dol@zurich.ibm.com>, Maxim Lysak <mly@zurich.ibm.com>, Nikos Livathinos <nli@zurich.ibm.com>, Ahmed Nassar <ahn@zurich.ibm.com>, Panos Vagenas <pva@zurich.ibm.com>, Peter Staar <taa@zurich.ibm.com>
-License-Expression: MIT
-License-File: LICENSE
-Keywords: convert,docling,document,docx,html,layout model,markdown,pdf,segmentation
-Classifier: Development Status :: 5 - Production/Stable
-Classifier: Intended Audience :: Developers
-Classifier: Intended Audience :: Science/Research
-Classifier: Operating System :: MacOS :: MacOS X
-Classifier: Operating System :: Microsoft :: Windows
-Classifier: Operating System :: POSIX :: Linux
-Classifier: Programming Language :: Python :: 3
-Classifier: Programming Language :: Python :: 3.10
-Classifier: Programming Language :: Python :: 3.11
-Classifier: Programming Language :: Python :: 3.12
-Classifier: Programming Language :: Python :: 3.13
-Classifier: Programming Language :: Python :: 3.14
-Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
-Requires-Python: <4.0,>=3.10
-Requires-Dist: certifi>=2024.7.4
-Requires-Dist: docling-core<3.0.0,>=2.84.0
-Requires-Dist: filetype<2.0.0,>=1.2.0
-Requires-Dist: pluggy<2.0.0,>=1.0.0
-Requires-Dist: pydantic-settings<3.0.0,>=2.3.0
-Requires-Dist: pydantic<3.0.0,>=2.0.0
-Requires-Dist: requests<3.0.0,>=2.32.2
-Requires-Dist: tqdm<5.0.0,>=4.65.0
-Provides-Extra: all
-Requires-Dist: accelerate<2,>=1.0.0; extra == 'all'
-Requires-Dist: accelerate<2.0.0,>=1.2.1; extra == 'all'
-Requires-Dist: arelle-release<3.0.0,>=2.38.17; extra == 'all'
-Requires-Dist: beautifulsoup4<5.0.0,>=4.12.3; extra == 'all'
-Requires-Dist: defusedxml<0.8.0,>=0.7.1; extra == 'all'
-Requires-Dist: docling-core[chunking]<3.0.0,>=2.73.0; extra == 'all'
-Requires-Dist: docling-ibm-models<4,>=3.13.0; extra == 'all'
-Requires-Dist: docling-parse<8.0.0,>=7.0.0; extra == 'all'
-Requires-Dist: easyocr<2.0,>=1.7; extra == 'all'
-Requires-Dist: httpx<1.0.0,>=0.28; extra == 'all'
-Requires-Dist: huggingface-hub<2,>=0.23; extra == 'all'
-Requires-Dist: lxml<7.0.0,>=4.0.0; extra == 'all'
-Requires-Dist: mail-parser<5.0.0,>=4.1.4; extra == 'all'
-Requires-Dist: marko<3.0.0,>=2.1.2; extra == 'all'
-Requires-Dist: mlx-vlm<1.0.0,>=0.4.3; (python_version >= '3.10' and sys_platform == 'darwin' and platform_machine == 'arm64') and extra == 'all'
-Requires-Dist: mlx-whisper>=0.4.3; (python_version >= '3.10' and sys_platform == 'darwin' and platform_machine == 'arm64') and extra == 'all'
-Requires-Dist: numba>=0.63.0; extra == 'all'
-Requires-Dist: numpy<3.0.0,>=1.24.0; extra == 'all'
-Requires-Dist: ocrmac<2.0.0,>=1.0.0; (sys_platform == 'darwin') and extra == 'all'
-Requires-Dist: onnxruntime-gpu<1.24; (python_version < '3.14' and (sys_platform == 'linux' or sys_platform == 'win32')) and extra == 'all'
-Requires-Dist: onnxruntime<1.24; (python_version < '3.14' and sys_platform == 'darwin') and extra == 'all'
-Requires-Dist: openai-whisper>=20250625; extra == 'all'
-Requires-Dist: openpyxl<4.0.0,>=3.1.5; extra == 'all'
-Requires-Dist: pandas<4.0.0,>=2.1.4; extra == 'all'
-Requires-Dist: peft>=0.18.1; extra == 'all'
-Requires-Dist: pillow<13.0.0,>=10.0.0; extra == 'all'
-Requires-Dist: playwright>=1.58.0; extra == 'all'
-Requires-Dist: polyfactory>=2.22.2; extra == 'all'
-Requires-Dist: pylatexenc<3.0,>=2.10; extra == 'all'
-Requires-Dist: pypdfium2!=4.30.1,<6.0.0,>=4.30.0; extra == 'all'
-Requires-Dist: python-docx<2.0.0,>=1.1.2; extra == 'all'
-Requires-Dist: python-dotenv~=1.0; extra == 'all'
-Requires-Dist: python-pptx<2.0.0,>=1.0.2; extra == 'all'
-Requires-Dist: qwen-vl-utils>=0.0.11; extra == 'all'
-Requires-Dist: rapidocr<4.0.0,>=3.8; extra == 'all'
-Requires-Dist: rich>=13.0.0; extra == 'all'
-Requires-Dist: rtree<2.0.0,>=1.3.0; extra == 'all'
-Requires-Dist: scikit-image>=0.19; extra == 'all'
-Requires-Dist: scipy<2.0.0,>=1.6.0; extra == 'all'
-Requires-Dist: tesserocr<3.0.0,>=2.7.1; extra == 'all'
-Requires-Dist: torch<3.0.0,>=2.2.2; extra == 'all'
-Requires-Dist: torchvision<1,>=0; extra == 'all'
-Requires-Dist: transformers!=5.0.*,!=5.1.*,!=5.2.*,!=5.3.*,<5.9.0,>=4.42.0; (sys_platform == 'darwin') and extra == 'all'
-Requires-Dist: transformers!=5.0.*,!=5.1.*,!=5.2.*,!=5.3.*,<6.0.0,>=4.42.0; (sys_platform != 'darwin') and extra == 'all'
-Requires-Dist: tritonclient[grpc]<3.0.0,>=2.65.0; extra == 'all'
-Requires-Dist: typer<0.27.0,>=0.12.5; extra == 'all'
-Requires-Dist: websockets<17.0,>=14.0; extra == 'all'
-Provides-Extra: cli
-Requires-Dist: python-dotenv~=1.0; extra == 'cli'
-Requires-Dist: rich>=13.0.0; extra == 'cli'
-Requires-Dist: typer<0.27.0,>=0.12.5; extra == 'cli'
-Provides-Extra: convert-core
-Requires-Dist: numpy<3.0.0,>=1.24.0; extra == 'convert-core'
-Requires-Dist: pillow<13.0.0,>=10.0.0; extra == 'convert-core'
-Requires-Dist: rtree<2.0.0,>=1.3.0; extra == 'convert-core'
-Requires-Dist: scipy<2.0.0,>=1.6.0; extra == 'convert-core'
-Provides-Extra: extract-core
-Requires-Dist: numpy<3.0.0,>=1.24.0; extra == 'extract-core'
-Requires-Dist: pillow<13.0.0,>=10.0.0; extra == 'extract-core'
-Requires-Dist: polyfactory>=2.22.2; extra == 'extract-core'
-Requires-Dist: rtree<2.0.0,>=1.3.0; extra == 'extract-core'
-Requires-Dist: scipy<2.0.0,>=1.6.0; extra == 'extract-core'
-Provides-Extra: feat-chunking
-Requires-Dist: docling-core[chunking]<3.0.0,>=2.73.0; extra == 'feat-chunking'
-Provides-Extra: feat-ocr-easyocr
-Requires-Dist: easyocr<2.0,>=1.7; extra == 'feat-ocr-easyocr'
-Requires-Dist: scikit-image>=0.19; extra == 'feat-ocr-easyocr'
-Provides-Extra: feat-ocr-mac
-Requires-Dist: ocrmac<2.0.0,>=1.0.0; (sys_platform == 'darwin') and extra == 'feat-ocr-mac'
-Provides-Extra: feat-ocr-nemotron
-Requires-Dist: nemotron-ocr>=2.0.0; (python_version == '3.12' and sys_platform == 'linux' and platform_machine == 'x86_64') and extra == 'feat-ocr-nemotron'
-Provides-Extra: feat-ocr-rapidocr
-Requires-Dist: rapidocr<4.0.0,>=3.8; extra == 'feat-ocr-rapidocr'
-Provides-Extra: feat-ocr-rapidocr-onnx
-Requires-Dist: onnxruntime<2.0.0,>=1.7.0; (python_version < '3.14') and extra == 'feat-ocr-rapidocr-onnx'
-Requires-Dist: rapidocr<4.0.0,>=3.8; extra == 'feat-ocr-rapidocr-onnx'
-Provides-Extra: feat-ocr-tesserocr
-Requires-Dist: pandas<4.0.0,>=2.1.4; extra == 'feat-ocr-tesserocr'
-Requires-Dist: tesserocr<3.0.0,>=2.7.1; extra == 'feat-ocr-tesserocr'
-Provides-Extra: format-audio
-Requires-Dist: mlx-whisper>=0.4.3; (python_version >= '3.10' and sys_platform == 'darwin' and platform_machine == 'arm64') and extra == 'format-audio'
-Requires-Dist: numba>=0.63.0; extra == 'format-audio'
-Requires-Dist: openai-whisper>=20250625; extra == 'format-audio'
-Provides-Extra: format-docx
-Requires-Dist: python-docx<2.0.0,>=1.1.2; extra == 'format-docx'
-Provides-Extra: format-email
-Requires-Dist: beautifulsoup4<5.0.0,>=4.12.3; extra == 'format-email'
-Requires-Dist: lxml<7.0.0,>=4.0.0; extra == 'format-email'
-Requires-Dist: mail-parser<5.0.0,>=4.1.4; extra == 'format-email'
-Provides-Extra: format-html
-Requires-Dist: beautifulsoup4<5.0.0,>=4.12.3; extra == 'format-html'
-Requires-Dist: lxml<7.0.0,>=4.0.0; extra == 'format-html'
-Provides-Extra: format-html-render
-Requires-Dist: playwright>=1.58.0; extra == 'format-html-render'
-Provides-Extra: format-latex
-Requires-Dist: pylatexenc<3.0,>=2.10; extra == 'format-latex'
-Provides-Extra: format-markdown
-Requires-Dist: marko<3.0.0,>=2.1.2; extra == 'format-markdown'
-Provides-Extra: format-office
-Requires-Dist: openpyxl<4.0.0,>=3.1.5; extra == 'format-office'
-Requires-Dist: python-docx<2.0.0,>=1.1.2; extra == 'format-office'
-Requires-Dist: python-pptx<2.0.0,>=1.0.2; extra == 'format-office'
-Provides-Extra: format-opendocument
-Requires-Dist: odfdo<4.0.0,>=3.22.0; extra == 'format-opendocument'
-Provides-Extra: format-pdf
-Requires-Dist: docling-parse<8.0.0,>=7.0.0; extra == 'format-pdf'
-Requires-Dist: pypdfium2!=4.30.1,<6.0.0,>=4.30.0; extra == 'format-pdf'
-Provides-Extra: format-pdf-docling
-Requires-Dist: docling-parse<8.0.0,>=7.0.0; extra == 'format-pdf-docling'
-Requires-Dist: pypdfium2!=4.30.1,<6.0.0,>=4.30.0; extra == 'format-pdf-docling'
-Provides-Extra: format-pdf-pypdfium2
-Requires-Dist: pypdfium2!=4.30.1,<6.0.0,>=4.30.0; extra == 'format-pdf-pypdfium2'
-Provides-Extra: format-pptx
-Requires-Dist: python-pptx<2.0.0,>=1.0.2; extra == 'format-pptx'
-Provides-Extra: format-web
-Requires-Dist: beautifulsoup4<5.0.0,>=4.12.3; extra == 'format-web'
-Requires-Dist: lxml<7.0.0,>=4.0.0; extra == 'format-web'
-Requires-Dist: marko<3.0.0,>=2.1.2; extra == 'format-web'
-Provides-Extra: format-xlsx
-Requires-Dist: openpyxl<4.0.0,>=3.1.5; extra == 'format-xlsx'
-Provides-Extra: format-xml-xbrl
-Requires-Dist: arelle-release<3.0.0,>=2.38.17; extra == 'format-xml-xbrl'
-Provides-Extra: models-local
-Requires-Dist: accelerate<2,>=1.0.0; extra == 'models-local'
-Requires-Dist: defusedxml<0.8.0,>=0.7.1; extra == 'models-local'
-Requires-Dist: docling-ibm-models<4,>=3.13.0; extra == 'models-local'
-Requires-Dist: huggingface-hub<2,>=0.23; extra == 'models-local'
-Requires-Dist: torch<3.0.0,>=2.2.2; extra == 'models-local'
-Requires-Dist: torchvision<1,>=0; extra == 'models-local'
-Provides-Extra: models-onnxruntime
-Requires-Dist: onnxruntime-gpu<1.24; (python_version < '3.14' and (sys_platform == 'linux' or sys_platform == 'win32')) and extra == 'models-onnxruntime'
-Requires-Dist: onnxruntime<1.24; (python_version < '3.14' and sys_platform == 'darwin') and extra == 'models-onnxruntime'
-Provides-Extra: models-remote
-Requires-Dist: tritonclient[grpc]<3.0.0,>=2.65.0; extra == 'models-remote'
-Provides-Extra: models-vlm-inline
-Requires-Dist: accelerate<2.0.0,>=1.2.1; extra == 'models-vlm-inline'
-Requires-Dist: mlx-vlm<1.0.0,>=0.4.3; (python_version >= '3.10' and sys_platform == 'darwin' and platform_machine == 'arm64') and extra == 'models-vlm-inline'
-Requires-Dist: peft>=0.18.1; extra == 'models-vlm-inline'
-Requires-Dist: qwen-vl-utils>=0.0.11; extra == 'models-vlm-inline'
-Requires-Dist: transformers!=5.0.*,!=5.1.*,!=5.2.*,!=5.3.*,<5.9.0,>=4.42.0; (sys_platform == 'darwin') and extra == 'models-vlm-inline'
-Requires-Dist: transformers!=5.0.*,!=5.1.*,!=5.2.*,!=5.3.*,<6.0.0,>=4.42.0; (sys_platform != 'darwin') and extra == 'models-vlm-inline'
-Provides-Extra: service-client
-Requires-Dist: httpx<1.0.0,>=0.28; extra == 'service-client'
-Requires-Dist: python-dotenv~=1.0; extra == 'service-client'
-Requires-Dist: rich>=13.0.0; extra == 'service-client'
-Requires-Dist: typer<0.27.0,>=0.12.5; extra == 'service-client'
-Requires-Dist: websockets<17.0,>=14.0; extra == 'service-client'
-Provides-Extra: standard
-Requires-Dist: accelerate<2,>=1.0.0; extra == 'standard'
-Requires-Dist: beautifulsoup4<5.0.0,>=4.12.3; extra == 'standard'
-Requires-Dist: defusedxml<0.8.0,>=0.7.1; extra == 'standard'
-Requires-Dist: docling-core[chunking]<3.0.0,>=2.73.0; extra == 'standard'
-Requires-Dist: docling-ibm-models<4,>=3.13.0; extra == 'standard'
-Requires-Dist: docling-parse<8.0.0,>=7.0.0; extra == 'standard'
-Requires-Dist: httpx<1.0.0,>=0.28; extra == 'standard'
-Requires-Dist: huggingface-hub<2,>=0.23; extra == 'standard'
-Requires-Dist: lxml<7.0.0,>=4.0.0; extra == 'standard'
-Requires-Dist: mail-parser<5.0.0,>=4.1.4; extra == 'standard'
-Requires-Dist: marko<3.0.0,>=2.1.2; extra == 'standard'
-Requires-Dist: numpy<3.0.0,>=1.24.0; extra == 'standard'
-Requires-Dist: openpyxl<4.0.0,>=3.1.5; extra == 'standard'
-Requires-Dist: pillow<13.0.0,>=10.0.0; extra == 'standard'
-Requires-Dist: polyfactory>=2.22.2; extra == 'standard'
-Requires-Dist: pylatexenc<3.0,>=2.10; extra == 'standard'
-Requires-Dist: pypdfium2!=4.30.1,<6.0.0,>=4.30.0; extra == 'standard'
-Requires-Dist: python-docx<2.0.0,>=1.1.2; extra == 'standard'
-Requires-Dist: python-dotenv~=1.0; extra == 'standard'
-Requires-Dist: python-pptx<2.0.0,>=1.0.2; extra == 'standard'
-Requires-Dist: rapidocr<4.0.0,>=3.8; extra == 'standard'
-Requires-Dist: rich>=13.0.0; extra == 'standard'
-Requires-Dist: rtree<2.0.0,>=1.3.0; extra == 'standard'
-Requires-Dist: scipy<2.0.0,>=1.6.0; extra == 'standard'
-Requires-Dist: torch<3.0.0,>=2.2.2; extra == 'standard'
-Requires-Dist: torchvision<1,>=0; extra == 'standard'
-Requires-Dist: typer<0.27.0,>=0.12.5; extra == 'standard'
-Requires-Dist: websockets<17.0,>=14.0; extra == 'standard'
-Description-Content-Type: text/markdown
+metadata-version: 2.4
+name: docling-slim
+version: 2.107.0
+summary: Modular version of the Docling package: SDK and CLI for parsing PDF, DOCX, HTML, and more, to a unified document representation for powering downstream workflows such as gen AI applications.
+keywords: convert,docling,document,docx,html,layout model,markdown,pdf,segmentation
+author-email: Christoph Auer <cau@zurich.ibm.com>, Michele Dolfi <dol@zurich.ibm.com>, Maxim Lysak <mly@zurich.ibm.com>, Nikos Livathinos <nli@zurich.ibm.com>, Ahmed Nassar <ahn@zurich.ibm.com>, Panos Vagenas <pva@zurich.ibm.com>, Peter Staar <taa@zurich.ibm.com>
+license-expression: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: POSIX :: Linux
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+requires-dist: certifi>=2024.7.4
+requires-dist: docling-core<3.0.0,>=2.84.0
+requires-dist: filetype<2.0.0,>=1.2.0
+requires-dist: pluggy<2.0.0,>=1.0.0
+requires-dist: pydantic-settings<3.0.0,>=2.3.0
+requires-dist: pydantic<3.0.0,>=2.0.0
+requires-dist: requests<3.0.0,>=2.32.2
+requires-dist: tqdm<5.0.0,>=4.65.0
+requires-dist: accelerate<2,>=1.0.0; extra == "all"
+requires-dist: accelerate<2.0.0,>=1.2.1; extra == "all"
+requires-dist: arelle-release<3.0.0,>=2.38.17; extra == "all"
+requires-dist: beautifulsoup4<5.0.0,>=4.12.3; extra == "all"
+requires-dist: defusedxml<0.8.0,>=0.7.1; extra == "all"
+requires-dist: docling-core[chunking]<3.0.0,>=2.73.0; extra == "all"
+requires-dist: docling-ibm-models<4,>=3.13.0; extra == "all"
+requires-dist: docling-parse<8.0.0,>=7.0.0; extra == "all"
+requires-dist: easyocr<2.0,>=1.7; extra == "all"
+requires-dist: httpx<1.0.0,>=0.28; extra == "all"
+requires-dist: huggingface-hub<2,>=0.23; extra == "all"
+requires-dist: lxml<7.0.0,>=4.0.0; extra == "all"
+requires-dist: mail-parser<5.0.0,>=4.1.4; extra == "all"
+requires-dist: marko<3.0.0,>=2.1.2; extra == "all"
+requires-dist: mlx-vlm<1.0.0,>=0.4.3; (python_version >= "3.10" and sys_platform == "darwin" and platform_machine == "arm64") and extra == "all"
+requires-dist: mlx-whisper>=0.4.3; (python_version >= "3.10" and sys_platform == "darwin" and platform_machine == "arm64") and extra == "all"
+requires-dist: numba>=0.63.0; extra == "all"
+requires-dist: numpy<3.0.0,>=1.24.0; extra == "all"
+requires-dist: ocrmac<2.0.0,>=1.0.0; sys_platform == "darwin" and extra == "all"
+requires-dist: onnxruntime-gpu<1.24; (python_version < "3.14" and (sys_platform == "linux" or sys_platform == "win32")) and extra == "all"
+requires-dist: onnxruntime<1.24; (python_version < "3.14" and sys_platform == "darwin") and extra == "all"
+requires-dist: openai-whisper>=20250625; extra == "all"
+requires-dist: openpyxl<4.0.0,>=3.1.5; extra == "all"
+requires-dist: pandas<4.0.0,>=2.1.4; extra == "all"
+requires-dist: peft>=0.18.1; extra == "all"
+requires-dist: pillow<13.0.0,>=10.0.0; extra == "all"
+requires-dist: playwright>=1.58.0; extra == "all"
+requires-dist: polyfactory>=2.22.2; extra == "all"
+requires-dist: pylatexenc<3.0,>=2.10; extra == "all"
+requires-dist: pypdfium2!=4.30.1,<6.0.0,>=4.30.0; extra == "all"
+requires-dist: python-docx<2.0.0,>=1.1.2; extra == "all"
+requires-dist: python-dotenv~=1.0; extra == "all"
+requires-dist: python-pptx<2.0.0,>=1.0.2; extra == "all"
+requires-dist: qwen-vl-utils>=0.0.11; extra == "all"
+requires-dist: rapidocr<4.0.0,>=3.8; extra == "all"
+requires-dist: rich>=13.0.0; extra == "all"
+requires-dist: rtree<2.0.0,>=1.3.0; extra == "all"
+requires-dist: scikit-image>=0.19; extra == "all"
+requires-dist: scipy<2.0.0,>=1.6.0; extra == "all"
+requires-dist: tesserocr<3.0.0,>=2.7.1; extra == "all"
+requires-dist: torch<3.0.0,>=2.2.2; extra == "all"
+requires-dist: torchvision<1,>=0; extra == "all"
+requires-dist: transformers!=5.0.*,!=5.1.*,!=5.2.*,!=5.3.*,<5.9.0,>=4.42.0; sys_platform == "darwin" and extra == "all"
+requires-dist: transformers!=5.0.*,!=5.1.*,!=5.2.*,!=5.3.*,<6.0.0,>=4.42.0; sys_platform != "darwin" and extra == "all"
+requires-dist: tritonclient[grpc]<3.0.0,>=2.65.0; extra == "all"
+requires-dist: typer<0.27.0,>=0.12.5; extra == "all"
+requires-dist: websockets<17.0,>=14.0; extra == "all"
+requires-dist: python-dotenv~=1.0; extra == "cli"
+requires-dist: rich>=13.0.0; extra == "cli"
+requires-dist: typer<0.27.0,>=0.12.5; extra == "cli"
+requires-dist: numpy<3.0.0,>=1.24.0; extra == "convert-core"
+requires-dist: pillow<13.0.0,>=10.0.0; extra == "convert-core"
+requires-dist: rtree<2.0.0,>=1.3.0; extra == "convert-core"
+requires-dist: scipy<2.0.0,>=1.6.0; extra == "convert-core"
+requires-dist: numpy<3.0.0,>=1.24.0; extra == "extract-core"
+requires-dist: pillow<13.0.0,>=10.0.0; extra == "extract-core"
+requires-dist: polyfactory>=2.22.2; extra == "extract-core"
+requires-dist: rtree<2.0.0,>=1.3.0; extra == "extract-core"
+requires-dist: scipy<2.0.0,>=1.6.0; extra == "extract-core"
+requires-dist: docling-core[chunking]<3.0.0,>=2.73.0; extra == "feat-chunking"
+requires-dist: easyocr<2.0,>=1.7; extra == "feat-ocr-easyocr"
+requires-dist: scikit-image>=0.19; extra == "feat-ocr-easyocr"
+requires-dist: ocrmac<2.0.0,>=1.0.0; sys_platform == "darwin" and extra == "feat-ocr-mac"
+requires-dist: nemotron-ocr>=2.0.0; (python_version == "3.12" and sys_platform == "linux" and platform_machine == "x86_64") and extra == "feat-ocr-nemotron"
+requires-dist: rapidocr<4.0.0,>=3.8; extra == "feat-ocr-rapidocr"
+requires-dist: onnxruntime<2.0.0,>=1.7.0; python_version < "3.14" and extra == "feat-ocr-rapidocr-onnx"
+requires-dist: rapidocr<4.0.0,>=3.8; extra == "feat-ocr-rapidocr-onnx"
+requires-dist: pandas<4.0.0,>=2.1.4; extra == "feat-ocr-tesserocr"
+requires-dist: tesserocr<3.0.0,>=2.7.1; extra == "feat-ocr-tesserocr"
+requires-dist: mlx-whisper>=0.4.3; (python_version >= "3.10" and sys_platform == "darwin" and platform_machine == "arm64") and extra == "format-audio"
+requires-dist: numba>=0.63.0; extra == "format-audio"
+requires-dist: openai-whisper>=20250625; extra == "format-audio"
+requires-dist: python-docx<2.0.0,>=1.1.2; extra == "format-docx"
+requires-dist: beautifulsoup4<5.0.0,>=4.12.3; extra == "format-email"
+requires-dist: lxml<7.0.0,>=4.0.0; extra == "format-email"
+requires-dist: mail-parser<5.0.0,>=4.1.4; extra == "format-email"
+requires-dist: beautifulsoup4<5.0.0,>=4.12.3; extra == "format-html"
+requires-dist: lxml<7.0.0,>=4.0.0; extra == "format-html"
+requires-dist: playwright>=1.58.0; extra == "format-html-render"
+requires-dist: pylatexenc<3.0,>=2.10; extra == "format-latex"
+requires-dist: marko<3.0.0,>=2.1.2; extra == "format-markdown"
+requires-dist: openpyxl<4.0.0,>=3.1.5; extra == "format-office"
+requires-dist: python-docx<2.0.0,>=1.1.2; extra == "format-office"
+requires-dist: python-pptx<2.0.0,>=1.0.2; extra == "format-office"
+requires-dist: odfdo<4.0.0,>=3.22.0; extra == "format-opendocument"
+requires-dist: docling-parse<8.0.0,>=7.0.0; extra == "format-pdf"
+requires-dist: pypdfium2!=4.30.1,<6.0.0,>=4.30.0; extra == "format-pdf"
+requires-dist: docling-parse<8.0.0,>=7.0.0; extra == "format-pdf-docling"
+requires-dist: pypdfium2!=4.30.1,<6.0.0,>=4.30.0; extra == "format-pdf-docling"
+requires-dist: pypdfium2!=4.30.1,<6.0.0,>=4.30.0; extra == "format-pdf-pypdfium2"
+requires-dist: python-pptx<2.0.0,>=1.0.2; extra == "format-pptx"
+requires-dist: beautifulsoup4<5.0.0,>=4.12.3; extra == "format-web"
+requires-dist: lxml<7.0.0,>=4.0.0; extra == "format-web"
+requires-dist: marko<3.0.0,>=2.1.2; extra == "format-web"
+requires-dist: openpyxl<4.0.0,>=3.1.5; extra == "format-xlsx"
+requires-dist: arelle-release<3.0.0,>=2.38.17; extra == "format-xml-xbrl"
+requires-dist: accelerate<2,>=1.0.0; extra == "models-local"
+requires-dist: defusedxml<0.8.0,>=0.7.1; extra == "models-local"
+requires-dist: docling-ibm-models<4,>=3.13.0; extra == "models-local"
+requires-dist: huggingface-hub<2,>=0.23; extra == "models-local"
+requires-dist: torch<3.0.0,>=2.2.2; extra == "models-local"
+requires-dist: torchvision<1,>=0; extra == "models-local"
+requires-dist: onnxruntime-gpu<1.24; (python_version < "3.14" and (sys_platform == "linux" or sys_platform == "win32")) and extra == "models-onnxruntime"
+requires-dist: onnxruntime<1.24; (python_version < "3.14" and sys_platform == "darwin") and extra == "models-onnxruntime"
+requires-dist: tritonclient[grpc]<3.0.0,>=2.65.0; extra == "models-remote"
+requires-dist: accelerate<2.0.0,>=1.2.1; extra == "models-vlm-inline"
+requires-dist: mlx-vlm<1.0.0,>=0.4.3; (python_version >= "3.10" and sys_platform == "darwin" and platform_machine == "arm64") and extra == "models-vlm-inline"
+requires-dist: peft>=0.18.1; extra == "models-vlm-inline"
+requires-dist: qwen-vl-utils>=0.0.11; extra == "models-vlm-inline"
+requires-dist: transformers!=5.0.*,!=5.1.*,!=5.2.*,!=5.3.*,<5.9.0,>=4.42.0; sys_platform == "darwin" and extra == "models-vlm-inline"
+requires-dist: transformers!=5.0.*,!=5.1.*,!=5.2.*,!=5.3.*,<6.0.0,>=4.42.0; sys_platform != "darwin" and extra == "models-vlm-inline"
+requires-dist: httpx<1.0.0,>=0.28; extra == "service-client"
+requires-dist: python-dotenv~=1.0; extra == "service-client"
+requires-dist: rich>=13.0.0; extra == "service-client"
+requires-dist: typer<0.27.0,>=0.12.5; extra == "service-client"
+requires-dist: websockets<17.0,>=14.0; extra == "service-client"
+requires-dist: accelerate<2,>=1.0.0; extra == "standard"
+requires-dist: beautifulsoup4<5.0.0,>=4.12.3; extra == "standard"
+requires-dist: defusedxml<0.8.0,>=0.7.1; extra == "standard"
+requires-dist: docling-core[chunking]<3.0.0,>=2.73.0; extra == "standard"
+requires-dist: docling-ibm-models<4,>=3.13.0; extra == "standard"
+requires-dist: docling-parse<8.0.0,>=7.0.0; extra == "standard"
+requires-dist: httpx<1.0.0,>=0.28; extra == "standard"
+requires-dist: huggingface-hub<2,>=0.23; extra == "standard"
+requires-dist: lxml<7.0.0,>=4.0.0; extra == "standard"
+requires-dist: mail-parser<5.0.0,>=4.1.4; extra == "standard"
+requires-dist: marko<3.0.0,>=2.1.2; extra == "standard"
+requires-dist: numpy<3.0.0,>=1.24.0; extra == "standard"
+requires-dist: openpyxl<4.0.0,>=3.1.5; extra == "standard"
+requires-dist: pillow<13.0.0,>=10.0.0; extra == "standard"
+requires-dist: polyfactory>=2.22.2; extra == "standard"
+requires-dist: pylatexenc<3.0,>=2.10; extra == "standard"
+requires-dist: pypdfium2!=4.30.1,<6.0.0,>=4.30.0; extra == "standard"
+requires-dist: python-docx<2.0.0,>=1.1.2; extra == "standard"
+requires-dist: python-dotenv~=1.0; extra == "standard"
+requires-dist: python-pptx<2.0.0,>=1.0.2; extra == "standard"
+requires-dist: rapidocr<4.0.0,>=3.8; extra == "standard"
+requires-dist: rich>=13.0.0; extra == "standard"
+requires-dist: rtree<2.0.0,>=1.3.0; extra == "standard"
+requires-dist: scipy<2.0.0,>=1.6.0; extra == "standard"
+requires-dist: torch<3.0.0,>=2.2.2; extra == "standard"
+requires-dist: torchvision<1,>=0; extra == "standard"
+requires-dist: typer<0.27.0,>=0.12.5; extra == "standard"
+requires-dist: websockets<17.0,>=14.0; extra == "standard"
+requires-python: <4.0,>=3.10
+project-url: homepage, https://github.com/docling-project/docling
+project-url: repository, https://github.com/docling-project/docling
+project-url: issues, https://github.com/docling-project/docling/issues
+project-url: changelog, https://github.com/docling-project/docling/blob/main/CHANGELOG.md
+provides-extra: all
+provides-extra: cli
+provides-extra: convert-core
+provides-extra: extract-core
+provides-extra: feat-chunking
+provides-extra: feat-ocr-easyocr
+provides-extra: feat-ocr-mac
+provides-extra: feat-ocr-nemotron
+provides-extra: feat-ocr-rapidocr
+provides-extra: feat-ocr-rapidocr-onnx
+provides-extra: feat-ocr-tesserocr
+provides-extra: format-audio
+provides-extra: format-docx
+provides-extra: format-email
+provides-extra: format-html
+provides-extra: format-html-render
+provides-extra: format-latex
+provides-extra: format-markdown
+provides-extra: format-office
+provides-extra: format-opendocument
+provides-extra: format-pdf
+provides-extra: format-pdf-docling
+provides-extra: format-pdf-pypdfium2
+provides-extra: format-pptx
+provides-extra: format-web
+provides-extra: format-xlsx
+provides-extra: format-xml-xbrl
+provides-extra: models-local
+provides-extra: models-onnxruntime
+provides-extra: models-remote
+provides-extra: models-vlm-inline
+provides-extra: service-client
+provides-extra: standard
 
-# Docling Slim
-
-**Lightweight SDK for parsing documents with minimal dependencies and opt-in extras**
-
-Docling Slim is a minimal-dependency version of Docling that allows you to install only the components you need. It provides the core document processing functionality with ~50MB of base dependencies, and you can add specific features through optional extras.
-
-## When to Use Docling Slim
-
-- **Use `docling`** (recommended): If you want the full-featured experience with all standard capabilities
-- **Use `docling-slim`**: If you need fine-grained control over dependencies or want to minimize installation size
-
-## For Most Users: Use the Main Docling Package
-
-We recommend most users install the full-featured `docling` package instead:
-
-```bash
-pip install docling
-```
-
-The `docling` package includes all standard features, the CLI tools, and is the easiest way to get started. Visit the [main Docling documentation](https://docling-project.github.io/docling/) for complete guides and examples.
-
-## Installation
-
-### With Specific Features
-```bash
-# PDF support with local models
-pip install docling-slim[format-pdf,models-local]
-
-# Office formats only
-pip install docling-slim[format-office]
-
-# PDF + CLI
-pip install docling-slim[format-pdf,cli]
-
-# Docling service client for using the Docling Serve API
-pip install docling-slim[service-client]
-```
-
-## Available Extras
-
-### Convenience Bundles
-
-| Extra | Description | Use Case |
-|-------|-------------|----------|
-| `standard` | All standard features (same as `docling` package) | Full-featured usage |
-| `all` | All available extras | Complete installation |
-
-### CLI
-
-| Extra | Description | Use Case |
-|-------|-------------|----------|
-| `cli` | Command-line interface (typer, rich) | CLI tools (docling, docling-tools) |
-
-### Core Components
-
-| Extra | Description | Use Case |
-|-------|-------------|----------|
-| `convert-core` | Core conversion components (numpy, pillow, scipy) | Basic document conversion |
-| `extract-core` | Structured information extraction | Data extraction from documents |
-
-### Format Support
-
-#### PDF Formats
-
-| Extra | Description | Use Case |
-|-------|-------------|----------|
-| `format-pdf` | PDF parsing (pypdfium2 + docling-parse) | PDF documents |
-| `format-pdf-pypdfium2` | PDF rendering only | Lightweight PDF support |
-| `format-pdf-docling` | Advanced PDF parsing | Complex PDF layouts |
-
-#### Office Formats (office = docx + pptx + xlsx)
-
-| Extra | Description | Use Case |
-|-------|-------------|----------|
-| `format-office` | All Office formats | Microsoft Office documents |
-| `format-docx` | Microsoft Word documents | .docx files |
-| `format-pptx` | Microsoft PowerPoint | .pptx files |
-| `format-xlsx` | Microsoft Excel | .xlsx files |
-
-#### Web Formats (web = html + markdown)
-
-| Extra | Description | Use Case |
-|-------|-------------|----------|
-| `format-web` | HTML and Markdown | Web content |
-| `format-html` | HTML parsing | Web pages and HTML files |
-| `format-markdown` | Markdown parsing | .md files |
-
-#### Other Formats
-
-| Extra | Description | Use Case |
-|-------|-------------|----------|
-| `format-latex` | LaTeX documents | .tex files |
-| `format-xml-xbrl` | XBRL financial reports | Financial documents |
-| `format-html-render` | HTML rendering with Playwright | Dynamic web content |
-| `format-audio` | Audio transcription (Whisper) | .wav, .mp3 files |
-
-### OCR Engines
-
-| Extra | Description | Use Case |
-|-------|-------------|----------|
-| `feat-ocr-rapidocr` | RapidOCR (lightweight) | Fast OCR |
-| `feat-ocr-rapidocr-onnx` | RapidOCR with ONNX runtime | Optimized OCR |
-| `feat-ocr-easyocr` | EasyOCR | Multi-language OCR |
-| `feat-ocr-tesserocr` | Tesseract OCR | High-accuracy OCR |
-| `feat-ocr-mac` | macOS native OCR | macOS only |
-
-### Models
-
-| Extra | Description | Use Case |
-|-------|-------------|----------|
-| `models-local` | Local PyTorch models | GPU/CPU inference |
-| `models-remote` | Remote model serving (Triton) | Production deployments |
-| `models-onnxruntime` | ONNX Runtime acceleration | Optimized inference |
-| `models-vlm-inline` | Vision Language Models | Image understanding, inline processing |
-
-### Other features
-
-| Extra | Description | Use Case |
-|-------|-------------|----------|
-| `feat-chunking` | Document chunking | RAG applications |
-| `service-client` | Docling service client | Remote processing |
-
-
-## License
-
-MIT License - See [LICENSE](https://github.com/docling-project/docling/blob/main/LICENSE)

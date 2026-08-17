@@ -1,0 +1,59 @@
+metadata-version: 2.4
+name: mysql-connector-python
+version: 26.7.0
+dynamic: author
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: project-url
+dynamic: provides-extra
+dynamic: requires-python
+dynamic: summary
+summary: A self-contained Python driver for communicating with MySQL servers, using an API that is compliant with the Python Database API Specification v2.0 (PEP 249).
+keywords: mysql,database,db,connector,driver
+author: Oracle and/or its affiliates
+author-email: 
+license: GNU GPLv2 (with FOSS License Exception)
+license-file: LICENSE.txt
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Education
+classifier: License :: OSI Approved :: GNU General Public License (GPL)
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: POSIX :: Linux
+classifier: Operating System :: Unix
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Database
+classifier: Topic :: Software Development
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Typing :: Typed
+requires-dist: dnspython==2.6.1; extra == "dns-srv"
+requires-dist: gssapi==1.8.3; extra == "gssapi"
+requires-dist: fido2==1.1.2; extra == "webauthn"
+requires-dist: opentelemetry-api==1.33.1; extra == "telemetry"
+requires-dist: opentelemetry-sdk==1.33.1; extra == "telemetry"
+requires-dist: opentelemetry-exporter-otlp-proto-http==1.33.1; extra == "telemetry"
+requires-python: >=3.10
+project-url: Homepage, https://dev.mysql.com/doc/connector-python/en/
+project-url: Documentation, https://dev.mysql.com/doc/connector-python/en/
+project-url: Downloads, https://dev.mysql.com/downloads/connector/python/
+project-url: Release Notes, https://dev.mysql.com/doc/relnotes/connector-python/en/
+project-url: Source Code, https://github.com/mysql/mysql-connector-python
+project-url: Bug System, https://bugs.mysql.com/
+project-url: Slack, https://mysqlcommunity.slack.com/messages/connectors
+project-url: Forums, https://forums.mysql.com/list.php?50
+project-url: Blog, https://blogs.oracle.com/mysql/
+provides-extra: dns-srv
+provides-extra: gssapi
+provides-extra: webauthn
+provides-extra: telemetry
+

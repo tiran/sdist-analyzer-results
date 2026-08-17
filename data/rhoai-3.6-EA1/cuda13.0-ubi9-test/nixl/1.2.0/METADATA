@@ -1,0 +1,15 @@
+metadata-version: 2.4
+name: nixl
+version: 1.2.0
+dynamic: license-file
+summary: NIXL Python API meta package for CUDA variants
+author-email: NIXL Developers <nixl-developers@nvidia.com>
+license-expression: MIT AND Apache-2.0
+license-file: LICENSE
+requires-dist: nixl-cu13==1.2.0
+requires-dist: nixl-cu12==1.2.0; extra == "cu12"
+requires-dist: nixl-cu13==1.2.0; extra == "cu13"
+requires-python: >=3.10
+provides-extra: cu12
+provides-extra: cu13
+

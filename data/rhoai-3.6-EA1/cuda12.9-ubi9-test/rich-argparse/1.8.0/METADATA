@@ -1,0 +1,26 @@
+metadata-version: 2.5
+name: rich-argparse
+version: 1.8.0
+summary: Rich help formatters for argparse and optparse
+keywords: argparse,help-formatter,optparse,rich
+author-email: Ali Hamdan <ali.hamdan.dev@gmail.com>
+license-expression: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Intended Audience :: Developers
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Software Development :: User Interfaces
+requires-dist: rich>=11.0.0
+requires-python: >=3.9
+project-url: Homepage, https://github.com/hamdanal/rich-argparse
+project-url: Documentation, https://github.com/hamdanal/rich-argparse#rich-argparse
+project-url: Issue-Tracker, https://github.com/hamdanal/rich-argparse/issues
+project-url: Changelog, https://github.com/hamdanal/rich-argparse/blob/main/CHANGELOG.md
+

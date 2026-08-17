@@ -1,0 +1,28 @@
+metadata-version: 2.4
+name: docopt
+version: 0.6.2
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: summary
+summary: Pythonic argument parser, that will make you smile
+keywords: option arguments parsing optparse argparse getopt
+home-page: http://docopt.org
+author: Vladimir Keleshev
+author-email: vladimir@keleshev.com
+license: MIT
+license-file: LICENSE-MIT
+classifier: Development Status :: 3 - Alpha
+classifier: Topic :: Utilities
+classifier: Programming Language :: Python :: 2.5
+classifier: Programming Language :: Python :: 2.6
+classifier: Programming Language :: Python :: 2.7
+classifier: Programming Language :: Python :: 3.2
+classifier: Programming Language :: Python :: 3.3
+classifier: License :: OSI Approved :: MIT License
+

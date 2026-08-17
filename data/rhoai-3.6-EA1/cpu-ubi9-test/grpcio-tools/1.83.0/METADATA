@@ -1,0 +1,19 @@
+metadata-version: 2.4
+name: grpcio-tools
+version: 1.83.0
+dynamic: requires-dist
+dynamic: requires-python
+summary: Protobuf code generator for gRPC
+author-email: The gRPC Authors <grpc-io@googlegroups.com>
+license-expression: Apache-2.0
+classifier: Development Status :: 5 - Production/Stable
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+requires-dist: protobuf<8.0.0,>=7.35.1
+requires-dist: grpcio>=1.83.0
+requires-dist: setuptools>=77.0.1
+requires-python: >=3.10
+project-url: Homepage, https://grpc.io
+project-url: Source Code, https://github.com/grpc/grpc/tree/master/tools/distrib/python/grpcio_tools
+project-url: Bug Tracker, https://github.com/grpc/grpc/issues
+

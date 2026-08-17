@@ -1,0 +1,47 @@
+metadata-version: 2.4
+name: kubernetes
+version: 36.0.2
+dynamic: author
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: Kubernetes python client
+keywords: Swagger,OpenAPI,Kubernetes
+home-page: https://github.com/kubernetes-client/python
+author: Kubernetes
+author-email: 
+license: Apache License Version 2.0
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Topic :: Utilities
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Information Technology
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-dist: certifi>=14.05.14
+requires-dist: six>=1.9.0
+requires-dist: python-dateutil>=2.5.3
+requires-dist: pyyaml>=6.0.3
+requires-dist: websocket-client!=0.40.0,!=0.41.*,!=0.42.*,>=0.32.0
+requires-dist: requests
+requires-dist: requests-oauthlib
+requires-dist: urllib3!=2.6.0,>=1.24.2
+requires-dist: durationpy>=0.7
+requires-dist: google-auth>=1.0.1; extra == "google-auth"
+requires-python: >=3.10
+provides-extra: google-auth
+

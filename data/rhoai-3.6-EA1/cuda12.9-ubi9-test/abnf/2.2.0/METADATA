@@ -1,0 +1,27 @@
+metadata-version: 2.4
+name: abnf
+version: 2.2.0
+dynamic: license-file
+platform: any
+summary: Parsers for ABNF grammars.
+keywords: abnf,parser,generator
+home-page: https://github.com/declaresub/abnf
+author: Charles Yeomans
+author-email: charles@declaresub.com
+license: MIT
+license-file: LICENSE.txt
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Topic :: Software Development :: Code Generators
+classifier: Topic :: Software Development :: Interpreters
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+requires-dist: typing_extensions<5,>=4
+requires-dist: importlib_metadata; python_version < "3.8"
+requires-python: >=3
+

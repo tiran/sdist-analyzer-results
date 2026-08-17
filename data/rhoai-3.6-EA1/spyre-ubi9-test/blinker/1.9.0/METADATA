@@ -1,0 +1,16 @@
+metadata-version: 2.4
+name: blinker
+version: 1.9.0
+summary: Fast, simple object-to-object and broadcast signaling
+author: Jason Kirtland
+maintainer-email: Pallets Ecosystem <contact@palletsprojects.com>
+license-file: LICENSE.txt
+classifier: Development Status :: 5 - Production/Stable
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python
+classifier: Typing :: Typed
+requires-python: >=3.9
+project-url: Chat, https://discord.gg/pallets
+project-url: Documentation, https://blinker.readthedocs.io
+project-url: Source, https://github.com/pallets-eco/blinker/
+

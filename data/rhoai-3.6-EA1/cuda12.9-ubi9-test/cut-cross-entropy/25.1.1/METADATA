@@ -1,0 +1,28 @@
+metadata-version: 2.4
+name: cut-cross-entropy
+version: 25.1.1
+dynamic: license-file
+summary: Code for cut cross entropy, a memory efficient implementation of linear-cross-entropy loss.
+license-file: LICENSE
+requires-dist: torch
+requires-dist: triton; platform_system == "Linux"
+requires-dist: pytest; extra == "test"
+requires-dist: transformers>=4.44.2; extra == "transformers"
+requires-dist: cut-cross-entropy[transformers]; extra == "all"
+requires-dist: deepspeed>=0.15.1; platform_system != "Darwin" and extra == "all"
+requires-dist: accelerate>=0.34.2; extra == "all"
+requires-dist: datasets>=3.1.0; extra == "all"
+requires-dist: huggingface_hub>=0.26.2; extra == "all"
+requires-dist: pandas; extra == "all"
+requires-dist: fire; extra == "all"
+requires-dist: tqdm; extra == "all"
+requires-dist: cut-cross-entropy[all,test]; extra == "dev"
+requires-dist: build; extra == "dev"
+requires-dist: twine; extra == "dev"
+requires-dist: pre-commit; extra == "dev"
+requires-python: >=3.10
+provides-extra: test
+provides-extra: transformers
+provides-extra: all
+provides-extra: dev
+

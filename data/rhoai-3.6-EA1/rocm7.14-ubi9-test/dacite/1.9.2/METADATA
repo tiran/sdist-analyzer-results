@@ -1,0 +1,48 @@
+metadata-version: 2.4
+name: dacite
+version: 1.9.2
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: Simple creation of data classes from dictionaries.
+keywords: dataclasses
+home-page: https://github.com/konradhalas/dacite
+author: Konrad Hałas
+author-email: halas.konrad@gmail.com
+license: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: dataclasses; python_version < "3.7"
+requires-dist: pytest>=5; extra == "dev"
+requires-dist: pytest-benchmark; extra == "dev"
+requires-dist: pytest-cov; extra == "dev"
+requires-dist: coveralls; extra == "dev"
+requires-dist: black; extra == "dev"
+requires-dist: mypy; extra == "dev"
+requires-dist: pylint; extra == "dev"
+requires-dist: pre-commit; extra == "dev"
+requires-python: >=3.7
+provides-extra: dev
+

@@ -1,0 +1,35 @@
+metadata-version: 2.4
+name: delocate
+version: 0.13.0
+dynamic: license-file
+summary: Move macOS dynamic libraries into package
+author-email: Matthew Brett <matthew.brett@gmail.com>
+maintainer-email: Matthew Brett <matthew.brett@gmail.com>, Kyle Benesch <4b796c65+github@gmail.com>
+license: Copyright (c) 2014-2025, Matthew Brett and the Delocate contributors.
+                 All rights reserved.
+                 
+                 Redistribution and use in source and binary forms, with or without
+                 modification, are permitted provided that the following conditions are met:
+                 
+                 1. Redistributions of source code must retain the above copyright notice, this
+                    list of conditions and the following disclaimer.
+                 
+                 2. Redistributions in binary form must reproduce the above copyright ...
+license-file: LICENSE
+license-file: AUTHORS
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: BSD License
+classifier: Natural Language :: English
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Programming Language :: Python :: 3
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: Software Development :: Build Tools
+classifier: Typing :: Typed
+requires-dist: packaging>=20.9
+requires-dist: typing_extensions>=4.12.2
+requires-dist: macholib
+requires-python: >=3.9
+project-url: Homepage, http://github.com/matthew-brett/delocate
+

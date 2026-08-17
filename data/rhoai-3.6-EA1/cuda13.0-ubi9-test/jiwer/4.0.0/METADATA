@@ -1,0 +1,11 @@
+metadata-version: 2.5
+name: jiwer
+version: 4.0.0
+summary: Evaluate your speech-to-text system with similarity measures such as word error rate (WER)
+author-email: Nik Vaessen <nikvaes@gmail.com>
+license-expression: Apache-2.0
+license-file: LICENSE
+requires-dist: click>=8.1.8
+requires-dist: rapidfuzz>=3.9.7
+requires-python: >=3.8
+

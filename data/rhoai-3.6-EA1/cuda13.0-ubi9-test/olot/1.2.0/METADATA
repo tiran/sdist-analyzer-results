@@ -1,0 +1,15 @@
+metadata-version: 2.4
+name: olot
+version: 1.2.0
+dynamic: license-file
+summary: oci layers on top
+author-email: tarilabs <matteo.mortari@gmail.com>
+license-file: LICENSE
+requires-dist: click<9,>=8.1.7
+requires-dist: pydantic<3,>=2.10.3
+requires-dist: modelcar-base-image<0.2,>=0.1.0; extra == "modelcar-base-image"
+requires-dist: oras>=0.2.42; extra == "oras-py"
+requires-python: >=3.10
+provides-extra: modelcar-base-image
+provides-extra: oras-py
+

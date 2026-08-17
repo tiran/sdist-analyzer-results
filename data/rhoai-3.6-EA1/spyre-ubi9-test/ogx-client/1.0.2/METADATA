@@ -1,0 +1,44 @@
+metadata-version: 2.3
+name: ogx_client
+version: 1.0.2
+summary: The official Python library for the ogx-client API
+author-email: Ogx Client <contributors@ogx.dev>
+license: MIT
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: MacOS
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: OS Independent
+classifier: Operating System :: POSIX
+classifier: Operating System :: POSIX :: Linux
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Typing :: Typed
+requires-dist: anyio<5,>=3.5.0
+requires-dist: click
+requires-dist: distro<2,>=1.7.0
+requires-dist: fire
+requires-dist: httpx<1,>=0.23.0
+requires-dist: pandas
+requires-dist: prompt-toolkit
+requires-dist: pyaml
+requires-dist: pydantic<3,>=1.9.0
+requires-dist: requests
+requires-dist: rich
+requires-dist: sniffio
+requires-dist: termcolor
+requires-dist: tqdm
+requires-dist: typing-extensions<5,>=4.14
+requires-dist: typing-extensions<5,>=4.7
+requires-dist: aiohttp; extra == "aiohttp"
+requires-dist: httpx-aiohttp>=0.1.9; extra == "aiohttp"
+requires-python: >=3.9
+project-url: Homepage, https://github.com/ogx-ai/ogx-client-python
+project-url: Repository, https://github.com/ogx-ai/ogx-client-python
+provides-extra: aiohttp
+

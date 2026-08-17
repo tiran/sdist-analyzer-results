@@ -1,6 +1,6 @@
-packaging
 setuptools
-torch
 setuptools>=61.0.0
+packaging
 ninja
 wheel
+torch

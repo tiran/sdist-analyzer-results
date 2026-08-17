@@ -1,8 +1,8 @@
-wheel
-nanobind>=2.0
-setuptools
-pybind11>=2.10
 numpy
 patchelf
+setuptools
 setuptools>=64
+wheel
+pybind11>=2.10
+nanobind>=2.0
 cmake

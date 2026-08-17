@@ -1,0 +1,2 @@
+setuptools_scm[toml]>=8
+setuptools>=77.0.3

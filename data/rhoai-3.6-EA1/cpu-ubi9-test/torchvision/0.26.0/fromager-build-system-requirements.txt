@@ -1,3 +1,4 @@
-wheel
-setuptools
+setuptools<82
 torch
+setuptools
+wheel

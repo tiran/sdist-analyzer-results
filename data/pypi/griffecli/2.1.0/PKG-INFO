@@ -1,25 +1,26 @@
-Metadata-Version: 2.4
-Name: griffecli
-Version: 2.1.0
-Summary: Signatures for entire Python programs. Extract the structure, the frame, the skeleton of your project, to generate API documentation or find breaking changes in your API.
-Author-email: Timothée Mazzucotelli <dev@pawamoy.fr>
-License-Expression: ISC
-Keywords: api,breaking-changes,dynamic-analysis,signature,static-analysis
-Classifier: Development Status :: 5 - Production/Stable
-Classifier: Intended Audience :: Developers
-Classifier: Programming Language :: Python
-Classifier: Programming Language :: Python :: 3
-Classifier: Programming Language :: Python :: 3 :: Only
-Classifier: Programming Language :: Python :: 3.10
-Classifier: Programming Language :: Python :: 3.11
-Classifier: Programming Language :: Python :: 3.12
-Classifier: Programming Language :: Python :: 3.13
-Classifier: Programming Language :: Python :: 3.14
-Classifier: Topic :: Documentation
-Classifier: Topic :: Software Development
-Classifier: Topic :: Software Development :: Documentation
-Classifier: Topic :: Utilities
-Classifier: Typing :: Typed
-Requires-Python: >=3.10
-Requires-Dist: colorama>=0.4
-Requires-Dist: griffelib==2.1.0
+metadata-version: 2.4
+name: griffecli
+version: 2.1.0
+summary: Signatures for entire Python programs. Extract the structure, the frame, the skeleton of your project, to generate API documentation or find breaking changes in your API.
+keywords: api,breaking-changes,dynamic-analysis,signature,static-analysis
+author-email: Timothée Mazzucotelli <dev@pawamoy.fr>
+license-expression: ISC
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Documentation
+classifier: Topic :: Software Development
+classifier: Topic :: Software Development :: Documentation
+classifier: Topic :: Utilities
+classifier: Typing :: Typed
+requires-dist: colorama>=0.4
+requires-dist: griffelib==2.1.0
+requires-python: >=3.10
+

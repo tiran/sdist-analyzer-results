@@ -1,0 +1,41 @@
+metadata-version: 2.4
+name: lightly_utils
+version: 0.0.2
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description-content-type
+dynamic: license
+dynamic: project-url
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: A utility package for lightly
+author: Lightly
+author-email: philipp@lightly.ai
+license: MIT
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Education
+classifier: Intended Audience :: Science/Research
+classifier: Topic :: Scientific/Engineering
+classifier: Topic :: Scientific/Engineering :: Mathematics
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+classifier: Topic :: Software Development
+classifier: Topic :: Software Development :: Libraries
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: License :: OSI Approved :: MIT License
+requires-dist: numpy
+requires-dist: Pillow
+requires-python: >=3.6
+project-url: Homepage, https://www.lightly.ai
+project-url: Web-App, https://app.lightly.ai
+project-url: Documentation, https://docs.lightly.ai
+project-url: Github, https://github.com/lightly-ai/lightly
+project-url: Discord, https://discord.gg/xvNJW94
+

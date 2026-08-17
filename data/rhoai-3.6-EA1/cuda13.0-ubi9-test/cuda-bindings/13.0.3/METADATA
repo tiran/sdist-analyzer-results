@@ -1,0 +1,25 @@
+metadata-version: 2.4
+name: cuda-bindings
+version: 13.0.3
+dynamic: license-file
+summary: Python bindings for CUDA
+author-email: NVIDIA Corporation <cuda-python-conduct@nvidia.com>
+license-expression: LicenseRef-NVIDIA-SOFTWARE-LICENSE
+license-file: LICENSE
+classifier: Intended Audience :: Developers
+classifier: Topic :: Database
+classifier: Topic :: Scientific/Engineering
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Environment :: GPU :: NVIDIA CUDA
+requires-dist: cuda-pathfinder~=1.1
+requires-dist: cuda-toolkit[nvjitlink,nvrtc,nvvm]==13.*; extra == "all"
+requires-dist: cuda-toolkit[cufile]==13.*; sys_platform == "linux" and extra == "all"
+project-url: Repository, https://github.com/NVIDIA/cuda-python
+project-url: Documentation, https://nvidia.github.io/cuda-python/
+provides-extra: all
+

@@ -1,0 +1,62 @@
+metadata-version: 2.4
+name: portalocker
+version: 2.10.1
+dynamic: license-file
+platform: any
+summary: Wraps the portalocker recipe for easy usage
+keywords: locking,locks,with,statement,windows,linux,unix
+author-email: Rick van Hattem <wolph@wol.ph>
+license: BSD-3-Clause
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Development Status :: 6 - Mature
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: BSD License
+classifier: Natural Language :: English
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Operating System :: MacOS
+classifier: Operating System :: Microsoft :: MS-DOS
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: Microsoft
+classifier: Operating System :: POSIX :: BSD :: FreeBSD
+classifier: Operating System :: POSIX :: BSD
+classifier: Operating System :: POSIX :: Linux
+classifier: Operating System :: POSIX :: SunOS/Solaris
+classifier: Operating System :: POSIX
+classifier: Operating System :: Unix
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: IronPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Programming Language :: Python :: Implementation
+classifier: Programming Language :: Python
+classifier: Topic :: Education :: Testing
+classifier: Topic :: Office/Business
+classifier: Topic :: Other/Nonlisted Topic
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: Software Development :: Libraries
+classifier: Topic :: System :: Monitoring
+requires-dist: pywin32>=226; platform_system == "Windows"
+requires-dist: sphinx>=1.7.1; extra == "docs"
+requires-dist: pytest>=5.4.1; extra == "tests"
+requires-dist: pytest-cov>=2.8.1; extra == "tests"
+requires-dist: pytest-timeout>=2.1.0; extra == "tests"
+requires-dist: sphinx>=6.0.0; extra == "tests"
+requires-dist: pytest-mypy>=0.8.0; extra == "tests"
+requires-dist: types-redis; extra == "tests"
+requires-dist: redis; extra == "tests"
+requires-dist: redis; extra == "redis"
+requires-python: >=3.8
+project-url: bugs, https://github.com/wolph/portalocker/issues
+project-url: documentation, https://portalocker.readthedocs.io/en/latest/
+project-url: repository, https://github.com/wolph/portalocker/
+provides-extra: docs
+provides-extra: tests
+provides-extra: redis
+

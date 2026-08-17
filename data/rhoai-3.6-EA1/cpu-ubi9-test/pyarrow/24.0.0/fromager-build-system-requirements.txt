@@ -1,7 +1,7 @@
-setuptools
 build
-setuptools_scm[toml]>=8
-scikit-build-core
+setuptools
 libcst>=1.8.6
 numpy>=1.25
+scikit-build-core
+setuptools_scm[toml]>=8
 cython>=3.1

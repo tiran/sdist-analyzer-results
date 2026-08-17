@@ -1,0 +1,37 @@
+metadata-version: 2.5
+name: pydantic-graph
+version: 2.28.0
+summary: Graph and state machine library
+author-email: Samuel Colvin <samuel@pydantic.dev>, Marcelo Trylesinski <marcelotryle@gmail.com>, David Montague <david@pydantic.dev>, Alex Hall <alex@pydantic.dev>, Douwe Maan <douwe@pydantic.dev>
+license-expression: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Environment :: MacOS X
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Information Technology
+classifier: Intended Audience :: System Administrators
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: POSIX :: Linux
+classifier: Operating System :: Unix
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Internet
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: anyio>=4.7.0
+requires-dist: httpx>=0.27
+requires-dist: logfire-api>=3.14.1
+requires-dist: pydantic>=2.12
+requires-dist: typing-inspection>=0.4.0
+requires-python: >=3.10
+project-url: Homepage, https://ai.pydantic.dev/graph/tree/main/pydantic_graph
+project-url: Source, https://github.com/pydantic/pydantic-ai
+project-url: Documentation, https://ai.pydantic.dev/graph
+project-url: Changelog, https://github.com/pydantic/pydantic-ai/releases
+

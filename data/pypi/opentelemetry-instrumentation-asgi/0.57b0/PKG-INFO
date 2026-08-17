@@ -1,53 +1,28 @@
-Metadata-Version: 2.4
-Name: opentelemetry-instrumentation-asgi
-Version: 0.57b0
-Summary: ASGI instrumentation for OpenTelemetry
-Project-URL: Homepage, https://github.com/open-telemetry/opentelemetry-python-contrib/tree/main/instrumentation/opentelemetry-instrumentation-asgi
-Project-URL: Repository, https://github.com/open-telemetry/opentelemetry-python-contrib
-Author-email: OpenTelemetry Authors <cncf-opentelemetry-contributors@lists.cncf.io>
-License-Expression: Apache-2.0
-License-File: LICENSE
-Classifier: Development Status :: 4 - Beta
-Classifier: Intended Audience :: Developers
-Classifier: License :: OSI Approved :: Apache Software License
-Classifier: Programming Language :: Python
-Classifier: Programming Language :: Python :: 3
-Classifier: Programming Language :: Python :: 3.9
-Classifier: Programming Language :: Python :: 3.10
-Classifier: Programming Language :: Python :: 3.11
-Classifier: Programming Language :: Python :: 3.12
-Classifier: Programming Language :: Python :: 3.13
-Requires-Python: >=3.9
-Requires-Dist: asgiref~=3.0
-Requires-Dist: opentelemetry-api~=1.12
-Requires-Dist: opentelemetry-instrumentation==0.57b0
-Requires-Dist: opentelemetry-semantic-conventions==0.57b0
-Requires-Dist: opentelemetry-util-http==0.57b0
-Provides-Extra: instruments
-Requires-Dist: asgiref~=3.0; extra == 'instruments'
-Description-Content-Type: text/x-rst
+metadata-version: 2.4
+name: opentelemetry-instrumentation-asgi
+version: 0.57b0
+summary: ASGI instrumentation for OpenTelemetry
+author-email: OpenTelemetry Authors <cncf-opentelemetry-contributors@lists.cncf.io>
+license-expression: Apache-2.0
+license-file: LICENSE
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+requires-dist: asgiref~=3.0
+requires-dist: opentelemetry-api~=1.12
+requires-dist: opentelemetry-instrumentation==0.57b0
+requires-dist: opentelemetry-semantic-conventions==0.57b0
+requires-dist: opentelemetry-util-http==0.57b0
+requires-dist: asgiref~=3.0; extra == "instruments"
+requires-python: >=3.9
+project-url: Homepage, https://github.com/open-telemetry/opentelemetry-python-contrib/tree/main/instrumentation/opentelemetry-instrumentation-asgi
+project-url: Repository, https://github.com/open-telemetry/opentelemetry-python-contrib
+provides-extra: instruments
 
-OpenTelemetry ASGI Instrumentation
-==================================
-
-|pypi|
-
-.. |pypi| image:: https://badge.fury.io/py/opentelemetry-instrumentation-asgi.svg
-   :target: https://pypi.org/project/opentelemetry-instrumentation-asgi/
-
-
-This library provides a ASGI middleware that can be used on any ASGI framework
-(such as Django, Starlette, FastAPI or Quart) to track requests timing through OpenTelemetry.
-
-Installation
-------------
-
-::
-
-    pip install opentelemetry-instrumentation-asgi
-
-References
-----------
-
-* `OpenTelemetry Project <https://opentelemetry.io/>`_
-* `OpenTelemetry Python Examples <https://github.com/open-telemetry/opentelemetry-python/tree/main/docs/examples>`_

@@ -1,0 +1,135 @@
+metadata-version: 2.4
+name: lm_eval
+version: 0.4.12
+dynamic: license-file
+summary: A framework for evaluating language models
+author-email: EleutherAI <contact@eleuther.ai>
+license: MIT
+license-file: LICENSE.md
+classifier: Development Status :: 3 - Alpha
+classifier: Programming Language :: Python :: 3
+classifier: Operating System :: OS Independent
+requires-dist: datasets>=2.16.0
+requires-dist: numpy
+requires-dist: evaluate>=0.4.0
+requires-dist: jinja2
+requires-dist: pytablewriter
+requires-dist: rouge-score>=0.0.4
+requires-dist: sacrebleu>=1.5.0
+requires-dist: scikit-learn>=0.24.1
+requires-dist: sqlitedict
+requires-dist: dill
+requires-dist: word2number
+requires-dist: more_itertools
+requires-dist: typing_extensions
+requires-dist: tqdm>=4.59.0
+requires-dist: requests; extra == "api"
+requires-dist: aiohttp; extra == "api"
+requires-dist: tenacity; extra == "api"
+requires-dist: tqdm; extra == "api"
+requires-dist: tiktoken; extra == "api"
+requires-dist: jsonlines; extra == "archiver"
+requires-dist: zstandard; extra == "archiver"
+requires-dist: transformers>=4.1; extra == "hf"
+requires-dist: torch>=1.8; extra == "hf"
+requires-dist: accelerate>=0.26.0; extra == "hf"
+requires-dist: peft>=0.2.0; extra == "hf"
+requires-dist: vllm>=0.18; extra == "vllm"
+requires-dist: auto-gptq[triton]>=0.6.0; extra == "gptq"
+requires-dist: gptqmodel>=1.0.9; extra == "gptqmodel"
+requires-dist: optimum-intel; extra == "ipex"
+requires-dist: ibm_watsonx_ai>=1.1.22; extra == "ibm-watsonx-ai"
+requires-dist: python-dotenv; extra == "ibm-watsonx-ai"
+requires-dist: litellm<1.85,>=1.60; extra == "litellm"
+requires-dist: aiohttp; extra == "litellm"
+requires-dist: requests; extra == "litellm"
+requires-dist: tenacity; extra == "litellm"
+requires-dist: tqdm; extra == "litellm"
+requires-dist: optimum[openvino]; extra == "optimum"
+requires-dist: optimum-habana; extra == "habana"
+requires-dist: sparsify; extra == "sparsify"
+requires-dist: lark>=1.1.9; extra == "acpbench"
+requires-dist: tarski[clingo]==0.8.2; extra == "acpbench"
+requires-dist: pddl==0.4.2; extra == "acpbench"
+requires-dist: kstar-planner==1.4.2; extra == "acpbench"
+requires-dist: librosa; extra == "audiolm-qwen"
+requires-dist: soundfile; extra == "audiolm-qwen"
+requires-dist: pytest>=9.0; extra == "dev"
+requires-dist: pytest-cov; extra == "dev"
+requires-dist: pytest-xdist; extra == "dev"
+requires-dist: requests; extra == "dev"
+requires-dist: aiohttp; extra == "dev"
+requires-dist: tenacity; extra == "dev"
+requires-dist: tqdm; extra == "dev"
+requires-dist: tiktoken; extra == "dev"
+requires-dist: sentencepiece; extra == "dev"
+requires-dist: langdetect; extra == "ifeval"
+requires-dist: immutabledict; extra == "ifeval"
+requires-dist: nltk>=3.9.1; extra == "ifeval"
+requires-dist: emoji==2.14.0; extra == "japanese-leaderboard"
+requires-dist: neologdn==0.5.3; extra == "japanese-leaderboard"
+requires-dist: fugashi[unidic-lite]; extra == "japanese-leaderboard"
+requires-dist: rouge_score>=0.1.2; extra == "japanese-leaderboard"
+requires-dist: jieba; extra == "longbench"
+requires-dist: fuzzywuzzy; extra == "longbench"
+requires-dist: rouge; extra == "longbench"
+requires-dist: pymorphy2; extra == "libra"
+requires-dist: sympy>=1.12; extra == "math"
+requires-dist: antlr4-python3-runtime==4.11; extra == "math"
+requires-dist: math_verify[antlr4_11_0]; extra == "math"
+requires-dist: nagisa>=0.2.7; extra == "multilingual"
+requires-dist: jieba>=0.42.1; extra == "multilingual"
+requires-dist: pycountry; extra == "multilingual"
+requires-dist: nltk; extra == "ruler"
+requires-dist: wonderwords; extra == "ruler"
+requires-dist: scipy; extra == "ruler"
+requires-dist: sentencepiece>=0.1.98; extra == "sentencepiece"
+requires-dist: statsmodels==0.14.4; extra == "discrim-eval"
+requires-dist: unitxt==1.22.0; extra == "unitxt"
+requires-dist: trackio>=0.23.0; extra == "trackio"
+requires-dist: wandb>=0.16.3; extra == "wandb"
+requires-dist: pandas; extra == "wandb"
+requires-dist: numpy; extra == "wandb"
+requires-dist: pandas; extra == "zeno"
+requires-dist: zeno-client; extra == "zeno"
+requires-dist: lm_eval[discrim_eval]; extra == "tasks"
+requires-dist: lm_eval[ifeval]; extra == "tasks"
+requires-dist: lm_eval[japanese_leaderboard]; extra == "tasks"
+requires-dist: lm_eval[longbench]; extra == "tasks"
+requires-dist: lm_eval[libra]; extra == "tasks"
+requires-dist: lm_eval[math]; extra == "tasks"
+requires-dist: lm_eval[multilingual]; extra == "tasks"
+requires-dist: lm_eval[ruler]; extra == "tasks"
+requires-python: >=3.10
+project-url: Homepage, https://github.com/EleutherAI/lm-evaluation-harness
+project-url: Repository, https://github.com/EleutherAI/lm-evaluation-harness
+provides-extra: api
+provides-extra: archiver
+provides-extra: hf
+provides-extra: vllm
+provides-extra: gptq
+provides-extra: gptqmodel
+provides-extra: ipex
+provides-extra: ibm-watsonx-ai
+provides-extra: litellm
+provides-extra: optimum
+provides-extra: habana
+provides-extra: sparsify
+provides-extra: acpbench
+provides-extra: audiolm-qwen
+provides-extra: dev
+provides-extra: ifeval
+provides-extra: japanese-leaderboard
+provides-extra: longbench
+provides-extra: libra
+provides-extra: math
+provides-extra: multilingual
+provides-extra: ruler
+provides-extra: sentencepiece
+provides-extra: discrim-eval
+provides-extra: unitxt
+provides-extra: trackio
+provides-extra: wandb
+provides-extra: zeno
+provides-extra: tasks
+

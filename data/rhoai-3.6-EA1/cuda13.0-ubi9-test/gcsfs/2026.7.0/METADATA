@@ -1,0 +1,43 @@
+metadata-version: 2.5
+name: gcsfs
+version: 2026.7.0
+summary: Convenient Filesystem interface over GCS
+keywords: file-system,gcloud,google-cloud-storage
+maintainer-email: Martin Durant <mdurant@anaconda.com>
+license-expression: BSD-3-Clause
+license-file: LICENSE.txt
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: BSD License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-dist: aiohttp!=4.0.0a0,!=4.0.0a1,>=3.9.0
+requires-dist: decorator>4.1.2
+requires-dist: fsspec>=2026.6.0
+requires-dist: google-auth-oauthlib
+requires-dist: google-auth>=1.2
+requires-dist: google-cloud-storage-control
+requires-dist: google-cloud-storage>=3.11.0
+requires-dist: requests
+requires-dist: crcmod; extra == "crc"
+requires-dist: flake8; extra == "dev"
+requires-dist: isort; extra == "dev"
+requires-dist: pytest; extra == "dev"
+requires-dist: pytest-asyncio; extra == "dev"
+requires-dist: pytest-cov; extra == "dev"
+requires-dist: pytest-subtests; extra == "dev"
+requires-dist: pytest-timeout; extra == "dev"
+requires-dist: pytest-xdist; extra == "dev"
+requires-dist: fusepy; extra == "gcsfuse"
+requires-python: >=3.10
+project-url: Homepage, https://github.com/fsspec/gcsfs
+project-url: Documentation, https://gcsfs.readthedocs.io
+project-url: Repository, https://github.com/fsspec/gcsfs
+provides-extra: crc
+provides-extra: dev
+provides-extra: gcsfuse
+

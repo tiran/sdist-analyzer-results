@@ -1,0 +1,30 @@
+metadata-version: 2.4
+name: keras
+version: 3.15.1
+dynamic: license-file
+summary: Multi-backend Keras
+author-email: Keras team <keras-users@googlegroups.com>
+license: Apache License 2.0
+license-file: LICENSE
+classifier: Development Status :: 4 - Beta
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Operating System :: Unix
+classifier: Operating System :: MacOS
+classifier: Intended Audience :: Science/Research
+classifier: Topic :: Scientific/Engineering
+classifier: Topic :: Software Development
+requires-dist: absl-py
+requires-dist: numpy
+requires-dist: rich
+requires-dist: namex
+requires-dist: h5py
+requires-dist: optree
+requires-dist: ml-dtypes
+requires-dist: packaging
+requires-python: >=3.11
+project-url: Home, https://keras.io/
+project-url: Repository, https://github.com/keras-team/keras
+

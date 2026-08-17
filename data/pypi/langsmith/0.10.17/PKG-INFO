@@ -1,0 +1,71 @@
+metadata-version: 2.4
+name: langsmith
+version: 0.10.17
+summary: Client library to connect to the LangSmith Observability and Evaluation Platform.
+keywords: evaluation,langchain,langsmith,language,llm,nlp,platform,tracing,translation
+author-email: LangChain <support@langchain.dev>
+license: MIT
+requires-dist: anyio>=3.5.0
+requires-dist: distro>=1.7.0
+requires-dist: httpx<1,>=0.23.0
+requires-dist: orjson>=3.9.14; platform_python_implementation != "PyPy"
+requires-dist: packaging>=23.2
+requires-dist: pydantic<3,>=2
+requires-dist: requests-toolbelt>=1.0.0
+requires-dist: requests>=2.0.0
+requires-dist: sniffio>=1.1
+requires-dist: typing-extensions>=4.0.0
+requires-dist: uuid-utils<1.0,>=0.12.0
+requires-dist: websockets>=15.0
+requires-dist: xxhash>=3.0.0
+requires-dist: zstandard>=0.23.0
+requires-dist: claude-agent-sdk>=0.1.0; python_version >= "3.10" and extra == "claude-agent-sdk"
+requires-dist: google-genai>=1.75; extra == "gemini-live"
+requires-dist: google-adk>=1.0.0; extra == "google-adk"
+requires-dist: wrapt>=1.16.0; extra == "google-adk"
+requires-dist: google-adk>=2.3.0; extra == "google-adk-live"
+requires-dist: langsmith-pyo3>=0.1.0rc2; extra == "langsmith-pyo3"
+requires-dist: cachetools>=5.0.0; extra == "livekit"
+requires-dist: livekit-agents>=1.0; extra == "livekit"
+requires-dist: opentelemetry-api>=1.30.0; extra == "livekit"
+requires-dist: opentelemetry-exporter-otlp-proto-http>=1.30.0; extra == "livekit"
+requires-dist: opentelemetry-sdk>=1.30.0; extra == "livekit"
+requires-dist: openai-agents>=0.0.3; extra == "openai-agents"
+requires-dist: openai-agents>=0.0.3; extra == "openai-realtime"
+requires-dist: openai>=1.50; extra == "openai-realtime"
+requires-dist: opentelemetry-api>=1.30.0; extra == "otel"
+requires-dist: opentelemetry-exporter-otlp-proto-http>=1.30.0; extra == "otel"
+requires-dist: opentelemetry-sdk>=1.30.0; extra == "otel"
+requires-dist: cachetools>=5.0.0; extra == "pipecat"
+requires-dist: opentelemetry-api>=1.30.0; extra == "pipecat"
+requires-dist: opentelemetry-exporter-otlp-proto-http>=1.30.0; extra == "pipecat"
+requires-dist: opentelemetry-sdk>=1.30.0; extra == "pipecat"
+requires-dist: pipecat-ai>=1.0; python_version >= "3.11" and extra == "pipecat"
+requires-dist: pytest>=7.0.0; extra == "pytest"
+requires-dist: rich>=13.9.4; extra == "pytest"
+requires-dist: vcrpy>=7.0.0; extra == "pytest"
+requires-dist: opentelemetry-api>=1.30.0; extra == "strands-agents"
+requires-dist: opentelemetry-exporter-otlp-proto-http>=1.30.0; extra == "strands-agents"
+requires-dist: opentelemetry-sdk>=1.30.0; extra == "strands-agents"
+requires-dist: strands-agents-tools>=0.2.0; extra == "strands-agents"
+requires-dist: strands-agents>=0.1.0; extra == "strands-agents"
+requires-dist: vcrpy>=7.0.0; extra == "vcr"
+requires-python: >=3.10
+project-url: Homepage, https://smith.langchain.com/
+project-url: Documentation, https://docs.smith.langchain.com/
+project-url: Repository, https://github.com/langchain-ai/langsmith-sdk
+provides-extra: claude-agent-sdk
+provides-extra: gemini-live
+provides-extra: google-adk
+provides-extra: google-adk-live
+provides-extra: langsmith-pyo3
+provides-extra: livekit
+provides-extra: openai-agents
+provides-extra: openai-realtime
+provides-extra: otel
+provides-extra: pipecat
+provides-extra: pytest
+provides-extra: sandbox
+provides-extra: strands-agents
+provides-extra: vcr
+

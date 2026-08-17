@@ -1,0 +1,26 @@
+metadata-version: 2.5
+name: crewai-cli
+version: 1.15.15
+summary: CLI for CrewAI — scaffold, run, deploy and manage AI agent crews.
+author-email: Joao Moura <joao@crewai.com>
+requires-dist: appdirs~=1.4.4
+requires-dist: certifi
+requires-dist: click<9,>=8.1.7
+requires-dist: crewai-core==1.15.15
+requires-dist: cryptography>=42.0
+requires-dist: httpx~=0.28.1
+requires-dist: packaging>=23.0
+requires-dist: pydantic-settings<3,>=2.14.2
+requires-dist: pydantic<2.13,>=2.11.9
+requires-dist: pyjwt<3,>=2.13.0
+requires-dist: python-dotenv<2,>=1.2.2
+requires-dist: rich>=13.7.1
+requires-dist: textual>=7.5.0
+requires-dist: tomli-w~=1.1.0
+requires-dist: tomli~=2.0.2
+requires-dist: uv~=0.11.6
+requires-python: <3.14,>=3.10
+project-url: Homepage, https://crewai.com
+project-url: Documentation, https://docs.crewai.com
+project-url: Repository, https://github.com/crewAIInc/crewAI
+

@@ -1,0 +1,22 @@
+metadata-version: 2.4
+name: stanio
+version: 0.5.1
+dynamic: license-file
+summary: Utilities for preparing Stan inputs and processing Stan outputs
+author: Stan Dev Team
+license: BSD-3-Clause
+license-file: LICENSE
+classifier: Programming Language :: Python :: 3
+classifier: Development Status :: 4 - Beta
+classifier: Operating System :: OS Independent
+requires-dist: numpy
+requires-dist: pandas; extra == "test"
+requires-dist: pytest; extra == "test"
+requires-dist: pytest-cov; extra == "test"
+requires-dist: ujson>=5.5.0; extra == "ujson"
+requires-python: >=3.8
+project-url: Homepage, https://github.com/stan-dev/stanio
+project-url: Bug Tracker, https://github.com/stan-dev/stanio/issues
+provides-extra: test
+provides-extra: ujson
+

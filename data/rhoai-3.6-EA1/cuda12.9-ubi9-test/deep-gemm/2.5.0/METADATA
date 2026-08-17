@@ -1,0 +1,6 @@
+metadata-version: 2.4
+name: deep_gemm
+version: 2.5.0
+dynamic: license-file
+license-file: LICENSE
+

@@ -1,3 +1,0 @@
-cmake>=3.18
-setuptools
-pybind11>=2.12

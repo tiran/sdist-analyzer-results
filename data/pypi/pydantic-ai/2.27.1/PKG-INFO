@@ -1,0 +1,73 @@
+metadata-version: 2.4
+name: pydantic-ai
+version: 2.27.1
+summary: AI Agent Framework, the Pydantic way
+author-email: Douwe Maan <douwe@pydantic.dev>, David Sanchez <david.sanchez@pydantic.dev>, Aditya Vardhan <aditya@pydantic.dev>, David Montague <david@pydantic.dev>, Marcelo Trylesinski <marcelotryle@gmail.com>, Alex Hall <alex@pydantic.dev>, Samuel Colvin <samuel@pydantic.dev>
+license-expression: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Framework :: Pydantic
+classifier: Framework :: Pydantic :: 2
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Information Technology
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Internet
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: pydantic-ai-slim[anthropic,cli,evals,google,logfire,mcp,openai,retries,web]==2.27.1
+requires-dist: pydantic-ai-slim[ag-ui]==2.27.1; extra == "ag-ui"
+requires-dist: pydantic-ai-slim[bedrock]==2.27.1; extra == "bedrock"
+requires-dist: pydantic-ai-slim[bedrock-mantle]==2.27.1; extra == "bedrock-mantle"
+requires-dist: pydantic-ai-slim[cohere]==2.27.1; extra == "cohere"
+requires-dist: pydantic-ai-slim[dbos]==2.27.1; extra == "dbos"
+requires-dist: pydantic-ai-slim[duckduckgo]==2.27.1; extra == "duckduckgo"
+requires-dist: pydantic-ai-slim[exa]==2.27.1; extra == "exa"
+requires-dist: pydantic-ai-examples==2.27.1; extra == "examples"
+requires-dist: pydantic-ai-slim[groq]==2.27.1; extra == "groq"
+requires-dist: pydantic-ai-slim[huggingface]==2.27.1; extra == "huggingface"
+requires-dist: pydantic-ai-slim[mistral]==2.27.1; extra == "mistral"
+requires-dist: pydantic-ai-slim[openrouter]==2.27.1; extra == "openrouter"
+requires-dist: pydantic-ai-slim[prefect]==2.27.1; extra == "prefect"
+requires-dist: pydantic-ai-slim[sentence-transformers]==2.27.1; extra == "sentence-transformers"
+requires-dist: pydantic-ai-slim[spec]==2.27.1; extra == "spec"
+requires-dist: pydantic-ai-slim[tavily]==2.27.1; extra == "tavily"
+requires-dist: pydantic-ai-slim[temporal]==2.27.1; extra == "temporal"
+requires-dist: pydantic-ai-slim[ui]==2.27.1; extra == "ui"
+requires-dist: pydantic-ai-slim[voyageai]==2.27.1; extra == "voyageai"
+requires-dist: pydantic-ai-slim[web-fetch]==2.27.1; extra == "web-fetch"
+requires-dist: pydantic-ai-slim[xai]==2.27.1; extra == "xai"
+requires-python: >=3.10
+project-url: Homepage, https://ai.pydantic.dev
+project-url: Source, https://github.com/pydantic/pydantic-ai
+project-url: Documentation, https://ai.pydantic.dev
+project-url: Changelog, https://github.com/pydantic/pydantic-ai/releases
+provides-extra: ag-ui
+provides-extra: bedrock
+provides-extra: bedrock-mantle
+provides-extra: cohere
+provides-extra: dbos
+provides-extra: duckduckgo
+provides-extra: exa
+provides-extra: examples
+provides-extra: groq
+provides-extra: huggingface
+provides-extra: mistral
+provides-extra: openrouter
+provides-extra: prefect
+provides-extra: sentence-transformers
+provides-extra: spec
+provides-extra: tavily
+provides-extra: temporal
+provides-extra: ui
+provides-extra: voyageai
+provides-extra: web-fetch
+provides-extra: xai
+

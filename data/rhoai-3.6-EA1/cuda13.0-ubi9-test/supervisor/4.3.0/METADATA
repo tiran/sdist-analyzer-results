@@ -1,0 +1,48 @@
+metadata-version: 2.4
+name: supervisor
+version: 4.3.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: project-url
+dynamic: provides-extra
+dynamic: summary
+summary: A system for controlling process state under UNIX
+home-page: http://supervisord.org/
+author: Chris McDonough
+author-email: chrism@plope.com
+license: BSD-derived (http://www.repoze.org/LICENSE.txt)
+license-file: LICENSES.txt
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: No Input/Output (Daemon)
+classifier: Intended Audience :: System Administrators
+classifier: Natural Language :: English
+classifier: Operating System :: POSIX
+classifier: Topic :: System :: Boot
+classifier: Topic :: System :: Monitoring
+classifier: Topic :: System :: Systems Administration
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 2
+classifier: Programming Language :: Python :: 2.7
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.4
+classifier: Programming Language :: Python :: 3.5
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+requires-dist: pytest; extra == "test"
+requires-dist: pytest-cov; extra == "test"
+project-url: Changelog, http://supervisord.org/changelog
+project-url: Documentation, http://supervisord.org
+project-url: Issue Tracker, https://github.com/Supervisor/supervisor
+provides-extra: test
+

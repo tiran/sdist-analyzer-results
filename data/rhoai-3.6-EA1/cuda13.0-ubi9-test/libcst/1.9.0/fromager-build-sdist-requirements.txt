@@ -1,2 +1,2 @@
-setuptools-rust
 setuptools_scm
+setuptools-rust

@@ -1,0 +1,36 @@
+metadata-version: 2.4
+name: setuptools-scm
+version: 10.2.1
+dynamic: license-file
+summary: the blessed package to manage your versions by scm tags
+author-email: Ronny Pfannschmidt <opensource@ronnypfannschmidt.de>
+license: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Software Development :: Libraries
+classifier: Topic :: Software Development :: Version Control
+classifier: Topic :: System :: Software Distribution
+classifier: Topic :: Utilities
+requires-dist: vcs-versioning<3,>=2.0.0.dev0
+requires-dist: packaging>=20
+requires-dist: setuptools
+requires-dist: tomli>=1; python_version < "3.11"
+requires-dist: typing-extensions>=4.1; python_version < "3.11"
+requires-dist: rich>=13; extra == "rich"
+requires-python: >=3.8
+project-url: documentation, https://setuptools-scm.readthedocs.io/
+project-url: repository, https://github.com/pypa/setuptools-scm/
+provides-extra: rich
+provides-extra: simple
+provides-extra: toml
+

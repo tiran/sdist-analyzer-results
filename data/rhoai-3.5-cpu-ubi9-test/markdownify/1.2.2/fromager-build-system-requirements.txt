@@ -1,2 +1,0 @@
-setuptools_scm[toml]>=3.4.3
-setuptools>=61.2

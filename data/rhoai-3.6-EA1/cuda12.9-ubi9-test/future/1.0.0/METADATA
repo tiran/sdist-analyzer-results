@@ -1,0 +1,43 @@
+metadata-version: 2.4
+name: future
+version: 1.0.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: project-url
+dynamic: requires-python
+dynamic: summary
+summary: Clean single-source support for Python 3 and 2
+keywords: future past python3 migration futurize backport six 2to3 modernize pasteurize 3to2
+home-page: https://python-future.org
+author: Ed Schofield
+author-email: ed@pythoncharmers.com
+license: MIT
+license-file: LICENSE.txt
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 2
+classifier: Programming Language :: Python :: 2.6
+classifier: Programming Language :: Python :: 2.7
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.3
+classifier: Programming Language :: Python :: 3.4
+classifier: Programming Language :: Python :: 3.5
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: License :: OSI Approved
+classifier: License :: OSI Approved :: MIT License
+classifier: Development Status :: 6 - Mature
+classifier: Intended Audience :: Developers
+requires-python: !=3.0.*,!=3.1.*,!=3.2.*,>=2.6
+project-url: Source, https://github.com/PythonCharmers/python-future
+

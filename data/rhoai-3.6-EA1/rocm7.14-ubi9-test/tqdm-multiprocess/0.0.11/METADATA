@@ -1,0 +1,25 @@
+metadata-version: 2.4
+name: tqdm-multiprocess
+version: 0.0.11
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: Easy multiprocessing with tqdm and logging redirected to main process.
+home-page: https://github.com/EleutherAI/tqdm-multiprocess
+author: researcher2
+author-email: 2researcher2@gmail.com
+classifier: Programming Language :: Python :: 3
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+requires-dist: tqdm
+requires-dist: colorama
+requires-python: >=3.6
+provides-extra: dev
+

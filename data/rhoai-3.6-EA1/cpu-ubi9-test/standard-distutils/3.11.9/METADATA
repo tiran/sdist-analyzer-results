@@ -1,0 +1,14 @@
+metadata-version: 2.4
+name: standard-distutils
+version: 3.11.9
+dynamic: license-file
+summary: Standard library distutils redistribution. "dead battery".
+keywords: stdlib
+author-email: Python Developers <python-deadlib@youknowone.org>
+license: PSF-2.0
+license-file: LICENSE
+classifier: License :: OSI Approved :: Python Software Foundation License
+classifier: Topic :: Software Development :: Libraries
+classifier: Programming Language :: Python :: 3
+project-url: Homepage, https://github.com/youknowone/python-deadlib
+

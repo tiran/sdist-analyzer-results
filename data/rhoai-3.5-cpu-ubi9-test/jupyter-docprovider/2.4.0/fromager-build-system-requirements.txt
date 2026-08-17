@@ -1,2 +1,0 @@
-hatchling>=1.4.0
-jupyterlab>=4.0.0

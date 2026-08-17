@@ -1,0 +1,35 @@
+metadata-version: 2.4
+name: aenum
+version: 3.1.17
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: license
+dynamic: provides
+dynamic: summary
+summary: Advanced Enumerations (compatible with Python's stdlib Enum), NamedTuples, and NamedConstants
+home-page: https://github.com/ethanfurman/aenum
+author: Ethan Furman
+author-email: ethan@stoneleaf.us
+license: BSD License
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: BSD License
+classifier: Programming Language :: Python
+classifier: Topic :: Software Development
+classifier: Programming Language :: Python :: 2.7
+classifier: Programming Language :: Python :: 3.3
+classifier: Programming Language :: Python :: 3.4
+classifier: Programming Language :: Python :: 3.5
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+provides: aenum
+

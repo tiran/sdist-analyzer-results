@@ -1,0 +1,29 @@
+metadata-version: 2.4
+name: lockfile
+version: 0.12.2
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: license-file
+dynamic: summary
+summary: Platform-independent file locking module
+home-page: http://launchpad.net/pylockfile
+author: OpenStack
+author-email: openstack-dev@lists.openstack.org
+license-file: LICENSE
+license-file: AUTHORS
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: POSIX :: Linux
+classifier: Operating System :: MacOS
+classifier: Operating System :: Microsoft :: Windows :: Windows NT/2000
+classifier: Operating System :: POSIX
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 2
+classifier: Programming Language :: Python :: 2.7
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.3
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+

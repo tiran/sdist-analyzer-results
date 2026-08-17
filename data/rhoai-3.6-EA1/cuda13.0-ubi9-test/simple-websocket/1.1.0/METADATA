@@ -1,0 +1,24 @@
+metadata-version: 2.4
+name: simple-websocket
+version: 1.1.0
+dynamic: license-file
+summary: Simple WebSocket server and client for Python
+author-email: Miguel Grinberg <miguel.grinberg@gmail.com>
+license-file: LICENSE
+classifier: Environment :: Web Environment
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Python :: 3
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+requires-dist: wsproto
+requires-dist: tox; extra == "dev"
+requires-dist: flake8; extra == "dev"
+requires-dist: pytest; extra == "dev"
+requires-dist: pytest-cov; extra == "dev"
+requires-dist: sphinx; extra == "docs"
+requires-python: >=3.6
+project-url: Homepage, https://github.com/miguelgrinberg/simple-websocket
+project-url: Bug Tracker, https://github.com/miguelgrinberg/simple-websocket/issues
+provides-extra: dev
+provides-extra: docs
+

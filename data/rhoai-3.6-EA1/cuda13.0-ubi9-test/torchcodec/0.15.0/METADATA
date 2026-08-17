@@ -1,0 +1,15 @@
+metadata-version: 2.4
+name: torchcodec
+version: 0.15.0
+dynamic: license-file
+summary: A video decoder for PyTorch
+author-email: PyTorch Team <packages@pytorch.org>
+license-file: LICENSE
+requires-dist: numpy; extra == "dev"
+requires-dist: pytest; extra == "dev"
+requires-dist: pillow; extra == "dev"
+requires-python: >=3.10
+project-url: GitHub, https://github.com/pytorch/torchcodec
+project-url: Documentation, https://pytorch.org/torchcodec/stable/index.html
+provides-extra: dev
+

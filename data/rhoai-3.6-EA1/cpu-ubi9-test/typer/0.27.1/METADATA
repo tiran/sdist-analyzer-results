@@ -1,0 +1,36 @@
+metadata-version: 2.4
+name: typer
+version: 0.27.1
+summary: Typer, build great CLIs. Easy to code. Based on Python type hints.
+author-email: =?utf-8?q?Sebasti=C3=A1n_Ram=C3=ADrez?= <tiangolo@gmail.com>
+license-expression: MIT
+license-file: LICENSE
+classifier: Intended Audience :: Information Technology
+classifier: Intended Audience :: System Administrators
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python
+classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: Software Development :: Libraries
+classifier: Topic :: Software Development
+classifier: Typing :: Typed
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-dist: shellingham>=1.3.0
+requires-dist: rich>=13.8.0
+requires-dist: annotated-doc>=0.0.2
+requires-dist: colorama; platform_system == "Windows"
+requires-python: >=3.10
+project-url: Homepage, https://github.com/fastapi/typer
+project-url: Documentation, https://typer.tiangolo.com
+project-url: Repository, https://github.com/fastapi/typer
+project-url: Issues, https://github.com/fastapi/typer/issues
+project-url: Changelog, https://typer.tiangolo.com/release-notes/
+

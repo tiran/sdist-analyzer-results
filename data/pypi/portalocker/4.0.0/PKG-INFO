@@ -1,0 +1,65 @@
+metadata-version: 2.4
+name: portalocker
+version: 4.0.0
+summary: Cross-platform file locking, with Redis, PID-file and bounded-semaphore locks
+keywords: locking,locks,with,statement,windows,linux,unix
+author: Rick van Hattem
+author-email: Rick van Hattem <wolph@wol.ph>
+license-expression: BSD-3-Clause
+license-file: LICENSE
+classifier: Development Status :: 6 - Mature
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Information Technology
+classifier: Intended Audience :: System Administrators
+classifier: Natural Language :: English
+classifier: Operating System :: MacOS
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Operating System :: Microsoft
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: POSIX
+classifier: Operating System :: POSIX :: BSD
+classifier: Operating System :: POSIX :: BSD :: FreeBSD
+classifier: Operating System :: POSIX :: BSD :: NetBSD
+classifier: Operating System :: POSIX :: BSD :: OpenBSD
+classifier: Operating System :: POSIX :: Linux
+classifier: Operating System :: POSIX :: SunOS/Solaris
+classifier: Operating System :: Unix
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Implementation
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Software Development :: Libraries
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: System
+classifier: Topic :: System :: Distributed Computing
+classifier: Topic :: System :: Filesystems
+classifier: Topic :: System :: Monitoring
+classifier: Typing :: Typed
+requires-dist: sphinx>=7; extra == "docs"
+requires-dist: furo; extra == "docs"
+requires-dist: redis>=5.0; extra == "redis"
+requires-dist: portalocker[redis]; extra == "tests"
+requires-dist: fakeredis>=2.31.0; extra == "tests"
+requires-dist: pytest>=5.4.1; extra == "tests"
+requires-dist: pytest-cov>=2.8.1; extra == "tests"
+requires-dist: pytest-timeout>=2.1.0; extra == "tests"
+requires-dist: pytest-rerunfailures>=15.1; extra == "tests"
+requires-dist: coverage-conditional-plugin>=0.9; extra == "tests"
+requires-dist: types-pywin32>=310.0.0.20250429; extra == "tests"
+requires-dist: pywin32>=226; sys_platform == "win32" and extra == "win32"
+requires-python: >=3.10
+project-url: homepage, https://github.com/wolph/portalocker/
+project-url: documentation, https://portalocker.readthedocs.io/en/latest/
+project-url: repository, https://github.com/wolph/portalocker/
+provides-extra: docs
+provides-extra: redis
+provides-extra: tests
+provides-extra: win32
+

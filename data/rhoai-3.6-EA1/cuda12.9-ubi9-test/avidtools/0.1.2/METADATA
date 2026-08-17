@@ -1,0 +1,18 @@
+metadata-version: 2.4
+name: avidtools
+version: 0.1.2
+dynamic: author
+dynamic: author-email
+dynamic: license-file
+dynamic: requires-dist
+dynamic: summary
+summary: Developer tools for AVID
+author: Subho Majumdar
+author-email: info@avidml.org
+license-file: LICENSE
+requires-dist: pydantic
+requires-dist: typing; python_version < "3.5"
+requires-dist: typing_extensions
+requires-dist: datetime
+requires-dist: nvdlib
+

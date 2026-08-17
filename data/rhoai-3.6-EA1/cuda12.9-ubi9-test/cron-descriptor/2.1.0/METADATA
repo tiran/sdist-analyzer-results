@@ -1,0 +1,33 @@
+metadata-version: 2.4
+name: cron_descriptor
+version: 2.1.0
+dynamic: license-file
+summary: A Python library that converts cron expressions into human readable strings.
+author-email: Adam Schubert <adam.schubert@sg1-game.net>
+license-expression: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Web Environment
+classifier: Environment :: Console
+classifier: Intended Audience :: Developers
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Software Development
+requires-dist: typing_extensions
+requires-dist: ruff; extra == "dev"
+requires-dist: mypy; extra == "dev"
+requires-dist: polib; extra == "dev"
+requires-dist: pytest; extra == "test"
+requires-python: >=3.9
+project-url: Homepage, https://github.com/Salamek/cron-descriptor
+provides-extra: dev
+provides-extra: test
+

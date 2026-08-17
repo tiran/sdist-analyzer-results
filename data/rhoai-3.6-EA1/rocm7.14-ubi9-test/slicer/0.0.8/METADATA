@@ -1,0 +1,27 @@
+metadata-version: 2.4
+name: slicer
+version: 0.0.8
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: license-file
+dynamic: requires-python
+dynamic: summary
+summary: A small package for big slicing.
+home-page: https://github.com/interpretml/slicer
+author: InterpretML
+author-email: interpret@microsoft.com
+license-file: LICENSE
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Development Status :: 3 - Alpha
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+requires-python: >=3.6
+

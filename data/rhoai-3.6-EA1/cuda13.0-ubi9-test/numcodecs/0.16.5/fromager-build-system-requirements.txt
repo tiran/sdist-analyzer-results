@@ -1,5 +1,5 @@
-numpy>2
 setuptools-scm[toml]>=6.2
+numpy>2
 Cython
-py-cpuinfo
 setuptools>=77
+py-cpuinfo

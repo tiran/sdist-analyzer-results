@@ -1,0 +1,2 @@
+setuptools_scm>=6.4
+flit-core~=3.5

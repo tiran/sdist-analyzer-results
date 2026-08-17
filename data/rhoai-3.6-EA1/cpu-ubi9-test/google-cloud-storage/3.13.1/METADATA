@@ -1,0 +1,78 @@
+metadata-version: 2.4
+name: google-cloud-storage
+version: 3.13.1
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: platform
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+platform: Posix; MacOS X; Windows
+summary: Google Cloud Storage API client library
+home-page: https://github.com/googleapis/google-cloud-python/tree/main/packages/google-cloud-storage
+author: Google LLC
+author-email: googleapis-packages@google.com
+license: Apache-2.0
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Operating System :: OS Independent
+classifier: Topic :: Internet
+requires-dist: google-auth<3.0.0,>=2.26.1
+requires-dist: google-api-core<3.0.0,>=2.27.0
+requires-dist: google-cloud-core<3.0.0,>=2.4.2
+requires-dist: google-resumable-media<3.0.0,>=2.7.2
+requires-dist: requests<3.0.0,>=2.22.0
+requires-dist: google-crc32c<2.0.0,>=1.6.0
+requires-dist: google-api-core[grpc]<3.0.0,>=2.27.0; extra == "grpc"
+requires-dist: grpcio<2.0.0,>=1.59.0; extra == "grpc"
+requires-dist: grpcio<2.0.0,>=1.75.1; python_version >= "3.14" and extra == "grpc"
+requires-dist: grpcio-status<2.0.0,>=1.59.0; extra == "grpc"
+requires-dist: grpcio-status<2.0.0,>=1.75.1; python_version >= "3.14" and extra == "grpc"
+requires-dist: proto-plus<2.0.0,>=1.26.1; extra == "grpc"
+requires-dist: protobuf<8.0.0,>=6.33.5; extra == "grpc"
+requires-dist: grpc-google-iam-v1<1.0.0,>=0.14.2; extra == "grpc"
+requires-dist: protobuf<8.0.0,>=6.33.5; extra == "protobuf"
+requires-dist: opentelemetry-api<2.0.0,>=1.1.0; extra == "tracing"
+requires-dist: google-cloud-testutils; extra == "testing"
+requires-dist: numpy; extra == "testing"
+requires-dist: psutil; extra == "testing"
+requires-dist: py-cpuinfo; extra == "testing"
+requires-dist: pytest-benchmark; extra == "testing"
+requires-dist: PyYAML; extra == "testing"
+requires-dist: mock; extra == "testing"
+requires-dist: pytest; extra == "testing"
+requires-dist: pytest-cov; extra == "testing"
+requires-dist: pytest-asyncio; extra == "testing"
+requires-dist: pytest-rerunfailures; extra == "testing"
+requires-dist: pytest-xdist; extra == "testing"
+requires-dist: google-cloud-testutils; extra == "testing"
+requires-dist: google-cloud-iam; extra == "testing"
+requires-dist: google-cloud-pubsub; extra == "testing"
+requires-dist: google-cloud-kms; extra == "testing"
+requires-dist: brotli; extra == "testing"
+requires-dist: coverage; extra == "testing"
+requires-dist: pyopenssl; extra == "testing"
+requires-dist: opentelemetry-sdk; extra == "testing"
+requires-dist: flake8; extra == "testing"
+requires-dist: black; extra == "testing"
+requires-python: >=3.10
+provides-extra: grpc
+provides-extra: protobuf
+provides-extra: tracing
+provides-extra: testing
+

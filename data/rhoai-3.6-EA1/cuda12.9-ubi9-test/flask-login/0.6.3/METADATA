@@ -1,0 +1,29 @@
+metadata-version: 2.4
+name: Flask-Login
+version: 0.6.3
+dynamic: license-file
+dynamic: requires-dist
+summary: User authentication and session management for Flask.
+home-page: https://github.com/maxcountryman/flask-login
+author: Matthew Frazier
+author-email: leafstormrush@gmail.com
+maintainer: Max Countryman
+license: MIT
+license-file: LICENSE
+classifier: Development Status :: 4 - Beta
+classifier: Environment :: Web Environment
+classifier: Framework :: Flask
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: Flask>=1.0.4
+requires-dist: Werkzeug>=1.0.1
+requires-python: >=3.7
+project-url: Documentation, https://flask-login.readthedocs.io/
+project-url: Changes, https://github.com/maxcountryman/flask-login/blob/main/CHANGES.md
+project-url: Source Code, https://github.com/maxcountryman/flask-login
+project-url: Issue Tracker, https://github.com/maxcountryman/flask-login/issues
+

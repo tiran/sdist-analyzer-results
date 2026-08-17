@@ -1,0 +1,25 @@
+metadata-version: 2.4
+name: xdg-base-dirs
+version: 6.0.2
+summary: Variables defined by the XDG Base Directory Specification
+keywords: xdg,base,directory,specification
+author: Scott Stevenson
+author-email: scott@stevenson.io
+license: ISC
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved
+classifier: Natural Language :: English
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: Unix
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-python: <4.0,>=3.10
+project-url: Homepage, https://github.com/srstevenson/xdg-base-dirs
+project-url: Repository, https://github.com/srstevenson/xdg-base-dirs
+

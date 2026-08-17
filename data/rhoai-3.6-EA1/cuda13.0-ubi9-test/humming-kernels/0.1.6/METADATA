@@ -1,0 +1,20 @@
+metadata-version: 2.4
+name: humming-kernels
+version: 0.1.6
+dynamic: license-file
+summary: Quantization GEMM Kernel
+license-file: LICENSE
+requires-dist: torch>=2.7
+requires-dist: triton
+requires-dist: numpy
+requires-dist: safetensors
+requires-dist: jinja2
+requires-dist: pyelftools
+requires-dist: nvidia-ml-py
+requires-dist: cuda-bindings
+requires-dist: tqdm
+requires-dist: tabulate
+requires-python: >=3.10
+provides-extra: cu12
+provides-extra: cu13
+

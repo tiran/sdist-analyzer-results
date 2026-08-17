@@ -1,0 +1,32 @@
+metadata-version: 2.4
+name: tzlocal
+version: 5.3.1
+dynamic: license-file
+summary: tzinfo object for the local timezone
+keywords: timezone
+author-email: Lennart Regebro <regebro@gmail.com>
+license: MIT
+license-file: LICENSE.txt
+classifier: Development Status :: 5 - Production/Stable
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: Unix
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Typing :: Typed
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+requires-dist: tzdata; platform_system == "Windows"
+requires-dist: pytest>=4.3; extra == "devenv"
+requires-dist: pytest-mock>=3.3; extra == "devenv"
+requires-dist: pytest-cov; extra == "devenv"
+requires-dist: check_manifest; extra == "devenv"
+requires-dist: zest.releaser; extra == "devenv"
+requires-python: >=3.9
+project-url: Source code, https://github.com/regebro/tzlocal
+project-url: Changelog, https://github.com/regebro/tzlocal/blob/master/CHANGES.txt
+project-url: Issue tracker, https://github.com/regebro/tzlocal/issues
+provides-extra: devenv
+

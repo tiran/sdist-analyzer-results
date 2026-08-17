@@ -1,0 +1,44 @@
+metadata-version: 2.4
+name: pkginfo
+version: 1.12.1.2
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: platform
+dynamic: provides-extra
+dynamic: requires-python
+dynamic: summary
+platform: Unix
+platform: Windows
+summary: Query metadata from sdists / bdists / installed packages.
+keywords: distribution sdist installed metadata
+home-page: https://code.launchpad.net/~tseaver/pkginfo/trunk
+author: Tres Seaver, Agendaless Consulting
+author-email: tseaver@agendaless.com
+license: MIT
+license-file: LICENSE.txt
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: System :: Software Distribution
+requires-dist: pytest; extra == "testing"
+requires-dist: pytest-cov; extra == "testing"
+requires-dist: wheel; extra == "testing"
+requires-python: >=3.8
+provides-extra: testing
+

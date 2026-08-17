@@ -1,0 +1,42 @@
+metadata-version: 2.1
+name: meson-python
+version: 0.16.0
+summary: Meson Python build backend (PEP 517)
+keywords: meson,build,backend,pep517,package
+maintainer-email: Ralf Gommers <ralf.gommers@gmail.com>, Daniele Nicolodi <daniele@grinta.net>, Henry Schreiner <HenrySchreinerIII@gmail.com>, Thomas Li <47963215+lithomas1@users.noreply.github.com>
+license: Copyright © 2022 the meson-python contributors
+                  Copyright © 2021 Quansight Labs and Filipe Laíns
+                  
+                  Permission is hereby granted, free of charge, to any person obtaining a
+                  copy of this software and associated documentation files (the "Software"),
+                  to deal in the Software without restriction, including without limitation
+                  the rights to use, copy, modify, merge, publish, distribute, sublicense,
+                  and/or sell copies of the Software, and to permit perso...
+classifier: Development Status :: 5 - Production/Stable
+classifier: Programming Language :: Python
+classifier: Topic :: Software Development :: Build Tools
+requires-dist: meson>=0.63.3; python_version < "3.12"
+requires-dist: meson>=1.2.3; python_version >= "3.12"
+requires-dist: packaging>=19.0
+requires-dist: pyproject-metadata>=0.7.1
+requires-dist: tomli>=1.0.0; python_version < "3.11"
+requires-dist: build; extra == "test"
+requires-dist: pytest>=6.0; extra == "test"
+requires-dist: pytest-cov[toml]; extra == "test"
+requires-dist: pytest-mock; extra == "test"
+requires-dist: cython>=3.0.3; extra == "test"
+requires-dist: wheel; extra == "test"
+requires-dist: typing-extensions>=3.7.4; python_version < "3.11" and extra == "test"
+requires-dist: furo>=2023.5.20; extra == "docs"
+requires-dist: sphinx~=6.2; extra == "docs"
+requires-dist: sphinx-copybutton>=0.5.0; extra == "docs"
+requires-dist: sphinx-design>=0.1.0; extra == "docs"
+requires-dist: sphinxext-opengraph>=0.7.0; extra == "docs"
+requires-python: >=3.7
+project-url: homepage, https://github.com/mesonbuild/meson-python
+project-url: repository, https://github.com/mesonbuild/meson-python
+project-url: documentation, https://mesonbuild.com/meson-python/
+project-url: changelog, https://mesonbuild.com/meson-python/changelog.html
+provides-extra: test
+provides-extra: docs
+

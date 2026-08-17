@@ -1,4 +1,0 @@
-Cython<4,>=0.29.31
-numpy<3,>=2.0.0
-pkgconfig
-setuptools>=77

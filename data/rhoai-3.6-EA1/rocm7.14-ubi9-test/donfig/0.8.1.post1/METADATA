@@ -1,0 +1,28 @@
+metadata-version: 2.4
+name: donfig
+version: 0.8.1.post1
+dynamic: license-file
+summary: Python package for configuring a python package
+keywords: task-scheduling parallel numpy pandas pydata
+maintainer-email: David Hoese <david.hoese@ssec.wisc.edu>
+license: MIT
+license-file: LICENSE.txt
+license-file: AUTHORS.md
+classifier: Development Status :: 3 - Alpha
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Topic :: Scientific/Engineering
+requires-dist: pyyaml
+requires-dist: pytest; extra == "test"
+requires-dist: cloudpickle; extra == "test"
+requires-dist: sphinx>=4.0.0; extra == "docs"
+requires-dist: numpydoc; extra == "docs"
+requires-dist: pytest; extra == "docs"
+requires-dist: cloudpickle; extra == "docs"
+requires-python: >=3.8
+project-url: Homepage, https://github.com/pytroll/donfig
+provides-extra: test
+provides-extra: docs
+

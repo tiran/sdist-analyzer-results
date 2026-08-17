@@ -1,2 +1,2 @@
-wheel
 setuptools>=69
+wheel

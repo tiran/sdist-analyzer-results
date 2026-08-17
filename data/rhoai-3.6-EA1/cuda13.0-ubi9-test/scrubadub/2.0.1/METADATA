@@ -1,0 +1,43 @@
+metadata-version: 2.4
+name: scrubadub
+version: 2.0.1
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: download-url
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: requires-dist
+dynamic: summary
+summary: Clean personally identifiable information from dirty dirty text.
+home-page: https://github.com/LeapBeyond/scrubadub
+download-url: https://github.com/LeapBeyond/scrubadub/archives/master
+author: Dean Malmgren
+author-email: dean.malmgren@datascopeanalytics.com
+license: MIT
+license-file: LICENSE
+classifier: Intended Audience :: Developers
+classifier: Development Status :: 5 - Production/Stable
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Natural Language :: English
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Topic :: Software Development :: Libraries
+classifier: Topic :: Scientific/Engineering :: Information Analysis
+classifier: Topic :: Text Processing
+classifier: Topic :: Utilities
+requires-dist: textblob==0.15.3
+requires-dist: phonenumbers
+requires-dist: python-stdnum
+requires-dist: dateparser
+requires-dist: catalogue
+requires-dist: scikit-learn
+requires-dist: typing_extensions
+requires-dist: faker
+

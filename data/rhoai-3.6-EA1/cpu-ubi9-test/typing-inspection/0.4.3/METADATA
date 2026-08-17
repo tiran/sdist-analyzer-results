@@ -1,0 +1,28 @@
+metadata-version: 2.4
+name: typing-inspection
+version: 0.4.3
+summary: Runtime typing introspection tools
+author-email: Victorien Plot <contact@vctrn.dev>
+license-expression: MIT
+license-file: LICENSE
+classifier: Development Status :: 3 - Alpha
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: 3.15
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Typing :: Typed
+requires-dist: typing-extensions>=4.15.0
+requires-python: >=3.10
+project-url: Homepage, https://github.com/pydantic/typing-inspection
+project-url: Documentation, https://pydantic.github.io/typing-inspection/dev/
+project-url: Source, https://github.com/pydantic/typing-inspection
+project-url: Changelog, https://github.com/pydantic/typing-inspection/blob/main/HISTORY.md
+

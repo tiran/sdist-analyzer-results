@@ -1,0 +1,14 @@
+metadata-version: 2.1
+name: rouge_score
+version: 0.1.2
+platform: UNKNOWN
+summary: Pure python implementation of ROUGE-1.5.5.
+home-page: https://github.com/google-research/google-research/tree/master/rouge
+author: Google LLC
+author-email: rouge-opensource@google.com
+license: UNKNOWN
+classifier: Programming Language :: Python :: 3
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: OS Independent
+requires-python: >=3.7
+

@@ -1,0 +1,76 @@
+metadata-version: 2.4
+name: Sphinx
+version: 9.1.0
+summary: Python documentation generator
+author-email: Adam Turner <aa-turner@users.noreply.github.com>, Georg Brandl <georg@python.org>
+license-expression: BSD-2-Clause
+license-file: LICENSE.rst
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Environment :: Web Environment
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Education
+classifier: Intended Audience :: End Users/Desktop
+classifier: Intended Audience :: Information Technology
+classifier: Intended Audience :: Other Audience
+classifier: Intended Audience :: Science/Research
+classifier: Intended Audience :: System Administrators
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: 3.15
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Framework :: Sphinx
+classifier: Framework :: Sphinx :: Domain
+classifier: Framework :: Sphinx :: Extension
+classifier: Framework :: Sphinx :: Theme
+classifier: Topic :: Documentation
+classifier: Topic :: Documentation :: Sphinx
+classifier: Topic :: Education
+classifier: Topic :: Internet :: WWW/HTTP :: Site Management
+classifier: Topic :: Internet :: WWW/HTTP :: Site Management :: Link Checking
+classifier: Topic :: Printing
+classifier: Topic :: Software Development
+classifier: Topic :: Software Development :: Documentation
+classifier: Topic :: Text Editors :: Documentation
+classifier: Topic :: Text Processing
+classifier: Topic :: Text Processing :: General
+classifier: Topic :: Text Processing :: Indexing
+classifier: Topic :: Text Processing :: Markup
+classifier: Topic :: Text Processing :: Markup :: HTML
+classifier: Topic :: Text Processing :: Markup :: LaTeX
+classifier: Topic :: Text Processing :: Markup :: Markdown
+classifier: Topic :: Text Processing :: Markup :: reStructuredText
+classifier: Topic :: Text Processing :: Markup :: XML
+classifier: Topic :: Utilities
+classifier: Typing :: Typed
+requires-dist: sphinxcontrib-applehelp>=1.0.7
+requires-dist: sphinxcontrib-devhelp>=1.0.6
+requires-dist: sphinxcontrib-htmlhelp>=2.0.6
+requires-dist: sphinxcontrib-jsmath>=1.0.1
+requires-dist: sphinxcontrib-qthelp>=1.0.6
+requires-dist: sphinxcontrib-serializinghtml>=1.1.9
+requires-dist: Jinja2>=3.1
+requires-dist: Pygments>=2.17
+requires-dist: docutils<0.23,>=0.21
+requires-dist: snowballstemmer>=2.2
+requires-dist: babel>=2.13
+requires-dist: alabaster>=0.7.14
+requires-dist: imagesize>=1.3
+requires-dist: requests>=2.30.0
+requires-dist: roman-numerals>=1.0.0
+requires-dist: packaging>=23.0
+requires-dist: colorama>=0.4.6; sys_platform == "win32"
+requires-python: >=3.12
+project-url: Changelog, https://www.sphinx-doc.org/en/master/changes.html
+project-url: Code, https://github.com/sphinx-doc/sphinx
+project-url: Documentation, https://www.sphinx-doc.org/
+project-url: Download, https://pypi.org/project/Sphinx/
+project-url: Homepage, https://www.sphinx-doc.org/
+project-url: Issue tracker, https://github.com/sphinx-doc/sphinx/issues
+

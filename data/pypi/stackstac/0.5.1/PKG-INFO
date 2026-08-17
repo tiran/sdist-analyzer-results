@@ -1,0 +1,11 @@
+metadata-version: 2.1
+name: stackstac
+version: 0.5.1
+summary: Load a STAC collection into xarray with dask
+author-email: Gabe Joseph <gjoseph92@gmail.com>
+license: MIT
+requires-python: <4.0,>=3.8
+project-url: homepage, https://stackstac.readthedocs.io/en/latest/index.html
+project-url: repository, https://github.com/gjoseph92/stackstac
+provides-extra: viz
+

@@ -1,0 +1,34 @@
+metadata-version: 2.4
+name: jupyter_core
+version: 5.9.1
+summary: Jupyter core package. A base package on which Jupyter projects rely.
+author-email: Jupyter Development Team <jupyter@googlegroups.org>
+license-expression: BSD-3-Clause
+license-file: LICENSE
+classifier: Framework :: Jupyter
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: Intended Audience :: System Administrators
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+requires-dist: platformdirs>=2.5
+requires-dist: traitlets>=5.3
+requires-dist: intersphinx-registry; extra == "docs"
+requires-dist: myst-parser; extra == "docs"
+requires-dist: pydata-sphinx-theme; extra == "docs"
+requires-dist: sphinx-autodoc-typehints; extra == "docs"
+requires-dist: sphinxcontrib-spelling; extra == "docs"
+requires-dist: traitlets; extra == "docs"
+requires-dist: ipykernel; extra == "test"
+requires-dist: pre-commit; extra == "test"
+requires-dist: pytest-cov; extra == "test"
+requires-dist: pytest-timeout; extra == "test"
+requires-dist: pytest<9; extra == "test"
+requires-python: >=3.10
+project-url: Homepage, https://jupyter.org
+project-url: Documentation, https://jupyter-core.readthedocs.io/
+project-url: Source, https://github.com/jupyter/jupyter_core
+project-url: Tracker, https://github.com/jupyter/jupyter_core/issues
+provides-extra: docs
+provides-extra: test
+

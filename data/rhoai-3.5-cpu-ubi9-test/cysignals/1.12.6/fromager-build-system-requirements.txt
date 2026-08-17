@@ -1,2 +1,0 @@
-meson-python
-cython>=3.1

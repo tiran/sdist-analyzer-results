@@ -1,0 +1,36 @@
+metadata-version: 2.4
+name: sox
+version: 1.5.0
+dynamic: author
+dynamic: author-email
+dynamic: description
+dynamic: description-content-type
+dynamic: download-url
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: summary
+summary: Python wrapper around SoX.
+keywords: audio effects SoX
+home-page: https://github.com/rabitt/pysox
+download-url: https://github.com/rabitt/pysox/releases
+author: Rachel Bittner
+author-email: rachel.bittner@nyu.edu
+license: BSD-3-Clause
+license-file: LICENSE
+requires-dist: numpy>=1.9.0
+requires-dist: typing-extensions>=3.7.4.2
+requires-dist: pytest; extra == "tests"
+requires-dist: pytest-cov; extra == "tests"
+requires-dist: pytest-pep8; extra == "tests"
+requires-dist: soundfile>=0.11.0; extra == "tests"
+requires-dist: sphinx==1.2.3; extra == "docs"
+requires-dist: sphinxcontrib-napoleon; extra == "docs"
+requires-dist: sphinx_rtd_theme; extra == "docs"
+requires-dist: numpydoc; extra == "docs"
+provides-extra: tests
+provides-extra: docs
+

@@ -1,0 +1,40 @@
+metadata-version: 2.4
+name: pymilvus
+version: 3.0.1
+summary: Python SDK for Milvus
+keywords: milvus,sdk,similarity search,vector database
+author-email: PyMilvus Team <pymilvus@zilliz.com>
+license-file: LICENSE
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-dist: cachetools>=5.0.0
+requires-dist: grpcio!=1.68.0,!=1.68.1,!=1.69.0,!=1.70.0,!=1.70.1,!=1.71.0,!=1.72.1,!=1.73.0,>=1.66.2; python_version < "3.14"
+requires-dist: grpcio>=1.75.1; python_version >= "3.14"
+requires-dist: orjson>=3.10.15
+requires-dist: pandas>=1.2.4
+requires-dist: protobuf>=5.27.2
+requires-dist: python-dotenv<2.0.0,>=1.0.1
+requires-dist: requests>=2.20.0
+requires-dist: azure-storage-blob; extra == "bulk-writer"
+requires-dist: minio>=7.0.0; extra == "bulk-writer"
+requires-dist: ml-dtypes; extra == "bulk-writer"
+requires-dist: pyarrow>=12.0.0; extra == "bulk-writer"
+requires-dist: requests; extra == "bulk-writer"
+requires-dist: urllib3; extra == "bulk-writer"
+requires-dist: milvus-lite>=2.4.0; sys_platform != "win32" and extra == "milvus-lite"
+requires-dist: setuptools<82; python_version < "3.10" and extra == "milvus-lite"
+requires-dist: pymilvus-model>=0.3.0; extra == "model"
+requires-python: >=3.9
+project-url: Homepage, https://milvus.io
+project-url: Repository, https://github.com/milvus-io/pymilvus
+project-url: Issues, https://github.com/milvus-io/pymilvus/issues
+provides-extra: bulk-writer
+provides-extra: milvus-lite
+provides-extra: model
+

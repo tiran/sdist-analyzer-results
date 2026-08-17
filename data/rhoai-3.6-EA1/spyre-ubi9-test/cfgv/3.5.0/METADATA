@@ -1,0 +1,16 @@
+metadata-version: 2.4
+name: cfgv
+version: 3.5.0
+dynamic: license-file
+summary: Validate configuration and produce human readable error messages.
+home-page: https://github.com/asottile/cfgv
+author: Anthony Sottile
+author-email: asottile@umich.edu
+license: MIT
+license-file: LICENSE
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+requires-python: >=3.10
+

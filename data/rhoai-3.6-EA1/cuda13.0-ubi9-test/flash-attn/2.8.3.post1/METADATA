@@ -1,0 +1,26 @@
+metadata-version: 2.4
+name: flash_attn
+version: 2.8.3.post1
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: license-file
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: Flash Attention: Fast and Memory-Efficient Exact Attention
+home-page: https://github.com/Dao-AILab/flash-attention
+author: Tri Dao
+author-email: tri@tridao.me
+license-file: LICENSE
+license-file: AUTHORS
+classifier: Programming Language :: Python :: 3
+classifier: License :: OSI Approved :: BSD License
+classifier: Operating System :: Unix
+requires-dist: torch
+requires-dist: einops
+requires-python: >=3.9
+

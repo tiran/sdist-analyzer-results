@@ -1,0 +1,34 @@
+metadata-version: 2.4
+name: kvcached
+version: 0.1.5
+dynamic: license-file
+summary: A KV cache management system that supports on-demand KV cache allocation for LLMs with GPU virtual memory
+keywords: llm,kv-cache,gpu-memory,gpu-sharing,machine-learning,pytorch,vllm,sglang,cuda,memory-management
+author: The kvcached team
+license-expression: Apache-2.0
+license-file: LICENSE
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: C++
+classifier: Development Status :: 3 - Alpha
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: numpy>=1.26.0
+requires-dist: posix_ipc>=1.0
+requires-dist: wrapt>=1.15
+requires-dist: pre-commit; extra == "dev"
+requires-dist: setuptools>=64; extra == "dev"
+requires-dist: wheel; extra == "dev"
+requires-python: <3.14,>=3.9
+project-url: Homepage, https://github.com/ovg-project/kvcached
+project-url: Repository, https://github.com/ovg-project/kvcached
+project-url: Issues, https://github.com/ovg-project/kvcached/issues
+project-url: Documentation, https://github.com/ovg-project/kvcached#readme
+provides-extra: dev
+

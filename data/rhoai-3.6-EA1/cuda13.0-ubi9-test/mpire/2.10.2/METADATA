@@ -1,0 +1,51 @@
+metadata-version: 2.4
+name: mpire
+version: 2.10.2
+dynamic: author
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: summary
+summary: A Python package for easy multiprocessing, but faster than multiprocessing
+home-page: https://github.com/sybrenjansen/mpire
+author: Sybren Jansen
+license: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: License :: OSI Approved :: MIT License
+classifier: Topic :: Software Development
+classifier: Topic :: Software Development :: Libraries
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: importlib_resources; python_version < "3.9"
+requires-dist: pywin32>=301; platform_system == "Windows"
+requires-dist: pygments>=2.0
+requires-dist: tqdm>=4.27
+requires-dist: flask; extra == "dashboard"
+requires-dist: multiprocess; python_version < "3.11" and extra == "dill"
+requires-dist: multiprocess>=0.70.15; python_version >= "3.11" and extra == "dill"
+requires-dist: docutils==0.17.1; extra == "docs"
+requires-dist: sphinx==3.2.1; extra == "docs"
+requires-dist: sphinx-rtd-theme==0.5.0; extra == "docs"
+requires-dist: sphinx-autodoc-typehints==1.11.0; extra == "docs"
+requires-dist: sphinxcontrib-images==0.9.2; extra == "docs"
+requires-dist: sphinx-versions==1.0.1; extra == "docs"
+requires-dist: ipywidgets; extra == "testing"
+requires-dist: multiprocess; python_version < "3.11" and extra == "testing"
+requires-dist: multiprocess>=0.70.15; python_version >= "3.11" and extra == "testing"
+requires-dist: numpy; extra == "testing"
+requires-dist: pywin32>=301; platform_system == "Windows" and extra == "testing"
+requires-dist: rich; extra == "testing"
+provides-extra: dashboard
+provides-extra: dill
+provides-extra: docs
+provides-extra: testing
+

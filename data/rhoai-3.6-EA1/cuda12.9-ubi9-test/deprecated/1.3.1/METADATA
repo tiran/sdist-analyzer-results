@@ -1,0 +1,60 @@
+metadata-version: 2.4
+name: Deprecated
+version: 1.3.1
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: platform
+dynamic: project-url
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+platform: any
+summary: Python @deprecated decorator to deprecate old python classes, functions or methods.
+keywords: deprecate,deprecated,deprecation,warning,warn,decorator
+home-page: https://github.com/laurent-laporte-pro/deprecated
+author: Laurent LAPORTE
+author-email: laurent.laporte.pro@gmail.com
+license: MIT
+license-file: LICENSE.rst
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Web Environment
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 2
+classifier: Programming Language :: Python :: 2.7
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.4
+classifier: Programming Language :: Python :: 3.5
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: wrapt<3,>=1.10
+requires-dist: inspect2; python_version < "3"
+requires-dist: tox; extra == "dev"
+requires-dist: PyTest; extra == "dev"
+requires-dist: PyTest-Cov; extra == "dev"
+requires-dist: bump2version<1; extra == "dev"
+requires-dist: setuptools; python_version >= "3.12" and extra == "dev"
+requires-python: !=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,>=2.7
+project-url: Documentation, https://deprecated.readthedocs.io/en/latest/
+project-url: Source, https://github.com/laurent-laporte-pro/deprecated
+project-url: Bug Tracker, https://github.com/laurent-laporte-pro/deprecated/issues
+provides-extra: dev
+

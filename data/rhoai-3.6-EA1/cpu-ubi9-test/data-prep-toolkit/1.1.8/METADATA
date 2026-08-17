@@ -1,0 +1,37 @@
+metadata-version: 2.4
+name: data_prep_toolkit
+version: 1.1.8
+summary: Data Preparation Toolkit Library for Ray and Python
+keywords: data,data preprocessing,data preparation,llm,generative,ai,fine-tuning,llmapps
+author-email: Maroun Touma <touma@us.ibm.com>
+license: Apache-2.0
+requires-dist: numpy
+requires-dist: pyarrow
+requires-dist: boto3>=1.41
+requires-dist: mmh3
+requires-dist: psutil
+requires-dist: polars>=1.9.0
+requires-dist: python-json-logger
+requires-dist: rich
+requires-dist: twine; extra == "dev"
+requires-dist: pytest>=7.3.2; extra == "dev"
+requires-dist: pytest-env>=1.0.0; extra == "dev"
+requires-dist: pre-commit>=3.3.2; extra == "dev"
+requires-dist: pytest-cov>=4.1.0; extra == "dev"
+requires-dist: pytest-mock>=3.10.0; extra == "dev"
+requires-dist: moto==5.0.5; extra == "dev"
+requires-dist: markupsafe==2.0.1; extra == "dev"
+requires-dist: fasttext-predict; extra == "dev"
+requires-dist: huggingface-hub<1.0.0,>=0.21.4; extra == "dev"
+requires-dist: transformers; extra == "dev"
+requires-dist: ray[default]==2.55.1; extra == "ray"
+requires-dist: fastapi>=0.110.2; extra == "ray"
+requires-dist: pillow>=10.3.0; extra == "ray"
+requires-dist: pyspark<=3.5.5,>=3.5.2; extra == "spark"
+requires-dist: psutil>=6.0.0; extra == "spark"
+requires-dist: PyYAML>=6.0.2; extra == "spark"
+requires-python: <3.15,>=3.10
+provides-extra: dev
+provides-extra: ray
+provides-extra: spark
+

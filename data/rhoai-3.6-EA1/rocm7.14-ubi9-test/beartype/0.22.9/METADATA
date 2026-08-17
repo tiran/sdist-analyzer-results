@@ -1,0 +1,140 @@
+metadata-version: 2.5
+name: beartype
+version: 0.22.9
+summary: Unbearably fast near-real-time pure-Python runtime-static type-checker.
+keywords: annotations,python,type checking,type hints
+author-email: Cecil Curry <leycec@gmail.com>
+license: MIT License
+                 
+                 Copyright (c) 2014-2025 Beartype authors.
+                 
+                 Permission is hereby granted, free of charge, to any person obtaining a copy
+                 of this software and associated documentation files (the "Software"), to deal
+                 in the Software without restriction, including without limitation the rights
+                 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+                 copies of the Software, and to permit persons to whom the Software is
+                 furni...
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Natural Language :: English
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Topic :: Software Development :: Code Generators
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: Software Development :: Quality Assurance
+classifier: Typing :: Typed
+requires-dist: autoapi>=0.9.0; extra == "dev"
+requires-dist: celery; extra == "dev"
+requires-dist: click; extra == "dev"
+requires-dist: coverage>=5.5; extra == "dev"
+requires-dist: docutils>=0.22.0; extra == "dev"
+requires-dist: equinox; (sys_platform == "linux" and python_version < "3.15.0") and extra == "dev"
+requires-dist: fastmcp; python_version < "3.14.0" and extra == "dev"
+requires-dist: jax[cpu]; (sys_platform == "linux" and python_version < "3.15.0") and extra == "dev"
+requires-dist: jaxtyping; sys_platform == "linux" and extra == "dev"
+requires-dist: langchain; (python_version < "3.14.0" and sys_platform != "darwin" and platform_python_implementation != "PyPy") and extra == "dev"
+requires-dist: mypy>=0.800; platform_python_implementation != "PyPy" and extra == "dev"
+requires-dist: nuitka>=1.2.6; (sys_platform == "linux" and python_version < "3.14.0") and extra == "dev"
+requires-dist: numba; python_version < "3.14.0" and extra == "dev"
+requires-dist: numpy; (python_version < "3.15.0" and sys_platform != "darwin" and platform_python_implementation != "PyPy") and extra == "dev"
+requires-dist: pandera>=0.26.0; python_version < "3.14.0" and extra == "dev"
+requires-dist: poetry; extra == "dev"
+requires-dist: polars; python_version < "3.14.0" and extra == "dev"
+requires-dist: pydata-sphinx-theme<=0.7.2; extra == "dev"
+requires-dist: pygments; extra == "dev"
+requires-dist: pyinstaller; extra == "dev"
+requires-dist: pyright>=1.1.370; extra == "dev"
+requires-dist: pytest>=6.2.0; extra == "dev"
+requires-dist: redis; extra == "dev"
+requires-dist: rich-click; extra == "dev"
+requires-dist: setuptools; extra == "dev"
+requires-dist: sphinx; extra == "dev"
+requires-dist: sphinx<6.0.0,>=4.2.0; extra == "dev"
+requires-dist: sphinxext-opengraph>=0.7.5; extra == "dev"
+requires-dist: sqlalchemy; extra == "dev"
+requires-dist: torch; (sys_platform == "linux" and python_version < "3.14.0") and extra == "dev"
+requires-dist: tox>=3.20.1; extra == "dev"
+requires-dist: typer; extra == "dev"
+requires-dist: typing-extensions>=3.10.0.0; extra == "dev"
+requires-dist: xarray; python_version < "3.15.0" and extra == "dev"
+requires-dist: mkdocs-material[imaging]>=9.6.0; extra == "doc-ghp"
+requires-dist: mkdocstrings-python-xref>=1.16.0; extra == "doc-ghp"
+requires-dist: mkdocstrings-python>=1.16.0; extra == "doc-ghp"
+requires-dist: autoapi>=0.9.0; extra == "doc-rtd"
+requires-dist: pydata-sphinx-theme<=0.7.2; extra == "doc-rtd"
+requires-dist: setuptools; extra == "doc-rtd"
+requires-dist: sphinx<6.0.0,>=4.2.0; extra == "doc-rtd"
+requires-dist: sphinxext-opengraph>=0.7.5; extra == "doc-rtd"
+requires-dist: celery; extra == "test"
+requires-dist: click; extra == "test"
+requires-dist: coverage>=5.5; extra == "test"
+requires-dist: docutils>=0.22.0; extra == "test"
+requires-dist: equinox; (sys_platform == "linux" and python_version < "3.15.0") and extra == "test"
+requires-dist: fastmcp; python_version < "3.14.0" and extra == "test"
+requires-dist: jax[cpu]; (sys_platform == "linux" and python_version < "3.15.0") and extra == "test"
+requires-dist: jaxtyping; sys_platform == "linux" and extra == "test"
+requires-dist: langchain; (python_version < "3.14.0" and sys_platform != "darwin" and platform_python_implementation != "PyPy") and extra == "test"
+requires-dist: mypy>=0.800; platform_python_implementation != "PyPy" and extra == "test"
+requires-dist: nuitka>=1.2.6; (sys_platform == "linux" and python_version < "3.14.0") and extra == "test"
+requires-dist: numba; python_version < "3.14.0" and extra == "test"
+requires-dist: numpy; (python_version < "3.15.0" and sys_platform != "darwin" and platform_python_implementation != "PyPy") and extra == "test"
+requires-dist: pandera>=0.26.0; python_version < "3.14.0" and extra == "test"
+requires-dist: poetry; extra == "test"
+requires-dist: polars; python_version < "3.14.0" and extra == "test"
+requires-dist: pygments; extra == "test"
+requires-dist: pyinstaller; extra == "test"
+requires-dist: pyright>=1.1.370; extra == "test"
+requires-dist: pytest>=6.2.0; extra == "test"
+requires-dist: redis; extra == "test"
+requires-dist: rich-click; extra == "test"
+requires-dist: sphinx; extra == "test"
+requires-dist: sqlalchemy; extra == "test"
+requires-dist: torch; (sys_platform == "linux" and python_version < "3.14.0") and extra == "test"
+requires-dist: tox>=3.20.1; extra == "test"
+requires-dist: typer; extra == "test"
+requires-dist: typing-extensions>=3.10.0.0; extra == "test"
+requires-dist: xarray; python_version < "3.15.0" and extra == "test"
+requires-dist: celery; extra == "test-tox"
+requires-dist: click; extra == "test-tox"
+requires-dist: docutils>=0.22.0; extra == "test-tox"
+requires-dist: equinox; (sys_platform == "linux" and python_version < "3.15.0") and extra == "test-tox"
+requires-dist: fastmcp; python_version < "3.14.0" and extra == "test-tox"
+requires-dist: jax[cpu]; (sys_platform == "linux" and python_version < "3.15.0") and extra == "test-tox"
+requires-dist: jaxtyping; sys_platform == "linux" and extra == "test-tox"
+requires-dist: langchain; (python_version < "3.14.0" and sys_platform != "darwin" and platform_python_implementation != "PyPy") and extra == "test-tox"
+requires-dist: mypy>=0.800; platform_python_implementation != "PyPy" and extra == "test-tox"
+requires-dist: nuitka>=1.2.6; (sys_platform == "linux" and python_version < "3.14.0") and extra == "test-tox"
+requires-dist: numba; python_version < "3.14.0" and extra == "test-tox"
+requires-dist: numpy; (python_version < "3.15.0" and sys_platform != "darwin" and platform_python_implementation != "PyPy") and extra == "test-tox"
+requires-dist: pandera>=0.26.0; python_version < "3.14.0" and extra == "test-tox"
+requires-dist: poetry; extra == "test-tox"
+requires-dist: polars; python_version < "3.14.0" and extra == "test-tox"
+requires-dist: pygments; extra == "test-tox"
+requires-dist: pyinstaller; extra == "test-tox"
+requires-dist: pyright>=1.1.370; extra == "test-tox"
+requires-dist: pytest>=6.2.0; extra == "test-tox"
+requires-dist: redis; extra == "test-tox"
+requires-dist: rich-click; extra == "test-tox"
+requires-dist: sphinx; extra == "test-tox"
+requires-dist: sqlalchemy; extra == "test-tox"
+requires-dist: torch; (sys_platform == "linux" and python_version < "3.14.0") and extra == "test-tox"
+requires-dist: typer; extra == "test-tox"
+requires-dist: typing-extensions>=3.10.0.0; extra == "test-tox"
+requires-dist: xarray; python_version < "3.15.0" and extra == "test-tox"
+requires-dist: coverage>=5.5; extra == "test-tox-coverage"
+requires-python: >=3.10
+project-url: Docs, https://beartype.readthedocs.io
+project-url: GitHub, https://github.com/beartype/beartype
+project-url: Forums, https://github.com/beartype/beartype/discussions
+project-url: Issues, https://github.com/beartype/beartype/issues
+project-url: Releases, https://github.com/beartype/beartype/releases
+provides-extra: dev
+provides-extra: doc-ghp
+provides-extra: doc-rtd
+provides-extra: test
+provides-extra: test-tox
+provides-extra: test-tox-coverage
+

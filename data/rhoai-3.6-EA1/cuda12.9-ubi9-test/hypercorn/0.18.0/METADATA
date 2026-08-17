@@ -1,0 +1,39 @@
+metadata-version: 2.1
+name: Hypercorn
+version: 0.18.0
+summary: A ASGI Server based on Hyper libraries and inspired by Gunicorn
+author-email: pgjones <philip.graham.jones@googlemail.com>
+license: MIT
+classifier: Development Status :: 4 - Beta
+classifier: Environment :: Web Environment
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: exceptiongroup>=1.1.0; python_version < "3.11"
+requires-dist: h11
+requires-dist: h2>=4.3.0
+requires-dist: priority
+requires-dist: taskgroup; python_version < "3.11"
+requires-dist: tomli; python_version < "3.11"
+requires-dist: typing_extensions; python_version < "3.11"
+requires-dist: wsproto>=0.14.0
+requires-dist: pydata_sphinx_theme; extra == "docs"
+requires-dist: sphinxcontrib_mermaid; extra == "docs"
+requires-dist: aioquic>=0.9.0; extra == "h3"
+requires-dist: trio; extra == "trio"
+requires-dist: uvloop; extra == "uvloop"
+requires-python: >=3.10
+provides-extra: docs
+provides-extra: h3
+provides-extra: trio
+provides-extra: uvloop
+

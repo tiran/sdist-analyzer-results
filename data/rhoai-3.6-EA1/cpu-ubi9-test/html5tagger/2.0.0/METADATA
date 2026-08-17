@@ -1,0 +1,25 @@
+metadata-version: 2.5
+name: html5tagger
+version: 2.0.0
+summary: Pythonic HTML generation/templating (no template files)
+keywords: HTML,HTML5,Jinja,templating
+author-email: Sanic Community <tronic@noreply.users.github.com>
+license: Unlicense
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: License :: Public Domain
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Text Processing :: Markup :: HTML
+requires-python: >=3.10
+project-url: Homepage, https://github.com/sanic-org/html5tagger
+project-url: Repository, https://github.com/sanic-org/html5tagger
+project-url: Issues, https://github.com/sanic-org/html5tagger/issues
+

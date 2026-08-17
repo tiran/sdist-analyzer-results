@@ -1,4 +1,4 @@
-setuptools>=77
-pkgconfig
 Cython<4,>=0.29.31
+pkgconfig
+setuptools>=77
 numpy<3,>=2.0.0

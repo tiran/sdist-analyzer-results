@@ -1,0 +1,28 @@
+metadata-version: 2.4
+name: gradio_client
+version: 1.13.3
+summary: Python library for easily interacting with trained machine learning models
+keywords: API,client,machine learning
+author-email: Abubakar Abid <gradio-team@huggingface.co>, Ali Abid <gradio-team@huggingface.co>, Ali Abdalla <gradio-team@huggingface.co>, Dawood Khan <gradio-team@huggingface.co>, Ahsen Khaliq <gradio-team@huggingface.co>, Pete Allen <gradio-team@huggingface.co>, Freddy Boulton <gradio-team@huggingface.co>
+license-expression: Apache-2.0
+classifier: Development Status :: 4 - Beta
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Topic :: Scientific/Engineering
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+classifier: Topic :: Software Development :: User Interfaces
+requires-dist: fsspec
+requires-dist: httpx>=0.24.1
+requires-dist: huggingface-hub<2.0,>=0.19.3
+requires-dist: packaging
+requires-dist: typing-extensions~=4.0
+requires-dist: websockets<16.0,>=13.0
+requires-python: >=3.10
+project-url: Homepage, https://github.com/gradio-app/gradio
+

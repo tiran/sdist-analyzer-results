@@ -1,0 +1,33 @@
+metadata-version: 2.4
+name: nvidia-riva-client
+version: 2.16.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: maintainer
+dynamic: maintainer-email
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: Python implementation of the Riva Client API
+keywords: deep learning,machine learning,gpu,NLP,ASR,TTS,NMT,nvidia,speech,language,Riva,client
+home-page: https://github.com/nvidia-riva/python-clients
+author: Anton Peganov
+author-email: apeganov@nvidia.com
+maintainer: Anton Peganov
+maintainer-email: apeganov@nvidia.com
+license: MIT
+license-file: LICENSE
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Python :: 3
+requires-dist: setuptools>=65
+requires-dist: grpcio-tools
+requires-python: >=3.7
+

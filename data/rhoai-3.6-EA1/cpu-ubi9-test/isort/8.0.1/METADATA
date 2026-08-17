@@ -1,0 +1,33 @@
+metadata-version: 2.5
+name: isort
+version: 8.0.1
+summary: A Python utility / library to sort Python imports.
+keywords: Clean,Imports,Lint,Refactor,Sort
+author-email: Timothy Crosley <timothy.crosley@gmail.com>, staticdev <staticdev-support@proton.me>
+license-expression: MIT
+license-file: LICENSE
+classifier: Development Status :: 6 - Mature
+classifier: Environment :: Console
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Natural Language :: English
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Software Development :: Libraries
+classifier: Topic :: Utilities
+requires-dist: colorama; extra == "colors"
+requires-python: >=3.10.0
+project-url: Homepage, https://pycqa.github.io/isort/index.html
+project-url: Documentation, https://pycqa.github.io/isort/index.html
+project-url: Repository, https://github.com/PyCQA/isort
+project-url: Changelog, https://github.com/PyCQA/isort/releases
+provides-extra: colors
+

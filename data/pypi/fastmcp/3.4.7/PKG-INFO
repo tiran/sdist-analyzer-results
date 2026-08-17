@@ -1,0 +1,36 @@
+metadata-version: 2.4
+name: fastmcp
+version: 3.4.7
+summary: The fast, Pythonic way to build MCP servers and clients.
+keywords: agent,fastmcp,llm,mcp,mcp client,mcp server,model context protocol
+author: Jeremiah Lowin
+license-expression: Apache-2.0
+license-file: LICENSE
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+classifier: Typing :: Typed
+requires-dist: fastmcp-slim[client,server]==3.4.7
+requires-dist: fastmcp-slim[anthropic]==3.4.7; extra == "anthropic"
+requires-dist: fastmcp-slim[apps]==3.4.7; extra == "apps"
+requires-dist: fastmcp-slim[azure]==3.4.7; extra == "azure"
+requires-dist: fastmcp-slim[code-mode]==3.4.7; extra == "code-mode"
+requires-dist: fastmcp-slim[gemini]==3.4.7; extra == "gemini"
+requires-dist: fastmcp-slim[openai]==3.4.7; extra == "openai"
+requires-dist: fastmcp-slim[tasks]==3.4.7; extra == "tasks"
+requires-python: >=3.10
+project-url: Homepage, https://gofastmcp.com
+project-url: Repository, https://github.com/PrefectHQ/fastmcp
+project-url: Documentation, https://gofastmcp.com
+provides-extra: anthropic
+provides-extra: apps
+provides-extra: azure
+provides-extra: code-mode
+provides-extra: gemini
+provides-extra: openai
+provides-extra: tasks
+

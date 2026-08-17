@@ -1,0 +1,66 @@
+metadata-version: 2.5
+name: langchain
+version: 1.3.15
+summary: Building applications with LLMs through composability
+license: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: langchain-core<2.0.0,>=1.5.4
+requires-dist: langgraph<1.3.0,>=1.2.11
+requires-dist: pydantic<3.0.0,>=2.7.4
+requires-dist: langchain-anthropic; extra == "anthropic"
+requires-dist: langchain-aws; extra == "aws"
+requires-dist: langchain-azure-ai; extra == "azure-ai"
+requires-dist: langchain-baseten>=0.2.0; extra == "baseten"
+requires-dist: langchain-community; extra == "community"
+requires-dist: langchain-deepseek; extra == "deepseek"
+requires-dist: langchain-fireworks; extra == "fireworks"
+requires-dist: langchain-google-genai; extra == "google-genai"
+requires-dist: langchain-google-vertexai; extra == "google-vertexai"
+requires-dist: langchain-groq; extra == "groq"
+requires-dist: langchain-huggingface; extra == "huggingface"
+requires-dist: langchain-meta; extra == "meta"
+requires-dist: langchain-mistralai; extra == "mistralai"
+requires-dist: langchain-ollama; extra == "ollama"
+requires-dist: langchain-openai; extra == "openai"
+requires-dist: langchain-perplexity; extra == "perplexity"
+requires-dist: langchain-together; extra == "together"
+requires-dist: langchain-xai; extra == "xai"
+requires-python: <4.0.0,>=3.10.0
+project-url: Homepage, https://docs.langchain.com/
+project-url: Documentation, https://reference.langchain.com/python/langchain/langchain/
+project-url: Repository, https://github.com/langchain-ai/langchain
+project-url: Issues, https://github.com/langchain-ai/langchain/issues
+project-url: Changelog, https://github.com/langchain-ai/langchain/releases?q=tag%3A%22langchain%3D%3D1%22
+project-url: Twitter, https://x.com/langchain_oss
+project-url: Slack, https://www.langchain.com/join-community
+project-url: Reddit, https://www.reddit.com/r/LangChain/
+provides-extra: anthropic
+provides-extra: aws
+provides-extra: azure-ai
+provides-extra: baseten
+provides-extra: community
+provides-extra: deepseek
+provides-extra: fireworks
+provides-extra: google-genai
+provides-extra: google-vertexai
+provides-extra: groq
+provides-extra: huggingface
+provides-extra: meta
+provides-extra: mistralai
+provides-extra: ollama
+provides-extra: openai
+provides-extra: perplexity
+provides-extra: together
+provides-extra: xai
+

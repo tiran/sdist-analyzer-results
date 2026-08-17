@@ -1,4 +1,0 @@
-setuptools>=67.8.0
-Cython>=0.29.32
-pybind11>=2.13.6
-numpy>=1.21.6

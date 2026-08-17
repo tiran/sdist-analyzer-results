@@ -1,0 +1,25 @@
+metadata-version: 2.4
+name: rouge_score
+version: 0.1.2
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: Pure python implementation of ROUGE-1.5.5.
+home-page: https://github.com/google-research/google-research/tree/master/rouge
+author: Google LLC
+author-email: rouge-opensource@google.com
+classifier: Programming Language :: Python :: 3
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: OS Independent
+requires-dist: absl-py
+requires-dist: nltk
+requires-dist: numpy
+requires-dist: six>=1.14.0
+requires-python: >=3.7
+

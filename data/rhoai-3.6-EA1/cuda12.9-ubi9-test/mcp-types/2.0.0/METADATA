@@ -1,0 +1,26 @@
+metadata-version: 2.5
+name: mcp-types
+version: 2.0.0
+summary: Model Context Protocol wire types
+keywords: automation,llm,mcp
+author: Model Context Protocol a Series of LF Projects, LLC.
+maintainer-email: David Soria Parra <davidsp@anthropic.com>, Marcelo Trylesinski <marcelotryle@gmail.com>, Max Isbey <maxisbey@anthropic.com>, Felix Weinberger <fweinberger@anthropic.com>
+license: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-dist: pydantic>=2.12.0
+requires-dist: typing-extensions>=4.13.0
+requires-python: >=3.10
+project-url: Homepage, https://modelcontextprotocol.io
+project-url: Documentation, https://py.sdk.modelcontextprotocol.io/
+project-url: Repository, https://github.com/modelcontextprotocol/python-sdk
+project-url: Issues, https://github.com/modelcontextprotocol/python-sdk/issues
+

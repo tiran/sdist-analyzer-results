@@ -1,0 +1,30 @@
+metadata-version: 2.4
+name: grpcio
+version: 1.78.0
+dynamic: classifier
+dynamic: license-file
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+summary: HTTP/2-based RPC framework
+author-email: The gRPC Authors <grpc-io@googlegroups.com>
+license-expression: Apache-2.0
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-dist: typing-extensions~=4.12
+requires-dist: grpcio-tools>=1.78.0; extra == "protobuf"
+requires-python: >=3.9
+project-url: Homepage, https://grpc.io
+project-url: Source Code, https://github.com/grpc/grpc
+project-url: Bug Tracker, https://github.com/grpc/grpc/issues
+project-url: Documentation, https://grpc.github.io/grpc/python
+provides-extra: protobuf
+

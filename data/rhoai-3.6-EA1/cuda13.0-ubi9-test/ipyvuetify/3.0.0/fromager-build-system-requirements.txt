@@ -1,0 +1,4 @@
+pynpm
+jupyter-builder>=1.0.0
+wheel
+setuptools>=40.8.0

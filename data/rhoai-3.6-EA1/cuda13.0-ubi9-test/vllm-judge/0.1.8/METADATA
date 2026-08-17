@@ -1,0 +1,41 @@
+metadata-version: 2.4
+name: vllm_judge
+version: 0.1.8
+dynamic: license-file
+summary: LLM-as-a-Judge evaluations for vLLM hosted models
+keywords: llm,evaluation,vllm,judge,ai,machine-learning,nlp,llm-evaluation,llm-as-judge
+author: TrustyAI team
+author-email: Sai Chandra Pandraju <saichandrapandraju@gmail.com>
+license-file: LICENSE
+requires-dist: httpx>=0.24.0
+requires-dist: pydantic>=2.0.0
+requires-dist: tenacity>=8.0.0
+requires-dist: click>=8.0.0
+requires-dist: numpy>=2.0.0
+requires-dist: fastapi>=0.100.0; extra == "api"
+requires-dist: uvicorn[standard]>=0.22.0; extra == "api"
+requires-dist: websockets>=11.0; extra == "api"
+requires-dist: jinja2>=3.0.0; extra == "jinja2"
+requires-dist: pytest>=7.0.0; extra == "test"
+requires-dist: pytest-asyncio>=0.21.0; extra == "test"
+requires-dist: pytest-cov>=4.0.0; extra == "test"
+requires-dist: pytest-mock>=3.10.0; extra == "test"
+requires-dist: mkdocs>=1.5.0; extra == "docs"
+requires-dist: mkdocs-material>=9.0.0; extra == "docs"
+requires-dist: mkdocstrings[python]>=0.24.0; extra == "docs"
+requires-dist: mkdocs-material-extensions>=1.3.1; extra == "docs"
+requires-dist: vllm_judge[api,docs,jinja2,test]; extra == "dev"
+requires-dist: black>=23.0.0; extra == "dev"
+requires-dist: isort>=5.12.0; extra == "dev"
+requires-dist: flake8>=6.0.0; extra == "dev"
+requires-dist: mypy>=1.0.0; extra == "dev"
+requires-python: >=3.8
+project-url: Homepage, https://trustyai.org/vllm_judge/
+project-url: Repository, https://github.com/trustyai-explainability/vllm_judge
+project-url: Issues, https://github.com/trustyai-explainability/vllm_judge/issues
+provides-extra: api
+provides-extra: jinja2
+provides-extra: test
+provides-extra: docs
+provides-extra: dev
+

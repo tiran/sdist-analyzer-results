@@ -1,0 +1,57 @@
+metadata-version: 2.5
+name: gradio
+version: 6.9.0
+summary: Python library for easily interacting with trained machine learning models
+keywords: machine learning,reproducibility,visualization
+author-email: Abubakar Abid <gradio-team@huggingface.co>, Ali Abid <gradio-team@huggingface.co>, Ali Abdalla <gradio-team@huggingface.co>, Dawood Khan <gradio-team@huggingface.co>, Ahsen Khaliq <gradio-team@huggingface.co>, Pete Allen <gradio-team@huggingface.co>, Ömer Faruk Özdemir <gradio-team@huggingface.co>, Freddy A Boulton <gradio-team@huggingface.co>, Hannah Blair <gradio-team@huggingface.co>
+license-expression: Apache-2.0
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Topic :: Scientific/Engineering
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+classifier: Topic :: Scientific/Engineering :: Visualization
+requires-dist: aiofiles<25.0,>=22.0
+requires-dist: anyio<5.0,>=3.0
+requires-dist: audioop-lts<1.0; python_version >= "3.13"
+requires-dist: brotli>=1.1.0
+requires-dist: fastapi<1.0,>=0.115.2
+requires-dist: ffmpy
+requires-dist: gradio-client==2.3.0
+requires-dist: groovy~=0.1
+requires-dist: httpx<1.0,>=0.24.1
+requires-dist: huggingface-hub<2.0,>=0.33.5
+requires-dist: jinja2<4.0
+requires-dist: markupsafe<4.0,>=2.0
+requires-dist: numpy<3.0,>=1.0
+requires-dist: orjson~=3.0
+requires-dist: packaging
+requires-dist: pandas<4.0,>=1.0
+requires-dist: pillow<13.0,>=8.0
+requires-dist: pydantic<=3.0,>=2.0
+requires-dist: pydub
+requires-dist: python-multipart>=0.0.18
+requires-dist: pytz>=2017.2
+requires-dist: pyyaml<7.0,>=5.0
+requires-dist: safehttpx<0.2.0,>=0.1.7
+requires-dist: semantic-version~=2.0
+requires-dist: starlette<1.0,>=0.40.0
+requires-dist: tomlkit<0.14.0,>=0.12.0
+requires-dist: typer<1.0,>=0.12
+requires-dist: typing-extensions~=4.0
+requires-dist: uvicorn>=0.14.0
+requires-dist: mcp<2.0.0,>=1.21.0; extra == "mcp"
+requires-dist: pydantic<=2.12.5,>=2.11.10; extra == "mcp"
+requires-dist: authlib; extra == "oauth"
+requires-dist: itsdangerous; extra == "oauth"
+requires-python: >=3.10
+project-url: Homepage, https://github.com/gradio-app/gradio
+provides-extra: mcp
+provides-extra: oauth
+

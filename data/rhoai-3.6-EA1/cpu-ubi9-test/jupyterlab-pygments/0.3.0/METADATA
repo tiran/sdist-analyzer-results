@@ -1,0 +1,36 @@
+metadata-version: 2.5
+name: jupyterlab_pygments
+version: 0.3.0
+dynamic: keywords
+summary: Pygments theme using JupyterLab CSS variables
+author-email: Jupyter Development Team <jupyter@googlegroups.com>
+license: Copyright (c) 2015 Project Jupyter Contributors
+                 All rights reserved.
+                 
+                 Redistribution and use in source and binary forms, with or without
+                 modification, are permitted provided that the following conditions are met:
+                 
+                 1. Redistributions of source code must retain the above copyright notice, this
+                    list of conditions and the following disclaimer.
+                 
+                 2. Redistributions in binary form must reproduce the above copyright notice,
+                    thi...
+license-file: LICENSE
+classifier: Framework :: Jupyter
+classifier: Framework :: Jupyter :: JupyterLab
+classifier: Framework :: Jupyter :: JupyterLab :: 4
+classifier: Framework :: Jupyter :: JupyterLab :: Extensions
+classifier: Framework :: Jupyter :: JupyterLab :: Extensions :: Prebuilt
+classifier: License :: OSI Approved :: BSD License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+requires-python: >=3.8
+project-url: Homepage, https://github.com/jupyterlab/jupyterlab_pygments
+project-url: Bug Tracker, https://github.com/jupyterlab/jupyterlab_pygments/issues
+project-url: Repository, https://github.com/jupyterlab/jupyterlab_pygments.git
+

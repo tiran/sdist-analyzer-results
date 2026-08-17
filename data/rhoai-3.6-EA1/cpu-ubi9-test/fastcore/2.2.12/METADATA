@@ -1,0 +1,30 @@
+metadata-version: 2.4
+name: fastcore
+version: 2.2.12
+dynamic: license-file
+summary: Python supercharged for fastai development
+keywords: python
+author-email: Jeremy Howard and Sylvain Gugger <infos@fast.ai>
+license: Apache-2.0
+license-file: LICENSE
+classifier: Natural Language :: English
+classifier: Intended Audience :: Developers
+classifier: Development Status :: 5 - Production/Stable
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+requires-dist: numpy; extra == "dev"
+requires-dist: nbdev>=3.3.2; extra == "dev"
+requires-dist: matplotlib; extra == "dev"
+requires-dist: pillow; extra == "dev"
+requires-dist: torch; extra == "dev"
+requires-dist: pandas; extra == "dev"
+requires-dist: nbclassic; extra == "dev"
+requires-dist: pysym2md>=0.0.6; extra == "dev"
+requires-dist: llms-txt; extra == "dev"
+requires-dist: plum-dispatch; extra == "dev"
+requires-dist: remold; extra == "dev"
+requires-python: >=3.10
+project-url: Repository, https://github.com/AnswerDotAI/fastcore/
+project-url: Documentation, https://fastcore.fast.ai/
+provides-extra: dev
+

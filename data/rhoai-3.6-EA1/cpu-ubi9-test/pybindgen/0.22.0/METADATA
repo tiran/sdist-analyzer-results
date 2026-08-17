@@ -1,0 +1,23 @@
+metadata-version: 2.4
+name: PyBindGen
+version: 0.22.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: license-file
+dynamic: summary
+summary: Python Bindings Generator
+home-page: https://github.com/gjcarneiro/pybindgen
+author: Gustavo Carneiro
+author-email: gjcarneiro@gmail.com
+license-file: COPYING
+license-file: AUTHORS
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: Topic :: Software Development :: Build Tools
+classifier: License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)
+classifier: Programming Language :: Python :: 2
+classifier: Programming Language :: Python :: 3
+

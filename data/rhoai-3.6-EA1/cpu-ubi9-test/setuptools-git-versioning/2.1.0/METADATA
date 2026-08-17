@@ -1,0 +1,45 @@
+metadata-version: 2.4
+name: setuptools-git-versioning
+version: 2.1.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: project-url
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: Use git repo data for building a version number according PEP-440
+keywords: setuptools,git,versioning,pep-440
+home-page: https://setuptools-git-versioning.readthedocs.io
+author: dolfinus
+author-email: martinov.m.s.8@gmail.com
+license: MIT
+license-file: LICENSE
+classifier: Framework :: Setuptools Plugin
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+requires-dist: packaging
+requires-dist: setuptools
+requires-dist: tomli>=2.0.1; python_version < "3.11"
+requires-python: >=3.7
+project-url: Documentation, https://setuptools-git-versioning.readthedocs.io
+project-url: Source, https://github.com/dolfinus/setuptools-git-versioning
+project-url: CI/CD, https://github.com/dolfinus/setuptools-git-versioning/actions
+project-url: Coverage, https://app.codecov.io/gh/dolfinus/setuptools-git-versioning
+project-url: Tracker, https://github.com/dolfinus/setuptools-git-versioning/issues
+

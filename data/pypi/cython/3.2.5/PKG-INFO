@@ -1,0 +1,37 @@
+metadata-version: 2.1
+name: Cython
+version: 3.2.5
+summary: The Cython compiler for writing C extensions in the Python language.
+home-page: https://cython.org/
+author: Robert Bradshaw, Stefan Behnel, David Woods, Greg Ewing, et al.
+author-email: cython-devel@python.org
+license: Apache-2.0
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Programming Language :: Python :: Implementation :: Stackless
+classifier: Programming Language :: C
+classifier: Programming Language :: C++
+classifier: Programming Language :: Cython
+classifier: Topic :: Software Development :: Code Generators
+classifier: Topic :: Software Development :: Compilers
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Typing :: Typed
+requires-python: >=3.8
+project-url: Documentation, https://cython.readthedocs.io/
+project-url: Donate, https://cython.readthedocs.io/en/latest/src/donating.html
+project-url: Source Code, https://github.com/cython/cython
+project-url: Bug Tracker, https://github.com/cython/cython/issues/
+project-url: User Group, https://groups.google.com/g/cython-users
+

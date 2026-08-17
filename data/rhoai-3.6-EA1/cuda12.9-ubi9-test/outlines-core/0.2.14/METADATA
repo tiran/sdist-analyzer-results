@@ -1,0 +1,36 @@
+metadata-version: 2.4
+name: outlines_core
+version: 0.2.14
+summary: Structured Text Generation in Rust
+keywords: machine learning,deep learning,language models,structured generation
+author: Outlines Developers
+license: Apache-2.0
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Information Technology
+classifier: Intended Audience :: Science/Research
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+requires-dist: pre-commit; extra == "test"
+requires-dist: pydantic; extra == "test"
+requires-dist: pytest; extra == "test"
+requires-dist: pytest-benchmark; extra == "test"
+requires-dist: pytest-cov; extra == "test"
+requires-dist: pytest-mock; extra == "test"
+requires-dist: coverage[toml]>=5.1; extra == "test"
+requires-dist: diff-cover; extra == "test"
+requires-dist: numpy; extra == "test"
+requires-dist: torch; extra == "test"
+requires-dist: numba; extra == "test"
+requires-dist: scipy; extra == "test"
+requires-dist: asv; extra == "test"
+requires-dist: psutil; extra == "test"
+requires-dist: maturin[patchelf]; extra == "test"
+requires-python: >=3.8
+project-url: documentation, https://dottxt-ai.github.io/outlines-core/
+project-url: homepage, https://github.com/dottxt-ai/outlines-core
+project-url: repository, https://github.com/dottxt-ai/outlines-core
+provides-extra: test
+

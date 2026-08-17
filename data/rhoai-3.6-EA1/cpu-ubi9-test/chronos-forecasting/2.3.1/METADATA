@@ -1,0 +1,56 @@
+metadata-version: 2.5
+name: chronos-forecasting
+version: 2.3.1
+summary: Chronos: Pretrained models for time series forecasting
+author-email: Abdul Fatir Ansari <ansarnd@amazon.com>, Lorenzo Stella <stellalo@amazon.com>, Caner Turkmen <atturkm@amazon.com>, Oleksandr Shchur <shchuro@amazon.com>, Jaris Küken <kuekenj@amazon.com>, Andreas Auer <auerand@amazon.com>
+license: Apache License
+                                            Version 2.0, January 2004
+                                         http://www.apache.org/licenses/
+                 
+                    TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+                 
+                    1. Definitions.
+                 
+                       "License" shall mean the terms and conditions for use, reproduction,
+                       and distribution as defined by Sections 1 through 9 of this document.
+                 
+                       "Licensor" shall mean the copyright owner or entity a...
+license-file: LICENSE
+license-file: NOTICE
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+requires-dist: accelerate<2,>=1.1.0
+requires-dist: einops<1,>=0.7.0
+requires-dist: numpy<3,>=1.21
+requires-dist: pandas<4,>=2.0
+requires-dist: torch<3,>=2.2
+requires-dist: transformers<6,>=4.41
+requires-dist: datasets<5,>=3.0; extra == "dev"
+requires-dist: fev<1,>=0.8.0; extra == "dev"
+requires-dist: gluonts[pro]~=0.16; extra == "dev"
+requires-dist: joblib; extra == "dev"
+requires-dist: rich; extra == "dev"
+requires-dist: tensorboard; extra == "dev"
+requires-dist: typer; extra == "dev"
+requires-dist: typer-config; extra == "dev"
+requires-dist: boto3<2,>=1.10; extra == "extras"
+requires-dist: fev<1,>=0.8.0; extra == "extras"
+requires-dist: pandas[pyarrow]<4,>=2.0; extra == "extras"
+requires-dist: peft<1,>=0.18.1; extra == "extras"
+requires-dist: boto3<2,>=1.10; extra == "test"
+requires-dist: fev<1,>=0.8.0; extra == "test"
+requires-dist: peft<1,>=0.18.1; extra == "test"
+requires-dist: pytest~=8.0; extra == "test"
+requires-dist: mypy~=1.9; extra == "typecheck"
+requires-python: >=3.10
+project-url: Homepage, https://github.com/amazon-science/chronos-forecasting
+project-url: Issues, https://github.com/amazon-science/chronos-forecasting/issues
+project-url: Chronos-Paper, https://arxiv.org/abs/2403.07815
+project-url: Chronos-2-Paper, https://arxiv.org/abs/2510.15821
+provides-extra: dev
+provides-extra: extras
+provides-extra: test
+provides-extra: typecheck
+

@@ -1,0 +1,32 @@
+metadata-version: 2.4
+name: openshell
+version: 0.0.88
+summary: OpenShell is the safe, private runtime for autonomous AI agents. 
+keywords: agent,sandbox,nvidia
+author: NVIDIA Inc.
+license-expression: Apache-2.0
+license-file: LICENSE
+classifier: Development Status :: 3 - Alpha
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: Intended Audience :: Information Technology
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Rust
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Topic :: Security
+classifier: Topic :: Scientific/Engineering
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+classifier: Operating System :: POSIX :: Linux
+classifier: Operating System :: MacOS :: MacOS X
+requires-dist: cloudpickle>=3.0
+requires-dist: grpcio>=1.60
+requires-dist: httpx>=0.27
+requires-dist: protobuf>=4.25
+requires-python: >=3.11
+project-url: documentation, https://docs.nvidia.com/openshell/latest/
+project-url: source, https://github.com/NVIDIA/OpenShell
+

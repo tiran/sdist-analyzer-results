@@ -1,0 +1,32 @@
+metadata-version: 2.4
+name: stack_data
+version: 0.6.3
+dynamic: license-file
+summary: Extract data from python stack frames and tracebacks for informative displays
+home-page: http://github.com/alexmojaki/stack_data
+author: Alex Hall
+author-email: alex.mojaki@gmail.com
+license: MIT
+license-file: LICENSE.txt
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Python :: 3.5
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+classifier: Topic :: Software Development :: Debuggers
+requires-dist: executing>=1.2.0
+requires-dist: asttokens>=2.1.0
+requires-dist: pure_eval
+requires-dist: pytest; extra == "tests"
+requires-dist: typeguard; extra == "tests"
+requires-dist: pygments; extra == "tests"
+requires-dist: littleutils; extra == "tests"
+requires-dist: cython; extra == "tests"
+provides-extra: tests
+

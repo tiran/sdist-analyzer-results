@@ -1,0 +1,45 @@
+metadata-version: 2.4
+name: munch
+version: 4.0.0
+dynamic: author
+dynamic: author-email
+dynamic: description
+dynamic: description-content-type
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: provides-extra
+dynamic: requires-python
+dynamic: summary
+summary: A dot-accessible dictionary (a la JavaScript objects)
+keywords: munch,dict,mapping,container,collection
+home-page: https://github.com/Infinidat/munch
+author: Rotem Yaari
+author-email: vmalloc@gmail.com
+license: MIT
+license-file: LICENSE.txt
+license-file: AUTHORS
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Topic :: Software Development
+classifier: Topic :: Software Development :: Libraries
+classifier: Topic :: Utilities
+classifier: License :: OSI Approved :: MIT License
+requires-dist: importlib_metadata>=1.7.0; python_version < "3.8"
+requires-dist: astroid>=2.0; extra == "testing"
+requires-dist: pylint~=2.3.1; extra == "testing"
+requires-dist: pytest; extra == "testing"
+requires-dist: coverage; extra == "testing"
+requires-dist: PyYAML>=5.1.0; extra == "yaml"
+requires-python: >=3.6
+provides-extra: testing
+provides-extra: yaml
+

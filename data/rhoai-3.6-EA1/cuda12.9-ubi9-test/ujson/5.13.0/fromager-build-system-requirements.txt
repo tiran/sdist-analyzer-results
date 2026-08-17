@@ -1,2 +1,2 @@
-setuptools>=77
 setuptools-scm[toml]>=3.4
+setuptools>=77

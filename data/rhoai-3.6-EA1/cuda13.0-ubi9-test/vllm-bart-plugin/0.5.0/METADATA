@@ -1,0 +1,34 @@
+metadata-version: 2.4
+name: vllm-bart-plugin
+version: 0.5.0
+dynamic: author
+dynamic: license-file
+dynamic: requires-python
+summary: BART model plugin for vLLM
+keywords: vllm,bart,language-model,inference,plugin
+author: Nicolò Lucchesi
+author-email: Nicolò Lucchesi <nick.lucche@redhat.com>
+license: Apache-2.0
+license-file: LICENSE
+classifier: Development Status :: 3 - Alpha
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+requires-dist: vllm<=0.24.0,>=0.13.0
+requires-dist: torch>=2.9.0
+requires-dist: transformers>=4.56.0
+requires-dist: pytest>=7.0; extra == "dev"
+requires-dist: black>=22.0; extra == "dev"
+requires-dist: isort>=5.0; extra == "dev"
+requires-dist: mypy>=0.950; extra == "dev"
+requires-python: >=3.10
+project-url: Homepage, https://github.com/yourusername/bart-plugin
+project-url: Repository, https://github.com/yourusername/bart-plugin
+project-url: Documentation, https://github.com/yourusername/bart-plugin#readme
+provides-extra: dev
+

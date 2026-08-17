@@ -1,0 +1,132 @@
+metadata-version: 2.5
+name: pydantic-ai-slim
+version: 2.28.0
+summary: AI Agent Framework, the Pydantic way, slim package
+author-email: Douwe Maan <douwe@pydantic.dev>, David Sanchez <david.sanchez@pydantic.dev>, Aditya Vardhan <aditya@pydantic.dev>, David Montague <david@pydantic.dev>, Marcelo Trylesinski <marcelotryle@gmail.com>, Alex Hall <alex@pydantic.dev>, Samuel Colvin <samuel@pydantic.dev>
+license-expression: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Environment :: MacOS X
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Information Technology
+classifier: Intended Audience :: System Administrators
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: POSIX :: Linux
+classifier: Operating System :: Unix
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Internet
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: anyio>=4.7.0
+requires-dist: exceptiongroup>=1.2.2; python_version < "3.11"
+requires-dist: genai-prices>=0.1.0
+requires-dist: griffelib>=2.0
+requires-dist: httpx>=0.27
+requires-dist: opentelemetry-api>=1.28.0
+requires-dist: pydantic-graph==2.28.0
+requires-dist: pydantic>=2.12
+requires-dist: typing-inspection>=0.4.0
+requires-dist: ag-ui-protocol>=0.1.10; extra == "ag-ui"
+requires-dist: starlette>=0.46.2; extra == "ag-ui"
+requires-dist: anthropic>=0.108.0; extra == "anthropic"
+requires-dist: boto3>=1.42.63; extra == "bedrock"
+requires-dist: botocore>=1.42.63; extra == "bedrock-mantle"
+requires-dist: openai>=2.45.0; extra == "bedrock-mantle"
+requires-dist: openai>=2.45.0; extra == "cerebras"
+requires-dist: argcomplete>=3.5.0; extra == "cli"
+requires-dist: prompt-toolkit>=3; extra == "cli"
+requires-dist: pyperclip>=1.9.0; extra == "cli"
+requires-dist: pyyaml>=6.0.2; extra == "cli"
+requires-dist: rich>=13; extra == "cli"
+requires-dist: cohere>=5.20.6; platform_system != "Emscripten" and extra == "cohere"
+requires-dist: openai>=2.45.0; extra == "crusoe"
+requires-dist: dbos>=2.10.0; extra == "dbos"
+requires-dist: ddgs>=9.0.0; extra == "duckduckgo"
+requires-dist: pydantic-evals==2.28.0; extra == "evals"
+requires-dist: exa-py>=2.0.0; extra == "exa"
+requires-dist: google-genai>=1.70.0; extra == "google"
+requires-dist: google-genai>=1.70.0; extra == "google-realtime"
+requires-dist: websockets>=14.0; extra == "google-realtime"
+requires-dist: groq>=0.25.0; extra == "groq"
+requires-dist: hf-xet<1.5.0; (platform_machine == "x86_64" or platform_machine == "amd64" or platform_machine == "AMD64" or platform_machine == "arm64" or platform_machine == "aarch64") and extra == "huggingface"
+requires-dist: huggingface-hub<2.0.0,>=1.3.4; extra == "huggingface"
+requires-dist: logfire[httpx]>=4.16.0; extra == "logfire"
+requires-dist: fastmcp-slim[client]<4,>=3.3.0; extra == "mcp"
+requires-dist: mistralai!=2.4.6,>=2.4.2; extra == "mistral"
+requires-dist: openai>=2.45.0; extra == "openai"
+requires-dist: tiktoken>=0.12.0; extra == "openai"
+requires-dist: openai>=2.45.0; extra == "openai-realtime"
+requires-dist: tiktoken>=0.12.0; extra == "openai-realtime"
+requires-dist: websockets>=14.0; extra == "openai-realtime"
+requires-dist: openai>=2.45.0; extra == "openrouter"
+requires-dist: prefect>=3.7.5; extra == "prefect"
+requires-dist: websockets>=14.0; extra == "realtime"
+requires-dist: tenacity>=8.2.3; extra == "retries"
+requires-dist: sentence-transformers>=5.2.0; python_version < "3.14" and extra == "sentence-transformers"
+requires-dist: openai>=2.45.0; extra == "snowflake"
+requires-dist: pydantic-handlebars>=0.1.0; extra == "spec"
+requires-dist: pyyaml>=6.0.2; extra == "spec"
+requires-dist: tavily-python>=0.5.0; extra == "tavily"
+requires-dist: temporalio>=1.24.0; extra == "temporal"
+requires-dist: starlette>=0.46.2; extra == "ui"
+requires-dist: voyageai>=0.3.7; python_version < "3.14" and extra == "voyageai"
+requires-dist: httpx>=0.27.0; extra == "web"
+requires-dist: starlette>=1.3.1; extra == "web"
+requires-dist: uvicorn>=0.38.0; extra == "web"
+requires-dist: markdownify>=1.2; extra == "web-fetch"
+requires-dist: xai-sdk>=1.14.0; extra == "xai"
+requires-dist: openai>=2.45.0; extra == "xai-realtime"
+requires-dist: tiktoken>=0.12.0; extra == "xai-realtime"
+requires-dist: websockets>=14.0; extra == "xai-realtime"
+requires-dist: xai-sdk>=1.14.0; extra == "xai-realtime"
+requires-dist: openai>=2.45.0; extra == "zai"
+requires-python: >=3.10
+project-url: Homepage, https://github.com/pydantic/pydantic-ai/tree/main/pydantic_ai_slim
+project-url: Source, https://github.com/pydantic/pydantic-ai/tree/main/pydantic_ai_slim
+project-url: Documentation, https://ai.pydantic.dev/install/#slim-install
+project-url: Changelog, https://github.com/pydantic/pydantic-ai/releases
+provides-extra: ag-ui
+provides-extra: anthropic
+provides-extra: bedrock
+provides-extra: bedrock-mantle
+provides-extra: cerebras
+provides-extra: cli
+provides-extra: cohere
+provides-extra: crusoe
+provides-extra: dbos
+provides-extra: duckduckgo
+provides-extra: evals
+provides-extra: exa
+provides-extra: google
+provides-extra: google-realtime
+provides-extra: groq
+provides-extra: huggingface
+provides-extra: logfire
+provides-extra: mcp
+provides-extra: mistral
+provides-extra: openai
+provides-extra: openai-realtime
+provides-extra: openrouter
+provides-extra: prefect
+provides-extra: realtime
+provides-extra: retries
+provides-extra: sentence-transformers
+provides-extra: snowflake
+provides-extra: spec
+provides-extra: tavily
+provides-extra: temporal
+provides-extra: ui
+provides-extra: voyageai
+provides-extra: web
+provides-extra: web-fetch
+provides-extra: xai
+provides-extra: xai-realtime
+provides-extra: zai
+

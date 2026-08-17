@@ -1,2 +1,3 @@
-Cython<4.0.0,>=3.2.1
+setuptools<82
 setuptools>=77.0.3
+Cython<4.0.0,>=3.2.1

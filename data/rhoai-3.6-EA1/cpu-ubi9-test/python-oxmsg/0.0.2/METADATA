@@ -1,0 +1,33 @@
+metadata-version: 2.4
+name: python-oxmsg
+version: 0.0.2
+dynamic: license-file
+summary: Extract attachments from Outlook .msg files.
+keywords: ms-oxmsg,outlook,email
+author-email: Steve Canny <stcanny@gmail.com>
+license: MIT
+license-file: LICENSE.txt
+classifier: Development Status :: 3 - Alpha
+classifier: Environment :: Console
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Topic :: Communications :: Email
+classifier: Topic :: File Formats
+classifier: Topic :: Office/Business :: Office Suites
+classifier: Topic :: Software Development :: Libraries
+requires-dist: click
+requires-dist: olefile
+requires-dist: typing_extensions>=4.9.0
+requires-python: >=3.9
+project-url: Changelog, https://github.com/scanny/python-oxmsg/blob/master/CHANGELOG.md
+project-url: Documentation, https://scanny.github.io/python-oxmsg/
+project-url: Homepage, https://github.com/scanny/python-oxmsg
+project-url: Repository, https://github.com/scanny/python-oxmsg
+

@@ -1,3 +1,0 @@
-Cython>=3.0.4
-numpy>=2.0.0; python_version < "3.13"
-meson-python>=0.18.0

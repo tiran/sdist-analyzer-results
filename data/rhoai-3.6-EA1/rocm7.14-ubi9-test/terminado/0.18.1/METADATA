@@ -1,0 +1,39 @@
+metadata-version: 2.5
+name: terminado
+version: 0.18.1
+summary: Tornado websocket backend for the Xterm.js Javascript terminal emulator library.
+author-email: Jupyter Development Team <jupyter@googlegroups.com>
+license: BSD 2-Clause License
+                 
+                 - Copyright (c) 2014-, Jupyter development team
+                 - Copyright (c) 2014, Ramalingam Saravanan <sarava@sarava.net>
+                 
+                 All rights reserved.
+                 
+                 Redistribution and use in source and binary forms, with or without
+                 modification, are permitted provided that the following conditions are met:
+                 
+                 1. Redistributions of source code must retain the above copyright notice, this
+                    list of conditions and the following di...
+license-file: LICENSE
+classifier: Environment :: Web Environment
+classifier: License :: OSI Approved :: BSD License
+classifier: Programming Language :: Python :: 3
+classifier: Topic :: Terminals :: Terminal Emulators/X Terminals
+requires-dist: ptyprocess; os_name != "nt"
+requires-dist: pywinpty>=1.1.0; os_name == "nt"
+requires-dist: tornado>=6.1.0
+requires-dist: myst-parser; extra == "docs"
+requires-dist: pydata-sphinx-theme; extra == "docs"
+requires-dist: sphinx; extra == "docs"
+requires-dist: pre-commit; extra == "test"
+requires-dist: pytest-timeout; extra == "test"
+requires-dist: pytest>=7.0; extra == "test"
+requires-dist: mypy~=1.6; extra == "typing"
+requires-dist: traitlets>=5.11.1; extra == "typing"
+requires-python: >=3.8
+project-url: Homepage, https://github.com/jupyter/terminado
+provides-extra: docs
+provides-extra: test
+provides-extra: typing
+

@@ -1,0 +1,39 @@
+metadata-version: 2.4
+name: rioxarray
+version: 0.23.0
+dynamic: license-file
+summary: geospatial xarray extension powered by rasterio
+keywords: rioxarray,xarray,rasterio
+maintainer: rioxarray Contributors
+license-expression: Apache-2.0
+license-file: LICENSE
+license-file: LICENSE_datacube
+license-file: LICENSE_xarray
+license-file: AUTHORS.rst
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: Natural Language :: English
+classifier: Operating System :: OS Independent
+classifier: Topic :: Scientific/Engineering :: GIS
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: 3
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Typing :: Typed
+requires-dist: packaging
+requires-dist: rasterio>=1.4.3
+requires-dist: xarray>=2026.2
+requires-dist: pyproj>=3.3
+requires-dist: numpy>=2
+requires-dist: scipy; extra == "interp"
+requires-dist: scipy; extra == "all"
+requires-python: >=3.12
+project-url: homepage, https://corteva.github.io/rioxarray/
+project-url: documentation, https://corteva.github.io/rioxarray/
+project-url: repository, https://github.com/corteva/rioxarray
+project-url: changelog, https://corteva.github.io/rioxarray/stable/history.html
+provides-extra: interp
+provides-extra: all
+

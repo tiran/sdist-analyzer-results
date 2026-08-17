@@ -1,0 +1,64 @@
+metadata-version: 2.4
+name: lazy_imports
+version: 1.2.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: maintainer
+dynamic: project-url
+dynamic: provides-extra
+dynamic: requires-python
+dynamic: summary
+summary: Tool to support lazy imports
+keywords: import imports lazy
+author: Pascal Bachor
+author-email: lazy-imports.vista851@passmail.net
+maintainer: Pascal Bachor
+license: Apache-2.0
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Topic :: Software Development
+classifier: Topic :: Software Development :: Libraries
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Operating System :: OS Independent
+requires-dist: black; extra == "checking"
+requires-dist: flake8; extra == "checking"
+requires-dist: isort; extra == "checking"
+requires-dist: mdformat; extra == "checking"
+requires-dist: pydocstyle; extra == "checking"
+requires-dist: mypy; extra == "checking"
+requires-dist: pylint; extra == "checking"
+requires-dist: pylintfileheader; extra == "checking"
+requires-dist: pytest; extra == "testing"
+requires-dist: packaging; extra == "testing"
+requires-dist: black; extra == "all"
+requires-dist: mypy; extra == "all"
+requires-dist: pydocstyle; extra == "all"
+requires-dist: pylint; extra == "all"
+requires-dist: pylintfileheader; extra == "all"
+requires-dist: packaging; extra == "all"
+requires-dist: mdformat; extra == "all"
+requires-dist: isort; extra == "all"
+requires-dist: flake8; extra == "all"
+requires-dist: pytest; extra == "all"
+requires-python: >=3.10
+project-url: Changelog, https://github.com/bachorp/lazy-imports/blob/HEAD/CHANGELOG.md
+project-url: Bug Tracker, https://github.com/bachorp/lazy-imports/issues
+project-url: Source Code, https://github.com/bachorp/lazy-imports
+provides-extra: checking
+provides-extra: testing
+provides-extra: all
+

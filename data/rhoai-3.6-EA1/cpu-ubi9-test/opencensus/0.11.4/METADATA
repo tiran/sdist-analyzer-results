@@ -1,0 +1,35 @@
+metadata-version: 2.4
+name: opencensus
+version: 0.11.4
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: license
+dynamic: requires-dist
+dynamic: summary
+summary: A stats collection and distributed tracing framework
+home-page: https://github.com/census-instrumentation/opencensus-python
+author: OpenCensus Authors
+author-email: census-developers@googlegroups.com
+license: Apache-2.0
+classifier: Intended Audience :: Developers
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 2
+classifier: Programming Language :: Python :: 2.7
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.4
+classifier: Programming Language :: Python :: 3.5
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+requires-dist: opencensus-context>=0.1.3
+requires-dist: google-api-core<2.0.0,>=1.0.0; python_version < "3.6"
+requires-dist: google-api-core<3.0.0,>=1.0.0; python_version >= "3.6"
+requires-dist: six~=1.16
+

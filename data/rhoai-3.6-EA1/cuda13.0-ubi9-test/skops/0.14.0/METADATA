@@ -1,0 +1,39 @@
+metadata-version: 2.5
+name: skops
+version: 0.14.0
+summary: A set of tools, related to machine learning in production.
+maintainer-email: Adrin Jalali <adrin.jalali@gmail.com>, Benjamin Bossan <benjamin.bossan@gmail.com>
+license-file: LICENSE
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved
+classifier: Operating System :: MacOS
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: POSIX
+classifier: Operating System :: Unix
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Topic :: Scientific/Engineering
+classifier: Topic :: Software Development
+requires-dist: numpy>=1.25.0
+requires-dist: packaging>=17.0
+requires-dist: prettytable>=3.9
+requires-dist: scikit-learn>=1.2
+requires-dist: scipy>=1.10.0
+requires-dist: rich>=12; extra == "rich"
+requires-python: >=3.9
+project-url: Homepage, http://github.com/skops-dev/skops
+project-url: Documentation, https://skops.readthedocs.io/en/stable/
+project-url: Repository, http://github.com/skops-dev/skops
+project-url: Issues, http://github.com/skops-dev/skops/issues
+project-url: Changelog, https://skops.readthedocs.io/en/stable/changes.html
+provides-extra: rich
+

@@ -1,0 +1,80 @@
+metadata-version: 2.4
+name: peft
+version: 0.20.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: Parameter-Efficient Fine-Tuning (PEFT)
+keywords: deep learning
+home-page: https://github.com/huggingface/peft
+author: The HuggingFace team
+author-email: benjamin@huggingface.co
+license: Apache
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Education
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+requires-dist: numpy>=1.17
+requires-dist: packaging>=20.0
+requires-dist: psutil
+requires-dist: pyyaml
+requires-dist: torch>=1.13.0
+requires-dist: transformers
+requires-dist: tqdm
+requires-dist: accelerate>=0.21.0
+requires-dist: safetensors
+requires-dist: huggingface_hub>=0.25.0
+requires-dist: black; extra == "quality"
+requires-dist: hf-doc-builder; extra == "quality"
+requires-dist: ruff~=0.15.12; extra == "quality"
+requires-dist: black; extra == "docs-specific"
+requires-dist: requests; extra == "docs-specific"
+requires-dist: hf-doc-builder; extra == "docs-specific"
+requires-dist: black; extra == "dev"
+requires-dist: hf-doc-builder; extra == "dev"
+requires-dist: ruff~=0.15.12; extra == "dev"
+requires-dist: black; extra == "dev"
+requires-dist: requests; extra == "dev"
+requires-dist: hf-doc-builder; extra == "dev"
+requires-dist: black; extra == "test"
+requires-dist: hf-doc-builder; extra == "test"
+requires-dist: ruff~=0.15.12; extra == "test"
+requires-dist: black; extra == "test"
+requires-dist: requests; extra == "test"
+requires-dist: hf-doc-builder; extra == "test"
+requires-dist: pytest; extra == "test"
+requires-dist: pytest-cov; extra == "test"
+requires-dist: pytest-xdist; extra == "test"
+requires-dist: parameterized; extra == "test"
+requires-dist: datasets; extra == "test"
+requires-dist: diffusers; extra == "test"
+requires-dist: scipy; extra == "test"
+requires-dist: scikit-learn; extra == "test"
+requires-dist: protobuf; extra == "test"
+requires-dist: sentencepiece; extra == "test"
+requires-dist: torchvision; extra == "test"
+requires-python: >=3.10.0
+provides-extra: quality
+provides-extra: docs-specific
+provides-extra: dev
+provides-extra: test
+

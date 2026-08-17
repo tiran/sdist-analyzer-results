@@ -1,0 +1,54 @@
+metadata-version: 2.4
+name: utilsforecast
+version: 0.2.11
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: Forecasting utilities
+keywords: time-series analysis forecasting
+home-page: https://github.com/Nixtla/utilsforecast
+author: Nixtla
+author-email: business@nixtla.io
+license: Apache Software License 2.0
+license-file: LICENSE
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: Natural Language :: English
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: License :: OSI Approved :: Apache Software License
+requires-dist: numpy
+requires-dist: packaging
+requires-dist: pandas>=1.1.1
+requires-dist: pandas[plot]; extra == "plotting"
+requires-dist: plotly; extra == "plotting"
+requires-dist: plotly-resampler; extra == "plotting"
+requires-dist: polars[numpy]; extra == "polars"
+requires-dist: plotly; extra == "dev"
+requires-dist: polars[numpy]; extra == "dev"
+requires-dist: pandas[plot]; extra == "dev"
+requires-dist: plotly-resampler; extra == "dev"
+requires-dist: black; extra == "dev"
+requires-dist: numba>=0.58.0; extra == "dev"
+requires-dist: pyarrow; extra == "dev"
+requires-dist: datasetsforecast==0.0.8; extra == "dev"
+requires-dist: nbdev<2.3.26; extra == "dev"
+requires-dist: scipy; extra == "dev"
+requires-python: >=3.8
+provides-extra: plotting
+provides-extra: polars
+provides-extra: dev
+

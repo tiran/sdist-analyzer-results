@@ -1,0 +1,77 @@
+metadata-version: 2.4
+name: ipython
+version: 9.16.0
+dynamic: author
+dynamic: author-email
+dynamic: license-file
+platform: Linux
+platform: Mac OSX
+platform: Windows
+summary: IPython: Productive Interactive Computing
+keywords: Interactive,Interpreter,Shell,Embedding
+author: The IPython Development Team
+author-email: ipython-dev@python.org
+license-expression: BSD-3-Clause
+license-file: LICENSE
+license-file: COPYING.rst
+classifier: Framework :: IPython
+classifier: Framework :: Jupyter
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Topic :: System :: Shells
+requires-dist: colorama>=0.4.4; sys_platform == "win32"
+requires-dist: ipython-pygments-lexers>=1.0.0
+requires-dist: jedi>=0.18.2
+requires-dist: matplotlib-inline>=0.1.6
+requires-dist: pexpect>4.6; sys_platform != "win32" and sys_platform != "emscripten"
+requires-dist: prompt_toolkit<3.1.0,>=3.0.41
+requires-dist: psutil>=7; sys_platform != "emscripten" and sys_platform != "cygwin"
+requires-dist: pygments>=2.14.0
+requires-dist: stack_data>=0.6.0
+requires-dist: traitlets>=5.13.0
+requires-dist: typing_extensions>=4.6; python_version < "3.12"
+requires-dist: black; extra == "black"
+requires-dist: docrepr; extra == "doc"
+requires-dist: exceptiongroup; extra == "doc"
+requires-dist: intersphinx_registry; extra == "doc"
+requires-dist: ipykernel; extra == "doc"
+requires-dist: ipython[matplotlib,test]; extra == "doc"
+requires-dist: setuptools>=80.0; extra == "doc"
+requires-dist: sphinx_toml==0.0.4; extra == "doc"
+requires-dist: sphinx-rtd-theme>=0.1.8; extra == "doc"
+requires-dist: sphinx>=8.0; extra == "doc"
+requires-dist: typing_extensions; extra == "doc"
+requires-dist: pytest>=7.0.0; extra == "test"
+requires-dist: pytest-asyncio>=1.0.0; extra == "test"
+requires-dist: testpath>=0.2; extra == "test"
+requires-dist: packaging>=23.0.0; extra == "test"
+requires-dist: setuptools>=80.0; extra == "test"
+requires-dist: ipython[test]; extra == "test-extra"
+requires-dist: curio; extra == "test-extra"
+requires-dist: jupyter_ai; extra == "test-extra"
+requires-dist: ipython[matplotlib]; extra == "test-extra"
+requires-dist: nbformat; extra == "test-extra"
+requires-dist: nbclient; extra == "test-extra"
+requires-dist: ipykernel>6.30; extra == "test-extra"
+requires-dist: numpy>=2.0; extra == "test-extra"
+requires-dist: pandas>2.1; extra == "test-extra"
+requires-dist: trio>=0.22.0; extra == "test-extra"
+requires-dist: matplotlib>3.9; extra == "matplotlib"
+requires-dist: ipython[doc,matplotlib,test,test_extra]; extra == "all"
+requires-dist: argcomplete>=3.0; extra == "all"
+requires-python: >=3.11
+project-url: Homepage, https://ipython.org
+project-url: Documentation, https://ipython.readthedocs.io/
+project-url: Funding, https://jupyter.org/about#donate
+project-url: Source, https://github.com/ipython/ipython
+project-url: Tracker, https://github.com/ipython/ipython/issues
+provides-extra: black
+provides-extra: doc
+provides-extra: test
+provides-extra: test-extra
+provides-extra: matplotlib
+provides-extra: all
+

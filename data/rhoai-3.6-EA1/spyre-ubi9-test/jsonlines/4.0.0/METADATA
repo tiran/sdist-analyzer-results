@@ -1,0 +1,24 @@
+metadata-version: 2.4
+name: jsonlines
+version: 4.0.0
+dynamic: license-file
+summary: Library with helpers for the jsonlines file format
+home-page: https://github.com/wbolster/jsonlines
+author: wouter bolsterlee
+author-email: wouter@bolsterl.ee
+license: BSD
+license-file: LICENSE.rst
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: System Administrators
+classifier: License :: OSI Approved :: BSD License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Topic :: Internet :: Log Analysis
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: System :: Logging
+classifier: Topic :: Utilities
+requires-dist: attrs>=19.2.0
+requires-python: >=3.8
+

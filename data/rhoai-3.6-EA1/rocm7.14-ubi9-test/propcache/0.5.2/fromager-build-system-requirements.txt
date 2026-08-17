@@ -1,2 +1,2 @@
-setuptools>=82.0.1
 expandvars
+setuptools>=82.0.1

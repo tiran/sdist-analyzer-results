@@ -1,0 +1,86 @@
+metadata-version: 2.4
+name: google-auth
+version: 2.56.2
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: Google Authentication Library
+keywords: google auth oauth client
+home-page: https://github.com/googleapis/google-cloud-python/tree/main/packages/google-auth
+author: Google Cloud Platform
+author-email: googleapis-packages@google.com
+license: Apache 2.0
+license-file: LICENSE
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: POSIX
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Operating System :: OS Independent
+classifier: Topic :: Internet :: WWW/HTTP
+requires-dist: pyasn1-modules>=0.2.1
+requires-dist: cryptography>=38.0.3; python_version < "3.14"
+requires-dist: cryptography>=41.0.5; python_version >= "3.14"
+requires-dist: cryptography>=38.0.3; python_version < "3.14" and extra == "cryptography"
+requires-dist: cryptography>=41.0.5; python_version >= "3.14" and extra == "cryptography"
+requires-dist: cryptography>=38.0.3; python_version < "3.14" and extra == "pyopenssl"
+requires-dist: cryptography>=41.0.5; python_version >= "3.14" and extra == "pyopenssl"
+requires-dist: aiohttp<4.0.0,>=3.8.0; python_version < "3.14" and extra == "aiohttp"
+requires-dist: aiohttp<4.0.0,>=3.9.0; python_version >= "3.14" and extra == "aiohttp"
+requires-dist: requests<3.0.0,>=2.30.0; extra == "aiohttp"
+requires-dist: cryptography>=38.0.3; python_version < "3.14" and extra == "enterprise-cert"
+requires-dist: cryptography>=41.0.5; python_version >= "3.14" and extra == "enterprise-cert"
+requires-dist: pyjwt>=2.0; extra == "pyjwt"
+requires-dist: pyu2f>=0.1.5; extra == "reauth"
+requires-dist: requests<3.0.0,>=2.30.0; extra == "requests"
+requires-dist: grpcio<2.0.0,>=1.59.0; python_version < "3.14" and extra == "testing"
+requires-dist: grpcio<2.0.0,>=1.75.1; python_version >= "3.14" and extra == "testing"
+requires-dist: flask; extra == "testing"
+requires-dist: freezegun; extra == "testing"
+requires-dist: pyjwt>=2.0; extra == "testing"
+requires-dist: pytest; extra == "testing"
+requires-dist: pytest-cov; extra == "testing"
+requires-dist: pytest-localserver; extra == "testing"
+requires-dist: pyu2f>=0.1.5; extra == "testing"
+requires-dist: responses; extra == "testing"
+requires-dist: urllib3<3.0.0,>=1.26.15; extra == "testing"
+requires-dist: packaging>=20.0; extra == "testing"
+requires-dist: aiohttp<4.0.0,>=3.8.0; python_version < "3.14" and extra == "testing"
+requires-dist: aiohttp<4.0.0,>=3.9.0; python_version >= "3.14" and extra == "testing"
+requires-dist: requests<3.0.0,>=2.30.0; extra == "testing"
+requires-dist: aioresponses; extra == "testing"
+requires-dist: pytest-asyncio; extra == "testing"
+requires-dist: urllib3<3.0.0,>=1.26.15; extra == "urllib3"
+requires-dist: packaging>=20.0; extra == "urllib3"
+requires-dist: rsa<5,>=4.0.0; extra == "rsa"
+requires-dist: grpcio<2.0.0,>=1.59.0; python_version < "3.14" and extra == "grpc"
+requires-dist: grpcio<2.0.0,>=1.75.1; python_version >= "3.14" and extra == "grpc"
+requires-python: >=3.10
+provides-extra: cryptography
+provides-extra: pyopenssl
+provides-extra: aiohttp
+provides-extra: enterprise-cert
+provides-extra: pyjwt
+provides-extra: reauth
+provides-extra: requests
+provides-extra: testing
+provides-extra: urllib3
+provides-extra: rsa
+provides-extra: grpc
+

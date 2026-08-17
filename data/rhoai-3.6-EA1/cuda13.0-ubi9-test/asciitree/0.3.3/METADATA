@@ -1,0 +1,17 @@
+metadata-version: 2.4
+name: asciitree
+version: 0.3.3
+dynamic: author
+dynamic: author-email
+dynamic: description
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: summary
+summary: Draws ASCII trees.
+home-page: http://github.com/mbr/asciitree
+author: Marc Brinkmann
+author-email: git@marcbrinkmann.de
+license: MIT
+license-file: LICENSE
+

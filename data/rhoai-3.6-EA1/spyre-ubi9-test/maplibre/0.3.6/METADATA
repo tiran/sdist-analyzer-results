@@ -1,0 +1,34 @@
+metadata-version: 2.4
+name: maplibre
+version: 0.3.6
+summary: Python bindings for MapLibre GL JS
+author: Stefan Kuethe
+author-email: stefan.kuethe@eoda.de
+license: MIT
+license-file: LICENSE.md
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-dist: anywidget>=0.9.0; extra == "all" or extra == "ipywidget" or extra == "anywidget"
+requires-dist: branca
+requires-dist: eval-type-backport
+requires-dist: geopandas<0.15.0,>=0.14.2; extra == "all"
+requires-dist: htmltools>=0.5.1; extra == "all" or extra == "shiny"
+requires-dist: jinja2>=3.1.6
+requires-dist: pandas<3.0.0,>=2.1.4; extra == "all"
+requires-dist: pmtiles; extra == "all" or extra == "pmtiles"
+requires-dist: pydantic>=2.5.3
+requires-dist: shiny>0.7.0; extra == "all" or extra == "shiny"
+requires-dist: traitlets; extra == "all" or extra == "ipywidget" or extra == "anywidget"
+requires-python: <4,>=3.9
+provides-extra: all
+provides-extra: anywidget
+provides-extra: ipywidget
+provides-extra: pmtiles
+provides-extra: shiny
+

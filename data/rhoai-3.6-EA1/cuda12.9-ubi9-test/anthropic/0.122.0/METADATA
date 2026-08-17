@@ -1,0 +1,50 @@
+metadata-version: 2.3
+name: anthropic
+version: 0.122.0
+summary: The official Python library for the anthropic API
+author-email: Anthropic <support@anthropic.com>
+license: MIT
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: MacOS
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: OS Independent
+classifier: Operating System :: POSIX
+classifier: Operating System :: POSIX :: Linux
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Typing :: Typed
+requires-dist: anyio<5,>=3.5.0
+requires-dist: distro<2,>=1.7.0
+requires-dist: docstring-parser<1,>=0.15
+requires-dist: httpx<1,>=0.25.0
+requires-dist: jiter<1,>=0.4.0
+requires-dist: pydantic<3,>=1.9.0
+requires-dist: sniffio<2,>=1
+requires-dist: typing-extensions<5,>=4.14
+requires-dist: aiohttp<4,>=3; extra == "aiohttp"
+requires-dist: httpx-aiohttp<1,>=0.1.9; extra == "aiohttp"
+requires-dist: boto3<2,>=1.28.57; extra == "aws"
+requires-dist: botocore<2,>=1.31.57; extra == "aws"
+requires-dist: boto3<2,>=1.28.57; extra == "bedrock"
+requires-dist: botocore<2,>=1.31.57; extra == "bedrock"
+requires-dist: google-auth[requests]<3,>=2; extra == "google-cloud"
+requires-dist: mcp<3,>=1.0; python_version >= "3.10" and extra == "mcp"
+requires-dist: google-auth[requests]<3,>=2; extra == "vertex"
+requires-dist: standardwebhooks<2,>=1.0.1; extra == "webhooks"
+requires-python: >=3.9
+project-url: Homepage, https://github.com/anthropics/anthropic-sdk-python
+project-url: Repository, https://github.com/anthropics/anthropic-sdk-python
+provides-extra: aiohttp
+provides-extra: aws
+provides-extra: bedrock
+provides-extra: google-cloud
+provides-extra: mcp
+provides-extra: vertex
+provides-extra: webhooks
+

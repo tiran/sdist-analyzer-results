@@ -1,2 +1,2 @@
-setuptools>=47
 expandvars
+setuptools>=47

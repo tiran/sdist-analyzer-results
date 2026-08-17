@@ -1,0 +1,41 @@
+metadata-version: 2.4
+name: tesserocr
+version: 2.11.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: A simple, Pillow-friendly, Python wrapper around tesseract-ocr API using Cython
+keywords: Tesseract,tesseract-ocr,OCR,optical character recognition,PIL,Pillow,Cython
+home-page: https://github.com/sirfz/tesserocr
+author: Fayez Zouheiry
+author-email: iamfayez@gmail.com
+license: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Topic :: Multimedia :: Graphics :: Capture :: Scanners
+classifier: Topic :: Multimedia :: Graphics :: Graphics Conversion
+classifier: Topic :: Scientific/Engineering :: Image Recognition
+classifier: Operating System :: POSIX
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Programming Language :: Cython
+requires-dist: cysignals
+requires-python: >=3.9
+

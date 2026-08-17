@@ -1,0 +1,22 @@
+metadata-version: 2.4
+name: py-cpuinfo
+version: 9.0.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: summary
+summary: Get CPU info with pure Python
+home-page: https://github.com/workhorsy/py-cpuinfo
+author: Matthew Brennan Jones
+author-email: matthew.brennan.jones@gmail.com
+license: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Topic :: Utilities
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python :: 3
+

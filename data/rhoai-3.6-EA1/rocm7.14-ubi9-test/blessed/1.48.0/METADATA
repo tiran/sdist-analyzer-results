@@ -1,0 +1,42 @@
+metadata-version: 2.4
+name: blessed
+version: 1.48.0
+summary: Easy, practical library for making terminal apps, by providing an elegant, well-documented interface for Terminals.
+keywords: terminal,sequences,tty,curses,ncurses,formatting,style,color,console,keyboard,ansi,xterm
+author-email: "Jeff Quast, Erik Rose, Avram Lubkin" <contact@jeffquast.com>
+license-expression: MIT
+license-file: LICENSE
+classifier: Intended Audience :: Developers
+classifier: Natural Language :: English
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Environment :: Console :: Curses
+classifier: Operating System :: POSIX
+classifier: Operating System :: Microsoft :: Windows
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Software Development :: Libraries
+classifier: Topic :: Software Development :: User Interfaces
+classifier: Topic :: Terminals
+classifier: Typing :: Typed
+requires-dist: wcwidth>=0.8.1
+requires-dist: jinxed<3,>=2.1
+requires-dist: Pillow; extra == "docs"
+requires-dist: Sphinx>3; extra == "docs"
+requires-dist: sphinx-paramlinks; extra == "docs"
+requires-dist: sphinx_rtd_theme; extra == "docs"
+requires-dist: sphinxcontrib-manpage; extra == "docs"
+requires-python: >=3.8
+project-url: Changelog, https://blessed.readthedocs.io/en/latest/history.html
+project-url: Documentation, https://blessed.readthedocs.io
+project-url: Homepage, https://github.com/jquast/blessed
+project-url: Issues, https://github.com/jquast/blessed/issues
+project-url: Repository, https://github.com/jquast/blessed
+provides-extra: docs
+

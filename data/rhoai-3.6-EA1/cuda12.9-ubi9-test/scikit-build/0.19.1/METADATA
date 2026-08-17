@@ -1,0 +1,54 @@
+metadata-version: 2.5
+name: scikit-build
+version: 0.19.1
+summary: Improved build system generator for Python C/C++/Fortran/Cython extensions
+keywords: scikit-build
+author: The scikit-build team
+license-file: AUTHORS.rst
+license-file: LICENSE
+classifier: Development Status :: 2 - Pre-Alpha
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Natural Language :: English
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Typing :: Typed
+requires-dist: distro
+requires-dist: packaging
+requires-dist: setuptools>=42.0.0
+requires-dist: tomli; python_version < "3.11"
+requires-dist: wheel>=0.32.0
+requires-dist: coverage[toml]>=4.2; extra == "cov"
+requires-dist: pytest-cov>=2.7.1; extra == "cov"
+requires-dist: pygments; extra == "docs"
+requires-dist: sphinx-issues; extra == "docs"
+requires-dist: sphinx-rtd-theme>=1.0; extra == "docs"
+requires-dist: sphinx>=4; extra == "docs"
+requires-dist: sphinxcontrib-moderncmakedomain>=3.19; extra == "docs"
+requires-dist: ubelt>=0.8.2; extra == "doctest"
+requires-dist: xdoctest>=0.10.0; extra == "doctest"
+requires-dist: build>=0.7; extra == "test"
+requires-dist: cython>=0.25.1; extra == "test"
+requires-dist: pip; extra == "test"
+requires-dist: pytest-mock>=1.10.4; extra == "test"
+requires-dist: pytest>=6.0.0; extra == "test"
+requires-dist: requests; extra == "test"
+requires-dist: virtualenv; extra == "test"
+requires-python: >=3.8
+project-url: Bug Tracker, https://github.com/scikit-build/scikit-build/issues
+project-url: Changelog, https://scikit-build.readthedocs.io/en/latest/history.html
+project-url: Discussions, https://github.com/orgs/scikit-build/discussions
+project-url: Documentation, https://scikit-build.readthedocs.io/
+project-url: Examples, https://github.com/scikit-build/scikit-build-sample-projects
+project-url: Homepage, https://github.com/scikit-build/scikit-build
+provides-extra: cov
+provides-extra: docs
+provides-extra: doctest
+provides-extra: test
+

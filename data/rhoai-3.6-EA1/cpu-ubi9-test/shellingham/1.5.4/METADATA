@@ -1,0 +1,26 @@
+metadata-version: 2.4
+name: shellingham
+version: 1.5.4
+dynamic: license-file
+summary: Tool to Detect Surrounding Shell
+keywords: shell
+home-page: https://github.com/sarugaku/shellingham
+author: Tzu-ping Chung
+author-email: uranusjr@gmail.com
+license: ISC License
+license-file: LICENSE
+classifier: Development Status :: 3 - Alpha
+classifier: Environment :: Console
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: ISC License (ISCL)
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-python: >=3.7
+

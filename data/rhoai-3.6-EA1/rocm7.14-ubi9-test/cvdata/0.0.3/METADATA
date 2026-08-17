@@ -1,0 +1,30 @@
+metadata-version: 2.4
+name: cvdata
+version: 0.0.3
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: provides
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: Tools for creating and manipulating computer vision datasets
+home-page: https://github.com/monocongo/cvdata
+author: James Adams
+author-email: monocongo@gmail.com
+classifier: Programming Language :: Python :: 3
+classifier: Operating System :: OS Independent
+requires-dist: boto3
+requires-dist: lxml
+requires-dist: numpy
+requires-dist: opencv-python
+requires-dist: pandas
+requires-dist: pillow
+requires-dist: requests
+requires-dist: tqdm
+requires-python: >=3.0
+provides: cvdata
+

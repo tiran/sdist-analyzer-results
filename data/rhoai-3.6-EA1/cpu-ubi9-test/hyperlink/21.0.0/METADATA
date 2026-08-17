@@ -1,0 +1,41 @@
+metadata-version: 2.4
+name: hyperlink
+version: 21.0.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: platform
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+platform: any
+summary: A featureful, immutable, and correct URL for Python.
+home-page: https://github.com/python-hyper/hyperlink
+author: Mahmoud Hashemi and Glyph Lefkowitz
+author-email: mahmoud@hatnote.com
+license: MIT
+license-file: LICENSE
+classifier: Topic :: Utilities
+classifier: Intended Audience :: Developers
+classifier: Topic :: Software Development :: Libraries
+classifier: Development Status :: 5 - Production/Stable
+classifier: Programming Language :: Python :: 2
+classifier: Programming Language :: Python :: 2.6
+classifier: Programming Language :: Python :: 2.7
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.4
+classifier: Programming Language :: Python :: 3.5
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: License :: OSI Approved :: MIT License
+requires-dist: idna>=2.5
+requires-dist: typing; python_version < "3.5"
+requires-python: !=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,>=2.6
+

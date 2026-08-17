@@ -1,0 +1,68 @@
+metadata-version: 2.4
+name: SpeechRecognition
+version: 3.17.0
+dynamic: license-file
+summary: Library for performing speech recognition, with support for several engines and APIs, online and offline.
+keywords: speech,recognition,voice,sphinx,google,wit,api,houndify,ibm,snowboy
+author-email: "Anthony Zhang (Uberi)" <azhang9@gmail.com>
+maintainer-email: nikkie <takuyafjp+develop@gmail.com>
+license-expression: BSD-3-Clause
+license-file: LICENSE.txt
+license-file: LICENSE-FLAC.txt
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Natural Language :: English
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: POSIX :: Linux
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Operating System :: Other OS
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: Multimedia :: Sound/Audio :: Speech
+requires-dist: typing-extensions
+requires-dist: standard-aifc; python_version >= "3.13"
+requires-dist: audioop-lts; python_version >= "3.13"
+requires-dist: pytest; extra == "dev"
+requires-dist: pytest-randomly; extra == "dev"
+requires-dist: respx; extra == "dev"
+requires-dist: numpy; extra == "dev"
+requires-dist: pytest-httpserver; extra == "dev"
+requires-dist: mypy; extra == "dev"
+requires-dist: types-requests; extra == "dev"
+requires-dist: PyAudio>=0.2.11; extra == "audio"
+requires-dist: pocketsphinx; extra == "pocketsphinx"
+requires-dist: google-cloud-speech; extra == "google-cloud"
+requires-dist: openai-whisper; extra == "whisper-local"
+requires-dist: soundfile; extra == "whisper-local"
+requires-dist: faster-whisper; extra == "faster-whisper"
+requires-dist: soundfile; extra == "faster-whisper"
+requires-dist: openai; extra == "openai"
+requires-dist: httpx<0.28; extra == "openai"
+requires-dist: groq; extra == "groq"
+requires-dist: httpx<0.28; extra == "groq"
+requires-dist: cohere>=5.21.0; extra == "cohere-api"
+requires-dist: requests; extra == "assemblyai"
+requires-dist: vosk; extra == "vosk"
+requires-dist: librosa<1.0,>=0.10.2; extra == "audio-split"
+requires-dist: numpy>=1.26.0; extra == "audio-split"
+requires-python: >=3.9
+project-url: Homepage, https://github.com/Uberi/speech_recognition#readme
+provides-extra: dev
+provides-extra: audio
+provides-extra: pocketsphinx
+provides-extra: google-cloud
+provides-extra: whisper-local
+provides-extra: faster-whisper
+provides-extra: openai
+provides-extra: groq
+provides-extra: cohere-api
+provides-extra: assemblyai
+provides-extra: vosk
+provides-extra: audio-split
+

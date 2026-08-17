@@ -1,0 +1,37 @@
+metadata-version: 2.4
+name: meson
+version: 1.12.0
+dynamic: license-file
+summary: A high performance build system
+keywords: meson,mesonbuild,build system,cmake
+home-page: https://mesonbuild.com
+author: Jussi Pakkanen
+author-email: jpakkane@gmail.com
+license: Apache License, Version 2.0
+license-file: COPYING
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Natural Language :: English
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: POSIX :: BSD
+classifier: Operating System :: POSIX :: Linux
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Software Development :: Build Tools
+requires-dist: ninja>=1.8.2; extra == "ninja"
+requires-dist: tqdm; extra == "progress"
+requires-dist: mypy; extra == "typing"
+requires-dist: typing_extensions; python_version < "3.8" and extra == "typing"
+requires-python: >=3.10
+project-url: Source, https://github.com/mesonbuild/meson
+provides-extra: ninja
+provides-extra: progress
+provides-extra: typing
+

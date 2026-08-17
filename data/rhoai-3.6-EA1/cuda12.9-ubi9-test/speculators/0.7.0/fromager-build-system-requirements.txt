@@ -1,0 +1,2 @@
+setuptools>=82.0.1
+setuptools-git-versioning<3,>=2.0

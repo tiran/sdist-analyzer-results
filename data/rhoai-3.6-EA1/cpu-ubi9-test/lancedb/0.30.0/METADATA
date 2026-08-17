@@ -1,0 +1,87 @@
+metadata-version: 2.4
+name: lancedb
+version: 0.30.0
+summary: lancedb
+keywords: data-format,data-science,machine-learning,arrow,data-analytics
+author-email: LanceDB Devs <dev@lancedb.com>
+license-file: LICENSE
+classifier: Development Status :: 3 - Alpha
+classifier: Environment :: Console
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Topic :: Scientific/Engineering
+requires-dist: deprecation>=2.1.0
+requires-dist: numpy>=1.24.0
+requires-dist: overrides>=0.7; python_full_version < "3.12"
+requires-dist: packaging>=23.0
+requires-dist: pyarrow>=16
+requires-dist: pydantic>=1.10
+requires-dist: tqdm>=4.27.0
+requires-dist: lance-namespace>=0.3.2
+requires-dist: adlfs>=2024.2.0; extra == "azure"
+requires-dist: torch; extra == "clip"
+requires-dist: pillow>=12.1.1; extra == "clip"
+requires-dist: open-clip-torch; extra == "clip"
+requires-dist: ruff>=0.3.0; extra == "dev"
+requires-dist: pre-commit>=3.5.0; extra == "dev"
+requires-dist: pyright>=1.1.350; extra == "dev"
+requires-dist: typing-extensions>=4.0.0; python_full_version < "3.11" and extra == "dev"
+requires-dist: mkdocs; extra == "docs"
+requires-dist: mkdocs-jupyter; extra == "docs"
+requires-dist: mkdocs-material; extra == "docs"
+requires-dist: mkdocstrings-python; extra == "docs"
+requires-dist: requests>=2.31.0; extra == "embeddings"
+requires-dist: openai>=1.6.1; extra == "embeddings"
+requires-dist: sentence-transformers>=2.2.0; extra == "embeddings"
+requires-dist: torch>=2.0.0; extra == "embeddings"
+requires-dist: pillow>=12.1.1; extra == "embeddings"
+requires-dist: open-clip-torch>=2.20.0; extra == "embeddings"
+requires-dist: cohere>=4.0; extra == "embeddings"
+requires-dist: colpali-engine>=0.3.10; extra == "embeddings"
+requires-dist: huggingface-hub>=0.19.0; extra == "embeddings"
+requires-dist: instructorembedding>=1.0.1; extra == "embeddings"
+requires-dist: google-generativeai>=0.3.0; extra == "embeddings"
+requires-dist: boto3>=1.28.57; extra == "embeddings"
+requires-dist: awscli>=1.44.38; extra == "embeddings"
+requires-dist: botocore>=1.31.57; extra == "embeddings"
+requires-dist: ibm-watsonx-ai>=1.1.2; python_full_version >= "3.10" and extra == "embeddings"
+requires-dist: ollama>=0.3.0; extra == "embeddings"
+requires-dist: sentencepiece>=0.1.99; extra == "embeddings"
+requires-dist: pylance>=4.0.0b7; extra == "pylance"
+requires-dist: torch; extra == "siglip"
+requires-dist: pillow>=12.1.1; extra == "siglip"
+requires-dist: transformers>=4.41.0; extra == "siglip"
+requires-dist: sentencepiece; extra == "siglip"
+requires-dist: aiohttp>=3.9.0; extra == "tests"
+requires-dist: boto3>=1.28.57; extra == "tests"
+requires-dist: pandas>=1.4; extra == "tests"
+requires-dist: pytest>=7.0; extra == "tests"
+requires-dist: pytest-mock>=3.10; extra == "tests"
+requires-dist: pytest-asyncio>=0.21; extra == "tests"
+requires-dist: duckdb>=0.9.0; extra == "tests"
+requires-dist: pytz>=2023.3; extra == "tests"
+requires-dist: polars<=1.3.0,>=0.19; extra == "tests"
+requires-dist: tantivy>=0.20.0; extra == "tests"
+requires-dist: pyarrow-stubs>=16.0; extra == "tests"
+requires-dist: pylance>=4.0.0b7; extra == "tests"
+requires-dist: requests>=2.31.0; extra == "tests"
+requires-dist: datafusion<53,>=52; extra == "tests"
+requires-python: >=3.10
+project-url: repository, https://github.com/lancedb/lancedb
+provides-extra: azure
+provides-extra: clip
+provides-extra: dev
+provides-extra: docs
+provides-extra: embeddings
+provides-extra: pylance
+provides-extra: siglip
+provides-extra: tests
+

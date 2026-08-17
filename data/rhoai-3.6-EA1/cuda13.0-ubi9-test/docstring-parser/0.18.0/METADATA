@@ -1,0 +1,36 @@
+metadata-version: 2.4
+name: docstring_parser
+version: 0.18.0
+summary: Parse Python docstrings in reST, Google and Numpydoc format
+author-email: Marcin Kurczewski <dash@wind.garden>
+license: MIT
+license-file: LICENSE.md
+classifier: Development Status :: 4 - Beta
+classifier: Environment :: Other Environment
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Natural Language :: English
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Documentation :: Sphinx
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: Text Processing :: Markup
+requires-dist: pre-commit>=2.16.0; python_version >= "3.9" and extra == "dev"
+requires-dist: pydoctor>=25.4.0; extra == "dev"
+requires-dist: pytest; extra == "dev"
+requires-dist: pydoctor>=25.4.0; extra == "docs"
+requires-dist: pytest; extra == "test"
+requires-python: >=3.8
+project-url: homepage, https://github.com/rr-/docstring_parser
+project-url: repository, https://github.com/rr-/docstring_parser
+project-url: changelog, https://github.com/rr-/docstring_parser/blob/master/CHANGELOG.md
+provides-extra: dev
+provides-extra: docs
+provides-extra: test
+

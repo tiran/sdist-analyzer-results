@@ -1,4 +1,4 @@
-setuptools_scm[toml]>=3.4
-numpy>=2.0.0
 Cython>=0.29
+setuptools_scm[toml]>=3.4
 setuptools>=77.0.1
+numpy>=2.0.0

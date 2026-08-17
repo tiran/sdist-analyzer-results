@@ -1,0 +1,24 @@
+metadata-version: 2.1
+name: patchelf
+version: 0.19.1.0
+summary: A small utility to modify the dynamic linker and RPATH of ELF executables.
+keywords: auditwheel,elf,manylinux,musllinux,patchelf
+author-email: Matthieu Darbois <mayeut@users.noreply.github.com>
+license: GPL-3.0-or-later
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Apache Software License
+classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+classifier: Operating System :: POSIX :: Linux
+classifier: Programming Language :: C
+classifier: Programming Language :: C++
+classifier: Programming Language :: Python
+classifier: Topic :: Software Development :: Build Tools
+requires-dist: importlib_metadata>=2.0; extra == "test"
+requires-dist: pytest>=6.0; extra == "test"
+requires-python: >=3.7
+project-url: Bug Tracker, https://github.com/mayeut/patchelf-pypi/issues
+project-url: Homepage, https://github.com/NixOS/patchelf
+project-url: Source Code, https://github.com/mayeut/patchelf-pypi
+provides-extra: test
+

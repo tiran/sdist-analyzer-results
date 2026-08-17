@@ -1,0 +1,31 @@
+metadata-version: 2.4
+name: deepl
+version: 1.17.0
+summary: Python library for the DeepL API.
+author: DeepL SE
+author-email: python-api@deepl.com
+license: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: 3.6
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: keyring<24.0.0,>=23.4.1; (python_version >= "3.6" and python_version < "4") and extra == "keyring"
+requires-dist: requests<3,>=2
+requires-python: <4,>=3.6.2
+project-url: Bug Tracker, https://github.com/DeepLcom/deepl-python/issues
+project-url: Documentation, https://www.deepl.com/docs-api/
+project-url: Repository, https://github.com/DeepLcom/deepl-python
+provides-extra: keyring
+

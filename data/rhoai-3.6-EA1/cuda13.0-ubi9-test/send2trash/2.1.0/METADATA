@@ -1,0 +1,32 @@
+metadata-version: 2.4
+name: Send2Trash
+version: 2.1.0
+dynamic: license-file
+summary: Send file to trash natively under Mac OS X, Windows and Linux
+author-email: Andrew Senetar <arsenetar@voltaicideas.net>
+license-expression: BSD-3-Clause
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: POSIX
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Desktop Environment :: File Managers
+requires-dist: pytest>=8; extra == "test"
+requires-dist: pywin32>=305; sys_platform == "win32" and extra == "nativelib"
+requires-dist: pyobjc>=9.0; sys_platform == "darwin" and extra == "nativelib"
+requires-python: >=3.8
+project-url: Homepage, https://github.com/arsenetar/send2trash
+project-url: Repository, https://github.com/arsenetar/send2trash.git
+project-url: Issues, https://github.com/arsenetar/send2trash/issues
+provides-extra: test
+provides-extra: nativelib
+

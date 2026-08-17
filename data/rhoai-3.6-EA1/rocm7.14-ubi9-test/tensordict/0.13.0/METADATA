@@ -1,0 +1,48 @@
+metadata-version: 2.4
+name: tensordict
+version: 0.13.0
+dynamic: license-file
+summary: TensorDict is a pytorch dedicated tensor container.
+author-email: Vincent Moens <vincentmoens@gmail.com>
+license: BSD
+license-file: LICENSE
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Development Status :: 4 - Beta
+requires-dist: torch
+requires-dist: numpy
+requires-dist: cloudpickle
+requires-dist: packaging
+requires-dist: importlib_metadata
+requires-dist: orjson; python_version < "3.13"
+requires-dist: pyvers<0.3.0,>=0.2.0
+requires-dist: pytest; extra == "tests"
+requires-dist: pyyaml; extra == "tests"
+requires-dist: pytest-instafail; extra == "tests"
+requires-dist: pytest-rerunfailures; extra == "tests"
+requires-dist: pytest-benchmark; extra == "tests"
+requires-dist: h5py>=3.8; extra == "h5"
+requires-dist: pandas>=1.5; extra == "pandas"
+requires-dist: pyarrow>=10.0; extra == "parquet"
+requires-dist: pandas>=1.5; extra == "tabular"
+requires-dist: pyarrow>=10.0; extra == "tabular"
+requires-dist: pybind11>=2.13; extra == "dev"
+requires-dist: ninja; extra == "dev"
+requires-dist: mypy>=1.0.0; extra == "typecheck"
+requires-dist: onnx; extra == "onnx"
+requires-dist: onnxscript; extra == "onnx"
+requires-dist: onnxruntime; extra == "onnx"
+requires-python: >=3.10
+project-url: homepage, https://github.com/pytorch/tensordict
+provides-extra: tests
+provides-extra: h5
+provides-extra: pandas
+provides-extra: parquet
+provides-extra: tabular
+provides-extra: dev
+provides-extra: typecheck
+provides-extra: onnx
+

@@ -1,0 +1,2 @@
+setuptools-scm>1.5.4
+setuptools>=64.0.0

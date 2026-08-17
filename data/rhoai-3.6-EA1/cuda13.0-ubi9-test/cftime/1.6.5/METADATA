@@ -1,0 +1,23 @@
+metadata-version: 2.4
+name: cftime
+version: 1.6.5
+dynamic: license-file
+summary: Time-handling functionality from netcdf4-python
+author-email: Jeff Whitaker <whitaker.jeffrey@gmail.com>
+license-expression: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: POSIX :: Linux
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Scientific/Engineering
+requires-dist: numpy>=1.21.2
+requires-python: >=3.10
+

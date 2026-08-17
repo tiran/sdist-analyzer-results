@@ -1,0 +1,40 @@
+metadata-version: 2.4
+name: pydub
+version: 0.25.1
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: summary
+summary: Manipulate audio with an simple and easy high level interface
+keywords: audio sound high-level
+home-page: http://pydub.com
+author: James Robert
+author-email: jiaaro@gmail.com
+license: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 2
+classifier: Programming Language :: Python :: 2.7
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.4
+classifier: Programming Language :: Python :: 3.5
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Intended Audience :: Developers
+classifier: Operating System :: OS Independent
+classifier: Topic :: Multimedia :: Sound/Audio
+classifier: Topic :: Multimedia :: Sound/Audio :: Analysis
+classifier: Topic :: Multimedia :: Sound/Audio :: Conversion
+classifier: Topic :: Multimedia :: Sound/Audio :: Editors
+classifier: Topic :: Multimedia :: Sound/Audio :: Mixers
+classifier: Topic :: Software Development :: Libraries
+classifier: Topic :: Utilities
+

@@ -1,0 +1,13 @@
+metadata-version: 2.1
+name: ipadic
+version: 1.0.0
+platform: UNKNOWN
+summary: IPAdic packaged for Python
+home-page: https://github.com/polm/ipadic-py
+author: Paul O'Leary McCann
+author-email: polm@dampfkraft.com
+license: UNKNOWN
+classifier: Programming Language :: Python :: 3
+classifier: Operating System :: OS Independent
+classifier: Natural Language :: Japanese
+

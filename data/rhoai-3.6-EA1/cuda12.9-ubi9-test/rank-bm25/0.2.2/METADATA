@@ -1,0 +1,23 @@
+metadata-version: 2.4
+name: rank_bm25
+version: 0.2.2
+dynamic: author
+dynamic: author-email
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: summary
+summary: Various BM25 algorithms for document ranking
+home-page: https://github.com/dorianbrown/rank_bm25
+author: D. Brown
+author-email: dorianstuartbrown@gmail.com
+license: Apache2.0
+license-file: LICENSE
+requires-dist: numpy
+requires-dist: pytest; extra == "dev"
+provides-extra: dev
+

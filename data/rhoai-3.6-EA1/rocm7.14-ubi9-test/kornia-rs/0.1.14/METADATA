@@ -1,0 +1,41 @@
+metadata-version: 2.4
+name: kornia_rs
+version: 0.1.14
+summary: Low level implementations for computer vision in Rust
+keywords: augmentation,camera,computer vision,deep-learning,image-processing,machine-learning,opencv-alternative,pytorch,rust,tensor,video-processing
+home-page: http://kornia.org
+author-email: Edgar Riba <edgar@kornia.org>
+maintainer-email: Edgar Riba <edgar@kornia.org>
+license-file: LICENSE
+classifier: Development Status :: 4 - Beta
+classifier: Environment :: GPU
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Free Threading :: 3 - Stable
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Programming Language :: Rust
+classifier: Topic :: Scientific/Engineering
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+classifier: Topic :: Scientific/Engineering :: Image Processing
+requires-dist: pytest; extra == "dev"
+requires-dist: pytest-run-parallel; extra == "dev"
+requires-dist: numpy; extra == "dev"
+requires-dist: torch; extra == "dev"
+requires-python: >=3.8
+project-url: documentation, https://kornia.readthedocs.io
+project-url: homepage, http://www.kornia.org
+project-url: repository, https://github.com/kornia/kornia-rs
+provides-extra: dev
+

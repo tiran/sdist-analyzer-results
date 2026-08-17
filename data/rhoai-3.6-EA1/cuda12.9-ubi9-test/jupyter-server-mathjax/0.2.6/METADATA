@@ -1,0 +1,31 @@
+metadata-version: 2.4
+name: jupyter_server_mathjax
+version: 0.2.6
+dynamic: license-file
+platform: Linux
+platform: Mac OS X
+platform: Windows
+summary: MathJax resources as a Jupyter Server Extension.
+keywords: ipython,jupyter,jupyter-server
+home-page: http://jupyter.org
+author: Jupyter Development Team
+author-email: jupyter@googlegroups.com
+license: BSD 3-Clause License
+license-file: LICENSE
+classifier: Framework :: Jupyter
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: System Administrators
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: BSD License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+requires-dist: jupyter_server>=1.1
+requires-dist: jupyter_server[test]; extra == "test"
+requires-dist: pytest; extra == "test"
+requires-python: >=3.7
+provides-extra: test
+

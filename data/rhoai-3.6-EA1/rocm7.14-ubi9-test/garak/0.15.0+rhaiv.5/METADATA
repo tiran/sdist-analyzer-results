@@ -1,0 +1,81 @@
+metadata-version: 2.4
+name: garak
+version: 0.15.0+rhaiv.5
+summary: LLM vulnerability scanner
+author: nv052193, Mads Kongsbak, Tianhao Li, Phyllis Poh, Razvan Dinu, Zander Mackie, Greg Stephens, Ahsan Ayub, Jonathan Liberman, Gustav Fredrikson, Oh Tien Cheng, Brain John, Naman Mishra, Soumili Nandi, Arjun Krishna, Mihailo Milenkovic, Kai Greshake, Martin Borup-Larsen, Emmanuel Ferdman, Eric Therond, Zoe Nolan, Harsh Raj, Shine-afk, Rafael Sandroni, Eric Hacker, Blessed Uyo, Ikko Eltociear Ashimine, iamnotcj, Dwight Temple, Shane Rosse, Masaya Ogushi, Viktor T. Zetterberg, Erwan Roussel, Matthew Rowe, Aishwarya Padmakumar, Marco Rosa, Ian Chu, Mike McKiernan, Divya Chitimalla, Katherine Luna, Dave Baker, Jack Kelly, Amrit Prakash, Cássia Sampaio, Nakul Rajpal, Noah Oeksuez, Dhruv Malik, Patricia Pampanelli, Joseph Davis Chamdani, Rob Geada, Ashish RajAnand, Paulina Kalicka, Gal Moshkovitz, Jack Smith, Paul A. Parkanzky, Leif Hancox-Li, Fabrizio Rocco, Sai Chandra Pandraju, Harish Kolla, Snehal Vartak, Abhiraj Sinha, Harsh Motla, Otavio Padovani, Siddhant Mishra, dyrtyData, Leone Lage Perdigão, Lucas Wang, Ian Miller, Edward Kim, Raina O'Sullivan, Christ Bowel Bouchuen, Hayato Fujihara, precognitivem0nk, Jacob J. lee, Eliya Cohen, Nathan Maine
+author-email: Leon Derczynski <lderczynski@nvidia.com>, Subho Majumdar <subho@vijil.ai>, Erick Galinkin <egalinkin@nvidia.com>, Jeffrey Martin <jemartin@nvidia.com>
+license-expression: Apache-2.0
+license-file: LICENSE
+classifier: Development Status :: 3 - Alpha
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Operating System :: OS Independent
+requires-dist: mikeshardmind-base2048>=1.0.2
+requires-dist: transformers<6.0,>=5.0
+requires-dist: datasets<5.0,>=4.0.0
+requires-dist: colorama>=0.4.3
+requires-dist: tqdm>=4.67.1
+requires-dist: cohere>=5.16.0
+requires-dist: openai<3.0,>=2.0
+requires-dist: replicate>=0.8.3
+requires-dist: google-api-python-client>=2.0
+requires-dist: backoff>=2.1.1
+requires-dist: nltk>=3.9.1
+requires-dist: accelerate>=0.23.0
+requires-dist: avidtools==0.1.2
+requires-dist: stdlibs>=2022.10.9
+requires-dist: langchain>=1.2.1
+requires-dist: cmd2==2.4.3
+requires-dist: torch>=2.6.0
+requires-dist: sentencepiece>=0.1.99
+requires-dist: markdown>=3.4.3
+requires-dist: numpy>=2.0.0
+requires-dist: zalgolib>=0.2.2
+requires-dist: ecoji>=0.1.1
+requires-dist: deepl==1.17.0
+requires-dist: litellm>=1.84.0
+requires-dist: llm>=0.31
+requires-dist: jsonpath-ng>=1.6.1
+requires-dist: huggingface_hub>=1.0
+requires-dist: python-magic-bin>=0.4.14; sys_platform == "win32"
+requires-dist: python-magic>=0.4.21; sys_platform != "win32"
+requires-dist: lorem==0.1.1
+requires-dist: xdg-base-dirs>=6.0.1
+requires-dist: wn==0.9.5
+requires-dist: ollama>=0.4.7
+requires-dist: nvidia-riva-client==2.16.0
+requires-dist: google-cloud-translate>=2.0.4
+requires-dist: grpcio-tools>=1.71.0
+requires-dist: langdetect==1.0.9
+requires-dist: tiktoken>=0.7.0
+requires-dist: mistralai==1.5.2
+requires-dist: pillow>=10.4.0
+requires-dist: ftfy>=6.3.1
+requires-dist: websockets>=13.0
+requires-dist: boto3>=1.28.0
+requires-dist: py-markdown-table>=1.2.0
+requires-dist: soundfile>=0.13.1; extra == "audio"
+requires-dist: librosa>=0.10.2; extra == "audio"
+requires-dist: scipy>=1.14.0; extra == "calibration"
+requires-dist: detoxify>=0.5.0; extra == "dra"
+requires-dist: black>=26.1.0; extra == "lint"
+requires-dist: pylint>=3.1.0; extra == "lint"
+requires-dist: pytest>=8.0; extra == "tests"
+requires-dist: pytest-mock>=3.14.0; extra == "tests"
+requires-dist: requests-mock==1.12.1; extra == "tests"
+requires-dist: respx>=0.21.1; extra == "tests"
+requires-dist: pytest-cov>=5.0.0; extra == "tests"
+requires-dist: pytest_httpserver>=1.1.0; extra == "tests"
+requires-dist: pytest-asyncio>=0.21.0; extra == "tests"
+requires-dist: langcodes>=3.4.0; extra == "tests"
+requires-dist: cryptography>=47.0.0; extra == "tests"
+requires-python: >=3.10
+project-url: Bug Tracker, https://github.com/NVIDIA/garak/issues
+project-url: Homepage, https://github.com/NVIDIA/garak
+provides-extra: audio
+provides-extra: calibration
+provides-extra: dra
+provides-extra: lint
+provides-extra: tests
+

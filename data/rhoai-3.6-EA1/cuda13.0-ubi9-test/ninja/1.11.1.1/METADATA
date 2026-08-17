@@ -1,0 +1,50 @@
+metadata-version: 2.4
+name: ninja
+version: 1.11.1.1
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: download-url
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: project-url
+dynamic: provides-extra
+dynamic: summary
+summary: Ninja is a small build system with a focus on speed
+keywords: ninja build c++ fortran cross-platform cross-compilation
+home-page: http://ninja-build.org/
+download-url: https://github.com/ninja-build/ninja/releases
+author: Jean-Christophe Fillion-Robin
+author-email: scikit-build@googlegroups.com
+license: Apache 2.0
+license-file: LICENSE_Apache_20
+license-file: AUTHORS.rst
+classifier: License :: OSI Approved :: Apache Software License
+classifier: License :: OSI Approved :: BSD License
+classifier: Programming Language :: C
+classifier: Programming Language :: C++
+classifier: Programming Language :: Fortran
+classifier: Programming Language :: Python
+classifier: Operating System :: OS Independent
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Topic :: Software Development :: Build Tools
+classifier: Typing :: Typed
+requires-dist: codecov>=2.0.5; extra == "test"
+requires-dist: coverage>=4.2; extra == "test"
+requires-dist: flake8>=3.0.4; extra == "test"
+requires-dist: pytest>=4.5.0; extra == "test"
+requires-dist: pytest-cov>=2.7.1; extra == "test"
+requires-dist: pytest-runner>=5.1; extra == "test"
+requires-dist: pytest-virtualenv>=1.7.0; extra == "test"
+requires-dist: virtualenv>=15.0.3; extra == "test"
+project-url: Documentation, https://github.com/scikit-build/ninja-python-distributions#readme
+project-url: Source Code, https://github.com/scikit-build/ninja-python-distributions
+project-url: Mailing list, https://groups.google.com/forum/#!forum/scikit-build
+project-url: Bug Tracker, https://github.com/scikit-build/ninja-python-distributions/issues
+provides-extra: test
+

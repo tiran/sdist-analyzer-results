@@ -1,0 +1,68 @@
+metadata-version: 2.4
+name: pytorch_tabular
+version: 1.2.0
+dynamic: license-file
+summary: A standard framework for using Deep Learning for tabular data
+keywords: pytorch,tabular,pytorch-lightning,neural network
+author-email: Manu Joseph <manujosephv@gmail.com>
+license: MIT
+license-file: LICENSE
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Intended Audience :: Science/Research
+classifier: Natural Language :: English
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Scientific/Engineering
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+classifier: Topic :: Software Development
+classifier: Topic :: Software Development :: Libraries
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: torch>=1.11.0
+requires-dist: numpy<=3.0.0
+requires-dist: pandas<3.0.0,>=1.1.5
+requires-dist: scikit-learn<2.0,>=1.3.0
+requires-dist: pytorch-lightning<2.7.0,>=2.0.0
+requires-dist: scipy<2.0,>=1.8
+requires-dist: omegaconf>=2.3.0
+requires-dist: torchmetrics<1.9.0,>=0.10.0
+requires-dist: einops<0.9.0,>=0.6.0
+requires-dist: rich>=11.0.0
+requires-dist: scikit-base
+requires-dist: wget; extra == "dev"
+requires-dist: bump2version==1.0.1; extra == "dev"
+requires-dist: mkdocs-material<9.8,>=9.5; extra == "dev"
+requires-dist: ipython[notebook]<9.0,>8.0; extra == "dev"
+requires-dist: mkdocstrings[python]==0.29.*; extra == "dev"
+requires-dist: mknotebooks==0.8.*; extra == "dev"
+requires-dist: pytest>=5.3.2; extra == "dev"
+requires-dist: pytest-runner>=5.1; extra == "dev"
+requires-dist: torch_optimizer; extra == "dev"
+requires-dist: wandb<0.19.0,>=0.15.0; extra == "extra"
+requires-dist: plotly<5.25.0,>=5.13.0; extra == "extra"
+requires-dist: kaleido<0.3.0,>=0.2.0; extra == "extra"
+requires-dist: captum<0.8.0,>=0.5.0; extra == "extra"
+requires-dist: pytorch-tabnet<4.2; extra == "extra"
+requires-dist: ipywidgets; extra == "notebooks"
+requires-dist: matplotlib>3.1; extra == "notebooks"
+requires-dist: torch==2.5.0; extra == "dependencies-2024"
+requires-dist: numpy==2.2.0; extra == "dependencies-2024"
+requires-dist: pandas==2.2.3; extra == "dependencies-2024"
+requires-dist: scikit-learn==1.6.0; extra == "dependencies-2024"
+requires-dist: pytorch-lightning==2.4.0; extra == "dependencies-2024"
+requires-dist: scipy==1.14.1; extra == "dependencies-2024"
+requires-dist: omegaconf==2.3.0; extra == "dependencies-2024"
+requires-dist: torchmetrics==1.5.2; extra == "dependencies-2024"
+requires-dist: einops==0.8.0; extra == "dependencies-2024"
+requires-python: <3.15,>=3.10
+project-url: Homepage, https://github.com/pytorch-tabular/pytorch_tabular
+provides-extra: dev
+provides-extra: extra
+provides-extra: notebooks
+provides-extra: dependencies-2024
+

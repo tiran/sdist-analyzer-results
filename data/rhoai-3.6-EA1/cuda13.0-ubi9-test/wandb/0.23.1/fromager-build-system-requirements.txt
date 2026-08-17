@@ -1,2 +1,2 @@
-typing_extensions
 hatchling
+typing_extensions

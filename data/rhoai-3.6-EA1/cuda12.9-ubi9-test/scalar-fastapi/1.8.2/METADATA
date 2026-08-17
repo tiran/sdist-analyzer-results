@@ -1,0 +1,18 @@
+metadata-version: 2.4
+name: scalar_fastapi
+version: 1.8.2
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: license
+dynamic: summary
+summary: This plugin provides an easy way to render a beautiful API reference based on a OpenAPI/Swagger file with FastAPI.
+home-page: https://github.com/scalar/scalar
+author: Scalar
+author-email: support@scalar.com
+license: MIT
+classifier: License :: OSI Approved :: MIT License
+

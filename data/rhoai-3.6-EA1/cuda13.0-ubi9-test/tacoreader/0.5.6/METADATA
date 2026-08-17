@@ -1,0 +1,23 @@
+metadata-version: 2.4
+name: tacoreader
+version: 0.5.6
+summary: A reader for Cloud-Optimized Datasets
+author: Cesar Aybar
+author-email: cesar.aybar@uv.es
+license-file: LICENSE
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-dist: fsspec>=2024.10.0
+requires-dist: pandas>=2.2.2
+requires-dist: pyarrow>=17.0.0
+requires-dist: requests>=2.32.3
+requires-dist: tqdm>=4.67.1
+requires-python: <4.0,>=3.9
+project-url: Documentation, https://tacofoundation.github.io/tacoreader/
+project-url: Repository, https://github.com/tacofoundation/tacoreader
+

@@ -1,0 +1,13 @@
+metadata-version: 2.4
+name: tensorflow-metadata
+version: 1.21.0
+dynamic: license-file
+dynamic: requires-dist
+dynamic: requires-python
+license-file: LICENSE
+requires-dist: absl-py<3.0.0,>=0.9
+requires-dist: googleapis-common-protos<2,>=1.56.4; python_version >= "3.11"
+requires-dist: protobuf>=4.25.2; python_version >= "3.11"
+requires-dist: protobuf<=6.32,>=4.21.6; python_version < "3.11"
+requires-python: <4,>=3.10
+

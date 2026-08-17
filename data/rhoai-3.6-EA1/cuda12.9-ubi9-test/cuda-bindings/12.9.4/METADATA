@@ -1,0 +1,34 @@
+metadata-version: 2.4
+name: cuda-bindings
+version: 12.9.4
+dynamic: license-file
+summary: Python bindings for CUDA
+author-email: NVIDIA Corporation <cuda-python-conduct@nvidia.com>
+license-expression: LicenseRef-NVIDIA-SOFTWARE-LICENSE
+license-file: LICENSE
+classifier: Intended Audience :: Developers
+classifier: Topic :: Database
+classifier: Topic :: Scientific/Engineering
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Environment :: GPU :: NVIDIA CUDA
+requires-dist: cuda-pathfinder~=1.1
+requires-dist: nvidia-cuda-nvcc-cu12; extra == "all"
+requires-dist: nvidia-cuda-nvrtc-cu12; extra == "all"
+requires-dist: nvidia-nvjitlink-cu12>=12.3; extra == "all"
+requires-dist: nvidia-cufile-cu12; sys_platform == "linux" and extra == "all"
+requires-dist: cython<3.2,>=3.1; extra == "test"
+requires-dist: setuptools>=77.0.0; extra == "test"
+requires-dist: numpy>=1.21.1; extra == "test"
+requires-dist: pytest>=6.2.4; extra == "test"
+requires-dist: pytest-benchmark>=3.4.1; extra == "test"
+requires-dist: pyglet>=2.1.9; extra == "test"
+project-url: Repository, https://github.com/NVIDIA/cuda-python
+project-url: Documentation, https://nvidia.github.io/cuda-python/
+provides-extra: all
+provides-extra: test
+

@@ -1,0 +1,76 @@
+metadata-version: 2.4
+name: apache-airflow-task-sdk
+version: 1.3.1
+summary: Python Task SDK for Apache Airflow DAG Authors
+keywords: airflow,automation,dag,data,orchestration,pipelines,workflow
+author-email: Apache Software Foundation <dev@airflow.apache.org>
+maintainer-email: Apache Software Foundation <dev@airflow.apache.org>
+license-expression: Apache-2.0
+license-file: LICENSE
+license-file: NOTICE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Environment :: Web Environment
+classifier: Framework :: Apache Airflow
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: System Administrators
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: System :: Monitoring
+requires-dist: apache-airflow-core<3.4.0,>=3.3.0
+requires-dist: asgiref>=2.3.0; python_version < "3.14"
+requires-dist: asgiref>=3.11.1; python_version >= "3.14"
+requires-dist: attrs!=25.2.0,>=24.2.0
+requires-dist: babel>=2.17.0
+requires-dist: colorlog>=6.8.2
+requires-dist: fsspec>=2023.10.0
+requires-dist: greenback>=1.2.1
+requires-dist: httpx>=0.27.0
+requires-dist: importlib-metadata>=6.5; python_version < "3.12"
+requires-dist: isoduration>=20.11.0
+requires-dist: jinja2>=3.1.5
+requires-dist: jsonschema>=4.19.1
+requires-dist: methodtools>=0.4.7
+requires-dist: msgspec>=0.19.0
+requires-dist: opentelemetry-api>=1.27.0
+requires-dist: packaging>=25.0
+requires-dist: pathspec>=0.9.0
+requires-dist: pendulum>=3.1.0
+requires-dist: pluggy>=1.5.0
+requires-dist: psutil>=6.1.0
+requires-dist: pydantic>2.11.0
+requires-dist: pygtrie>=2.5.0
+requires-dist: python-dateutil>=2.7.0
+requires-dist: structlog>=26.1.0
+requires-dist: tenacity>=8.3.0
+requires-dist: typing-extensions>=4.14.1
+requires-dist: datadog>=0.50.0; extra == "all"
+requires-dist: opentelemetry-api>=1.27.0; extra == "all"
+requires-dist: opentelemetry-exporter-otlp>=1.27.0; extra == "all"
+requires-dist: opentelemetry-proto<9999,>=1.27.0; extra == "all"
+requires-dist: sentry-sdk>=2.30.0; extra == "all"
+requires-dist: statsd>=3.3.0; extra == "all"
+requires-dist: datadog>=0.50.0; extra == "datadog"
+requires-dist: opentelemetry-api>=1.27.0; extra == "otel"
+requires-dist: opentelemetry-exporter-otlp>=1.27.0; extra == "otel"
+requires-dist: opentelemetry-proto<9999,>=1.27.0; extra == "otel"
+requires-dist: sentry-sdk>=2.30.0; extra == "sentry"
+requires-dist: statsd>=3.3.0; extra == "statsd"
+requires-python: !=3.15,>=3.10
+project-url: Bug Tracker, https://github.com/apache/airflow/issues
+project-url: Documentation, https://airflow.apache.org/docs/
+project-url: Homepage, https://airflow.apache.org/
+project-url: Slack Chat, https://s.apache.org/airflow-slack
+project-url: Source Code, https://github.com/apache/airflow
+project-url: Mastodon, https://fosstodon.org/@airflow
+project-url: Bluesky, https://bsky.app/profile/apache-airflow.bsky.social
+project-url: YouTube, https://www.youtube.com/channel/UCSXwxpWZQ7XZ1WL3wqevChA/
+provides-extra: all
+provides-extra: datadog
+provides-extra: otel
+provides-extra: sentry
+provides-extra: statsd
+

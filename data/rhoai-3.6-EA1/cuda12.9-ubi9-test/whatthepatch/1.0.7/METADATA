@@ -1,0 +1,29 @@
+metadata-version: 2.4
+name: whatthepatch
+version: 1.0.7
+dynamic: license-file
+summary: A patch parsing and application library.
+keywords: patch,diff,parser
+maintainer-email: "Christopher S. Corley" <cscorley@gmail.com>
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: Software Development :: Version Control
+classifier: Topic :: Software Development
+classifier: Topic :: Text Processing
+requires-python: >=3.9
+project-url: Homepage, https://github.com/cscorley/whatthepatch
+project-url: Bug Tracker, https://github.com/cscorley/whatthepatch/issues
+

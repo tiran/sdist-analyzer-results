@@ -1,0 +1,40 @@
+metadata-version: 2.4
+name: virtualenv
+version: 21.4.3
+summary: Virtual Python Environment builder
+keywords: environments,isolated,virtual
+maintainer-email: Bernat Gabor <gaborjbernat@gmail.com>, Rahul Devikar <rahuldevikar5512@gmail.com>
+license-expression: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: POSIX
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Software Development :: Libraries
+classifier: Topic :: Software Development :: Testing
+classifier: Topic :: Utilities
+requires-dist: distlib<1,>=0.3.7
+requires-dist: filelock<4,>=3.24.2; python_version >= "3.10"
+requires-dist: filelock<=3.19.1,>=3.16.1; python_version < "3.10"
+requires-dist: importlib-metadata>=6.6; python_version < "3.8"
+requires-dist: platformdirs<5,>=3.9.1
+requires-dist: python-discovery>=1.4.2
+requires-dist: typing-extensions>=4.13.2; python_version < "3.11"
+requires-python: >=3.8
+project-url: Documentation, https://virtualenv.pypa.io
+project-url: Homepage, https://github.com/pypa/virtualenv
+project-url: Source, https://github.com/pypa/virtualenv
+project-url: Tracker, https://github.com/pypa/virtualenv/issues
+

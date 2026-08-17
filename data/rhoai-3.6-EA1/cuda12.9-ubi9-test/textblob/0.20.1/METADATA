@@ -1,0 +1,22 @@
+metadata-version: 2.4
+name: textblob
+version: 0.20.1
+summary: Simple, Pythonic text processing. Sentiment analysis, part-of-speech tagging, noun phrase parsing, and more.
+keywords: textblob,nlp,linguistics,nltk,pattern
+author-email: Steven Loria <oss@stevenloria.com>
+license-expression: MIT
+license-file: LICENSE
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Text Processing :: Linguistic
+requires-dist: nltk>=3.9
+requires-python: >=3.10
+project-url: Changelog, https://textblob.readthedocs.io/en/latest/changelog.html
+project-url: Issues, https://github.com/sloria/TextBlob/issues
+project-url: Source, https://github.com/sloria/TextBlob
+

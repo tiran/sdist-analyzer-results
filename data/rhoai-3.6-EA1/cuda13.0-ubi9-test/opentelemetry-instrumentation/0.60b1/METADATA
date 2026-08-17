@@ -1,0 +1,25 @@
+metadata-version: 2.5
+name: opentelemetry-instrumentation
+version: 0.60b1
+summary: Instrumentation Tools & Auto Instrumentation for OpenTelemetry Python
+author-email: OpenTelemetry Authors <cncf-opentelemetry-contributors@lists.cncf.io>
+license-expression: Apache-2.0
+license-file: LICENSE
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+requires-dist: opentelemetry-api~=1.4
+requires-dist: opentelemetry-semantic-conventions==0.60b1
+requires-dist: packaging>=18.0
+requires-dist: wrapt<2.0.0,>=1.0.0
+requires-python: >=3.9
+project-url: Homepage, https://github.com/open-telemetry/opentelemetry-python-contrib/tree/main/opentelemetry-instrumentation
+project-url: Repository, https://github.com/open-telemetry/opentelemetry-python-contrib
+

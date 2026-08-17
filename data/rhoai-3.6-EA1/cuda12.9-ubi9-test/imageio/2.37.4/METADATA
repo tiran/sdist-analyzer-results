@@ -1,0 +1,109 @@
+metadata-version: 2.4
+name: ImageIO
+version: 2.37.4
+dynamic: license-file
+summary: Read and write images and video across all major formats. Supports scientific and volumetric data.
+keywords: image,video,imread,imwrite,io,animation,ffmpeg,image processing,numpy,format conversion,scientific imaging,medical imaging,volumetric,video encoding,multimedia,gif,tiff,png,jpeg
+author: ImageIO contributors
+maintainer-email: Sebastian Wallkotter <sebastian@wallkoetter.net>, Almar Klein <almar.klein@gmail.com>
+license-expression: BSD-2-Clause
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Science/Research
+classifier: Intended Audience :: Education
+classifier: Intended Audience :: Developers
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: POSIX
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-dist: numpy
+requires-dist: pillow>=8.3.2
+requires-dist: imageio-ffmpeg; extra == "ffmpeg"
+requires-dist: psutil; extra == "ffmpeg"
+requires-dist: fsspec[http]; extra == "freeimage"
+requires-dist: pillow-heif; extra == "pillow-heif"
+requires-dist: tifffile; extra == "tifffile"
+requires-dist: av; extra == "pyav"
+requires-dist: astropy; extra == "fits"
+requires-dist: rawpy; extra == "rawpy"
+requires-dist: numpy>2; extra == "rawpy"
+requires-dist: gdal; extra == "gdal"
+requires-dist: itk; extra == "itk"
+requires-dist: black; extra == "linting"
+requires-dist: flake8; extra == "linting"
+requires-dist: pytest; extra == "test"
+requires-dist: pytest-cov; extra == "test"
+requires-dist: fsspec[github]; extra == "test"
+requires-dist: sphinx<6; extra == "docs"
+requires-dist: numpydoc; extra == "docs"
+requires-dist: pydata-sphinx-theme; extra == "docs"
+requires-dist: pytest; extra == "dev"
+requires-dist: pytest-cov; extra == "dev"
+requires-dist: fsspec[github]; extra == "dev"
+requires-dist: black; extra == "dev"
+requires-dist: flake8; extra == "dev"
+requires-dist: av; extra == "all-plugins"
+requires-dist: astropy; extra == "all-plugins"
+requires-dist: fsspec[http]; extra == "all-plugins"
+requires-dist: imageio-ffmpeg; extra == "all-plugins"
+requires-dist: numpy>2; extra == "all-plugins"
+requires-dist: pillow-heif; extra == "all-plugins"
+requires-dist: psutil; extra == "all-plugins"
+requires-dist: rawpy; extra == "all-plugins"
+requires-dist: tifffile; extra == "all-plugins"
+requires-dist: fsspec[http]; extra == "all-plugins-pypy"
+requires-dist: imageio-ffmpeg; extra == "all-plugins-pypy"
+requires-dist: pillow-heif; extra == "all-plugins-pypy"
+requires-dist: psutil; extra == "all-plugins-pypy"
+requires-dist: astropy; extra == "full"
+requires-dist: av; extra == "full"
+requires-dist: black; extra == "full"
+requires-dist: flake8; extra == "full"
+requires-dist: fsspec[github,http]; extra == "full"
+requires-dist: imageio-ffmpeg; extra == "full"
+requires-dist: numpydoc; extra == "full"
+requires-dist: numpy>2; extra == "full"
+requires-dist: pillow-heif; extra == "full"
+requires-dist: psutil; extra == "full"
+requires-dist: pydata-sphinx-theme; extra == "full"
+requires-dist: pytest; extra == "full"
+requires-dist: pytest-cov; extra == "full"
+requires-dist: rawpy; extra == "full"
+requires-dist: sphinx<6; extra == "full"
+requires-dist: tifffile; extra == "full"
+requires-python: >=3.10
+project-url: homepage, https://github.com/imageio/imageio
+project-url: download, http://pypi.python.org/pypi/imageio
+project-url: source, https://github.com/imageio/imageio
+project-url: documentation, https://imageio.readthedocs.io
+provides-extra: bsdf
+provides-extra: dicom
+provides-extra: feisem
+provides-extra: ffmpeg
+provides-extra: freeimage
+provides-extra: lytro
+provides-extra: numpy
+provides-extra: pillow-heif
+provides-extra: pillow
+provides-extra: simpleitk
+provides-extra: spe
+provides-extra: swf
+provides-extra: tifffile
+provides-extra: pyav
+provides-extra: fits
+provides-extra: rawpy
+provides-extra: gdal
+provides-extra: itk
+provides-extra: linting
+provides-extra: test
+provides-extra: docs
+provides-extra: dev
+provides-extra: all-plugins
+provides-extra: all-plugins-pypy
+provides-extra: full
+

@@ -1,0 +1,31 @@
+metadata-version: 2.5
+name: opentelemetry-exporter-otlp-proto-grpc
+version: 1.34.1
+summary: OpenTelemetry Collector Protobuf over gRPC Exporter
+author-email: OpenTelemetry Authors <cncf-opentelemetry-contributors@lists.cncf.io>
+license: Apache-2.0
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Framework :: OpenTelemetry
+classifier: Framework :: OpenTelemetry :: Exporters
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+requires-dist: googleapis-common-protos~=1.52
+requires-dist: grpcio<2.0.0,>=1.63.2; python_version < "3.13"
+requires-dist: grpcio<2.0.0,>=1.66.2; python_version >= "3.13"
+requires-dist: opentelemetry-api~=1.15
+requires-dist: opentelemetry-exporter-otlp-proto-common==1.34.1
+requires-dist: opentelemetry-proto==1.34.1
+requires-dist: opentelemetry-sdk~=1.34.1
+requires-dist: typing-extensions>=4.5.0
+requires-python: >=3.9
+project-url: Homepage, https://github.com/open-telemetry/opentelemetry-python/tree/main/exporter/opentelemetry-exporter-otlp-proto-grpc
+project-url: Repository, https://github.com/open-telemetry/opentelemetry-python
+

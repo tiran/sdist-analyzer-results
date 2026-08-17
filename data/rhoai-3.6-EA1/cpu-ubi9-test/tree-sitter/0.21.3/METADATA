@@ -1,0 +1,20 @@
+metadata-version: 2.4
+name: tree-sitter
+version: 0.21.3
+dynamic: license-file
+summary: Python bindings for the Tree-Sitter parsing library
+keywords: incremental,parsing,tree-sitter
+author-email: Max Brunsfeld <maxbrunsfeld@gmail.com>
+license-file: LICENSE
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: C
+classifier: Programming Language :: Python
+classifier: Topic :: Software Development :: Compilers
+classifier: Topic :: Text Processing :: Linguistic
+classifier: Typing :: Typed
+requires-python: >=3.8
+project-url: Homepage, https://tree-sitter.github.io/tree-sitter/
+project-url: Source, https://github.com/tree-sitter/py-tree-sitter
+

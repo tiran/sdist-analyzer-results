@@ -1,0 +1,31 @@
+metadata-version: 2.4
+name: llvmlite
+version: 0.49.0
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: license-file
+dynamic: license-expression
+dynamic: project-url
+dynamic: requires-python
+dynamic: summary
+summary: lightweight wrapper around basic LLVM functionality
+home-page: http://llvmlite.readthedocs.io
+license-expression: BSD-2-Clause AND Apache-2.0 WITH LLVM-exception
+license-file: LICENSE
+license-file: LICENSE.thirdparty
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Software Development :: Code Generators
+classifier: Topic :: Software Development :: Compilers
+requires-python: >=3.10
+project-url: Source, https://github.com/numba/llvmlite
+

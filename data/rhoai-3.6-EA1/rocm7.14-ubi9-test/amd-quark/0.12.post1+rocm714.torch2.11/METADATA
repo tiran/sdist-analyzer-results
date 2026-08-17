@@ -1,0 +1,88 @@
+metadata-version: 2.4
+name: amd-quark
+version: 0.12.post1+rocm714.torch2.11
+dynamic: author-email
+dynamic: license-file
+dynamic: requires-python
+summary: AMD Quark is a comprehensive cross-platform toolkit designed to simplify and enhance the quantization of deep learning models. Supporting both PyTorch and ONNX models, AMD Quark empowers developers to optimize their models for deployment on a wide range of hardware backends, achieving significant performance gains without compromising accuracy.
+keywords: quantization,pytorch,onnx
+author: AMD
+author-email: help@amd.com
+maintainer-email: AMD Quark Maintainers <quark.maintainers@amd.com>
+license: MIT License
+                 
+                 Copyright (c) 2023 Advanced Micro Devices, Inc.
+                 
+                 Permission is hereby granted, free of charge, to any person obtaining a copy
+                 of this software and associated documentation files (the "Software"), to deal
+                 in the Software without restriction, including without limitation the rights
+                 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+                 copies of the Software, and to permit persons to whom the Software is
+                ...
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Education
+classifier: Intended Audience :: Science/Research
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+requires-dist: evaluate
+requires-dist: joblib
+requires-dist: ninja
+requires-dist: numpy>=2.0
+requires-dist: onnx<=1.22.0,>=1.21.0
+requires-dist: onnxscript
+requires-dist: onnxslim>=0.1.84
+requires-dist: pandas
+requires-dist: plotly
+requires-dist: protobuf
+requires-dist: psutil
+requires-dist: pydantic
+requires-dist: rich
+requires-dist: scipy
+requires-dist: sentencepiece
+requires-dist: tqdm
+requires-dist: zstandard
+requires-dist: mypy==1.18.2; extra == "lint"
+requires-dist: opencv-python; extra == "lint"
+requires-dist: pre-commit; extra == "lint"
+requires-dist: pydantic; extra == "lint"
+requires-dist: pytest; extra == "lint"
+requires-dist: pyyaml; extra == "lint"
+requires-dist: ruff; extra == "lint"
+requires-dist: types-PyYAML; extra == "lint"
+requires-dist: PyYAML; extra == "profiling"
+requires-dist: psutil; extra == "profiling"
+requires-dist: accelerate; extra == "cli"
+requires-dist: gguf; extra == "cli"
+requires-dist: immutabledict; extra == "cli"
+requires-dist: langdetect; extra == "cli"
+requires-dist: onnx; extra == "cli"
+requires-dist: onnx_ir; extra == "cli"
+requires-dist: onnxruntime<=1.25.1,>=1.22.2; extra == "cli"
+requires-dist: onnxruntime_extensions; extra == "cli"
+requires-dist: onnxruntime_genai; extra == "cli"
+requires-dist: opencv-python; extra == "cli"
+requires-dist: Pillow; extra == "cli"
+requires-dist: protobuf; extra == "cli"
+requires-dist: psutil; extra == "cli"
+requires-dist: py7zr; extra == "cli"
+requires-dist: pydantic; extra == "cli"
+requires-dist: rich; extra == "cli"
+requires-dist: rouge_score; extra == "cli"
+requires-dist: timm; extra == "cli"
+requires-dist: transformers<5.3,>5; extra == "cli"
+requires-dist: cryptography>=48.0.1; extra == "crypto"
+requires-python: <3.14,>=3.11
+project-url: documentation, https://quark.docs.amd.com
+project-url: homepage, https://github.com/amd/quark
+project-url: issues, https://github.com/amd/quark/issues
+project-url: repository, https://github.com/amd/quark.git
+provides-extra: lint
+provides-extra: profiling
+provides-extra: cli
+provides-extra: crypto
+

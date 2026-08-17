@@ -1,0 +1,95 @@
+[build-system]
+# Minimum requirements for the build system to execute.
+requires = ["setuptools", "wheel"]
+
+[project]
+name = "rioxarray"
+version = "0.23.0"
+description = "geospatial xarray extension powered by rasterio"
+maintainers = [
+    {name = "rioxarray Contributors"},
+]
+keywords = [
+    "rioxarray",
+    "xarray",
+    "rasterio",
+]
+readme = "README.rst"
+license = "Apache-2.0"
+license-files = ["LICENSE*", "AUTHORS.rst"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: GIS",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed",
+]
+requires-python = ">=3.12"
+dependencies = [
+    "packaging",
+    "rasterio>=1.4.3",
+    # https://github.com/pydata/xarray/issues/11000
+    "xarray>=2026.2",
+    "pyproj>=3.3",
+    "numpy>=2",
+]
+
+[dependency-groups]
+doc = [
+    "sphinx-click",
+    "nbsphinx",
+    "ipython",
+    "sphinx_rtd_theme",
+]
+test = [
+    "pytest>=3.6",
+    "pytest-cov",
+    "pytest-timeout",
+    "dask",
+    "netcdf4",
+]
+type = [
+    "mypy",
+]
+lint = [
+    "pylint"
+]
+dev = [
+    "pre-commit",
+    {include-group = "doc"},
+    {include-group = "test"},
+    {include-group = "type"},
+    {include-group = "lint"}
+]
+
+[project.urls]
+homepage = "https://corteva.github.io/rioxarray/"
+documentation = "https://corteva.github.io/rioxarray/"
+repository = "https://github.com/corteva/rioxarray"
+changelog = "https://corteva.github.io/rioxarray/stable/history.html"
+
+[tool.setuptools.packages.find]
+include = ["rioxarray", "rioxarray.*"]
+
+[tool.setuptools.package-data]
+rioxarray = [
+  "py.typed",
+]
+
+[project.entry-points."xarray.backends"]
+rasterio = "rioxarray.xarray_plugin:RasterioBackend"
+
+[project.optional-dependencies]
+interp = [
+    "scipy"
+]
+all = [
+    "scipy"
+]

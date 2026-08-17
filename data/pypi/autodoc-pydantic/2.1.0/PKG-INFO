@@ -1,0 +1,42 @@
+metadata-version: 2.1
+name: autodoc_pydantic
+version: 2.1.0
+summary: Seamlessly integrate pydantic models in your Sphinx documentation.
+keywords: sphinx,pydantic,autodoc,documentation,extension
+home-page: https://github.com/mansenfranzen/autodoc_pydantic
+author: mansenfranzen
+author-email: franz.woellert@gmail.com
+license: MIT
+classifier: Framework :: Pydantic
+classifier: Framework :: Pydantic :: 2
+classifier: Framework :: Sphinx :: Extension
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Topic :: Documentation :: Sphinx
+classifier: Topic :: Software Development :: Documentation
+requires-dist: Sphinx>=4.0
+requires-dist: coverage<8,>=7; extra == "test" or extra == "dev"
+requires-dist: erdantic<0.7,>=0.6; extra == "erdantic"
+requires-dist: flake8<4,>=3; extra == "dev"
+requires-dist: importlib-metadata>1; python_version <= "3.8"
+requires-dist: pydantic<3.0.0,>=2.0
+requires-dist: pydantic-settings<3.0.0,>=2.0
+requires-dist: pytest<8,>=7; extra == "test" or extra == "dev"
+requires-dist: sphinx-copybutton<0.5,>=0.4; extra == "docs" or extra == "dev"
+requires-dist: sphinx-rtd-theme<2.0,>=1.0; extra == "docs" or extra == "dev"
+requires-dist: sphinx-tabs<4,>=3; extra == "docs" or extra == "dev"
+requires-dist: sphinxcontrib-mermaid<0.8,>=0.7; extra == "docs" or extra == "dev"
+requires-dist: tox<4,>=3; extra == "dev"
+requires-python: <4.0.0,>=3.8
+project-url: Documentation, https://github.com/mansenfranzen/autodoc_pydantic
+project-url: Repository, https://github.com/mansenfranzen/autodoc_pydantic
+provides-extra: dev
+provides-extra: docs
+provides-extra: erdantic
+provides-extra: test
+

@@ -1,0 +1,18 @@
+metadata-version: 2.4
+name: identify
+version: 2.6.19
+dynamic: license-file
+summary: File identification library for Python
+home-page: https://github.com/pre-commit/identify
+author: Chris Kuehl
+author-email: ckuehl@ocf.berkeley.edu
+license: MIT
+license-file: LICENSE
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+requires-dist: ukkonen; extra == "license"
+requires-python: >=3.10
+provides-extra: license
+

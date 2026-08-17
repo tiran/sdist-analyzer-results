@@ -1,0 +1,18 @@
+metadata-version: 2.5
+name: mikeshardmind-base2048
+version: 1.0.4
+summary: Pure python Base-2048 binary-text encoding
+author-email: Michael Hall <michael@michaelhall.tech>
+license-expression: MPL-2.0
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-python: >=3.9
+project-url: Homepage, https://github.com/mikeshardmind/python-base2048
+

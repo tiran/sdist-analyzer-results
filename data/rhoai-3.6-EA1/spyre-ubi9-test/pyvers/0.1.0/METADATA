@@ -1,0 +1,19 @@
+metadata-version: 2.4
+name: pyvers
+version: 0.1.0
+summary: A Python library for managing multiple versions of dependencies
+author: vmoens
+author-email: vincentmoens@gmail.com
+license: MIT
+license-file: LICENSE
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-dist: packaging<26.0,>=25.0
+requires-python: >=3.9
+

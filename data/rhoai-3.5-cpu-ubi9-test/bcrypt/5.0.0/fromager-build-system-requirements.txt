@@ -1,3 +1,0 @@
-setuptools>=42.0.0
-wheel
-setuptools-rust>=1.7.0

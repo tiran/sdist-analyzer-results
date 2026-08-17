@@ -1,4 +1,4 @@
-setuptools
-wheel
-numpy>=2.0
 Cython
+numpy>=2.0
+wheel
+setuptools

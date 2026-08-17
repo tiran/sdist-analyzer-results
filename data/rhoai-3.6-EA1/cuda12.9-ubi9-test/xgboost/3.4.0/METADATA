@@ -1,0 +1,36 @@
+metadata-version: 2.4
+name: xgboost
+version: 3.4.0
+summary: XGBoost Python Package
+author-email: Hyunsu Cho <chohyu01@cs.washington.edu>, Jiaming Yuan <jm.yuan@outlook.com>
+license-expression: Apache-2.0
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Operating System :: OS Independent
+classifier: Typing :: Typed
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-dist: numpy
+requires-dist: scipy
+requires-dist: pandas>=1.2; extra == "pandas"
+requires-dist: scikit-learn; extra == "scikit-learn"
+requires-dist: dask; extra == "dask"
+requires-dist: pandas; extra == "dask"
+requires-dist: distributed; extra == "dask"
+requires-dist: graphviz; extra == "plotting"
+requires-dist: matplotlib; extra == "plotting"
+requires-dist: pyspark>=4.0; extra == "pyspark"
+requires-dist: scikit-learn; extra == "pyspark"
+requires-dist: cloudpickle; extra == "pyspark"
+requires-python: >=3.12
+project-url: documentation, https://xgboost.readthedocs.io/en/stable/
+project-url: repository, https://github.com/dmlc/xgboost
+provides-extra: pandas
+provides-extra: scikit-learn
+provides-extra: dask
+provides-extra: plotting
+provides-extra: pyspark
+

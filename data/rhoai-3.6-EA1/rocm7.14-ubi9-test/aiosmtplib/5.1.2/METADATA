@@ -1,0 +1,31 @@
+metadata-version: 2.5
+name: aiosmtplib
+version: 5.1.2
+summary: asyncio SMTP client
+keywords: asyncio,email,smtp
+author-email: Cole Maclean <hi@colemaclean.dev>
+license: MIT
+license-file: LICENSE.txt
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: No Input/Output (Daemon)
+classifier: Framework :: AsyncIO
+classifier: Intended Audience :: Developers
+classifier: Natural Language :: English
+classifier: Operating System :: OS Independent
+classifier: Topic :: Communications
+classifier: Topic :: Communications :: Email
+classifier: Topic :: Software Development :: Libraries
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Typing :: Typed
+requires-dist: furo>=2023.9.10; extra == "docs"
+requires-dist: sphinx-autodoc-typehints>=1.24.0; extra == "docs"
+requires-dist: sphinx-copybutton>=0.5.0; extra == "docs"
+requires-dist: sphinx>=7.0.0; extra == "docs"
+requires-dist: uvloop>=0.18; extra == "uvloop"
+requires-python: >=3.10
+project-url: Documentation, https://aiosmtplib.readthedocs.io/en/stable/
+project-url: Changelog, https://github.com/cole/aiosmtplib/blob/main/CHANGELOG.rst
+project-url: GitHub, https://github.com/cole/aiosmtplib
+provides-extra: docs
+provides-extra: uvloop
+

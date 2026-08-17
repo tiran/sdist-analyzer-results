@@ -1,0 +1,320 @@
+metadata-version: 2.4
+name: transformers
+version: 5.13.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training.
+keywords: machine-learning nlp python pytorch transformer llm vlm deep-learning inference training model-hub pretrained-models llama gemma qwen
+home-page: https://github.com/huggingface/transformers
+author: The Hugging Face team (past and future) with the help of all our contributors (https://github.com/huggingface/transformers/graphs/contributors)
+author-email: transformers@huggingface.co
+license: Apache 2.0 License
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Education
+classifier: Intended Audience :: Science/Research
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+requires-dist: huggingface-hub<2.0,>=1.5.0
+requires-dist: numpy>=1.17
+requires-dist: packaging>=20.0
+requires-dist: pyyaml>=5.1
+requires-dist: regex>=2025.10.22
+requires-dist: tokenizers<=0.23.0,>=0.22.0
+requires-dist: typer
+requires-dist: safetensors>=0.8.0
+requires-dist: tqdm>=4.60
+requires-dist: torch>=2.4; extra == "torch"
+requires-dist: accelerate>=1.1.0; extra == "torch"
+requires-dist: torchvision; extra == "vision"
+requires-dist: Pillow<=15.0,>=10.0.1; extra == "vision"
+requires-dist: torchaudio; extra == "audio"
+requires-dist: librosa; extra == "audio"
+requires-dist: pyctcdecode>=0.4.0; extra == "audio"
+requires-dist: phonemizer; extra == "audio"
+requires-dist: kenlm; extra == "audio"
+requires-dist: av; extra == "video"
+requires-dist: timm>=1.0.23; extra == "timm"
+requires-dist: datasets>=2.15.0; extra == "quality"
+requires-dist: ruff==0.14.10; extra == "quality"
+requires-dist: GitPython<3.1.19; extra == "quality"
+requires-dist: urllib3<2.0.0; extra == "quality"
+requires-dist: libcst; extra == "quality"
+requires-dist: rich; extra == "quality"
+requires-dist: ty==0.0.20; extra == "quality"
+requires-dist: tomli; extra == "quality"
+requires-dist: transformers-mlinter==0.1.1; extra == "quality"
+requires-dist: hf-doc-builder; extra == "docs"
+requires-dist: kernels<0.16,>=0.15.2; extra == "kernels"
+requires-dist: sentencepiece!=0.1.92,>=0.1.91; extra == "sentencepiece"
+requires-dist: protobuf; extra == "sentencepiece"
+requires-dist: tiktoken; extra == "tiktoken"
+requires-dist: blobfile; extra == "tiktoken"
+requires-dist: mistral-common[image]>=1.10.0; extra == "mistral-common"
+requires-dist: jinja2>=3.1.0; extra == "chat-template"
+requires-dist: scikit-learn; extra == "sklearn"
+requires-dist: accelerate>=1.1.0; extra == "accelerate"
+requires-dist: faiss-cpu; extra == "retrieval"
+requires-dist: datasets>=2.15.0; extra == "retrieval"
+requires-dist: sagemaker>=2.31.0; extra == "sagemaker"
+requires-dist: deepspeed>=0.9.3; extra == "deepspeed"
+requires-dist: accelerate>=1.1.0; extra == "deepspeed"
+requires-dist: optuna; extra == "optuna"
+requires-dist: kernels<0.16,>=0.15.2; extra == "integrations"
+requires-dist: optuna; extra == "integrations"
+requires-dist: codecarbon>=2.8.1; extra == "integrations"
+requires-dist: ray[tune]>=2.7.0; extra == "integrations"
+requires-dist: ray[tune]>=2.7.0; extra == "ray"
+requires-dist: codecarbon>=2.8.1; extra == "codecarbon"
+requires-dist: openai>=1.98.0; extra == "serving"
+requires-dist: pydantic>=2; extra == "serving"
+requires-dist: uvicorn; extra == "serving"
+requires-dist: fastapi; extra == "serving"
+requires-dist: starlette; extra == "serving"
+requires-dist: rich; extra == "serving"
+requires-dist: torch>=2.4; extra == "serving"
+requires-dist: accelerate>=1.1.0; extra == "serving"
+requires-dist: num2words; extra == "num2words"
+requires-dist: optimum-benchmark>=0.3.0; extra == "benchmark"
+requires-dist: fugashi>=1.0; extra == "ja"
+requires-dist: ipadic<2.0,>=1.0.0; extra == "ja"
+requires-dist: unidic_lite>=1.0.7; extra == "ja"
+requires-dist: unidic>=1.0.2; extra == "ja"
+requires-dist: rhoknp<1.3.1,>=1.1.0; extra == "ja"
+requires-dist: sudachipy>=0.6.6; extra == "ja"
+requires-dist: sudachidict_core>=20220729; extra == "ja"
+requires-dist: pytest<9.0.0,>=7.2.0; extra == "testing"
+requires-dist: pytest-asyncio>=1.2.0; extra == "testing"
+requires-dist: pytest-random-order; extra == "testing"
+requires-dist: pytest-rich; extra == "testing"
+requires-dist: pytest-xdist; extra == "testing"
+requires-dist: pytest-order; extra == "testing"
+requires-dist: pytest-rerunfailures<16.0; extra == "testing"
+requires-dist: pytest-timeout; extra == "testing"
+requires-dist: pytest-env; extra == "testing"
+requires-dist: timeout-decorator; extra == "testing"
+requires-dist: parameterized>=0.9; extra == "testing"
+requires-dist: psutil; extra == "testing"
+requires-dist: dill<0.3.5; extra == "testing"
+requires-dist: evaluate>=0.4.6; extra == "testing"
+requires-dist: rouge-score!=0.0.7,!=0.0.8,!=0.1,!=0.1.1; extra == "testing"
+requires-dist: nltk<=3.8.1; extra == "testing"
+requires-dist: sacremoses; extra == "testing"
+requires-dist: rjieba; extra == "testing"
+requires-dist: beautifulsoup4; extra == "testing"
+requires-dist: tensorboard; extra == "testing"
+requires-dist: sacrebleu<2.0.0,>=1.4.12; extra == "testing"
+requires-dist: filelock; extra == "testing"
+requires-dist: hf-doc-builder; extra == "testing"
+requires-dist: datasets>=2.15.0; extra == "testing"
+requires-dist: ruff==0.14.10; extra == "testing"
+requires-dist: GitPython<3.1.19; extra == "testing"
+requires-dist: urllib3<2.0.0; extra == "testing"
+requires-dist: libcst; extra == "testing"
+requires-dist: rich; extra == "testing"
+requires-dist: ty==0.0.20; extra == "testing"
+requires-dist: tomli; extra == "testing"
+requires-dist: transformers-mlinter==0.1.1; extra == "testing"
+requires-dist: faiss-cpu; extra == "testing"
+requires-dist: datasets>=2.15.0; extra == "testing"
+requires-dist: sentencepiece!=0.1.92,>=0.1.91; extra == "testing"
+requires-dist: protobuf; extra == "testing"
+requires-dist: openai>=1.98.0; extra == "testing"
+requires-dist: pydantic>=2; extra == "testing"
+requires-dist: uvicorn; extra == "testing"
+requires-dist: fastapi; extra == "testing"
+requires-dist: starlette; extra == "testing"
+requires-dist: rich; extra == "testing"
+requires-dist: torch>=2.4; extra == "testing"
+requires-dist: accelerate>=1.1.0; extra == "testing"
+requires-dist: mistral-common[image]>=1.10.0; extra == "testing"
+requires-dist: deepspeed>=0.9.3; extra == "deepspeed-testing"
+requires-dist: accelerate>=1.1.0; extra == "deepspeed-testing"
+requires-dist: pytest<9.0.0,>=7.2.0; extra == "deepspeed-testing"
+requires-dist: pytest-asyncio>=1.2.0; extra == "deepspeed-testing"
+requires-dist: pytest-random-order; extra == "deepspeed-testing"
+requires-dist: pytest-rich; extra == "deepspeed-testing"
+requires-dist: pytest-xdist; extra == "deepspeed-testing"
+requires-dist: pytest-order; extra == "deepspeed-testing"
+requires-dist: pytest-rerunfailures<16.0; extra == "deepspeed-testing"
+requires-dist: pytest-timeout; extra == "deepspeed-testing"
+requires-dist: pytest-env; extra == "deepspeed-testing"
+requires-dist: timeout-decorator; extra == "deepspeed-testing"
+requires-dist: parameterized>=0.9; extra == "deepspeed-testing"
+requires-dist: psutil; extra == "deepspeed-testing"
+requires-dist: dill<0.3.5; extra == "deepspeed-testing"
+requires-dist: evaluate>=0.4.6; extra == "deepspeed-testing"
+requires-dist: rouge-score!=0.0.7,!=0.0.8,!=0.1,!=0.1.1; extra == "deepspeed-testing"
+requires-dist: nltk<=3.8.1; extra == "deepspeed-testing"
+requires-dist: sacremoses; extra == "deepspeed-testing"
+requires-dist: rjieba; extra == "deepspeed-testing"
+requires-dist: beautifulsoup4; extra == "deepspeed-testing"
+requires-dist: tensorboard; extra == "deepspeed-testing"
+requires-dist: sacrebleu<2.0.0,>=1.4.12; extra == "deepspeed-testing"
+requires-dist: filelock; extra == "deepspeed-testing"
+requires-dist: hf-doc-builder; extra == "deepspeed-testing"
+requires-dist: datasets>=2.15.0; extra == "deepspeed-testing"
+requires-dist: ruff==0.14.10; extra == "deepspeed-testing"
+requires-dist: GitPython<3.1.19; extra == "deepspeed-testing"
+requires-dist: urllib3<2.0.0; extra == "deepspeed-testing"
+requires-dist: libcst; extra == "deepspeed-testing"
+requires-dist: rich; extra == "deepspeed-testing"
+requires-dist: ty==0.0.20; extra == "deepspeed-testing"
+requires-dist: tomli; extra == "deepspeed-testing"
+requires-dist: transformers-mlinter==0.1.1; extra == "deepspeed-testing"
+requires-dist: faiss-cpu; extra == "deepspeed-testing"
+requires-dist: datasets>=2.15.0; extra == "deepspeed-testing"
+requires-dist: sentencepiece!=0.1.92,>=0.1.91; extra == "deepspeed-testing"
+requires-dist: protobuf; extra == "deepspeed-testing"
+requires-dist: openai>=1.98.0; extra == "deepspeed-testing"
+requires-dist: pydantic>=2; extra == "deepspeed-testing"
+requires-dist: uvicorn; extra == "deepspeed-testing"
+requires-dist: fastapi; extra == "deepspeed-testing"
+requires-dist: starlette; extra == "deepspeed-testing"
+requires-dist: rich; extra == "deepspeed-testing"
+requires-dist: torch>=2.4; extra == "deepspeed-testing"
+requires-dist: accelerate>=1.1.0; extra == "deepspeed-testing"
+requires-dist: mistral-common[image]>=1.10.0; extra == "deepspeed-testing"
+requires-dist: optuna; extra == "deepspeed-testing"
+requires-dist: sentencepiece!=0.1.92,>=0.1.91; extra == "deepspeed-testing"
+requires-dist: protobuf; extra == "deepspeed-testing"
+requires-dist: torch>=2.4; extra == "all"
+requires-dist: accelerate>=1.1.0; extra == "all"
+requires-dist: torchvision; extra == "all"
+requires-dist: Pillow<=15.0,>=10.0.1; extra == "all"
+requires-dist: torchaudio; extra == "all"
+requires-dist: librosa; extra == "all"
+requires-dist: pyctcdecode>=0.4.0; extra == "all"
+requires-dist: phonemizer; extra == "all"
+requires-dist: kenlm; extra == "all"
+requires-dist: av; extra == "all"
+requires-dist: kernels<0.16,>=0.15.2; extra == "all"
+requires-dist: timm>=1.0.23; extra == "all"
+requires-dist: sentencepiece!=0.1.92,>=0.1.91; extra == "all"
+requires-dist: protobuf; extra == "all"
+requires-dist: tiktoken; extra == "all"
+requires-dist: blobfile; extra == "all"
+requires-dist: jinja2>=3.1.0; extra == "all"
+requires-dist: num2words; extra == "all"
+requires-dist: mistral-common[image]>=1.10.0; extra == "all"
+requires-dist: torch>=2.4; extra == "dev"
+requires-dist: accelerate>=1.1.0; extra == "dev"
+requires-dist: torchvision; extra == "dev"
+requires-dist: Pillow<=15.0,>=10.0.1; extra == "dev"
+requires-dist: torchaudio; extra == "dev"
+requires-dist: librosa; extra == "dev"
+requires-dist: pyctcdecode>=0.4.0; extra == "dev"
+requires-dist: phonemizer; extra == "dev"
+requires-dist: kenlm; extra == "dev"
+requires-dist: av; extra == "dev"
+requires-dist: kernels<0.16,>=0.15.2; extra == "dev"
+requires-dist: timm>=1.0.23; extra == "dev"
+requires-dist: sentencepiece!=0.1.92,>=0.1.91; extra == "dev"
+requires-dist: protobuf; extra == "dev"
+requires-dist: tiktoken; extra == "dev"
+requires-dist: blobfile; extra == "dev"
+requires-dist: jinja2>=3.1.0; extra == "dev"
+requires-dist: num2words; extra == "dev"
+requires-dist: mistral-common[image]>=1.10.0; extra == "dev"
+requires-dist: pytest<9.0.0,>=7.2.0; extra == "dev"
+requires-dist: pytest-asyncio>=1.2.0; extra == "dev"
+requires-dist: pytest-random-order; extra == "dev"
+requires-dist: pytest-rich; extra == "dev"
+requires-dist: pytest-xdist; extra == "dev"
+requires-dist: pytest-order; extra == "dev"
+requires-dist: pytest-rerunfailures<16.0; extra == "dev"
+requires-dist: pytest-timeout; extra == "dev"
+requires-dist: pytest-env; extra == "dev"
+requires-dist: timeout-decorator; extra == "dev"
+requires-dist: parameterized>=0.9; extra == "dev"
+requires-dist: psutil; extra == "dev"
+requires-dist: dill<0.3.5; extra == "dev"
+requires-dist: evaluate>=0.4.6; extra == "dev"
+requires-dist: rouge-score!=0.0.7,!=0.0.8,!=0.1,!=0.1.1; extra == "dev"
+requires-dist: nltk<=3.8.1; extra == "dev"
+requires-dist: sacremoses; extra == "dev"
+requires-dist: rjieba; extra == "dev"
+requires-dist: beautifulsoup4; extra == "dev"
+requires-dist: tensorboard; extra == "dev"
+requires-dist: sacrebleu<2.0.0,>=1.4.12; extra == "dev"
+requires-dist: filelock; extra == "dev"
+requires-dist: hf-doc-builder; extra == "dev"
+requires-dist: datasets>=2.15.0; extra == "dev"
+requires-dist: ruff==0.14.10; extra == "dev"
+requires-dist: GitPython<3.1.19; extra == "dev"
+requires-dist: urllib3<2.0.0; extra == "dev"
+requires-dist: libcst; extra == "dev"
+requires-dist: rich; extra == "dev"
+requires-dist: ty==0.0.20; extra == "dev"
+requires-dist: tomli; extra == "dev"
+requires-dist: transformers-mlinter==0.1.1; extra == "dev"
+requires-dist: faiss-cpu; extra == "dev"
+requires-dist: datasets>=2.15.0; extra == "dev"
+requires-dist: sentencepiece!=0.1.92,>=0.1.91; extra == "dev"
+requires-dist: protobuf; extra == "dev"
+requires-dist: openai>=1.98.0; extra == "dev"
+requires-dist: pydantic>=2; extra == "dev"
+requires-dist: uvicorn; extra == "dev"
+requires-dist: fastapi; extra == "dev"
+requires-dist: starlette; extra == "dev"
+requires-dist: rich; extra == "dev"
+requires-dist: torch>=2.4; extra == "dev"
+requires-dist: accelerate>=1.1.0; extra == "dev"
+requires-dist: mistral-common[image]>=1.10.0; extra == "dev"
+requires-dist: fugashi>=1.0; extra == "dev"
+requires-dist: ipadic<2.0,>=1.0.0; extra == "dev"
+requires-dist: unidic_lite>=1.0.7; extra == "dev"
+requires-dist: unidic>=1.0.2; extra == "dev"
+requires-dist: rhoknp<1.3.1,>=1.1.0; extra == "dev"
+requires-dist: sudachipy>=0.6.6; extra == "dev"
+requires-dist: sudachidict_core>=20220729; extra == "dev"
+requires-dist: scikit-learn; extra == "dev"
+requires-python: >=3.10.0
+provides-extra: torch
+provides-extra: vision
+provides-extra: audio
+provides-extra: video
+provides-extra: timm
+provides-extra: quality
+provides-extra: docs
+provides-extra: kernels
+provides-extra: sentencepiece
+provides-extra: tiktoken
+provides-extra: mistral-common
+provides-extra: chat-template
+provides-extra: sklearn
+provides-extra: accelerate
+provides-extra: retrieval
+provides-extra: sagemaker
+provides-extra: deepspeed
+provides-extra: optuna
+provides-extra: integrations
+provides-extra: ray
+provides-extra: codecarbon
+provides-extra: serving
+provides-extra: num2words
+provides-extra: benchmark
+provides-extra: ja
+provides-extra: testing
+provides-extra: deepspeed-testing
+provides-extra: all
+provides-extra: dev
+

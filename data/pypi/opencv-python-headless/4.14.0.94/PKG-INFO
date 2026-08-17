@@ -1,0 +1,38 @@
+metadata-version: 2.1
+name: opencv_python_headless
+version: 4.14.0.94
+platform: UNKNOWN
+summary: Wrapper package for OpenCV python bindings.
+home-page: https://github.com/opencv/opencv-python
+maintainer: OpenCV Team
+license: Apache 2.0
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Education
+classifier: Intended Audience :: Information Technology
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: MacOS
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: POSIX
+classifier: Operating System :: Unix
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: C++
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Topic :: Scientific/Engineering
+classifier: Topic :: Scientific/Engineering :: Image Recognition
+classifier: Topic :: Software Development
+requires-python: >=3.6
+

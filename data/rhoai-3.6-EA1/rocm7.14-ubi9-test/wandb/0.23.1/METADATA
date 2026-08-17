@@ -1,0 +1,115 @@
+metadata-version: 2.5
+name: wandb
+version: 0.23.1
+summary: A CLI and library for interacting with the Weights & Biases API.
+author-email: Weights & Biases <support@wandb.com>
+license: MIT License
+                 
+                 Copyright (c) 2021 Weights and Biases, Inc.
+                 
+                 Permission is hereby granted, free of charge, to any person obtaining a copy
+                 of this software and associated documentation files (the "Software"), to deal
+                 in the Software without restriction, including without limitation the rights
+                 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+                 copies of the Software, and to permit persons to whom the Software is
+                 fur...
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: MIT License
+classifier: Natural Language :: English
+classifier: Programming Language :: Go
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: System :: Logging
+classifier: Topic :: System :: Monitoring
+requires-dist: click>=8.0.1
+requires-dist: eval-type-backport; python_version < "3.10"
+requires-dist: gitpython!=3.1.29,>=1.0.0
+requires-dist: packaging
+requires-dist: platformdirs
+requires-dist: protobuf!=4.21.0,!=5.28.0,<7,>=3.12.0; python_version < "3.9" and sys_platform == "linux"
+requires-dist: protobuf!=4.21.0,!=5.28.0,<7,>=3.15.0; python_version == "3.9" and sys_platform == "linux"
+requires-dist: protobuf!=4.21.0,!=5.28.0,<7,>=3.19.0; python_version > "3.9" and sys_platform == "linux"
+requires-dist: protobuf!=4.21.0,!=5.28.0,<7,>=3.19.0; sys_platform != "linux"
+requires-dist: pydantic<3
+requires-dist: pyyaml
+requires-dist: requests<3,>=2.0.0
+requires-dist: sentry-sdk>=2.0.0
+requires-dist: typing-extensions<5,>=4.8
+requires-dist: boto3; extra == "aws"
+requires-dist: botocore>=1.5.76; extra == "aws"
+requires-dist: azure-identity; extra == "azure"
+requires-dist: azure-storage-blob; extra == "azure"
+requires-dist: google-cloud-storage; extra == "gcp"
+requires-dist: filelock; extra == "importers"
+requires-dist: mlflow; extra == "importers"
+requires-dist: polars<=1.2.1; extra == "importers"
+requires-dist: rich; extra == "importers"
+requires-dist: tenacity; extra == "importers"
+requires-dist: google-cloud-storage; extra == "kubeflow"
+requires-dist: kubernetes; extra == "kubeflow"
+requires-dist: minio; extra == "kubeflow"
+requires-dist: sh; extra == "kubeflow"
+requires-dist: awscli; extra == "launch"
+requires-dist: azure-containerregistry; extra == "launch"
+requires-dist: azure-identity; extra == "launch"
+requires-dist: azure-storage-blob; extra == "launch"
+requires-dist: boto3; extra == "launch"
+requires-dist: botocore>=1.5.76; extra == "launch"
+requires-dist: chardet; extra == "launch"
+requires-dist: google-auth; extra == "launch"
+requires-dist: google-cloud-aiplatform; extra == "launch"
+requires-dist: google-cloud-artifact-registry; extra == "launch"
+requires-dist: google-cloud-compute; extra == "launch"
+requires-dist: google-cloud-storage; extra == "launch"
+requires-dist: iso8601; extra == "launch"
+requires-dist: jsonschema; extra == "launch"
+requires-dist: kubernetes; extra == "launch"
+requires-dist: kubernetes-asyncio; extra == "launch"
+requires-dist: nbconvert; extra == "launch"
+requires-dist: nbformat; extra == "launch"
+requires-dist: optuna; extra == "launch"
+requires-dist: pydantic; extra == "launch"
+requires-dist: pyyaml>=6.0.0; extra == "launch"
+requires-dist: tomli; extra == "launch"
+requires-dist: tornado>=6.5.0; python_version >= "3.9" and extra == "launch"
+requires-dist: typing-extensions; extra == "launch"
+requires-dist: bokeh; extra == "media"
+requires-dist: imageio>=2.28.1; extra == "media"
+requires-dist: moviepy>=1.0.0; extra == "media"
+requires-dist: numpy; extra == "media"
+requires-dist: pillow; extra == "media"
+requires-dist: plotly>=5.18.0; extra == "media"
+requires-dist: rdkit; extra == "media"
+requires-dist: soundfile; extra == "media"
+requires-dist: cloudpickle; extra == "models"
+requires-dist: orjson; extra == "perf"
+requires-dist: sweeps>=0.2.0; extra == "sweeps"
+requires-dist: wandb-workspaces; extra == "workspaces"
+requires-python: >=3.8
+project-url: Source, https://github.com/wandb/wandb
+project-url: Bug Reports, https://github.com/wandb/wandb/issues
+project-url: Documentation, https://docs.wandb.ai/
+provides-extra: aws
+provides-extra: azure
+provides-extra: gcp
+provides-extra: importers
+provides-extra: kubeflow
+provides-extra: launch
+provides-extra: media
+provides-extra: models
+provides-extra: perf
+provides-extra: sweeps
+provides-extra: workspaces
+

@@ -1,0 +1,4 @@
+packaging>=24.2
+pathspec>=0.10.1
+trove-classifiers
+pluggy>=1.0.0

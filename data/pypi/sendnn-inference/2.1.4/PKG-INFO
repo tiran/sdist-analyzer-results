@@ -1,0 +1,14 @@
+metadata-version: 2.4
+name: sendnn-inference
+version: 2.1.4
+dynamic: license-file
+summary: vLLM plugin for Spyre hardware support
+license: Apache 2
+license-file: LICENSE
+requires-dist: fms-model-optimizer[fp8-infer]<0.9,>=0.8.3
+requires-dist: ibm-fms<2,>=1.9.0
+requires-dist: vllm<0.22.1,>=0.19.1
+requires-dist: torch
+requires-dist: torchvision
+requires-python: >=3.11
+

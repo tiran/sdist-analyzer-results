@@ -1,0 +1,47 @@
+metadata-version: 2.4
+name: sphinxcontrib-jsmath
+version: 1.0.1
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: download-url
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: platform
+dynamic: provides-extra
+dynamic: requires-python
+dynamic: summary
+platform: any
+summary: A sphinx extension which renders display math in HTML via JavaScript
+home-page: http://sphinx-doc.org/
+download-url: https://pypi.org/project/sphinxcontrib-jsmath/
+author: Georg Brandl
+author-email: georg@python.org
+license: BSD
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Environment :: Web Environment
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Education
+classifier: License :: OSI Approved :: BSD License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.5
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Framework :: Sphinx
+classifier: Framework :: Sphinx :: Extension
+classifier: Topic :: Documentation
+classifier: Topic :: Documentation :: Sphinx
+classifier: Topic :: Text Processing
+classifier: Topic :: Utilities
+requires-dist: pytest; extra == "test"
+requires-dist: flake8; extra == "test"
+requires-dist: mypy; extra == "test"
+requires-python: >=3.5
+provides-extra: test
+

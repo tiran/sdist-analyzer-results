@@ -1,0 +1,70 @@
+[project]
+authors = [{ name = "long2ice", email = "long2ice@gmail.com" }]
+description = "The fastest asyncio MySQL/MariaDB driver for Python"
+keywords = ["driver", "asyncio", "mysql"]
+license = "Apache-2.0"
+name = "asyncmy"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = []
+version = "0.2.13"
+
+[project.urls]
+documentation = "https://github.com/long2ice/asyncmy"
+homepage = "https://github.com/long2ice/asyncmy"
+repository = "https://github.com/long2ice/asyncmy.git"
+
+[tool.poetry]
+include = ["CHANGELOG.md", "LICENSE", "README.md"]
+packages = [
+    { include = "asyncmy" },
+]
+
+[dependency-groups]
+dev = [
+    "cython",
+    "mypy",
+    "rich",
+    "ruff",
+]
+test = [
+    "pytest",
+    "mysqlclient",
+    "pymysql >=0.8.1",
+    "aiomysql",
+    # Breaking change in 0.23.*
+    # https://github.com/pytest-dev/pytest-asyncio/issues/706
+    "pytest-asyncio >=0.21.2,<0.22",
+    "pytest-mock",
+    "pytest-xdist",
+    "cryptography",
+    "uvloop; sys_platform != 'win32' and implementation_name == 'cpython'",
+]
+
+[tool.poetry.build]
+generate-setup-file = true
+script = "build_cython.py"
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core", "setuptools", "cython"]
+
+[tool.pytest.ini_options]
+asyncio_mode = 'auto'
+
+[tool.mypy]
+pretty = true
+ignore_missing_imports = true
+warn_unused_ignores = true
+# TODO: Uncomment next line after type hints improved
+#check_untyped_defs = true
+
+[tool.ruff]
+line-length = 100
+[tool.ruff.lint]
+extend-select = [
+    "FA",     # https://docs.astral.sh/ruff/rules/#flake8-future-annotations-fa
+    "UP",     # https://docs.astral.sh/ruff/rules/#pyupgrade-up
+    "RUF100", # https://docs.astral.sh/ruff/rules/#ruff-specific-rules-ruf
+]
+ignore = ["UP031", "UP032"] # https://docs.astral.sh/ruff/rules/printf-string-formatting/

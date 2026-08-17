@@ -1,0 +1,48 @@
+metadata-version: 2.4
+name: PyYAML
+version: 6.0.3
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: download-url
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: platform
+dynamic: project-url
+dynamic: requires-python
+dynamic: summary
+platform: Any
+summary: YAML parser and emitter for Python
+home-page: https://pyyaml.org/
+download-url: https://pypi.org/project/PyYAML/
+author: Kirill Simonov
+author-email: xi@resolvent.net
+license: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Cython
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: Text Processing :: Markup
+requires-python: >=3.8
+project-url: Bug Tracker, https://github.com/yaml/pyyaml/issues
+project-url: CI, https://github.com/yaml/pyyaml/actions
+project-url: Documentation, https://pyyaml.org/wiki/PyYAMLDocumentation
+project-url: Mailing lists, http://lists.sourceforge.net/lists/listinfo/yaml-core
+project-url: Source Code, https://github.com/yaml/pyyaml
+

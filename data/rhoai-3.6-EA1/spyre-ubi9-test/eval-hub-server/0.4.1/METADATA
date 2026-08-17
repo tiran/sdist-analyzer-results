@@ -1,0 +1,26 @@
+metadata-version: 2.4
+name: eval-hub-server
+version: 0.4.1
+summary: Server binary for eval-hub
+keywords: eval-hub,binary,server
+author-email: Rui Vieira <rui@redhat.com>
+license-expression: Apache-2.0
+classifier: Development Status :: 3 - Alpha
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: ruff>=0.14.14; extra == "dev"
+requires-dist: pytest>=9.0.3; extra == "dev"
+requires-dist: mypy>=1.0; extra == "dev"
+requires-dist: pyyaml>=6.0; extra == "dev"
+requires-dist: types-PyYAML>=6.0; extra == "dev"
+requires-python: >=3.11
+project-url: Homepage, https://github.com/eval-hub/eval-hub
+project-url: Repository, https://github.com/eval-hub/eval-hub
+project-url: Bug Tracker, https://github.com/eval-hub/eval-hub/issues
+provides-extra: dev
+

@@ -1,0 +1,25 @@
+metadata-version: 2.5
+name: aiofiles
+version: 24.1.0
+summary: File support for asyncio.
+author-email: Tin Tvrtkovic <tinchester@gmail.com>
+license: Apache-2.0
+license-file: LICENSE
+license-file: NOTICE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Framework :: AsyncIO
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+requires-python: >=3.8
+project-url: Changelog, https://github.com/Tinche/aiofiles#history
+project-url: Bug Tracker, https://github.com/Tinche/aiofiles/issues
+project-url: repository, https://github.com/Tinche/aiofiles
+

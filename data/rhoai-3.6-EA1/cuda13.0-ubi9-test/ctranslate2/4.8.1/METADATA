@@ -1,0 +1,41 @@
+metadata-version: 2.4
+name: ctranslate2
+version: 4.8.1
+dynamic: author
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: project-url
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: Fast inference engine for Transformer models
+keywords: opennmt nmt neural machine translation cuda mkl inference quantization
+home-page: https://opennmt.net
+author: OpenNMT
+license: MIT
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: GPU :: NVIDIA CUDA :: 12 :: 12.4
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+requires-dist: setuptools
+requires-dist: numpy
+requires-dist: pyyaml<7,>=5.3
+requires-python: >=3.9
+project-url: Documentation, https://opennmt.net/CTranslate2
+project-url: Forum, https://forum.opennmt.net
+project-url: Gitter, https://gitter.im/OpenNMT/CTranslate2
+project-url: Source, https://github.com/OpenNMT/CTranslate2
+

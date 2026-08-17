@@ -1,0 +1,28 @@
+metadata-version: 2.4
+name: nvidia-cutlass-dsl
+version: 4.5.2
+dynamic: license-file
+summary: NVIDIA CUTLASS Python DSL
+author: NVIDIA Corporation
+license-file: LICENSE
+classifier: Development Status :: 4 - Beta
+classifier: Environment :: GPU :: NVIDIA CUDA :: 12
+classifier: Environment :: GPU :: NVIDIA CUDA :: 13
+classifier: License :: Other/Proprietary License
+classifier: Operating System :: POSIX :: Linux
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Implementation :: CPython
+requires-dist: nvidia-cutlass-dsl-libs-base==4.5.2
+requires-dist: nvidia-cutlass-dsl-libs-cu13==4.5.2; extra == "cu13"
+requires-python: >=3.10
+project-url: Documentation, https://github.com/NVIDIA/cutlass
+project-url: Repository, https://github.com/NVIDIA/cutlass
+project-url: Issues, https://github.com/NVIDIA/cutlass/issues
+project-url: License, https://docs.nvidia.com/cutlass/latest/media/docs/pythonDSL/license.html
+provides-extra: cu13
+

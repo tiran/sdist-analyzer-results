@@ -1,0 +1,57 @@
+metadata-version: 2.4
+name: docling-mcp
+version: 3.0.0
+summary: Running Docling as an agent using tools
+keywords: AI,Docling,RAG,agentic,agents,artificial intelligence,document understanding,mcp,message control protocol
+author-email: Peter Staar <taa@zurich.ibm.com>, Adel Zaalouk <azaalouk@redhat.com>, Michele Dolfi <dol@zurich.ibm.com>, Panos Vagenas <pva@zurich.ibm.com>, Christoph Auer <cau@zurich.ibm.com>, Cesar Berrospi Ramis <ceb@zurich.ibm.com>
+maintainer-email: Peter Staar <taa@zurich.ibm.com>, Adel Zaalouk <azaalouk@redhat.com>, Michele Dolfi <dol@zurich.ibm.com>, Panos Vagenas <pva@zurich.ibm.com>, Christoph Auer <cau@zurich.ibm.com>, Cesar Berrospi Ramis <ceb@zurich.ibm.com>
+license-expression: MIT
+license-file: LICENSE
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+classifier: Topic :: Software Development :: Build Tools
+classifier: Typing :: Typed
+requires-dist: docling-core>=2.51.0
+requires-dist: docling-slim[service-client]~=2.92
+requires-dist: mcp[cli]<3.0.0,>=2.0.0
+requires-dist: pydantic-settings~=2.4
+requires-dist: pydantic~=2.10
+requires-dist: python-dotenv>=1.1.0
+requires-dist: llama-index-core>=0.12.28; extra == "llama-index-rag"
+requires-dist: llama-index-embeddings-huggingface>=0.5.2; extra == "llama-index-rag"
+requires-dist: llama-index-embeddings-openai>=0.3.1; extra == "llama-index-rag"
+requires-dist: llama-index-llms-openai-like>=0.3.0; extra == "llama-index-rag"
+requires-dist: llama-index-node-parser-docling>=0.3.1; extra == "llama-index-rag"
+requires-dist: llama-index-readers-docling>=0.3.2; extra == "llama-index-rag"
+requires-dist: llama-index-readers-file>=0.4.7; extra == "llama-index-rag"
+requires-dist: llama-index-vector-stores-milvus>=0.7.2; extra == "llama-index-rag"
+requires-dist: llama-index>=0.12.33; extra == "llama-index-rag"
+requires-dist: llama-stack-client<0.2.18,>=0.2.14; python_version >= "3.12" and extra == "llama-stack"
+requires-dist: docling-slim[standard]~=2.92; extra == "local"
+requires-dist: mellea~=0.3; extra == "mellea"
+requires-dist: accelerate>=0.20.0; extra == "smolagents"
+requires-dist: ollama>=0.1.0; extra == "smolagents"
+requires-dist: smolagents[litellm,mcp]>=1.0.0; extra == "smolagents"
+requires-dist: torch>=2.0.0; extra == "smolagents"
+requires-dist: transformers!=5.0.*,!=5.1.*,!=5.2.*,!=5.3.*,<5.9.0,>=4.42.0; sys_platform == "darwin" and extra == "smolagents"
+requires-dist: transformers!=5.0.*,!=5.1.*,!=5.2.*,!=5.3.*,<6.0.0,>=4.42.0; sys_platform != "darwin" and extra == "smolagents"
+requires-python: >=3.10
+project-url: Homepage, https://github.com/docling-project/docling-mcp
+project-url: Repository, https://github.com/docling-project/docling-mcp
+project-url: Issues, https://github.com/docling-project/docling-mcp/issues
+project-url: Changelog, https://github.com/docling-project/docling-mcp/blob/main/CHANGELOG.md
+provides-extra: llama-index-rag
+provides-extra: llama-stack
+provides-extra: local
+provides-extra: mellea
+provides-extra: smolagents
+

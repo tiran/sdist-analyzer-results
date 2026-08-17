@@ -1,0 +1,28 @@
+metadata-version: 2.4
+name: sanic-routing
+version: 23.12.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: platform
+dynamic: summary
+platform: any
+summary: Core routing component for Sanic
+home-page: https://github.com/sanic-org/sanic-routing/
+author: Adam Hopkins
+author-email: admhpkns@gmail.com
+license: MIT
+license-file: LICENSE
+classifier: Development Status :: 4 - Beta
+classifier: Environment :: Web Environment
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+

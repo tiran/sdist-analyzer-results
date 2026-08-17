@@ -1,0 +1,51 @@
+metadata-version: 2.4
+name: pyDeprecate
+version: 0.9.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: project-url
+dynamic: provides-extra
+dynamic: requires-python
+dynamic: summary
+summary: Python deprecation decorator: call forwarding, argument mapping, class proxying, CI audit. Zero deps.
+keywords: deprecation,decorator,API migration,call forwarding,argument renaming,backwards compatibility,CI audit
+home-page: https://borda.github.io/pyDeprecate/stable/
+author: Jiri Borovec
+author-email: j.borovec+github[at]gmail.com
+license: Apache-2.0
+license-file: LICENSE
+classifier: Environment :: Console
+classifier: Natural Language :: English
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Software Development :: Libraries
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: Software Development :: Quality Assurance
+requires-dist: packaging>=20.0; extra == "audit"
+requires-dist: tomli>=2.0; python_version < "3.11" and extra == "audit"
+requires-dist: fire; extra == "cli"
+requires-dist: rich; extra == "cli"
+requires-python: >=3.9
+project-url: Documentation, https://borda.github.io/pyDeprecate/stable/
+project-url: Source Code, https://github.com/Borda/pyDeprecate
+project-url: Bug Tracker, https://github.com/Borda/pyDeprecate/issues
+project-url: Changelog, https://github.com/Borda/pyDeprecate/blob/main/CHANGELOG.md
+project-url: Agent Guide, https://borda.github.io/pyDeprecate/llms.txt
+provides-extra: audit
+provides-extra: cli
+

@@ -1,0 +1,212 @@
+[project]
+name = "odfdo"
+version = "3.24.3"
+description = "Python library for OpenDocument Format"
+license = "Apache-2.0"
+license-files = [
+    "LICENSE",
+    "NOTICE.txt",
+]
+readme = "README.md"
+keywords = [
+    "python",
+    "library",
+    "ODF",
+    "OpenDocument",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+requires-python = ">=3.10, <4"
+dependencies = [
+    "lxml >=4.8.0, <5.1.1; python_version == '3.10'",
+    "lxml >=4.9.4, <7; python_version >= '3.11' and python_version < '3.13'",
+    "lxml >=5.3.0, <7; python_version >= '3.13'",
+    "typing-extensions >=4.15.0",
+]
+
+[[project.authors]]
+name = "Jérôme Dumonteil"
+email = "jerome.dumonteil@gmail.com"
+
+[project.urls]
+homepage = "https://github.com/jdum/odfdo"
+repository = "https://github.com/jdum/odfdo"
+changelog = "https://github.com/jdum/odfdo/blob/main/CHANGES.md"
+documentation = "https://jdum.github.io/odfdo/"
+
+[project.scripts]
+odfdo-diff = "odfdo.scripts.diff:main"
+odfdo-folder = "odfdo.scripts.folder:main"
+odfdo-flat = "odfdo.scripts.flat:main"
+odfdo-highlight = "odfdo.scripts.highlight:main"
+odfdo-show = "odfdo.scripts.show:main"
+odfdo-styles = "odfdo.scripts.styles:main"
+odfdo-replace = "odfdo.scripts.replace:main"
+odfdo-headers = "odfdo.scripts.headers:main"
+odfdo-table-shrink = "odfdo.scripts.table_shrink:main"
+odfdo-userfield = "odfdo.scripts.userfield:main"
+odfdo-markdown = "odfdo.scripts.to_markdown:main"
+odfdo-from-csv = "odfdo.scripts.from_csv:main"
+odfdo-to-csv = "odfdo.scripts.to_csv:main"
+odfdo-meta-print = "odfdo.scripts.meta_print:main"
+odfdo-meta-update = "odfdo.scripts.meta_update:main"
+
+[dependency-groups]
+doc = [
+    "griffe",
+    "mkdocs>=1.6.1,<2.0",
+    "mkdocs-material>=9.6.22",
+    "mkdocstrings>=0.30.1",
+    "mkdocstrings-python>=1.18.2",
+    "mkdocs-include-markdown-plugin>=7.2.0",
+]
+dev = [
+    "iniconfig>=2.1.0",
+    "pillow>=12.1.1",
+    "pytest>=8.4.2",
+    "pytest-xdist>=3.8.0",
+    "coverage>=7.10.0",
+    "pytest-cov>=7.0.0",
+    "tox>=4.51.0",
+    "ruff>=0.15.4",
+    "ty>=0.0.65",
+]
+
+[tool.uv]
+default-groups = [
+    "doc",
+    "dev",
+]
+
+[tool.uv.build-backend]
+source-exclude = [".DS_Store"]
+
+[tool.ty.environment]
+python-version = "3.10"
+
+[tool.ty.src]
+exclude = ["tests"]
+
+[tool.ty.rules]
+unresolved-attribute = "ignore"
+
+[[tool.ty.overrides]]
+include = ["recipes"]
+
+[tool.ty.overrides.rules]
+invalid-argument-type = "ignore"
+not-subscriptable = "ignore"
+
+[tool.isort]
+profile = "black"
+
+[tool.ruff]
+target-version = "py310"
+exclude = [".venv"]
+line-length = 88
+indent-width = 4
+
+[tool.ruff.lint]
+select = [
+    "YTT",
+    "S",
+    "B",
+    "A",
+    "C4",
+    "T10",
+    "SIM",
+    "I",
+    "C90",
+    "E",
+    "W",
+    "F",
+    "PGH",
+    "UP",
+    "RUF",
+    "TRY",
+]
+ignore = [
+    "E501",
+    "E731",
+    "PGH003",
+    "S603",
+    "A003",
+    "TRY003",
+    "SIM108",
+    "C901",
+    "B904",
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/test_*" = [
+    "S101",
+    "S404",
+    "RUF005",
+    "B007",
+    "UP017",
+    "YTT204",
+    "SIM117",
+]
+"tests/*/test_*" = [
+    "S101",
+    "S404",
+    "RUF005",
+    "B007",
+    "UP017",
+    "YTT204",
+    "SIM117",
+]
+"recipes/*" = [
+    "S101",
+    "SIM102",
+    "B903",
+]
+"recipes/accessing_a_single_element.py" = ["RUF001"]
+
+[tool.pytest]
+minversion = "8.0"
+testpaths = ["tests"]
+
+[tool.coverage.run]
+branch = true
+parallel = true
+source = ["odfdo"]
+
+[tool.coverage.report]
+skip_empty = true
+show_missing = false
+fail_under = 70
+exclude_also = [
+    "if TYPE_CHECKING:",
+    'if __name__ == "__main__":',
+]
+
+[tool.docformatter]
+in-place = true
+exclude = [
+    "tests",
+    "recipes",
+]
+recursive = true
+wrap-summaries = 79
+wrap-descriptions = 79
+blank = false
+close-quotes-on-newline = true
+non-strict = true
+
+[build-system]
+requires = ["uv_build>=0.9.0,<0.13.0"]
+build-backend = "uv_build"

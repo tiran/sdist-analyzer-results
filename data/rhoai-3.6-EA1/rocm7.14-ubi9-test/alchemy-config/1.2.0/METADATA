@@ -1,0 +1,15 @@
+metadata-version: 2.5
+name: alchemy-config
+version: 1.2.0
+summary: Configuration framework in Python for general configuration use.
+keywords: config
+author-email: Gabe Goodhart <ghart@us.ibm.com>
+license-expression: MIT
+license-file: LICENSE
+requires-dist: pyyaml>=5.3.1
+requires-dist: pytest-cov>=2.9.0; extra == "test"
+requires-dist: pytest>=5.3.2; extra == "test"
+requires-python: >=3.9
+project-url: Homepage, https://github.com/IBM/alchemy-config
+provides-extra: test
+

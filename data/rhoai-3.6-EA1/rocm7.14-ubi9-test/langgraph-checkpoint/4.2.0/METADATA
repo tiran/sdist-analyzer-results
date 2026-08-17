@@ -1,0 +1,14 @@
+metadata-version: 2.4
+name: langgraph-checkpoint
+version: 4.2.0
+summary: Library with base interfaces for LangGraph checkpoint savers.
+license-expression: MIT
+license-file: LICENSE
+requires-dist: langchain-core>=0.2.38
+requires-dist: ormsgpack>=1.12.0
+requires-python: >=3.10
+project-url: Source, https://github.com/langchain-ai/langgraph/tree/main/libs/checkpoint
+project-url: Twitter, https://x.com/langchain_oss
+project-url: Slack, https://www.langchain.com/join-community
+project-url: Reddit, https://www.reddit.com/r/LangChain/
+

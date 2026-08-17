@@ -1,2 +1,0 @@
-scikit-build-core>=0.10.0
-apache-tvm-ffi>=0.1.9

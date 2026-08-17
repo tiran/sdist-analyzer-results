@@ -1,2 +1,2 @@
-setuptools_scm
 pkgconfig
+setuptools_scm

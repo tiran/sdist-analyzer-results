@@ -1,0 +1,30 @@
+metadata-version: 2.1
+name: semantic_version
+version: 2.10.0
+platform: UNKNOWN
+summary: A library implementing the 'SemVer' scheme.
+keywords: semantic version,versioning,version
+home-page: https://github.com/rbarrois/python-semanticversion
+author: Raphaël Barrois
+author-email: raphael.barrois+semver@polytechnique.org
+license: BSD
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: BSD License
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 2.7
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.4
+classifier: Programming Language :: Python :: 3.5
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-python: >=2.7
+provides-extra: dev
+provides-extra: doc
+

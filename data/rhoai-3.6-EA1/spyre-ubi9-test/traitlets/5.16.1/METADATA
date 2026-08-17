@@ -1,0 +1,47 @@
+metadata-version: 2.4
+name: traitlets
+version: 5.16.1
+summary: Traitlets Python configuration system
+keywords: Interactive,Interpreter,Shell,Web
+author-email: IPython Development Team <ipython-dev@python.org>
+license: BSD 3-Clause License
+                 
+                 - Copyright (c) 2001-, IPython Development Team
+                 
+                 All rights reserved.
+                 
+                 Redistribution and use in source and binary forms, with or without
+                 modification, are permitted provided that the following conditions are met:
+                 
+                 1. Redistributions of source code must retain the above copyright notice, this
+                    list of conditions and the following disclaimer.
+                 
+                 2. Redistributions in binary form must repro...
+license-file: LICENSE
+classifier: Framework :: IPython
+classifier: Framework :: Jupyter
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: Intended Audience :: System Administrators
+classifier: License :: OSI Approved :: BSD License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Typing :: Typed
+requires-dist: myst-parser; extra == "docs"
+requires-dist: pydata-sphinx-theme; extra == "docs"
+requires-dist: sphinx; extra == "docs"
+requires-dist: argcomplete>=3.0.3; python_version < "3.12" and extra == "test"
+requires-dist: argcomplete>=3.5.2; python_version >= "3.12" and extra == "test"
+requires-dist: mypy>=2.0; implementation_name != "pypy" and extra == "test"
+requires-dist: pre-commit; extra == "test"
+requires-dist: pytest-mock; extra == "test"
+requires-dist: pytest-mypy-testing; implementation_name != "pypy" and extra == "test"
+requires-dist: pytest<10.0,>=7.0; extra == "test"
+requires-python: >=3.10
+project-url: Homepage, https://github.com/ipython/traitlets
+project-url: Documentation, https://traitlets.readthedocs.io
+project-url: Source, https://github.com/ipython/traitlets
+project-url: Tracker, https://github.com/ipython/traitlets/issues
+provides-extra: docs
+provides-extra: test
+

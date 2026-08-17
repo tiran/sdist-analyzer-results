@@ -1,0 +1,38 @@
+metadata-version: 2.4
+name: peewee
+version: 4.3.0
+dynamic: license-file
+summary: a little orm
+author-email: Charles Leifer <coleifer@gmail.com>
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Database
+classifier: Topic :: Database :: Front-Ends
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: pymysql; extra == "mysql"
+requires-dist: psycopg2-binary; extra == "postgres"
+requires-dist: psycopg[binary]; extra == "psycopg3"
+requires-dist: cysqlite>=0.3.5; extra == "cysqlite"
+requires-dist: aiosqlite; extra == "aiosqlite"
+requires-dist: greenlet; extra == "aiosqlite"
+requires-dist: aiomysql; extra == "aiomysql"
+requires-dist: greenlet; extra == "aiomysql"
+requires-dist: asyncpg; extra == "asyncpg"
+requires-dist: greenlet; extra == "asyncpg"
+requires-python: >=3.8
+project-url: Repository, https://github.com/coleifer/peewee
+project-url: Documentation, https://docs.peewee-orm.com/
+project-url: Changelog, https://github.com/coleifer/peewee/blob/master/CHANGELOG.md
+provides-extra: mysql
+provides-extra: postgres
+provides-extra: psycopg3
+provides-extra: cysqlite
+provides-extra: aiosqlite
+provides-extra: aiomysql
+provides-extra: asyncpg
+

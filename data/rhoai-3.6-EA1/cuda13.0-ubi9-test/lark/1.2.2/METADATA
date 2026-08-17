@@ -1,0 +1,28 @@
+metadata-version: 2.4
+name: lark
+version: 1.2.2
+dynamic: license-file
+summary: a modern parsing library
+keywords: Earley,LALR,parser,parsing,ast
+author-email: Erez Shinan <erezshin@gmail.com>
+license: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Python :: 3
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: Text Processing :: General
+classifier: Topic :: Text Processing :: Linguistic
+classifier: License :: OSI Approved :: MIT License
+requires-dist: regex; extra == "regex"
+requires-dist: js2py; extra == "nearley"
+requires-dist: atomicwrites; extra == "atomic-cache"
+requires-dist: interegular<0.4.0,>=0.3.1; extra == "interegular"
+requires-python: >=3.8
+project-url: Homepage, https://github.com/lark-parser/lark
+project-url: Download, https://github.com/lark-parser/lark/tarball/master
+provides-extra: regex
+provides-extra: nearley
+provides-extra: atomic-cache
+provides-extra: interegular
+

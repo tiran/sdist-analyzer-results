@@ -1,0 +1,33 @@
+metadata-version: 2.4
+name: distro
+version: 1.9.0
+dynamic: license-file
+platform: All
+summary: Distro - an OS platform information API
+home-page: https://github.com/python-distro/distro
+author: Nir Cohen
+author-email: nir36g@gmail.com
+license: Apache License, Version 2.0
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: System Administrators
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: POSIX :: Linux
+classifier: Operating System :: POSIX :: BSD
+classifier: Operating System :: POSIX :: BSD :: FreeBSD
+classifier: Operating System :: POSIX :: BSD :: NetBSD
+classifier: Operating System :: POSIX :: BSD :: OpenBSD
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: System :: Operating System
+requires-python: >=3.6
+

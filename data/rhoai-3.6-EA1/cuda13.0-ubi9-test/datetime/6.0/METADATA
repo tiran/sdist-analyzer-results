@@ -1,0 +1,37 @@
+metadata-version: 2.4
+name: DateTime
+version: 6.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: This package provides a DateTime data type, as known from Zope. Unless you need to communicate with Zope APIs, you're probably better off using Python's built-in datetime module.
+home-page: https://github.com/zopefoundation/DateTime
+author: Zope Foundation and Contributors
+author-email: zope-dev@zope.dev
+license: ZPL-2.1
+license-file: LICENSE.txt
+classifier: Development Status :: 6 - Mature
+classifier: Environment :: Web Environment
+classifier: Framework :: Zope :: 5
+classifier: License :: OSI Approved :: Zope Public License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+requires-dist: zope.interface
+requires-dist: pytz
+requires-python: >=3.10
+

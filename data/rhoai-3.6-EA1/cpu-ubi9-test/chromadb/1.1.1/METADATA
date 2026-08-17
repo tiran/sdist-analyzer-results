@@ -1,0 +1,44 @@
+metadata-version: 2.4
+name: chromadb
+version: 1.1.1
+summary: Chroma.
+author-email: Jeff Huber <jeff@trychroma.com>, Anton Troynikov <anton@trychroma.com>
+classifier: Programming Language :: Python :: 3
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: OS Independent
+requires-dist: build>=1.0.3
+requires-dist: pydantic>=1.9
+requires-dist: pybase64>=1.4.1
+requires-dist: uvicorn[standard]>=0.18.3
+requires-dist: numpy>=1.22.5
+requires-dist: posthog<6.0.0,>=2.4.0
+requires-dist: typing-extensions>=4.5.0
+requires-dist: onnxruntime>=1.14.1
+requires-dist: opentelemetry-api>=1.2.0
+requires-dist: opentelemetry-exporter-otlp-proto-grpc>=1.2.0
+requires-dist: opentelemetry-sdk>=1.2.0
+requires-dist: tokenizers>=0.13.2
+requires-dist: pypika>=0.48.9
+requires-dist: tqdm>=4.65.0
+requires-dist: overrides>=7.3.1
+requires-dist: importlib-resources
+requires-dist: graphlib-backport>=1.0.3; python_full_version < "3.9"
+requires-dist: grpcio>=1.58.0
+requires-dist: bcrypt>=4.0.1
+requires-dist: typer>=0.9.0
+requires-dist: kubernetes>=28.1.0
+requires-dist: tenacity>=8.2.3
+requires-dist: pyyaml>=6.0.0
+requires-dist: mmh3>=4.0.1
+requires-dist: orjson>=3.9.12
+requires-dist: httpx>=0.27.0
+requires-dist: rich>=10.11.0
+requires-dist: jsonschema>=4.19.0
+requires-dist: chroma-hnswlib==0.7.6; extra == "dev"
+requires-dist: fastapi>=0.115.9; extra == "dev"
+requires-dist: opentelemetry-instrumentation-fastapi>=0.41b0; extra == "dev"
+requires-python: >=3.9
+project-url: Bug Tracker, https://github.com/chroma-core/chroma/issues
+project-url: Homepage, https://github.com/chroma-core/chroma
+provides-extra: dev
+

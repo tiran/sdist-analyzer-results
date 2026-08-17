@@ -1,0 +1,26 @@
+metadata-version: 2.4
+name: PyMatting
+version: 1.1.15
+dynamic: license-file
+summary: Python package for alpha matting.
+keywords: alpha matting
+author-email: The PyMatting Developers <pymatting@gmail.com>
+license: MIT
+license-file: LICENSE.md
+classifier: Programming Language :: Python :: 3
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+requires-dist: numpy>=1.16.0
+requires-dist: pillow>=5.2.0
+requires-dist: numba>=0.60.0
+requires-dist: scipy>=1.1.0
+requires-dist: cupy-cuda12x>=13.6.0; extra == "gpu"
+requires-dist: pyopencl>=2019.1.2; extra == "gpu"
+requires-dist: flake8>=3.7.9; extra == "test"
+requires-dist: pytest>=5.3.4; extra == "test"
+requires-python: >=3
+project-url: Homepage, https://pymatting.github.io
+project-url: Source, https://github.com/pymatting/pymatting
+provides-extra: gpu
+provides-extra: test
+

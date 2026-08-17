@@ -1,0 +1,81 @@
+metadata-version: 2.4
+name: tqdm
+version: 4.70.0
+dynamic: license-file
+summary: Fast, Extensible Progress Meter
+keywords: progressbar,progressmeter,progress,bar,meter,rate,eta,console,terminal,time
+maintainer-email: tqdm developers <devs@tqdm.ml>
+license: MPL-2.0 AND MIT
+license-file: LICENCE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Environment :: MacOS X
+classifier: Environment :: Other Environment
+classifier: Environment :: Win32 (MS Windows)
+classifier: Environment :: X11 Applications
+classifier: Framework :: IPython
+classifier: Framework :: Jupyter
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Education
+classifier: Intended Audience :: End Users/Desktop
+classifier: Intended Audience :: Other Audience
+classifier: Intended Audience :: System Administrators
+classifier: Operating System :: MacOS
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Operating System :: Microsoft
+classifier: Operating System :: Microsoft :: MS-DOS
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: POSIX
+classifier: Operating System :: POSIX :: BSD
+classifier: Operating System :: POSIX :: BSD :: FreeBSD
+classifier: Operating System :: POSIX :: Linux
+classifier: Operating System :: POSIX :: SunOS/Solaris
+classifier: Operating System :: Unix
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: Implementation
+classifier: Programming Language :: Python :: Implementation :: IronPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Programming Language :: Unix Shell
+classifier: Topic :: Desktop Environment
+classifier: Topic :: Education :: Computer Aided Instruction (CAI)
+classifier: Topic :: Education :: Testing
+classifier: Topic :: Office/Business
+classifier: Topic :: Other/Nonlisted Topic
+classifier: Topic :: Software Development :: Build Tools
+classifier: Topic :: Software Development :: Libraries
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: Software Development :: Pre-processors
+classifier: Topic :: Software Development :: User Interfaces
+classifier: Topic :: System :: Installation/Setup
+classifier: Topic :: System :: Logging
+classifier: Topic :: System :: Monitoring
+classifier: Topic :: System :: Shells
+classifier: Topic :: Terminals
+classifier: Topic :: Utilities
+requires-dist: colorama; platform_system == "Windows"
+requires-dist: requests; extra == "discord"
+requires-dist: envwrap; extra == "discord"
+requires-dist: slack-sdk; extra == "slack"
+requires-dist: envwrap; extra == "slack"
+requires-dist: requests; extra == "telegram"
+requires-dist: envwrap; extra == "telegram"
+requires-dist: ipywidgets>=6; extra == "notebook"
+requires-python: >=3.8
+project-url: homepage, https://tqdm.github.io
+project-url: repository, https://github.com/tqdm/tqdm
+project-url: changelog, https://tqdm.github.io/releases
+project-url: wiki, https://github.com/tqdm/tqdm/wiki
+provides-extra: discord
+provides-extra: slack
+provides-extra: telegram
+provides-extra: notebook
+

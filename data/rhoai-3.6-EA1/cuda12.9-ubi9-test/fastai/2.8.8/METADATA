@@ -1,0 +1,59 @@
+metadata-version: 2.4
+name: fastai
+version: 2.8.8
+dynamic: license-file
+summary: fastai simplifies training fast and accurate neural nets using modern best practices
+keywords: fastai,,deep,learning,,machine,learning
+author-email: "Jeremy Howard, Sylvain Gugger, and contributors" <info@fast.ai>
+license: Apache-2.0
+license-file: LICENSE
+classifier: Natural Language :: English
+classifier: Intended Audience :: Developers
+classifier: Development Status :: 4 - Beta
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+requires-dist: fastdownload<2,>=0.0.5
+requires-dist: fastcore>=1.14.6
+requires-dist: fasttransform>=0.0.2
+requires-dist: torchvision>=0.11
+requires-dist: matplotlib
+requires-dist: pandas
+requires-dist: requests
+requires-dist: pyyaml
+requires-dist: fastprogress>=0.2.4
+requires-dist: pillow>=9.0.0
+requires-dist: scikit-learn
+requires-dist: scipy
+requires-dist: spacy<4
+requires-dist: packaging
+requires-dist: plum-dispatch
+requires-dist: cloudpickle
+requires-dist: torch<3,>=1.10
+requires-dist: nbdev; extra == "dev"
+requires-dist: ipywidgets; extra == "dev"
+requires-dist: lightning; extra == "dev"
+requires-dist: pytorch-ignite; extra == "dev"
+requires-dist: transformers; extra == "dev"
+requires-dist: sentencepiece; extra == "dev"
+requires-dist: tensorboard; extra == "dev"
+requires-dist: pydicom; extra == "dev"
+requires-dist: catalyst; extra == "dev"
+requires-dist: flask_compress; extra == "dev"
+requires-dist: captum<=0.8.0,>=0.4.1; extra == "dev"
+requires-dist: flask; extra == "dev"
+requires-dist: wandb; extra == "dev"
+requires-dist: kornia; extra == "dev"
+requires-dist: scikit-image; extra == "dev"
+requires-dist: comet_ml; extra == "dev"
+requires-dist: albumentations; extra == "dev"
+requires-dist: opencv-python; extra == "dev"
+requires-dist: pyarrow; extra == "dev"
+requires-dist: ninja; extra == "dev"
+requires-dist: timm>=0.9; extra == "dev"
+requires-dist: accelerate>=0.21; extra == "dev"
+requires-dist: ipykernel; extra == "dev"
+requires-python: >=3.10
+project-url: Repository, https://github.com/fastai/fastai
+project-url: Documentation, https://docs.fast.ai/
+provides-extra: dev
+

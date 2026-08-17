@@ -1,0 +1,20 @@
+metadata-version: 2.1
+name: mercantile
+version: 1.2.1
+platform: UNKNOWN
+summary: Web mercator XYZ tile utilities
+keywords: mapping,web mercator,tiles
+home-page: https://github.com/mapbox/mercantile
+author: Sean Gillies
+author-email: sean@mapbox.com
+license: BSD
+classifier: Programming Language :: Python :: 2.7
+classifier: Programming Language :: Python :: 3
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: BSD License
+classifier: Operating System :: OS Independent
+classifier: Topic :: Scientific/Engineering :: GIS
+provides-extra: dev
+provides-extra: test
+

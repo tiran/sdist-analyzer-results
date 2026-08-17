@@ -1,0 +1,35 @@
+metadata-version: 2.4
+name: zope.event
+version: 6.2
+dynamic: license-file
+summary: Very basic event publishing system
+keywords: event,framework,dispatch,subscribe,publish
+author-email: Zope Foundation and contributors <zope-dev@zope.dev>
+maintainer-email: Plone Foundation and contributors <zope-dev@zope.dev>
+license-expression: ZPL-2.1
+license-file: LICENSE.txt
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: Jython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Framework :: Zope :: 3
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: Sphinx; extra == "docs"
+requires-dist: zope.testrunner>=6.4; extra == "test"
+requires-python: >=3.10
+project-url: Documentation, https://zopeevent.readthedocs.io/
+project-url: Source, https://github.com/zopefoundation/zope.event
+project-url: Issues, https://github.com/zopefoundation/zope.event/issues
+project-url: Changelog, https://raw.githubusercontent.com/zopefoundation/zope.event/master/CHANGES.rst
+provides-extra: docs
+provides-extra: test
+

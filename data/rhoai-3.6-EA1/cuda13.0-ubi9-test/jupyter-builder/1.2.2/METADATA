@@ -1,0 +1,46 @@
+metadata-version: 2.5
+name: jupyter_builder
+version: 1.2.2
+summary: JupyterLab build tools
+keywords: ipython,jupyter
+author-email: Jupyter Development Team <jupyter@googlegroups.com>
+license-expression: BSD-3-Clause AND MIT AND ISC
+license-file: LICENSE
+license-file: THIRD_PARTY_LICENSES/semver.LICENSE.txt
+license-file: THIRD_PARTY_LICENSES/yarn.js.LICENSE.txt
+classifier: Framework :: Jupyter
+classifier: Framework :: Jupyter :: JupyterLab
+classifier: Framework :: Jupyter :: JupyterLab :: 4
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: BSD License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-dist: jupyter-core
+requires-dist: tomli; python_version < "3.11"
+requires-dist: traitlets
+requires-dist: build; extra == "dev"
+requires-dist: hatch; extra == "dev"
+requires-dist: mypy; extra == "dev"
+requires-dist: pre-commit; extra == "dev"
+requires-dist: ruff==0.16.0; extra == "dev"
+requires-dist: copier<10,>=9.3; extra == "test"
+requires-dist: coverage[toml]>=7.10.6; extra == "test"
+requires-dist: deptry; extra == "test"
+requires-dist: jinja2-time; extra == "test"
+requires-dist: pytest-check-links>=0.7; extra == "test"
+requires-dist: pytest-cov>=7; extra == "test"
+requires-dist: pytest>=7.0; extra == "test"
+requires-python: >=3.10
+project-url: Homepage, https://jupyter.org
+project-url: Source, https://github.com/jupyterlab/jupyter-builder
+project-url: Issues, https://github.com/jupyterlab/jupyter-builder/issues/new/choose
+project-url: Zulip, https://jupyter.zulipchat.com/#narrow/channel/469762-jupyterlab
+project-url: Pypi, https://pypi.org/project/jupyter-builder
+provides-extra: dev
+provides-extra: test
+

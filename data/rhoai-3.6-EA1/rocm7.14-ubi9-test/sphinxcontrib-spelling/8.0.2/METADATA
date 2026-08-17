@@ -1,0 +1,34 @@
+metadata-version: 2.5
+name: sphinxcontrib-spelling
+version: 8.0.2
+summary: Sphinx spelling extension
+author-email: Doug Hellmann <doug@doughellmann.com>
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Environment :: Web Environment
+classifier: Framework :: Sphinx :: Extension
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: BSD License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Topic :: Documentation
+classifier: Topic :: Utilities
+requires-dist: pyenchant>=3.1.1
+requires-dist: requests>=2.32.3
+requires-dist: sphinx>=3.0.0
+requires-dist: coverage!=4.4,>=4.0; extra == "test"
+requires-dist: pytest; extra == "test"
+requires-dist: pytest-cov; extra == "test"
+requires-python: >=3.10
+project-url: homepage, https://sphinxcontrib-spelling.readthedocs.io/en/latest/
+project-url: repository, https://github.com/sphinx-contrib/spelling
+provides-extra: test
+

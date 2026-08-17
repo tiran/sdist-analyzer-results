@@ -1,0 +1,7 @@
+metadata-version: 2.4
+name: sccache
+version: 0.16.0
+license-expression: Apache-2.0
+license-file: LICENSE
+project-url: Source Code, https://github.com/mozilla/sccache/
+

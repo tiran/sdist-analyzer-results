@@ -1,0 +1,76 @@
+metadata-version: 2.4
+name: gevent
+version: 26.8.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: maintainer
+dynamic: maintainer-email
+dynamic: project-url
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: Coroutine-based network library
+keywords: greenlet coroutine cooperative multitasking light threads monkey
+home-page: http://www.gevent.org/
+author: Denis Bilenko
+author-email: denis.bilenko@gmail.com
+maintainer: Jason Madden
+maintainer-email: jason@seecoresoftware.com
+license: MIT
+license-file: LICENSE
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Operating System :: POSIX
+classifier: Operating System :: Microsoft :: Windows
+classifier: Topic :: Internet
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Intended Audience :: Developers
+classifier: Development Status :: 4 - Beta
+requires-dist: greenlet>=3.2.2; platform_python_implementation == "CPython"
+requires-dist: cffi>=2.1.1; platform_python_implementation == "CPython" and sys_platform == "win32"
+requires-dist: zope.event
+requires-dist: zope.interface
+requires-dist: dnspython<2.0,>=1.16.0; python_version < "3.10" and extra == "dnspython"
+requires-dist: idna; python_version < "3.10" and extra == "dnspython"
+requires-dist: psutil>=6.0.0; (sys_platform != "win32" or platform_python_implementation == "CPython") and extra == "monitor"
+requires-dist: cffi>=2.1.1; platform_python_implementation == "CPython" and extra == "recommended"
+requires-dist: dnspython<2.0,>=1.16.0; python_version < "3.10" and extra == "recommended"
+requires-dist: idna; python_version < "3.10" and extra == "recommended"
+requires-dist: psutil>=6.0.0; (sys_platform != "win32" or platform_python_implementation == "CPython") and extra == "recommended"
+requires-dist: sphinx; extra == "docs"
+requires-dist: furo; extra == "docs"
+requires-dist: repoze.sphinx.autointerface; extra == "docs"
+requires-dist: sphinxcontrib-programoutput; extra == "docs"
+requires-dist: zope.schema; extra == "docs"
+requires-dist: cffi>=2.1.1; platform_python_implementation == "CPython" and extra == "test"
+requires-dist: dnspython<2.0,>=1.16.0; python_version < "3.10" and extra == "test"
+requires-dist: idna; python_version < "3.10" and extra == "test"
+requires-dist: psutil>=6.0.0; (sys_platform != "win32" or platform_python_implementation == "CPython") and extra == "test"
+requires-dist: requests; extra == "test"
+requires-dist: coverage<7.13,>=5.0; sys_platform != "win32" and extra == "test"
+requires-dist: objgraph; extra == "test"
+requires-python: >=3.10
+project-url: Bug Tracker, https://github.com/gevent/gevent/issues
+project-url: Source Code, https://github.com/gevent/gevent/
+project-url: Documentation, http://www.gevent.org
+project-url: Changes, https://www.gevent.org/changelog.html
+provides-extra: dnspython
+provides-extra: events
+provides-extra: monitor
+provides-extra: recommended
+provides-extra: docs
+provides-extra: test
+

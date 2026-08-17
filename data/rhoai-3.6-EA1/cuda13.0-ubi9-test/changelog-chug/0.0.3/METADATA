@@ -1,0 +1,62 @@
+metadata-version: 2.4
+name: changelog-chug
+version: 0.0.3
+dynamic: license-file
+dynamic: maintainer
+dynamic: summary
+summary: Parser library for project Change Log documents.
+keywords: version,changelog,release,packaging
+author-email: Ben Finney <ben+python@benfinney.id.au>
+maintainer: Ben Finney <ben+python@benfinney.id>
+license: Copying this work
+                 #################
+                 
+                 changelog-chug is `free software`_; you are free to
+                 redistribute it and/or modify it under specific conditions.
+                 
+                 ..  _free software: https://www.gnu.org/philosophy/free-sw.html
+                 
+                 
+                 Software
+                 ========
+                 
+                 Copyright © 2008–2023 Ben Finney <ben+python@benfinney.id.au>
+                 
+                 This is free software: you may copy, modify, and/or redistribute this
+                 work under the terms ...
+license-file: LICENSE.AGPL-3
+license-file: COPYING
+classifier: Development Status :: 2 - Pre-Alpha
+classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+classifier: Programming Language :: Python :: 3
+classifier: Intended Audience :: Developers
+classifier: Topic :: Software Development :: Build Tools
+requires-dist: semver>=3.0.0
+requires-dist: docutils>=0.21.0
+requires-dist: pip-check; extra == "static-analysis"
+requires-dist: mccabe~=0.7; extra == "static-analysis"
+requires-dist: pycodestyle~=2.12; extra == "static-analysis"
+requires-dist: ruff~=0.6; extra == "static-analysis"
+requires-dist: changelog-chug[static-analysis]; extra == "test"
+requires-dist: testtools; extra == "test"
+requires-dist: testscenarios>=0.4; extra == "test"
+requires-dist: coverage; extra == "test"
+requires-dist: changelog-chug[test]; extra == "devel"
+requires-dist: pyupgrade~=3.17; extra == "devel"
+requires-dist: isort~=5.13; extra == "devel"
+requires-dist: changelog-chug[devel]; extra == "build"
+requires-dist: wheel; extra == "build"
+requires-dist: build; extra == "build"
+requires-dist: changelog-chug[build]; extra == "publish"
+requires-dist: twine; extra == "publish"
+requires-python: >=3.7
+project-url: Home Page, https://git.sr.ht/~bignose/changelog-chug
+project-url: Change Log, https://git.sr.ht/~bignose/changelog-chug/tree/main/item/ChangeLog
+project-url: Source, https://git.sr.ht/~bignose/changelog-chug
+project-url: Issue Tracker, https://todo.sr.ht/~bignose/changelog-chug
+provides-extra: static-analysis
+provides-extra: test
+provides-extra: devel
+provides-extra: build
+provides-extra: publish
+

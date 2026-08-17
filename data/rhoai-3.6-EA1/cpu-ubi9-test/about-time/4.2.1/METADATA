@@ -1,0 +1,33 @@
+metadata-version: 2.4
+name: about-time
+version: 4.2.1
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: requires-python
+dynamic: summary
+summary: Easily measure timing and throughput of code blocks, with beautiful human friendly representations.
+keywords: python,track,tracker,time,code,blocks,monitor,statistics,analytics
+home-page: https://github.com/rsalmei/about-time
+author: Rogério Sampaio de Almeida
+author-email: rsalmei@gmail.com
+license: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Environment :: Console
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+requires-python: <4,>=3.7
+

@@ -1,0 +1,86 @@
+metadata-version: 2.5
+name: sentinelhub
+version: 3.11.5
+summary: Python API for Sentinel Hub
+author-email: Sinergise EO research team <eoresearch@sinergise.com>
+license: MIT License
+                 
+                 Copyright (c) 2018 Sinergise Ltd.
+                 
+                 Permission is hereby granted, free of charge, to any person obtaining a copy
+                 of this software and associated documentation files (the "Software"), to deal
+                 in the Software without restriction, including without limitation the rights
+                 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+                 copies of the Software, and to permit persons to whom the Software is
+                 furnished to ...
+license-file: LICENSE.md
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Education
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: MacOS
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: Unix
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Topic :: Scientific/Engineering
+classifier: Topic :: Software Development
+requires-dist: aenum>=2.1.4
+requires-dist: click
+requires-dist: dataclasses-json
+requires-dist: numpy
+requires-dist: oauthlib
+requires-dist: pillow>=9.2.0
+requires-dist: pyproj>=2.2.0
+requires-dist: python-dateutil
+requires-dist: requests-oauthlib>=1.0.0
+requires-dist: requests>=2.27.0
+requires-dist: shapely
+requires-dist: tifffile>=2020.9.30
+requires-dist: tomli
+requires-dist: tomli-w
+requires-dist: tqdm
+requires-dist: typing-extensions>=4.5.0
+requires-dist: utm
+requires-dist: boto3; extra == "aws"
+requires-dist: botocore; extra == "aws"
+requires-dist: boto3-stubs>=1.20.0; extra == "dev"
+requires-dist: build; extra == "dev"
+requires-dist: click>=8.0.0; extra == "dev"
+requires-dist: moto[s3]>=5.0.0; extra == "dev"
+requires-dist: mypy>=0.990; extra == "dev"
+requires-dist: pandas; extra == "dev"
+requires-dist: pre-commit; extra == "dev"
+requires-dist: pylint>=2.14.0; extra == "dev"
+requires-dist: pytest-cov; extra == "dev"
+requires-dist: pytest-dependency; extra == "dev"
+requires-dist: pytest-mock; extra == "dev"
+requires-dist: pytest>=4.0.0; extra == "dev"
+requires-dist: ray[default]; extra == "dev"
+requires-dist: requests-mock; extra == "dev"
+requires-dist: twine; extra == "dev"
+requires-dist: types-python-dateutil; extra == "dev"
+requires-dist: types-requests; extra == "dev"
+requires-dist: types-urllib3; extra == "dev"
+requires-dist: docutils; extra == "docs"
+requires-dist: ipython; extra == "docs"
+requires-dist: matplotlib; extra == "docs"
+requires-dist: nbsphinx; extra == "docs"
+requires-dist: sphinx-mdinclude==0.5.4; extra == "docs"
+requires-dist: sphinx-rtd-theme==1.3.0; extra == "docs"
+requires-dist: sphinx==7.1.2; extra == "docs"
+requires-python: >=3.8
+project-url: Homepage, https://github.com/sentinel-hub/sentinelhub-py
+project-url: Documentation, https://sentinelhub-py.readthedocs.io
+project-url: Issues, https://github.com/sentinel-hub/sentinelhub-py/issues
+project-url: Source, https://github.com/sentinel-hub/sentinelhub-py
+project-url: Forum, https://forum.sentinel-hub.com
+provides-extra: aws
+provides-extra: dev
+provides-extra: docs
+

@@ -1,0 +1,21 @@
+metadata-version: 2.1
+name: flit_scm
+version: 1.7.0
+summary: A PEP 518 build backend that uses setuptools_scm to generate a version file from your version control system, then flit to build the package.
+keywords: flit,pep518,build,packaging,scm
+author-email: Will Da Silva <will@willdasilva.xyz>
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python
+classifier: Topic :: Software Development
+classifier: Topic :: Software Development :: Build Tools
+requires-dist: flit-core~=3.5
+requires-dist: setuptools_scm>=6.4
+requires-dist: tomli; python_version < "3.11"
+requires-python: >=3.6
+project-url: documentation, https://gitlab.com/WillDaSilva/flit_scm
+project-url: homepage, https://gitlab.com/WillDaSilva/flit_scm
+project-url: repository, https://gitlab.com/WillDaSilva/flit_scm
+

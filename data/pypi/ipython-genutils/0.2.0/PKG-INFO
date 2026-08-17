@@ -1,0 +1,21 @@
+metadata-version: 1.1
+name: ipython_genutils
+version: 0.2.0
+platform: Linux
+platform: Mac OS X
+platform: Windows
+summary: Vestigial utilities from IPython
+keywords: Interactive,Interpreter,Shell,Web
+home-page: http://ipython.org
+author: IPython Development Team
+author-email: ipython-dev@scipy.org
+license: BSD
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: System Administrators
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: BSD License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 2.7
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.3
+

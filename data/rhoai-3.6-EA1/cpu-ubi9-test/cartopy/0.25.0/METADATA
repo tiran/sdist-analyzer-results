@@ -1,0 +1,57 @@
+metadata-version: 2.4
+name: Cartopy
+version: 0.25.0
+dynamic: license-file
+summary: A Python library for cartographic visualizations with Matplotlib
+keywords: cartography,map,transform,projection,pyproj,shapely,shapefile
+author: UK Met Office
+license-expression: BSD-3-Clause
+license-file: LICENSE
+classifier: Development Status :: 4 - Beta
+classifier: Framework :: Matplotlib
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: POSIX
+classifier: Operating System :: POSIX :: AIX
+classifier: Operating System :: POSIX :: Linux
+classifier: Programming Language :: C++
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Topic :: Scientific/Engineering
+classifier: Topic :: Scientific/Engineering :: GIS
+classifier: Topic :: Scientific/Engineering :: Visualization
+requires-dist: numpy>=1.23
+requires-dist: matplotlib>=3.6
+requires-dist: shapely>=2.0
+requires-dist: packaging>=21
+requires-dist: pyshp>=2.3
+requires-dist: pyproj>=3.3.1
+requires-dist: pydata-sphinx-theme; extra == "doc"
+requires-dist: sphinx; extra == "doc"
+requires-dist: sphinx-gallery; extra == "doc"
+requires-dist: pykdtree; extra == "speedups"
+requires-dist: fiona; extra == "speedups"
+requires-dist: OWSLib>=0.27.0; extra == "ows"
+requires-dist: pillow>=9.1; extra == "ows"
+requires-dist: pillow>=9.1; extra == "plotting"
+requires-dist: scipy>=1.9; extra == "plotting"
+requires-dist: beautifulsoup4; extra == "srtm"
+requires-dist: pytest>=5.1.2; extra == "test"
+requires-dist: pytest-mpl>=0.11; extra == "test"
+requires-dist: pytest-xdist; extra == "test"
+requires-dist: pytest-cov; extra == "test"
+requires-dist: coveralls; extra == "test"
+requires-python: >=3.10
+project-url: documentation, https://scitools.org.uk/cartopy/docs/latest/
+project-url: homepage, https://github.com/SciTools/cartopy
+provides-extra: doc
+provides-extra: speedups
+provides-extra: ows
+provides-extra: plotting
+provides-extra: srtm
+provides-extra: test
+

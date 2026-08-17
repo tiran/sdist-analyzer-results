@@ -1,0 +1,49 @@
+metadata-version: 2.5
+name: rh-model-signing
+version: 1.0.3
+summary: A tool for signing and verifying ML models (Red Hat Tech Preview)
+keywords: AI security,AI supply chain security,ML security,ML supply chain security,artificial intelligence,machine learning,model signing
+author-email: Sigstore Authors <sigstore-dev@googlegroups.com>
+maintainer-email: Aleksy Siek <asiek@redhat.com>, Kevin Conner <kconner@redhat.com>, Nina Bongartz <nolear@redhat.com>, Sachin Sampras <sacm@redhat.com>
+license-expression: Apache-2.0
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+classifier: Topic :: Security
+classifier: Topic :: Security :: Cryptography
+classifier: Typing :: Typed
+requires-dist: asn1crypto
+requires-dist: blake3
+requires-dist: click
+requires-dist: cryptography>=46.0.7
+requires-dist: in-toto-attestation
+requires-dist: oras>=0.2.30
+requires-dist: pyasn1>=0.6.2
+requires-dist: sigstore-models>=0.0.5
+requires-dist: sigstore>=4.2
+requires-dist: typing-extensions
+requires-dist: opentelemetry-api; extra == "otel"
+requires-dist: opentelemetry-distro; extra == "otel"
+requires-dist: opentelemetry-exporter-otlp; extra == "otel"
+requires-dist: opentelemetry-instrumentation; extra == "otel"
+requires-dist: opentelemetry-instrumentation-urllib3; extra == "otel"
+requires-dist: opentelemetry-sdk; extra == "otel"
+requires-dist: pykcs11; extra == "pkcs11"
+requires-python: >=3.10
+project-url: Homepage, https://pypi.org/project/rh-model-signing/
+project-url: Changelog, https://github.com/securesign/model-transparency/blob/main/CHANGELOG.md
+project-url: Documentation, https://github.com/securesign/model-transparency
+project-url: Source, https://github.com/securesign/model-transparency
+project-url: Issues, https://github.com/securesign/model-transparency/issues
+project-url: PyPI, https://pypi.org/project/rh-model-signing/
+provides-extra: otel
+provides-extra: pkcs11
+

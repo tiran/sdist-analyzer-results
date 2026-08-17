@@ -1,0 +1,105 @@
+metadata-version: 2.1
+name: scikit-learn
+version: 1.5.2
+summary: A set of python modules for machine learning and data mining
+maintainer-email: scikit-learn developers <scikit-learn@python.org>
+license: BSD 3-Clause License
+                  
+                  Copyright (c) 2007-2024 The scikit-learn developers.
+                  All rights reserved.
+                  
+                  Redistribution and use in source and binary forms, with or without
+                  modification, are permitted provided that the following conditions are met:
+                  
+                  * Redistributions of source code must retain the above copyright notice, this
+                    list of conditions and the following disclaimer.
+                  
+                  * Redistributions in binary form must r...
+classifier: Intended Audience :: Science/Research
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: BSD License
+classifier: Programming Language :: C
+classifier: Programming Language :: Python
+classifier: Topic :: Software Development
+classifier: Topic :: Scientific/Engineering
+classifier: Development Status :: 5 - Production/Stable
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: POSIX
+classifier: Operating System :: Unix
+classifier: Operating System :: MacOS
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+requires-dist: numpy>=1.19.5
+requires-dist: scipy>=1.6.0
+requires-dist: joblib>=1.2.0
+requires-dist: threadpoolctl>=3.1.0
+requires-dist: numpy>=1.19.5; extra == "build"
+requires-dist: scipy>=1.6.0; extra == "build"
+requires-dist: cython>=3.0.10; extra == "build"
+requires-dist: meson-python>=0.16.0; extra == "build"
+requires-dist: numpy>=1.19.5; extra == "install"
+requires-dist: scipy>=1.6.0; extra == "install"
+requires-dist: joblib>=1.2.0; extra == "install"
+requires-dist: threadpoolctl>=3.1.0; extra == "install"
+requires-dist: matplotlib>=3.3.4; extra == "benchmark"
+requires-dist: pandas>=1.1.5; extra == "benchmark"
+requires-dist: memory_profiler>=0.57.0; extra == "benchmark"
+requires-dist: matplotlib>=3.3.4; extra == "docs"
+requires-dist: scikit-image>=0.17.2; extra == "docs"
+requires-dist: pandas>=1.1.5; extra == "docs"
+requires-dist: seaborn>=0.9.0; extra == "docs"
+requires-dist: memory_profiler>=0.57.0; extra == "docs"
+requires-dist: sphinx>=7.3.7; extra == "docs"
+requires-dist: sphinx-copybutton>=0.5.2; extra == "docs"
+requires-dist: sphinx-gallery>=0.16.0; extra == "docs"
+requires-dist: numpydoc>=1.2.0; extra == "docs"
+requires-dist: Pillow>=7.1.2; extra == "docs"
+requires-dist: pooch>=1.6.0; extra == "docs"
+requires-dist: sphinx-prompt>=1.4.0; extra == "docs"
+requires-dist: sphinxext-opengraph>=0.9.1; extra == "docs"
+requires-dist: plotly>=5.14.0; extra == "docs"
+requires-dist: polars>=0.20.30; extra == "docs"
+requires-dist: sphinx-design>=0.5.0; extra == "docs"
+requires-dist: sphinx-design>=0.6.0; extra == "docs"
+requires-dist: sphinxcontrib-sass>=0.3.4; extra == "docs"
+requires-dist: pydata-sphinx-theme>=0.15.3; extra == "docs"
+requires-dist: sphinx-remove-toctrees>=1.0.0.post1; extra == "docs"
+requires-dist: matplotlib>=3.3.4; extra == "examples"
+requires-dist: scikit-image>=0.17.2; extra == "examples"
+requires-dist: pandas>=1.1.5; extra == "examples"
+requires-dist: seaborn>=0.9.0; extra == "examples"
+requires-dist: pooch>=1.6.0; extra == "examples"
+requires-dist: plotly>=5.14.0; extra == "examples"
+requires-dist: matplotlib>=3.3.4; extra == "tests"
+requires-dist: scikit-image>=0.17.2; extra == "tests"
+requires-dist: pandas>=1.1.5; extra == "tests"
+requires-dist: pytest>=7.1.2; extra == "tests"
+requires-dist: pytest-cov>=2.9.0; extra == "tests"
+requires-dist: ruff>=0.2.1; extra == "tests"
+requires-dist: black>=24.3.0; extra == "tests"
+requires-dist: mypy>=1.9; extra == "tests"
+requires-dist: pyamg>=4.0.0; extra == "tests"
+requires-dist: polars>=0.20.30; extra == "tests"
+requires-dist: pyarrow>=12.0.0; extra == "tests"
+requires-dist: numpydoc>=1.2.0; extra == "tests"
+requires-dist: pooch>=1.6.0; extra == "tests"
+requires-dist: conda-lock==2.5.6; extra == "maintenance"
+requires-python: >=3.9
+project-url: homepage, https://scikit-learn.org
+project-url: source, https://github.com/scikit-learn/scikit-learn
+project-url: download, https://pypi.org/project/scikit-learn/#files
+project-url: tracker, https://github.com/scikit-learn/scikit-learn/issues
+project-url: release notes, https://scikit-learn.org/stable/whats_new
+provides-extra: build
+provides-extra: install
+provides-extra: benchmark
+provides-extra: docs
+provides-extra: examples
+provides-extra: tests
+provides-extra: maintenance
+

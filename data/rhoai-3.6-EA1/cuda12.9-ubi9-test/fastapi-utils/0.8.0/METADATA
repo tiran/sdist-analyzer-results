@@ -1,0 +1,49 @@
+metadata-version: 2.4
+name: fastapi-utils
+version: 0.8.0
+summary: Reusable utilities for FastAPI
+keywords: fastapi,OOP,RESTful
+author: Yuval Levi
+author-email: yuvall9313@gmail.com
+license: MIT
+license-file: LICENSE
+classifier: Development Status :: 4 - Beta
+classifier: Environment :: Web Environment
+classifier: Framework :: AsyncIO
+classifier: Framework :: FastAPI
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Information Technology
+classifier: Intended Audience :: System Administrators
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Topic :: Internet
+classifier: Topic :: Internet :: WWW/HTTP
+classifier: Topic :: Internet :: WWW/HTTP :: HTTP Servers
+classifier: Topic :: Software Development
+classifier: Topic :: Software Development :: Libraries
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: Utilities
+classifier: Typing :: Typed
+requires-dist: fastapi<1.0,>=0.89
+requires-dist: psutil<6,>=5
+requires-dist: pydantic<3.0,>1.0
+requires-dist: pydantic-settings<3.0.0,>=2.0.1; extra == "all"
+requires-dist: sqlalchemy<3.0,>=1.4; extra == "all" or extra == "session"
+requires-dist: typing-inspect<0.10.0,>=0.9.0; extra == "all"
+requires-python: <4.0,>=3.8
+project-url: Documentation, https://fastapiutils.github.io/fastapi-utils/
+project-url: Homepage, https://fastapiutils.github.io/fastapi-utils/
+project-url: Repository, https://github.com/dmontagu/fastapi-utils
+provides-extra: all
+provides-extra: session
+

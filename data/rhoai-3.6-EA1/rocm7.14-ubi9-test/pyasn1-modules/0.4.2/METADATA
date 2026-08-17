@@ -1,0 +1,40 @@
+metadata-version: 2.4
+name: pyasn1_modules
+version: 0.4.2
+dynamic: license-file
+platform: any
+summary: A collection of ASN.1-based protocols modules
+home-page: https://github.com/pyasn1/pyasn1-modules
+author: Ilya Etingof
+author-email: etingof@gmail.com
+maintainer: pyasn1 maintenance organization
+maintainer-email: Christian Heimes <christian@python.org>
+license: BSD
+license-file: LICENSE.txt
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Education
+classifier: Intended Audience :: Information Technology
+classifier: Intended Audience :: System Administrators
+classifier: Intended Audience :: Telecommunications Industry
+classifier: License :: OSI Approved :: BSD License
+classifier: Natural Language :: English
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Communications
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: pyasn1<0.7.0,>=0.6.1
+requires-python: >=3.8
+project-url: Source, https://github.com/pyasn1/pyasn1-modules
+project-url: Issues, https://github.com/pyasn1/pyasn1-modules/issues
+project-url: Changelog, https://github.com/pyasn1/pyasn1-modules/blob/master/CHANGES.txt
+

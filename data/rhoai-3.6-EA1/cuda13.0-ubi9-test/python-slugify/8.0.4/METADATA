@@ -1,0 +1,38 @@
+metadata-version: 2.4
+name: python-slugify
+version: 8.0.4
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: A Python slugify application that also handles Unicode
+home-page: https://github.com/un33k/python-slugify
+author: Val Neekman
+author-email: info@neekware.com
+license: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Natural Language :: English
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+requires-dist: text-unidecode>=1.3
+requires-dist: Unidecode>=1.1.1; extra == "unidecode"
+requires-python: >=3.7
+provides-extra: unidecode
+
