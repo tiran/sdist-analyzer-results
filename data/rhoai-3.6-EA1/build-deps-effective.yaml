@@ -1,0 +1,648 @@
+setuptools:
+  count: 912
+  constraints:
+    setuptools: 959
+    setuptools<82: 19
+    setuptools<81: 5
+    setuptools<=82.0.1: 5
+    setuptools<80: 5
+    setuptools==80.9: 2
+    setuptools<83.1: 1
+    setuptools!=74,!=74.1,!=74.1.1,!=74.1.2: 1
+    setuptools<83: 1
+    setuptools<70: 1
+    setuptools~=80.9: 1
+    setuptools==82.0.1: 1
+    setuptools<=83: 1
+    setuptools!=74: 1
+    setuptools!=24,!=34,!=34.0.1,!=34.0.2,!=34.0.3,!=34.1,!=34.1.1,!=34.2,!=34.3,!=34.3.1,!=34.3.2,!=36.2: 1
+    setuptools==80.10.2: 1
+    setuptools<82.1: 1
+    setuptools<=80.10.2: 1
+hatchling:
+  count: 337
+  constraints:
+    hatchling: 329
+    hatchling==1.26.3: 4
+    hatchling==1.30.1: 4
+    hatchling==1.29: 2
+    hatchling<1.32: 1
+    hatchling<1.28: 1
+    hatchling<2: 1
+wheel:
+  count: 212
+  constraints:
+    wheel: 209
+    wheel<1: 2
+    wheel<=0.47: 1
+    wheel!=0.38,!=0.38.1: 1
+setuptools-scm:
+  count: 157
+  constraints:
+    setuptools-scm: 163
+    setuptools-scm<10: 3
+    setuptools-scm==8.2: 2
+    setuptools-scm<9: 2
+    setuptools-scm==9.2: 2
+    setuptools-scm<=8.3: 1
+    setuptools-scm<8: 1
+    setuptools-scm<11: 1
+    setuptools-scm!=10.1: 1
+flit-core:
+  count: 77
+  constraints:
+    flit-core<4: 58
+    flit-core: 16
+    flit-core==3.12: 5
+    flit-core<5: 4
+    flit-core~=3.5: 1
+poetry-core:
+  count: 76
+  constraints:
+    poetry-core: 71
+    poetry-core<3: 4
+    poetry-core<2: 2
+cython:
+  count: 66
+  constraints:
+    cython: 54
+    cython<4: 9
+    cython<3.2: 4
+    cython<3.3: 3
+    cython==3.1.1: 2
+    cython<4a0: 2
+    cython~=3.1: 2
+    cython==3.2.4: 1
+    cython==3.2.1: 1
+    cython<3.1: 1
+    cython~=3.2: 1
+    cython<3: 1
+    cython~=3.0.5: 1
+    cython<=3.2: 1
+    cython!=3.2b1: 1
+    cython<=3.0.12: 1
+hatch-vcs:
+  count: 57
+  constraints:
+    hatch-vcs: 56
+    hatch-vcs<0.6: 1
+maturin:
+  count: 48
+  constraints:
+    maturin<2: 44
+    maturin: 10
+    maturin!=1.12,<2: 1
+numpy:
+  count: 43
+  constraints:
+    numpy: 32
+    numpy<3: 12
+    numpy==2.0.2: 2
+    numpy<2.4: 2
+    numpy<2.5: 2
+    numpy<2.6: 2
+    numpy~=2: 1
+    numpy!=2.5: 1
+    numpy<2.7: 1
+    numpy<2.8: 1
+packaging:
+  count: 35
+  constraints:
+    packaging: 34
+    packaging==26.2: 4
+pybind11:
+  count: 28
+  constraints:
+    pybind11: 24
+    pybind11!=2.13.3: 2
+    pybind11==2.11.1: 1
+    pybind11<3.1: 1
+    pybind11<3: 1
+hatch-jupyter-builder:
+  count: 27
+  constraints:
+    hatch-jupyter-builder: 27
+pdm-backend:
+  count: 27
+  constraints:
+    pdm-backend: 27
+scikit-build-core:
+  count: 24
+  constraints:
+    scikit-build-core: 25
+hatch-fancy-pypi-readme:
+  count: 23
+  constraints:
+    hatch-fancy-pypi-readme: 23
+    hatch-fancy-pypi-readme<26: 1
+torch:
+  count: 23
+  constraints:
+    torch: 23
+    torch==2.11.*: 1
+jupyterlab:
+  count: 21
+  constraints:
+    jupyterlab<5: 13
+    jupyterlab~=4: 3
+    jupyterlab: 2
+    jupyterlab==4.*: 1
+    jupyterlab<5a0: 1
+    jupyterlab~=4.5: 1
+hatch-nodejs-version:
+  count: 19
+  constraints:
+    hatch-nodejs-version: 19
+uv-build:
+  count: 18
+  constraints:
+    uv-build<0.10: 6
+    uv-build<0.12: 6
+    uv-build<0.13: 2
+    uv-build<0.11: 1
+    uv-build==0.11.8: 1
+    uv-build: 1
+    uv-build<0.9: 1
+    uv-build<1: 1
+uv-dynamic-versioning:
+  count: 17
+  constraints:
+    uv-dynamic-versioning: 19
+patchelf:
+  count: 15
+  constraints:
+    patchelf: 14
+    patchelf<=0.17.2.4: 1
+build:
+  count: 13
+  constraints:
+    build: 13
+ninja:
+  count: 13
+  constraints:
+    ninja: 12
+    ninja==1.11.1.1: 1
+meson-python:
+  count: 11
+  constraints:
+    meson-python: 10
+    meson-python<0.19: 2
+    meson-python<0.17: 1
+    meson-python!=0.17.*: 1
+    meson-python<0.16: 1
+    meson-python==0.13.1: 1
+    meson-python<1: 1
+    meson-python<0.20: 1
+    meson-python<0.21: 1
+    meson-python<0.22: 1
+setuptools-rust:
+  count: 9
+  constraints:
+    setuptools-rust: 9
+cffi:
+  count: 7
+  constraints:
+    cffi: 9
+    cffi~=1.17: 1
+cmake:
+  count: 6
+  constraints:
+    cmake: 4
+    cmake<4: 1
+    cmake<=4.3.4: 1
+coherent-licensed:
+  count: 6
+  constraints:
+    coherent-licensed: 6
+jupyter-builder:
+  count: 6
+  constraints:
+    jupyter-builder: 5
+    jupyter-builder<2: 1
+jupyter-packaging:
+  count: 6
+  constraints:
+    jupyter-packaging: 2
+    jupyter-packaging~=0.12.2: 1
+    jupyter-packaging~=0.7: 1
+    jupyter-packaging<2: 1
+    jupyter-packaging<2,~=0.10: 1
+pathspec:
+  count: 6
+  constraints:
+    pathspec==1.1.1: 4
+    pathspec: 2
+pluggy:
+  count: 6
+  constraints:
+    pluggy==1.6: 4
+    pluggy: 2
+trove-classifiers:
+  count: 6
+  constraints:
+    trove-classifiers==2026.6.1.19: 4
+    trove-classifiers: 2
+typing-extensions:
+  count: 5
+  constraints:
+    typing-extensions: 5
+apache-tvm-ffi:
+  count: 4
+  constraints:
+    apache-tvm-ffi: 2
+    apache-tvm-ffi<0.2: 1
+    apache-tvm-ffi!=0.1.8,!=0.1.8.post0,<0.2: 1
+filelock:
+  count: 4
+  constraints:
+    filelock: 4
+nanobind:
+  count: 4
+  constraints:
+    nanobind: 3
+    nanobind<3: 1
+pip:
+  count: 4
+  constraints:
+    pip: 4
+pkgconfig:
+  count: 4
+  constraints:
+    pkgconfig: 5
+pyyaml:
+  count: 4
+  constraints:
+    pyyaml: 4
+setuptools-git-versioning:
+  count: 4
+  constraints:
+    setuptools-git-versioning: 2
+    setuptools-git-versioning<3: 2
+versioneer:
+  count: 4
+  constraints:
+    versioneer==0.28: 2
+    versioneer: 1
+    versioneer==0.29: 1
+cymem:
+  count: 3
+  constraints:
+    cymem<2.1: 3
+expandvars:
+  count: 3
+  constraints:
+    expandvars: 3
+hatch-requirements-txt:
+  count: 3
+  constraints:
+    hatch-requirements-txt: 3
+meson:
+  count: 3
+  constraints:
+    meson: 3
+    meson<1.11: 1
+murmurhash:
+  count: 3
+  constraints:
+    murmurhash<1.1: 3
+pbr:
+  count: 3
+  constraints:
+    pbr: 4
+pytest-runner:
+  count: 3
+  constraints:
+    pytest-runner: 3
+requests:
+  count: 3
+  constraints:
+    requests: 3
+scikit-build:
+  count: 3
+  constraints:
+    scikit-build: 3
+scipy:
+  count: 3
+  constraints:
+    scipy: 2
+    scipy<1.17: 2
+    scipy<1.18: 1
+    scipy<2: 1
+vcs-versioning:
+  count: 3
+  constraints:
+    vcs-versioning: 3
+    vcs-versioning<2: 1
+    vcs-versioning<3: 1
+click:
+  count: 2
+  constraints:
+    click: 2
+docutils:
+  count: 2
+  constraints:
+    docutils: 2
+flit-scm:
+  count: 2
+  constraints:
+    flit-scm: 1
+    flit-scm<2: 1
+grpcio-tools:
+  count: 2
+  constraints:
+    grpcio-tools: 2
+hatch-docstring-description:
+  count: 2
+  constraints:
+    hatch-docstring-description: 2
+jinja2:
+  count: 2
+  constraints:
+    jinja2: 2
+pandas:
+  count: 2
+  constraints:
+    pandas: 2
+pdm-pep517:
+  count: 2
+  constraints:
+    pdm-pep517: 2
+poetry-dynamic-versioning:
+  count: 2
+  constraints:
+    poetry-dynamic-versioning: 1
+    poetry-dynamic-versioning<2: 1
+preshed:
+  count: 2
+  constraints:
+    preshed<3.1: 2
+psutil:
+  count: 2
+  constraints:
+    psutil: 2
+pyproject-metadata:
+  count: 2
+  constraints:
+    pyproject-metadata: 3
+pythran:
+  count: 2
+  constraints:
+    pythran<0.19: 2
+    pythran: 1
+tomli:
+  count: 2
+  constraints:
+    tomli: 2
+tqdm:
+  count: 2
+  constraints:
+    tqdm: 2
+aotriton:
+  count: 1
+  constraints:
+    aotriton: 1
+ast-serialize:
+  count: 1
+  constraints:
+    ast-serialize<1: 1
+babel:
+  count: 1
+  constraints:
+    babel: 1
+blis:
+  count: 1
+  constraints:
+    blis<1.4: 1
+calver:
+  count: 1
+  constraints:
+    calver: 1
+changelog-chug:
+  count: 1
+  constraints:
+    changelog-chug: 1
+cibuildwheel:
+  count: 1
+  constraints:
+    cibuildwheel<4: 1
+cmdstanpy:
+  count: 1
+  constraints:
+    cmdstanpy: 1
+colorama:
+  count: 1
+  constraints:
+    colorama: 1
+cppy:
+  count: 1
+  constraints:
+    cppy: 1
+cuda-python:
+  count: 1
+  constraints:
+    cuda-python: 1
+cysignals:
+  count: 1
+  constraints:
+    cysignals: 1
+delocate:
+  count: 1
+  constraints:
+    delocate<1: 1
+flashinfer-cubin:
+  count: 1
+  constraints:
+    flashinfer-cubin: 1
+flydsl:
+  count: 1
+  constraints:
+    flydsl<0.1.5: 1
+    flydsl==0.2: 1
+gitdb:
+  count: 1
+  constraints:
+    gitdb==4.0.12: 1
+gitpython:
+  count: 1
+  constraints:
+    gitpython==3.1.50: 1
+greenlet:
+  count: 1
+  constraints:
+    greenlet: 1
+hatch:
+  count: 1
+  constraints:
+    hatch: 1
+hatch-build-scripts:
+  count: 1
+  constraints:
+    hatch-build-scripts: 1
+iniconfig:
+  count: 1
+  constraints:
+    iniconfig: 1
+jupyter:
+  count: 1
+  constraints:
+    jupyter: 1
+jupyter-client:
+  count: 1
+  constraints:
+    jupyter-client: 1
+lazy-loader:
+  count: 1
+  constraints:
+    lazy-loader: 1
+libcst:
+  count: 1
+  constraints:
+    libcst: 1
+librt:
+  count: 1
+  constraints:
+    librt: 1
+markdown:
+  count: 1
+  constraints:
+    markdown: 1
+more-itertools:
+  count: 1
+  constraints:
+    more-itertools: 1
+mypy:
+  count: 1
+  constraints:
+    mypy: 1
+mypy-extensions:
+  count: 1
+  constraints:
+    mypy-extensions: 1
+nose:
+  count: 1
+  constraints:
+    nose: 1
+nvidia-cudnn-frontend:
+  count: 1
+  constraints:
+    nvidia-cudnn-frontend: 1
+nvidia-ml-py:
+  count: 1
+  constraints:
+    nvidia-ml-py: 1
+oldest-supported-numpy:
+  count: 1
+  constraints:
+    oldest-supported-numpy: 1
+ordered-set:
+  count: 1
+  constraints:
+    ordered-set: 1
+pkginfo:
+  count: 1
+  constraints:
+    pkginfo: 1
+poetry:
+  count: 1
+  constraints:
+    poetry: 1
+protobuf:
+  count: 1
+  constraints:
+    protobuf==4.25.1: 1
+puccinialin:
+  count: 1
+  constraints:
+    puccinialin: 1
+py-cpuinfo:
+  count: 1
+  constraints:
+    py-cpuinfo: 1
+pybindgen:
+  count: 1
+  constraints:
+    pybindgen==0.22: 1
+pyclibrary:
+  count: 1
+  constraints:
+    pyclibrary: 1
+pycparser:
+  count: 1
+  constraints:
+    pycparser: 1
+pynpm:
+  count: 1
+  constraints:
+    pynpm: 1
+pynvml:
+  count: 1
+  constraints:
+    pynvml: 1
+pytest:
+  count: 1
+  constraints:
+    pytest: 1
+semver:
+  count: 1
+  constraints:
+    semver: 1
+six:
+  count: 1
+  constraints:
+    six: 1
+smmap:
+  count: 1
+  constraints:
+    smmap==5.0.3: 1
+sphinx:
+  count: 1
+  constraints:
+    sphinx!=4: 1
+standard-distutils:
+  count: 1
+  constraints:
+    standard-distutils: 1
+tabulate:
+  count: 1
+  constraints:
+    tabulate: 1
+thinc:
+  count: 1
+  constraints:
+    thinc<8.4: 1
+toml:
+  count: 1
+  constraints:
+    toml: 1
+tomlkit:
+  count: 1
+  constraints:
+    tomlkit: 1
+tree-sitter:
+  count: 1
+  constraints:
+    tree-sitter<0.22: 1
+twine:
+  count: 1
+  constraints:
+    twine: 1
+types-psutil:
+  count: 1
+  constraints:
+    types-psutil: 1
+types-pyyaml:
+  count: 1
+  constraints:
+    types-pyyaml: 1
+types-setuptools:
+  count: 1
+  constraints:
+    types-setuptools: 1
+versioningit:
+  count: 1
+  constraints:
+    versioningit: 1
+z3-solver:
+  count: 1
+  constraints:
+    z3-solver<4.15.5: 1

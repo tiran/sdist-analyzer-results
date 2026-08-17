@@ -1,0 +1,234 @@
+Total unique packages: 1486
+Total unique build dependencies: 131
+
+Top build dependencies by usage count:
+   912x  setuptools
+   337x  hatchling
+   212x  wheel
+   157x  setuptools-scm
+    77x  flit-core
+    76x  poetry-core
+    66x  cython
+    57x  hatch-vcs
+    48x  maturin
+    43x  numpy
+    35x  packaging
+    28x  pybind11
+    27x  hatch-jupyter-builder
+    27x  pdm-backend
+    24x  scikit-build-core
+    23x  hatch-fancy-pypi-readme
+    23x  torch
+    21x  jupyterlab
+    19x  hatch-nodejs-version
+    18x  uv-build
+    17x  uv-dynamic-versioning
+    15x  patchelf
+    13x  build
+    13x  ninja
+    11x  meson-python
+     9x  setuptools-rust
+     7x  cffi
+     6x  cmake
+     6x  coherent-licensed
+     6x  jupyter-builder
+     6x  jupyter-packaging
+     6x  pathspec
+     6x  pluggy
+     6x  trove-classifiers
+     5x  typing-extensions
+     4x  apache-tvm-ffi
+     4x  filelock
+     4x  nanobind
+     4x  pip
+     4x  pkgconfig
+     4x  pyyaml
+     4x  setuptools-git-versioning
+     4x  versioneer
+     3x  cymem
+     3x  expandvars
+     3x  hatch-requirements-txt
+     3x  meson
+     3x  murmurhash
+     3x  pbr
+     3x  pytest-runner
+     3x  requests
+     3x  scikit-build
+     3x  scipy
+     3x  vcs-versioning
+     2x  click
+     2x  docutils
+     2x  flit-scm
+     2x  grpcio-tools
+     2x  hatch-docstring-description
+     2x  jinja2
+     2x  pandas
+     2x  pdm-pep517
+     2x  poetry-dynamic-versioning
+     2x  preshed
+     2x  psutil
+     2x  pyproject-metadata
+     2x  pythran
+     2x  tomli
+     2x  tqdm
+     1x  aotriton
+     1x  ast-serialize
+     1x  babel
+     1x  blis
+     1x  calver
+     1x  changelog-chug
+     1x  cibuildwheel
+     1x  cmdstanpy
+     1x  colorama
+     1x  cppy
+     1x  cuda-python
+     1x  cysignals
+     1x  delocate
+     1x  flashinfer-cubin
+     1x  flydsl
+     1x  gitdb
+     1x  gitpython
+     1x  greenlet
+     1x  hatch
+     1x  hatch-build-scripts
+     1x  iniconfig
+     1x  jupyter
+     1x  jupyter-client
+     1x  lazy-loader
+     1x  libcst
+     1x  librt
+     1x  markdown
+     1x  more-itertools
+     1x  mypy
+     1x  mypy-extensions
+     1x  nose
+     1x  nvidia-cudnn-frontend
+     1x  nvidia-ml-py
+     1x  oldest-supported-numpy
+     1x  ordered-set
+     1x  pkginfo
+     1x  poetry
+     1x  protobuf
+     1x  puccinialin
+     1x  py-cpuinfo
+     1x  pybindgen
+     1x  pyclibrary
+     1x  pycparser
+     1x  pynpm
+     1x  pynvml
+     1x  pytest
+     1x  semver
+     1x  six
+     1x  smmap
+     1x  sphinx
+     1x  standard-distutils
+     1x  tabulate
+     1x  thinc
+     1x  toml
+     1x  tomlkit
+     1x  tree-sitter
+     1x  twine
+     1x  types-psutil
+     1x  types-pyyaml
+     1x  types-setuptools
+     1x  versioningit
+     1x  z3-solver
+
+Build dependencies with <= 5 dependents (97 of 131):
+  typing-extensions (5): mypy, pydantic-core, setuptools-scm, torch, wandb
+  apache-tvm-ffi (4): flashinfer-jit-cache, flashinfer-python, torch-c-dlpack-ext, xgrammar
+  filelock (4): aotriton, torch, torchao, vllm
+  nanobind (4): flydsl, onnx, shap, soxr
+  pip (4): jupyter-resource-usage, opencv-python, opencv-python-headless, ray
+  pkgconfig (4): aiohttp, brotli, h5py, lz4
+  pyyaml (4): aotriton, model-index, nixl-cu12, torch
+  setuptools-git-versioning (4): bokeh, guidellm, speculators, toolz
+  versioneer (4): donfig, pandas, partd, pyogrio
+  cymem (3): preshed, spacy, thinc
+  expandvars (3): frozenlist, propcache, yarl
+  hatch-requirements-txt (3): gradio, gradio-client, pymongo
+  meson (3): contourpy, meson-python, pandas
+  murmurhash (3): preshed, spacy, thinc
+  pbr (3): lockfile, munch, stevedore
+  pytest-runner (3): lomond, rfc3986-validator, scikit-network
+  requests (3): flashinfer-jit-cache, flashinfer-python, torch
+  scikit-build (3): ninja, opencv-python, opencv-python-headless
+  scipy (3): scikit-learn, scikit-network, statsmodels
+  vcs-versioning (3): amd-aiter, pymilvus, setuptools-scm
+  click (2): flashinfer-python, model-index
+  docutils (2): changelog-chug, python-daemon
+  flit-scm (2): exceptiongroup, garak
+  grpcio-tools (2): nvidia-riva-client, openshell
+  hatch-docstring-description (2): legacy-api-wrap, session-info2
+  jinja2 (2): pydeck, vllm
+  pandas (2): amd-aiter, aotriton
+  pdm-pep517 (2): jsonref, stackstac
+  poetry-dynamic-versioning (2): dataclasses-json, rembg
+  preshed (2): spacy, thinc
+  psutil (2): amd-aiter, flash-attn
+  pyproject-metadata (2): meson-python, numpy
+  pythran (2): scikit-image, scipy
+  tomli (2): cassandra-driver, pymssql
+  tqdm (2): flashinfer-jit-cache, flashinfer-python
+  aotriton (1): torch
+  ast-serialize (1): mypy
+  babel (1): pynpm
+  blis (1): thinc
+  calver (1): trove-classifiers
+  changelog-chug (1): python-daemon
+  cibuildwheel (1): docling-parse
+  cmdstanpy (1): prophet
+  colorama (1): bokeh
+  cppy (1): kiwisolver
+  cuda-python (1): flashinfer-python
+  cysignals (1): tesserocr
+  delocate (1): docling-parse
+  flashinfer-cubin (1): flashinfer-jit-cache
+  flydsl (1): amd-aiter
+  gitdb (1): apache-airflow-core
+  gitpython (1): apache-airflow-core
+  greenlet (1): gevent
+  hatch (1): bqscales
+  hatch-build-scripts (1): bqscales
+  iniconfig (1): aotriton
+  jupyter (1): pydeck
+  jupyter-client (1): ipykernel
+  lazy-loader (1): scikit-image
+  libcst (1): pyarrow
+  librt (1): mypy
+  markdown (1): model-index
+  more-itertools (1): monai
+  mypy (1): pytokens
+  mypy-extensions (1): mypy
+  nose (1): annoy
+  nvidia-cudnn-frontend (1): flashinfer-python
+  nvidia-ml-py (1): flashinfer-jit-cache
+  oldest-supported-numpy (1): pandas
+  ordered-set (1): model-index
+  pkginfo (1): google-genai
+  poetry (1): pysnow
+  protobuf (1): onnx
+  puccinialin (1): biotite
+  py-cpuinfo (1): numcodecs
+  pybindgen (1): feast
+  pyclibrary (1): cuda-bindings
+  pycparser (1): cmarkgfm
+  pynpm (1): ipyvuetify
+  pynvml (1): flashinfer-python
+  pytest (1): nixl-cu12
+  semver (1): changelog-chug
+  six (1): torch
+  smmap (1): apache-airflow-core
+  sphinx (1): feast
+  standard-distutils (1): pymssql
+  tabulate (1): flashinfer-python
+  thinc (1): spacy
+  toml (1): scikit-base
+  tomlkit (1): hatchling
+  tree-sitter (1): tree-sitter-languages
+  twine (1): google-genai
+  types-psutil (1): mypy
+  types-pyyaml (1): nixl-cu12
+  types-setuptools (1): mypy
+  versioningit (1): altair
+  z3-solver (1): tilelang

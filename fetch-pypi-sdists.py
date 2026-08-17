@@ -339,7 +339,7 @@ def main() -> None:
 
     # Write missing sdist info for later analysis
     if missing:
-        no_sdist_path = pypi_dir / "no_sdist.yaml"
+        no_sdist_path = args.data_dir / "pypi-no-sdist.yaml"
         with open(no_sdist_path, "w") as f:
             yaml.dump(missing, f, default_flow_style=False, sort_keys=True)
         total_missing = sum(

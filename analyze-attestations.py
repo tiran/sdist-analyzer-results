@@ -21,7 +21,7 @@
 Scans local PyPI data (previously fetched by ``fetch-pypi-sdists.py``)
 to discover package names, then checks the latest version of each on
 PyPI for Sigstore-based attestations via the Simple API's provenance_url
-attribute.  Writes results to ``data/pypi/attestations.yaml``.
+attribute.  Writes results to ``data/pypi/pypi-attestations.yaml``.
 
 Usage::
 
@@ -306,7 +306,7 @@ def main() -> None:
     if errors:
         output["errors"] = sorted(errors)
 
-    dest = pypi_dir / "attestations.yaml"
+    dest = args.data_dir / "pypi-attestations.yaml"
     with open(dest, "w") as f:
         yaml.dump(output, f, default_flow_style=False, sort_keys=False)
 

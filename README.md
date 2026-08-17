@@ -51,7 +51,7 @@ uv run fetch-pypi-sdists.py 3.6-EA1
 Scans the local RHOAI data to discover package names and versions,
 then downloads source distributions from PyPI and extracts PKG-INFO,
 pyproject.toml, and setup.py.  Packages without a sdist on PyPI are
-recorded in `data/pypi/no_sdist.yaml`.
+recorded in `data/pypi-no-sdist.yaml`.
 
 ### 3. Analyze
 
@@ -86,7 +86,7 @@ python3 dump-transitive-deps.py
 | Script | Description |
 |:---|:---|
 | `analyze-elf-deps.py` | Classifies ELF shared library deps as manylinux-only, bundleable, accelerator-specific, or unbundleable. Writes `elf-analysis.md` per index and combined, with Mermaid bar charts. |
-| `analyze-attestations.py` | Checks the latest PyPI version of each package for Sigstore attestations (PEP 740). Extracts publisher, repository, workflow, git ref, and commit hash. Writes `data/pypi/attestations.yaml`. |
+| `analyze-attestations.py` | Checks the latest PyPI version of each package for Sigstore attestations (PEP 740). Extracts publisher, repository, workflow, git ref, and commit hash. Writes `data/pypi-attestations.yaml`. |
 | `analyze-git-hosting.py` | Scans METADATA for Home-page and Project-URL fields, checks for known git hosting platforms (GitHub, GitLab, etc.). |
 | `compare-build-deps.py` | Compares fromager `build-system-requirements.txt` against upstream `pyproject.toml` `build-system.requires`. Reports extra and missing deps. |
 | `dump-transitive-deps.py` | Runs `ldd` on the local system to discover transitive shared library deps for vendor/bundleable libraries. Flags unbundleable transitive deps (OpenSSL, Kerberos, etc.). |
@@ -104,8 +104,8 @@ python3 dump-transitive-deps.py
 | `data/rhoai-3.6-EA1/elf-analysis.md` | Combined ELF dependency analysis across all indexes |
 | `data/rhoai-3.6-EA1/*/elf-analysis.md` | Per-index ELF dependency analysis |
 | `data/rhoai-3.6-EA1/transitive-deps.yaml` | Transitive deps of vendor/bundleable libraries (from `ldd`) |
-| `data/pypi/attestations.yaml` | PyPI attestation results |
-| `data/pypi/no_sdist.yaml` | Packages/versions without sdists on PyPI |
+| `data/pypi-attestations.yaml` | PyPI attestation results |
+| `data/pypi-no-sdist.yaml` | Packages/versions without sdists on PyPI |
 | `cuda-rocm-without-torch.md` | Packages using CUDA/ROCm without PyTorch runtime |
 | `downstream-build-system-analysis.md` | Build system patching analysis |
 | `extra-build-backend-analysis.md` | Extra build-backend dependency analysis |
@@ -129,9 +129,9 @@ data/
         fromager-build-sdist-requirements.txt
         fromager-elf-requires.txt
         fromager-elf-provides.txt
+  attestations.yaml
+  no_sdist.yaml
   pypi/
-    attestations.yaml
-    no_sdist.yaml
     <package>/<version>/
       PKG-INFO
       pyproject.toml

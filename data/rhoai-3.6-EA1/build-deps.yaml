@@ -1,0 +1,1060 @@
+setuptools:
+  count: 912
+  constraints:
+  - setuptools
+  - setuptools!=24.0.0,!=34.0.0,!=34.0.1,!=34.0.2,!=34.0.3,!=34.1.0,!=34.1.1,!=34.2.0,!=34.3.0,!=34.3.1,!=34.3.2,!=36.2.0,>=21.0.0
+  - setuptools!=74.0.0,!=74.1.0,!=74.1.1,!=74.1.2
+  - setuptools!=74.0.0,>=61.0.0
+  - setuptools; python_version != "3.3"
+  - setuptools<70,>=59
+  - setuptools<80.0,>=70.1.0
+  - setuptools<80.0.0
+  - setuptools<80.0.0,>=72.0.0
+  - setuptools<81
+  - setuptools<81,>=60
+  - setuptools<81,>=78.1.1
+  - setuptools<81.0.0,>=77.0.3
+  - setuptools<82
+  - setuptools<82,>=70.1.0
+  - setuptools<82,>=78.1.1
+  - setuptools<82.1,>=68
+  - setuptools<83,>=59
+  - setuptools<83.1,>=68
+  - setuptools<=80.10.2
+  - setuptools<=82.0.1
+  - setuptools<=82.0.1,>=70.0.0
+  - setuptools<=82.0.1,>=80.9.0
+  - setuptools<=83.0.0,>=77
+  - setuptools==80.10.2
+  - setuptools==80.9.0
+  - setuptools==82.0.1
+  - setuptools>60
+  - setuptools>61
+  - setuptools>77.0.3
+  - setuptools>80.0
+  - setuptools>=20.8.1
+  - setuptools>=21
+  - setuptools>=34.4
+  - setuptools>=36.7.0
+  - setuptools>=38.3.0
+  - setuptools>=38.6.0
+  - setuptools>=40
+  - setuptools>=40.6.0
+  - setuptools>=40.8.0
+  - setuptools>=40.9.0
+  - setuptools>=41
+  - setuptools>=41.0
+  - setuptools>=41.2
+  - setuptools>=42
+  - setuptools>=42.0.0
+  - setuptools>=43
+  - setuptools>=44
+  - setuptools>=45
+  - setuptools>=46.4.0
+  - setuptools>=47
+  - setuptools>=48
+  - setuptools>=50
+  - setuptools>=51
+  - setuptools>=51.0
+  - setuptools>=51.0.0
+  - setuptools>=56
+  - setuptools>=56.0.0
+  - setuptools>=58.5.0
+  - setuptools>=60
+  - setuptools>=60.0; python_version >= "3.12"
+  - setuptools>=61
+  - setuptools>=61.0
+  - setuptools>=61.0.0
+  - setuptools>=61.1.0
+  - setuptools>=61.2
+  - setuptools>=61.2.0
+  - setuptools>=61.2; implementation_name == "cpython"
+  - setuptools>=62
+  - setuptools>=62.0
+  - setuptools>=62.4
+  - setuptools>=62.4.0
+  - setuptools>=62.6
+  - setuptools>=64
+  - setuptools>=64.0
+  - setuptools>=64.0.0
+  - setuptools>=64.0.0; python_version >= "3.7"
+  - setuptools>=65.0
+  - setuptools>=65.0.0
+  - setuptools>=65.5.1
+  - setuptools>=66.1
+  - setuptools>=67.0
+  - setuptools>=67.0.0
+  - setuptools>=67.8
+  - setuptools>=67.8.0
+  - setuptools>=68
+  - setuptools>=68.0
+  - setuptools>=68.0.0
+  - setuptools>=68.2.0
+  - setuptools>=69
+  - setuptools>=69.0.0
+  - setuptools>=69.0.2
+  - setuptools>=70
+  - setuptools>=70.0.0
+  - setuptools>=70.1.0
+  - setuptools>=71
+  - setuptools>=74.1.0
+  - setuptools>=75
+  - setuptools>=75.0
+  - setuptools>=75.3.1
+  - setuptools>=75.3.2
+  - setuptools>=75.6.0
+  - setuptools>=77
+  - setuptools>=77.0
+  - setuptools>=77.0.0
+  - setuptools>=77.0.1
+  - setuptools>=77.0.3
+  - setuptools>=78.1.1
+  - setuptools>=80
+  - setuptools>=80.0
+  - setuptools>=80.0.0
+  - setuptools>=80.3.1
+  - setuptools>=80.9.0
+  - setuptools>=82
+  - setuptools>=82.0.1
+  - setuptools>=83.0.0
+  - setuptools~=80.9.0
+hatchling:
+  count: 337
+  constraints:
+  - hatchling
+  - hatchling<1.28,>=1.27
+  - hatchling<1.32,>=1.27
+  - hatchling<2,>=1.27.0
+  - hatchling==1.26.3
+  - hatchling==1.29.0
+  - hatchling==1.30.1
+  - hatchling>1.24
+  - hatchling>=0.21.1
+  - hatchling>=0.25
+  - hatchling>=0.25.1
+  - hatchling>=1.0
+  - hatchling>=1.1.0
+  - hatchling>=1.10
+  - hatchling>=1.10.0
+  - hatchling>=1.11
+  - hatchling>=1.11.0
+  - hatchling>=1.12.1
+  - hatchling>=1.14.0
+  - hatchling>=1.17
+  - hatchling>=1.18
+  - hatchling>=1.18.0
+  - hatchling>=1.20.0
+  - hatchling>=1.21.0
+  - hatchling>=1.21.1
+  - hatchling>=1.22
+  - hatchling>=1.24
+  - hatchling>=1.25
+  - hatchling>=1.26
+  - hatchling>=1.26.1
+  - hatchling>=1.27
+  - hatchling>=1.27.0
+  - hatchling>=1.28
+  - hatchling>=1.28; python_version >= "3.10"
+  - hatchling>=1.29
+  - hatchling>=1.29.0
+  - hatchling>=1.4
+  - hatchling>=1.4.0
+  - hatchling>=1.5
+  - hatchling>=1.5.0
+  - hatchling>=1.7
+  - hatchling>=1.8.0
+wheel:
+  count: 212
+  constraints:
+  - wheel
+  - wheel!=0.38.0,!=0.38.1
+  - wheel<1.0.0,>=0.38.4
+  - wheel<1.0.0,>=0.43.0
+  - wheel<=0.47.0
+  - wheel>=0.29.0
+  - wheel>=0.36
+  - wheel>=0.36.2
+  - wheel>=0.37
+  - wheel>=0.41.2
+  - wheel>=0.43
+  - wheel>=0.45.1
+  - wheel>=0.46.2
+  - wheel>=0.46.3
+setuptools-scm:
+  count: 157
+  constraints:
+  - setuptools-scm
+  - setuptools-scm<10,>=8
+  - setuptools-scm<11,>=8
+  - setuptools-scm<9.0.0,>=8.0.0
+  - setuptools-scm==9.2.0
+  - setuptools-scm>1.5.4
+  - setuptools-scm>=8
+  - setuptools-scm>=8.0
+  - setuptools-scm>=8.2
+  - setuptools-scm>=9
+  - setuptools-scm>=9.2.2
+  - setuptools-scm[toml]
+  - setuptools-scm[toml]>=3.4
+  - setuptools-scm[toml]>=6.2
+  - setuptools-scm[toml]>=6.2.3
+  - setuptools-scm[toml]>=8.0
+  - setuptools_scm
+  - setuptools_scm<10,>=7
+  - setuptools_scm<10,>=8
+  - setuptools_scm<8.0
+  - setuptools_scm==8.2.0
+  - setuptools_scm>8
+  - setuptools_scm>=3.0
+  - setuptools_scm>=6.2
+  - setuptools_scm>=6.4
+  - setuptools_scm>=7
+  - setuptools_scm>=8
+  - setuptools_scm>=8.0
+  - setuptools_scm>=8.0.0
+  - setuptools_scm[simple]!=10.1,>=8
+  - setuptools_scm[toml]
+  - setuptools_scm[toml]<9,>=8
+  - setuptools_scm[toml]<=8.3.0,>=7.1.0
+  - setuptools_scm[toml]>=3.4
+  - setuptools_scm[toml]>=3.4.1
+  - setuptools_scm[toml]>=3.4.3
+  - setuptools_scm[toml]>=4
+  - setuptools_scm[toml]>=6
+  - setuptools_scm[toml]>=6.0
+  - setuptools_scm[toml]>=6.2
+  - setuptools_scm[toml]>=6.4
+  - setuptools_scm[toml]>=7.0
+  - setuptools_scm[toml]>=8
+  - setuptools_scm[toml]>=8.0
+flit-core:
+  count: 77
+  constraints:
+  - flit-core<4,>=3.11
+  - flit-core>=3.11
+  - flit-core~=3.5
+  - flit_core
+  - flit_core<4
+  - flit_core<4,>=2
+  - flit_core<4,>=3
+  - flit_core<4,>=3.11
+  - flit_core<4,>=3.12
+  - flit_core<4,>=3.2
+  - flit_core<4,>=3.2.0
+  - flit_core<4,>=3.4
+  - flit_core<4,>=3.5
+  - flit_core<4,>=3.8
+  - flit_core<5,>=3.11
+  - flit_core<5,>=3.2
+  - flit_core==3.12.0
+  - flit_core>=3.12
+  - flit_core>=3.2
+  - flit_core>=3.3
+  - flit_core>=3.7
+poetry-core:
+  count: 76
+  constraints:
+  - poetry-core
+  - poetry-core<2.0.0,>=1.0.0
+  - poetry-core<3.0.0,>=2.0.0
+  - poetry-core>=1.0.0
+  - poetry-core>=1.0.0a9
+  - poetry-core>=1.1.0
+  - poetry-core>=1.2.0
+  - poetry-core>=1.4.0
+  - poetry-core>=1.6.0
+  - poetry-core>=2.0
+  - poetry-core>=2.0.0
+  - poetry_core<2,>=1
+  - poetry_core<3,>=1
+  - poetry_core>=1.0.0
+cython:
+  count: 66
+  constraints:
+  - Cython
+  - Cython!=3.2.0b1,>=3.0.8
+  - Cython; python_version < "3.13"
+  - Cython<3,>=0.29.32
+  - Cython<3.1,>=0.29.34
+  - Cython<3.2.0,>=3.0.0
+  - Cython<3.2.0,>=3.0.10
+  - Cython<3.2.0,>=3.0.8
+  - Cython<3.3.0,>=3.0.8
+  - Cython<3.3.0,>=3.2.0
+  - Cython<4,>3.1.0
+  - Cython<4,>=0.29.31
+  - Cython<4,>=3.0.0
+  - Cython<4.0.0,>=3.2.1
+  - Cython<4.0.0a0
+  - Cython<4.0.0a0,>3.1.0
+  - Cython==3.1.1
+  - Cython==3.2.1
+  - Cython==3.2.4
+  - Cython>=0.29
+  - Cython>=0.29.2
+  - Cython>=0.29.24
+  - Cython>=0.29.32
+  - Cython>=0.29.33
+  - Cython>=3.0
+  - Cython>=3.0.0
+  - Cython>=3.0.10
+  - Cython>=3.0.4
+  - Cython>=3.0.5
+  - Cython>=3.0.6
+  - Cython>=3.1
+  - Cython>=3.1.0
+  - Cython>=3.1.1
+  - Cython>=3.1.2
+  - Cython>=3.2.0
+  - Cython>=3.2.4
+  - Cython~=3.0.5
+  - Cython~=3.1
+  - Cython~=3.1.0
+  - cython
+  - cython<3.2,>=3.1
+  - cython<3.3.0,>=3.1.2
+  - cython<4,>=3.0.10
+  - cython<4,>=3.1
+  - cython<4.0,>=3.0
+  - cython<=3.0.12
+  - cython<=3.2,>=3.1
+  - cython==3.1.1
+  - cython>=0.25
+  - cython>=0.29.1
+  - cython>=0.29.20
+  - cython>=0.29.24; platform_python_implementation == "CPython"
+  - cython>=3
+  - cython>=3.0
+  - cython>=3.0.0; implementation_name != "pypy"
+  - cython>=3.0.12
+  - cython>=3.1
+  - cython>=3.1.0
+  - cython>=3.2.8
+  - cython>=3; platform_python_implementation == "CPython"
+  - cython~=3.2
+hatch-vcs:
+  count: 57
+  constraints:
+  - hatch-vcs
+  - hatch-vcs<0.6.0,>=0.4.0
+  - hatch-vcs>=0.3.0
+  - hatch-vcs>=0.4
+  - hatch-vcs>=0.5
+maturin:
+  count: 48
+  constraints:
+  - maturin
+  - maturin!=1.12.0,<2,>=1.9.4
+  - maturin<2,>=0.14.16
+  - maturin<2,>=1
+  - maturin<2,>=1.0
+  - maturin<2,>=1.10
+  - maturin<2,>=1.13
+  - maturin<2,>=1.13.3
+  - maturin<2,>=1.14.1
+  - maturin<2,>=1.4
+  - maturin<2,>=1.8.2
+  - maturin<2,>=1.9
+  - maturin<2,>=1.9.4
+  - maturin<2.0,>=1.0
+  - maturin<2.0,>=1.12.0
+  - maturin<2.0,>=1.14.1
+  - maturin<2.0,>=1.7
+  - maturin<2.0,>=1.8
+  - maturin<2.0,>=1.9
+  - maturin<2.0,>=1.9.3
+  - maturin<2.0,>=1.9.4
+  - maturin<2.0,>=1.9.6
+  - maturin>=0.12
+  - maturin>=0.13
+  - maturin>=1.3.2
+  - maturin>=1.4
+numpy:
+  count: 43
+  constraints:
+  - numpy
+  - numpy!=2.5.0,>=2.0.0
+  - numpy<2.4,>=2.0.0rc1
+  - numpy<2.4.0,>=2
+  - numpy<2.5,>=2.0.0rc1
+  - numpy<2.5.0,>=2
+  - numpy<2.6,>=2.0.0
+  - numpy<2.6,>=2.0.0rc1
+  - numpy<2.7,>=2.0.0
+  - numpy<2.8,>=2.0.0
+  - numpy<3,>=1.25
+  - numpy<3,>=1.25.0
+  - numpy<3,>=2
+  - numpy<3,>=2.0.0
+  - numpy<3.0,>=2.0
+  - numpy<3.0.0,>=2.0.0
+  - numpy<3.0.0,>=2.0.0; python_version >= "3.9"
+  - numpy==2.0.2; python_version >= "3.9" and python_version < "3.13"
+  - numpy>2
+  - numpy>=1.10.0
+  - numpy>=1.21.6
+  - numpy>=1.25
+  - numpy>=1.25; python_version >= "3.9"
+  - numpy>=2
+  - numpy>=2.0
+  - numpy>=2.0.0
+  - numpy>=2.0.0; python_version < "3.13"
+  - numpy>=2.0.0; python_version >= "3.9"
+  - numpy>=2.0.0rc1; python_version >= "3.9"
+  - numpy~=2.0
+packaging:
+  count: 35
+  constraints:
+  - packaging
+  - packaging==26.2
+  - packaging>20.9
+  - packaging>=19.0
+  - packaging>=20
+  - packaging>=20.0
+  - packaging>=20.9
+  - packaging>=21.3
+  - packaging>=23.0
+  - packaging>=23.2
+  - packaging>=23.2; sys_platform != "ios"
+  - packaging>=24
+  - packaging>=24.2
+  - packaging>=26.2
+pybind11:
+  count: 28
+  constraints:
+  - pybind11
+  - pybind11!=2.13.3,>=2.13.2
+  - pybind11<3.1.0,>=2.13.2
+  - pybind11==2.11.1
+  - pybind11>=2.0
+  - pybind11>=2.10
+  - pybind11>=2.10.0
+  - pybind11>=2.11
+  - pybind11>=2.11.1
+  - pybind11>=2.12
+  - pybind11>=2.13.6
+  - pybind11>=3.0.1
+  - pybind11[global]
+  - pybind11[global]<3,>=2.13
+  - pybind11[global]>=2.13
+  - pybind11[global]>=2.6.0
+hatch-jupyter-builder:
+  count: 27
+  constraints:
+  - hatch-jupyter-builder>=0.3.2
+  - hatch-jupyter-builder>=0.5
+  - hatch-jupyter-builder>=0.5.0
+  - hatch-jupyter-builder>=0.8.1
+  - hatch-jupyter-builder>=0.8.2
+  - hatch-jupyter-builder>=0.8.3
+pdm-backend:
+  count: 27
+  constraints:
+  - pdm-backend
+  - pdm-backend>=1.0.5
+scikit-build-core:
+  count: 24
+  constraints:
+  - scikit-build-core
+  - scikit-build-core>=0.10
+  - scikit-build-core>=0.10.0
+  - scikit-build-core>=0.10.1
+  - scikit-build-core>=0.11
+  - scikit-build-core>=0.11.0
+  - scikit-build-core>=0.11.2
+  - scikit-build-core>=0.11.4
+  - scikit-build-core>=0.3.3
+  - scikit-build-core>=0.9
+hatch-fancy-pypi-readme:
+  count: 23
+  constraints:
+  - hatch-fancy-pypi-readme
+  - hatch-fancy-pypi-readme<26,>=22.4
+  - hatch-fancy-pypi-readme>=22.5.0
+  - hatch-fancy-pypi-readme>=22.8.0
+  - hatch-fancy-pypi-readme>=23.2.0
+  - hatch-fancy-pypi-readme>=24.1.0
+torch:
+  count: 23
+  constraints:
+  - torch
+  - torch==2.11.*
+  - torch>=2.2.0
+  - torch>=2.6
+  - torch>=2.8.0
+jupyterlab:
+  count: 21
+  constraints:
+  - jupyterlab<5,>=4.0
+  - jupyterlab<5,>=4.0.0
+  - jupyterlab<5.0.0a0,>=4.0.6
+  - jupyterlab==4.*
+  - jupyterlab>=4.0.0
+  - jupyterlab~=4.0
+  - jupyterlab~=4.5.0
+hatch-nodejs-version:
+  count: 19
+  constraints:
+  - hatch-nodejs-version
+  - hatch-nodejs-version>=0.3.2
+uv-build:
+  count: 18
+  constraints:
+  - uv-build<0.10,>=0.9
+  - uv_build
+  - uv_build<0.10,>=0.9.0
+  - uv_build<0.10.0,>=0.7.9
+  - uv_build<0.10.0,>=0.9.10
+  - uv_build<0.10.0,>=0.9.6
+  - uv_build<0.10.0,>=0.9.8
+  - uv_build<0.11.0,>=0.10.11
+  - uv_build<0.12,>=0.11
+  - uv_build<0.12,>=0.11.4
+  - uv_build<0.12,>=0.8.10
+  - uv_build<0.12.0,>=0.11.0
+  - uv_build<0.12.0,>=0.11.2
+  - uv_build<0.13,>=0.11
+  - uv_build<0.13.0,>=0.9.0
+  - uv_build<0.9.0,>=0.8.2
+  - uv_build<1,>=0.9.3
+  - uv_build==0.11.8
+uv-dynamic-versioning:
+  count: 17
+  constraints:
+  - uv-dynamic-versioning
+  - uv-dynamic-versioning>=0.14.0
+  - uv-dynamic-versioning>=0.6
+  - uv-dynamic-versioning>=0.7.0
+  - uv-dynamic-versioning>=0.8.0
+patchelf:
+  count: 15
+  constraints:
+  - patchelf
+  - patchelf<=0.17.2.4
+  - patchelf>=0.11.0
+  - patchelf>=0.17.2
+build:
+  count: 13
+  constraints:
+  - build
+ninja:
+  count: 13
+  constraints:
+  - ninja
+  - ninja==1.11.1.1
+  - ninja>=1.11.1
+meson-python:
+  count: 11
+  constraints:
+  - meson-python
+  - meson-python!=0.17.*,>=0.13.2
+  - meson-python<0.16.0,>=0.15.0
+  - meson-python<0.17.0,>=0.13.1
+  - meson-python<0.19.0,>=0.16.0
+  - meson-python<0.19.0,>=0.17.1
+  - meson-python<0.20.0,>=0.17.1
+  - meson-python<0.21.0,>=0.15.0
+  - meson-python<0.22.0,>=0.15.0
+  - meson-python<1,>=0.17.1
+  - meson-python==0.13.1
+  - meson-python>=0.13.1
+  - meson-python>=0.15.0
+  - meson-python>=0.16
+  - meson-python>=0.16.0
+  - meson-python>=0.18.0
+setuptools-rust:
+  count: 9
+  constraints:
+  - setuptools-rust
+  - setuptools-rust>=1.11.0
+  - setuptools-rust>=1.5.2
+  - setuptools-rust>=1.7.0
+  - setuptools-rust>=1.9.0
+  - setuptools_rust
+cffi:
+  count: 7
+  constraints:
+  - cffi>=1.0
+  - cffi>=1.0.1; python_version < "3.14"
+  - cffi>=1.16.0; python_version <= "3.12"
+  - cffi>=1.17.1; platform_python_implementation == "CPython"
+  - cffi>=2.0.0
+  - cffi>=2.0.0; platform_python_implementation != "PyPy"
+  - cffi>=2.0.0; platform_python_implementation != "PyPy" and python_version >= "3.9"
+  - cffi>=2.1.1; platform_python_implementation == "CPython"
+  - cffi~=1.17; platform_python_implementation != "PyPy" and python_version < "3.14"
+cmake:
+  count: 6
+  constraints:
+  - cmake
+  - cmake<4.0.0,>=3.27.0
+  - cmake<=4.3.4
+  - cmake>=3.18
+  - cmake>=3.29.0
+coherent-licensed:
+  count: 6
+  constraints:
+  - coherent.licensed
+jupyter-builder:
+  count: 6
+  constraints:
+  - jupyter-builder<2,>=1.0.2
+  - jupyter-builder>=1.0.0
+  - jupyter-builder>=1.0.2
+  - jupyter-builder>=1.2.0
+jupyter-packaging:
+  count: 6
+  constraints:
+  - jupyter-packaging>=0.10
+  - jupyter_packaging<2,>=0.10
+  - jupyter_packaging<2,~=0.10
+  - jupyter_packaging>=0.7.9; python_version < "3.13"
+  - jupyter_packaging~=0.12.2
+  - jupyter_packaging~=0.7.0
+pathspec:
+  count: 6
+  constraints:
+  - pathspec==1.1.1
+  - pathspec>=0.10.1
+  - pathspec>=1.0.0
+pluggy:
+  count: 6
+  constraints:
+  - pluggy
+  - pluggy==1.6.0
+  - pluggy>=1.0.0
+trove-classifiers:
+  count: 6
+  constraints:
+  - trove-classifiers
+  - trove-classifiers==2026.6.1.19
+  - trove-classifiers>=2025.8.6.13
+typing-extensions:
+  count: 5
+  constraints:
+  - typing-extensions
+  - typing-extensions>=4.10.0
+  - typing_extensions
+  - typing_extensions>=4.6.0; python_version < "3.15"
+apache-tvm-ffi:
+  count: 4
+  constraints:
+  - apache-tvm-ffi!=0.1.8,!=0.1.8.post0,<0.2,>=0.1.6
+  - apache-tvm-ffi<0.2,>=0.1
+  - apache-tvm-ffi>=0.1.1
+  - apache-tvm-ffi>=0.1.9
+filelock:
+  count: 4
+  constraints:
+  - filelock
+nanobind:
+  count: 4
+  constraints:
+  - nanobind
+  - nanobind<3,>=2
+  - nanobind>=2.0
+  - nanobind>=2.0.0
+pip:
+  count: 4
+  constraints:
+  - pip
+pkgconfig:
+  count: 4
+  constraints:
+  - pkgconfig
+  - pkgconfig>=1.5.5
+pyyaml:
+  count: 4
+  constraints:
+  - pyyaml
+setuptools-git-versioning:
+  count: 4
+  constraints:
+  - setuptools-git-versioning
+  - setuptools-git-versioning<3,>=2.0
+  - setuptools-git-versioning>=2.0
+versioneer:
+  count: 4
+  constraints:
+  - versioneer[toml]
+  - versioneer[toml]==0.28
+  - versioneer[toml]==0.29
+cymem:
+  count: 3
+  constraints:
+  - cymem<2.1.0,>=2.0.2
+expandvars:
+  count: 3
+  constraints:
+  - expandvars
+hatch-requirements-txt:
+  count: 3
+  constraints:
+  - hatch-requirements-txt
+  - hatch-requirements-txt>=0.4.1
+meson:
+  count: 3
+  constraints:
+  - meson<1.11.0,>=1.2.1
+  - meson>=0.63.3
+  - meson>=1.2.0
+  - meson>=1.2.3; python_version >= "3.12"
+murmurhash:
+  count: 3
+  constraints:
+  - murmurhash<1.1.0,>=0.28.0
+  - murmurhash<1.1.0,>=1.0.2
+pbr:
+  count: 3
+  constraints:
+  - pbr>=1.8
+  - pbr>=2.0.0
+  - pbr>=3.0
+  - pbr>=6.1.1
+pytest-runner:
+  count: 3
+  constraints:
+  - pytest-runner
+requests:
+  count: 3
+  constraints:
+  - requests
+scikit-build:
+  count: 3
+  constraints:
+  - scikit-build
+  - scikit-build>=0.14.0
+scipy:
+  count: 3
+  constraints:
+  - scipy
+  - scipy<1.17.0,>=1.10.0
+  - scipy<1.17.0,>=1.8.0
+  - scipy<1.18.0,>=1.10.0
+  - scipy<2,>=1.13
+  - scipy>=1.6.0
+vcs-versioning:
+  count: 3
+  constraints:
+  - vcs-versioning<2
+  - vcs-versioning<3,>=2.0.0.dev0
+  - vcs-versioning>=1.0.0.dev0
+  - vcs-versioning>=2.0.0.dev0
+  - vcs_versioning
+click:
+  count: 2
+  constraints:
+  - click
+docutils:
+  count: 2
+  constraints:
+  - docutils
+  - docutils>=0.21.0
+flit-scm:
+  count: 2
+  constraints:
+  - flit-scm<2,>=1.7.0
+  - flit_scm
+grpcio-tools:
+  count: 2
+  constraints:
+  - grpcio-tools
+hatch-docstring-description:
+  count: 2
+  constraints:
+  - hatch-docstring-description
+jinja2:
+  count: 2
+  constraints:
+  - Jinja2>=2.10.1
+  - jinja2
+pandas:
+  count: 2
+  constraints:
+  - pandas
+pdm-pep517:
+  count: 2
+  constraints:
+  - pdm-pep517
+  - pdm-pep517>=1.0.0
+poetry-dynamic-versioning:
+  count: 2
+  constraints:
+  - poetry-dynamic-versioning
+  - poetry-dynamic-versioning<2.0.0,>=1.0.0
+preshed:
+  count: 2
+  constraints:
+  - preshed<3.1.0,>=3.0.2
+psutil:
+  count: 2
+  constraints:
+  - psutil
+pyproject-metadata:
+  count: 2
+  constraints:
+  - pyproject-metadata>=0.7.1
+  - pyproject-metadata>=0.9.0
+pythran:
+  count: 2
+  constraints:
+  - pythran<0.19.0,>=0.14.0
+  - pythran<0.19.0,>=0.18.1
+  - pythran>=0.16
+tomli:
+  count: 2
+  constraints:
+  - tomli
+tqdm:
+  count: 2
+  constraints:
+  - tqdm
+aotriton:
+  count: 1
+  constraints:
+  - aotriton
+ast-serialize:
+  count: 1
+  constraints:
+  - ast-serialize<1.0.0,>=0.6.0
+babel:
+  count: 1
+  constraints:
+  - babel>2.8
+blis:
+  count: 1
+  constraints:
+  - blis<1.4.0,>=1.3.0
+calver:
+  count: 1
+  constraints:
+  - calver
+changelog-chug:
+  count: 1
+  constraints:
+  - changelog-chug
+cibuildwheel:
+  count: 1
+  constraints:
+  - cibuildwheel<4.0.0,>=2.19.2; python_version >= "3.11"
+cmdstanpy:
+  count: 1
+  constraints:
+  - cmdstanpy>=1.0.4
+colorama:
+  count: 1
+  constraints:
+  - colorama
+cppy:
+  count: 1
+  constraints:
+  - cppy>=1.3.0
+cuda-python:
+  count: 1
+  constraints:
+  - cuda-python
+cysignals:
+  count: 1
+  constraints:
+  - cysignals
+delocate:
+  count: 1
+  constraints:
+  - delocate<1.0.0,>=0.11.0
+flashinfer-cubin:
+  count: 1
+  constraints:
+  - flashinfer-cubin
+flydsl:
+  count: 1
+  constraints:
+  - flydsl<0.1.5,>=0.1.4.post1.dev
+  - flydsl==0.2.0
+gitdb:
+  count: 1
+  constraints:
+  - gitdb==4.0.12
+gitpython:
+  count: 1
+  constraints:
+  - GitPython==3.1.50
+greenlet:
+  count: 1
+  constraints:
+  - greenlet>=3.2.2; platform_python_implementation == "CPython"
+hatch:
+  count: 1
+  constraints:
+  - hatch
+hatch-build-scripts:
+  count: 1
+  constraints:
+  - hatch-build-scripts
+iniconfig:
+  count: 1
+  constraints:
+  - iniconfig
+jupyter:
+  count: 1
+  constraints:
+  - jupyter>=1.0.0
+jupyter-client:
+  count: 1
+  constraints:
+  - jupyter_client>=6
+lazy-loader:
+  count: 1
+  constraints:
+  - lazy_loader>=0.4
+libcst:
+  count: 1
+  constraints:
+  - libcst>=1.8.6
+librt:
+  count: 1
+  constraints:
+  - librt>=0.13.0; platform_python_implementation != "PyPy"
+markdown:
+  count: 1
+  constraints:
+  - markdown
+more-itertools:
+  count: 1
+  constraints:
+  - more-itertools>=8.0
+mypy:
+  count: 1
+  constraints:
+  - mypy
+mypy-extensions:
+  count: 1
+  constraints:
+  - mypy_extensions>=1.0.0
+nose:
+  count: 1
+  constraints:
+  - nose>=1.0
+nvidia-cudnn-frontend:
+  count: 1
+  constraints:
+  - nvidia-cudnn-frontend
+nvidia-ml-py:
+  count: 1
+  constraints:
+  - nvidia-ml-py
+oldest-supported-numpy:
+  count: 1
+  constraints:
+  - oldest-supported-numpy>=2022.8.16
+ordered-set:
+  count: 1
+  constraints:
+  - ordered-set
+pkginfo:
+  count: 1
+  constraints:
+  - pkginfo>=1.12.0
+poetry:
+  count: 1
+  constraints:
+  - poetry>=0.12
+protobuf:
+  count: 1
+  constraints:
+  - protobuf==4.25.1
+puccinialin:
+  count: 1
+  constraints:
+  - puccinialin
+py-cpuinfo:
+  count: 1
+  constraints:
+  - py-cpuinfo
+pybindgen:
+  count: 1
+  constraints:
+  - pybindgen==0.22.0
+pyclibrary:
+  count: 1
+  constraints:
+  - pyclibrary>=0.1.7
+pycparser:
+  count: 1
+  constraints:
+  - pycparser>=2.06
+pynpm:
+  count: 1
+  constraints:
+  - pynpm
+pynvml:
+  count: 1
+  constraints:
+  - pynvml
+pytest:
+  count: 1
+  constraints:
+  - pytest
+semver:
+  count: 1
+  constraints:
+  - semver>=3.0.0
+six:
+  count: 1
+  constraints:
+  - six
+smmap:
+  count: 1
+  constraints:
+  - smmap==5.0.3
+sphinx:
+  count: 1
+  constraints:
+  - sphinx!=4.0.0
+standard-distutils:
+  count: 1
+  constraints:
+  - standard-distutils; python_version >= "3.12"
+tabulate:
+  count: 1
+  constraints:
+  - tabulate
+thinc:
+  count: 1
+  constraints:
+  - thinc<8.4.0,>=8.3.12
+toml:
+  count: 1
+  constraints:
+  - toml
+tomlkit:
+  count: 1
+  constraints:
+  - tomlkit>=0.11.1
+tree-sitter:
+  count: 1
+  constraints:
+  - tree-sitter<0.22
+twine:
+  count: 1
+  constraints:
+  - twine>=6.1.0
+types-psutil:
+  count: 1
+  constraints:
+  - types-psutil
+types-pyyaml:
+  count: 1
+  constraints:
+  - types-PyYAML
+types-setuptools:
+  count: 1
+  constraints:
+  - types-setuptools
+versioningit:
+  count: 1
+  constraints:
+  - versioningit
+z3-solver:
+  count: 1
+  constraints:
+  - z3-solver<4.15.5,>=4.13.0
