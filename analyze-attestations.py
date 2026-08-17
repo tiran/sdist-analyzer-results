@@ -291,6 +291,18 @@ def main() -> None:
         for r in sorted(without_attestation, key=lambda r: r.name.lower())
     }
 
+    # Classify refs: tag, main/master branch, other branch, unknown
+    ref_counts: Counter[str] = Counter()
+    for r in with_attestation:
+        if not r.ref:
+            ref_counts["unknown"] += 1
+        elif r.ref.startswith("refs/tags/"):
+            ref_counts["tag"] += 1
+        elif r.ref in ("refs/heads/main", "refs/heads/master"):
+            ref_counts["main/master"] += 1
+        else:
+            ref_counts["other branch"] += 1
+
     output = {
         "note": "Only the latest version of each package was checked.",
         "summary": {
@@ -299,6 +311,7 @@ def main() -> None:
             "without_attestation": len(without_attestation),
             "coverage_pct": round(len(with_attestation) / total * 100, 1) if total else 0,
             "publisher_kinds": dict(kind_counts.most_common()),
+            "ref_types": dict(ref_counts.most_common()),
         },
         "with_attestation": attested,
         "without_attestation": not_attested,
