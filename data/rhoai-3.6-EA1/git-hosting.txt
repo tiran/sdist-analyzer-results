@@ -1,0 +1,228 @@
+========================================================================
+Projects WITHOUT git hosting URL in Home-page / Project-URL:
+========================================================================
+  albucore  (no URLs)
+  albumentations
+    Project-URL: Homepage, https://albumentations.ai
+  amd-aiter  (no URLs)
+  antlr4-python3-runtime
+    Project-URL: Homepage, http://www.antlr.org
+  aotriton  (no URLs)
+  avidtools  (no URLs)
+  base2048  (no URLs)
+  beautifulsoup4
+    Project-URL: Download, https://www.crummy.com/software/BeautifulSoup/bs4/download/
+    Project-URL: Homepage, https://www.crummy.com/software/BeautifulSoup/bs4/
+  boxmot  (no URLs)
+  cel-python  (no URLs)
+  cftime  (no URLs)
+  changelog-chug
+    Project-URL: Home Page, https://git.sr.ht/~bignose/changelog-chug
+    Project-URL: Change Log, https://git.sr.ht/~bignose/changelog-chug/tree/main/item/ChangeLog
+    Project-URL: Source, https://git.sr.ht/~bignose/changelog-chug
+    Project-URL: Issue Tracker, https://todo.sr.ht/~bignose/changelog-chug
+  cut-cross-entropy  (no URLs)
+  data-prep-toolkit  (no URLs)
+  databricks-sdk
+    Project-URL: Documentation, https://databricks-sdk-py.readthedocs.io
+  decorator  (no URLs)
+  deep-ep  (no URLs)
+  deep-gemm  (no URLs)
+  detect-installer  (no URLs)
+  docopt
+    Home-page: http://docopt.org
+  ecmwf-datastores-client  (no URLs)
+  execnet
+    Project-URL: Homepage, https://execnet.readthedocs.io/en/latest/
+  fast-langdetect  (no URLs)
+  ffmpy  (no URLs)
+  flydsl  (no URLs)
+  griffecli  (no URLs)
+  griffelib  (no URLs)
+  grpcio-reflection
+    Project-URL: Homepage, https://grpc.io
+    Project-URL: Documentation, https://grpc.github.io/grpc/python/grpc_reflection.html
+  grpcio-status
+    Project-URL: Homepage, https://grpc.io
+    Project-URL: Documentation, https://grpc.github.io/grpc/python/grpc_status.html
+  guardrails-detectors  (no URLs)
+  hdfs
+    Home-page: https://hdfscli.readthedocs.io
+  humming-kernels  (no URLs)
+  hypercorn  (no URLs)
+  ibm-aiu-smi  (no URLs)
+  impactmesh  (no URLs)
+  intel-cmplr-lib-ur
+    Home-page: https://www.intel.com/content/www/us/en/developer/tools/oneapi/base-toolkit.html
+  intel-openmp
+    Home-page: https://www.intel.com/content/www/us/en/developer/tools/oneapi/dpc-compiler.html
+  ipython-genutils
+    Home-page: http://ipython.org
+  ipywidgets
+    Home-page: http://jupyter.org
+  its-hub
+    Project-URL: Homepage, https://ai-innovation.team/its_hub
+  jiwer  (no URLs)
+  jupyter
+    Home-page: https://jupyter.org
+  jupyter-console
+    Project-URL: Homepage, https://jupyter.org
+  jupyter-server-mathjax
+    Home-page: http://jupyter.org
+  jupyter-server-mcp  (no URLs)
+  kernels  (no URLs)
+  langfuse  (no URLs)
+  lazyllm  (no URLs)
+  llama-cloud  (no URLs)
+  llama-cloud-services  (no URLs)
+  llama-index-embeddings-huggingface  (no URLs)
+  llama-index-embeddings-openai  (no URLs)
+  llama-index-llms-openai  (no URLs)
+  llama-index-vector-stores-faiss  (no URLs)
+  llama-index-workflows  (no URLs)
+  llama-parse  (no URLs)
+  llm-d-latency-predictor  (no URLs)
+  logfire-api  (no URLs)
+  mail-parser  (no URLs)
+  maplibre  (no URLs)
+  mem0ai  (no URLs)
+  mistral-common  (no URLs)
+  mlserver  (no URLs)
+  mlserver-lightgbm  (no URLs)
+  mlserver-onnx  (no URLs)
+  mlserver-sklearn  (no URLs)
+  mlserver-xgboost  (no URLs)
+  model-hosting-container-standards  (no URLs)
+  modelscope-hub  (no URLs)
+  namex  (no URLs)
+  nbconvert
+    Project-URL: Homepage, https://jupyter.org
+  nixl  (no URLs)
+  nixl-cu12  (no URLs)
+  nose
+    Home-page: http://readthedocs.org/docs/nose/
+  notebook-shim  (no URLs)
+  numba
+    Home-page: https://numba.pydata.org
+  nvidia-ml-py
+    Home-page: https://forums.developer.nvidia.com
+  obstore
+    Home-page: https://developmentseed.org/obstore
+  olefile
+    Home-page: https://www.decalage.info/python/olefileio
+  olot  (no URLs)
+  onnxruntime
+    Home-page: https://onnxruntime.ai
+  onnxruntime-gpu
+    Home-page: https://onnxruntime.ai
+  onnxruntime-migraphx
+    Home-page: https://onnxruntime.ai
+  openai-harmony  (no URLs)
+  openpipe-art  (no URLs)
+  opentelemetry-semantic-conventions-ai  (no URLs)
+  openvino
+    Home-page: https://docs.openvino.ai/2023.0/index.html
+  opt-einsum  (no URLs)
+  pandoc-rhai  (no URLs)
+  phik  (no URLs)
+  pluggy  (no URLs)
+  ply
+    Home-page: http://www.dabeaz.com/ply/
+  pplx-kernels  (no URLs)
+  py-key-value-aio  (no URLs)
+  py-rust-stemmers  (no URLs)
+  py3dmol
+    Home-page: https://3dmol.org
+  py4j
+    Home-page: https://www.py4j.org/
+  pycodestyle
+    Home-page: https://pycodestyle.pycqa.org/
+    Project-URL: Changes, https://pycodestyle.pycqa.org/en/latest/developer.html#changes
+  pydub
+    Home-page: http://pydub.com
+  pygam  (no URLs)
+  pysqlite3  (no URLs)
+  python-libsbml
+    Home-page: http://sbml.org
+  pyvers  (no URLs)
+  quack-kernels  (no URLs)
+  reportlab
+    Home-page: https://www.reportlab.com/
+  rfc3986
+    Home-page: http://rfc3986.readthedocs.io
+  rfc3987
+    Home-page: http://pypi.python.org/pypi/rfc3987
+  rich-toolkit  (no URLs)
+  rignore  (no URLs)
+  runai-model-streamer  (no URLs)
+  runai-model-streamer-azure  (no URLs)
+  runai-model-streamer-gcs  (no URLs)
+  runai-model-streamer-s3  (no URLs)
+  sanityze  (no URLs)
+  sendnn-inference  (no URLs)
+  simple-parsing  (no URLs)
+  smolagents  (no URLs)
+  sortedcontainers
+    Home-page: http://www.grantjenks.com/docs/sortedcontainers/
+  spacy-legacy
+    Home-page: https://spacy.io
+  sphinxcontrib-jsmath
+    Home-page: http://sphinx-doc.org/
+  spyremetrics  (no URLs)
+  tensorflow
+    Home-page: https://www.tensorflow.org/
+  tensorflow-cpu
+    Home-page: https://www.tensorflow.org/
+  tensorflow-metadata  (no URLs)
+  tensorflow-rocm
+    Home-page: https://www.tensorflow.org/
+  tilelang  (no URLs)
+  torch-c-dlpack-ext  (no URLs)
+  torch-sendnn  (no URLs)
+  traittypes
+    Home-page: http://ipython.org
+  tritonclient  (no URLs)
+  trustyai-service  (no URLs)
+  webob
+    Home-page: http://webob.org/
+  widgetsnbextension
+    Home-page: http://jupyter.org
+  xlrd
+    Home-page: http://www.python-excel.org/
+  zict
+    Home-page: http://zict.readthedocs.io/en/latest/
+
+========================================================================
+Projects WITH git hosting URL:
+========================================================================
+  github.com: a2a-sdk, a2wsgi, abnf, about-time, absl-py, accelerate, adagio, adversarial-robustness-toolbox, aenum, affine, agent-client-protocol, agentic-ci, ai4rag, aif360, aioboto3, aiobotocore, aiofile, aiofiles, aiohappyeyeballs, aiohttp, aiohttp-cors, aiohttp-retry, aioitertools, aiokafka, aiologic, aiosignal, aiosmtplib, aiosqlite, aistore, aix360, alabaster, alchemy-config, alchemy-logging, alembic, algorithm-nexus, alive-progress, altair, altgraph, amd-quark, anndata, annotated-doc, annotated-types, annoy, anthropic, anyio, anytree, anywidget, apache-airflow, apache-airflow-core, apache-airflow-providers-common-compat, apache-airflow-providers-common-io, apache-airflow-providers-common-sql, apache-airflow-providers-smtp, apache-airflow-providers-standard, apache-airflow-task-sdk, apache-tvm-ffi, appdirs, argcomplete, argon2-cffi, argon2-cffi-bindings, array-api-compat, array-record, arrow, asciitree, asgiref, asn1crypto, ast-serialize, astor, astroid, asttokens, astunparse, async-lru, async-timeout, asyncer, asyncmy, asyncpg, atlassian-python-api, attr, attrs, authlib, auto-round, autodoc-pydantic, autogluon-common, autogluon-core, autogluon-features, autogluon-tabular, autogluon-timeseries, autopep8, av, azure-ai-contentunderstanding, azure-ai-documentintelligence, azure-core, azure-identity, azure-storage-blob, azure-storage-file-share, babel, backoff, backports-zstd, banks, bashlex, bcrypt, beartype, beniget, bidict, bigtree, biotite, biotraj, bitsandbytes, black, blake3, bleach, blessed, blinker, blis, blobfile, bokeh, boolean-py, boto3, botocore, bqplot, bqscales, braceexpand, bracex, branca, breadability, brotli, browser-use, browser-use-sdk, bubus, build, cache-dit, cachebox, cachecontrol, cachetools, cadwyn, caikit, caikit-nlp-client, caio, calver, cartopy, cassandra-driver, catalogue, causal-conv1d, cbor2, cdp-use, cdsapi, certifi, cffi, cfgv, chardet, charset-normalizer, chromadb, chronos-forecasting, cibuildwheel, cint, cleo, click, click-default-group, click-option-group, clickhouse-connect, cloudevents, cloudpathlib, cloudpickle, cmake, cmarkgfm, cmd2, cmdstanpy, cobble, codeflare-sdk, codetiming, cohere, coherent-licensed, colorama, colorful, colorlog, colpali-engine, comm, compressed-tensors, conch-triton-kernels, condense-json, confection, configargparse, contextily, contourpy, coreforecast, coverage, cowsay, cppy, cpu-load-generator, crashtest, crewai, crewai-cli, crewai-core, cron-descriptor, croniter, cryptography, ctranslate2, cuda-bindings, cuda-pathfinder, cuda-python, cuda-tile, culsans, cvdata, cycler, cyclopts, cymem, cysignals, cython, dacite, daft, dash, dask, dataclasses-json, dataproperty, datasets, datatrove, dateparser, datetime, debugpy, deepdiff, deepeval, deepl, deepspeed, defusedxml, delocate, dependency-groups, deprecated, deprecation, depyf, detectron2, diffusers, dill, dirtyjson, diskcache, diskcache-weave, distlib, distributed, distro, dm-tree, dnspython, docker, doclang, docling, docling-core, docling-ibm-models, docling-jobkit, docling-mcp, docling-parse, docling-serve, docling-slim, docopt-ng, docstring-parser, docstring-to-markdown, donfig, dspy, duckdb, dulwich, dunamai, durationpy, earth2studio, ecoji, einops, einx, elastic-transport, elasticsearch, elementpath, elfdeps, email-validator, emoji, entrypoints, escapism, etils, eval-hub-sdk, eval-hub-server, eval-type-backport, evaluate, exceptiongroup, executing, expandvars, fairlearn, faiss-cpu, faker, fastai, fastapi, fastapi-cli, fastapi-cloud-cli, fastapi-utils, fastar, fastavro, fastcore, fastdownload, fastembed, fasteners, fastjsonschema, fastmcp, fastmcp-slim, fastprogress, fastsafetensors, fasttext-predict, fasttransform, fastuuid, feast, fickling, filelock, filetype, filterpy, findpython, fire, firebase-admin, fla-core, flake8, flash-attn, flash-linear-attention, flashinfer-cubin, flashinfer-jit-cache, flashinfer-python, flask, flask-cors, flask-login, flatbuffers, flit-core, fms-model-optimizer, folium, fonttools, fqdn, fromager, frozendict, frozenlist, fsspec, ftfy, fugue, future, fuzzywuzzy, fvcore, garak, gast, gcsfs, gdown, genai-prices, genson, geobenchv2, geographiclib, geojson, geomet, geopandas, geopy, gepa, gevent, geventhttpclient, gguf, gitdb, gitpython, gluonts, goodpoints, google-api-core, google-api-python-client, google-auth, google-auth-httplib2, google-auth-oauthlib, google-cloud-core, google-cloud-firestore, google-cloud-language, google-cloud-storage, google-cloud-storage-control, google-cloud-translate, google-crc32c, google-genai, google-pasta, google-re2, google-resumable-media, googleapis-common-protos, gpustat, gql, gradio, gradio-client, graphemeu, graphene, graphql-core, graphql-relay, graphviz, greenback, greenlet, griffe, groovy, groq, grpc-google-iam-v1, grpc-interceptor, grpcio, grpcio-tools, gssapi, guidellm, gunicorn, h11, h2, h5netcdf, h5py, hatch, hatch-build-scripts, hatch-docstring-description, hatch-fancy-pypi-readme, hatch-jupyter-builder, hatch-nodejs-version, hatch-requirements-txt, hatch-vcs, hatchling, haystack-ai, hf-transfer, hf-xet, hiredis, hjson, hnswlib, holidays, hpack, html5lib, html5tagger, httpcore, httpcore2, httplib2, httptools, httpx, httpx-sse, httpx2, huey, huggingface-hub, humanize, hydra-core, hyperframe, hyperlink, ibm-cos-sdk, ibm-cos-sdk-core, ibm-cos-sdk-s3transfer, ibm-fms, ibm-watsonx-ai, id, identify, idna, ijson, imagehash, imageio, imageio-ffmpeg, imagesize, imbalanced-learn, immutabledict, importlib-metadata, importlib-resources, in-toto-attestation, iniconfig, inquirerpy, inspect-ai, installer, instructlab-training, instructor, instructorembedding, interegular, intervaltree, invoke, iopath, ipadic, ipdb, ipyevents, ipyfilechooser, ipykernel, ipyleaflet, ipython, ipython-pygments-lexers, ipytree, ipyvue, ipyvuetify, isodate, isoduration, isort, itsdangerous, janus, jaraco-classes, jaraco-context, jaraco-functools, javaobj-py3, jedi, jinja2, jinxed, jiter, jmespath, joblib, joserfc, jpype1, json-repair, json5, jsonargparse, jsonlines, jsonpatch, jsonpath-ng, jsonpath-python, jsonpointer, jsonref, jsonschema, jsonschema-path, jsonschema-specifications, jupyter-ai, jupyter-ai-acp-client, jupyter-ai-chat-commands, jupyter-ai-persona-manager, jupyter-ai-router, jupyter-ai-tools, jupyter-bokeh, jupyter-builder, jupyter-client, jupyter-collaboration, jupyter-collaboration-ui, jupyter-core, jupyter-docprovider, jupyter-events, jupyter-leaflet, jupyter-lsp, jupyter-packaging, jupyter-resource-usage, jupyter-server, jupyter-server-documents, jupyter-server-fileid, jupyter-server-proxy, jupyter-server-terminals, jupyter-server-ydoc, jupyter-ydoc, jupyterlab, jupyterlab-chat, jupyterlab-commands-toolkit, jupyterlab-eventlistener, jupyterlab-git, jupyterlab-git-core, jupyterlab-lsp, jupyterlab-notebook-awareness, jupyterlab-pygments, jupyterlab-server, jupyterlab-widgets, kafka-python, kafka-python-ng, kaitaistruct, keras, kernels-data, keyring, kfp, kfp-kubernetes, kfp-pipeline-spec, kfp-server-api, kiwisolver, kornia, kornia-rs, krb5, krbcontext, kserve, kube-authkit, kubeflow, kubeflow-kale, kubeflow-katib-api, kubeflow-spark-api, kubeflow-trainer-api, kubeflow-training, kubernetes, kvcached, lance-namespace, lance-namespace-urllib3-client, lancedb, langchain, langchain-chroma, langchain-classic, langchain-community, langchain-core, langchain-experimental, langchain-google-genai, langchain-huggingface, langchain-milvus, langchain-nvidia-ai-endpoints, langchain-openai, langchain-protocol, langchain-text-splitters, langcodes, langdetect, langextract, langgraph, langgraph-checkpoint, langgraph-prebuilt, langgraph-sdk, langsmith, lapx, lark, latex2mathml, latex2sympy2-extended, lazy-imports, lazy-loader, lazy-object-proxy, ldap3, leafmap, legacy-api-wrap, libclang, libcst, libnacl, librosa, librt, license-expression, liger-kernel, lighteval, lightgbm, lightly, lightly-utils, lightning, lightning-utilities, lime, linkify-it-py, litellm, llama-index, llama-index-core, llama-index-instrumentation, llguidance, llm, llmcompressor, llvmlite, lm-eval, lm-format-enforcer, locket, locust, logfire, loguru, lomond, lorem, lxml, lxml-html-clean, lz4, macholib, magika, mailbits, mako, mamba-ssm, mammoth, mariadb, markdown, markdown-it-py, markdown2, markdownify, marker-pdf, markitdown, marko, markupsafe, marshmallow, math-verify, matplotlib, matplotlib-inline, maturin, mbstrdecoder, mccabe, mcp, mcp-types, mdit-py-plugins, mdurl, memray, mercantile, meson, meson-python, methodtools, micropipenv, mikeshardmind-base2048, milvus-lite, minify-html, minio, mistralai, mistune, ml-collections, ml-dtypes, mlflow, mlflow-skinny, mlflow-tracing, mlforecast, mmh3, model-index, model-registry, models-dev, modelscope, monai, more-itertools, mpire, mpmath, msal, msal-extensions, msgpack, msgspec, multidict, multimethod, multiprocess, multitasking, multiurl, munch, murmurhash, mypy, mypy-extensions, mysql, mysql-connector-python, mysqlclient, myst-parser, nanobind, narwhals, natsort, nbclient, nbdime, nbformat, nbgitpuller, nemo-toolkit, nemoguardrails, neo4j, nest-asyncio, nest-asyncio2, netcdf4, networkx, nglview, nh3, ninja, nlpaug, nltk, nodeenv, nomic, notebook, numcodecs, numexpr, numpy, nvdlib, nvidia-cudnn-frontend, nvidia-cutlass-dsl, nvidia-cutlass-dsl-libs-base, nvidia-cutlass-dsl-libs-cu13, nvidia-riva-client, nvitop, nvtx, oauthlib, odfdo, odh-elyra, odh-jupyter-trash-cleanup, office365-rest-python-client, ogx-client, oldest-supported-numpy, ollama, omegaconf, onnx, onnx-ir, onnxconverter-common, onnxscript, onnxslim, openai, openai-whisper, openalgo, openapi-pydantic, opencc-python-reimplemented, opencensus, opencensus-context, opencv-python, opencv-python-headless, openimages, openshell, openshift-client, opentelemetry-api, opentelemetry-distro, opentelemetry-exporter-otlp, opentelemetry-exporter-otlp-proto-common, opentelemetry-exporter-otlp-proto-grpc, opentelemetry-exporter-otlp-proto-http, opentelemetry-exporter-prometheus, opentelemetry-instrumentation, opentelemetry-instrumentation-asgi, opentelemetry-instrumentation-botocore, opentelemetry-instrumentation-fastapi, opentelemetry-instrumentation-grpc, opentelemetry-instrumentation-httpx, opentelemetry-instrumentation-system-metrics, opentelemetry-propagator-aws-xray, opentelemetry-proto, opentelemetry-sdk, opentelemetry-semantic-conventions, opentelemetry-util-http, openvino-telemetry, optree, optuna, oracledb, oras, ordered-set, orderly-set, orjson, ormsgpack, outcome, outlines, outlines-core, overrides, packageurl-python, packaging, pandas, pandocfilters, papermill, paramiko, parso, partd, partial-json-parser, patchelf, pathable, pathlib-abc, pathspec, pathvalidate, patsy, pbs-installer, pdf2image, pdfminer-six, pdfplumber, pdftext, pdm-backend, pdm-pep517, pecan, peewee, peft, pendulum, petab, pexpect, pfzy, pgvector, phonenumbers, pillow, pinecone, pip, pkgconfig, platformdirs, plotly, plum-dispatch, poetry, poetry-core, poetry-dynamic-versioning, polars, polyfactory, polyfile-weave, pooch, portalocker, posix-ipc, posthog, pre-commit, preshed, presidio, presidio-analyzer, presidio-anonymizer, prettytable, priority, progress, progressbar2, prometheus-client, prometheus-fastapi-instrumentator, promise, prompt-toolkit, propcache, prophet, proto-plus, protobuf, psutil, psycopg, psycopg2, psygnal, ptyprocess, puccinialin, pure-eval, puremagic, py-cpuinfo, py-grpc-prometheus, py-markdown-table, py-spy, py-to-proto, pyaml, pyarrow, pyasn1, pyasn1-modules, pybase64, pybind11, pybind11-global, pybindgen, pyclibrary, pyclipper, pycocotools, pycountry, pycparser, pycrdt, pycrdt-store, pycrdt-websocket, pycryptodome, pycryptodomex, pydantic, pydantic-ai, pydantic-ai-slim, pydantic-core, pydantic-evals, pydantic-extra-types, pydantic-graph, pydantic-monty, pydantic-monty-client, pydantic-monty-runtime, pydantic-settings, pydeck, pydeprecate, pydocstyle, pydot, pyelftools, pyenchant, pyfiglet, pyflakes, pygithub, pygments, pygrib, pygtrie, pyjwt, pylatexenc, pylint, pymatting, pymilvus, pymongo, pymssql, pymysql, pynacl, pyngrok, pynpm, pynvml, pyodbc, pyogrio, pyopenssl, pyotp, pyparsing, pypdf, pypdfium2, pyperclip, pypesto, pypi-simple, pypika, pyproj, pyproject-hooks, pyproject-metadata, pyshp, pysnow, pysocks, pyspark, pyspark-client, pyspark-connect, pyspnego, pystac, pystac-client, pystac-core, pystac-ext-classification, pystac-ext-datacube, pystac-ext-eo, pystac-ext-file, pystac-ext-grid, pystac-ext-item-assets, pystac-ext-label, pystac-ext-mgrs, pystac-ext-mlm, pystac-ext-pointcloud, pystac-ext-projection, pystac-ext-raster, pystac-ext-render, pystac-ext-sar, pystac-ext-sat, pystac-ext-scientific, pystac-ext-storage, pystac-ext-table, pystac-ext-timestamps, pystac-ext-version, pystac-ext-view, pystac-ext-xarray-assets, pytabkit, pytablewriter, pytest, pytest-asyncio, pytest-cov, pytest-repeat, pytest-rerunfailures, pytest-runner, pytest-xdist, python-box, python-dateutil, python-discovery, python-docx, python-dotenv, python-engineio, python-fasthtml, python-iso639, python-json-logger, python-lsp-jsonrpc, python-lsp-server, python-magic, python-multipart, python-oxmsg, python-pptx, python-rapidjson, python-slugify, python-socketio, python-stdnum, python-ulid, python-utils, pythran, pytokens, pytoolconfig, pytorch-lightning, pytorch-tabular, pytz, pywavelets, pyyaml, pyzmq, qdrant-client, questionary, qwen-omni-utils, qwen-vl-utils, ragas, rank-bm25, rapidfuzz, rapidocr, rasterio, ray, rdflib, readme-renderer, redis, referencing, regex, rembg, replicate, requests, requests-kerberos, requests-mock, requests-oauthlib, requests-toolbelt, resampy, resolvelib, retrying, reward-hub, rfc3161-client, rfc3339-validator, rfc3986-validator, rfc3987-syntax, rfc8785, rh-model-signing, rhai-innovation-mini-trainer, rhoai-mcp, rich, rich-argparse, rich-rst, rioxarray, ripgrep, river, robust-downloader, roman-numerals, rope, rouge-score, rpds-py, rq, rsa, rtree, ruff, rwkv, s3fs, s3transfer, sacrebleu, safehttpx, safetensors, sanic, sanic-routing, scalar-fastapi, sccache, scikit-base, scikit-build, scikit-build-core, scikit-image, scikit-learn, scikit-network, scipy, scooby, screeninfo, scrubadub, scverse-misc, sdg-hub, seaborn, secretstorage, securesystemslib, segmentation-models-pytorch, selenium, semantic-version, semchunk, semver, send2trash, sentence-transformers, sentencepiece, sentinelhub, sentry-sdk, session-info2, setproctitle, setuptools, setuptools-git-versioning, setuptools-rust, setuptools-scm, shap, shapely, shellingham, shortuuid, sigprofilerassignment, sigprofilerextractor, sigprofilermatrixgenerator, sigprofilerplotting, sigstore, sigstore-models, sigstore-rekor-types, simpervisor, simple-salesforce, simple-websocket, simpleeval, simsimd, six, skl2onnx, sklearn-compat, skops, slicer, smart-open, smmap, sniffio, snowballstemmer, snowflake-connector-python, soundfile, soupsieve, sox, soxr, spacy, spacy-loggers, spdx-tools, speculators, speechrecognition, sphinx, sphinx-click, sphinx-rtd-theme, sphinxcontrib-applehelp, sphinxcontrib-devhelp, sphinxcontrib-htmlhelp, sphinxcontrib-jquery, sphinxcontrib-qthelp, sphinxcontrib-serializinghtml, sphinxcontrib-spelling, spin, sqlalchemy, sqlite-anyio, sqlite-fts4, sqlite-utils, sqlitedict, sqlparse, srsly, sse-starlette, stack-data, stackstac, standard-distutils, stanio, starlette, starlette-context, starlette-exporter, statsforecast, statsmodels, stdlibs, streamlit, streamlit-option-menu, stringzilla, structlog, sumy, supervision, supervisor, surya-ocr, svcs, sympy, tabledata, tabulate, tacoreader, tacotoolbox, tacozip, tblib, tcolorpy, tenacity, tensorboard, tensorboard-data-server, tensordict, tensorflow-datasets, tensorizer, termcolor, terminado, terrakit, terratorch, tesserocr, text-generation, text-unidecode, textblob, textual, thinc, threadpoolctl, tifffile, tiktoken, timing-asgi, timm, tinycss2, tinytag, tldextract, tokenizers, toml, tomli, tomli-w, tomlkit, toolz, torch, torch-einops-utils, torchao, torchaudio, torchcodec, torchdata, torchgeo, torchmetrics, torchsde, torchvision, tornado, tqdm, tqdm-multiprocess, tracerite, trackio, training-hub, traitlets, transformers, tree-sitter, tree-sitter-c, tree-sitter-javascript, tree-sitter-languages, tree-sitter-python, tree-sitter-typescript, triad, trimesh, trino, trio, trio-websocket, triton, trl, trove-classifiers, truststore, trustyai, tuf, twine, typeguard, typepy, typer, typer-slim, types-html5lib, types-psutil, types-pyyaml, types-requests, types-setuptools, types-toml, types-tqdm, types-webencodings, typeshed-client, typing-extensions, typing-inspect, typing-inspection, tyro, tzdata, tzlocal, uc-micro-py, ujson, ultralytics, ultralytics-thop, uncalled-for, unitxt, universal-pathlib, unsloth, unsloth-zoo, unstructured, unstructured-client, uritemplate, uritools, urllib3, userpath, utilsforecast, utm, uuid-utils, uuid6, uuid7, uv, uv-build, uv-dynamic-versioning, uvicorn, uvicorn-worker, uvloop, vcs-versioning, verl, versioneer, versioningit, virtualenv, visions, vllm, vllm-bart-plugin, vllm-judge, vllm-omni, wandb, wasabi, watchdog, watchfiles, watermark, wcwidth, weasel, weave, webcolors, webencodings, websocket-client, websockets, werkzeug, whatthepatch, wheel, whitebox, whiteboxgui, wikipedia, window-ops, wirerope, wn, word2number, wordcloud, wrapt, wsproto, xarray, xdg-base-dirs, xgboost, xgrammar, xlsxwriter, xmlschema, xmltodict, xxhash, xyzservices, yacs, yapf, yara-python, yarl, yaspin, ydata-profiling, yfinance, youtube-transcript-api, yt-dlp, z3-solver, zalgolib, zarr, zeep, zentorch, zipfile-zstd, zipp, zope-event, zope-interface, zstandard
+  gitlab.com: flit-scm, jeepney, trampoline
+  foss.heptapod.net: et-xmlfile, openpyxl
+  opendev.org: pbr, stevedore
+  codeberg.org: requests-file, x-transformers
+  sourceforge.net: docutils
+  code.google.com: fpdf
+  launchpad.net: lockfile
+  code.launchpad.net: pkginfo
+  pagure.io: python-daemon
+  gitlab.linss.com: uri-template
+
+========================================================================
+Hosting platform usage:
+========================================================================
+  github.com                      1348  (90.0%)
+  gitlab.com                         3  (0.2%)
+  foss.heptapod.net                  2  (0.1%)
+  opendev.org                        2  (0.1%)
+  codeberg.org                       2  (0.1%)
+  sourceforge.net                    1  (0.1%)
+  code.google.com                    1  (0.1%)
+  launchpad.net                      1  (0.1%)
+  code.launchpad.net                 1  (0.1%)
+  pagure.io                          1  (0.1%)
+  gitlab.linss.com                   1  (0.1%)
+
+Total projects analyzed: 1498
+Projects WITH git hosting URL: 1363
+Projects WITHOUT git hosting URL: 135
+Percentage without git hosting: 9.0%

@@ -27,9 +27,10 @@ Usage::
 from __future__ import annotations
 
 import argparse
+import io
 import re
 import sys
-from collections import Counter
+from collections import Counter, defaultdict
 from pathlib import Path
 
 import packaging.metadata
@@ -170,9 +171,10 @@ def main() -> None:
             without_git.append((name, home_page, project_urls))
 
     # --- Report ---
-    print("=" * 72)
-    print("Projects WITHOUT git hosting URL in Home-page / Project-URL:")
-    print("=" * 72)
+    out = io.StringIO()
+    out.write("=" * 72 + "\n")
+    out.write("Projects WITHOUT git hosting URL in Home-page / Project-URL:\n")
+    out.write("=" * 72 + "\n")
     for project, home_page, project_urls in without_git:
         urls_info: list[str] = []
         if home_page and home_page.upper() != "UNKNOWN":
@@ -180,36 +182,48 @@ def main() -> None:
         for label, url in project_urls.items():
             urls_info.append(f"Project-URL: {label}, {url}")
         if urls_info:
-            print(f"  {project}")
+            out.write(f"  {project}\n")
             for info in urls_info:
-                print(f"    {info}")
+                out.write(f"    {info}\n")
         else:
-            print(f"  {project}  (no URLs)")
-    print()
-    print("=" * 72)
-    print("Projects WITH git hosting URL:")
-    print("=" * 72)
+            out.write(f"  {project}  (no URLs)\n")
+    out.write("\n")
+    out.write("=" * 72 + "\n")
+    out.write("Projects WITH git hosting URL:\n")
+    out.write("=" * 72 + "\n")
+    # Group projects by platform
+    platform_projects: dict[str, list[str]] = defaultdict(list)
     for project, platforms in with_git:
-        print(f"  {project}: {', '.join(sorted(platforms))}")
-    print()
-    print("=" * 72)
-    print("Hosting platform usage:")
-    print("=" * 72)
+        for p in platforms:
+            platform_projects[p].append(project)
+    for platform in sorted(platform_projects, key=lambda p: -len(platform_projects[p])):
+        projects = sorted(platform_projects[platform])
+        out.write(f"  {platform}: {', '.join(projects)}\n")
+    out.write("\n")
+    out.write("=" * 72 + "\n")
+    out.write("Hosting platform usage:\n")
+    out.write("=" * 72 + "\n")
     platform_counts: Counter[str] = Counter()
     for _project, platforms in with_git:
         for p in platforms:
             platform_counts[p] += 1
     for platform, count in platform_counts.most_common():
-        print(f"  {platform:30s} {count:5d}  ({count / total * 100:.1f}%)")
-    print()
-    print(f"Total projects analyzed: {total}")
-    print(f"Projects WITH git hosting URL: {len(with_git)}")
-    print(f"Projects WITHOUT git hosting URL: {len(without_git)}")
+        out.write(f"  {platform:30s} {count:5d}  ({count / total * 100:.1f}%)\n")
+    out.write(f"\nTotal projects analyzed: {total}\n")
+    out.write(f"Projects WITH git hosting URL: {len(with_git)}\n")
+    out.write(f"Projects WITHOUT git hosting URL: {len(without_git)}\n")
     if total > 0:
-        print(
+        out.write(
             f"Percentage without git hosting: "
-            f"{len(without_git) / total * 100:.1f}%"
+            f"{len(without_git) / total * 100:.1f}%\n"
         )
+
+    result = out.getvalue()
+    print(result)
+
+    dest = rhoai_dir / "git-hosting.txt"
+    dest.write_text(result)
+    print(f"Wrote {dest}", file=sys.stderr)
 
 
 if __name__ == "__main__":
