@@ -24,7 +24,7 @@ Reports:
 Usage::
 
     uv run compare-build-deps.py
-    uv run compare-build-deps.py 3.6-EA1
+    uv run compare-build-deps.py 3.6
 """
 
 from __future__ import annotations
@@ -39,7 +39,7 @@ from packaging.requirements import InvalidRequirement, Requirement
 from packaging.utils import canonicalize_name
 
 DATA_DIR = Path("data")
-DEFAULT_VERSION = "3.6-EA1"
+DEFAULT_VERSION = "3.6"
 
 
 def parse_fromager(path: Path) -> set[str]:

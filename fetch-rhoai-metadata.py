@@ -28,6 +28,7 @@ If parsing fails, the original METADATA is written and a marker file
 Usage::
 
     uv run fetch-rhoai-metadata.py
+    uv run fetch-rhoai-metadata.py 3.6 test
     uv run fetch-rhoai-metadata.py 3.6-EA1 test
     uv run fetch-rhoai-metadata.py 3.5 prod
 """
@@ -92,9 +93,12 @@ async def fetch_indexes(
         data = resp.json()
         for d in data.get("results", []):
             name: str = d["name"]
-            if _NAME_RE.match(name) is None:
+            m = _NAME_RE.match(name)
+            if m is None:
                 continue
-            if not name.startswith(expected_pv + "-"):
+            # Exact product-version match so a GA index (rhoai-3.6) does not
+            # also pick up early-access indexes (rhoai-3.6-EA1).
+            if m.group(1) != expected_pv:
                 continue
             if "-sdists" in name:
                 continue
@@ -282,8 +286,8 @@ async def main() -> None:
     ap.add_argument(
         "version",
         nargs="?",
-        default="3.6-EA1",
-        help="RHOAI index version (default: 3.6-EA1)",
+        default="3.6",
+        help="RHOAI index version (default: 3.6)",
     )
     ap.add_argument(
         "index_type",

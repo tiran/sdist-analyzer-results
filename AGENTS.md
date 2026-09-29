@@ -29,7 +29,7 @@ All scripts use `uv run` with PEP 723 inline metadata (no requirements.txt neede
 
 ```
 data/
-  rhoai-3.6-EA1/
+  rhoai-3.6/
     elf-analysis.md                      # combined report
     transitive-deps.yaml                 # ldd transitive dep analysis
     {cpu,cuda12.9,cuda13.0,rocm7.1,rocm7.14,spyre}-ubi9-test/
@@ -43,7 +43,7 @@ data/
 
 ## Practices
 
-- Fetch RHOAI data: `uv run fetch-rhoai-metadata.py 3.6-EA1 test`
-- Fetch PyPI sdists: `uv run fetch-pypi-sdists.py 3.6-EA1`
-- Analyze ELF deps: `uv run analyze-elf-deps.py 3.6-EA1`
+- Fetch RHOAI data: `uv run fetch-rhoai-metadata.py 3.6 test`
+- Fetch PyPI sdists: `uv run fetch-pypi-sdists.py 3.6`
+- Analyze ELF deps: `uv run analyze-elf-deps.py 3.6`
 - AI-assisted: scripts developed with Claude (Anthropic). Review before relying on output.

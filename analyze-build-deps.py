@@ -26,7 +26,7 @@ Writes:
 Usage::
 
     uv run analyze-build-deps.py
-    uv run analyze-build-deps.py 3.6-EA1
+    uv run analyze-build-deps.py 3.6
 """
 
 from __future__ import annotations
@@ -42,7 +42,7 @@ from packaging.requirements import InvalidRequirement, Requirement
 from packaging.utils import canonicalize_name, canonicalize_version
 
 DATA_DIR = Path("data")
-DEFAULT_VERSION = "3.6-EA1"
+DEFAULT_VERSION = "3.6"
 
 FROMAGER_FILES = {
     "fromager-build-system-requirements.txt",

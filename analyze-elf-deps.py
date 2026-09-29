@@ -21,7 +21,7 @@ and dependency complexity classifications.
 Usage::
 
     uv run analyze-elf-deps.py
-    uv run analyze-elf-deps.py 3.6-EA1
+    uv run analyze-elf-deps.py 3.6
 """
 
 from __future__ import annotations
@@ -896,8 +896,8 @@ def main() -> None:
     ap.add_argument(
         "version",
         nargs="?",
-        default="3.6-EA1",
-        help="RHOAI index version (default: 3.6-EA1)",
+        default="3.6",
+        help="RHOAI index version (default: 3.6)",
     )
     args = ap.parse_args()
 

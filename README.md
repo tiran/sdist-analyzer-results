@@ -23,7 +23,7 @@ automatically into a cached per-script virtualenv.
 ### 1. Fetch RHOAI wheel metadata
 
 ```bash
-uv run fetch-rhoai-metadata.py 3.6-EA1 test
+uv run fetch-rhoai-metadata.py 3.6 test
 ```
 
 Discovers all RHOAI Pulp indexes for the given version, scrapes the
@@ -45,7 +45,7 @@ Output per index directory:
 ### 2. Fetch PyPI sdist metadata
 
 ```bash
-uv run fetch-pypi-sdists.py 3.6-EA1
+uv run fetch-pypi-sdists.py 3.6
 ```
 
 Scans the local RHOAI data to discover package names and versions,
@@ -57,14 +57,14 @@ recorded in `data/pypi-no-sdist.yaml`.
 
 ```bash
 # ELF shared library dependency analysis
-uv run analyze-elf-deps.py 3.6-EA1
+uv run analyze-elf-deps.py 3.6
 
 # PyPI digital attestations (PEP 740)
 # Git hosting URL coverage
-uv run analyze-git-hosting.py 3.6-EA1
+uv run analyze-git-hosting.py 3.6
 
 # Fromager vs upstream build-system.requires diff
-uv run compare-build-deps.py 3.6-EA1
+uv run compare-build-deps.py 3.6
 
 # Transitive system library deps (run on target platform)
 python3 dump-transitive-deps.py
@@ -98,9 +98,9 @@ python3 dump-transitive-deps.py
 
 | File | Description |
 |:---|:---|
-| `data/rhoai-3.6-EA1/elf-analysis.md` | Combined ELF dependency analysis across all indexes |
-| `data/rhoai-3.6-EA1/*/elf-analysis.md` | Per-index ELF dependency analysis |
-| `data/rhoai-3.6-EA1/transitive-deps.yaml` | Transitive deps of vendor/bundleable libraries (from `ldd`) |
+| `data/rhoai-3.6/elf-analysis.md` | Combined ELF dependency analysis across all indexes |
+| `data/rhoai-3.6/*/elf-analysis.md` | Per-index ELF dependency analysis |
+| `data/rhoai-3.6/transitive-deps.yaml` | Transitive deps of vendor/bundleable libraries (from `ldd`) |
 | `data/pypi-releases.yaml` | PyPI release info, wheel tags, and attestation results |
 | `data/pypi-no-sdist.yaml` | Packages/versions without sdists on PyPI |
 | `cuda-rocm-without-torch.md` | Packages using CUDA/ROCm without PyTorch runtime |
@@ -112,7 +112,7 @@ python3 dump-transitive-deps.py
 
 ```
 data/
-  rhoai-3.6-EA1/
+  rhoai-3.6/
     elf-analysis.md
     transitive-deps.yaml
     {cpu,cuda12.9,cuda13.0,rocm7.1,rocm7.14,spyre}-ubi9-test/

@@ -21,7 +21,7 @@ with multiple versions, the latest version is used.
 Usage::
 
     uv run analyze-git-hosting.py
-    uv run analyze-git-hosting.py 3.6-EA1
+    uv run analyze-git-hosting.py 3.6
 """
 
 from __future__ import annotations
@@ -37,7 +37,7 @@ import packaging.metadata
 from packaging.version import InvalidVersion, Version
 
 DATA_DIR = Path("data")
-DEFAULT_VERSION = "3.6-EA1"
+DEFAULT_VERSION = "3.6"
 
 # Patterns that indicate a git hosting platform
 GIT_HOSTING_PATTERNS = re.compile(

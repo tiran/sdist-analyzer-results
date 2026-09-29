@@ -28,7 +28,7 @@ Optimized for re-runs: skips packages whose output directory already exists.
 Usage::
 
     uv run fetch-pypi-sdists.py
-    uv run fetch-pypi-sdists.py 3.6-EA1
+    uv run fetch-pypi-sdists.py 3.6
 """
 
 from __future__ import annotations
@@ -60,7 +60,7 @@ EXTRACT_FILENAMES = {"PKG-INFO", "pyproject.toml", "setup.py"}
 MAX_FIELD_LEN = 512
 
 DATA_DIR = Path("data")
-DEFAULT_VERSION = "3.6-EA1"
+DEFAULT_VERSION = "3.6"
 
 
 def _shrink_pkg_info(raw: bytes) -> bytes:
