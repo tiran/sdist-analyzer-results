@@ -1,0 +1,16 @@
+metadata-version: 2.4
+name: clarabel
+version: 0.11.1
+summary: Clarabel Conic Interior Point Solver for Rust / Python
+keywords: convex,optimization,conic,solver,linear-programming
+author: Paul Goulart <paul.goulart@eng.ox.ac.uk>
+author-email: Paul Goulart <paul.goulart@eng.ox.ac.uk>
+license: Apache-2.0
+license-file: LICENSE.md
+classifier: Programming Language :: Rust
+requires-dist: numpy
+requires-dist: scipy
+requires-dist: cffi
+requires-python: >=3.9
+project-url: Source Code, https://github.com/oxfordcontrol/Clarabel.rs
+

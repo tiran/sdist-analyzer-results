@@ -1,0 +1,18 @@
+metadata-version: 2.4
+name: pycocotools
+version: 2.0.11
+dynamic: description-content-type
+dynamic: home-page
+dynamic: license
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: Official APIs for the MS-COCO dataset
+home-page: https://github.com/ppwwyyxx/cocoapi
+license: FreeBSD
+requires-dist: numpy
+requires-dist: matplotlib>=2.1.0; extra == "all"
+requires-python: >=3.9
+provides-extra: all
+

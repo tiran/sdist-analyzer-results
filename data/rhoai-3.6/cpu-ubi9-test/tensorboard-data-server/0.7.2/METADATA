@@ -1,7 +1,15 @@
-metadata-version: 2.1
-name: tensorboard-data-server
+metadata-version: 2.4
+name: tensorboard_data_server
 version: 0.7.2
-platform: UNKNOWN
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: requires-python
+dynamic: summary
 summary: Fast data loading for TensorBoard
 keywords: tensorflow tensorboard tensor machine learning visualizer
 home-page: https://github.com/tensorflow/tensorboard/tree/master/tensorboard/data/server

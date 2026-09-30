@@ -1,0 +1,44 @@
+metadata-version: 2.4
+name: cuda-core
+version: 1.1.1
+dynamic: license-file
+summary: cuda.core: pythonic CUDA module
+author: NVIDIA Corporation
+license-expression: Apache-2.0
+license-file: LICENSE
+license-file: NOTICE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: Intended Audience :: End Users/Desktop
+classifier: Natural Language :: English
+classifier: Operating System :: POSIX :: Linux
+classifier: Operating System :: Microsoft :: Windows
+classifier: Topic :: Education
+classifier: Topic :: Scientific/Engineering
+classifier: Topic :: Software Development :: Libraries
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Environment :: GPU :: NVIDIA CUDA
+classifier: Environment :: GPU :: NVIDIA CUDA :: 12
+classifier: Environment :: GPU :: NVIDIA CUDA :: 13
+requires-dist: cuda-pathfinder>=1.4.2
+requires-dist: numpy
+requires-dist: backports.strenum; python_version < "3.11"
+requires-dist: cuda-bindings[all]==12.*; extra == "cu12"
+requires-dist: cuda-toolkit==12.*; extra == "cu12"
+requires-dist: cuda-bindings[all]==13.*; extra == "cu13"
+requires-dist: cuda-toolkit==13.*; extra == "cu13"
+requires-python: >=3.10
+project-url: homepage, https://nvidia.github.io/cuda-python/
+project-url: documentation, https://nvidia.github.io/cuda-python/cuda-core/
+project-url: repository, https://github.com/NVIDIA/cuda-python/tree/main/cuda_core
+project-url: issues, https://github.com/NVIDIA/cuda-python/issues/
+provides-extra: cu12
+provides-extra: cu13
+

@@ -1,0 +1,57 @@
+metadata-version: 2.5
+name: llm-d-planner
+version: 0.3.3
+summary: Confidently navigate LLM deployments from concept to production
+license-expression: Apache-2.0
+license-file: LICENSE
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+requires-dist: jinja2>=3.1.6
+requires-dist: pydantic-settings>=2.15.0
+requires-dist: pydantic>=2.13.4
+requires-dist: pyyaml>=6.0.3
+requires-dist: httpx>=0.28.1; extra == "dev"
+requires-dist: mypy>=2.3.1; extra == "dev"
+requires-dist: pytest-asyncio>=1.4.0; extra == "dev"
+requires-dist: pytest-cov>=7.1.0; extra == "dev"
+requires-dist: pytest-rerunfailures>=15.0; extra == "dev"
+requires-dist: pytest>=9.1.1; extra == "dev"
+requires-dist: ruff>=0.16.3; extra == "dev"
+requires-dist: types-pyyaml>=6.0.12.20260815; extra == "dev"
+requires-dist: types-requests>=2.33.0.20260712; extra == "dev"
+requires-dist: huggingface-hub>=1.26.0; extra == "estimation"
+requires-dist: transformers>=5.14.1; extra == "estimation"
+requires-dist: kubernetes>=36.0.3; extra == "kubernetes"
+requires-dist: ollama>=0.6.2; extra == "llm"
+requires-dist: openai>=3.1.0; extra == "openai"
+requires-dist: datasets>=5.0.1; extra == "quality-sync"
+requires-dist: httpx>=0.28.1; extra == "quality-sync"
+requires-dist: pandas>=3.0.5; extra == "quality-sync"
+requires-dist: fastapi>=0.141.1; extra == "server"
+requires-dist: python-multipart>=0.0.32; extra == "server"
+requires-dist: uvicorn[standard]>=0.52.1; extra == "server"
+requires-dist: matplotlib>=3.10.9; extra == "ui"
+requires-dist: plotly>=6.3.0; extra == "ui"
+requires-dist: requests>=2.34.2; extra == "ui"
+requires-dist: streamlit>=1.61.1; extra == "ui"
+requires-dist: anthropic[vertex]>=0.122.0; extra == "vertex"
+requires-python: >=3.11
+project-url: Homepage, https://github.com/llm-d-incubation/llm-d-planner
+project-url: Repository, https://github.com/llm-d-incubation/llm-d-planner
+project-url: Issues, https://github.com/llm-d-incubation/llm-d-planner/issues
+provides-extra: dev
+provides-extra: estimation
+provides-extra: kubernetes
+provides-extra: llm
+provides-extra: openai
+provides-extra: quality-sync
+provides-extra: server
+provides-extra: ui
+provides-extra: vertex
+

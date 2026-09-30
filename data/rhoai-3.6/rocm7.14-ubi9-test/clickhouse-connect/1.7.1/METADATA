@@ -1,0 +1,63 @@
+metadata-version: 2.4
+name: clickhouse-connect
+version: 1.7.1
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: ClickHouse Database Core Driver for Python, Pandas, and Superset
+keywords: clickhouse,superset,sqlalchemy,http,driver
+home-page: https://github.com/ClickHouse/clickhouse-connect
+author: ClickHouse Inc.
+author-email: clients@clickhouse.com
+license: Apache-2.0
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-dist: certifi
+requires-dist: urllib3>=1.26
+requires-dist: tzdata; sys_platform == "win32"
+requires-dist: backports.zstd>=1.3.0; python_version < "3.14"
+requires-dist: lz4; python_version < "3.14"
+requires-dist: lz4>=4.4.5; python_version >= "3.14"
+requires-dist: sqlalchemy<3.0,>=1.4.40; extra == "sqlalchemy"
+requires-dist: sqlalchemy<3.0,>=1.4.40; extra == "alembic"
+requires-dist: alembic>=1.16; extra == "alembic"
+requires-dist: numpy; extra == "numpy"
+requires-dist: pandas<4,>=2; extra == "pandas"
+requires-dist: polars>=1.0; extra == "polars"
+requires-dist: pyarrow>=22.0; python_version >= "3.14" and extra == "arrow"
+requires-dist: pyarrow; python_version < "3.14" and extra == "arrow"
+requires-dist: orjson; extra == "orjson"
+requires-dist: tzlocal>=4.0; extra == "tzlocal"
+requires-dist: tzdata; extra == "tzdata"
+requires-dist: aiohttp>=3.9.0; extra == "async"
+requires-dist: chdb>=4.1.7; extra == "chdb"
+requires-python: <3.15,>=3.10
+provides-extra: sqlalchemy
+provides-extra: alembic
+provides-extra: numpy
+provides-extra: pandas
+provides-extra: polars
+provides-extra: arrow
+provides-extra: orjson
+provides-extra: tzlocal
+provides-extra: tzdata
+provides-extra: async
+provides-extra: chdb
+

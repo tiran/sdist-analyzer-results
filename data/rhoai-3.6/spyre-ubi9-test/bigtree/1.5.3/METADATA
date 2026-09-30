@@ -1,0 +1,49 @@
+metadata-version: 2.5
+name: bigtree
+version: 1.5.3
+summary: Tree Implementation and Methods for Python, integrated with list, dictionary, pandas and polars DataFrame.
+keywords: bigtree,tree
+author-email: Kay Jan <kayjanw@gmail.com>
+license: MIT
+license-file: LICENSE
+classifier: Development Status :: 4 - Beta
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+requires-dist: lark; extra == "all"
+requires-dist: matplotlib; extra == "all"
+requires-dist: pandas; extra == "all"
+requires-dist: pillow; extra == "all"
+requires-dist: polars; extra == "all"
+requires-dist: pydot; extra == "all"
+requires-dist: pyvis; extra == "all"
+requires-dist: rich; extra == "all"
+requires-dist: textual>=0.6.0; extra == "all"
+requires-dist: pillow; extra == "image"
+requires-dist: pydot; extra == "image"
+requires-dist: matplotlib; extra == "matplotlib"
+requires-dist: pandas; extra == "pandas"
+requires-dist: polars; extra == "polars"
+requires-dist: lark; extra == "query"
+requires-dist: rich; extra == "rich"
+requires-dist: textual>=0.6.0; extra == "studio"
+requires-dist: pyvis; extra == "vis"
+requires-python: >=3.10
+project-url: Documentation, https://bigtree.readthedocs.io
+project-url: Issues, https://github.com/kayjan/bigtree/issues
+project-url: Discussions, https://github.com/kayjan/bigtree/discussions
+project-url: Source, https://github.com/kayjan/bigtree
+provides-extra: all
+provides-extra: image
+provides-extra: matplotlib
+provides-extra: pandas
+provides-extra: polars
+provides-extra: query
+provides-extra: rich
+provides-extra: studio
+provides-extra: vis
+

@@ -1,0 +1,40 @@
+metadata-version: 2.4
+name: coremltools
+version: 8.3.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: requires-dist
+dynamic: summary
+summary: Community Tools for Core ML
+home-page: https://github.com/apple/coremltools
+author: Apple Inc.
+author-email: coremltools@apple.com
+license: BSD
+license-file: LICENSE.txt
+license-file: NOTICE.txt
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Operating System :: POSIX :: Linux
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Topic :: Scientific/Engineering
+classifier: Topic :: Software Development
+requires-dist: numpy>=1.14.5
+requires-dist: protobuf>=3.1.0
+requires-dist: sympy
+requires-dist: tqdm
+requires-dist: packaging
+requires-dist: attrs>=21.3.0
+requires-dist: cattrs
+requires-dist: pyaml
+

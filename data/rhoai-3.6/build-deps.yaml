@@ -1,5 +1,5 @@
 setuptools:
-  count: 912
+  count: 996
   constraints:
   - setuptools
   - setuptools!=24.0.0,!=34.0.0,!=34.0.1,!=34.0.2,!=34.0.3,!=34.1.0,!=34.1.1,!=34.2.0,!=34.3.0,!=34.3.1,!=34.3.2,!=36.2.0,>=21.0.0
@@ -20,14 +20,20 @@ setuptools:
   - setuptools<82.1,>=68
   - setuptools<83,>=59
   - setuptools<83.1,>=68
-  - setuptools<=80.10.2
+  - setuptools<84.1,>=68
+  - setuptools<85,>=59
   - setuptools<=82.0.1
   - setuptools<=82.0.1,>=70.0.0
   - setuptools<=82.0.1,>=80.9.0
   - setuptools<=83.0.0,>=77
+  - setuptools<=84.0.0,>=70.0.0
+  - setuptools<=84.0.0,>=77
   - setuptools==80.10.2
+  - setuptools==80.3.1
   - setuptools==80.9.0
   - setuptools==82.0.1
+  - setuptools==83.0.0
+  - setuptools==84.0.0
   - setuptools>60
   - setuptools>61
   - setuptools>77.0.3
@@ -44,15 +50,18 @@ setuptools:
   - setuptools>=40.9.0
   - setuptools>=41
   - setuptools>=41.0
+  - setuptools>=41.0.1
   - setuptools>=41.2
   - setuptools>=42
   - setuptools>=42.0.0
   - setuptools>=43
   - setuptools>=44
   - setuptools>=45
+  - setuptools>=45.0
   - setuptools>=46.4.0
   - setuptools>=47
   - setuptools>=48
+  - setuptools>=49.5.0
   - setuptools>=50
   - setuptools>=51
   - setuptools>=51.0
@@ -74,6 +83,7 @@ setuptools:
   - setuptools>=62.4
   - setuptools>=62.4.0
   - setuptools>=62.6
+  - setuptools>=62; python_version >= "3.12"
   - setuptools>=64
   - setuptools>=64.0
   - setuptools>=64.0.0
@@ -82,6 +92,7 @@ setuptools:
   - setuptools>=65.0.0
   - setuptools>=65.5.1
   - setuptools>=66.1
+  - setuptools>=67
   - setuptools>=67.0
   - setuptools>=67.0.0
   - setuptools>=67.8
@@ -89,20 +100,25 @@ setuptools:
   - setuptools>=68
   - setuptools>=68.0
   - setuptools>=68.0.0
+  - setuptools>=68.1.0
   - setuptools>=68.2.0
   - setuptools>=69
   - setuptools>=69.0.0
   - setuptools>=69.0.2
   - setuptools>=70
   - setuptools>=70.0.0
+  - setuptools>=70.1
   - setuptools>=70.1.0
   - setuptools>=71
+  - setuptools>=72.2
   - setuptools>=74.1.0
   - setuptools>=75
   - setuptools>=75.0
+  - setuptools>=75.1.0
   - setuptools>=75.3.1
   - setuptools>=75.3.2
   - setuptools>=75.6.0
+  - setuptools>=75.8.1
   - setuptools>=77
   - setuptools>=77.0
   - setuptools>=77.0.0
@@ -119,15 +135,20 @@ setuptools:
   - setuptools>=83.0.0
   - setuptools~=80.9.0
 hatchling:
-  count: 337
+  count: 400
   constraints:
   - hatchling
   - hatchling<1.28,>=1.27
+  - hatchling<1.30,>=1.26
+  - hatchling<1.30.0,>=1.20.0
   - hatchling<1.32,>=1.27
   - hatchling<2,>=1.27.0
   - hatchling==1.26.3
+  - hatchling==1.27.0
   - hatchling==1.29.0
   - hatchling==1.30.1
+  - hatchling==1.31.0
+  - hatchling==1.32.0
   - hatchling>1.24
   - hatchling>=0.21.1
   - hatchling>=0.25
@@ -139,6 +160,7 @@ hatchling:
   - hatchling>=1.11
   - hatchling>=1.11.0
   - hatchling>=1.12.1
+  - hatchling>=1.12.2
   - hatchling>=1.14.0
   - hatchling>=1.17
   - hatchling>=1.18
@@ -164,13 +186,14 @@ hatchling:
   - hatchling>=1.7
   - hatchling>=1.8.0
 wheel:
-  count: 212
+  count: 237
   constraints:
   - wheel
   - wheel!=0.38.0,!=0.38.1
   - wheel<1.0.0,>=0.38.4
   - wheel<1.0.0,>=0.43.0
   - wheel<=0.47.0
+  - wheel<=0.48.0
   - wheel>=0.29.0
   - wheel>=0.36
   - wheel>=0.36.2
@@ -181,19 +204,27 @@ wheel:
   - wheel>=0.46.2
   - wheel>=0.46.3
 setuptools-scm:
-  count: 157
+  count: 173
   constraints:
   - setuptools-scm
   - setuptools-scm<10,>=8
+  - setuptools-scm<11,>=10.2
   - setuptools-scm<11,>=8
   - setuptools-scm<9.0.0,>=8.0.0
   - setuptools-scm==9.2.0
+  - setuptools-scm==9.2.2
   - setuptools-scm>1.5.4
+  - setuptools-scm>=10
+  - setuptools-scm>=6.0
+  - setuptools-scm>=6.2
   - setuptools-scm>=8
   - setuptools-scm>=8.0
+  - setuptools-scm>=8.1
   - setuptools-scm>=8.2
   - setuptools-scm>=9
   - setuptools-scm>=9.2.2
+  - setuptools-scm[simple]!=10.1,>=8
+  - setuptools-scm[simple]>=9.2
   - setuptools-scm[toml]
   - setuptools-scm[toml]>=3.4
   - setuptools-scm[toml]>=6.2
@@ -202,6 +233,7 @@ setuptools-scm:
   - setuptools_scm
   - setuptools_scm<10,>=7
   - setuptools_scm<10,>=8
+  - setuptools_scm<10,>=9.2.0
   - setuptools_scm<8.0
   - setuptools_scm==8.2.0
   - setuptools_scm>8
@@ -212,6 +244,7 @@ setuptools-scm:
   - setuptools_scm>=8
   - setuptools_scm>=8.0
   - setuptools_scm>=8.0.0
+  - setuptools_scm>=8.1.0
   - setuptools_scm[simple]!=10.1,>=8
   - setuptools_scm[toml]
   - setuptools_scm[toml]<9,>=8
@@ -228,7 +261,7 @@ setuptools-scm:
   - setuptools_scm[toml]>=8
   - setuptools_scm[toml]>=8.0
 flit-core:
-  count: 77
+  count: 84
   constraints:
   - flit-core<4,>=3.11
   - flit-core>=3.11
@@ -245,20 +278,24 @@ flit-core:
   - flit_core<4,>=3.5
   - flit_core<4,>=3.8
   - flit_core<5,>=3.11
+  - flit_core<5,>=3.12
   - flit_core<5,>=3.2
+  - flit_core<5,>=4
   - flit_core==3.12.0
+  - flit_core==4.0.2
   - flit_core>=3.12
   - flit_core>=3.2
   - flit_core>=3.3
   - flit_core>=3.7
 poetry-core:
-  count: 76
+  count: 82
   constraints:
   - poetry-core
   - poetry-core<2.0.0,>=1.0.0
   - poetry-core<3.0.0,>=2.0.0
   - poetry-core>=1.0.0
   - poetry-core>=1.0.0a9
+  - poetry-core>=1.0.7
   - poetry-core>=1.1.0
   - poetry-core>=1.2.0
   - poetry-core>=1.4.0
@@ -269,16 +306,19 @@ poetry-core:
   - poetry_core<3,>=1
   - poetry_core>=1.0.0
 cython:
-  count: 66
+  count: 70
   constraints:
   - Cython
   - Cython!=3.2.0b1,>=3.0.8
   - Cython; python_version < "3.13"
   - Cython<3,>=0.29.32
   - Cython<3.1,>=0.29.34
+  - Cython<3.1.0,>=3.0.8
   - Cython<3.2.0,>=3.0.0
   - Cython<3.2.0,>=3.0.10
   - Cython<3.2.0,>=3.0.8
+  - Cython<3.3,>=3.2
+  - Cython<3.3,>=3.2.9
   - Cython<3.3.0,>=3.0.8
   - Cython<3.3.0,>=3.2.0
   - Cython<4,>3.1.0
@@ -290,6 +330,7 @@ cython:
   - Cython==3.1.1
   - Cython==3.2.1
   - Cython==3.2.4
+  - Cython==3.3.0
   - Cython>=0.29
   - Cython>=0.29.2
   - Cython>=0.29.24
@@ -298,6 +339,7 @@ cython:
   - Cython>=3.0
   - Cython>=3.0.0
   - Cython>=3.0.10
+  - Cython>=3.0.11
   - Cython>=3.0.4
   - Cython>=3.0.5
   - Cython>=3.0.6
@@ -307,13 +349,19 @@ cython:
   - Cython>=3.1.2
   - Cython>=3.2.0
   - Cython>=3.2.4
+  - Cython>=3.2.5
   - Cython~=3.0.5
   - Cython~=3.1
   - Cython~=3.1.0
   - cython
   - cython<3.2,>=3.1
+  - cython<3.2.6,>=3.1.2
+  - cython<3.3,>=3.2
+  - cython<3.3.0,>=3.1.0
   - cython<3.3.0,>=3.1.2
+  - cython<4,>=0.28.4
   - cython<4,>=3.0.10
+  - cython<4,>=3.0.13
   - cython<4,>=3.1
   - cython<4.0,>=3.0
   - cython<=3.0.12
@@ -330,10 +378,11 @@ cython:
   - cython>=3.1
   - cython>=3.1.0
   - cython>=3.2.8
+  - cython>=3.3; platform_python_implementation == "CPython"
   - cython>=3; platform_python_implementation == "CPython"
   - cython~=3.2
 hatch-vcs:
-  count: 57
+  count: 68
   constraints:
   - hatch-vcs
   - hatch-vcs<0.6.0,>=0.4.0
@@ -341,7 +390,7 @@ hatch-vcs:
   - hatch-vcs>=0.4
   - hatch-vcs>=0.5
 maturin:
-  count: 48
+  count: 54
   constraints:
   - maturin
   - maturin!=1.12.0,<2,>=1.9.4
@@ -352,11 +401,13 @@ maturin:
   - maturin<2,>=1.13
   - maturin<2,>=1.13.3
   - maturin<2,>=1.14.1
+  - maturin<2,>=1.15.0
   - maturin<2,>=1.4
   - maturin<2,>=1.8.2
   - maturin<2,>=1.9
   - maturin<2,>=1.9.4
   - maturin<2.0,>=1.0
+  - maturin<2.0,>=1.10.0
   - maturin<2.0,>=1.12.0
   - maturin<2.0,>=1.14.1
   - maturin<2.0,>=1.7
@@ -367,19 +418,24 @@ maturin:
   - maturin<2.0,>=1.9.6
   - maturin>=0.12
   - maturin>=0.13
+  - maturin>=1.10
   - maturin>=1.3.2
   - maturin>=1.4
 numpy:
-  count: 43
+  count: 50
   constraints:
   - numpy
   - numpy!=2.5.0,>=2.0.0
+  - numpy; python_version >= "3.12"
+  - numpy<2.1,>=2.0.0rc1
+  - numpy<2.3,>=2.0.0rc1
   - numpy<2.4,>=2.0.0rc1
   - numpy<2.4.0,>=2
   - numpy<2.5,>=2.0.0rc1
   - numpy<2.5.0,>=2
   - numpy<2.6,>=2.0.0
   - numpy<2.6,>=2.0.0rc1
+  - numpy<2.6.0,>=2
   - numpy<2.7,>=2.0.0
   - numpy<2.8,>=2.0.0
   - numpy<3,>=1.25
@@ -390,6 +446,7 @@ numpy:
   - numpy<3.0.0,>=2.0.0
   - numpy<3.0.0,>=2.0.0; python_version >= "3.9"
   - numpy==2.0.2; python_version >= "3.9" and python_version < "3.13"
+  - numpy==2.4.6
   - numpy>2
   - numpy>=1.10.0
   - numpy>=1.21.6
@@ -399,19 +456,22 @@ numpy:
   - numpy>=2.0
   - numpy>=2.0.0
   - numpy>=2.0.0; python_version < "3.13"
+  - numpy>=2.0.0; python_version > "3.8"
   - numpy>=2.0.0; python_version >= "3.9"
   - numpy>=2.0.0rc1; python_version >= "3.9"
   - numpy~=2.0
 packaging:
-  count: 35
+  count: 39
   constraints:
   - packaging
   - packaging==26.2
+  - packaging==26.3
   - packaging>20.9
   - packaging>=19.0
   - packaging>=20
   - packaging>=20.0
   - packaging>=20.9
+  - packaging>=21
   - packaging>=21.3
   - packaging>=23.0
   - packaging>=23.2
@@ -419,11 +479,21 @@ packaging:
   - packaging>=24
   - packaging>=24.2
   - packaging>=26.2
+hatch-jupyter-builder:
+  count: 33
+  constraints:
+  - hatch-jupyter-builder>=0.3.2
+  - hatch-jupyter-builder>=0.5
+  - hatch-jupyter-builder>=0.5.0
+  - hatch-jupyter-builder>=0.8.1
+  - hatch-jupyter-builder>=0.8.2
+  - hatch-jupyter-builder>=0.8.3
 pybind11:
-  count: 28
+  count: 33
   constraints:
   - pybind11
   - pybind11!=2.13.3,>=2.13.2
+  - pybind11<2.13.0,>=2.12.0
   - pybind11<3.1.0,>=2.13.2
   - pybind11==2.11.1
   - pybind11>=2.0
@@ -438,22 +508,13 @@ pybind11:
   - pybind11[global]<3,>=2.13
   - pybind11[global]>=2.13
   - pybind11[global]>=2.6.0
-hatch-jupyter-builder:
-  count: 27
-  constraints:
-  - hatch-jupyter-builder>=0.3.2
-  - hatch-jupyter-builder>=0.5
-  - hatch-jupyter-builder>=0.5.0
-  - hatch-jupyter-builder>=0.8.1
-  - hatch-jupyter-builder>=0.8.2
-  - hatch-jupyter-builder>=0.8.3
 pdm-backend:
-  count: 27
+  count: 31
   constraints:
   - pdm-backend
   - pdm-backend>=1.0.5
 scikit-build-core:
-  count: 24
+  count: 29
   constraints:
   - scikit-build-core
   - scikit-build-core>=0.10
@@ -465,25 +526,32 @@ scikit-build-core:
   - scikit-build-core>=0.11.4
   - scikit-build-core>=0.3.3
   - scikit-build-core>=0.9
-hatch-fancy-pypi-readme:
-  count: 23
-  constraints:
-  - hatch-fancy-pypi-readme
-  - hatch-fancy-pypi-readme<26,>=22.4
-  - hatch-fancy-pypi-readme>=22.5.0
-  - hatch-fancy-pypi-readme>=22.8.0
-  - hatch-fancy-pypi-readme>=23.2.0
-  - hatch-fancy-pypi-readme>=24.1.0
+  - scikit-build-core>=1.0
 torch:
-  count: 23
+  count: 25
   constraints:
   - torch
   - torch==2.11.*
   - torch>=2.2.0
   - torch>=2.6
   - torch>=2.8.0
+hatch-fancy-pypi-readme:
+  count: 24
+  constraints:
+  - hatch-fancy-pypi-readme
+  - hatch-fancy-pypi-readme<26,>=22.4
+  - hatch-fancy-pypi-readme==25.1.0
+  - hatch-fancy-pypi-readme>=22.5.0
+  - hatch-fancy-pypi-readme>=22.8.0
+  - hatch-fancy-pypi-readme>=23.2.0
+  - hatch-fancy-pypi-readme>=24.1.0
+hatch-nodejs-version:
+  count: 24
+  constraints:
+  - hatch-nodejs-version
+  - hatch-nodejs-version>=0.3.2
 jupyterlab:
-  count: 21
+  count: 24
   constraints:
   - jupyterlab<5,>=4.0
   - jupyterlab<5,>=4.0.0
@@ -492,13 +560,8 @@ jupyterlab:
   - jupyterlab>=4.0.0
   - jupyterlab~=4.0
   - jupyterlab~=4.5.0
-hatch-nodejs-version:
-  count: 19
-  constraints:
-  - hatch-nodejs-version
-  - hatch-nodejs-version>=0.3.2
 uv-build:
-  count: 18
+  count: 22
   constraints:
   - uv-build<0.10,>=0.9
   - uv_build
@@ -511,57 +574,90 @@ uv-build:
   - uv_build<0.12,>=0.11
   - uv_build<0.12,>=0.11.4
   - uv_build<0.12,>=0.8.10
+  - uv_build<0.12,>=0.8.13
   - uv_build<0.12.0,>=0.11.0
   - uv_build<0.12.0,>=0.11.2
   - uv_build<0.13,>=0.11
+  - uv_build<0.13,>=0.12.1
+  - uv_build<0.13,>=0.12.3
+  - uv_build<0.13,>=0.7
+  - uv_build<0.13,>=0.7.19
+  - uv_build<0.13.0,>=0.10.11
+  - uv_build<0.13.0,>=0.11.0
   - uv_build<0.13.0,>=0.9.0
   - uv_build<0.9.0,>=0.8.2
   - uv_build<1,>=0.9.3
   - uv_build==0.11.8
 uv-dynamic-versioning:
-  count: 17
+  count: 22
   constraints:
   - uv-dynamic-versioning
   - uv-dynamic-versioning>=0.14.0
+  - uv-dynamic-versioning>=0.14.1
   - uv-dynamic-versioning>=0.6
   - uv-dynamic-versioning>=0.7.0
   - uv-dynamic-versioning>=0.8.0
 patchelf:
-  count: 15
+  count: 19
   constraints:
   - patchelf
   - patchelf<=0.17.2.4
   - patchelf>=0.11.0
   - patchelf>=0.17.2
-build:
-  count: 13
-  constraints:
-  - build
-ninja:
-  count: 13
-  constraints:
-  - ninja
-  - ninja==1.11.1.1
-  - ninja>=1.11.1
 meson-python:
-  count: 11
+  count: 15
   constraints:
   - meson-python
   - meson-python!=0.17.*,>=0.13.2
   - meson-python<0.16.0,>=0.15.0
   - meson-python<0.17.0,>=0.13.1
+  - meson-python<0.19.0,>=0.15.0
   - meson-python<0.19.0,>=0.16.0
   - meson-python<0.19.0,>=0.17.1
   - meson-python<0.20.0,>=0.17.1
   - meson-python<0.21.0,>=0.15.0
   - meson-python<0.22.0,>=0.15.0
+  - meson-python<0.22.0,>=0.17.1
   - meson-python<1,>=0.17.1
   - meson-python==0.13.1
   - meson-python>=0.13.1
+  - meson-python>=0.14
   - meson-python>=0.15.0
   - meson-python>=0.16
   - meson-python>=0.16.0
+  - meson-python>=0.17
   - meson-python>=0.18.0
+build:
+  count: 14
+  constraints:
+  - build
+ninja:
+  count: 14
+  constraints:
+  - ninja
+  - ninja; platform_system != "Windows"
+  - ninja==1.11.1.1
+  - ninja>=1.11.1
+jupyter-builder:
+  count: 10
+  constraints:
+  - jupyter-builder<2,>=1.0.2
+  - jupyter-builder<2,>=1.2.0
+  - jupyter-builder>=1.0.0
+  - jupyter-builder>=1.0.2
+  - jupyter-builder>=1.1.1
+  - jupyter-builder>=1.2.0
+  - jupyter-builder>=1.2.2
+  - jupyter_builder>=1.0
+cmake:
+  count: 9
+  constraints:
+  - cmake
+  - cmake<4.0.0,>=3.27.0
+  - cmake<=4.3.4
+  - cmake<=4.4.2
+  - cmake>=3.18
+  - cmake>=3.29.0
 setuptools-rust:
   count: 9
   constraints:
@@ -583,25 +679,10 @@ cffi:
   - cffi>=2.0.0; platform_python_implementation != "PyPy" and python_version >= "3.9"
   - cffi>=2.1.1; platform_python_implementation == "CPython"
   - cffi~=1.17; platform_python_implementation != "PyPy" and python_version < "3.14"
-cmake:
-  count: 6
-  constraints:
-  - cmake
-  - cmake<4.0.0,>=3.27.0
-  - cmake<=4.3.4
-  - cmake>=3.18
-  - cmake>=3.29.0
 coherent-licensed:
   count: 6
   constraints:
   - coherent.licensed
-jupyter-builder:
-  count: 6
-  constraints:
-  - jupyter-builder<2,>=1.0.2
-  - jupyter-builder>=1.0.0
-  - jupyter-builder>=1.0.2
-  - jupyter-builder>=1.2.0
 jupyter-packaging:
   count: 6
   constraints:
@@ -611,11 +692,20 @@ jupyter-packaging:
   - jupyter_packaging>=0.7.9; python_version < "3.13"
   - jupyter_packaging~=0.12.2
   - jupyter_packaging~=0.7.0
+nanobind:
+  count: 6
+  constraints:
+  - nanobind
+  - nanobind<3,>=2
+  - nanobind==2.11.0
+  - nanobind>=2.0
+  - nanobind>=2.0.0
 pathspec:
   count: 6
   constraints:
   - pathspec==1.1.1
   - pathspec>=0.10.1
+  - pathspec>=0.9.0
   - pathspec>=1.0.0
 pluggy:
   count: 6
@@ -629,12 +719,27 @@ trove-classifiers:
   - trove-classifiers
   - trove-classifiers==2026.6.1.19
   - trove-classifiers>=2025.8.6.13
+pip:
+  count: 5
+  constraints:
+  - pip
+pyyaml:
+  count: 5
+  constraints:
+  - pyyaml
+setuptools-git-versioning:
+  count: 5
+  constraints:
+  - setuptools-git-versioning
+  - setuptools-git-versioning<3,>=2.0
+  - setuptools-git-versioning>=2.0
 typing-extensions:
   count: 5
   constraints:
   - typing-extensions
   - typing-extensions>=4.10.0
   - typing_extensions
+  - typing_extensions>=4.6.0
   - typing_extensions>=4.6.0; python_version < "3.15"
 apache-tvm-ffi:
   count: 4
@@ -642,37 +747,49 @@ apache-tvm-ffi:
   - apache-tvm-ffi!=0.1.8,!=0.1.8.post0,<0.2,>=0.1.6
   - apache-tvm-ffi<0.2,>=0.1
   - apache-tvm-ffi>=0.1.1
+  - apache-tvm-ffi>=0.1.10
   - apache-tvm-ffi>=0.1.9
 filelock:
   count: 4
   constraints:
   - filelock
-nanobind:
+meson:
   count: 4
   constraints:
-  - nanobind
-  - nanobind<3,>=2
-  - nanobind>=2.0
-  - nanobind>=2.0.0
-pip:
-  count: 4
-  constraints:
-  - pip
+  - meson<1.11.0,>=1.2.1
+  - meson>=0.63.3
+  - meson>=1.2.0
+  - meson>=1.2.3; python_version >= "3.12"
+  - meson>=1.6.0
 pkgconfig:
   count: 4
   constraints:
   - pkgconfig
   - pkgconfig>=1.5.5
-pyyaml:
+requests:
   count: 4
   constraints:
-  - pyyaml
-setuptools-git-versioning:
+  - requests
+scipy:
   count: 4
   constraints:
-  - setuptools-git-versioning
-  - setuptools-git-versioning<3,>=2.0
-  - setuptools-git-versioning>=2.0
+  - scipy
+  - scipy<1.17.0,>=1.10.0
+  - scipy<1.17.0,>=1.8.0
+  - scipy<1.18.0,>=1.10.0
+  - scipy<1.19.0,>=1.10.0
+  - scipy<2,>=1.13
+  - scipy>=1.13.0
+  - scipy>=1.6.0
+tomli:
+  count: 4
+  constraints:
+  - tomli
+tomlkit:
+  count: 4
+  constraints:
+  - tomlkit==0.15.1
+  - tomlkit>=0.11.1
 versioneer:
   count: 4
   constraints:
@@ -692,13 +809,6 @@ hatch-requirements-txt:
   constraints:
   - hatch-requirements-txt
   - hatch-requirements-txt>=0.4.1
-meson:
-  count: 3
-  constraints:
-  - meson<1.11.0,>=1.2.1
-  - meson>=0.63.3
-  - meson>=1.2.0
-  - meson>=1.2.3; python_version >= "3.12"
 murmurhash:
   count: 3
   constraints:
@@ -715,29 +825,25 @@ pytest-runner:
   count: 3
   constraints:
   - pytest-runner
-requests:
-  count: 3
-  constraints:
-  - requests
 scikit-build:
   count: 3
   constraints:
   - scikit-build
   - scikit-build>=0.14.0
-scipy:
+toml:
   count: 3
   constraints:
-  - scipy
-  - scipy<1.17.0,>=1.10.0
-  - scipy<1.17.0,>=1.8.0
-  - scipy<1.18.0,>=1.10.0
-  - scipy<2,>=1.13
-  - scipy>=1.6.0
+  - toml
+  - toml>=0.10.2
 vcs-versioning:
   count: 3
   constraints:
+  - vcs-versioning
   - vcs-versioning<2
   - vcs-versioning<3,>=2.0.0.dev0
+  - vcs-versioning<3,>=2.3.2.dev0
+  - vcs-versioning<3,>=2.4.0.dev0
+  - vcs-versioning<3,>=2.5.0.dev0
   - vcs-versioning>=1.0.0.dev0
   - vcs-versioning>=2.0.0.dev0
   - vcs_versioning
@@ -795,20 +901,27 @@ pyproject-metadata:
   constraints:
   - pyproject-metadata>=0.7.1
   - pyproject-metadata>=0.9.0
+pytest:
+  count: 2
+  constraints:
+  - pytest
 pythran:
   count: 2
   constraints:
+  - pythran
+  - pythran<0.17.0,>=0.14.0
   - pythran<0.19.0,>=0.14.0
   - pythran<0.19.0,>=0.18.1
+  - pythran<0.20.0,>=0.18.1; python_version < "3.15"
   - pythran>=0.16
-tomli:
-  count: 2
-  constraints:
-  - tomli
 tqdm:
   count: 2
   constraints:
   - tqdm
+types-pyyaml:
+  count: 2
+  constraints:
+  - types-PyYAML
 aotriton:
   count: 1
   constraints:
@@ -825,6 +938,10 @@ blis:
   count: 1
   constraints:
   - blis<1.4.0,>=1.3.0
+bokeh:
+  count: 1
+  constraints:
+  - bokeh<3.10.0,>=3.8.0
 calver:
   count: 1
   constraints:
@@ -849,6 +966,15 @@ cppy:
   count: 1
   constraints:
   - cppy>=1.3.0
+cuda-bindings:
+  count: 1
+  constraints:
+  - cuda-bindings==12.*
+  - cuda-bindings==13.*
+cuda-pathfinder:
+  count: 1
+  constraints:
+  - cuda-pathfinder>=1.5
 cuda-python:
   count: 1
   constraints:
@@ -869,7 +995,11 @@ flydsl:
   count: 1
   constraints:
   - flydsl<0.1.5,>=0.1.4.post1.dev
-  - flydsl==0.2.0
+  - flydsl==0.2.4
+future:
+  count: 1
+  constraints:
+  - future
 gitdb:
   count: 1
   constraints:
@@ -878,6 +1008,7 @@ gitpython:
   count: 1
   constraints:
   - GitPython==3.1.50
+  - GitPython==3.1.62
 greenlet:
   count: 1
   constraints:
@@ -890,6 +1021,10 @@ hatch-build-scripts:
   count: 1
   constraints:
   - hatch-build-scripts
+hatch-mypyc:
+  count: 1
+  constraints:
+  - hatch-mypyc
 iniconfig:
   count: 1
   constraints:
@@ -905,6 +1040,7 @@ jupyter-client:
 lazy-loader:
   count: 1
   constraints:
+  - lazy_loader>=0.3
   - lazy_loader>=0.4
 libcst:
   count: 1
@@ -918,6 +1054,10 @@ markdown:
   count: 1
   constraints:
   - markdown
+ml-dtypes:
+  count: 1
+  constraints:
+  - ml-dtypes==0.5.4
 more-itertools:
   count: 1
   constraints:
@@ -938,6 +1078,10 @@ nvidia-cudnn-frontend:
   count: 1
   constraints:
   - nvidia-cudnn-frontend
+nvidia-cutlass-dsl:
+  count: 1
+  constraints:
+  - nvidia-cutlass-dsl>=4.6.2a0
 nvidia-ml-py:
   count: 1
   constraints:
@@ -950,6 +1094,10 @@ ordered-set:
   count: 1
   constraints:
   - ordered-set
+param:
+  count: 1
+  constraints:
+  - param>=2.1.0
 pkginfo:
   count: 1
   constraints:
@@ -962,6 +1110,8 @@ protobuf:
   count: 1
   constraints:
   - protobuf==4.25.1
+  - protobuf==6.31.1
+  - protobuf>=4.25.1
 puccinialin:
   count: 1
   constraints:
@@ -990,10 +1140,10 @@ pynvml:
   count: 1
   constraints:
   - pynvml
-pytest:
+pyviz-comms:
   count: 1
   constraints:
-  - pytest
+  - pyviz_comms>=0.7.4
 semver:
   count: 1
   constraints:
@@ -1022,14 +1172,6 @@ thinc:
   count: 1
   constraints:
   - thinc<8.4.0,>=8.3.12
-toml:
-  count: 1
-  constraints:
-  - toml
-tomlkit:
-  count: 1
-  constraints:
-  - tomlkit>=0.11.1
 tree-sitter:
   count: 1
   constraints:
@@ -1042,10 +1184,6 @@ types-psutil:
   count: 1
   constraints:
   - types-psutil
-types-pyyaml:
-  count: 1
-  constraints:
-  - types-PyYAML
 types-setuptools:
   count: 1
   constraints:

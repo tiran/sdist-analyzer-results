@@ -1,0 +1,24 @@
+metadata-version: 2.4
+name: lpips
+version: 0.1.4
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: requires-dist
+dynamic: summary
+summary: LPIPS Similarity metric
+home-page: https://github.com/richzhang/PerceptualSimilarity
+author: Richard Zhang
+author-email: rizhang@adobe.com
+classifier: Programming Language :: Python :: 3
+classifier: License :: OSI Approved :: BSD License
+classifier: Operating System :: OS Independent
+requires-dist: torch>=0.4.0
+requires-dist: torchvision>=0.2.1
+requires-dist: numpy>=1.14.3
+requires-dist: scipy>=1.0.1
+requires-dist: tqdm>=4.28.1
+

@@ -1,0 +1,37 @@
+metadata-version: 2.4
+name: micropipenv
+version: 1.10.0
+dynamic: download-url
+dynamic: license-file
+summary: A simple wrapper around pip to support requirements.txt, Pipenv and Poetry files for containerized applications
+keywords: packaging,pipenv,poetry,pip,dependencies,dependency-management,utilities
+home-page: https://github.com/thoth-station/micropipenv
+download-url: https://pypi.org/project/micropipenv
+author: Fridolin Pokorny
+author-email: fridex.devel@gmail.com
+maintainer: Fridolin Pokorny
+maintainer-email: fridex.devel@gmail.com
+license: LGPLv3+
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Implementation :: CPython
+requires-dist: pip>=9
+requires-dist: toml; python_version < "3.11" and extra == "toml"
+requires-dist: flexmock; extra == "tests"
+requires-dist: pytest; extra == "tests"
+requires-dist: pytest-timeout; extra == "tests"
+requires-dist: pytest-venv>=0.3; extra == "tests"
+requires-dist: packaging; extra == "tests"
+provides-extra: toml
+provides-extra: tests
+

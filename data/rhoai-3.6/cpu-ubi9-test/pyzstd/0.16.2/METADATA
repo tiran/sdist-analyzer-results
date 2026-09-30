@@ -1,0 +1,38 @@
+metadata-version: 2.4
+name: pyzstd
+version: 0.16.2
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: maintainer
+dynamic: maintainer-email
+dynamic: requires-python
+dynamic: summary
+summary: Python bindings to Zstandard (zstd) compression library.
+keywords: zstandard zstd zst compress decompress tar file seekable format
+home-page: https://github.com/Rogdham/pyzstd
+author: Ma Lin
+author-email: malincns@163.com
+maintainer: Rogdham
+maintainer-email: contact@rogdham.net
+license: BSD-3-Clause
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Topic :: System :: Archiving :: Compression
+classifier: License :: OSI Approved :: BSD License
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+requires-python: >=3.5
+

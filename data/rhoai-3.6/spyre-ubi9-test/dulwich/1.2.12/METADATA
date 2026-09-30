@@ -1,0 +1,55 @@
+metadata-version: 2.4
+name: dulwich
+version: 1.2.12
+dynamic: license-file
+summary: Python Git Library
+keywords: vcs,git
+author-email: Jelmer Vernooij <jelmer@jelmer.uk>
+license-expression: Apache-2.0 OR GPL-2.0-or-later
+license-file: COPYING
+classifier: Development Status :: 5 - Production/Stable
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Operating System :: POSIX
+classifier: Operating System :: Microsoft :: Windows
+classifier: Topic :: Software Development :: Version Control
+requires-dist: urllib3>=2.2.2
+requires-dist: typing_extensions>=4.6.0; python_version < "3.12"
+requires-dist: fastimport; extra == "fastimport"
+requires-dist: urllib3>=2.2.2; extra == "https"
+requires-dist: gpg; extra == "pgp"
+requires-dist: paramiko; extra == "paramiko"
+requires-dist: rich; extra == "colordiff"
+requires-dist: ruff==0.15.20; extra == "dev"
+requires-dist: mypy==2.1.0; extra == "dev"
+requires-dist: dissolve>=0.1.1; extra == "dev"
+requires-dist: codespell==2.4.2; extra == "dev"
+requires-dist: hypothesis>=6; extra == "hypothesis"
+requires-dist: merge3; extra == "merge"
+requires-dist: atheris; extra == "fuzzing"
+requires-dist: patiencediff; extra == "patiencediff"
+requires-dist: munkres; extra == "range-diff"
+requires-dist: aiohttp; extra == "aiohttp"
+requires-python: >=3.10
+project-url: Homepage, https://www.dulwich.io/
+project-url: Repository, https://www.dulwich.io/code/
+project-url: GitHub, https://github.com/dulwich/dulwich
+project-url: Bug Tracker, https://github.com/dulwich/dulwich/issues
+provides-extra: fastimport
+provides-extra: https
+provides-extra: pgp
+provides-extra: paramiko
+provides-extra: colordiff
+provides-extra: dev
+provides-extra: hypothesis
+provides-extra: merge
+provides-extra: fuzzing
+provides-extra: patiencediff
+provides-extra: range-diff
+provides-extra: aiohttp
+

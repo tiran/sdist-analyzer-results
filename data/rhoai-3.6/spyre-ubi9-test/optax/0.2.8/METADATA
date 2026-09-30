@@ -1,0 +1,43 @@
+metadata-version: 2.4
+name: optax
+version: 0.2.8
+summary: A gradient processing and optimization library in JAX.
+keywords: python,machine learning,reinforcement-learning
+author-email: Google DeepMind <optax-dev@google.com>
+license-file: LICENSE
+classifier: Environment :: Console
+classifier: Programming Language :: Python
+classifier: Intended Audience :: Developers
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Intended Audience :: Science/Research
+classifier: Development Status :: 4 - Beta
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: absl-py>=0.7.1
+requires-dist: jax>=0.5.3
+requires-dist: jaxlib>=0.5.3
+requires-dist: numpy>=1.18.0
+requires-dist: sphinx>=6.0.0; extra == "docs"
+requires-dist: sphinx-book-theme>=1.0.1; extra == "docs"
+requires-dist: sphinxcontrib-katex; extra == "docs"
+requires-dist: sphinx-autodoc-typehints; extra == "docs"
+requires-dist: ipython>=8.8.0; extra == "docs"
+requires-dist: myst-nb>=1.0.0; extra == "docs"
+requires-dist: matplotlib>=3.5.0; extra == "docs"
+requires-dist: sphinx-gallery>=0.14.0; extra == "docs"
+requires-dist: sphinx-collections>=0.0.1; extra == "docs"
+requires-dist: flax; extra == "docs"
+requires-dist: sphinx_contributors; extra == "docs"
+requires-dist: setuptools; extra == "docs"
+requires-dist: flax>=0.5.3; extra == "test"
+requires-dist: scipy>=1.7.1; extra == "test"
+requires-dist: scikit-learn; extra == "test"
+requires-python: >=3.10
+project-url: documentation, https://optax.readthedocs.io/
+project-url: homepage, https://github.com/google-deepmind/optax
+project-url: repository, https://github.com/google-deepmind/optax
+provides-extra: docs
+provides-extra: test
+

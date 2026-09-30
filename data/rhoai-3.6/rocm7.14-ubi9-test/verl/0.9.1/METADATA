@@ -1,0 +1,143 @@
+metadata-version: 2.4
+name: verl
+version: 0.9.1
+dynamic: author
+dynamic: author-email
+dynamic: home-page
+dynamic: license-file
+dynamic: requires-dist
+summary: verl: Volcano Engine Reinforcement Learning for LLM
+home-page: https://github.com/verl-project/verl
+author: Bytedance - Seed - MLSys
+author-email: zhangchi.usc1992@bytedance.com, gmsheng@connect.hku.hk
+license: Apache-2.0
+license-file: LICENSE
+requires-dist: accelerate
+requires-dist: codetiming
+requires-dist: datasets
+requires-dist: dill
+requires-dist: hydra-core
+requires-dist: numpy>=2.0.0
+requires-dist: pandas
+requires-dist: peft
+requires-dist: pyarrow>=19.0.0
+requires-dist: pybind11
+requires-dist: pylatexenc
+requires-dist: ray[default]>=2.41.0
+requires-dist: torchdata
+requires-dist: tensordict!=0.9.0,<=0.10.0,>=0.8.0
+requires-dist: transformers!=5.6.0,<5.11,>=5.5.3
+requires-dist: wandb
+requires-dist: packaging>=20.0
+requires-dist: tensorboard
+requires-dist: pytest; extra == "test"
+requires-dist: pre-commit; extra == "test"
+requires-dist: py-spy; extra == "test"
+requires-dist: pytest-asyncio; extra == "test"
+requires-dist: pytest-rerunfailures; extra == "test"
+requires-dist: math-verify; extra == "math"
+requires-dist: mbridge; extra == "mcore"
+requires-dist: TransferQueue>=0.1.10; extra == "verl-core"
+requires-dist: pyzmq; extra == "verl-core"
+requires-dist: msgspec; extra == "verl-core"
+requires-dist: accelerate; extra == "verl-core"
+requires-dist: codetiming; extra == "verl-core"
+requires-dist: datasets; extra == "verl-core"
+requires-dist: dill; extra == "verl-core"
+requires-dist: hydra-core; extra == "verl-core"
+requires-dist: numpy>=2.0.0; extra == "verl-core"
+requires-dist: pandas; extra == "verl-core"
+requires-dist: peft; extra == "verl-core"
+requires-dist: pyarrow>=19.0.0; extra == "verl-core"
+requires-dist: pybind11; extra == "verl-core"
+requires-dist: pylatexenc; extra == "verl-core"
+requires-dist: transformers; extra == "verl-core"
+requires-dist: ray[default]>=2.41.0; extra == "verl-core"
+requires-dist: torchdata; extra == "verl-core"
+requires-dist: tensordict!=0.9.0,<=0.10.0,>=0.8.0; extra == "verl-core"
+requires-dist: wandb; extra == "verl-core"
+requires-dist: packaging>=20.0; extra == "verl-core"
+requires-dist: tensorboard; extra == "verl-core"
+requires-dist: fastapi; extra == "verl-core"
+requires-dist: uvicorn; extra == "verl-core"
+requires-dist: mathruler; extra == "verl-core"
+requires-dist: qwen_vl_utils; extra == "verl-core"
+requires-dist: torchcodec; extra == "verl-core"
+requires-dist: cachetools; extra == "verl-core"
+requires-dist: nvtx; extra == "verl-core"
+requires-dist: pytest; extra == "verl-core"
+requires-dist: pytest-asyncio; extra == "verl-core"
+requires-dist: pytest-rerunfailures; extra == "verl-core"
+requires-dist: flash-attn==2.8.3; extra == "flash-attn-cu130torch211"
+requires-dist: cupy-cuda13x==14.0.1; extra == "cupy-cu130"
+requires-dist: verl[verl-core]; extra == "vllm"
+requires-dist: torch==2.11.0; extra == "vllm"
+requires-dist: torchvision==0.26.0; extra == "vllm"
+requires-dist: torchaudio==2.11.0; extra == "vllm"
+requires-dist: vllm==0.24.0; extra == "vllm"
+requires-dist: mbridge; extra == "vllm"
+requires-dist: transformers==5.9.0; extra == "vllm"
+requires-dist: verl[verl-core]; extra == "sglang"
+requires-dist: torch==2.11.0; extra == "sglang"
+requires-dist: torchvision==0.26.0; extra == "sglang"
+requires-dist: torchaudio==2.11.0; extra == "sglang"
+requires-dist: sglang==0.5.12; extra == "sglang"
+requires-dist: sglang-kernel; extra == "sglang"
+requires-dist: mbridge; extra == "sglang"
+requires-dist: transformers==5.9.0; extra == "sglang"
+requires-dist: verl[verl-core]; extra == "fsdp"
+requires-dist: verl[flash-attn-cu130torch211]; extra == "fsdp"
+requires-dist: verl[cupy-cu130]; extra == "fsdp"
+requires-dist: torch==2.11.0; extra == "fsdp"
+requires-dist: torchvision==0.26.0; extra == "fsdp"
+requires-dist: torchaudio==2.11.0; extra == "fsdp"
+requires-dist: liger-kernel>=0.8.2; extra == "fsdp"
+requires-dist: trl==0.27.0; extra == "fsdp"
+requires-dist: flash-linear-attention==0.5.2; extra == "fsdp"
+requires-dist: verl[verl-core]; extra == "megatron"
+requires-dist: verl[flash-attn-cu130torch211]; extra == "megatron"
+requires-dist: verl[cupy-cu130]; extra == "megatron"
+requires-dist: torch==2.11.0; extra == "megatron"
+requires-dist: torchvision==0.26.0; extra == "megatron"
+requires-dist: torchaudio==2.11.0; extra == "megatron"
+requires-dist: nvidia-mathdx; extra == "megatron"
+requires-dist: apex; extra == "megatron"
+requires-dist: transformer-engine; extra == "megatron"
+requires-dist: onnxscript; extra == "megatron"
+requires-dist: trl==0.27.0; extra == "megatron"
+requires-dist: matplotlib; extra == "megatron"
+requires-dist: liger-kernel>=0.8.2; extra == "megatron"
+requires-dist: mbridge; extra == "megatron"
+requires-dist: megatron-bridge==0.5.2; extra == "megatron"
+requires-dist: megatron-core; extra == "megatron"
+requires-dist: nvidia-modelopt==0.44.0; extra == "megatron"
+requires-dist: hf-transfer; extra == "ci"
+requires-dist: sglang-router==0.2.2; extra == "ci"
+requires-dist: veomni==0.1.11; extra == "veomni-sft"
+requires-dist: verl[verl-core]; extra == "cpu"
+requires-dist: torch==2.11.0; extra == "cpu"
+requires-dist: torchvision==0.26.0; extra == "cpu"
+requires-dist: torchaudio==2.11.0; extra == "cpu"
+requires-dist: transformers==5.9.0; extra == "cpu"
+requires-dist: megatron-core; extra == "cpu"
+requires-dist: triton; extra == "cpu"
+requires-dist: pytest; extra == "cpu"
+requires-dist: pre-commit; extra == "cpu"
+requires-dist: py-spy; extra == "cpu"
+requires-dist: pytest-asyncio; extra == "cpu"
+requires-dist: pytest-rerunfailures; extra == "cpu"
+requires-python: <3.13,>=3.10
+provides-extra: test
+provides-extra: math
+provides-extra: mcore
+provides-extra: verl-core
+provides-extra: flash-attn-cu130torch211
+provides-extra: cupy-cu130
+provides-extra: vllm
+provides-extra: sglang
+provides-extra: fsdp
+provides-extra: megatron
+provides-extra: ci
+provides-extra: veomni-sft
+provides-extra: cpu
+

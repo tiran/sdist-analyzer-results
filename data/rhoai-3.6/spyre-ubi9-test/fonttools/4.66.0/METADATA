@@ -1,0 +1,86 @@
+metadata-version: 2.4
+name: fonttools
+version: 4.66.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: maintainer
+dynamic: maintainer-email
+dynamic: platform
+dynamic: provides-extra
+dynamic: requires-python
+dynamic: summary
+platform: Any
+summary: Tools to manipulate font files
+home-page: http://github.com/fonttools/fonttools
+author: Just van Rossum
+author-email: just@letterror.com
+maintainer: Behdad Esfahbod
+maintainer-email: behdad@behdad.org
+license: MIT
+license-file: LICENSE
+license-file: LICENSE.external
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Environment :: Other Environment
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: End Users/Desktop
+classifier: Natural Language :: English
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: 3.15
+classifier: Programming Language :: Python :: 3
+classifier: Topic :: Text Processing :: Fonts
+classifier: Topic :: Multimedia :: Graphics
+classifier: Topic :: Multimedia :: Graphics :: Graphics Conversion
+requires-dist: lxml>=4.0; extra == "lxml"
+requires-dist: brotli>=1.0.1; platform_python_implementation == "CPython" and extra == "woff"
+requires-dist: brotlicffi>=0.8.0; platform_python_implementation != "CPython" and extra == "woff"
+requires-dist: zopfli>=0.1.4; extra == "woff"
+requires-dist: unicodedata2>=18.0.0; python_version <= "3.15" and extra == "unicode"
+requires-dist: lz4>=1.7.4.2; extra == "graphite"
+requires-dist: scipy; platform_python_implementation != "PyPy" and extra == "interpolatable"
+requires-dist: munkres; platform_python_implementation == "PyPy" and extra == "interpolatable"
+requires-dist: pycairo; extra == "interpolatable"
+requires-dist: matplotlib; extra == "plot"
+requires-dist: sympy; extra == "symfont"
+requires-dist: xattr; sys_platform == "darwin" and extra == "type1"
+requires-dist: skia-pathops>=0.5.0; extra == "pathops"
+requires-dist: uharfbuzz>=0.45.0; extra == "repacker"
+requires-dist: lxml>=4.0; extra == "all"
+requires-dist: brotli>=1.0.1; platform_python_implementation == "CPython" and extra == "all"
+requires-dist: brotlicffi>=0.8.0; platform_python_implementation != "CPython" and extra == "all"
+requires-dist: zopfli>=0.1.4; extra == "all"
+requires-dist: unicodedata2>=18.0.0; python_version <= "3.15" and extra == "all"
+requires-dist: lz4>=1.7.4.2; extra == "all"
+requires-dist: scipy; platform_python_implementation != "PyPy" and extra == "all"
+requires-dist: munkres; platform_python_implementation == "PyPy" and extra == "all"
+requires-dist: pycairo; extra == "all"
+requires-dist: matplotlib; extra == "all"
+requires-dist: sympy; extra == "all"
+requires-dist: xattr; sys_platform == "darwin" and extra == "all"
+requires-dist: skia-pathops>=0.5.0; extra == "all"
+requires-dist: uharfbuzz>=0.45.0; extra == "all"
+requires-python: >=3.11
+provides-extra: ufo
+provides-extra: lxml
+provides-extra: woff
+provides-extra: unicode
+provides-extra: graphite
+provides-extra: interpolatable
+provides-extra: plot
+provides-extra: symfont
+provides-extra: type1
+provides-extra: pathops
+provides-extra: repacker
+provides-extra: all
+

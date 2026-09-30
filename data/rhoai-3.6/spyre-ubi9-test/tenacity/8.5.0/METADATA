@@ -1,0 +1,30 @@
+metadata-version: 2.4
+name: tenacity
+version: 8.5.0
+dynamic: license-file
+summary: Retry code until it succeeds
+home-page: https://github.com/jd/tenacity
+author: Julien Danjou
+author-email: julien@danjou.info
+license: Apache 2.0
+license-file: LICENSE
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Topic :: Utilities
+requires-dist: reno; extra == "doc"
+requires-dist: sphinx; extra == "doc"
+requires-dist: pytest; extra == "test"
+requires-dist: tornado>=4.5; extra == "test"
+requires-dist: typeguard; extra == "test"
+requires-python: >=3.8
+provides-extra: doc
+provides-extra: test
+

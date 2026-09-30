@@ -1,0 +1,48 @@
+metadata-version: 2.4
+name: python-json-logger
+version: 3.3.0
+dynamic: license-file
+summary: JSON Log Formatter for the Python Logging Package
+author-email: Zakaria Zajac <zak@madzak.com>, Nicholas Hairs <info+python-json-logger@nicholashairs.com>
+maintainer-email: Nicholas Hairs <info+python-json-logger@nicholashairs.com>
+license: BSD-2-Clause License
+license-file: LICENSE
+license-file: NOTICE
+classifier: Development Status :: 6 - Mature
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: BSD License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Topic :: System :: Logging
+classifier: Typing :: Typed
+requires-dist: typing_extensions; python_version < "3.10"
+requires-dist: orjson; implementation_name != "pypy" and extra == "dev"
+requires-dist: msgspec; implementation_name != "pypy" and extra == "dev"
+requires-dist: validate-pyproject[all]; extra == "dev"
+requires-dist: black; extra == "dev"
+requires-dist: pylint; extra == "dev"
+requires-dist: mypy; extra == "dev"
+requires-dist: pytest; extra == "dev"
+requires-dist: freezegun; extra == "dev"
+requires-dist: backports.zoneinfo; python_version < "3.9" and extra == "dev"
+requires-dist: tzdata; extra == "dev"
+requires-dist: build; extra == "dev"
+requires-dist: mkdocs; extra == "dev"
+requires-dist: mkdocs-material>=8.5; extra == "dev"
+requires-dist: mkdocs-awesome-pages-plugin; extra == "dev"
+requires-dist: mdx_truly_sane_lists; extra == "dev"
+requires-dist: mkdocstrings[python]; extra == "dev"
+requires-dist: mkdocs-gen-files; extra == "dev"
+requires-dist: mkdocs-literate-nav; extra == "dev"
+requires-dist: mike; extra == "dev"
+requires-python: >=3.8
+project-url: Homepage, https://nhairs.github.io/python-json-logger
+project-url: GitHub, https://github.com/nhairs/python-json-logger
+provides-extra: dev
+

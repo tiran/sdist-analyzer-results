@@ -1,0 +1,75 @@
+metadata-version: 2.4
+name: networkx
+version: 2.8.8
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: keywords
+dynamic: license-file
+dynamic: maintainer
+dynamic: maintainer-email
+dynamic: platform
+dynamic: project-url
+dynamic: provides-extra
+dynamic: requires-python
+dynamic: summary
+platform: Linux
+platform: Mac OSX
+platform: Windows
+platform: Unix
+summary: Python package for creating and manipulating graphs and networks
+keywords: Networks,Graph Theory,Mathematics,network,graph,discrete mathematics,math
+home-page: https://networkx.org/
+author: Aric Hagberg
+author-email: hagberg@lanl.gov
+maintainer: NetworkX Developers
+maintainer-email: networkx-discuss@googlegroups.com
+license-file: LICENSE.txt
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: BSD License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+classifier: Topic :: Scientific/Engineering :: Information Analysis
+classifier: Topic :: Scientific/Engineering :: Mathematics
+classifier: Topic :: Scientific/Engineering :: Physics
+requires-dist: numpy>=1.19; extra == "default"
+requires-dist: scipy>=1.8; extra == "default"
+requires-dist: matplotlib>=3.4; extra == "default"
+requires-dist: pandas>=1.3; extra == "default"
+requires-dist: pre-commit>=2.20; extra == "developer"
+requires-dist: mypy>=0.982; extra == "developer"
+requires-dist: sphinx>=5.2; extra == "doc"
+requires-dist: pydata-sphinx-theme>=0.11; extra == "doc"
+requires-dist: sphinx-gallery>=0.11; extra == "doc"
+requires-dist: numpydoc>=1.5; extra == "doc"
+requires-dist: pillow>=9.2; extra == "doc"
+requires-dist: nb2plots>=0.6; extra == "doc"
+requires-dist: texext>=0.6.6; extra == "doc"
+requires-dist: lxml>=4.6; extra == "extra"
+requires-dist: pygraphviz>=1.9; extra == "extra"
+requires-dist: pydot>=1.4.2; extra == "extra"
+requires-dist: sympy>=1.10; extra == "extra"
+requires-dist: pytest>=7.2; extra == "test"
+requires-dist: pytest-cov>=4.0; extra == "test"
+requires-dist: codecov>=2.1; extra == "test"
+requires-python: >=3.8
+project-url: Bug Tracker, https://github.com/networkx/networkx/issues
+project-url: Documentation, https://networkx.org/documentation/stable/
+project-url: Source Code, https://github.com/networkx/networkx
+provides-extra: default
+provides-extra: developer
+provides-extra: doc
+provides-extra: extra
+provides-extra: test
+

@@ -1,0 +1,18 @@
+metadata-version: 2.4
+name: tensorstore
+version: 0.1.85
+dynamic: license-file
+summary: Read and write large, multi-dimensional arrays
+author-email: TensorStore Team <tensorstore-team@google.com>
+license-expression: Apache-2.0
+license-file: LICENSE
+license-file: AUTHORS
+classifier: Development Status :: 5 - Production/Stable
+classifier: Topic :: Software Development :: Libraries
+requires-dist: numpy>=1.22.0
+requires-dist: ml_dtypes>=0.5.0
+requires-python: >=3.11
+project-url: Repository, https://github.com/google/tensorstore
+project-url: Issues, https://github.com/google/tensorstore/issues
+project-url: Documentation, https://google.github.io/tensorstore
+

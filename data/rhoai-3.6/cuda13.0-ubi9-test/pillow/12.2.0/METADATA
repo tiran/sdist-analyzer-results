@@ -1,0 +1,65 @@
+metadata-version: 2.4
+name: pillow
+version: 12.2.0
+dynamic: license-file
+summary: Python Imaging Library (fork)
+keywords: Imaging
+author-email: Jeffrey 'Alex' Clark <aclark@aclark.net>
+license-expression: MIT-CMU
+license-file: LICENSE
+classifier: Development Status :: 6 - Mature
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Multimedia :: Graphics
+classifier: Topic :: Multimedia :: Graphics :: Capture :: Digital Camera
+classifier: Topic :: Multimedia :: Graphics :: Capture :: Screen Capture
+classifier: Topic :: Multimedia :: Graphics :: Graphics Conversion
+classifier: Topic :: Multimedia :: Graphics :: Viewers
+classifier: Typing :: Typed
+requires-dist: furo; extra == "docs"
+requires-dist: olefile; extra == "docs"
+requires-dist: sphinx>=8.2; extra == "docs"
+requires-dist: sphinx-autobuild; extra == "docs"
+requires-dist: sphinx-copybutton; extra == "docs"
+requires-dist: sphinx-inline-tabs; extra == "docs"
+requires-dist: sphinxext-opengraph; extra == "docs"
+requires-dist: olefile; extra == "fpx"
+requires-dist: olefile; extra == "mic"
+requires-dist: arro3-compute; extra == "test-arrow"
+requires-dist: arro3-core; extra == "test-arrow"
+requires-dist: nanoarrow; extra == "test-arrow"
+requires-dist: pyarrow; extra == "test-arrow"
+requires-dist: check-manifest; extra == "tests"
+requires-dist: coverage>=7.4.2; extra == "tests"
+requires-dist: defusedxml; extra == "tests"
+requires-dist: markdown2; extra == "tests"
+requires-dist: olefile; extra == "tests"
+requires-dist: packaging; extra == "tests"
+requires-dist: pyroma>=5; extra == "tests"
+requires-dist: pytest; extra == "tests"
+requires-dist: pytest-cov; extra == "tests"
+requires-dist: pytest-timeout; extra == "tests"
+requires-dist: pytest-xdist; extra == "tests"
+requires-dist: trove-classifiers>=2024.10.12; extra == "tests"
+requires-dist: defusedxml; extra == "xmp"
+requires-python: >=3.10
+project-url: Release notes, https://pillow.readthedocs.io/en/stable/releasenotes/index.html
+project-url: Changelog, https://github.com/python-pillow/Pillow/releases
+project-url: Documentation, https://pillow.readthedocs.io
+project-url: Funding, https://tidelift.com/subscription/pkg/pypi-pillow?utm_source=pypi-pillow&utm_medium=pypi
+project-url: Homepage, https://python-pillow.github.io
+project-url: Mastodon, https://fosstodon.org/@pillow
+project-url: Source, https://github.com/python-pillow/Pillow
+provides-extra: docs
+provides-extra: fpx
+provides-extra: mic
+provides-extra: test-arrow
+provides-extra: tests
+provides-extra: xmp
+

@@ -1,0 +1,136 @@
+metadata-version: 2.4
+name: inspect_ai
+version: 0.3.258
+dynamic: license-file
+summary: Framework for large language model evaluations
+author: UK AI Security Institute
+license: MIT License
+license-file: LICENSE
+classifier: Development Status :: 4 - Beta
+classifier: Environment :: Console
+classifier: Intended Audience :: Science/Research
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Natural Language :: English
+classifier: Programming Language :: Python :: 3
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+classifier: Typing :: Typed
+classifier: Operating System :: OS Independent
+requires-dist: agent-client-protocol>=0.12.0
+requires-dist: aioboto3>=13.0.0
+requires-dist: anyio>=4.14.0
+requires-dist: beautifulsoup4>=4.10.0
+requires-dist: boto3
+requires-dist: click!=8.2.0,!=8.2.2,!=8.3.0,!=8.3.1,>=8.1.3
+requires-dist: debugpy
+requires-dist: docstring-parser>=0.16
+requires-dist: exceptiongroup>=1.0.2; python_version < "3.11"
+requires-dist: fastapi>=0.119.0
+requires-dist: fsspec<=2025.9.0,>=2023.1.0
+requires-dist: httpx
+requires-dist: ijson>=3.2.0
+requires-dist: jsonlines>=3.0.0
+requires-dist: jsonpatch>=1.32
+requires-dist: jsonpath-ng>=1.8.0
+requires-dist: jsonref>=1.1.0
+requires-dist: jsonschema>3.1.1
+requires-dist: mmh3>3.1.0
+requires-dist: nest_asyncio2>=1.7.2
+requires-dist: numpy
+requires-dist: platformdirs>=2.3.0
+requires-dist: psutil
+requires-dist: pydantic>=2.13.0
+requires-dist: python-dotenv>=0.16.0
+requires-dist: pyyaml
+requires-dist: rich!=14.0.0,>=13.3.3
+requires-dist: s3fs>=2023
+requires-dist: semver>=3.0.0
+requires-dist: shortuuid
+requires-dist: sniffio
+requires-dist: tenacity
+requires-dist: textual>=6.2.0
+requires-dist: tiktoken>=0.12.0
+requires-dist: typing_extensions>=4.14.0
+requires-dist: universal-pathlib>=0.2.6
+requires-dist: uvicorn
+requires-dist: zipfile-zstd>=0.0.4; python_version < "3.14"
+requires-dist: zipp>=3.19.1
+requires-dist: zstandard>=0.20.0
+requires-dist: adlfs>=2025.8.0; extra == "dev"
+requires-dist: anthropic>=0.115.0; extra == "dev"
+requires-dist: antlr4-python3-runtime!=4.10.*,!=4.12.*,!=4.13.0,!=4.13.1,<=4.13.2,>=4.9.3; extra == "dev"
+requires-dist: apprise; extra == "dev"
+requires-dist: aws-bedrock-token-generator; extra == "dev"
+requires-dist: azure-ai-inference; extra == "dev"
+requires-dist: azure-identity; extra == "dev"
+requires-dist: google-genai>=1.69.0; extra == "dev"
+requires-dist: griffe>=2; extra == "dev"
+requires-dist: groq>=0.28.0; extra == "dev"
+requires-dist: huggingface_hub>=1.6.0; extra == "dev"
+requires-dist: inspect-scout>=0.4.37; extra == "dev"
+requires-dist: ipython; extra == "dev"
+requires-dist: jsonpath-ng; extra == "dev"
+requires-dist: latex2sympy2-extended==1.11.0; extra == "dev"
+requires-dist: markdown; extra == "dev"
+requires-dist: mcp>=1.10.0; extra == "dev"
+requires-dist: mistralai>=2.4.5; extra == "dev"
+requires-dist: moto[server]>=5.1.5; extra == "dev"
+requires-dist: mypy>=2.3.0; extra == "dev"
+requires-dist: nbformat; extra == "dev"
+requires-dist: openai>=2.45.0; extra == "dev"
+requires-dist: pandas>=2.0.0; extra == "dev"
+requires-dist: pandas-stubs; extra == "dev"
+requires-dist: panflute; extra == "dev"
+requires-dist: pip; extra == "dev"
+requires-dist: pre-commit; extra == "dev"
+requires-dist: pyarrow>=10.0.1; extra == "dev"
+requires-dist: pyarrow-stubs; extra == "dev"
+requires-dist: pytest; extra == "dev"
+requires-dist: pytest-cov; extra == "dev"
+requires-dist: pytest-dotenv; extra == "dev"
+requires-dist: pytest-mock; extra == "dev"
+requires-dist: pytest-textual-snapshot; extra == "dev"
+requires-dist: pytest-timeout; extra == "dev"
+requires-dist: pytest-watcher; extra == "dev"
+requires-dist: pytest-xdist; extra == "dev"
+requires-dist: ruff==0.9.6; extra == "dev"
+requires-dist: textual-dev>=0.86.2; extra == "dev"
+requires-dist: together>=2.0.0; extra == "dev"
+requires-dist: trio; extra == "dev"
+requires-dist: types-aioboto3; extra == "dev"
+requires-dist: types-beautifulsoup4; extra == "dev"
+requires-dist: types-boto3; extra == "dev"
+requires-dist: types-botocore; extra == "dev"
+requires-dist: types-grpcio; extra == "dev"
+requires-dist: types-jsonpatch; extra == "dev"
+requires-dist: types-jsonschema; extra == "dev"
+requires-dist: types-Markdown; extra == "dev"
+requires-dist: types-protobuf; extra == "dev"
+requires-dist: types-psutil; extra == "dev"
+requires-dist: types-python-dateutil; extra == "dev"
+requires-dist: types-PyYAML; extra == "dev"
+requires-dist: types-regex; extra == "dev"
+requires-dist: xai_sdk>=1.7.0; extra == "dev"
+requires-dist: zipfile-zstd>=0.0.4; python_version < "3.14" and extra == "dev"
+requires-dist: click>=8.2.0; extra == "doc"
+requires-dist: griffe>=2; extra == "doc"
+requires-dist: jupyter; extra == "doc"
+requires-dist: markdown; extra == "doc"
+requires-dist: nbclient; extra == "doc"
+requires-dist: panflute; extra == "doc"
+requires-dist: pyyaml; extra == "doc"
+requires-dist: quarto-cli>=1.9.36; extra == "doc"
+requires-dist: types-PyYAML; extra == "doc"
+requires-dist: build; extra == "dist"
+requires-dist: twine; extra == "dist"
+requires-dist: antlr4-python3-runtime!=4.10.*,!=4.12.*,!=4.13.0,!=4.13.1,<=4.13.2,>=4.9.3; extra == "math"
+requires-dist: latex2sympy2-extended==1.11.0; extra == "math"
+requires-python: >=3.10
+project-url: Documentation, https://inspect.aisi.org.uk/
+project-url: Source Code, https://github.com/UKGovernmentBEIS/inspect_ai
+project-url: Issue Tracker, https://github.com/UKGovernmentBEIS/inspect_ai/issues
+provides-extra: dev
+provides-extra: doc
+provides-extra: dist
+provides-extra: math
+

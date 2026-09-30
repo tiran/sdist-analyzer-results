@@ -1,0 +1,18 @@
+metadata-version: 2.1
+name: expecttest
+version: 0.3.0
+summary: 
+home-page: https://github.com/ezyang/expecttest
+author: Edward Z. Yang
+author-email: ezyang@mit.edu
+license: MIT
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+requires-python: <4.0.0,>=3.8.1
+project-url: Repository, https://github.com/ezyang/expecttest
+

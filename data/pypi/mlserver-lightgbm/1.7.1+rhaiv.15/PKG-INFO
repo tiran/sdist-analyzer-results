@@ -1,0 +1,18 @@
+metadata-version: 2.3
+name: mlserver-lightgbm
+version: 1.7.1
+summary: LightGBM runtime for MLServer
+author: Seldon Technologies Ltd.
+author-email: hello@seldon.io
+license: Apache-2.0
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+requires-dist: lightgbm
+requires-dist: mlserver
+requires-dist: pandas
+requires-python: <3.13,>=3.9
+

@@ -1,9 +1,9 @@
 pyyaml
-packaging
-numpy
 pandas
+setuptools<80.0.0
 pluggy
 filelock
 iniconfig
+packaging
 pybind11
-setuptools<80.0.0
+numpy

@@ -1,0 +1,6 @@
+metadata-version: 2.4
+name: nvidia-cuda-nvdisasm
+version: 13.3.73
+summary: Shim: nvdisasm binary is provided by the CUDA toolkit in the base image
+requires-python: >=3
+

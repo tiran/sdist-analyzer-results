@@ -1,0 +1,25 @@
+metadata-version: 2.4
+name: roman-numerals
+version: 4.1.0
+summary: Manipulate well-formed Roman numerals
+author: Adam Turner
+license-expression: 0BSD OR CC0-1.0
+license-file: LICENCE.rst
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Intended Audience :: Developers
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: 3.15
+requires-python: >=3.10
+project-url: Changelog, https://github.com/AA-Turner/roman-numerals/blob/master/CHANGES.rst
+project-url: Code, https://github.com/AA-Turner/roman-numerals/
+project-url: Download, https://pypi.org/project/roman-numerals/
+project-url: Issue tracker, https://github.com/AA-Turner/roman-numerals/issues
+

@@ -1,0 +1,55 @@
+metadata-version: 2.4
+name: macholib
+version: 1.16.4
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: download-url
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: maintainer
+dynamic: maintainer-email
+dynamic: platform
+dynamic: requires-dist
+dynamic: summary
+platform: any
+summary: Mach-O header analysis and editing
+keywords: Mach-O,,dyld
+home-page: http://github.com/ronaldoussoren/macholib
+download-url: http://pypi.python.org/pypi/macholib
+author: Ronald Oussoren
+author-email: ronaldoussoren@mac.com
+maintainer: Ronald Oussoren
+maintainer-email: ronaldoussoren@mac.com
+license: MIT
+license-file: LICENSE
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 2
+classifier: Programming Language :: Python :: 2.7
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.4
+classifier: Programming Language :: Python :: 3.5
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: 3.15
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: Software Development :: Build Tools
+requires-dist: altgraph>=0.17
+project-url: Documentation, https://macholib.readthedocs.io/en/latest/
+project-url: Issue tracker, https://github.com/ronaldoussoren/macholib/issues
+project-url: Repository, https://github.com/ronaldoussoren/macholib
+

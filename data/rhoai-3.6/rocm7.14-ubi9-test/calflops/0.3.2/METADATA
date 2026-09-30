@@ -1,0 +1,25 @@
+metadata-version: 2.5
+name: calflops
+version: 0.3.2
+summary: This package is designed to compute the theoretical amount of FLOPs(floating-point operations)、MACs(multiply-add operations) and Parameters in all various neural networks, such as Linear、 CNN、 RNN、 GCN、Transformer(Bert、LlaMA etc Large Language Model)，including any custom models via torch.nn.function.* as long as based on the Pytorch implementation.
+author-email: MrYXJ <yxj2017@gmail.com>
+license: MIT License
+                 
+                 Copyright (c) [2023] [MrYXJ]
+                 
+                 Permission is hereby granted, free of charge, to any person obtaining a copy
+                 of this software and associated documentation files (the "Software"), to deal
+                 in the Software without restriction, including without limitation the rights
+                 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+                 copies of the Software, and to permit persons to whom the Software is
+                 furnished to do so...
+license-file: LICENSE
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+requires-dist: accelerate>=0.22.0
+requires-dist: huggingface-hub>=0.16.4
+requires-dist: torch>=1.1.0
+requires-python: >=3.6
+project-url: Homepage, https://github.com/MrYxJ/calculate-flops.pytorch
+

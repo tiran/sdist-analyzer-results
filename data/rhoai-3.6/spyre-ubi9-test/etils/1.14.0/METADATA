@@ -1,0 +1,104 @@
+metadata-version: 2.4
+name: etils
+version: 1.14.0
+summary: Collection of common python utils
+keywords: utils,jax,tensorflow,tf,machine learning,deep learning
+author-email: Conchylicultor <etils@google.com>
+license-file: LICENSE
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: etils[array-types]; extra == "all"
+requires-dist: etils[eapp]; extra == "all"
+requires-dist: etils[ecolab]; extra == "all"
+requires-dist: etils[edc]; extra == "all"
+requires-dist: etils[enp]; extra == "all"
+requires-dist: etils[epath]; extra == "all"
+requires-dist: etils[epath-gcs]; extra == "all"
+requires-dist: etils[epath-s3]; extra == "all"
+requires-dist: etils[epy]; extra == "all"
+requires-dist: etils[etqdm]; extra == "all"
+requires-dist: etils[etree]; extra == "all"
+requires-dist: etils[etree-dm]; extra == "all"
+requires-dist: etils[etree-jax]; extra == "all"
+requires-dist: etils[etree-tf]; extra == "all"
+requires-dist: etils[enp]; extra == "array-types"
+requires-dist: pytest; extra == "dev"
+requires-dist: pytest-subtests; extra == "dev"
+requires-dist: pytest-xdist; extra == "dev"
+requires-dist: pyink; extra == "dev"
+requires-dist: pylint>=2.6.0; extra == "dev"
+requires-dist: chex; extra == "dev"
+requires-dist: fiddle; extra == "dev"
+requires-dist: torch; extra == "dev"
+requires-dist: optree; extra == "dev"
+requires-dist: tensorflow_datasets; extra == "dev"
+requires-dist: pydantic; extra == "dev"
+requires-dist: sphinx-apitree[ext]; extra == "docs"
+requires-dist: etils[all,dev]; extra == "docs"
+requires-dist: absl-py; extra == "eapp"
+requires-dist: simple_parsing; extra == "eapp"
+requires-dist: etils[epy]; extra == "eapp"
+requires-dist: jupyter; extra == "ecolab"
+requires-dist: numpy; extra == "ecolab"
+requires-dist: mediapy; extra == "ecolab"
+requires-dist: packaging; extra == "ecolab"
+requires-dist: protobuf; extra == "ecolab"
+requires-dist: etils[enp]; extra == "ecolab"
+requires-dist: etils[epy]; extra == "ecolab"
+requires-dist: etils[etree]; extra == "ecolab"
+requires-dist: etils[epy]; extra == "edc"
+requires-dist: numpy; extra == "enp"
+requires-dist: einops; extra == "enp"
+requires-dist: etils[epy]; extra == "enp"
+requires-dist: fsspec; extra == "epath"
+requires-dist: typing_extensions; extra == "epath"
+requires-dist: zipp; extra == "epath"
+requires-dist: etils[epy]; extra == "epath"
+requires-dist: gcsfs; extra == "epath-gcs"
+requires-dist: etils[epath]; extra == "epath-gcs"
+requires-dist: s3fs; extra == "epath-s3"
+requires-dist: etils[epath]; extra == "epath-s3"
+requires-dist: typing_extensions; extra == "epy"
+requires-dist: absl-py; extra == "etqdm"
+requires-dist: tqdm; extra == "etqdm"
+requires-dist: etils[epy]; extra == "etqdm"
+requires-dist: etils[array-types]; extra == "etree"
+requires-dist: etils[epy]; extra == "etree"
+requires-dist: etils[enp]; extra == "etree"
+requires-dist: etils[etqdm]; extra == "etree"
+requires-dist: dm-tree; extra == "etree-dm"
+requires-dist: etils[etree]; extra == "etree-dm"
+requires-dist: jax[cpu]; extra == "etree-jax"
+requires-dist: etils[etree]; extra == "etree-jax"
+requires-dist: tensorflow; extra == "etree-tf"
+requires-dist: etils[etree]; extra == "etree-tf"
+requires-dist: etils[ecolab]; extra == "lazy-imports"
+requires-python: >=3.11
+project-url: changelog, https://github.com/google/etils/blob/main/CHANGELOG.md
+project-url: documentation, https://etils.readthedocs.io
+project-url: homepage, https://github.com/google/etils
+project-url: repository, https://github.com/google/etils
+provides-extra: all
+provides-extra: array-types
+provides-extra: dev
+provides-extra: docs
+provides-extra: eapp
+provides-extra: ecolab
+provides-extra: edc
+provides-extra: enp
+provides-extra: epath
+provides-extra: epath-gcs
+provides-extra: epath-no-tf
+provides-extra: epath-s3
+provides-extra: epy
+provides-extra: etqdm
+provides-extra: etree
+provides-extra: etree-dm
+provides-extra: etree-jax
+provides-extra: etree-tf
+provides-extra: lazy-imports
+

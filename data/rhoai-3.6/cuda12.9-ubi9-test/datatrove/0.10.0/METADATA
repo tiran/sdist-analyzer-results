@@ -1,0 +1,107 @@
+metadata-version: 2.4
+name: datatrove
+version: 0.10.0
+dynamic: license-file
+summary: HuggingFace library to process and filter large amounts of webdata
+keywords: data,machine,learning,processing
+author-email: "MacroData Inc." <guilherme@macrodata.co>, "HuggingFace Inc." <joel@hf.co>
+license: Apache-2.0
+license-file: LICENSE
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Education
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+requires-dist: dill>=0.3.0
+requires-dist: fsspec>=2023.12.2
+requires-dist: huggingface-hub>=1.6.0
+requires-dist: humanize
+requires-dist: loguru>=0.7.0
+requires-dist: multiprocess
+requires-dist: numpy>=2.0.0
+requires-dist: tqdm
+requires-dist: rich; extra == "cli"
+requires-dist: faust-cchardet; extra == "io"
+requires-dist: pyarrow; extra == "io"
+requires-dist: python-magic; extra == "io"
+requires-dist: warcio; extra == "io"
+requires-dist: datasets>=3.1.0; extra == "io"
+requires-dist: orjson; extra == "io"
+requires-dist: zstandard; extra == "io"
+requires-dist: s3fs>=2023.12.2; extra == "s3"
+requires-dist: fasttext-numpy2-wheel; extra == "processing"
+requires-dist: nltk; extra == "processing"
+requires-dist: inscriptis; extra == "processing"
+requires-dist: tldextract; extra == "processing"
+requires-dist: trafilatura<1.12.0,>=1.8.0; extra == "processing"
+requires-dist: tokenizers; extra == "processing"
+requires-dist: ftfy; extra == "processing"
+requires-dist: fasteners; extra == "processing"
+requires-dist: regex; extra == "processing"
+requires-dist: xxhash<4; extra == "processing"
+requires-dist: pyahocorasick; extra == "processing"
+requires-dist: lighteval>=0.3.0; extra == "decont"
+requires-dist: spacy[ja]>=3.8; extra == "multilingual"
+requires-dist: stanza; extra == "multilingual"
+requires-dist: pyvi; extra == "multilingual"
+requires-dist: pythainlp; extra == "multilingual"
+requires-dist: jieba; extra == "multilingual"
+requires-dist: indic-nlp-library; extra == "multilingual"
+requires-dist: kiwipiepy<0.22.0; extra == "multilingual"
+requires-dist: urduhack; extra == "multilingual"
+requires-dist: tensorflow>=2.16; extra == "multilingual"
+requires-dist: khmer-nltk; extra == "multilingual"
+requires-dist: laonlp; extra == "multilingual"
+requires-dist: botok; extra == "multilingual"
+requires-dist: pyidaungsu-numpy2; extra == "multilingual"
+requires-dist: datatrove[io]; extra == "inference"
+requires-dist: aiofiles; extra == "inference"
+requires-dist: httpx; extra == "inference"
+requires-dist: aiosqlite; extra == "inference"
+requires-dist: vllm>=0.10.0; extra == "inference"
+requires-dist: sglang; extra == "inference"
+requires-dist: bitsandbytes; extra == "inference"
+requires-dist: numpy<2.3,>=2.0.0; extra == "inference"
+requires-dist: typer; extra == "inference"
+requires-dist: pyyaml; extra == "inference"
+requires-dist: pandas; extra == "inference"
+requires-dist: ray[default]; extra == "ray"
+requires-dist: ruff>=0.1.5; extra == "quality"
+requires-dist: datatrove[cli]; extra == "testing"
+requires-dist: datatrove[io]; extra == "testing"
+requires-dist: datatrove[processing]; extra == "testing"
+requires-dist: datatrove[multilingual]; extra == "testing"
+requires-dist: datatrove[s3]; extra == "testing"
+requires-dist: datatrove[ray]; extra == "testing"
+requires-dist: datatrove[inference]; extra == "testing"
+requires-dist: datatrove[decont]; extra == "testing"
+requires-dist: flask>=3.1.0; extra == "testing"
+requires-dist: pytest; extra == "testing"
+requires-dist: pytest-rerunfailures; extra == "testing"
+requires-dist: pytest-timeout; extra == "testing"
+requires-dist: pytest-xdist; extra == "testing"
+requires-dist: moto[s3,server]; extra == "testing"
+requires-dist: datatrove[quality]; extra == "all"
+requires-dist: datatrove[testing]; extra == "all"
+requires-dist: datatrove[all]; extra == "dev"
+requires-python: >=3.10.0
+project-url: Repository, https://github.com/huggingface/datatrove
+provides-extra: cli
+provides-extra: io
+provides-extra: s3
+provides-extra: processing
+provides-extra: decont
+provides-extra: multilingual
+provides-extra: inference
+provides-extra: ray
+provides-extra: quality
+provides-extra: testing
+provides-extra: all
+provides-extra: dev
+

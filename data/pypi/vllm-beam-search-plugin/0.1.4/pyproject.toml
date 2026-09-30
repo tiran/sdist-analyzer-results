@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vllm-beam-search-plugin"
+version = "0.1.4"
+description = "Beam search plugin for vLLM v1 with CoW block table forking"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+keywords = ["vllm", "beam-search", "inference", "plugin"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "vllm>=0.24.0,<0.29.0",
+    "numpy>=2.0,<3.0",
+    "torch>=2.11,<2.14",
+    "triton>=3.6,<3.8",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "httpx",
+]
+stress = [
+    "httpx",
+]
+
+[project.urls]
+Repository = "https://github.com/neuralmagic/vllm-beam-search-plugin"
+Issues = "https://github.com/neuralmagic/vllm-beam-search-plugin/issues"
+
+[project.scripts]
+vllm-beam-stress = "vllm_beam_search.stress_server:main_sync"
+
+[project.entry-points."vllm.general_plugins"]
+beam_search = "vllm_beam_search:register_beam_search_plugin"
+
+[tool.setuptools]
+packages = ["vllm_beam_search"]
+
+[tool.setuptools.package-data]
+vllm_beam_search = ["py.typed", "*.diff"]

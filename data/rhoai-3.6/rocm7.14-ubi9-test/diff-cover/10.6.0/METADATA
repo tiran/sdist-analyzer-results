@@ -1,0 +1,32 @@
+metadata-version: 2.5
+name: diff_cover
+version: 10.6.0
+summary: Run coverage and linting reports on diffs
+author: See Contributors
+license-expression: Apache-2.0
+license-file: LICENSE
+license-file: NOTICE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Intended Audience :: Developers
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Topic :: Software Development :: Quality Assurance
+classifier: Topic :: Software Development :: Testing
+requires-dist: chardet>=3.0.0
+requires-dist: jinja2>=2.7.1
+requires-dist: pluggy<2,>=0.13.1
+requires-dist: pygments<3,>=2.19.1
+requires-dist: tomli>=1.2.1; extra == "toml"
+requires-python: >=3.10
+project-url: Homepage, https://github.com/Bachmann1234/diff-cover
+project-url: Repository, https://github.com/Bachmann1234/diff-cover
+provides-extra: toml
+

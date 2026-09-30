@@ -1,0 +1,17 @@
+metadata-version: 2.4
+name: types-requests
+version: 2.33.0.20260906
+dynamic: license-file
+summary: Typing stubs for requests
+license-expression: Apache-2.0
+license-file: LICENSE
+classifier: Programming Language :: Python :: 3
+classifier: Typing :: Stubs Only
+requires-dist: urllib3>=2
+requires-python: >=3.10
+project-url: Homepage, https://github.com/python/typeshed
+project-url: GitHub, https://github.com/python/typeshed
+project-url: Changes, https://github.com/typeshed-internal/stub_uploader/blob/main/data/changelogs/requests.md
+project-url: Issue tracker, https://github.com/python/typeshed/issues
+project-url: Chat, https://gitter.im/python/typing
+

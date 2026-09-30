@@ -1,0 +1,79 @@
+metadata-version: 2.4
+name: cvxpy
+version: 1.9.3
+dynamic: license-file
+summary: A domain-specific language for modeling convex optimization problems in Python.
+author-email: Steven Diamond <stevend2@stanford.edu>, akshayka@cs.stanford.edu, Eric Chu <echu508@stanford.edu>, Stephen Boyd <boyd@stanford.edu>
+license-expression: Apache-2.0
+license-file: LICENSE
+requires-dist: osqp>=1.0.0
+requires-dist: clarabel>=0.5.0
+requires-dist: scs>=3.2.4.post1
+requires-dist: numpy>=2.0.0
+requires-dist: scipy>=1.13.0
+requires-dist: highspy>=1.14.0
+requires-dist: qdldl>=0.1.7.post0
+requires-dist: sparsediffpy<0.7.0,>=0.6.0
+requires-dist: cylp>=0.91.5; extra == "cbc"
+requires-dist: coptpy>=8.0.3; extra == "copt"
+requires-dist: cvxopt; extra == "cvxopt"
+requires-dist: diffcp; extra == "diffcp"
+requires-dist: ecos; extra == "ecos"
+requires-dist: ecos; extra == "ecos-bb"
+requires-dist: ortools<9.15,>=9.7; extra == "glop"
+requires-dist: cvxopt; extra == "glpk"
+requires-dist: cvxopt; extra == "glpk-mi"
+requires-dist: gurobipy; extra == "gurobi"
+requires-dist: highspy; extra == "highs"
+requires-dist: moreau>=0.4.1; extra == "moreau"
+requires-dist: Mosek; extra == "mosek"
+requires-dist: ortools<9.15,>=9.7; extra == "pdlp"
+requires-dist: piqp; extra == "piqp"
+requires-dist: proxsuite; extra == "proxqp"
+requires-dist: qoco; extra == "qoco"
+requires-dist: qpalm~=1.2.5; extra == "qpalm"
+requires-dist: PySCIPOpt; extra == "scip"
+requires-dist: scipy; extra == "scipy"
+requires-dist: xpress>=9.5; extra == "xpress"
+requires-dist: daqp; extra == "daqp"
+requires-dist: knitro; extra == "knitro"
+requires-dist: unopy; extra == "uno"
+requires-dist: pytest; extra == "testing"
+requires-dist: hypothesis; extra == "testing"
+requires-dist: sphinx; extra == "doc"
+requires-dist: sphinxcontrib.jquery; extra == "doc"
+requires-dist: sphinx-inline-tabs; extra == "doc"
+requires-dist: sphinx-design; extra == "doc"
+requires-dist: sphinx-immaterial>=0.11.7; extra == "doc"
+requires-python: >=3.11
+project-url: Homepage, https://github.com/cvxpy/cvxpy
+provides-extra: cbc
+provides-extra: clarabel
+provides-extra: copt
+provides-extra: cvxopt
+provides-extra: diffcp
+provides-extra: ecos
+provides-extra: ecos-bb
+provides-extra: glop
+provides-extra: glpk
+provides-extra: glpk-mi
+provides-extra: gurobi
+provides-extra: highs
+provides-extra: moreau
+provides-extra: mosek
+provides-extra: osqp
+provides-extra: pdlp
+provides-extra: piqp
+provides-extra: proxqp
+provides-extra: qoco
+provides-extra: qpalm
+provides-extra: scip
+provides-extra: scipy
+provides-extra: scs
+provides-extra: xpress
+provides-extra: daqp
+provides-extra: knitro
+provides-extra: uno
+provides-extra: testing
+provides-extra: doc
+

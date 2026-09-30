@@ -1,0 +1,16 @@
+metadata-version: 2.4
+name: river
+version: 0.26.0
+summary: Online machine learning in Python
+author-email: Max Halford <maxhalford25@gmail.com>
+license-expression: BSD-3-Clause
+license-file: LICENSE
+requires-dist: scipy<2,>=1.14.1
+requires-dist: numpy<3,>=2.2.5
+requires-dist: narwhals>=2.0.0
+requires-dist: pandas<3,>=2.2; extra == "pandas"
+requires-python: >=3.11
+project-url: Homepage, https://riverml.xyz/
+project-url: Repository, https://github.com/online-ml/river/
+provides-extra: pandas
+

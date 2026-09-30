@@ -1,0 +1,32 @@
+metadata-version: 2.5
+name: jaxtyping
+version: 0.3.11
+summary: Type annotations and runtime checking for shape and dtype of JAX/NumPy/PyTorch/etc. arrays.
+keywords: deep-learning,equinox,jax,neural-networks,typing
+author-email: Patrick Kidger <contact@kidger.site>
+license: MIT License
+                 
+                 Copyright (c) 2022 Google LLC
+                 
+                 Permission is hereby granted, free of charge, to any person obtaining a copy
+                 of this software and associated documentation files (the "Software"), to deal
+                 in the Software without restriction, including without limitation the rights
+                 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+                 copies of the Software, and to permit persons to whom the Software is
+                 furnished to do s...
+license-file: LICENSE
+classifier: Development Status :: 3 - Alpha
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Financial and Insurance Industry
+classifier: Intended Audience :: Information Technology
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: MIT License
+classifier: Natural Language :: English
+classifier: Programming Language :: Python :: 3
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+classifier: Topic :: Scientific/Engineering :: Information Analysis
+classifier: Topic :: Scientific/Engineering :: Mathematics
+requires-dist: wadler-lindig>=0.1.3
+requires-python: >=3.11
+project-url: repository, https://github.com/patrick-kidger/jaxtyping
+

@@ -1,0 +1,20 @@
+metadata-version: 2.4
+name: tzdata
+version: 2026.4
+dynamic: license-file
+summary: Provider of IANA time zone data
+home-page: https://github.com/python/tzdata
+author: Python Software Foundation
+author-email: datetime-sig@python.org
+license: Apache-2.0
+license-file: LICENSE
+license-file: licenses/LICENSE_APACHE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Python :: 2
+classifier: Programming Language :: Python :: 3
+requires-python: >=2
+project-url: Bug Reports, https://github.com/python/tzdata/issues
+project-url: Source, https://github.com/python/tzdata
+project-url: Documentation, https://tzdata.python.org
+

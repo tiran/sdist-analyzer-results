@@ -1,0 +1,10 @@
+metadata-version: 2.4
+name: clarabel
+version: 0.11.1
+license-file: LICENSE.md
+classifier: Programming Language :: Rust
+requires-dist: numpy
+requires-dist: scipy
+requires-dist: cffi
+requires-python: >=3.9
+

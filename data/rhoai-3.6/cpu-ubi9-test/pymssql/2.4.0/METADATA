@@ -1,0 +1,46 @@
+metadata-version: 2.4
+name: pymssql
+version: 2.4.0
+dynamic: description
+dynamic: description-content-type
+dynamic: license-file
+dynamic: platform
+platform: any
+summary: DB-API interface to Microsoft SQL Server for Python. (new Cython-based version)
+keywords: mssql,SQL Server,database,DB-API
+author-email: Damien Churchill <damoxc@gmail.com>
+maintainer-email: Mikhail Terekhov <termim@gmail.com>
+license: GNU LESSER GENERAL PUBLIC LICENSE
+                 		       Version 2.1, February 1999
+                 
+                  Copyright (C) 1991, 1999 Free Software Foundation, Inc.
+                  51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+                  Everyone is permitted to copy and distribute verbatim copies
+                  of this license document, but changing it is not allowed.
+                 
+                 [This is the first released version of the Lesser GPL.  It also counts
+                  as the successor of the GNU Library Public License, v...
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Topic :: Database
+classifier: Topic :: Database :: Database Engines/Servers
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: POSIX
+classifier: Operating System :: Unix
+requires-python: >=3.9
+project-url: homepage, https://github.com/pymssql/pymssql
+project-url: repository, https://github.com/pymssql/pymssql
+project-url: documentation, http://pymssql.readthedocs.io
+project-url: Bug Tracker, https://github.com/pymssql/pymssql/issues
+project-url: Changelog, https://github.com/pymssql/pymssql/blob/master/ChangeLog.rst
+

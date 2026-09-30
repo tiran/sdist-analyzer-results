@@ -1,0 +1,98 @@
+metadata-version: 2.5
+name: param
+version: 2.4.1
+summary: Declarative parameters for robust Python classes and a rich API for reactive programming
+author-email: HoloViz <developers@holoviz.org>
+maintainer-email: HoloViz <developers@holoviz.org>
+license: BSD-3-Clause
+license-file: LICENSE.txt
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: BSD License
+classifier: Natural Language :: English
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Scientific/Engineering
+classifier: Topic :: Software Development :: Libraries
+classifier: Typing :: Typed
+requires-dist: aiohttp; extra == "all"
+requires-dist: cloudpickle; extra == "all"
+requires-dist: gmpy2; extra == "all"
+requires-dist: ipython; extra == "all"
+requires-dist: jsonschema; extra == "all"
+requires-dist: nbval; extra == "all"
+requires-dist: nest-asyncio; extra == "all"
+requires-dist: numpy; extra == "all"
+requires-dist: odfpy; extra == "all"
+requires-dist: openpyxl; extra == "all"
+requires-dist: pandas; extra == "all"
+requires-dist: panel; extra == "all"
+requires-dist: pyarrow; extra == "all"
+requires-dist: pytest; extra == "all"
+requires-dist: pytest-asyncio; extra == "all"
+requires-dist: pytest-cov; extra == "all"
+requires-dist: pytest-xdist; extra == "all"
+requires-dist: tables; extra == "all"
+requires-dist: xlrd; extra == "all"
+requires-dist: aiohttp; extra == "examples"
+requires-dist: pandas; extra == "examples"
+requires-dist: panel; extra == "examples"
+requires-dist: pytest; extra == "tests"
+requires-dist: pytest-asyncio; extra == "tests"
+requires-dist: pytest-cov; extra == "tests"
+requires-dist: odfpy; extra == "tests-deser"
+requires-dist: openpyxl; extra == "tests-deser"
+requires-dist: pyarrow; extra == "tests-deser"
+requires-dist: tables; extra == "tests-deser"
+requires-dist: xlrd; extra == "tests-deser"
+requires-dist: aiohttp; extra == "tests-examples"
+requires-dist: nbval; extra == "tests-examples"
+requires-dist: pandas; extra == "tests-examples"
+requires-dist: panel; extra == "tests-examples"
+requires-dist: pytest; extra == "tests-examples"
+requires-dist: pytest-asyncio; extra == "tests-examples"
+requires-dist: pytest-xdist; extra == "tests-examples"
+requires-dist: aiohttp; extra == "tests-full"
+requires-dist: cloudpickle; extra == "tests-full"
+requires-dist: gmpy2; extra == "tests-full"
+requires-dist: ipython; extra == "tests-full"
+requires-dist: jsonschema; extra == "tests-full"
+requires-dist: nbval; extra == "tests-full"
+requires-dist: nest-asyncio; extra == "tests-full"
+requires-dist: numpy; extra == "tests-full"
+requires-dist: odfpy; extra == "tests-full"
+requires-dist: openpyxl; extra == "tests-full"
+requires-dist: pandas; extra == "tests-full"
+requires-dist: panel; extra == "tests-full"
+requires-dist: pyarrow; extra == "tests-full"
+requires-dist: pytest; extra == "tests-full"
+requires-dist: pytest-asyncio; extra == "tests-full"
+requires-dist: pytest-cov; extra == "tests-full"
+requires-dist: pytest-xdist; extra == "tests-full"
+requires-dist: tables; extra == "tests-full"
+requires-dist: xlrd; extra == "tests-full"
+requires-dist: cloudpickle; extra == "tests-pypy"
+requires-dist: ipython; extra == "tests-pypy"
+requires-dist: jsonschema; extra == "tests-pypy"
+requires-dist: nest-asyncio; extra == "tests-pypy"
+requires-dist: numpy; extra == "tests-pypy"
+requires-python: >=3.10
+project-url: Homepage, https://param.holoviz.org/
+project-url: Tracker, https://github.com/holoviz/param/issues
+project-url: Releases, https://github.com/holoviz/param/releases
+project-url: Source, https://github.com/holoviz/param
+project-url: HoloViz, https://holoviz.org/
+provides-extra: all
+provides-extra: examples
+provides-extra: tests
+provides-extra: tests-deser
+provides-extra: tests-examples
+provides-extra: tests-full
+provides-extra: tests-pypy
+

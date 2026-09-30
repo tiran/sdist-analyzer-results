@@ -1,0 +1,34 @@
+metadata-version: 2.4
+name: flexcache
+version: 0.3
+dynamic: license-file
+summary: Saves and loads to the cache a transformed versions of a source object.
+keywords: cache,optimization,storage,disk
+author-email: "Hernan E. Grecco" <hernan.grecco@gmail.com>
+maintainer-email: "Hernan E. Grecco" <hernan.grecco@gmail.com>
+license: BSD
+license-file: LICENSE
+license-file: AUTHORS
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: BSD License
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: POSIX
+classifier: Programming Language :: Python
+classifier: Topic :: System :: Filesystems
+classifier: Topic :: Software Development :: Libraries
+classifier: Topic :: Utilities
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+requires-dist: typing_extensions
+requires-dist: pytest; extra == "test"
+requires-dist: pytest-mpl; extra == "test"
+requires-dist: pytest-cov; extra == "test"
+requires-dist: pytest-subtests; extra == "test"
+requires-python: >=3.9
+project-url: Homepage, https://github.com/hgrecco/flexcache
+provides-extra: test
+

@@ -1,0 +1,132 @@
+metadata-version: 2.4
+name: pypesto
+version: 0.7.0
+dynamic: license-file
+summary: python-based Parameter EStimation TOolbox
+keywords: parameter inference,optimization,sampling,profiles,ODE,AMICI,systems biology
+author-email: The pyPESTO developers <yannik.schaelte@gmail.com>
+maintainer-email: Paul Jonas Jost <paul.jost@uni-bonn.de>, Domagoj Dorešić <domagoj.doresic@uni-bonn.de>, Moritz Richter <moritz.richter@uni-bonn.de>, Fabian Fröhlich <fabian.frohlich@crick.ac.uk>
+license-file: LICENSE
+classifier: Development Status :: 4 - Beta
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.11
+requires-dist: numpy!=1.24.0,>=1.19.1
+requires-dist: scipy>=1.5.2
+requires-dist: pandas>=1.5.0
+requires-dist: cloudpickle>=1.5.0
+requires-dist: matplotlib>=3.6.2
+requires-dist: more-itertools>=9.0.0
+requires-dist: seaborn>=0.11.2
+requires-dist: h5py!=3.15.0,>=3.1.0
+requires-dist: tqdm>=4.46.0
+requires-dist: tabulate>=0.8.10
+requires-dist: amici>=1.0.0; extra == "amici"
+requires-dist: petab>=0.8.1; extra == "petab"
+requires-dist: cyipopt>=1.3.0; extra == "ipopt"
+requires-dist: dlib>=19.19.0; extra == "dlib"
+requires-dist: nlopt!=2.9.0,>=2.6.2; extra == "nlopt"
+requires-dist: pyswarm>=0.6; extra == "pyswarm"
+requires-dist: cma>=3.0.3; extra == "cma"
+requires-dist: pyswarms>=1.3.0; extra == "pyswarms"
+requires-dist: fides>=0.6.1; extra == "fides"
+requires-dist: mpi4py>=3.0.3; extra == "mpi"
+requires-dist: pymc>=6; extra == "pymc"
+requires-dist: jax>=0.4.1; extra == "jax"
+requires-dist: jaxlib>=0.4.1; extra == "jax"
+requires-dist: emcee>=3.0.2; extra == "emcee"
+requires-dist: dynesty>=2.0.3; extra == "dynesty"
+requires-dist: umap-learn[plot]>=0.5.3; extra == "mltools"
+requires-dist: holoviews>=1.18; extra == "mltools"
+requires-dist: scikit-learn>=0.24.1; extra == "mltools"
+requires-dist: julia>=0.5.7; extra == "julia"
+requires-dist: ipython>=8.4.0; extra == "julia"
+requires-dist: pygments>=2.12.0; extra == "julia"
+requires-dist: petab-select[plot]>=0.3.3; extra == "select"
+requires-dist: pytest>=5.4.3; extra == "test"
+requires-dist: pytest-cov>=2.10.0; extra == "test"
+requires-dist: gitpython>=3.1.7; extra == "test"
+requires-dist: pytest-rerunfailures>=9.1.1; extra == "test"
+requires-dist: autograd>=1.3; extra == "test"
+requires-dist: libroadrunner>=2.7.0; extra == "roadrunner"
+requires-dist: pypesto[petab]; extra == "roadrunner"
+requires-dist: python-libsbml>=5.20.2; extra == "roadrunner"
+requires-dist: pypesto[ipopt]; extra == "all-optimizers"
+requires-dist: pypesto[dlib]; extra == "all-optimizers"
+requires-dist: pypesto[nlopt]; extra == "all-optimizers"
+requires-dist: pypesto[pyswarm]; extra == "all-optimizers"
+requires-dist: pypesto[cma]; extra == "all-optimizers"
+requires-dist: pypesto[pyswarms]; extra == "all-optimizers"
+requires-dist: pypesto[fides]; extra == "all-optimizers"
+requires-dist: pypesto[julia]; extra == "example"
+requires-dist: pypesto[pymc]; extra == "example"
+requires-dist: pypesto[emcee]; extra == "example"
+requires-dist: pypesto[dynesty]; extra == "example"
+requires-dist: pypesto[nlopt]; extra == "example"
+requires-dist: pypesto[pyswarms]; extra == "example"
+requires-dist: notebook>=6.1.4; extra == "example"
+requires-dist: ipywidgets>=8.1.5; extra == "example"
+requires-dist: sphinx>=6.2.1; extra == "doc"
+requires-dist: nbsphinx>=0.8.9; extra == "doc"
+requires-dist: nbconvert>=6.5.0; extra == "doc"
+requires-dist: sphinx-rtd-theme>=1.2.0; extra == "doc"
+requires-dist: sphinx-autodoc-typehints>=1.18.3; extra == "doc"
+requires-dist: sphinxcontrib-bibtex>=2.5.0; extra == "doc"
+requires-dist: ipython>=8.4.0; extra == "doc"
+requires-dist: myst-parser>=0.18.0; extra == "doc"
+requires-dist: ipykernel==6.23.1; extra == "doc"
+requires-dist: pypesto[example]; extra == "doc"
+requires-dist: pypesto[select]; extra == "doc"
+requires-dist: pypesto[fides]; extra == "doc"
+requires-dist: pypesto[amici]; extra == "doc"
+requires-dist: pypesto[petab]; extra == "doc"
+requires-dist: pypesto[jax]; extra == "doc"
+requires-dist: pypesto[roadrunner]; extra == "doc"
+requires-dist: pypesto[amici]; extra == "all"
+requires-dist: pypesto[petab]; extra == "all"
+requires-dist: pypesto[all_optimizers]; extra == "all"
+requires-dist: pypesto[mpi]; extra == "all"
+requires-dist: pypesto[pymc]; extra == "all"
+requires-dist: pypesto[jax]; extra == "all"
+requires-dist: pypesto[julia]; extra == "all"
+requires-dist: pypesto[emcee]; extra == "all"
+requires-dist: pypesto[dynesty]; extra == "all"
+requires-dist: pypesto[mltools]; extra == "all"
+requires-dist: pypesto[doc]; extra == "all"
+requires-dist: pypesto[example]; extra == "all"
+requires-dist: pypesto[select]; extra == "all"
+requires-dist: pypesto[test]; extra == "all"
+requires-dist: pypesto[roadrunner]; extra == "all"
+requires-python: >=3.11
+project-url: Homepage, https://github.com/icb-dcm/pypesto
+project-url: Download, https://github.com/icb-dcm/pypesto/releases
+project-url: Bug Tracker, https://github.com/icb-dcm/pypesto/issues
+project-url: Documentation, https://pypesto.readthedocs.io
+project-url: Changelog, https://pypesto.readthedocs.io/en/latest/changelog.html
+provides-extra: amici
+provides-extra: petab
+provides-extra: ipopt
+provides-extra: dlib
+provides-extra: nlopt
+provides-extra: pyswarm
+provides-extra: cma
+provides-extra: pyswarms
+provides-extra: fides
+provides-extra: mpi
+provides-extra: pymc
+provides-extra: jax
+provides-extra: emcee
+provides-extra: dynesty
+provides-extra: mltools
+provides-extra: julia
+provides-extra: select
+provides-extra: test
+provides-extra: roadrunner
+provides-extra: all-optimizers
+provides-extra: example
+provides-extra: doc
+provides-extra: all
+

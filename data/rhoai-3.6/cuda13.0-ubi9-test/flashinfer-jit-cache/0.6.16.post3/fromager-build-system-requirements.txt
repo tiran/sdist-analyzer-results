@@ -1,0 +1,12 @@
+wheel
+packaging>=24
+setuptools
+requests
+setuptools>=77
+flashinfer-cubin
+torch
+tqdm
+nvidia-ml-py
+ninja
+apache-tvm-ffi<0.2,>=0.1
+numpy

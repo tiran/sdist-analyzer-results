@@ -1,7 +1,7 @@
-wheel
 Cython<4.0.0a0
 meson-python>=0.13.1
-versioneer[toml]
-meson<1.11.0,>=1.2.1
-numpy>=2.0
 setuptools
+versioneer[toml]
+wheel
+meson<1.11.0,>=1.2.1
+numpy<3.0,>=2.0

@@ -1,0 +1,2 @@
+hatch-nodejs-version
+hatchling>=1.5

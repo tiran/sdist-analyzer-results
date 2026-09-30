@@ -1,0 +1,28 @@
+metadata-version: 2.4
+name: junitparser
+version: 2.1.1
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: requires-dist
+dynamic: summary
+summary: Manipulates JUnit/xUnit Result XML files
+keywords: junit xunit xml parser
+home-page: https://github.com/weiwei/junitparser
+author: Weiwei Wang
+author-email: gastlygem@gmail.com
+license: Apache 2.0
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Topic :: Text Processing
+classifier: Programming Language :: Python :: 2
+classifier: Programming Language :: Python :: 3
+requires-dist: future
+

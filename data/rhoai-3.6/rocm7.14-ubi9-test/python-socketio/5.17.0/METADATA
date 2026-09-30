@@ -1,0 +1,32 @@
+metadata-version: 2.4
+name: python-socketio
+version: 5.17.0
+dynamic: license-file
+summary: Socket.IO server and client for Python
+author-email: Miguel Grinberg <miguel.grinberg@gmail.com>
+license: MIT
+license-file: LICENSE
+classifier: Environment :: Web Environment
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Python :: 3
+classifier: Operating System :: OS Independent
+requires-dist: bidict>=0.21.0
+requires-dist: python-engineio>=4.13.2
+requires-dist: requests>=2.21.0; extra == "client"
+requires-dist: websocket-client>=0.54.0; extra == "client"
+requires-dist: aiohttp>=3.4; extra == "asyncio-client"
+requires-dist: tox; extra == "dev"
+requires-dist: sphinx; extra == "docs"
+requires-dist: furo; extra == "docs"
+requires-python: >=3.8
+project-url: Homepage, https://code.miguelgrinberg.com/miguelgrinberg/python-socketio
+project-url: Documentation, https://python-socketio.readthedocs.io/
+project-url: Source Code, https://code.miguelgrinberg.com/miguelgrinberg/python-socketio
+project-url: Issue Tracker, https://code.miguelgrinberg.com/miguelgrinberg/python-socketio/issues
+project-url: Changelog, https://code.miguelgrinberg.com/miguelgrinberg/python-socketio/src/branch/main/CHANGES.md
+project-url: Funding, https://code.miguelgrinberg.com/miguelgrinberg/python-socketio#sponsor-this-project
+provides-extra: client
+provides-extra: asyncio-client
+provides-extra: dev
+provides-extra: docs
+

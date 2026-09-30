@@ -1,0 +1,21 @@
+metadata-version: 2.4
+name: qdldl
+version: 0.1.9.post1
+dynamic: author
+dynamic: author-email
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: requires-dist
+dynamic: summary
+summary: QDLDL, a free LDL factorization routine.
+home-page: https://github.com/oxfordcontrol/qdldl-python/
+author: Bartolomeo Stellato, Paul Goulart, Goran Banjac
+author-email: bartolomeo.stellato@gmail.com
+license: Apache 2.0
+license-file: LICENSE
+requires-dist: numpy>=1.7
+requires-dist: scipy>=0.13.2
+

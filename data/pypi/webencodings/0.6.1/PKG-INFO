@@ -1,0 +1,38 @@
+metadata-version: 2.5
+name: webencodings
+version: 0.6.1
+summary: Character encoding aliases for legacy web content
+keywords: web,encoding
+author-email: Simon Sapin <simon.sapin@exyr.org>
+maintainer-email: CourtBouillon <contact@courtbouillon.org>
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: BSD License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Internet :: WWW/HTTP
+requires-dist: sphinx; extra == "doc"
+requires-dist: furo; extra == "doc"
+requires-dist: pytest; extra == "test"
+requires-dist: ruff; extra == "test"
+requires-python: >=3.10
+project-url: Changelog, https://github.com/CourtBouillon/webencodings/releases
+project-url: Code, https://github.com/CourtBouillon/webencodings
+project-url: Documentation, https://doc.courtbouillon.org/webencodings
+project-url: Donation, https://opencollective.com/courtbouillon
+project-url: Homepage, https://github.com/CourtBouillon/webencodings
+project-url: Issues, https://github.com/CourtBouillon/webencodings/issues
+provides-extra: doc
+provides-extra: test
+import-name: webencodings
+

@@ -1,0 +1,27 @@
+metadata-version: 2.5
+name: opentelemetry-instrumentation-tortoiseorm
+version: 0.66b0
+summary: OpenTelemetry Instrumentation for Tortoise ORM
+author-email: OpenTelemetry Authors <cncf-opentelemetry-contributors@lists.cncf.io>
+license-expression: Apache-2.0
+license-file: LICENSE
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-dist: opentelemetry-api~=1.12
+requires-dist: opentelemetry-instrumentation==0.66b0
+requires-dist: opentelemetry-semantic-conventions==0.66b0
+requires-dist: pydantic>=1.10.2; extra == "instruments"
+requires-dist: tortoise-orm>=0.17.0; extra == "instruments"
+requires-python: >=3.10
+project-url: Homepage, https://github.com/open-telemetry/opentelemetry-python-contrib/tree/main/instrumentation/opentelemetry-instrumentation-tortoiseorm
+project-url: Repository, https://github.com/open-telemetry/opentelemetry-python-contrib
+provides-extra: instruments
+

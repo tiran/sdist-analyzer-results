@@ -1,0 +1,55 @@
+metadata-version: 2.4
+name: securesystemslib
+version: 1.5.1
+summary: A library that provides cryptographic and general-purpose routines for Secure Systems Lab projects at NYU
+keywords: cryptography,ecdsa,ed25519,keys,rsa,signatures
+author-email: "https://www.updateframework.com" <theupdateframework@googlegroups.com>
+license-expression: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Natural Language :: English
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: POSIX
+classifier: Operating System :: POSIX :: Linux
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Topic :: Security
+classifier: Topic :: Software Development
+requires-dist: boto3; extra == "awskms"
+requires-dist: botocore; extra == "awskms"
+requires-dist: cryptography>=40.0.0; extra == "awskms"
+requires-dist: azure-identity; extra == "azurekms"
+requires-dist: azure-keyvault-keys; extra == "azurekms"
+requires-dist: cryptography>=40.0.0; extra == "azurekms"
+requires-dist: cryptography>=48.0.0; extra == "crypto"
+requires-dist: cryptography>=48.0.0; extra == "gcpkms"
+requires-dist: google-cloud-kms>=3.11.0; extra == "gcpkms"
+requires-dist: cryptography>=40.0.0; extra == "hsm"
+requires-dist: python-pkcs11; extra == "hsm"
+requires-dist: pyspx>=0.5.0; extra == "pyspx"
+requires-dist: sigstore<5,>=4; extra == "sigstore"
+requires-dist: cryptography>=48.0.0; extra == "tkey"
+requires-dist: keylet>=0.6.0; extra == "tkey"
+requires-dist: cryptography>=40.0.0; extra == "vault"
+requires-dist: hvac; extra == "vault"
+requires-python: ~=3.10
+project-url: Homepage, https://github.com/secure-systems-lab/securesystemslib
+project-url: Source, https://github.com/secure-systems-lab/securesystemslib
+project-url: Issues, https://github.com/secure-systems-lab/securesystemslib/issues
+provides-extra: awskms
+provides-extra: azurekms
+provides-extra: crypto
+provides-extra: gcpkms
+provides-extra: hsm
+provides-extra: pyspx
+provides-extra: sigstore
+provides-extra: tkey
+provides-extra: vault
+

@@ -1,0 +1,32 @@
+metadata-version: 2.4
+name: numba
+version: 0.67.0
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: compiling Python code using LLVM
+home-page: https://numba.pydata.org
+license: BSD
+license-file: LICENSE
+license-file: LICENSES.third-party
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: BSD License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Software Development :: Compilers
+requires-dist: llvmlite<0.50,>=0.49.0dev0
+requires-dist: numpy<2.6,>=1.22
+requires-python: >=3.10
+

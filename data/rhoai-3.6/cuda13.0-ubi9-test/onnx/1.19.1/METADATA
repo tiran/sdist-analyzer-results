@@ -1,0 +1,19 @@
+metadata-version: 2.4
+name: onnx
+version: 1.19.1
+dynamic: license-file
+summary: Open Neural Network Exchange
+author-email: ONNX Contributors <onnx-technical-discuss@lists.lfaidata.foundation>
+license: Apache License v2.0
+license-file: LICENSE
+classifier: Programming Language :: Python :: 3
+requires-dist: numpy>=1.22
+requires-dist: protobuf>=4.25.1
+requires-dist: typing_extensions>=4.7.1
+requires-dist: ml_dtypes>=0.5.0
+requires-dist: Pillow; extra == "reference"
+requires-python: >=3.9
+project-url: Homepage, https://onnx.ai/
+project-url: Repository, https://github.com/onnx/onnx
+provides-extra: reference
+

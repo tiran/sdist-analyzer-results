@@ -1,0 +1,72 @@
+metadata-version: 2.4
+name: safetensors
+version: 0.9.0rc0
+author-email: Nicolas Patry <patry.nicolas@protonmail.com>, Luc Georges <luc@huggingface.co>, Daniël De Kok <daniel.dekok@huggingface.co>
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Education
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+classifier: Typing :: Typed
+requires-dist: safetensors[torch]; extra == "all"
+requires-dist: safetensors[numpy]; extra == "all"
+requires-dist: safetensors[jax]; extra == "all"
+requires-dist: safetensors[paddlepaddle]; extra == "all"
+requires-dist: safetensors[convert]; extra == "all"
+requires-dist: safetensors[quality]; extra == "all"
+requires-dist: safetensors[testing]; extra == "all"
+requires-dist: safetensors[torch]; extra == "convert"
+requires-dist: huggingface-hub>=1.4; extra == "convert"
+requires-dist: safetensors[all]; extra == "dev"
+requires-dist: safetensors[pinned-tf]; extra == "dev"
+requires-dist: safetensors[numpy]; extra == "jax"
+requires-dist: flax>=0.6.3; extra == "jax"
+requires-dist: jax>=0.3.25; extra == "jax"
+requires-dist: jaxlib>=0.3.25; extra == "jax"
+requires-dist: mlx>=0.0.9; extra == "mlx"
+requires-dist: numpy>=1.24.6; extra == "numpy"
+requires-dist: safetensors[numpy]; extra == "paddlepaddle"
+requires-dist: paddlepaddle>=2.4.1; extra == "paddlepaddle"
+requires-dist: safetensors[numpy]; extra == "pinned-tf"
+requires-dist: tensorflow==2.18.0; extra == "pinned-tf"
+requires-dist: ruff; extra == "quality"
+requires-dist: safetensors[numpy]; extra == "tensorflow"
+requires-dist: tensorflow>=2.11.0; extra == "tensorflow"
+requires-dist: safetensors[numpy]; extra == "testing"
+requires-dist: h5py>=3.7.0; extra == "testing"
+requires-dist: setuptools-rust>=1.12.0; extra == "testing"
+requires-dist: pytest>=9.0; extra == "testing"
+requires-dist: pytest-benchmark>=5.2; extra == "testing"
+requires-dist: hypothesis>=6.70.2; extra == "testing"
+requires-dist: fsspec>=2024.6.0; extra == "testing"
+requires-dist: s3fs>=2024.6.0; extra == "testing"
+requires-dist: safetensors[numpy]; extra == "tf-nightly"
+requires-dist: tf-nightly; extra == "tf-nightly"
+requires-dist: safetensors[numpy]; extra == "torch"
+requires-dist: torch>=2.5; extra == "torch"
+requires-python: >=3.10
+project-url: Homepage, https://github.com/huggingface/safetensors
+project-url: Source, https://github.com/huggingface/safetensors
+provides-extra: all
+provides-extra: convert
+provides-extra: dev
+provides-extra: jax
+provides-extra: mlx
+provides-extra: numpy
+provides-extra: paddlepaddle
+provides-extra: pinned-tf
+provides-extra: quality
+provides-extra: tensorflow
+provides-extra: testing
+provides-extra: tf-nightly
+provides-extra: torch
+

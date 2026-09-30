@@ -1,0 +1,2 @@
+setuptools>=80
+setuptools-scm[simple]>=9.2

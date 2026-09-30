@@ -1,0 +1,30 @@
+metadata-version: 2.4
+name: retrying
+version: 1.4.2
+dynamic: license-file
+summary: Retrying
+keywords: decorator,decorators,retry,retrying,exception,exponential,backoff
+author: Alex Kuang, Anthony McClosky, Cyrus Durgin, Daniel Nephin, Dougal Matthews, Greg Roodt, Haïkel Guémar, Hugo Klepsch, J Derek Wilson, James Page, Jason Dunkelberger, Job Evers, Jonathan Herriott, Josh Marshall, Joshua Harlow, Justin Turner Arthur, Maxym Shalenyi, Monty Taylor, Pierre-Yves Chibon, Ray Holder, Rees Dooley, Saul Shanabrook, Simon Dollé, Simeon Visser, Thomas Goirand
+license-expression: Apache-2.0
+license-file: LICENSE.txt
+license-file: NOTICE.txt
+classifier: Intended Audience :: Developers
+classifier: Natural Language :: English
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Topic :: Internet
+classifier: Topic :: Utilities
+requires-python: >=3.6
+project-url: Homepage, https://github.com/groodt/retrying
+project-url: Repository, https://github.com/groodt/retrying
+

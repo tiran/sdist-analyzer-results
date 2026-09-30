@@ -1,0 +1,23 @@
+metadata-version: 2.1
+name: opt_einsum
+version: 3.3.0
+platform: UNKNOWN
+summary: Optimizing numpys einsum function
+home-page: https://github.com/dgasmith/opt_einsum
+author: Daniel Smith
+author-email: dgasmith@icloud.com
+license: MIT
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Science/Research
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.5
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+requires-python: >=3.5
+provides-extra: docs
+provides-extra: tests
+

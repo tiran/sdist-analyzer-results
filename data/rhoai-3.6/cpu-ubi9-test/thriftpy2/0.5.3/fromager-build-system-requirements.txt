@@ -1,0 +1,3 @@
+cython<4,>=0.28.4
+toml
+setuptools>=68

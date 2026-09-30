@@ -1,0 +1,24 @@
+metadata-version: 2.4
+name: parameterized
+version: 0.8.1
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: provides-extra
+dynamic: summary
+summary: Parameterized testing with any Python test framework
+home-page: https://github.com/wolever/parameterized
+author: David Wolever
+author-email: david@wolever.net
+license: FreeBSD
+license-file: LICENSE.txt
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: License :: OSI Approved :: BSD License
+requires-dist: jinja2; extra == "dev"
+provides-extra: dev
+

@@ -1,0 +1,37 @@
+metadata-version: 2.4
+name: propcache
+version: 0.5.3
+dynamic: license-file
+summary: Accelerated property cache
+keywords: cython,cext,propcache
+home-page: https://github.com/aio-libs/propcache
+author: Andrew Svetlov
+author-email: andrew.svetlov@gmail.com
+maintainer: aiohttp team <team@aiohttp.org>
+maintainer-email: team@aiohttp.org
+license: Apache-2.0
+license-file: LICENSE
+license-file: NOTICE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Cython
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Internet :: WWW/HTTP
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-python: >=3.10
+project-url: Chat: Matrix, https://matrix.to/#/#aio-libs:matrix.org
+project-url: Chat: Matrix Space, https://matrix.to/#/#aio-libs-space:matrix.org
+project-url: CI: GitHub Workflows, https://github.com/aio-libs/propcache/actions?query=branch:master
+project-url: Code of Conduct, https://github.com/aio-libs/.github/blob/master/CODE_OF_CONDUCT.md
+project-url: Coverage: codecov, https://codecov.io/github/aio-libs/propcache
+project-url: Docs: Changelog, https://propcache.readthedocs.io/en/latest/changes/
+project-url: Docs: RTD, https://propcache.readthedocs.io
+project-url: GitHub: issues, https://github.com/aio-libs/propcache/issues
+project-url: GitHub: repo, https://github.com/aio-libs/propcache
+

@@ -1,0 +1,15 @@
+metadata-version: 2.5
+name: pyproject_hooks
+version: 1.3.0
+summary: Wrappers to call pyproject.toml-based build backend hooks.
+author-email: Thomas Kluyver <thomas@kluyver.me.uk>
+license-expression: MIT
+license-file: LICENSE
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+requires-python: >=3.8
+project-url: Changelog, https://pyproject-hooks.readthedocs.io/en/latest/changelog.html
+project-url: Documentation, https://pyproject-hooks.readthedocs.io/
+project-url: Source, https://github.com/pypa/pyproject-hooks
+import-name: pyproject_hooks
+

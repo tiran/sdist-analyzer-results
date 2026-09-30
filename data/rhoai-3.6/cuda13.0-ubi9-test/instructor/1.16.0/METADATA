@@ -1,0 +1,101 @@
+metadata-version: 2.5
+name: instructor
+version: 1.16.0
+summary: structured outputs for llm
+author: Jason Liu, Ivan Leo
+maintainer-email: jason@jxnl.co, ivan@jxnl.co
+license: MIT
+license-file: LICENSE
+requires-dist: aiohttp<4.0.0,>=3.9.1
+requires-dist: docstring-parser<1.0,>=0.16
+requires-dist: eval-type-backport>=0.2.2; python_version < "3.10"
+requires-dist: jinja2<4.0.0,>=3.1.4
+requires-dist: jiter<0.15,>=0.6.1
+requires-dist: openai<3.0.0,>=2.0.0
+requires-dist: pydantic-core<3.0.0,>=2.18.0
+requires-dist: pydantic<3.0.0,>=2.8.0
+requires-dist: regex<2027.0.0,>=2023.0.0
+requires-dist: requests<3.0.0,>=2.32.3
+requires-dist: rich<15.0.0,>=13.7.0
+requires-dist: tenacity<10.0.0,>=8.2.3
+requires-dist: typer<1.0.0,>=0.9.0
+requires-dist: anthropic==0.93.0; extra == "anthropic"
+requires-dist: xmltodict<1.1,>=0.13; extra == "anthropic"
+requires-dist: boto3<2.0.0,>=1.42.42; extra == "bedrock"
+requires-dist: cerebras-cloud-sdk<2.0.0,>=1.5.0; extra == "cerebras-cloud-sdk"
+requires-dist: cohere<6.0.0,>=5.1.8; extra == "cohere"
+requires-dist: datasets<5.0.0,>=3.0.1; extra == "datasets"
+requires-dist: anthropic==0.93.0; extra == "dev"
+requires-dist: coverage<8.0.0,>=7.3.2; extra == "dev"
+requires-dist: jsonref<2.0.0,>=1.1.0; extra == "dev"
+requires-dist: pre-commit>=4.2.0; extra == "dev"
+requires-dist: pytest-asyncio<2.0.0,>=0.24.0; extra == "dev"
+requires-dist: pytest-examples>=0.0.15; extra == "dev"
+requires-dist: pytest-xdist>=3.8.0; extra == "dev"
+requires-dist: pytest<9.0.0,>=8.3.3; extra == "dev"
+requires-dist: python-dotenv>=1.0.1; extra == "dev"
+requires-dist: ty==0.0.44; extra == "dev"
+requires-dist: xmltodict<1.1,>=0.13; extra == "dev"
+requires-dist: diskcache<6.0.0,>=5.6.3; extra == "diskcache"
+requires-dist: mkdocs-jupyter<0.27.0,>=0.24.6; extra == "docs"
+requires-dist: mkdocs-llmstxt<0.6.0,>=0.5.0; python_version >= "3.10" and extra == "docs"
+requires-dist: mkdocs-material-extensions>=1.3.1; extra == "docs"
+requires-dist: mkdocs-material>=9.6.14; extra == "docs"
+requires-dist: mkdocs-material[imaging]<10.0.0,>=9.5.9; extra == "docs"
+requires-dist: mkdocs-minify-plugin<1.0.0,>=0.8.0; extra == "docs"
+requires-dist: mkdocs-redirects<2.0.0,>=1.2.1; extra == "docs"
+requires-dist: mkdocs-rss-plugin<2.0.0,>=1.12.0; extra == "docs"
+requires-dist: mkdocs<2.0.0,>=1.6.1; extra == "docs"
+requires-dist: mkdocstrings-python<2.0.0,>=1.12.2; extra == "docs"
+requires-dist: mkdocstrings<0.31.0,>=0.27.1; extra == "docs"
+requires-dist: pytest-examples>=0.0.15; extra == "docs"
+requires-dist: fireworks-ai<1.0.0,>=0.15.4; extra == "fireworks-ai"
+requires-dist: google-genai>=1.5.0; extra == "google-genai"
+requires-dist: jsonref<2.0.0,>=1.1.0; extra == "google-genai"
+requires-dist: graphviz<1.0.0,>=0.20.3; extra == "graphviz"
+requires-dist: groq<1.1.0,>=0.4.2; extra == "groq"
+requires-dist: litellm<=1.83.7,>=1.35.31; extra == "litellm"
+requires-dist: mistralai<3.0.0,>=1.5.1; extra == "mistral"
+requires-dist: openai<3.0.0,>=2.0.0; extra == "perplexity"
+requires-dist: phonenumbers<10.0.0,>=8.13.33; extra == "phonenumbers"
+requires-dist: pydub<1.0.0,>=0.25.1; extra == "pydub"
+requires-dist: sqlmodel<1.0.0,>=0.0.22; extra == "sqlmodel"
+requires-dist: diskcache<6.0.0,>=5.6.3; extra == "test-docs"
+requires-dist: fastapi<0.129.0,>=0.109.2; extra == "test-docs"
+requires-dist: litellm<=1.83.7,>=1.35.31; extra == "test-docs"
+requires-dist: mistralai<3.0.0,>=1.5.1; extra == "test-docs"
+requires-dist: pandas<3.0.0,>=2.2.0; extra == "test-docs"
+requires-dist: pydantic-extra-types<3.0.0,>=2.6.0; extra == "test-docs"
+requires-dist: redis<8.0.0,>=5.0.1; extra == "test-docs"
+requires-dist: tabulate<1.0.0,>=0.9.0; extra == "test-docs"
+requires-dist: trafilatura<3.0.0,>=1.12.2; extra == "trafilatura"
+requires-dist: google-cloud-aiplatform<2.0.0,>=1.53.0; extra == "vertexai"
+requires-dist: jsonref<2.0.0,>=1.1.0; extra == "vertexai"
+requires-dist: writer-sdk<3.0.0,>=2.2.0; extra == "writer"
+requires-dist: xai-sdk>=0.2.0; python_version >= "3.10" and extra == "xai"
+requires-python: <4.0,>=3.9
+project-url: repository, https://github.com/567-labs/instructor
+provides-extra: anthropic
+provides-extra: bedrock
+provides-extra: cerebras-cloud-sdk
+provides-extra: cohere
+provides-extra: datasets
+provides-extra: dev
+provides-extra: diskcache
+provides-extra: docs
+provides-extra: fireworks-ai
+provides-extra: google-genai
+provides-extra: graphviz
+provides-extra: groq
+provides-extra: litellm
+provides-extra: mistral
+provides-extra: perplexity
+provides-extra: phonenumbers
+provides-extra: pydub
+provides-extra: sqlmodel
+provides-extra: test-docs
+provides-extra: trafilatura
+provides-extra: vertexai
+provides-extra: writer
+provides-extra: xai
+

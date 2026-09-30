@@ -1,0 +1,22 @@
+metadata-version: 2.4
+name: msgpack
+version: 1.2.2
+dynamic: license-file
+summary: MessagePack serializer
+keywords: msgpack,messagepack,serializer,serialization,binary
+author-email: Inada Naoki <songofacandy@gmail.com>
+license-expression: Apache-2.0
+license-file: COPYING
+classifier: Development Status :: 5 - Production/Stable
+classifier: Operating System :: OS Independent
+classifier: Topic :: File Formats
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+requires-python: >=3.10
+project-url: Homepage, https://msgpack.org/
+project-url: Documentation, https://msgpack-python.readthedocs.io/
+project-url: Repository, https://github.com/msgpack/msgpack-python/
+project-url: Tracker, https://github.com/msgpack/msgpack-python/issues
+project-url: Changelog, https://github.com/msgpack/msgpack-python/blob/main/CHANGELOG.md
+

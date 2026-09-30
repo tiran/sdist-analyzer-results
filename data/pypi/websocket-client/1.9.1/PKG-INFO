@@ -1,0 +1,56 @@
+metadata-version: 2.4
+name: websocket-client
+version: 1.9.1
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: download-url
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: maintainer
+dynamic: maintainer-email
+dynamic: project-url
+dynamic: provides-extra
+dynamic: requires-python
+dynamic: summary
+summary: WebSocket client for Python with low level API options
+keywords: websockets client
+home-page: https://github.com/websocket-client/websocket-client
+download-url: https://github.com/websocket-client/websocket-client/releases
+author: liris
+author-email: liris.pp@gmail.com
+maintainer: engn33r
+maintainer-email: websocket.client@proton.me
+license: Apache-2.0
+license-file: LICENSE
+classifier: Development Status :: 4 - Beta
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Operating System :: POSIX
+classifier: Operating System :: Microsoft :: Windows
+classifier: Topic :: Internet
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Intended Audience :: Developers
+requires-dist: pytest; extra == "test"
+requires-dist: websockets; extra == "test"
+requires-dist: python-socks; extra == "optional"
+requires-dist: wsaccel; extra == "optional"
+requires-dist: Sphinx>=6.0; extra == "docs"
+requires-dist: sphinx_rtd_theme>=1.1.0; extra == "docs"
+requires-dist: myst-parser>=2.0.0; extra == "docs"
+requires-python: >=3.10
+project-url: Documentation, https://websocket-client.readthedocs.io/
+project-url: Source, https://github.com/websocket-client/websocket-client/
+provides-extra: test
+provides-extra: optional
+provides-extra: docs
+

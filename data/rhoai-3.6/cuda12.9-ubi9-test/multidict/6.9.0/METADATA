@@ -1,0 +1,31 @@
+metadata-version: 2.4
+name: multidict
+version: 6.9.0
+dynamic: license-file
+summary: multidict implementation
+home-page: https://github.com/aio-libs/multidict
+author: Andrew Svetlov
+author-email: andrew.svetlov@gmail.com
+license: Apache License 2.0
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-dist: typing-extensions>=4.1.0; python_version < "3.11"
+requires-python: >=3.10
+project-url: Chat: Matrix, https://matrix.to/#/#aio-libs:matrix.org
+project-url: Chat: Matrix Space, https://matrix.to/#/#aio-libs-space:matrix.org
+project-url: CI: GitHub, https://github.com/aio-libs/multidict/actions
+project-url: Code of Conduct, https://github.com/aio-libs/.github/blob/master/CODE_OF_CONDUCT.md
+project-url: Coverage: codecov, https://codecov.io/github/aio-libs/multidict
+project-url: Docs: Changelog, https://multidict.aio-libs.org/en/latest/changes/
+project-url: Docs: RTD, https://multidict.aio-libs.org
+project-url: GitHub: issues, https://github.com/aio-libs/multidict/issues
+project-url: GitHub: repo, https://github.com/aio-libs/multidict
+

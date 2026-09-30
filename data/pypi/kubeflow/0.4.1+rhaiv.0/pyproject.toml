@@ -1,0 +1,151 @@
+[project]
+name = "kubeflow"
+dynamic = ["version"]
+requires-python = ">=3.10"
+authors = [
+  { name = "The Kubeflow Authors", email = "kubeflow-discuss@googlegroups.com" },
+]
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+description = "Kubeflow Python SDK to manage ML workloads and to interact with Kubeflow APIs."
+readme = "README.md"
+keywords = ["kubeflow", "trainer", "model training", "llm", "ai"]
+classifiers = [
+  "Intended Audience :: Developers",
+  "Intended Audience :: Education",
+  "Intended Audience :: Science/Research",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "License :: OSI Approved :: Apache Software License",
+  "Operating System :: OS Independent",
+  "Topic :: Scientific/Engineering",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "Topic :: Software Development",
+  "Topic :: Software Development :: Libraries",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+  "kubernetes>=27.2.0,<36.0.0",  # 36.0.0 has multiple regressions; see kubernetes-client/python#2592, #2596
+  "pydantic>=2.10.0",
+  "kubeflow-trainer-api>=2.2.0",
+  "kubeflow-katib-api>=0.19.0",
+]
+
+[project.optional-dependencies]
+docker = ["docker>=6.1.3"]
+podman = ["podman>=5.6.0"]
+spark = [
+  # pyspark-connect is Apache Spark Python API with Spark Connect by default
+  # Match major.minor of pyspark-connect to Spark constants declared in kubeflow.spark.backends.kubernetes.constants
+  # Ensure pyspark-connect and the spark image align with the Spark version used in the Spark operator image
+  # https://github.com/kubeflow/spark-operator/blob/master/Dockerfile#L17
+  "pyspark-connect==4.0.1",
+  "kubeflow-spark-api>=2.4.0",
+]
+hub = ["model-registry>=0.3.6"]
+
+[dependency-groups]
+docs = [
+  "sphinx>=7.0",
+  "furo>=2024.0",
+  "sphinx-autodoc-typehints>=2.0",
+  "sphinx-copybutton>=0.5",
+  "myst-parser>=3.0",
+  "sphinx-design>=0.6",
+]
+dev = [
+  "kubeflow[hub,spark]",
+  "pytest>=7.0",
+  "pytest-mock>=3.10",
+  "coverage>=7.0",
+  "kubeflow_trainer_api@git+https://github.com/kubeflow/trainer.git@master#subdirectory=api/python_api",
+  "kubeflow_katib_api@git+https://github.com/kubeflow/katib.git@master#subdirectory=api/python_api",
+  "kubeflow_spark_api@git+https://github.com/kubeflow/spark-operator.git@master#subdirectory=api/python_api",
+  "ruff>=0.12.2",
+  "pre-commit>=4.2.0",
+  "PyGithub>=2.7.0",
+  "setuptools>=80.9.0",
+  "ty>=0.0.11",
+]
+
+[project.urls]
+Homepage = "https://github.com/kubeflow/sdk"
+Documentation = "https://www.kubeflow.org/docs/components"
+Source = "https://github.com/kubeflow/sdk"
+
+[tool.hatch.version]
+path = "kubeflow/__init__.py"
+
+[tool.uv]
+package = true
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+# ruff configuration
+[tool.ruff]
+# Formatting + lint coordination
+line-length = 100
+target-version = "py310"
+src = ["kubeflow"]
+extend-exclude = [
+  ".venv",
+  "venv",
+  "build",
+  "dist",
+  "__pycache__",
+  "docs/_build",
+  "spark-operator",
+]
+
+[tool.ruff.format]
+# Use Ruff as the formatter (Black-compatible)
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+docstring-code-format = true
+docstring-code-line-length = 100
+
+[tool.ruff.lint]
+# Sensible, low-noise default rule set for a library:
+select = [
+  "F",   # pyflakes
+  "E",   # pycodestyle
+  "W",   # warnings
+  "I",   # isort (imports order)
+  "UP",  # pyupgrade
+  "N",   # pep8-naming
+  "B",   # flake8-bugbear
+  "C4",  # flake8-comprehensions
+  "SIM", # flake8-simplify
+]
+
+ignore = [
+  "B006", # mutable-argument-default
+  "E501", # Embedded HTML/SVG has long lines
+]
+
+
+[tool.ruff.lint.isort]
+# Make import sorting deterministic and "first-party aware"
+known-first-party = ["kubeflow"]
+combine-as-imports = true
+force-sort-within-sections = true
+
+[tool.pytest.ini_options]
+markers = [
+  "integration: marks tests as integration tests (requires Kind cluster)",
+  "slow: marks tests as slow running",
+  "smoke: CRD-only smoke test (Kind + CRD, no operator)",
+  "timeout: marks tests with timeout limit",
+  "options: marks tests for Spark options pattern",
+]
+filterwarnings = ["ignore::pydantic.warnings.PydanticDeprecatedSince20"]
+
+[tool.ty.environment]
+python-version = "3.10"

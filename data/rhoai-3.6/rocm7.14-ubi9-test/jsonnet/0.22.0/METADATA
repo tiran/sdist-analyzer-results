@@ -1,0 +1,12 @@
+metadata-version: 2.4
+name: jsonnet
+version: 0.22.0
+dynamic: license
+dynamic: license-file
+summary: Python bindings for Jsonnet - The data templating language
+author-email: David Cunningham <dcunnin@google.com>
+license: Apache-2.0
+license-file: LICENSE
+project-url: homepage, https://jsonnet.org
+project-url: source, https://github.com/google/jsonnet
+

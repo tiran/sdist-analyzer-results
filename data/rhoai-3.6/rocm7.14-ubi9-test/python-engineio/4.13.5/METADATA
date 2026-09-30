@@ -1,0 +1,27 @@
+metadata-version: 2.4
+name: python-engineio
+version: 4.13.5
+dynamic: license-file
+summary: Engine.IO server and client for Python
+author-email: Miguel Grinberg <miguel.grinberg@gmail.com>
+license: MIT
+license-file: LICENSE
+classifier: Environment :: Web Environment
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Python :: 3
+classifier: Operating System :: OS Independent
+requires-dist: simple-websocket>=0.10.0
+requires-dist: requests>=2.21.0; extra == "client"
+requires-dist: websocket-client>=0.54.0; extra == "client"
+requires-dist: aiohttp>=3.11; extra == "asyncio-client"
+requires-dist: tox; extra == "dev"
+requires-dist: sphinx; extra == "docs"
+requires-dist: furo; extra == "docs"
+requires-python: >=3.8
+project-url: Homepage, https://github.com/miguelgrinberg/python-engineio
+project-url: Bug Tracker, https://github.com/miguelgrinberg/python-engineio/issues
+provides-extra: client
+provides-extra: asyncio-client
+provides-extra: dev
+provides-extra: docs
+

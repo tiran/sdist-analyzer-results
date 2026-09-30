@@ -1,0 +1,10 @@
+metadata-version: 2.4
+name: detect-installer
+version: 0.2.1
+summary: Detect how a Python package was installed and get the correct upgrade command
+author: Patrick Arminio
+author-email: Patrick Arminio <patrick.arminio@gmail.com>
+license-expression: 0BSD
+license-file: LICENSE
+requires-python: >=3.10
+

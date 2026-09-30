@@ -1,0 +1,17 @@
+metadata-version: 1.1
+name: junitparser
+version: 2.1.1
+platform: UNKNOWN
+summary: Manipulates JUnit/xUnit Result XML files
+keywords: junit xunit xml parser
+home-page: https://github.com/weiwei/junitparser
+author: Weiwei Wang
+author-email: gastlygem@gmail.com
+license: Apache 2.0
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Topic :: Text Processing
+classifier: Programming Language :: Python :: 2
+classifier: Programming Language :: Python :: 3
+

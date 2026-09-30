@@ -1,0 +1,40 @@
+metadata-version: 2.4
+name: google-api-python-client
+version: 2.199.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: Google API Client Library for Python
+keywords: google api client
+home-page: https://github.com/googleapis/google-api-python-client/
+author: Google LLC
+author-email: googleapis-packages@google.com
+license: Apache 2.0
+license-file: LICENSE
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: OS Independent
+classifier: Topic :: Internet :: WWW/HTTP
+requires-dist: httplib2<1.0.0,>=0.19.0
+requires-dist: google-auth!=2.24.0,!=2.25.0,<3.0.0,>=1.32.0
+requires-dist: google-auth-httplib2<1.0.0,>=0.2.0
+requires-dist: google-api-core!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.0,<3.0.0,>=1.31.5
+requires-dist: uritemplate<5,>=3.0.1
+requires-python: >=3.10
+

@@ -1,0 +1,21 @@
+metadata-version: 2.5
+name: plum-dispatch
+version: 2.9.0
+summary: Multiple dispatch in Python
+keywords: multiple dispatch
+author-email: Wessel Bruinsma <wessel.p.bruinsma@gmail.com>
+license: MIT
+license-file: LICENCE.txt
+classifier: Development Status :: 5 - Production/Stable
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Typing :: Typed
+requires-dist: beartype>=0.16.2; python_version < "3.14"
+requires-dist: beartype>=0.22.2; python_version >= "3.14"
+requires-dist: rich>=10.0
+requires-dist: typing-extensions>=4.9.0
+requires-python: >=3.10
+project-url: repository, https://github.com/beartype/plum
+project-url: documentation, https://beartype.github.io/plum
+

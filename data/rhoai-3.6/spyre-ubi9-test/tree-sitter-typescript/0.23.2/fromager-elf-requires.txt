@@ -1,0 +1,3 @@
+libc.so.6()(64bit)
+libc.so.6(GLIBC_2.2.5)(64bit)
+rtld(GNU_HASH)

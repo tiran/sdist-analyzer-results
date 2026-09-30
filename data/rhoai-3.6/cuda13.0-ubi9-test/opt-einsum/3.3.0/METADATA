@@ -1,0 +1,43 @@
+metadata-version: 2.4
+name: opt_einsum
+version: 3.3.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: Optimizing numpys einsum function
+home-page: https://github.com/dgasmith/opt_einsum
+author: Daniel Smith
+author-email: dgasmith@icloud.com
+license: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Science/Research
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.5
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+requires-dist: numpy>=1.7
+requires-dist: sphinx==1.2.3; extra == "docs"
+requires-dist: sphinxcontrib-napoleon; extra == "docs"
+requires-dist: sphinx_rtd_theme; extra == "docs"
+requires-dist: numpydoc; extra == "docs"
+requires-dist: pytest; extra == "tests"
+requires-dist: pytest-cov; extra == "tests"
+requires-dist: pytest-pep8; extra == "tests"
+requires-python: >=3.5
+provides-extra: docs
+provides-extra: tests
+

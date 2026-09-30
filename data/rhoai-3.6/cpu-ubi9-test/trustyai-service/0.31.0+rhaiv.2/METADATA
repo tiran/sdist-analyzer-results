@@ -1,0 +1,25 @@
+metadata-version: 2.5
+name: trustyai-service
+version: 0.31.0+rhaiv.2
+summary: TrustyAI Service
+author: Rui Vieira, TrustyAI team
+license-file: LICENSE
+requires-dist: fastapi<0.142,>=0.116
+requires-dist: h5py<4,>=3.13
+requires-dist: hypercorn<0.19,>=0.18
+requires-dist: isodate<0.8,>=0.7
+requires-dist: numpy<3,>=2.0
+requires-dist: pandas<4,>=3.0
+requires-dist: polars<2,>=1.2
+requires-dist: prometheus-client<0.27,>=0.22
+requires-dist: protobuf<8,>=7
+requires-dist: pydantic<3,>=2.13
+requires-dist: scikit-learn<2,>=1.7
+requires-dist: scipy<2,>=1.15
+requires-dist: javaobj-py3<0.7,>=0.5; extra == "mariadb"
+requires-dist: mariadb<1.2,>=1.1; extra == "mariadb"
+requires-dist: goodpoints<0.7,>=0.6.3; extra == "mmd"
+requires-python: <3.15,>=3.12
+provides-extra: mariadb
+provides-extra: mmd
+

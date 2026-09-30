@@ -1,0 +1,18 @@
+metadata-version: 2.4
+name: python-libsbml
+version: 5.21.2
+dynamic: author
+dynamic: author-email
+dynamic: description
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: summary
+summary: LibSBML Python API
+home-page: http://sbml.org
+author: SBML Team
+author-email: libsbml-team@googlegroups.com
+license: LGPL
+license-file: LICENSE.html
+license-file: LICENSE.txt
+

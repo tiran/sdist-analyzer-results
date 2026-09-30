@@ -1,0 +1,45 @@
+metadata-version: 2.1
+name: open_clip_torch
+version: 3.3.0
+summary: Open reproduction of consastive language-image pretraining (CLIP) and related.
+keywords: pytorch,clip,image-text,language-image,multimodal
+author: Gabriel Ilharco, Mitchell Wortsman, Romain Beaumont
+author-email: Ross Wightman <ross@huggingface.co>
+license: MIT
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Education
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Topic :: Scientific/Engineering
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+classifier: Topic :: Software Development
+classifier: Topic :: Software Development :: Libraries
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: torch>=2.0
+requires-dist: torchvision
+requires-dist: regex
+requires-dist: ftfy
+requires-dist: tqdm
+requires-dist: huggingface-hub
+requires-dist: safetensors
+requires-dist: timm>=1.0.17
+requires-dist: torch>=2.0; extra == "training"
+requires-dist: webdataset<=0.2.86,>=0.2.5; extra == "training"
+requires-dist: pandas; extra == "training"
+requires-dist: transformers[sentencepiece]; extra == "training"
+requires-dist: timm>=1.0.17; extra == "training"
+requires-dist: fsspec; extra == "training"
+requires-dist: pytest-split; extra == "test"
+requires-dist: pytest; extra == "test"
+requires-dist: open_clip_torch[training]; extra == "test"
+requires-dist: requests; extra == "test"
+requires-python: >=3.9
+project-url: homepage, https://github.com/mlfoundations/open_clip
+project-url: repository, https://github.com/mlfoundations/open_clip
+provides-extra: training
+provides-extra: test
+

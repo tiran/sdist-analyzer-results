@@ -1,0 +1,48 @@
+metadata-version: 2.4
+name: requests
+version: 2.33.0
+dynamic: license-file
+summary: Python HTTP for Humans.
+author-email: Kenneth Reitz <me@kennethreitz.org>
+maintainer-email: Ian Stapleton Cordasco <graffatcolmingov@gmail.com>, Nate Prewitt <nate.prewitt@gmail.com>
+license: Apache-2.0
+license-file: LICENSE
+license-file: NOTICE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Web Environment
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Natural Language :: English
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Internet :: WWW/HTTP
+classifier: Topic :: Software Development :: Libraries
+requires-dist: charset_normalizer<4,>=2
+requires-dist: idna<4,>=2.5
+requires-dist: urllib3<3,>=1.26
+requires-dist: certifi>=2023.5.7
+requires-dist: PySocks!=1.5.7,>=1.5.6; extra == "socks"
+requires-dist: chardet<8,>=3.0.2; extra == "use-chardet-on-py3"
+requires-dist: pytest-httpbin==2.1.0; extra == "test"
+requires-dist: pytest-cov; extra == "test"
+requires-dist: pytest-mock; extra == "test"
+requires-dist: pytest-xdist; extra == "test"
+requires-dist: PySocks!=1.5.7,>=1.5.6; extra == "test"
+requires-dist: pytest>=3; extra == "test"
+requires-python: >=3.10
+project-url: Documentation, https://requests.readthedocs.io
+project-url: Source, https://github.com/psf/requests
+provides-extra: security
+provides-extra: socks
+provides-extra: use-chardet-on-py3
+provides-extra: test
+

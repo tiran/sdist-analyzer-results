@@ -1,0 +1,25 @@
+metadata-version: 2.4
+name: osqp
+version: 1.1.3
+summary: OSQP: The Operator Splitting QP Solver
+author: Goran Banjac
+author-email: Bartolomeo Stellato <bartolomeo.stellato@gmail.com>, Vineet Bansal <vineetbansal@protonmail.com>, Amit Solomon <as3993@princeton.edu>, Henry Schreiner <HenrySchreinerIII@gmail.com>
+license-expression: Apache-2.0
+license-file: LICENSE
+requires-dist: jinja2
+requires-dist: numpy>=1.7
+requires-dist: scipy>=0.13.2
+requires-dist: setuptools
+requires-dist: joblib
+requires-dist: osqp-mkl; extra == "mkl"
+requires-dist: pre-commit; extra == "dev"
+requires-dist: pytest>=6; extra == "dev"
+requires-dist: torch; extra == "dev"
+requires-dist: scipy!=1.12.0; extra == "dev"
+requires-dist: osqp-cu12; extra == "cu12"
+requires-python: >=3.8
+project-url: Homepage, https://osqp.org/
+provides-extra: mkl
+provides-extra: dev
+provides-extra: cu12
+

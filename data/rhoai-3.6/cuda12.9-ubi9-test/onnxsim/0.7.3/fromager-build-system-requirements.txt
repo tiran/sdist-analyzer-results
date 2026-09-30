@@ -1,0 +1,4 @@
+setuptools
+nanobind
+wheel
+setuptools>=77

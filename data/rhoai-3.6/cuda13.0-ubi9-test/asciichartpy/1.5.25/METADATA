@@ -1,0 +1,44 @@
+metadata-version: 2.4
+name: asciichartpy
+version: 1.5.25
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: summary
+summary: Nice-looking lightweight console ASCII line charts ╭┈╯ with no dependencies
+keywords: asciichart,ascii,chart,charting,charts,console,terminal,draw,box-drawing,box drawing,drawing,stats,line,linear,plot,graph,ascii graphics,graphics,command line,commandline,bash,shell,sh,light
+home-page: https://github.com/kroitor/asciichart
+author: Igor Kroitor
+author-email: igor.kroitor@gmail.com
+license: MIT
+license-file: LICENSE.txt
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Financial and Insurance Industry
+classifier: Intended Audience :: Information Technology
+classifier: Topic :: Software Development :: Build Tools
+classifier: Topic :: Office/Business :: Financial :: Investment
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python :: 2
+classifier: Programming Language :: Python :: 2.7
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.3
+classifier: Programming Language :: Python :: 3.4
+classifier: Programming Language :: Python :: 3.5
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: JavaScript
+classifier: Programming Language :: PHP
+classifier: Operating System :: OS Independent
+classifier: Environment :: Console
+requires-dist: setuptools
+requires-dist: flake8; extra == "qa"
+provides-extra: qa
+

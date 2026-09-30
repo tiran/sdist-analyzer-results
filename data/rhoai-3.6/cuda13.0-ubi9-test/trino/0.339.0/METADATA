@@ -1,0 +1,70 @@
+metadata-version: 2.4
+name: trino
+version: 0.339.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: Client for the Trino distributed SQL Engine
+home-page: https://github.com/trinodb/trino-python-client
+author: Trino Team
+author-email: python-client@trino.io
+license: Apache 2.0
+license-file: LICENSE
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Operating System :: POSIX
+classifier: Operating System :: Microsoft :: Windows
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Database :: Front-Ends
+requires-dist: lz4
+requires-dist: orjson>=3.11.0; platform_python_implementation != "PyPy"
+requires-dist: python-dateutil
+requires-dist: pytz
+requires-dist: requests>=2.32.4
+requires-dist: tzlocal
+requires-dist: zstandard
+requires-dist: requests_kerberos; extra == "all"
+requires-dist: sqlalchemy>=1.3; extra == "all"
+requires-dist: requests_kerberos; extra == "kerberos"
+requires-dist: requests_gssapi; extra == "gssapi"
+requires-dist: krb5==0.5.1; extra == "gssapi"
+requires-dist: sqlalchemy>=1.3; extra == "sqlalchemy"
+requires-dist: requests_kerberos; extra == "tests"
+requires-dist: sqlalchemy>=1.3; extra == "tests"
+requires-dist: httpretty<1.1; extra == "tests"
+requires-dist: pytest; extra == "tests"
+requires-dist: pytest-runner; extra == "tests"
+requires-dist: pre-commit; extra == "tests"
+requires-dist: black; extra == "tests"
+requires-dist: isort; extra == "tests"
+requires-dist: keyring; extra == "tests"
+requires-dist: testcontainers; extra == "tests"
+requires-dist: boto3; extra == "tests"
+requires-dist: keyring; extra == "external-authentication-token-cache"
+requires-python: >=3.9
+provides-extra: all
+provides-extra: kerberos
+provides-extra: gssapi
+provides-extra: sqlalchemy
+provides-extra: tests
+provides-extra: external-authentication-token-cache
+

@@ -1,0 +1,2 @@
+hatch-nodejs-version>=0.3.2
+hatchling>=1.21.1

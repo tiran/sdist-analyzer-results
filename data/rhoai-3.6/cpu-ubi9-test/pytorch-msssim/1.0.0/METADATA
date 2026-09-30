@@ -1,0 +1,22 @@
+metadata-version: 2.4
+name: pytorch_msssim
+version: 1.0.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: license-file
+dynamic: requires-dist
+dynamic: summary
+summary: Fast and differentiable MS-SSIM and SSIM for pytorch.
+home-page: https://github.com/VainF/pytorch-msssim
+author: Gongfan Fang
+author-email: gongfan@u.nus.edu
+license-file: LICENSE
+classifier: Programming Language :: Python :: 3
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+requires-dist: torch
+

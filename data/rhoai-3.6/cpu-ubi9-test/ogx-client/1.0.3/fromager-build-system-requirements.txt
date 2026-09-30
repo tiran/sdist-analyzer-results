@@ -1,0 +1,2 @@
+hatch-fancy-pypi-readme
+hatchling==1.26.3

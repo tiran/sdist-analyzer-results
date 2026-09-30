@@ -1,0 +1,14 @@
+metadata-version: 2.1
+name: parameterized
+version: 0.8.1
+platform: UNKNOWN
+summary: Parameterized testing with any Python test framework
+home-page: https://github.com/wolever/parameterized
+author: David Wolever
+author-email: david@wolever.net
+license: FreeBSD
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: License :: OSI Approved :: BSD License
+provides-extra: dev
+

@@ -1,0 +1,25 @@
+metadata-version: 2.4
+name: google-crc32c
+version: 1.9.0
+dynamic: license-file
+platform: Posix
+platform: MacOS X
+platform: Windows
+summary: A python wrapper of the C library 'Google CRC32C'
+home-page: https://github.com/googleapis/python-crc32c
+author: Google LLC
+author-email: googleapis-packages@google.com
+license: Apache-2.0
+license-file: LICENSE
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: 3.15
+requires-python: >=3.10
+

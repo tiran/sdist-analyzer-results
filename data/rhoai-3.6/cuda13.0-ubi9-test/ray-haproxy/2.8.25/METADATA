@@ -1,0 +1,12 @@
+metadata-version: 2.4
+name: ray-haproxy
+version: 2.8.25
+dynamic: license-file
+summary: HAProxy binary distribution for Ray Serve
+license: GPLv2
+license-file: LICENSE
+classifier: Operating System :: POSIX :: Linux
+classifier: Programming Language :: Python :: 3
+classifier: Topic :: Internet :: Proxy Servers
+requires-python: >=3.9
+

@@ -1,0 +1,35 @@
+metadata-version: 2.4
+name: mammoth
+version: 1.13.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: Convert Word documents from docx to simple and clean HTML and Markdown
+keywords: docx word office clean html markdown md
+home-page: https://github.com/mwilliamson/python-mammoth
+author: Michael Williamson
+author-email: mike@zwobble.org
+license: BSD-2-Clause
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: BSD License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+requires-dist: cobble<0.2,>=0.1.3
+requires-python: >=3.7
+

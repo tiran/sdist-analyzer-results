@@ -1,0 +1,29 @@
+metadata-version: 2.5
+name: opentelemetry-util-genai
+version: 1.1b0
+summary: OpenTelemetry GenAI Utils
+author-email: OpenTelemetry Authors <cncf-opentelemetry-contributors@lists.cncf.io>
+license-expression: Apache-2.0
+license-file: LICENSE
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-dist: opentelemetry-api~=1.43
+requires-dist: opentelemetry-instrumentation<1,>=0.64b0
+requires-dist: opentelemetry-semantic-conventions<1,>=0.64b0
+requires-dist: wrapt<3.0.0,>=1.17.0
+requires-dist: pytest>=7.0.0; extra == "test"
+requires-dist: fsspec>=2025.9.0; extra == "upload"
+requires-python: >=3.10
+project-url: Homepage, https://github.com/open-telemetry/opentelemetry-python-contrib/tree/main/util/opentelemetry-util-genai
+project-url: Repository, https://github.com/open-telemetry/opentelemetry-python-contrib
+provides-extra: test
+provides-extra: upload
+

@@ -1,0 +1,39 @@
+metadata-version: 2.4
+name: graphql-core
+version: 3.2.12
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: GraphQL implementation for Python, a port of GraphQL.js, the JavaScript reference implementation for GraphQL.
+keywords: graphql
+home-page: https://github.com/graphql-python/graphql-core
+author: Christoph Zwerschke
+author-email: cito@online.de
+license: MIT license
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Topic :: Software Development :: Libraries
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-dist: typing-extensions<5,>=4.7; python_version < "3.10"
+requires-python: <4,>=3.7
+

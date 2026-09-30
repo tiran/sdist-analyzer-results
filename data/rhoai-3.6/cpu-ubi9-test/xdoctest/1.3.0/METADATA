@@ -1,0 +1,197 @@
+metadata-version: 2.4
+name: xdoctest
+version: 1.3.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: provides-extra
+dynamic: requires-python
+dynamic: summary
+summary: A rewrite of the builtin doctest module
+keywords: xdoctest,doctest,test,docstr,pytest
+home-page: https://github.com/Erotemic/xdoctest
+author: Jon Crall
+author-email: erotemic@gmail.com
+license: Apache 2
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: Utilities
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Topic :: Software Development :: Testing
+classifier: Framework :: Pytest
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Programming Language :: Python :: Implementation :: CPython
+requires-dist: pytest>=6.2.5; python_version >= "3.10.0" and extra == "all"
+requires-dist: pytest>=4.6.0; (python_version < "3.10.0" and python_version >= "3.7.0") and extra == "all"
+requires-dist: pytest-cov>=3.0.0; extra == "all"
+requires-dist: Pygments>=2.15.1; extra == "all"
+requires-dist: colorama>=0.4.1; platform_system == "Windows" and extra == "all"
+requires-dist: nbconvert>=6.1.0; (python_version >= "3.7.0" and platform_python_implementation != "PyPy") and extra == "all"
+requires-dist: jinja2>=3.0.0; platform_python_implementation != "PyPy" and extra == "all"
+requires-dist: jupyter_client>=7.0.0; extra == "all"
+requires-dist: IPython>=7.23.1; extra == "all"
+requires-dist: ipykernel>=6.11.0; (python_version < "4.0" and python_version >= "3.12" and (platform_system != "Windows" or platform_python_implementation != "PyPy")) and extra == "all"
+requires-dist: ipykernel>=6.0.0; (python_version < "3.12" and python_version >= "3.7" and (platform_system != "Windows" or platform_python_implementation != "PyPy")) and extra == "all"
+requires-dist: debugpy>=1.6.0; python_version >= "3.10" and extra == "all"
+requires-dist: debugpy>=1.3.0; (python_version < "3.10" and python_version >= "3.9") and extra == "all"
+requires-dist: debugpy>=1.0.0; (python_version < "3.9" and python_version >= "3.8") and extra == "all"
+requires-dist: ipython_genutils>=0.2.0; platform_python_implementation != "PyPy" and extra == "all"
+requires-dist: jedi>=0.16; extra == "all"
+requires-dist: attrs>=19.2.0; extra == "all"
+requires-dist: jupyter_core>=4.7.0; extra == "all"
+requires-dist: pyflakes>=2.2.0; extra == "all"
+requires-dist: tomli>=0.2.0; (python_version < "3.11.0" and python_version >= "3.6") and extra == "all"
+requires-dist: pytest>=6.2.5; python_version >= "3.10.0" and extra == "tests"
+requires-dist: pytest>=4.6.0; (python_version < "3.10.0" and python_version >= "3.7.0") and extra == "tests"
+requires-dist: pytest-cov>=3.0.0; extra == "tests"
+requires-dist: Pygments>=2.15.1; extra == "optional"
+requires-dist: colorama>=0.4.1; platform_system == "Windows" and extra == "optional"
+requires-dist: nbconvert>=6.1.0; (python_version >= "3.7.0" and platform_python_implementation != "PyPy") and extra == "optional"
+requires-dist: jinja2>=3.0.0; platform_python_implementation != "PyPy" and extra == "optional"
+requires-dist: jupyter_client>=7.0.0; extra == "optional"
+requires-dist: IPython>=7.23.1; extra == "optional"
+requires-dist: ipykernel>=6.11.0; (python_version < "4.0" and python_version >= "3.12" and (platform_system != "Windows" or platform_python_implementation != "PyPy")) and extra == "optional"
+requires-dist: ipykernel>=6.0.0; (python_version < "3.12" and python_version >= "3.7" and (platform_system != "Windows" or platform_python_implementation != "PyPy")) and extra == "optional"
+requires-dist: debugpy>=1.6.0; python_version >= "3.10" and extra == "optional"
+requires-dist: debugpy>=1.3.0; (python_version < "3.10" and python_version >= "3.9") and extra == "optional"
+requires-dist: debugpy>=1.0.0; (python_version < "3.9" and python_version >= "3.8") and extra == "optional"
+requires-dist: ipython_genutils>=0.2.0; platform_python_implementation != "PyPy" and extra == "optional"
+requires-dist: jedi>=0.16; extra == "optional"
+requires-dist: attrs>=19.2.0; extra == "optional"
+requires-dist: jupyter_core>=4.7.0; extra == "optional"
+requires-dist: pyflakes>=2.2.0; extra == "optional"
+requires-dist: tomli>=0.2.0; (python_version < "3.11.0" and python_version >= "3.6") and extra == "optional"
+requires-dist: Pygments>=2.15.1; extra == "colors"
+requires-dist: colorama>=0.4.1; platform_system == "Windows" and extra == "colors"
+requires-dist: sphinx>=5.0.1; extra == "docs"
+requires-dist: sphinx-autobuild>=2021.3.14; extra == "docs"
+requires-dist: sphinx_rtd_theme>=1.0.0; extra == "docs"
+requires-dist: sphinxcontrib-napoleon>=0.7; extra == "docs"
+requires-dist: sphinx-autoapi>=1.8.4; extra == "docs"
+requires-dist: Pygments>=2.15.1; extra == "docs"
+requires-dist: myst_parser>=0.18.0; extra == "docs"
+requires-dist: sphinx-reredirects>=0.0.1; extra == "docs"
+requires-dist: nbconvert>=6.1.0; (python_version >= "3.7.0" and platform_python_implementation != "PyPy") and extra == "jupyter"
+requires-dist: jinja2>=3.0.0; platform_python_implementation != "PyPy" and extra == "jupyter"
+requires-dist: jupyter_client>=7.0.0; extra == "jupyter"
+requires-dist: IPython>=7.23.1; extra == "jupyter"
+requires-dist: ipykernel>=6.11.0; (python_version < "4.0" and python_version >= "3.12" and (platform_system != "Windows" or platform_python_implementation != "PyPy")) and extra == "jupyter"
+requires-dist: ipykernel>=6.0.0; (python_version < "3.12" and python_version >= "3.7" and (platform_system != "Windows" or platform_python_implementation != "PyPy")) and extra == "jupyter"
+requires-dist: debugpy>=1.6.0; python_version >= "3.10" and extra == "jupyter"
+requires-dist: debugpy>=1.3.0; (python_version < "3.10" and python_version >= "3.9") and extra == "jupyter"
+requires-dist: debugpy>=1.0.0; (python_version < "3.9" and python_version >= "3.8") and extra == "jupyter"
+requires-dist: ipython_genutils>=0.2.0; platform_python_implementation != "PyPy" and extra == "jupyter"
+requires-dist: jedi>=0.16; extra == "jupyter"
+requires-dist: attrs>=19.2.0; extra == "jupyter"
+requires-dist: jupyter_core>=4.7.0; extra == "jupyter"
+requires-dist: scikit-build>=0.16.1; (python_version < "4.0" and python_version >= "3.11") and extra == "tests-binary"
+requires-dist: scikit-build>=0.11.1; python_version < "3.11" and extra == "tests-binary"
+requires-dist: ninja>=1.11.1; (python_version < "4.0" and python_version >= "3.11") and extra == "tests-binary"
+requires-dist: ninja>=1.10.2; python_version < "3.11" and extra == "tests-binary"
+requires-dist: pybind11>=2.10.3; (python_version < "4.0" and python_version >= "3.11") and extra == "tests-binary"
+requires-dist: pybind11>=2.7.1; python_version < "3.11" and extra == "tests-binary"
+requires-dist: cmake>=3.25.0; (python_version < "4.0" and python_version >= "3.11") and extra == "tests-binary"
+requires-dist: cmake>=3.21.2; python_version < "3.11" and extra == "tests-binary"
+requires-dist: pytest==6.2.5; python_version >= "3.10.0" and extra == "all-strict"
+requires-dist: pytest==4.6.0; (python_version < "3.10.0" and python_version >= "3.7.0") and extra == "all-strict"
+requires-dist: pytest-cov==3.0.0; extra == "all-strict"
+requires-dist: Pygments==2.15.1; extra == "all-strict"
+requires-dist: colorama==0.4.1; platform_system == "Windows" and extra == "all-strict"
+requires-dist: nbconvert==6.1.0; (python_version >= "3.7.0" and platform_python_implementation != "PyPy") and extra == "all-strict"
+requires-dist: jinja2==3.0.0; platform_python_implementation != "PyPy" and extra == "all-strict"
+requires-dist: jupyter_client==7.0.0; extra == "all-strict"
+requires-dist: IPython==7.23.1; extra == "all-strict"
+requires-dist: ipykernel==6.11.0; (python_version < "4.0" and python_version >= "3.12" and (platform_system != "Windows" or platform_python_implementation != "PyPy")) and extra == "all-strict"
+requires-dist: ipykernel==6.0.0; (python_version < "3.12" and python_version >= "3.7" and (platform_system != "Windows" or platform_python_implementation != "PyPy")) and extra == "all-strict"
+requires-dist: debugpy==1.6.0; python_version >= "3.10" and extra == "all-strict"
+requires-dist: debugpy==1.3.0; (python_version < "3.10" and python_version >= "3.9") and extra == "all-strict"
+requires-dist: debugpy==1.0.0; (python_version < "3.9" and python_version >= "3.8") and extra == "all-strict"
+requires-dist: ipython_genutils==0.2.0; platform_python_implementation != "PyPy" and extra == "all-strict"
+requires-dist: jedi==0.16; extra == "all-strict"
+requires-dist: attrs==19.2.0; extra == "all-strict"
+requires-dist: jupyter_core==4.7.0; extra == "all-strict"
+requires-dist: pyflakes==2.2.0; extra == "all-strict"
+requires-dist: tomli==0.2.0; (python_version < "3.11.0" and python_version >= "3.6") and extra == "all-strict"
+requires-dist: pytest==6.2.5; python_version >= "3.10.0" and extra == "tests-strict"
+requires-dist: pytest==4.6.0; (python_version < "3.10.0" and python_version >= "3.7.0") and extra == "tests-strict"
+requires-dist: pytest-cov==3.0.0; extra == "tests-strict"
+requires-dist: Pygments==2.15.1; extra == "optional-strict"
+requires-dist: colorama==0.4.1; platform_system == "Windows" and extra == "optional-strict"
+requires-dist: nbconvert==6.1.0; (python_version >= "3.7.0" and platform_python_implementation != "PyPy") and extra == "optional-strict"
+requires-dist: jinja2==3.0.0; platform_python_implementation != "PyPy" and extra == "optional-strict"
+requires-dist: jupyter_client==7.0.0; extra == "optional-strict"
+requires-dist: IPython==7.23.1; extra == "optional-strict"
+requires-dist: ipykernel==6.11.0; (python_version < "4.0" and python_version >= "3.12" and (platform_system != "Windows" or platform_python_implementation != "PyPy")) and extra == "optional-strict"
+requires-dist: ipykernel==6.0.0; (python_version < "3.12" and python_version >= "3.7" and (platform_system != "Windows" or platform_python_implementation != "PyPy")) and extra == "optional-strict"
+requires-dist: debugpy==1.6.0; python_version >= "3.10" and extra == "optional-strict"
+requires-dist: debugpy==1.3.0; (python_version < "3.10" and python_version >= "3.9") and extra == "optional-strict"
+requires-dist: debugpy==1.0.0; (python_version < "3.9" and python_version >= "3.8") and extra == "optional-strict"
+requires-dist: ipython_genutils==0.2.0; platform_python_implementation != "PyPy" and extra == "optional-strict"
+requires-dist: jedi==0.16; extra == "optional-strict"
+requires-dist: attrs==19.2.0; extra == "optional-strict"
+requires-dist: jupyter_core==4.7.0; extra == "optional-strict"
+requires-dist: pyflakes==2.2.0; extra == "optional-strict"
+requires-dist: tomli==0.2.0; (python_version < "3.11.0" and python_version >= "3.6") and extra == "optional-strict"
+requires-dist: Pygments==2.15.1; extra == "colors-strict"
+requires-dist: colorama==0.4.1; platform_system == "Windows" and extra == "colors-strict"
+requires-dist: sphinx==5.0.1; extra == "docs-strict"
+requires-dist: sphinx-autobuild==2021.3.14; extra == "docs-strict"
+requires-dist: sphinx_rtd_theme==1.0.0; extra == "docs-strict"
+requires-dist: sphinxcontrib-napoleon==0.7; extra == "docs-strict"
+requires-dist: sphinx-autoapi==1.8.4; extra == "docs-strict"
+requires-dist: Pygments==2.15.1; extra == "docs-strict"
+requires-dist: myst_parser==0.18.0; extra == "docs-strict"
+requires-dist: sphinx-reredirects==0.0.1; extra == "docs-strict"
+requires-dist: nbconvert==6.1.0; (python_version >= "3.7.0" and platform_python_implementation != "PyPy") and extra == "jupyter-strict"
+requires-dist: jinja2==3.0.0; platform_python_implementation != "PyPy" and extra == "jupyter-strict"
+requires-dist: jupyter_client==7.0.0; extra == "jupyter-strict"
+requires-dist: IPython==7.23.1; extra == "jupyter-strict"
+requires-dist: ipykernel==6.11.0; (python_version < "4.0" and python_version >= "3.12" and (platform_system != "Windows" or platform_python_implementation != "PyPy")) and extra == "jupyter-strict"
+requires-dist: ipykernel==6.0.0; (python_version < "3.12" and python_version >= "3.7" and (platform_system != "Windows" or platform_python_implementation != "PyPy")) and extra == "jupyter-strict"
+requires-dist: debugpy==1.6.0; python_version >= "3.10" and extra == "jupyter-strict"
+requires-dist: debugpy==1.3.0; (python_version < "3.10" and python_version >= "3.9") and extra == "jupyter-strict"
+requires-dist: debugpy==1.0.0; (python_version < "3.9" and python_version >= "3.8") and extra == "jupyter-strict"
+requires-dist: ipython_genutils==0.2.0; platform_python_implementation != "PyPy" and extra == "jupyter-strict"
+requires-dist: jedi==0.16; extra == "jupyter-strict"
+requires-dist: attrs==19.2.0; extra == "jupyter-strict"
+requires-dist: jupyter_core==4.7.0; extra == "jupyter-strict"
+requires-dist: scikit-build==0.16.1; (python_version < "4.0" and python_version >= "3.11") and extra == "tests-binary-strict"
+requires-dist: scikit-build==0.11.1; python_version < "3.11" and extra == "tests-binary-strict"
+requires-dist: ninja==1.11.1; (python_version < "4.0" and python_version >= "3.11") and extra == "tests-binary-strict"
+requires-dist: ninja==1.10.2; python_version < "3.11" and extra == "tests-binary-strict"
+requires-dist: pybind11==2.10.3; (python_version < "4.0" and python_version >= "3.11") and extra == "tests-binary-strict"
+requires-dist: pybind11==2.7.1; python_version < "3.11" and extra == "tests-binary-strict"
+requires-dist: cmake==3.25.0; (python_version < "4.0" and python_version >= "3.11") and extra == "tests-binary-strict"
+requires-dist: cmake==3.21.2; python_version < "3.11" and extra == "tests-binary-strict"
+requires-python: >=3.8
+provides-extra: all
+provides-extra: runtime
+provides-extra: tests
+provides-extra: optional
+provides-extra: colors
+provides-extra: docs
+provides-extra: jupyter
+provides-extra: tests-binary
+provides-extra: all-strict
+provides-extra: runtime-strict
+provides-extra: tests-strict
+provides-extra: optional-strict
+provides-extra: colors-strict
+provides-extra: docs-strict
+provides-extra: jupyter-strict
+provides-extra: tests-binary-strict
+

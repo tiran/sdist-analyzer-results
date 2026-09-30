@@ -1,0 +1,40 @@
+metadata-version: 2.4
+name: formulaic
+version: 1.2.2
+summary: An implementation of Wilkinson formulas.
+author-email: Matthew Wardrop <mpwardrop@gmail.com>
+license-expression: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Information Technology
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: MIT License
+classifier: Natural Language :: English
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Scientific/Engineering :: Mathematics
+requires-dist: interface-meta>=1.2.0
+requires-dist: narwhals>=1.17
+requires-dist: numpy>=1.20.0
+requires-dist: pandas>=1.3
+requires-dist: scipy>=1.6
+requires-dist: typing-extensions>=4.2.0
+requires-dist: wrapt>=1.0; python_version < "3.13"
+requires-dist: wrapt>=1.17.0rc1; python_version >= "3.13"
+requires-dist: pyarrow>=1; extra == "arrow"
+requires-dist: sympy!=1.10,>=1.3; extra == "calculus"
+requires-dist: polars>=1; extra == "polars"
+requires-python: >=3.9
+project-url: repository, https://github.com/matthewwardrop/formulaic
+project-url: documentation, https://matthewwardrop.github.io/formulaic
+provides-extra: arrow
+provides-extra: calculus
+provides-extra: polars
+

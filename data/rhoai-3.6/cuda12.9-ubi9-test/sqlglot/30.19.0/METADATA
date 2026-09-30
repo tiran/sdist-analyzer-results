@@ -1,0 +1,42 @@
+metadata-version: 2.4
+name: sqlglot
+version: 30.19.0
+dynamic: license-file
+dynamic: provides-extra
+summary: An easily customizable SQL parser and transpiler
+author-email: Toby Mao <toby.mao@gmail.com>
+license-expression: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: SQL
+classifier: Programming Language :: Python :: 3 :: Only
+requires-dist: duckdb>=0.6; extra == "dev"
+requires-dist: sqlglot-mypy>=2.3.0.post2; python_version >= "3.10" and extra == "dev"
+requires-dist: mypy; python_version < "3.10" and extra == "dev"
+requires-dist: setuptools_scm; extra == "dev"
+requires-dist: pandas; extra == "dev"
+requires-dist: pandas-stubs; extra == "dev"
+requires-dist: python-dateutil; extra == "dev"
+requires-dist: pytz; extra == "dev"
+requires-dist: pdoc; extra == "dev"
+requires-dist: pre-commit; extra == "dev"
+requires-dist: ruff==0.15.6; extra == "dev"
+requires-dist: types-python-dateutil; extra == "dev"
+requires-dist: types-pytz; extra == "dev"
+requires-dist: typing_extensions; extra == "dev"
+requires-dist: pyperf; extra == "dev"
+requires-dist: sqlglotc==30.19.0; python_version >= "3.10" and extra == "c"
+requires-dist: sqlglotrs==0.13.0; extra == "rs"
+requires-dist: sqlglotc==30.19.0; python_version >= "3.10" and extra == "rs"
+requires-python: >=3.9
+project-url: Homepage, https://sqlglot.com/
+project-url: Documentation, https://sqlglot.com/sqlglot.html
+project-url: Repository, https://github.com/tobymao/sqlglot
+project-url: Issues, https://github.com/tobymao/sqlglot/issues
+provides-extra: dev
+provides-extra: c
+provides-extra: rs
+

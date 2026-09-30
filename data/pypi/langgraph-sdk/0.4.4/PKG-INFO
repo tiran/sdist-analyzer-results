@@ -1,0 +1,17 @@
+metadata-version: 2.5
+name: langgraph-sdk
+version: 0.4.4
+summary: SDK for interacting with LangGraph API
+license-expression: MIT
+license-file: LICENSE
+requires-dist: httpx>=0.25.2
+requires-dist: langchain-core<2,>=1.4.0
+requires-dist: langchain-protocol>=0.0.15
+requires-dist: orjson>=3.11.5
+requires-dist: websockets<17,>=14
+requires-python: >=3.10
+project-url: Source, https://github.com/langchain-ai/langgraph/tree/main/libs/sdk-py
+project-url: Twitter, https://x.com/langchain_oss
+project-url: Slack, https://www.langchain.com/join-community
+project-url: Reddit, https://www.reddit.com/r/LangChain/
+

@@ -1,0 +1,4 @@
+setuptools
+hatchling<1.28,>=1.27
+vcs-versioning
+setuptools_scm[toml]>=8

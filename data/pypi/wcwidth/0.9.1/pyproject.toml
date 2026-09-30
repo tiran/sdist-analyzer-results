@@ -1,0 +1,93 @@
+[build-system]
+# 61 first reads [project]; setup.py fills in name and version itself when an
+# older setuptools builds without isolation.  A PEP 639 'license' key would
+# raise this to 77 (2025), so the license stays a trove classifier.
+build-backend = "setuptools.build_meta"
+requires = [ "setuptools>=61" ]
+
+[project]
+name = "wcwidth"
+version = "0.9.1"  # stamped into __init__.py and wcwidth_config.h by bin/update-tables.py
+description = "Measures the displayed width of unicode strings in a terminal"
+readme = "README.rst"
+keywords = [
+  "cjk",
+  "combining",
+  "console",
+  "eastasian",
+  "emoji",
+  "emulator",
+  "terminal",
+  "unicode",
+  "wcswidth",
+  "wcwidth",
+  "xterm",
+]
+authors = [
+  { name = "Jeff Quast", email = "contact@jeffquast.com" },
+]
+requires-python = ">=3.9"
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Natural Language :: English",
+  "Operating System :: POSIX",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
+  "Programming Language :: Python :: 3.15",
+  "Topic :: Software Development :: Internationalization",
+  "Topic :: Software Development :: Libraries",
+  "Topic :: Software Development :: Localization",
+  "Topic :: Terminals",
+  "Typing :: Typed",
+]
+
+[project.urls]
+Homepage = "https://github.com/jquast/wcwidth"
+
+[tool.setuptools]
+include-package-data = false
+packages = [
+  "wcwidth",
+  "wcwidth.table_grapheme_overrides",
+]
+
+[tool.setuptools.package-data]
+wcwidth = [ "py.typed", "*.pyi" ]
+
+# The optional C extension is declared in setup.py.
+
+[tool.cibuildwheel]
+# A cp310-abi3 wheel covers every GIL-enabled interpreter from 3.10 up, so only
+# cp310 is built for those.  The free-threaded cp314t build cannot use the
+# stable ABI until 3.15 and stays version specific.
+build = "cp310-* cp314t-*"
+skip = "cp314t-musllinux_*"
+# --import-mode=importlib stops pytest importing the source tree instead of the wheel.  {project} is
+# the repo, since tests/ is not in the wheel.  --no-cov cancels 'addopts' from tox.ini section
+# '[pytest]', which has no support on win_arm64 and fails due to 'filterwarnings=error'.
+test-requires = "pytest pytest-cov"
+test-command = "python -m pytest {project}/tests --verbose --durations=10 --import-mode=importlib --no-cov"
+
+[tool.cibuildwheel.linux]
+archs = [ "x86_64", "i686", "aarch64" ]
+# Each arch has a native runner in wheels.yml, so nothing ships emulated and
+# untested.  manylinux2014 (glibc 2.17) rather than cibuildwheel's
+# manylinux_2_28 default: it reaches older distros and installs on newer ones.
+manylinux-x86_64-image = "manylinux2014"
+manylinux-i686-image = "manylinux2014"
+manylinux-aarch64-image = "manylinux2014"
+
+[tool.cibuildwheel.macos]
+archs = [ "x86_64", "arm64" ]
+
+[tool.cibuildwheel.windows]
+# Windows archs are x86 / AMD64 / ARM64; "x86_64" matches nothing here.
+archs = [ "AMD64", "x86", "ARM64" ]

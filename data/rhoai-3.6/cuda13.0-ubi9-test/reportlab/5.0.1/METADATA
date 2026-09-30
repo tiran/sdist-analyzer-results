@@ -1,0 +1,44 @@
+metadata-version: 2.4
+name: reportlab
+version: 5.0.1
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: The Reportlab Toolkit
+home-page: https://www.reportlab.com/
+author: Andy Robinson, Robin Becker, the ReportLab team and the community
+author-email: reportlab-users@lists2.reportlab.com
+license: BSD license (see license.txt for details), Copyright (c) 2000-2025, ReportLab Inc.
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: BSD License
+classifier: Topic :: Printing
+classifier: Topic :: Text Processing :: Markup
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-dist: pillow>=9.0.0
+requires-dist: charset-normalizer
+requires-dist: rl_accel<1.1,>=0.9.0; extra == "accel"
+requires-dist: rlPyCairo<1,>=0.2.0; extra == "pycairo"
+requires-dist: freetype-py<2.4,>=2.3.0; extra == "pycairo"
+requires-dist: rlbidi; extra == "bidi"
+requires-dist: uharfbuzz; extra == "shaping"
+requires-python: <4,>=3.9
+provides-extra: accel
+provides-extra: pycairo
+provides-extra: bidi
+provides-extra: shaping
+

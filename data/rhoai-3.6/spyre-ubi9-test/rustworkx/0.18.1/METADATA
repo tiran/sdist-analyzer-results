@@ -1,0 +1,35 @@
+metadata-version: 2.4
+name: rustworkx
+version: 0.18.1
+summary: A High-Performance Graph Library for Python
+keywords: Networks,Network,Graph,Graph Theory,DAG
+author-email: Matthew Treinish <mtreinish@kortar.org>
+maintainer-email: Ivan Carvalho <ivancarvalho@gatech.edu>
+license-expression: Apache-2.0
+license-file: LICENSE
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: Programming Language :: Rust
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: POSIX :: Linux
+requires-dist: numpy<3,>=1.16.0
+requires-dist: matplotlib>=3.0; extra == "all"
+requires-dist: pillow>=5.4; extra == "all"
+requires-dist: pillow>=5.4; extra == "graphviz"
+requires-dist: matplotlib>=3.0; extra == "mpl"
+requires-python: >=3.10
+project-url: documentation, https://www.rustworkx.org/
+project-url: issues, https://github.com/Qiskit/rustworkx/issues
+project-url: releasenotes, https://www.rustworkx.org/release_notes.html
+project-url: source, https://github.com/Qiskit/rustworkx
+provides-extra: all
+provides-extra: graphviz
+provides-extra: mpl
+

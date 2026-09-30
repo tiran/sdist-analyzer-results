@@ -1,0 +1,22 @@
+metadata-version: 2.4
+name: mlserver-onnx
+version: 1.7.1+rhaiv.15
+summary: ONNX runtime for MLServer
+author: Syed Nomaan Ali (Snomaan6846)
+author-email: nomaan.syed.ali@gmail.com
+license: Apache-2.0
+license-file: LICENSE
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+requires-dist: mlserver
+requires-dist: onnx>=1.16.0; python_version >= "3.10"
+requires-dist: onnx<1.20.0,>=1.16.0; python_version < "3.10"
+requires-dist: onnxruntime<=1.19.2; python_version < "3.10"
+requires-dist: onnxruntime>=1.20.0; python_version >= "3.11"
+requires-dist: onnxruntime<1.24.0,>=1.20.0; python_version == "3.10"
+requires-python: <3.13,>=3.9
+

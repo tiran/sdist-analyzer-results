@@ -1,0 +1,20 @@
+metadata-version: 2.4
+name: python-lsp-jsonrpc
+version: 1.1.2
+dynamic: license-file
+summary: JSON RPC 2.0 server library
+author: Python Language Server Contributors
+license: MIT
+license-file: LICENSE
+classifier: License :: OSI Approved :: MIT License
+requires-dist: ujson>=3.0.0
+requires-dist: pylint; extra == "test"
+requires-dist: pycodestyle; extra == "test"
+requires-dist: pyflakes; extra == "test"
+requires-dist: pytest; extra == "test"
+requires-dist: pytest-cov; extra == "test"
+requires-dist: coverage; extra == "test"
+requires-python: >=3.8
+project-url: Homepage, https://github.com/python-lsp/python-lsp-jsonrpc
+provides-extra: test
+

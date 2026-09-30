@@ -1,0 +1,95 @@
+metadata-version: 2.4
+name: ogx
+version: 1.2.5.1+rhaiv.0
+dynamic: license-file
+summary: Open-source, OpenAI-compatible API server with pluggable providers for any model and any infrastructure
+author-email: The OGX Contributors <contributors@ogx.dev>
+license: MIT
+license-file: LICENSE
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python :: 3
+classifier: Operating System :: OS Independent
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Information Technology
+classifier: Intended Audience :: Science/Research
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+classifier: Topic :: Scientific/Engineering :: Information Analysis
+requires-dist: PyYAML>=6.0
+requires-dist: fastapi<1.0,>=0.115.0
+requires-dist: httpx
+requires-dist: jinja2>=3.1.6
+requires-dist: jsonschema
+requires-dist: ogx-api
+requires-dist: openai>=2.41.0
+requires-dist: python-dotenv>=1.2.2
+requires-dist: pyjwt[crypto]>=2.13.0
+requires-dist: pydantic>=2.11.9
+requires-dist: rich
+requires-dist: structlog>=24.1.0
+requires-dist: termcolor
+requires-dist: tiktoken
+requires-dist: uvicorn>=0.34.0
+requires-dist: websockets>=14.0
+requires-dist: opentelemetry-sdk>=1.42.1
+requires-dist: opentelemetry-exporter-otlp-proto-http>=1.30.0
+requires-dist: opentelemetry-exporter-otlp-proto-grpc>=1.30.0
+requires-dist: opentelemetry-exporter-prometheus>=0.60b1
+requires-dist: opentelemetry-distro>=0.60b1
+requires-dist: aiosqlite>=0.21.0
+requires-dist: asyncpg
+requires-dist: sqlalchemy[asyncio]>=2.0.41
+requires-dist: mcp<2.0,>=1.23.0
+requires-dist: zstandard>=0.23.0
+requires-dist: models-dev>=1.0.398
+requires-dist: ogx-client==1.2.5; extra == "client"
+requires-dist: ogx-open-client>=1.0.2; extra == "openclient"
+requires-dist: aiohttp; extra == "starter"
+requires-dist: anthropic>=0.105.2; extra == "starter"
+requires-dist: autoevals; extra == "starter"
+requires-dist: boto3>=1.43.18; extra == "starter"
+requires-dist: chardet; extra == "starter"
+requires-dist: chromadb-client; extra == "starter"
+requires-dist: datasets>=4.0.0; extra == "starter"
+requires-dist: docling-slim[service-client]>=2.103.0; extra == "starter"
+requires-dist: einops; extra == "starter"
+requires-dist: elasticsearch<9.0.0,>=8.16.0; extra == "starter"
+requires-dist: emoji; extra == "starter"
+requires-dist: faiss-cpu; extra == "starter"
+requires-dist: fire; extra == "starter"
+requires-dist: fireworks-ai<=0.17.16; extra == "starter"
+requires-dist: google-genai<2,>=1.69.0; extra == "starter"
+requires-dist: langdetect; extra == "starter"
+requires-dist: markitdown[all]; extra == "starter"
+requires-dist: matplotlib; extra == "starter"
+requires-dist: nltk>=3.10.3; extra == "starter"
+requires-dist: numpy; extra == "starter"
+requires-dist: ollama; extra == "starter"
+requires-dist: pandas; extra == "starter"
+requires-dist: pillow; extra == "starter"
+requires-dist: pgvector>=0.3.0; extra == "starter"
+requires-dist: pymilvus[milvus-lite]>=2.4.10; extra == "starter"
+requires-dist: pymongo; extra == "starter"
+requires-dist: pypdf>=6.13.3; extra == "starter"
+requires-dist: pythainlp; extra == "starter"
+requires-dist: qdrant-client; extra == "starter"
+requires-dist: redis>=8.0.0; extra == "starter"
+requires-dist: requests; extra == "starter"
+requires-dist: safetensors; extra == "starter"
+requires-dist: scikit-learn; extra == "starter"
+requires-dist: scipy; extra == "starter"
+requires-dist: sentence-transformers>=5.5.1; extra == "starter"
+requires-dist: sentencepiece; extra == "starter"
+requires-dist: sqlite-vec; extra == "starter"
+requires-dist: together>=2; extra == "starter"
+requires-dist: tokenizers; extra == "starter"
+requires-dist: torch; extra == "starter"
+requires-dist: tqdm; extra == "starter"
+requires-dist: tree_sitter; extra == "starter"
+requires-dist: unstructured-client>=0.25.0; extra == "starter"
+requires-dist: weaviate-client>=4.16.5; extra == "starter"
+requires-python: >=3.12
+project-url: Homepage, https://github.com/ogx-ai/ogx
+provides-extra: client
+provides-extra: openclient
+provides-extra: starter
+

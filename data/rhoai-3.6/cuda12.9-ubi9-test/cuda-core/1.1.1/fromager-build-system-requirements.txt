@@ -1,0 +1,4 @@
+setuptools-scm[simple]!=10.1,>=8
+cuda-pathfinder>=1.5
+Cython<3.3,>=3.2
+setuptools>=80

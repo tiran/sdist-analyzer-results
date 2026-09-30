@@ -1,0 +1,69 @@
+metadata-version: 2.4
+name: jax
+version: 0.11.1
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: Differentiate, compile, and transform Numpy code.
+home-page: https://github.com/jax-ml/jax
+author: JAX team
+author-email: jax-dev@google.com
+license: Apache-2.0
+license-file: LICENSE
+license-file: AUTHORS
+classifier: Development Status :: 5 - Production/Stable
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: 3.15
+classifier: Programming Language :: Python :: Free Threading :: 3 - Stable
+requires-dist: jaxlib<=0.11.1,>=0.11.1
+requires-dist: ml_dtypes>=0.5.0
+requires-dist: numpy>=2.1
+requires-dist: opt_einsum
+requires-dist: scipy>=1.15
+requires-dist: jaxlib==0.11.1; extra == "minimum-jaxlib"
+requires-dist: jaxlib==0.11.0; extra == "ci"
+requires-dist: jaxlib<=0.11.1,>=0.11.1; extra == "tpu"
+requires-dist: libtpu==0.0.46.*; extra == "tpu"
+requires-dist: requests; extra == "tpu"
+requires-dist: jaxlib<=0.11.1,>=0.11.1; extra == "cuda"
+requires-dist: jax-cuda12-plugin[with-cuda]<=0.11.1,>=0.11.1; extra == "cuda"
+requires-dist: jaxlib<=0.11.1,>=0.11.1; extra == "cuda12"
+requires-dist: jax-cuda12-plugin[with-cuda]<=0.11.1,>=0.11.1; extra == "cuda12"
+requires-dist: jaxlib<=0.11.1,>=0.11.1; extra == "cuda13"
+requires-dist: jax-cuda13-plugin[with-cuda]<=0.11.1,>=0.11.1; extra == "cuda13"
+requires-dist: jaxlib<=0.11.1,>=0.11.1; extra == "cuda12-local"
+requires-dist: jax-cuda12-plugin<=0.11.1,>=0.11.1; extra == "cuda12-local"
+requires-dist: jaxlib<=0.11.1,>=0.11.1; extra == "cuda13-local"
+requires-dist: jax-cuda13-plugin<=0.11.1,>=0.11.1; extra == "cuda13-local"
+requires-dist: jaxlib<=0.11.1,>=0.11.1; extra == "rocm7-local"
+requires-dist: jax-rocm7-plugin==0.11.1.*; extra == "rocm7-local"
+requires-dist: jaxlib<=0.11.1,>=0.11.1; extra == "oneapi"
+requires-dist: jax-oneapi-plugin[with-oneapi]<=0.11.1,>=0.11.1; extra == "oneapi"
+requires-dist: kubernetes; extra == "k8s"
+requires-dist: xprof; extra == "xprof"
+requires-python: >=3.12
+provides-extra: minimum-jaxlib
+provides-extra: cpu
+provides-extra: ci
+provides-extra: tpu
+provides-extra: cuda
+provides-extra: cuda12
+provides-extra: cuda13
+provides-extra: cuda12-local
+provides-extra: cuda13-local
+provides-extra: rocm7-local
+provides-extra: oneapi
+provides-extra: k8s
+provides-extra: xprof
+

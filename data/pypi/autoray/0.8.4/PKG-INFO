@@ -1,0 +1,35 @@
+metadata-version: 2.4
+name: autoray
+version: 0.8.4
+summary: Abstract your array operations.
+keywords: agnostic,array,autograd,cupy,dask,dispatch,jax,numeric,numpy,tensor,tensorflow
+author-email: Johnnie Gray <johnniemcgray@gmail.com>
+license: Apache
+license-file: LICENSE
+classifier: Development Status :: 3 - Alpha
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+requires-dist: astroid; extra == "docs"
+requires-dist: furo; extra == "docs"
+requires-dist: ipython; extra == "docs"
+requires-dist: myst-nb; extra == "docs"
+requires-dist: setuptools-scm; extra == "docs"
+requires-dist: sphinx; extra == "docs"
+requires-dist: sphinx-autoapi; extra == "docs"
+requires-dist: sphinx-copybutton; extra == "docs"
+requires-dist: coverage; extra == "tests"
+requires-dist: numpy; extra == "tests"
+requires-dist: pytest; extra == "tests"
+requires-dist: pytest-cov; extra == "tests"
+requires-python: >=3.10
+project-url: Documentation, https://autoray.readthedocs.io/
+project-url: Repository, https://github.com/jcmgray/autoray/
+project-url: Issues, https://github.com/jcmgray/autoray/issues
+project-url: Changelog, https://github.com/jcmgray/autoray/releases
+provides-extra: docs
+provides-extra: tests
+

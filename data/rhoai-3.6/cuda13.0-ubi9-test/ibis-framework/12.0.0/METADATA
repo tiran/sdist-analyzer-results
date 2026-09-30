@@ -1,0 +1,213 @@
+metadata-version: 2.5
+name: ibis-framework
+version: 12.0.0
+summary: The portable Python dataframe library
+keywords: bigquery,clickhouse,database,datafusion,duckdb,expressions,impala,mssql,mysql,pandas,polars,postgresql,pyarrow,pyspark,singlestoredb,snowflake,sql,sqlite,trino
+author-email: Ibis Maintainers <maintainers@ibis-project.org>
+maintainer-email: Ibis Maintainers <maintainers@ibis-project.org>
+license: Apache-2.0
+license-file: LICENSE.txt
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: SQL
+classifier: Topic :: Database :: Front-Ends
+classifier: Topic :: Scientific/Engineering
+classifier: Topic :: Software Development :: Code Generators
+classifier: Topic :: Software Development :: User Interfaces
+requires-dist: atpublic>=2.3
+requires-dist: parsy>=2
+requires-dist: python-dateutil>=2.8.2
+requires-dist: sqlglot!=26.32.0,>=23.4
+requires-dist: toolz>=0.11
+requires-dist: typing-extensions>=4.3.0
+requires-dist: tzdata>=2022.7
+requires-dist: fsspec[s3]; extra == "athena"
+requires-dist: numpy<3,>=1.23.2; extra == "athena"
+requires-dist: pandas<4,>=1.5.3; extra == "athena"
+requires-dist: pyarrow-hotfix>=0.4; extra == "athena"
+requires-dist: pyarrow>=10.0.1; extra == "athena"
+requires-dist: pyathena[arrow,pandas]>=3.11.0; extra == "athena"
+requires-dist: rich>=12.4.4; extra == "athena"
+requires-dist: db-dtypes>=0.3; extra == "bigquery"
+requires-dist: google-cloud-bigquery-storage>=2; extra == "bigquery"
+requires-dist: google-cloud-bigquery>=3; extra == "bigquery"
+requires-dist: numpy<3,>=1.23.2; extra == "bigquery"
+requires-dist: pandas-gbq>=0.26.1; extra == "bigquery"
+requires-dist: pandas<4,>=1.5.3; extra == "bigquery"
+requires-dist: pyarrow-hotfix>=0.4; extra == "bigquery"
+requires-dist: pyarrow>=10.0.1; extra == "bigquery"
+requires-dist: pydata-google-auth>=1.4.0; extra == "bigquery"
+requires-dist: rich>=12.4.4; extra == "bigquery"
+requires-dist: clickhouse-connect[arrow,numpy,pandas]>=0.5.23; extra == "clickhouse"
+requires-dist: numpy<3,>=1.23.2; extra == "clickhouse"
+requires-dist: pandas<4,>=1.5.3; extra == "clickhouse"
+requires-dist: pyarrow-hotfix>=0.4; extra == "clickhouse"
+requires-dist: pyarrow>=10.0.1; extra == "clickhouse"
+requires-dist: rich>=12.4.4; extra == "clickhouse"
+requires-dist: databricks-sql-connector>=4; extra == "databricks"
+requires-dist: numpy<3,>=1.23.2; extra == "databricks"
+requires-dist: pandas<4,>=1.5.3; extra == "databricks"
+requires-dist: pyarrow-hotfix>=0.4; extra == "databricks"
+requires-dist: pyarrow>=10.0.1; extra == "databricks"
+requires-dist: rich>=12.4.4; extra == "databricks"
+requires-dist: datafusion>=0.6; extra == "datafusion"
+requires-dist: numpy<3,>=1.23.2; extra == "datafusion"
+requires-dist: packaging>=21.3; extra == "datafusion"
+requires-dist: pandas<4,>=1.5.3; extra == "datafusion"
+requires-dist: pyarrow-hotfix>=0.4; extra == "datafusion"
+requires-dist: pyarrow>=10.0.1; extra == "datafusion"
+requires-dist: rich>=12.4.4; extra == "datafusion"
+requires-dist: black>=22.1.0; extra == "decompiler"
+requires-dist: deltalake>=0.9.0; extra == "deltalake"
+requires-dist: numpy<3,>=1.23.2; extra == "druid"
+requires-dist: pandas<4,>=1.5.3; extra == "druid"
+requires-dist: pyarrow-hotfix>=0.4; extra == "druid"
+requires-dist: pyarrow>=10.0.1; extra == "druid"
+requires-dist: pydruid>=0.6.7; extra == "druid"
+requires-dist: rich>=12.4.4; extra == "druid"
+requires-dist: duckdb!=1.3.0,>=0.10.3; extra == "duckdb"
+requires-dist: numpy<3,>=1.23.2; extra == "duckdb"
+requires-dist: packaging>=21.3; extra == "duckdb"
+requires-dist: pandas<4,>=1.5.3; extra == "duckdb"
+requires-dist: pyarrow-hotfix>=0.4; extra == "duckdb"
+requires-dist: pyarrow>=10.0.1; extra == "duckdb"
+requires-dist: rich>=12.4.4; extra == "duckdb"
+requires-dist: pins[gcs]>=0.8.3; extra == "examples"
+requires-dist: numpy<3,>=1.23.2; extra == "exasol"
+requires-dist: pandas<4,>=1.5.3; extra == "exasol"
+requires-dist: pyarrow-hotfix>=0.4; extra == "exasol"
+requires-dist: pyarrow>=10.0.1; extra == "exasol"
+requires-dist: pyexasol>=0.25.2; extra == "exasol"
+requires-dist: rich>=12.4.4; extra == "exasol"
+requires-dist: numpy<3,>=1.23.2; extra == "flink"
+requires-dist: pandas<4,>=1.5.3; extra == "flink"
+requires-dist: pyarrow-hotfix>=0.4; extra == "flink"
+requires-dist: pyarrow>=10.0.1; extra == "flink"
+requires-dist: rich>=12.4.4; extra == "flink"
+requires-dist: geoarrow-types>=0.2; extra == "geospatial"
+requires-dist: geopandas>=0.6; extra == "geospatial"
+requires-dist: pyproj>=3.3.0; extra == "geospatial"
+requires-dist: shapely>=2; extra == "geospatial"
+requires-dist: impyla>=0.17; extra == "impala"
+requires-dist: numpy<3,>=1.23.2; extra == "impala"
+requires-dist: pandas<4,>=1.5.3; extra == "impala"
+requires-dist: pyarrow-hotfix>=0.4; extra == "impala"
+requires-dist: pyarrow>=10.0.1; extra == "impala"
+requires-dist: rich>=12.4.4; extra == "impala"
+requires-dist: numpy<3,>=1.23.2; extra == "materialize"
+requires-dist: pandas<4,>=1.5.3; extra == "materialize"
+requires-dist: psycopg>=3.2.0; extra == "materialize"
+requires-dist: pyarrow-hotfix>=0.4; extra == "materialize"
+requires-dist: pyarrow>=10.0.1; extra == "materialize"
+requires-dist: rich>=12.4.4; extra == "materialize"
+requires-dist: numpy<3,>=1.23.2; extra == "mssql"
+requires-dist: pandas<4,>=1.5.3; extra == "mssql"
+requires-dist: pyarrow-hotfix>=0.4; extra == "mssql"
+requires-dist: pyarrow>=10.0.1; extra == "mssql"
+requires-dist: pyodbc>=4.0.39; extra == "mssql"
+requires-dist: rich>=12.4.4; extra == "mssql"
+requires-dist: mysqlclient>=2.2.4; extra == "mysql"
+requires-dist: numpy<3,>=1.23.2; extra == "mysql"
+requires-dist: pandas<4,>=1.5.3; extra == "mysql"
+requires-dist: pyarrow-hotfix>=0.4; extra == "mysql"
+requires-dist: pyarrow>=10.0.1; extra == "mysql"
+requires-dist: rich>=12.4.4; extra == "mysql"
+requires-dist: numpy<3,>=1.23.2; extra == "oracle"
+requires-dist: oracledb>=1.3.1; extra == "oracle"
+requires-dist: pandas<4,>=1.5.3; extra == "oracle"
+requires-dist: pyarrow-hotfix>=0.4; extra == "oracle"
+requires-dist: pyarrow>=10.0.1; extra == "oracle"
+requires-dist: rich>=12.4.4; extra == "oracle"
+requires-dist: numpy<3,>=1.23.2; extra == "polars"
+requires-dist: pandas<4,>=1.5.3; extra == "polars"
+requires-dist: polars>=1; extra == "polars"
+requires-dist: pyarrow-hotfix>=0.4; extra == "polars"
+requires-dist: pyarrow>=10.0.1; extra == "polars"
+requires-dist: rich>=12.4.4; extra == "polars"
+requires-dist: numpy<3,>=1.23.2; extra == "postgres"
+requires-dist: pandas<4,>=1.5.3; extra == "postgres"
+requires-dist: psycopg>=3.2.0; extra == "postgres"
+requires-dist: pyarrow-hotfix>=0.4; extra == "postgres"
+requires-dist: pyarrow>=10.0.1; extra == "postgres"
+requires-dist: rich>=12.4.4; extra == "postgres"
+requires-dist: numpy<3,>=1.23.2; extra == "pyspark"
+requires-dist: packaging>=21.3; extra == "pyspark"
+requires-dist: pandas<4,>=1.5.3; extra == "pyspark"
+requires-dist: pyarrow-hotfix>=0.4; extra == "pyspark"
+requires-dist: pyarrow>=10.0.1; extra == "pyspark"
+requires-dist: pyspark<4.1,>=3.5; extra == "pyspark"
+requires-dist: rich>=12.4.4; extra == "pyspark"
+requires-dist: numpy<3,>=1.23.2; extra == "risingwave"
+requires-dist: pandas<4,>=1.5.3; extra == "risingwave"
+requires-dist: psycopg2>=2.8.4; extra == "risingwave"
+requires-dist: pyarrow-hotfix>=0.4; extra == "risingwave"
+requires-dist: pyarrow>=10.0.1; extra == "risingwave"
+requires-dist: rich>=12.4.4; extra == "risingwave"
+requires-dist: numpy<3,>=1.23.2; extra == "singlestoredb"
+requires-dist: pandas<4,>=1.5.3; extra == "singlestoredb"
+requires-dist: parsimonious>=0.11.0; extra == "singlestoredb"
+requires-dist: pyarrow-hotfix>=0.4; extra == "singlestoredb"
+requires-dist: pyarrow>=10.0.1; extra == "singlestoredb"
+requires-dist: rich>=12.4.4; extra == "singlestoredb"
+requires-dist: singlestoredb>=1.0; extra == "singlestoredb"
+requires-dist: numpy<3,>=1.23.2; extra == "snowflake"
+requires-dist: pandas<4,>=1.5.3; extra == "snowflake"
+requires-dist: pyarrow-hotfix>=0.4; extra == "snowflake"
+requires-dist: pyarrow>=10.0.1; extra == "snowflake"
+requires-dist: rich>=12.4.4; extra == "snowflake"
+requires-dist: snowflake-connector-python!=3.3.0b1,>=3.0.2; extra == "snowflake"
+requires-dist: numpy<3,>=1.23.2; extra == "sqlite"
+requires-dist: packaging>=21.3; extra == "sqlite"
+requires-dist: pandas<4,>=1.5.3; extra == "sqlite"
+requires-dist: pyarrow-hotfix>=0.4; extra == "sqlite"
+requires-dist: pyarrow>=10.0.1; extra == "sqlite"
+requires-dist: regex>=2021.7.6; extra == "sqlite"
+requires-dist: rich>=12.4.4; extra == "sqlite"
+requires-dist: numpy<3,>=1.23.2; extra == "trino"
+requires-dist: pandas<4,>=1.5.3; extra == "trino"
+requires-dist: pyarrow-hotfix>=0.4; extra == "trino"
+requires-dist: pyarrow>=10.0.1; extra == "trino"
+requires-dist: rich>=12.4.4; extra == "trino"
+requires-dist: trino>=0.321; extra == "trino"
+requires-dist: graphviz>=0.16; extra == "visualization"
+requires-python: >=3.10
+project-url: Homepage, https://ibis-project.org
+project-url: Chat, https://ibis-project.zulipchat.com
+project-url: Repository, https://github.com/ibis-project/ibis
+project-url: Documentation, https://ibis-project.org
+project-url: Issues, https://github.com/ibis-project/ibis/issues
+project-url: Changelog, https://ibis-project.org/release_notes
+provides-extra: athena
+provides-extra: bigquery
+provides-extra: clickhouse
+provides-extra: databricks
+provides-extra: datafusion
+provides-extra: decompiler
+provides-extra: deltalake
+provides-extra: druid
+provides-extra: duckdb
+provides-extra: examples
+provides-extra: exasol
+provides-extra: flink
+provides-extra: geospatial
+provides-extra: impala
+provides-extra: materialize
+provides-extra: mssql
+provides-extra: mysql
+provides-extra: oracle
+provides-extra: polars
+provides-extra: postgres
+provides-extra: pyspark
+provides-extra: risingwave
+provides-extra: singlestoredb
+provides-extra: snowflake
+provides-extra: sqlite
+provides-extra: trino
+provides-extra: visualization
+

@@ -1,0 +1,35 @@
+metadata-version: 2.4
+name: emoji
+version: 2.16.0
+dynamic: license-file
+summary: Emoji for Python
+keywords: emoji
+author-email: Taehoon Kim <carpedm20@gmail.com>, Kevin Wurster <wursterk@gmail.com>
+license-file: LICENSE.txt
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Information Technology
+classifier: License :: OSI Approved :: BSD License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Programming Language :: Python
+classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+classifier: Topic :: Multimedia :: Graphics :: Presentation
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Typing :: Typed
+requires-dist: pytest>=7.4.4; extra == "dev"
+requires-dist: coverage; extra == "dev"
+requires-python: >=3.8
+project-url: homepage, https://github.com/carpedm20/emoji/
+project-url: repository, https://github.com/carpedm20/emoji/
+provides-extra: dev
+

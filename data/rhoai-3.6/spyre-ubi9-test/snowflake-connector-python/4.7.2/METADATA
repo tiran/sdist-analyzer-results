@@ -1,0 +1,89 @@
+metadata-version: 2.4
+name: snowflake-connector-python
+version: 4.7.2
+dynamic: license-file
+dynamic: requires-dist
+summary: Snowflake Connector for Python
+keywords: Snowflake db database cloud analytics warehouse
+home-page: https://www.snowflake.com/
+author: Snowflake, Inc
+author-email: snowflake-python-libraries-dl@snowflake.com
+license: Apache-2.0
+license-file: LICENSE.txt
+license-file: NOTICE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Environment :: Other Environment
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Education
+classifier: Intended Audience :: Information Technology
+classifier: Intended Audience :: System Administrators
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Free Threading :: 2 - Beta
+classifier: Programming Language :: SQL
+classifier: Topic :: Database
+classifier: Topic :: Scientific/Engineering :: Information Analysis
+classifier: Topic :: Software Development
+classifier: Topic :: Software Development :: Libraries
+classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: asn1crypto<2.0.0,>0.24.0
+requires-dist: cryptography>=46.0.5
+requires-dist: pyOpenSSL>=24.0.0
+requires-dist: pyjwt<3.0.0,>=2.10.1
+requires-dist: pytz
+requires-dist: requests<3.0.0,>=2.32.4
+requires-dist: packaging
+requires-dist: charset_normalizer<4,>=2
+requires-dist: idna<4,>=3.7
+requires-dist: certifi>=2024.7.4
+requires-dist: typing_extensions<5,>=4.3
+requires-dist: filelock<4,>=3.5
+requires-dist: sortedcontainers>=2.4.0
+requires-dist: platformdirs<5.0.0,>=2.6.0
+requires-dist: tomlkit
+requires-dist: boto3>=1.24
+requires-dist: botocore>=1.24
+requires-dist: boto3>=1.24; extra == "boto"
+requires-dist: botocore>=1.24; extra == "boto"
+requires-dist: azure-identity>=1.16; extra == "azure"
+requires-dist: Cython>=3.1; extra == "development"
+requires-dist: azure-identity>=1.16; extra == "development"
+requires-dist: coverage; extra == "development"
+requires-dist: mitmproxy>=12.0.0; (python_version >= "3.12" and python_version < "3.14") and extra == "development"
+requires-dist: more-itertools; extra == "development"
+requires-dist: numpy<=2.4.3; extra == "development"
+requires-dist: pendulum!=2.1.1; extra == "development"
+requires-dist: pexpect; extra == "development"
+requires-dist: pytest<7.5.0; extra == "development"
+requires-dist: pytest-asyncio; extra == "development"
+requires-dist: pytest-cov; extra == "development"
+requires-dist: pytest-rerunfailures<16.0; extra == "development"
+requires-dist: pytest-timeout; extra == "development"
+requires-dist: pytest-xdist; extra == "development"
+requires-dist: pytzdata; extra == "development"
+requires-dist: responses; extra == "development"
+requires-dist: pandas<3.0.0,>=1.0.0; python_version < "3.13" and extra == "pandas"
+requires-dist: pandas<3.0.0,>=2.1.2; python_version >= "3.13" and extra == "pandas"
+requires-dist: pyarrow<24,>=14.0.1; python_version >= "3.14" and extra == "pandas"
+requires-dist: pyarrow>=14.0.1; python_version < "3.14" and extra == "pandas"
+requires-dist: keyring<26.0.0,>=23.1.0; extra == "secure-local-storage"
+requires-python: >=3.10
+project-url: Documentation, https://docs.snowflake.com/en/user-guide/python-connector.html
+project-url: Source, https://github.com/snowflakedb/snowflake-connector-python
+project-url: Issues, https://github.com/snowflakedb/snowflake-connector-python/issues
+project-url: Changelog, https://github.com/snowflakedb/snowflake-connector-python/blob/main/DESCRIPTION.md
+provides-extra: boto
+provides-extra: azure
+provides-extra: development
+provides-extra: pandas
+provides-extra: secure-local-storage
+

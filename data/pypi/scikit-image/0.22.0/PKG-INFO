@@ -1,0 +1,110 @@
+metadata-version: 2.1
+name: scikit-image
+version: 0.22.0
+summary: Image processing in Python
+home-page: https://scikit-image.org
+maintainer-email: scikit-image developers <skimage-core@discuss.scientific-python.org>
+license: Files: *
+                 Copyright: 2009-2022 the scikit-image team
+                 License: BSD-3-Clause
+                 
+                 Files: doc/source/themes/scikit-image/layout.html
+                 Copyright: 2007-2010 the Sphinx team
+                 License: BSD-3-Clause
+                 
+                 Files: skimage/feature/_canny.py
+                        skimage/filters/edges.py
+                        skimage/filters/_rank_order.py
+                        skimage/morphology/_skeletonize.py
+                        skimage/morphology/tests/test_watershed.py
+                        skimage/morphology...
+classifier: Development Status :: 4 - Beta
+classifier: Environment :: Console
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: BSD License
+classifier: Programming Language :: C
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Topic :: Software Development :: Libraries
+classifier: Topic :: Scientific/Engineering
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: POSIX
+classifier: Operating System :: Unix
+classifier: Operating System :: MacOS
+requires-dist: numpy>=1.22
+requires-dist: scipy>=1.8
+requires-dist: networkx>=2.8
+requires-dist: pillow>=9.0.1
+requires-dist: imageio>=2.27
+requires-dist: tifffile>=2022.8.12
+requires-dist: packaging>=21
+requires-dist: lazy_loader>=0.3
+requires-dist: meson-python>=0.14; extra == "build"
+requires-dist: wheel; extra == "build"
+requires-dist: setuptools>=67; extra == "build"
+requires-dist: packaging>=21; extra == "build"
+requires-dist: ninja; extra == "build"
+requires-dist: Cython>=0.29.32; extra == "build"
+requires-dist: pythran; extra == "build"
+requires-dist: numpy>=1.22; extra == "build"
+requires-dist: spin==0.6; extra == "build"
+requires-dist: build; extra == "build"
+requires-dist: pooch>=1.6.0; extra == "data"
+requires-dist: pre-commit; extra == "developer"
+requires-dist: tomli; python_version < "3.11" and extra == "developer"
+requires-dist: sphinx>=7.2; extra == "docs"
+requires-dist: sphinx-gallery>=0.14; extra == "docs"
+requires-dist: numpydoc>=1.6; extra == "docs"
+requires-dist: sphinx-copybutton; extra == "docs"
+requires-dist: pytest-runner; extra == "docs"
+requires-dist: matplotlib>=3.5; extra == "docs"
+requires-dist: dask[array]>=2022.9.2; extra == "docs"
+requires-dist: pandas>=1.5; extra == "docs"
+requires-dist: seaborn>=0.11; extra == "docs"
+requires-dist: pooch>=1.6; extra == "docs"
+requires-dist: tifffile>=2022.8.12; extra == "docs"
+requires-dist: myst-parser; extra == "docs"
+requires-dist: ipywidgets; extra == "docs"
+requires-dist: ipykernel; extra == "docs"
+requires-dist: plotly>=5.10; extra == "docs"
+requires-dist: kaleido; extra == "docs"
+requires-dist: scikit-learn>=1.1; extra == "docs"
+requires-dist: sphinx_design>=0.5; extra == "docs"
+requires-dist: pydata-sphinx-theme>=0.14.1; extra == "docs"
+requires-dist: PyWavelets>=1.1.1; extra == "docs"
+requires-dist: SimpleITK; extra == "optional"
+requires-dist: astropy>=5.0; extra == "optional"
+requires-dist: cloudpickle>=0.2.1; extra == "optional"
+requires-dist: dask[array]>=2021.1.0; extra == "optional"
+requires-dist: matplotlib>=3.5; extra == "optional"
+requires-dist: pooch>=1.6.0; extra == "optional"
+requires-dist: pyamg; extra == "optional"
+requires-dist: PyWavelets>=1.1.1; extra == "optional"
+requires-dist: scikit-learn>=1.1; extra == "optional"
+requires-dist: asv; extra == "test"
+requires-dist: matplotlib>=3.5; extra == "test"
+requires-dist: numpydoc>=1.5; extra == "test"
+requires-dist: pooch>=1.6.0; extra == "test"
+requires-dist: pytest>=7.0; extra == "test"
+requires-dist: pytest-cov>=2.11.0; extra == "test"
+requires-dist: pytest-localserver; extra == "test"
+requires-dist: pytest-faulthandler; extra == "test"
+requires-python: >=3.9
+project-url: Homepage, https://scikit-image.org
+project-url: Documentation, https://scikit-image.org/docs/stable
+project-url: Source, https://github.com/scikit-image/scikit-image
+project-url: Download, https://pypi.org/project/scikit-image/#files
+project-url: Tracker, https://github.com/scikit-image/scikit-image/issues
+provides-extra: build
+provides-extra: data
+provides-extra: developer
+provides-extra: docs
+provides-extra: optional
+provides-extra: test
+

@@ -1,0 +1,77 @@
+metadata-version: 2.5
+name: panel
+version: 1.9.4
+summary: The powerful data exploration & web app framework for Python.
+author-email: HoloViz developers <developers@holoviz.org>
+maintainer-email: HoloViz developers <developers@holoviz.org>
+license: BSD
+license-file: LICENSE.txt
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Financial and Insurance Industry
+classifier: Intended Audience :: Healthcare Industry
+classifier: Intended Audience :: Information Technology
+classifier: Intended Audience :: Legal Industry
+classifier: Intended Audience :: Other Audience
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: BSD License
+classifier: Natural Language :: English
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Office/Business
+classifier: Topic :: Office/Business :: Financial
+classifier: Topic :: Scientific/Engineering
+classifier: Topic :: Scientific/Engineering :: Information Analysis
+classifier: Topic :: Scientific/Engineering :: Visualization
+classifier: Topic :: Software Development :: Libraries
+requires-dist: bokeh<3.10.0,>=3.7.0
+requires-dist: linkify-it-py
+requires-dist: markdown
+requires-dist: markdown-it-py
+requires-dist: mdit-py-plugins
+requires-dist: narwhals>=2
+requires-dist: nh3
+requires-dist: packaging
+requires-dist: pandas>=1.2
+requires-dist: panel-material-ui>=0.10.0
+requires-dist: param<3.0,>=2.1.0
+requires-dist: pyviz-comms>=2.0.0
+requires-dist: requests
+requires-dist: tqdm
+requires-dist: typing-extensions
+requires-dist: watchfiles; extra == "dev"
+requires-dist: bokeh-fastapi<0.2.0,>=0.1.5; extra == "fastapi"
+requires-dist: fastapi[standard]; extra == "fastapi"
+requires-dist: mypy; extra == "mypy"
+requires-dist: pandas-stubs; extra == "mypy"
+requires-dist: types-croniter; extra == "mypy"
+requires-dist: types-markdown; extra == "mypy"
+requires-dist: types-psutil; extra == "mypy"
+requires-dist: types-requests; extra == "mypy"
+requires-dist: types-tqdm; extra == "mypy"
+requires-dist: typing-extensions; extra == "mypy"
+requires-dist: holoviews>=1.18.0; extra == "recommended"
+requires-dist: jupyterlab; extra == "recommended"
+requires-dist: matplotlib; extra == "recommended"
+requires-dist: pillow; extra == "recommended"
+requires-dist: plotly; extra == "recommended"
+requires-dist: psutil; extra == "tests"
+requires-dist: pytest; extra == "tests"
+requires-dist: pytest-asyncio; extra == "tests"
+requires-dist: pytest-rerunfailures<16.0; extra == "tests"
+requires-dist: pytest-xdist; extra == "tests"
+requires-python: >=3.10
+project-url: Homepage, https://panel.holoviz.org
+project-url: Source, https://github.com/holoviz/panel
+project-url: HoloViz, https://holoviz.org/
+provides-extra: dev
+provides-extra: fastapi
+provides-extra: mypy
+provides-extra: recommended
+provides-extra: tests
+

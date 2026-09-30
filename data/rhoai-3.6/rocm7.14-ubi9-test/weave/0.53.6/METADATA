@@ -1,0 +1,172 @@
+metadata-version: 2.5
+name: weave
+version: 0.53.6
+summary: A toolkit for building composable interactive data driven applications.
+author-email: Shawn Lewis <shawn@wandb.com>, Tim Sweeney <tim@wandb.com>, Nick Peneranda <nick.penaranda@wandb.com>, Jeff Raubitschek <jeff@wandb.com>, Jamie Rasmussen <jamie.rasmussen@wandb.com>, Griffin Tarpenning <griffin.tarpenning@wandb.com>, Josiah Lee <josiah.lee@wandb.com>, Andrew Truong <andrew@wandb.com>, Niall McQuay <niall.mcquay@wandb.com>
+maintainer-email: W&B <support@wandb.com>
+license: Apache License
+                                            Version 2.0, January 2004
+                                         http://www.apache.org/licenses/
+                 
+                    TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+                 
+                    1. Definitions.
+                 
+                       "License" shall mean the terms and conditions for use, reproduction,
+                       and distribution as defined by Sections 1 through 9 of this document.
+                 
+                       "Licensor" shall mean the copyright owner or entity a...
+license-file: LICENSE
+classifier: Development Status :: 4 - Beta
+classifier: Environment :: Web Environment
+classifier: Framework :: Flask
+classifier: Framework :: Jupyter
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Topic :: Database :: Front-Ends
+classifier: Topic :: Office/Business :: Financial :: Spreadsheet
+classifier: Topic :: Scientific/Engineering :: Information Analysis
+classifier: Topic :: Scientific/Engineering :: Visualization
+classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+classifier: Topic :: Software Development :: Widget Sets
+requires-dist: cachetools>=6.2.4
+requires-dist: click
+requires-dist: diskcache-weave==5.6.3.post1
+requires-dist: gql[httpx]>=3.0.0
+requires-dist: jsonschema>=4.23.0
+requires-dist: opentelemetry-api>=1.28.0
+requires-dist: opentelemetry-exporter-otlp-proto-http>=1.28.0
+requires-dist: opentelemetry-sdk>=1.28.0
+requires-dist: packaging>=21.0
+requires-dist: polyfile-weave>=0.5.9
+requires-dist: pydantic>=2.0.0
+requires-dist: pyyaml>=6.0
+requires-dist: sentry-sdk<3.0.0,>=2.0.0
+requires-dist: tenacity!=8.4.0,>=8.3.0
+requires-dist: tzdata; platform_system == "Windows"
+requires-dist: anthropic>=0.18.0; extra == "anthropic"
+requires-dist: autogen-agentchat>=0.5.7; python_version >= "3.10" and extra == "autogen"
+requires-dist: boto3; extra == "bedrock"
+requires-dist: moto[bedrock]>=5.0.24; extra == "bedrock"
+requires-dist: cerebras-cloud-sdk; extra == "cerebras"
+requires-dist: claude-agent-sdk>=0.1.0; extra == "claude-agent-sdk"
+requires-dist: cohere>=5.13.5; extra == "cohere"
+requires-dist: crewai-tools>=0.38.0; (python_version >= "3.10" and python_version <= "3.13" and platform_python_implementation != "PyPy") and extra == "crewai"
+requires-dist: crewai<=0.108.0,>=0.100.1; (python_version >= "3.10" and python_version <= "3.13" and platform_python_implementation != "PyPy") and extra == "crewai"
+requires-dist: openai>=1.99.9; extra == "crewai"
+requires-dist: dspy>=3.0.0; python_version >= "3.10" and extra == "dspy"
+requires-dist: mcp[cli]<1.10.0,>=1.6.0; python_version >= "3.10" and extra == "fastmcp"
+requires-dist: gepa>=0.1.0; python_version >= "3.10" and extra == "gepa"
+requires-dist: google-genai<=1.23.0,>=1.0.0; python_version >= "3.10" and extra == "google-genai"
+requires-dist: pillow>=11.1.0; extra == "google-genai"
+requires-dist: groq>=0.13.0; extra == "groq"
+requires-dist: huggingface-hub>=0.28.1; extra == "huggingface"
+requires-dist: google-genai>=1.5.0; extra == "instructor"
+requires-dist: instructor<1.11.0,>=1.4.3; extra == "instructor"
+requires-dist: openai>=1.99.9; extra == "instructor"
+requires-dist: chromadb>=0.5.0; python_version >= "3.10" and extra == "langchain"
+requires-dist: google-cloud-iam; python_version >= "3.13" and extra == "langchain"
+requires-dist: langchain-anthropic>=0.3.15; python_version >= "3.10" and extra == "langchain"
+requires-dist: langchain-cohere>=0.4.5; python_version >= "3.10" and extra == "langchain"
+requires-dist: langchain-community>=0.2.1; python_version >= "3.10" and extra == "langchain"
+requires-dist: langchain-core>=0.2.1; python_version >= "3.10" and extra == "langchain"
+requires-dist: langchain-google-genai>=2.1.5; python_version >= "3.10" and extra == "langchain"
+requires-dist: langchain-google-vertexai>=2.0.24; (platform_python_implementation != "PyPy" and python_version >= "3.10") and extra == "langchain"
+requires-dist: langchain-litellm>=0.2.2; python_version >= "3.10" and extra == "langchain"
+requires-dist: langchain-openai>=0.1.7; python_version >= "3.10" and extra == "langchain"
+requires-dist: openai>=1.99.9; extra == "langchain"
+requires-dist: opentelemetry-exporter-otlp>=1.28.0; python_version >= "3.10" and extra == "langchain"
+requires-dist: pysqlite3; (platform_system == "Linux" and python_version >= "3.10") and extra == "langchain"
+requires-dist: langchain-core>=0.2.1; extra == "langchain-nvidia-ai-endpoints"
+requires-dist: langchain-nvidia-ai-endpoints; extra == "langchain-nvidia-ai-endpoints"
+requires-dist: litellm<1.82.7,>=1.36.1; extra == "litellm"
+requires-dist: openai>=1.99.9; extra == "litellm"
+requires-dist: llama-index>=0.10.35; extra == "llamaindex"
+requires-dist: openai>=1.99.9; extra == "llamaindex"
+requires-dist: mistralai>=1.0.0; extra == "mistral"
+requires-dist: modal; extra == "modal"
+requires-dist: python-dotenv; extra == "modal"
+requires-dist: notdiamond<1.4.0,>=1.3.0; platform_python_implementation != "PyPy" and extra == "notdiamond"
+requires-dist: pandas>=2.0.0; extra == "notdiamond"
+requires-dist: openai>=1.99.9; extra == "openai"
+requires-dist: openai-agents>=0.0.4; extra == "openai-agents"
+requires-dist: presidio-analyzer==2.2.357; python_version < "3.13" and extra == "presidio"
+requires-dist: presidio-anonymizer==2.2.357; python_version < "3.13" and extra == "presidio"
+requires-dist: rich; extra == "rich"
+requires-dist: huggingface-hub>=0.28.1; extra == "scorers"
+requires-dist: levenshtein>=0.26.0; extra == "scorers"
+requires-dist: litellm<1.82.7,>=1.58; extra == "scorers"
+requires-dist: numpy>1.21.0; extra == "scorers"
+requires-dist: pip>=20.0; extra == "scorers"
+requires-dist: presidio-analyzer>=2.2.0; extra == "scorers"
+requires-dist: presidio-anonymizer>=2.2.0; extra == "scorers"
+requires-dist: scikit-learn>=1.5.2; extra == "scorers"
+requires-dist: sentence-transformers>=3.3.1; extra == "scorers"
+requires-dist: sentencepiece>=0.2.0; extra == "scorers"
+requires-dist: torch>=2.4.1; extra == "scorers"
+requires-dist: transformers>=4.51.1; extra == "scorers"
+requires-dist: huggingface-hub<1.0.0,>=0.28.1; extra == "smolagents"
+requires-dist: litellm>=1.58; python_version >= "3.10" and extra == "smolagents"
+requires-dist: openai>=1.99.9; extra == "smolagents"
+requires-dist: smolagents<1.19.0,>=1.17.0; python_version >= "3.10" and extra == "smolagents"
+requires-dist: sqlalchemy>=2.0.38; extra == "smolagents"
+requires-dist: azure-identity<2.0.0,>=1.25.0; extra == "trace-server"
+requires-dist: azure-storage-blob<12.26.0,>=12.24.0; extra == "trace-server"
+requires-dist: boto3>=1.34.0; extra == "trace-server"
+requires-dist: emoji>=2.12.1; extra == "trace-server"
+requires-dist: google-cloud-storage>=2.7.0; extra == "trace-server"
+requires-dist: litellm<1.82.7,>=1.36.1; extra == "trace-server"
+requires-dist: openinference-semantic-conventions>=0.1.17; extra == "trace-server"
+requires-dist: opentelemetry-proto>=1.28.0; extra == "trace-server"
+requires-dist: opentelemetry-semantic-conventions-ai>=0.4.3; extra == "trace-server"
+requires-dist: redis>=5.0.0; extra == "trace-server"
+requires-dist: verdict>=0.2.3; (platform_python_implementation != "PyPy" and python_version < "3.13") and extra == "verdict"
+requires-dist: verifiers<0.1.13,>=0.1.3.post0; python_version >= "3.11" and extra == "verifiers"
+requires-dist: shapely<=2.0.6; platform_python_implementation != "PyPy" and extra == "vertexai"
+requires-dist: vertexai>=1.70.0; platform_python_implementation != "PyPy" and extra == "vertexai"
+requires-dist: moviepy<=1.0.3; extra == "video-support"
+requires-dist: wandb>=0.17.1; extra == "wandb"
+requires-python: >=3.10
+project-url: Company, https://wandb.com
+project-url: Documentation, https://docs.wandb.ai
+project-url: Changes, https://github.com/wandb/weave/releases
+project-url: Source Code, https://github.com/wandb/weave
+project-url: Issue Tracker, https://github.com/wandb/weave/issues/
+project-url: Twitter, https://twitter.com/weights_biases
+provides-extra: anthropic
+provides-extra: autogen
+provides-extra: bedrock
+provides-extra: cerebras
+provides-extra: claude-agent-sdk
+provides-extra: cohere
+provides-extra: crewai
+provides-extra: dspy
+provides-extra: fastmcp
+provides-extra: gepa
+provides-extra: google-genai
+provides-extra: groq
+provides-extra: huggingface
+provides-extra: instructor
+provides-extra: langchain
+provides-extra: langchain-nvidia-ai-endpoints
+provides-extra: litellm
+provides-extra: llamaindex
+provides-extra: mistral
+provides-extra: modal
+provides-extra: notdiamond
+provides-extra: openai
+provides-extra: openai-agents
+provides-extra: presidio
+provides-extra: rich
+provides-extra: scorers
+provides-extra: smolagents
+provides-extra: trace-server
+provides-extra: verdict
+provides-extra: verifiers
+provides-extra: vertexai
+provides-extra: video-support
+provides-extra: wandb
+

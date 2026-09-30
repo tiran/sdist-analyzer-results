@@ -1,0 +1,19 @@
+metadata-version: 2.4
+name: click
+version: 8.5.0
+summary: Composable command line interface toolkit
+maintainer-email: Pallets <contact@palletsprojects.com>
+license-expression: BSD-3-Clause
+license-file: LICENSE.txt
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Typing :: Typed
+requires-python: >=3.10
+project-url: Changes, https://click.palletsprojects.com/page/changes/
+project-url: Chat, https://discord.gg/pallets
+project-url: Documentation, https://click.palletsprojects.com/
+project-url: Donate, https://palletsprojects.com/donate
+project-url: Source, https://github.com/pallets/click/
+

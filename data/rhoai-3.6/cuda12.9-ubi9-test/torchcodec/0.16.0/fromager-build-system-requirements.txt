@@ -1,0 +1,4 @@
+setuptools
+pybind11
+torch
+scikit-build-core>=0.10

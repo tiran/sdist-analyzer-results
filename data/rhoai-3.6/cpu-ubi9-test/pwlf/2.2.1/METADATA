@@ -1,0 +1,28 @@
+metadata-version: 2.4
+name: pwlf
+version: 2.2.1
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: platform
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+platform: any
+summary: fit piecewise linear functions to data
+home-page: https://github.com/cjekel/piecewise_linear_fit_py
+author: Charles Jekel
+author-email: cjekel@gmail.com
+license: MIT License
+license-file: LICENSE
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python :: 3
+requires-dist: numpy>=1.14.0
+requires-dist: scipy>=1.2.0
+requires-dist: pyDOE>=0.3.8
+requires-python: >3.5
+

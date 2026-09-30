@@ -1,0 +1,45 @@
+metadata-version: 2.4
+name: pytest-xdist
+version: 3.3.1
+dynamic: license-file
+platform: linux
+platform: osx
+platform: win32
+summary: pytest xdist plugin for distributed testing, most importantly across multiple CPUs
+home-page: https://github.com/pytest-dev/pytest-xdist
+author: holger krekel and contributors
+author-email: pytest-dev@python.org,holger@merlinux.eu
+license: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Framework :: Pytest
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: POSIX
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Topic :: Software Development :: Testing
+classifier: Topic :: Software Development :: Quality Assurance
+classifier: Topic :: Utilities
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+requires-dist: execnet>=1.1
+requires-dist: pytest>=6.2.0
+requires-dist: filelock; extra == "testing"
+requires-dist: psutil>=3.0; extra == "psutil"
+requires-dist: setproctitle; extra == "setproctitle"
+requires-python: >=3.7
+project-url: Documentation, https://pytest-xdist.readthedocs.io/en/latest
+project-url: Changelog, https://pytest-xdist.readthedocs.io/en/latest/changelog.html
+project-url: Source, https://github.com/pytest-dev/pytest-xdist
+project-url: Tracker, https://github.com/pytest-dev/pytest-xdist/issues
+provides-extra: testing
+provides-extra: psutil
+provides-extra: setproctitle
+

@@ -1,0 +1,76 @@
+metadata-version: 2.4
+name: statsmodels
+version: 0.15.0
+summary: Statistical computations and models for Python
+keywords: statistics,econometrics,time series,regression,anova,statistical tests,linear models,generalized linear models,discrete choice models,robust linear models,mixed linear models,time series analysis,state space models,vector autoregression,volatility modeling,unit root tests,cointegration tests,nonparametric methods,multivariate statistics
+maintainer-email: statsmodels Developers <pystatsmodels@googlegroups.com>
+license-expression: BSD-3-Clause
+license-file: LICENSE.txt
+classifier: Development Status :: 4 - Beta
+classifier: Environment :: Console
+classifier: Programming Language :: Cython
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Operating System :: OS Independent
+classifier: Intended Audience :: End Users/Desktop
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: Natural Language :: English
+classifier: Topic :: Office/Business :: Financial
+classifier: Topic :: Scientific/Engineering
+requires-dist: numpy<3,>=1.23.5
+requires-dist: scipy!=1.9.2,>=1.8
+requires-dist: pandas!=2.1.0,>=1.4
+requires-dist: patsy>=0.5.6
+requires-dist: packaging>=21.3
+requires-dist: formulaic>=1.1.0
+requires-dist: pytest<10,>=8.4.1; extra == "test"
+requires-dist: pytest-randomly; extra == "test"
+requires-dist: pytest-run-parallel; extra == "test"
+requires-dist: pytest-xdist; extra == "test"
+requires-dist: pytest-cov; extra == "test"
+requires-dist: coverage[toml]; extra == "test"
+requires-dist: meson; extra == "test"
+requires-dist: ninja; sys_platform != "emscripten" and extra == "test"
+requires-dist: sphinx; extra == "doc"
+requires-dist: pandas!=2.1.0,>=2.2.2; extra == "doc"
+requires-dist: pydata-sphinx-theme; extra == "doc"
+requires-dist: jupyter; extra == "doc"
+requires-dist: notebook; extra == "doc"
+requires-dist: nbsphinx; extra == "doc"
+requires-dist: nbconvert; extra == "doc"
+requires-dist: pyyaml; extra == "doc"
+requires-dist: pandas-datareader; extra == "doc"
+requires-dist: simplegeneric; extra == "doc"
+requires-dist: seaborn; extra == "doc"
+requires-dist: numpydoc; extra == "doc"
+requires-dist: pymc; os_name != "nt" and extra == "doc"
+requires-dist: arviz; os_name != "nt" and extra == "doc"
+requires-dist: jinja2; extra == "doc"
+requires-dist: pickleshare; extra == "doc"
+requires-dist: pytest<10,>=8.4.1; extra == "doc"
+requires-dist: cython<4,>=3.0.10; extra == "dev"
+requires-dist: setuptools_scm~=9.0; extra == "dev"
+requires-dist: meson-python>=0.18.0; extra == "dev"
+requires-dist: meson; extra == "dev"
+requires-dist: ninja; extra == "dev"
+requires-dist: matplotlib>=3; extra == "dev"
+requires-dist: colorama; extra == "dev"
+requires-dist: joblib; extra == "dev"
+requires-dist: pywinpty; os_name == "nt" and extra == "dev"
+requires-dist: ruff; extra == "dev"
+requires-dist: polars>=1.0.0; extra == "polars"
+requires-python: >=3.10
+project-url: homepage, https://www.statsmodels.org
+project-url: documentation, https://www.statsmodels.org/stable/index.html
+project-url: repository, https://github.com/statsmodels/statsmodels
+project-url: changelog, https://bashtage.github.io/arch/changes.html
+project-url: bugtracker, https://github.com/statsmodels/statsmodels/issues
+provides-extra: test
+provides-extra: doc
+provides-extra: dev
+provides-extra: polars
+

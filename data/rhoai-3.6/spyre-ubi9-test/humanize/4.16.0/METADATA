@@ -1,0 +1,38 @@
+metadata-version: 2.5
+name: humanize
+version: 4.16.0
+summary: Python humanize utilities
+keywords: humanize time size
+author-email: Jason Moiron <jmoiron@jmoiron.net>
+maintainer: Hugo van Kemenade
+license-expression: MIT
+license-file: LICENCE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: 3.15
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Text Processing
+classifier: Topic :: Text Processing :: General
+requires-dist: freezegun; extra == "tests"
+requires-dist: pytest-benchmark; extra == "tests"
+requires-dist: pytest-codspeed; extra == "tests"
+requires-dist: pytest-cov; extra == "tests"
+requires-dist: pytest>=9; extra == "tests"
+requires-python: >=3.10
+project-url: Issue tracker, https://github.com/python-humanize/humanize/issues
+project-url: Release notes, https://github.com/python-humanize/humanize/releases
+project-url: Documentation, https://humanize.readthedocs.io/
+project-url: Funding, https://tidelift.com/subscription/pkg/pypi-humanize?utm_source=pypi-humanize&utm_medium=pypi
+project-url: Homepage, https://github.com/python-humanize/humanize
+project-url: Source, https://github.com/python-humanize/humanize
+provides-extra: tests
+

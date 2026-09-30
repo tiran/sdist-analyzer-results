@@ -1,0 +1,52 @@
+metadata-version: 2.4
+name: treescope
+version: 0.1.10
+summary: Treescope: An interactive HTML pretty-printer for ML research in IPython notebooks.
+keywords: 
+author-email: The Treescope Authors <treescope-dev@google.com>
+license-file: LICENSE
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Intended Audience :: Science/Research
+requires-dist: numpy>=1.25.2
+requires-dist: pylint>=2.6.0; extra == "dev"
+requires-dist: pyink>=24.3.0; extra == "dev"
+requires-dist: ipython; extra == "dev"
+requires-dist: jupyter; extra == "dev"
+requires-dist: pytest>=8.2.2; extra == "dev"
+requires-dist: pytype; extra == "dev"
+requires-dist: ipython; extra == "docs"
+requires-dist: sphinx<7.3.0,>=6.0.0; extra == "docs"
+requires-dist: sphinx-book-theme>=1.0.1; extra == "docs"
+requires-dist: sphinxcontrib-katex; extra == "docs"
+requires-dist: ipython>=8.8.0; extra == "docs"
+requires-dist: jax[cpu]>=0.4.23; extra == "docs"
+requires-dist: myst-nb>=1.0.0; extra == "docs"
+requires-dist: myst-parser>=3.0.1; extra == "docs"
+requires-dist: matplotlib>=3.5.0; extra == "docs"
+requires-dist: packaging==24.1; extra == "docs"
+requires-dist: palettable==3.3.3; extra == "docs"
+requires-dist: pandas==2.2.2; extra == "docs"
+requires-dist: plotly==5.22.0; extra == "docs"
+requires-dist: penzai~=0.2.4; extra == "docs"
+requires-dist: sphinx_contributors; extra == "docs"
+requires-dist: sphinx-hoverxref; extra == "docs"
+requires-dist: torch==2.3.1; extra == "docs"
+requires-dist: ipython; extra == "notebook"
+requires-dist: palettable; extra == "notebook"
+requires-dist: jax>=0.4.23; extra == "notebook"
+requires-dist: absl-py>=1.4.0; extra == "test"
+requires-dist: jax>=0.4.23; extra == "test"
+requires-dist: pytest>=8.2.2; extra == "test"
+requires-dist: torch>=2.0.0; extra == "test"
+requires-dist: pydantic>=2.0.0; extra == "test"
+requires-dist: omegaconf>=2.0.0; extra == "test"
+requires-python: >=3.10
+project-url: homepage, https://github.com/google-deepmind/treescope
+project-url: repository, https://github.com/google-deepmind/treescope
+provides-extra: dev
+provides-extra: docs
+provides-extra: notebook
+provides-extra: test
+

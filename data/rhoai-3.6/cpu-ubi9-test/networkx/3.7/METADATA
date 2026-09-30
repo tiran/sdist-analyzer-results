@@ -1,0 +1,83 @@
+metadata-version: 2.4
+name: networkx
+version: 3.7
+dynamic: license-file
+platform: Linux
+platform: Mac OSX
+platform: Windows
+platform: Unix
+summary: Python package for creating and manipulating graphs and networks
+keywords: Networks,Graph Theory,Mathematics,network,graph,discrete mathematics,math
+author-email: Aric Hagberg <hagberg@lanl.gov>
+maintainer-email: NetworkX Developers <networkx-discuss@googlegroups.com>
+license-expression: BSD-3-Clause
+license-file: LICENSE.txt
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: 3.15
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+classifier: Topic :: Scientific/Engineering :: Information Analysis
+classifier: Topic :: Scientific/Engineering :: Mathematics
+classifier: Topic :: Scientific/Engineering :: Physics
+requires-dist: asv>=0.6.5; extra == "benchmarking"
+requires-dist: py-rattler<0.22,>=0.21; extra == "benchmarking"
+requires-dist: virtualenv; extra == "benchmarking"
+requires-dist: numpy>=2.2; extra == "default"
+requires-dist: scipy>=1.15; extra == "default"
+requires-dist: matplotlib>=3.10; extra == "default"
+requires-dist: pandas>=2.3; extra == "default"
+requires-dist: pre-commit>=4.1; extra == "developer"
+requires-dist: mypy>=1.15; extra == "developer"
+requires-dist: sphinx>=8.0; extra == "doc"
+requires-dist: pydata-sphinx-theme>=0.16; extra == "doc"
+requires-dist: sphinx-gallery>=0.18; extra == "doc"
+requires-dist: numpydoc>=1.8.0; extra == "doc"
+requires-dist: pillow>=10; extra == "doc"
+requires-dist: texext>=0.6.7; extra == "doc"
+requires-dist: myst-nb>=1.1; extra == "doc"
+requires-dist: intersphinx-registry; extra == "doc"
+requires-dist: osmnx>=2.0.0; extra == "example"
+requires-dist: momepy>=0.7.2; extra == "example"
+requires-dist: contextily>=1.6; extra == "example"
+requires-dist: seaborn>=0.13; extra == "example"
+requires-dist: cairocffi>=1.7; extra == "example"
+requires-dist: igraph>=0.11; extra == "example"
+requires-dist: scikit-learn>=1.6; extra == "example"
+requires-dist: iplotx>=0.9.0; extra == "example"
+requires-dist: hiveplotlib>=0.28; extra == "example"
+requires-dist: lxml>=4.6; extra == "extra"
+requires-dist: pygraphviz>=2.0; extra == "extra"
+requires-dist: pydot>=3.0.1; extra == "extra"
+requires-dist: sympy>=1.10; extra == "extra"
+requires-dist: build>=0.10; extra == "release"
+requires-dist: twine>=4.0; extra == "release"
+requires-dist: wheel>=0.40; extra == "release"
+requires-dist: changelist==0.5; extra == "release"
+requires-dist: pytest>=7.2; extra == "test"
+requires-dist: pytest-cov>=4.0; extra == "test"
+requires-dist: pytest-xdist>=3.0; extra == "test"
+requires-dist: pytest-mpl; extra == "test-extras"
+requires-dist: pytest-randomly; extra == "test-extras"
+requires-python: !=3.14.1,>=3.12
+project-url: Homepage, https://networkx.org/
+project-url: Bug Tracker, https://github.com/networkx/networkx/issues
+project-url: Documentation, https://networkx.org/documentation/stable/
+project-url: Source Code, https://github.com/networkx/networkx
+provides-extra: benchmarking
+provides-extra: default
+provides-extra: developer
+provides-extra: doc
+provides-extra: example
+provides-extra: extra
+provides-extra: release
+provides-extra: test
+provides-extra: test-extras
+

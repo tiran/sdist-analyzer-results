@@ -1,0 +1,49 @@
+metadata-version: 2.5
+name: data-designer-engine
+version: 0.9.2
+summary: Generation engine for DataDesigner synthetic data generation
+license-expression: Apache-2.0
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+requires-dist: anyascii<1,>=0.3.3
+requires-dist: asciichartpy<2,>=1.5.25
+requires-dist: chardet<6,>=3.0.2
+requires-dist: cryptography<=49,>=48.0.1
+requires-dist: data-designer-config==0.9.2
+requires-dist: duckdb<2,>=1.5.0
+requires-dist: faker<21,>=20.1.0
+requires-dist: fsspec<2026,>=2025.3.0
+requires-dist: httpx-retries<1,>=0.4.2
+requires-dist: httpx<1,>=0.27.2
+requires-dist: huggingface-hub<2,>=1.0.1
+requires-dist: jinja2<4,>=3.1.6
+requires-dist: json-repair<1,>=0.48.0
+requires-dist: jsonpath-rust-bindings<2,>=1.0
+requires-dist: jsonschema<5,>=4.0.0
+requires-dist: lxml<7,>=6.1.0
+requires-dist: marko<3,>=2.1.2
+requires-dist: mcp<2,>=1.29.0
+requires-dist: networkx<4,>=3.0
+requires-dist: numpy<3,>=1.23.5
+requires-dist: pandas<3,>=2.3.3
+requires-dist: pyarrow<25,>=24
+requires-dist: pydantic<3,>=2.9.2
+requires-dist: pyjwt[crypto]<3,>=2.13.0
+requires-dist: python-multipart<1,>=0.0.32
+requires-dist: rich<15,>=13.7.1
+requires-dist: ruff<1,>=0.14.10
+requires-dist: scipy<2,>=1.11.0
+requires-dist: sqlfluff<5,>=4.1.0
+requires-dist: starlette<2,>=1.2.0
+requires-dist: tiktoken<1,>=0.8.0
+requires-dist: wcwidth<1,>=0.2.13
+requires-python: >=3.10
+

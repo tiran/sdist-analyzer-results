@@ -1,0 +1,56 @@
+metadata-version: 2.4
+name: lxml
+version: 6.1.3
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: maintainer
+dynamic: maintainer-email
+dynamic: project-url
+dynamic: provides-extra
+dynamic: requires-python
+dynamic: summary
+summary: Powerful and Pythonic XML processing library combining libxml2/libxslt with the ElementTree API.
+home-page: https://lxml.de/
+author: lxml dev team
+author-email: lxml@lxml.de
+maintainer: lxml dev team
+maintainer-email: lxml@lxml.de
+license: BSD-3-Clause
+license-file: LICENSE.txt
+license-file: LICENSES.txt
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Information Technology
+classifier: Programming Language :: Cython
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: 3.15
+classifier: Programming Language :: C
+classifier: Operating System :: OS Independent
+classifier: Topic :: Text Processing :: Markup :: HTML
+classifier: Topic :: Text Processing :: Markup :: XML
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: cssselect>=0.7; extra == "cssselect"
+requires-dist: html5lib; extra == "html5"
+requires-dist: BeautifulSoup4; extra == "htmlsoup"
+requires-dist: lxml_html_clean; extra == "html-clean"
+requires-python: >=3.8
+project-url: Source, https://github.com/lxml/lxml
+project-url: Bug Tracker, https://bugs.launchpad.net/lxml
+provides-extra: source
+provides-extra: cssselect
+provides-extra: html5
+provides-extra: htmlsoup
+provides-extra: html-clean
+

@@ -1,60 +1,63 @@
-Total unique packages: 1486
-Total unique build dependencies: 131
+Total unique packages: 1643
+Total unique build dependencies: 140
 
 Top build dependencies by usage count:
-   912x  setuptools
-   337x  hatchling
-   212x  wheel
-   157x  setuptools-scm
-    77x  flit-core
-    76x  poetry-core
-    66x  cython
-    57x  hatch-vcs
-    48x  maturin
-    43x  numpy
-    35x  packaging
-    28x  pybind11
-    27x  hatch-jupyter-builder
-    27x  pdm-backend
-    24x  scikit-build-core
-    23x  hatch-fancy-pypi-readme
-    23x  torch
-    21x  jupyterlab
-    19x  hatch-nodejs-version
-    18x  uv-build
-    17x  uv-dynamic-versioning
-    15x  patchelf
-    13x  build
-    13x  ninja
-    11x  meson-python
+   996x  setuptools
+   400x  hatchling
+   237x  wheel
+   173x  setuptools-scm
+    84x  flit-core
+    82x  poetry-core
+    70x  cython
+    68x  hatch-vcs
+    54x  maturin
+    50x  numpy
+    39x  packaging
+    33x  hatch-jupyter-builder
+    33x  pybind11
+    31x  pdm-backend
+    29x  scikit-build-core
+    25x  torch
+    24x  hatch-fancy-pypi-readme
+    24x  hatch-nodejs-version
+    24x  jupyterlab
+    22x  uv-build
+    22x  uv-dynamic-versioning
+    19x  patchelf
+    15x  meson-python
+    14x  build
+    14x  ninja
+    10x  jupyter-builder
+     9x  cmake
      9x  setuptools-rust
      7x  cffi
-     6x  cmake
      6x  coherent-licensed
-     6x  jupyter-builder
      6x  jupyter-packaging
+     6x  nanobind
      6x  pathspec
      6x  pluggy
      6x  trove-classifiers
+     5x  pip
+     5x  pyyaml
+     5x  setuptools-git-versioning
      5x  typing-extensions
      4x  apache-tvm-ffi
      4x  filelock
-     4x  nanobind
-     4x  pip
+     4x  meson
      4x  pkgconfig
-     4x  pyyaml
-     4x  setuptools-git-versioning
+     4x  requests
+     4x  scipy
+     4x  tomli
+     4x  tomlkit
      4x  versioneer
      3x  cymem
      3x  expandvars
      3x  hatch-requirements-txt
-     3x  meson
      3x  murmurhash
      3x  pbr
      3x  pytest-runner
-     3x  requests
      3x  scikit-build
-     3x  scipy
+     3x  toml
      3x  vcs-versioning
      2x  click
      2x  docutils
@@ -68,29 +71,35 @@ Top build dependencies by usage count:
      2x  preshed
      2x  psutil
      2x  pyproject-metadata
+     2x  pytest
      2x  pythran
-     2x  tomli
      2x  tqdm
+     2x  types-pyyaml
      1x  aotriton
      1x  ast-serialize
      1x  babel
      1x  blis
+     1x  bokeh
      1x  calver
      1x  changelog-chug
      1x  cibuildwheel
      1x  cmdstanpy
      1x  colorama
      1x  cppy
+     1x  cuda-bindings
+     1x  cuda-pathfinder
      1x  cuda-python
      1x  cysignals
      1x  delocate
      1x  flashinfer-cubin
      1x  flydsl
+     1x  future
      1x  gitdb
      1x  gitpython
      1x  greenlet
      1x  hatch
      1x  hatch-build-scripts
+     1x  hatch-mypyc
      1x  iniconfig
      1x  jupyter
      1x  jupyter-client
@@ -98,14 +107,17 @@ Top build dependencies by usage count:
      1x  libcst
      1x  librt
      1x  markdown
+     1x  ml-dtypes
      1x  more-itertools
      1x  mypy
      1x  mypy-extensions
      1x  nose
      1x  nvidia-cudnn-frontend
+     1x  nvidia-cutlass-dsl
      1x  nvidia-ml-py
      1x  oldest-supported-numpy
      1x  ordered-set
+     1x  param
      1x  pkginfo
      1x  poetry
      1x  protobuf
@@ -116,7 +128,7 @@ Top build dependencies by usage count:
      1x  pycparser
      1x  pynpm
      1x  pynvml
-     1x  pytest
+     1x  pyviz-comms
      1x  semver
      1x  six
      1x  smmap
@@ -124,36 +136,35 @@ Top build dependencies by usage count:
      1x  standard-distutils
      1x  tabulate
      1x  thinc
-     1x  toml
-     1x  tomlkit
      1x  tree-sitter
      1x  twine
      1x  types-psutil
-     1x  types-pyyaml
      1x  types-setuptools
      1x  versioningit
      1x  z3-solver
 
-Build dependencies with <= 5 dependents (97 of 131):
+Build dependencies with <= 5 dependents (105 of 140):
+  pip (5): jupyter-resource-usage, opencv-python, opencv-python-headless, ray, tensorstore
+  pyyaml (5): aotriton, model-index, nixl-cu12, nixl-cu13, torch
+  setuptools-git-versioning (5): bokeh, guidellm, hs-connectors, speculators, toolz
   typing-extensions (5): mypy, pydantic-core, setuptools-scm, torch, wandb
   apache-tvm-ffi (4): flashinfer-jit-cache, flashinfer-python, torch-c-dlpack-ext, xgrammar
   filelock (4): aotriton, torch, torchao, vllm
-  nanobind (4): flydsl, onnx, shap, soxr
-  pip (4): jupyter-resource-usage, opencv-python, opencv-python-headless, ray
+  meson (4): contourpy, meson-python, numcodecs, pandas
   pkgconfig (4): aiohttp, brotli, h5py, lz4
-  pyyaml (4): aotriton, model-index, nixl-cu12, torch
-  setuptools-git-versioning (4): bokeh, guidellm, speculators, toolz
+  requests (4): flashinfer-jit-cache, flashinfer-python, panel, torch
+  scipy (4): cvxpy, scikit-learn, scikit-network, statsmodels
+  tomli (4): cassandra-driver, fastapi-mcp, pennylane-lightning, pymssql
+  tomlkit (4): apache-airflow, apache-airflow-core, apache-airflow-task-sdk, hatchling
   versioneer (4): donfig, pandas, partd, pyogrio
   cymem (3): preshed, spacy, thinc
   expandvars (3): frozenlist, propcache, yarl
   hatch-requirements-txt (3): gradio, gradio-client, pymongo
-  meson (3): contourpy, meson-python, pandas
   murmurhash (3): preshed, spacy, thinc
   pbr (3): lockfile, munch, stevedore
   pytest-runner (3): lomond, rfc3986-validator, scikit-network
-  requests (3): flashinfer-jit-cache, flashinfer-python, torch
   scikit-build (3): ninja, opencv-python, opencv-python-headless
-  scipy (3): scikit-learn, scikit-network, statsmodels
+  toml (3): c2pa-python, scikit-base, thriftpy2
   vcs-versioning (3): amd-aiter, pymilvus, setuptools-scm
   click (2): flashinfer-python, model-index
   docutils (2): changelog-chug, python-daemon
@@ -167,29 +178,35 @@ Build dependencies with <= 5 dependents (97 of 131):
   preshed (2): spacy, thinc
   psutil (2): amd-aiter, flash-attn
   pyproject-metadata (2): meson-python, numpy
+  pytest (2): nixl-cu12, nixl-cu13
   pythran (2): scikit-image, scipy
-  tomli (2): cassandra-driver, pymssql
   tqdm (2): flashinfer-jit-cache, flashinfer-python
+  types-pyyaml (2): nixl-cu12, nixl-cu13
   aotriton (1): torch
   ast-serialize (1): mypy
   babel (1): pynpm
   blis (1): thinc
+  bokeh (1): panel
   calver (1): trove-classifiers
   changelog-chug (1): python-daemon
   cibuildwheel (1): docling-parse
   cmdstanpy (1): prophet
   colorama (1): bokeh
   cppy (1): kiwisolver
+  cuda-bindings (1): cuda-core
+  cuda-pathfinder (1): cuda-core
   cuda-python (1): flashinfer-python
   cysignals (1): tesserocr
   delocate (1): docling-parse
   flashinfer-cubin (1): flashinfer-jit-cache
   flydsl (1): amd-aiter
+  future (1): junitparser
   gitdb (1): apache-airflow-core
   gitpython (1): apache-airflow-core
   greenlet (1): gevent
   hatch (1): bqscales
   hatch-build-scripts (1): bqscales
+  hatch-mypyc (1): isort
   iniconfig (1): aotriton
   jupyter (1): pydeck
   jupyter-client (1): ipykernel
@@ -197,14 +214,17 @@ Build dependencies with <= 5 dependents (97 of 131):
   libcst (1): pyarrow
   librt (1): mypy
   markdown (1): model-index
+  ml-dtypes (1): tensorstore
   more-itertools (1): monai
   mypy (1): pytokens
   mypy-extensions (1): mypy
   nose (1): annoy
   nvidia-cudnn-frontend (1): flashinfer-python
+  nvidia-cutlass-dsl (1): flashinfer-jit-cache
   nvidia-ml-py (1): flashinfer-jit-cache
   oldest-supported-numpy (1): pandas
   ordered-set (1): model-index
+  param (1): panel
   pkginfo (1): google-genai
   poetry (1): pysnow
   protobuf (1): onnx
@@ -215,7 +235,7 @@ Build dependencies with <= 5 dependents (97 of 131):
   pycparser (1): cmarkgfm
   pynpm (1): ipyvuetify
   pynvml (1): flashinfer-python
-  pytest (1): nixl-cu12
+  pyviz-comms (1): panel
   semver (1): changelog-chug
   six (1): torch
   smmap (1): apache-airflow-core
@@ -223,12 +243,9 @@ Build dependencies with <= 5 dependents (97 of 131):
   standard-distutils (1): pymssql
   tabulate (1): flashinfer-python
   thinc (1): spacy
-  toml (1): scikit-base
-  tomlkit (1): hatchling
   tree-sitter (1): tree-sitter-languages
   twine (1): google-genai
   types-psutil (1): mypy
-  types-pyyaml (1): nixl-cu12
   types-setuptools (1): mypy
   versioningit (1): altair
   z3-solver (1): tilelang

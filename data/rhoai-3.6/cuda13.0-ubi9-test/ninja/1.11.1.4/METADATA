@@ -1,0 +1,28 @@
+metadata-version: 2.4
+name: ninja
+version: 1.11.1.4
+dynamic: license-file
+summary: Ninja is a small build system with a focus on speed
+keywords: build,c++,cross-compilation,cross-platform,fortran,ninja
+author-email: Jean-Christophe Fillion-Robin <scikit-build@googlegroups.com>, Henry Schreiner <henryfs@princeton.edu>
+license-file: LICENSE_Apache_20
+license-file: AUTHORS.rst
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Apache Software License
+classifier: License :: OSI Approved :: BSD License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: C
+classifier: Programming Language :: C++
+classifier: Programming Language :: Fortran
+classifier: Programming Language :: Python
+classifier: Topic :: Software Development :: Build Tools
+classifier: Typing :: Typed
+requires-python: >=3.7
+project-url: Bug Tracker, https://github.com/scikit-build/ninja-python-distributions/issues
+project-url: Documentation, https://github.com/scikit-build/ninja-python-distributions#readme
+project-url: Download, https://github.com/ninja-build/ninja/releases
+project-url: Homepage, http://ninja-build.org/
+project-url: Mailing list, https://groups.google.com/forum/#!forum/scikit-build
+project-url: Source Code, https://github.com/scikit-build/ninja-python-distributions
+

@@ -1,0 +1,12 @@
+metadata-version: 2.4
+name: nixl-cu12
+version: 1.4.1
+summary: NIXL Python API
+author-email: NIXL Developers <nixl-developers@nvidia.com>
+license-expression: MIT AND Apache-2.0
+license-file: LICENSE
+license-file: licenses/NVIDIA-proprietary-LICENSE.txt
+requires-dist: torch
+requires-dist: numpy
+requires-python: >=3.10
+

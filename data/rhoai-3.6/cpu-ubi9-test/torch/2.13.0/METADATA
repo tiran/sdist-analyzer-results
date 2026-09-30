@@ -1,0 +1,146 @@
+metadata-version: 2.4
+name: torch
+version: 2.13.0
+dynamic: license-file
+dynamic: requires-dist
+summary: Tensors and Dynamic neural networks in Python with strong GPU acceleration
+keywords: pytorch,machine learning
+author-email: PyTorch Team <packages@pytorch.org>
+license-expression: Apache-2.0 AND Apache-2.0 WITH LLVM-exception AND BSD-2-Clause AND BSD-3-Clause AND BSL-1.0 AND MIT
+license-file: LICENSE
+license-file: third_party/FP16/LICENSE
+license-file: third_party/FXdiv/LICENSE
+license-file: third_party/NNPACK/LICENSE
+license-file: third_party/XNNPACK/LICENSE
+license-file: third_party/aiter/3rdparty/composable_kernel/LICENSE
+license-file: third_party/aiter/LICENSE
+license-file: third_party/benchmark/LICENSE
+license-file: third_party/composable_kernel/LICENSE
+license-file: third_party/cpp-httplib/LICENSE
+license-file: third_party/cpuinfo/LICENSE
+license-file: third_party/cpuinfo/deps/clog/LICENSE
+license-file: third_party/fbgemm/LICENSE
+license-file: third_party/fbgemm/external/composable_kernel/LICENSE
+license-file: third_party/fbgemm/external/cpuinfo/LICENSE
+license-file: third_party/fbgemm/external/cpuinfo/deps/clog/LICENSE
+license-file: third_party/fbgemm/external/googletest/LICENSE
+license-file: third_party/fbgemm/fbgemm_gpu/experimental/hstu/LICENSE
+license-file: third_party/fbgemm/fbgemm_gpu/src/quantize_ops/mx/LICENSE
+license-file: third_party/fbgemm/fbgemm_gpu/test/quantize/mx/LICENSE
+license-file: third_party/flash-attention/LICENSE
+license-file: third_party/flash-attention/csrc/composable_kernel/LICENSE
+license-file: third_party/flash-attention/flash_attn/cute/LICENSE
+license-file: third_party/flash-attention/third_party/aiter/3rdparty/composable_kernel/LICENSE
+license-file: third_party/flash-attention/third_party/aiter/LICENSE
+license-file: third_party/flatbuffers/LICENSE
+license-file: third_party/flatbuffers/dart/LICENSE
+license-file: third_party/flatbuffers/swift/LICENSE
+license-file: third_party/fmt/LICENSE
+license-file: third_party/gemmlowp/gemmlowp/LICENSE
+license-file: third_party/gloo/LICENSE
+license-file: third_party/googletest/LICENSE
+license-file: third_party/ideep/LICENSE
+license-file: third_party/ideep/mkl-dnn/LICENSE
+license-file: third_party/ideep/mkl-dnn/third_party/gtest/LICENSE
+license-file: third_party/ideep/mkl-dnn/third_party/opencl/LICENSE
+license-file: third_party/kineto/LICENSE
+license-file: third_party/kineto/libkineto/third_party/dynolog/LICENSE
+license-file: third_party/kineto/libkineto/third_party/dynolog/third_party/DCGM/LICENSE
+license-file: third_party/kineto/libkineto/third_party/dynolog/third_party/cpr/LICENSE
+license-file: third_party/kineto/libkineto/third_party/dynolog/third_party/cpr/test/LICENSE
+license-file: third_party/kineto/libkineto/third_party/dynolog/third_party/googletest/LICENSE
+license-file: third_party/kineto/libkineto/third_party/dynolog/third_party/json/third_party/cpplint/LICENSE
+license-file: third_party/kineto/libkineto/third_party/dynolog/third_party/pfs/LICENSE
+license-file: third_party/kineto/libkineto/third_party/dynolog/third_party/prometheus-cpp/3rdparty/civetweb/examples/rest/cJSON/LICENSE
+license-file: third_party/kineto/libkineto/third_party/dynolog/third_party/prometheus-cpp/3rdparty/googletest/LICENSE
+license-file: third_party/kineto/libkineto/third_party/dynolog/third_party/prometheus-cpp/3rdparty/googletest/googlemock/scripts/generator/LICENSE
+license-file: third_party/kineto/libkineto/third_party/dynolog/third_party/prometheus-cpp/LICENSE
+license-file: third_party/kineto/libkineto/third_party/fmt/LICENSE
+license-file: third_party/kineto/libkineto/third_party/googletest/LICENSE
+license-file: third_party/mimalloc/LICENSE
+license-file: third_party/miniz-3.0.2/LICENSE
+license-file: third_party/mslk/LICENSE
+license-file: third_party/mslk/external/composable_kernel/LICENSE
+license-file: third_party/mslk/external/googletest/LICENSE
+license-file: third_party/mslk/mslk/attention/flash_attn/LICENSE
+license-file: third_party/onnx/LICENSE
+license-file: third_party/onnx/third_party/pybind11/LICENSE
+license-file: third_party/protobuf/LICENSE
+license-file: third_party/protobuf/third_party/benchmark/LICENSE
+license-file: third_party/protobuf/third_party/googletest/LICENSE
+license-file: third_party/protobuf/third_party/googletest/googlemock/LICENSE
+license-file: third_party/protobuf/third_party/googletest/googlemock/scripts/generator/LICENSE
+license-file: third_party/protobuf/third_party/googletest/googletest/LICENSE
+license-file: third_party/psimd/LICENSE
+license-file: third_party/pthreadpool/LICENSE
+license-file: third_party/pybind11/LICENSE
+license-file: third_party/six/LICENSE
+license-file: third_party/tensorpipe/third_party/googletest/LICENSE
+license-file: third_party/tensorpipe/third_party/googletest/googlemock/LICENSE
+license-file: third_party/tensorpipe/third_party/googletest/googlemock/scripts/generator/LICENSE
+license-file: third_party/tensorpipe/third_party/googletest/googletest/LICENSE
+license-file: third_party/tensorpipe/third_party/libnop/LICENSE
+license-file: third_party/tensorpipe/third_party/libuv/LICENSE
+license-file: third_party/tensorpipe/third_party/pybind11/LICENSE
+license-file: third_party/NVTX/LICENSE.txt
+license-file: third_party/NVTX/docs/LICENSE.txt
+license-file: third_party/NVTX/python/LICENSE.txt
+license-file: third_party/VulkanMemoryAllocator/LICENSE.txt
+license-file: third_party/cudnn_frontend/LICENSE.txt
+license-file: third_party/cutlass/LICENSE.txt
+license-file: third_party/cutlass/python/LICENSE.txt
+license-file: third_party/fbgemm/external/cutlass/LICENSE.txt
+license-file: third_party/fbgemm/external/cutlass/python/LICENSE.txt
+license-file: third_party/fbgemm/external/hipify_torch/LICENSE.txt
+license-file: third_party/flash-attention/csrc/cutlass/LICENSE.txt
+license-file: third_party/flash-attention/csrc/cutlass/python/LICENSE.txt
+license-file: third_party/kineto/libkineto/third_party/dynolog/third_party/DCGM/testing/python3/libs_3rdparty/colorama/LICENSE.txt
+license-file: third_party/kineto/libkineto/third_party/dynolog/third_party/json/test/thirdparty/doctest/LICENSE.txt
+license-file: third_party/kineto/libkineto/third_party/dynolog/third_party/prometheus-cpp/3rdparty/civetweb/src/third_party/duktape-1.5.2/LICENSE.txt
+license-file: third_party/kineto/libkineto/third_party/dynolog/third_party/prometheus-cpp/3rdparty/civetweb/src/third_party/duktape-1.8.0/LICENSE.txt
+license-file: third_party/llvm-openmp/LICENSE.txt
+license-file: third_party/mslk/external/cutlass/LICENSE.txt
+license-file: third_party/mslk/external/cutlass/python/LICENSE.txt
+license-file: third_party/mslk/external/hipify_torch/LICENSE.txt
+license-file: third_party/sleef/LICENSE.txt
+license-file: third_party/tensorpipe/LICENSE.txt
+license-file: third_party/kineto/libkineto/third_party/dynolog/third_party/fmt/LICENSE.rst
+license-file: third_party/python-peachpy/LICENSE.rst
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Education
+classifier: Intended Audience :: Science/Research
+classifier: Topic :: Scientific/Engineering
+classifier: Topic :: Scientific/Engineering :: Mathematics
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+classifier: Topic :: Software Development
+classifier: Topic :: Software Development :: Libraries
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Programming Language :: C++
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: 3.15
+requires-dist: filelock
+requires-dist: typing-extensions>=4.10.0
+requires-dist: setuptools>=77.0.3
+requires-dist: sympy>=1.13.3
+requires-dist: networkx>=2.5.1
+requires-dist: jinja2
+requires-dist: fsspec>=0.8.5
+requires-dist: optree>=0.13.0; extra == "optree"
+requires-dist: opt-einsum>=3.3; extra == "opt-einsum"
+requires-dist: pyyaml; extra == "pyyaml"
+requires-python: >=3.10
+project-url: Homepage, https://pytorch.org
+project-url: Repository, https://github.com/pytorch/pytorch
+project-url: Documentation, https://pytorch.org/docs
+project-url: Issue Tracker, https://github.com/pytorch/pytorch/issues
+project-url: Forum, https://discuss.pytorch.org
+provides-extra: optree
+provides-extra: opt-einsum
+provides-extra: pyyaml
+

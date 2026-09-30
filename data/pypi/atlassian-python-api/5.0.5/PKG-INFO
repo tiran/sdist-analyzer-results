@@ -1,0 +1,68 @@
+metadata-version: 2.4
+name: atlassian-python-api
+version: 5.0.5
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: download-url
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: maintainer
+dynamic: maintainer-email
+dynamic: platform
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+platform: Platform Independent
+summary: Python Atlassian REST API Wrapper
+keywords: atlassian jira core software confluence bitbucket bamboo crowd portfolio tempo servicedesk assets api
+home-page: https://github.com/atlassian-api/atlassian-python-api
+download-url: https://github.com/atlassian-api/atlassian-python-api
+author: Matt Harasymczuk
+author-email: matt@astrotech.io
+maintainer: Gonchik Tsymzhitov
+maintainer-email: gonchik.tsymzhitov@gmail.com
+license: Apache-2.0
+license-file: LICENSE
+classifier: Development Status :: 4 - Beta
+classifier: Environment :: Web Environment
+classifier: Environment :: Console
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Education
+classifier: Intended Audience :: Information Technology
+classifier: Intended Audience :: Science/Research
+classifier: Intended Audience :: System Administrators
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Natural Language :: English
+classifier: Operating System :: OS Independent
+classifier: Operating System :: POSIX
+classifier: Operating System :: Unix
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Operating System :: Microsoft :: Windows
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Topic :: Utilities
+classifier: Topic :: Internet
+classifier: Topic :: Internet :: WWW/HTTP
+classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+requires-dist: deprecated
+requires-dist: requests
+requires-dist: oauthlib
+requires-dist: requests_oauthlib
+requires-dist: jmespath
+requires-dist: beautifulsoup4
+requires-dist: typing-extensions
+requires-dist: requests-kerberos; extra == "kerberos"
+requires-python: >=3.9
+provides-extra: kerberos
+

@@ -1,0 +1,46 @@
+metadata-version: 2.4
+name: sympy
+version: 1.13.3
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: project-url
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: Computer algebra system (CAS) in Python
+keywords: Math CAS
+home-page: https://sympy.org
+author: SymPy development team
+author-email: sympy@googlegroups.com
+license: BSD
+license-file: LICENSE
+license-file: AUTHORS
+classifier: License :: OSI Approved :: BSD License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Topic :: Scientific/Engineering
+classifier: Topic :: Scientific/Engineering :: Mathematics
+classifier: Topic :: Scientific/Engineering :: Physics
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+requires-dist: mpmath<1.4,>=1.1.0
+requires-dist: pytest>=7.1.0; extra == "dev"
+requires-dist: hypothesis>=6.70.0; extra == "dev"
+requires-python: >=3.8
+project-url: Source, https://github.com/sympy/sympy
+provides-extra: dev
+

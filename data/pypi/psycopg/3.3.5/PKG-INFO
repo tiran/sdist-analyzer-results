@@ -1,0 +1,67 @@
+metadata-version: 2.4
+name: psycopg
+version: 3.3.5
+dynamic: license-file
+summary: PostgreSQL database adapter for Python
+author-email: Daniele Varrazzo <daniele.varrazzo@gmail.com>
+license-expression: LGPL-3.0-only
+license-file: LICENSE.txt
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: POSIX
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Database
+classifier: Topic :: Database :: Front-Ends
+classifier: Topic :: Software Development
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: typing-extensions>=4.6; python_version < "3.13"
+requires-dist: tzdata; sys_platform == "win32"
+requires-dist: psycopg-c==3.3.5; implementation_name != "pypy" and extra == "c"
+requires-dist: psycopg-binary==3.3.5; implementation_name != "pypy" and extra == "binary"
+requires-dist: psycopg-pool; extra == "pool"
+requires-dist: anyio>=4.0; extra == "test"
+requires-dist: mypy>=2.1.0; implementation_name != "pypy" and extra == "test"
+requires-dist: pproxy>=2.7; extra == "test"
+requires-dist: pytest>=6.2.5; extra == "test"
+requires-dist: pytest-cov>=3.0; extra == "test"
+requires-dist: pytest-randomly>=3.5; extra == "test"
+requires-dist: ast-comments>=1.1.2; extra == "dev"
+requires-dist: black>=26.1.0; extra == "dev"
+requires-dist: codespell>=2.2; extra == "dev"
+requires-dist: cython-lint>=0.21; extra == "dev"
+requires-dist: dnspython>=2.1; extra == "dev"
+requires-dist: flake8>=4.0; extra == "dev"
+requires-dist: isort[colors]<9.0,>=6.0; extra == "dev"
+requires-dist: isort-psycopg; extra == "dev"
+requires-dist: mypy>=2.1.0; extra == "dev"
+requires-dist: pre-commit>=4.0.1; extra == "dev"
+requires-dist: types-setuptools>=57.4; extra == "dev"
+requires-dist: types-shapely>=2.0; extra == "dev"
+requires-dist: wheel>=0.37; extra == "dev"
+requires-dist: Sphinx>=9.1; extra == "docs"
+requires-dist: furo==2025.12.19; extra == "docs"
+requires-dist: sphinx-autobuild>=2025.8.25; extra == "docs"
+requires-dist: sphinx-autodoc-typehints>=3.10.2; extra == "docs"
+requires-python: >=3.10
+project-url: Homepage, https://psycopg.org/
+project-url: Documentation, https://psycopg.org/psycopg3/docs/
+project-url: Changes, https://psycopg.org/psycopg3/docs/news.html
+project-url: Code, https://github.com/psycopg/psycopg
+project-url: Issue Tracker, https://github.com/psycopg/psycopg/issues
+project-url: Funding, https://github.com/sponsors/dvarrazzo
+provides-extra: c
+provides-extra: binary
+provides-extra: pool
+provides-extra: test
+provides-extra: dev
+provides-extra: docs
+

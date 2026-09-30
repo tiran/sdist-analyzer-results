@@ -1,0 +1,40 @@
+metadata-version: 2.4
+name: kfp-kubernetes
+version: 2.17.0
+dynamic: author
+dynamic: author-email
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: license
+dynamic: project-url
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: Kubernetes platform configuration library and generated protos.
+home-page: https://github.com/kubeflow/pipelines
+author: google
+author-email: kubeflow-pipelines@google.com
+license: Apache 2.0
+requires-dist: protobuf<7.0,>=6.33.5
+requires-dist: kfp<3,>=2.17.0
+requires-dist: requests==2.32.5; python_version < "3.10"
+requires-dist: requests==2.33.0; python_version >= "3.10"
+requires-dist: urllib3==2.6.3; python_version < "3.10"
+requires-dist: urllib3==2.7.0; python_version >= "3.10"
+requires-dist: docformatter==1.4; extra == "dev"
+requires-dist: isort==5.10.1; extra == "dev"
+requires-dist: mypy==0.941; extra == "dev"
+requires-dist: pre-commit==2.19.0; extra == "dev"
+requires-dist: pycln==2.1.1; extra == "dev"
+requires-dist: pytest==8.4.2; python_version < "3.10" and extra == "dev"
+requires-dist: pytest==9.0.3; python_version >= "3.10" and extra == "dev"
+requires-dist: pytest-xdist==3.8.0; extra == "dev"
+requires-dist: yapf==0.32.0; extra == "dev"
+requires-python: >=3.9.0
+project-url: Documentation, https://kfp-kubernetes.readthedocs.io/
+project-url: Bug Tracker, https://github.com/kubeflow/pipelines/issues
+project-url: Source, https://github.com/kubeflow/pipelines/tree/master/kubernetes_platform/python
+provides-extra: dev
+

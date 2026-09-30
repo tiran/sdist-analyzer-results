@@ -1,0 +1,67 @@
+metadata-version: 2.4
+name: kfp
+version: 2.17.0
+dynamic: author
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: project-url
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: Kubeflow Pipelines SDK
+home-page: https://github.com/kubeflow/pipelines
+author: The Kubeflow Authors
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Education
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Topic :: Scientific/Engineering
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+classifier: Topic :: Software Development
+classifier: Topic :: Software Development :: Libraries
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: click>=8.1.8
+requires-dist: click-option-group==0.5.7
+requires-dist: docstring-parser<1,>=0.7.3
+requires-dist: google-api-core!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.0,<3.0.0dev,>=1.31.5
+requires-dist: google-auth<3,>=1.6.1
+requires-dist: google-cloud-storage<4,>=2.2.1
+requires-dist: kfp-pipeline-spec<3,>=2.17.0
+requires-dist: kfp-server-api<3,>=2.17.0
+requires-dist: kubernetes
+requires-dist: protobuf<7.0,>=6.31.1
+requires-dist: PyYAML<7,>=5.3
+requires-dist: requests==2.32.5; python_version < "3.10"
+requires-dist: requests==2.33.0; python_version >= "3.10"
+requires-dist: requests-toolbelt<2,>=0.8.0
+requires-dist: tabulate<1,>=0.8.6
+requires-dist: urllib3==2.6.3; python_version < "3.10"
+requires-dist: urllib3==2.7.0; python_version >= "3.10"
+requires-dist: typing-extensions<5,>=3.7.4; python_version < "3.9"
+requires-dist: docker; extra == "all"
+requires-dist: kfp-kubernetes==2.17.0; extra == "all"
+requires-dist: nbclient<1,>=0.10; extra == "all"
+requires-dist: ipykernel<7,>=6; extra == "all"
+requires-dist: jupyter_client<9,>=7; extra == "all"
+requires-dist: kfp-kubernetes==2.17.0; extra == "kubernetes"
+requires-dist: nbclient<1,>=0.10; extra == "notebooks"
+requires-dist: ipykernel<7,>=6; extra == "notebooks"
+requires-dist: jupyter_client<9,>=7; extra == "notebooks"
+requires-python: >=3.9.0
+project-url: Documentation, https://kubeflow-pipelines.readthedocs.io/en/stable/
+project-url: Bug Tracker, https://github.com/kubeflow/pipelines/issues
+project-url: Source, https://github.com/kubeflow/pipelines/tree/master/sdk
+project-url: Changelog, https://github.com/kubeflow/pipelines/blob/master/sdk/RELEASE.md
+provides-extra: all
+provides-extra: kubernetes
+provides-extra: notebooks
+

@@ -1,0 +1,3 @@
+wheel
+setuptools>=41
+setuptools_scm[toml]>=3.4.3

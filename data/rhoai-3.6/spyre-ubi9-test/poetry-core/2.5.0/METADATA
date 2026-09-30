@@ -1,0 +1,25 @@
+metadata-version: 2.4
+name: poetry-core
+version: 2.5.0
+summary: Poetry PEP 517 Build Backend
+keywords: packaging,dependency,poetry
+author: Sébastien Eustace
+author-email: sebastien@eustace.io
+maintainer: Arun Babu Neelicattu
+maintainer-email: arun.neelicattu@gmail.com
+license-expression: MIT
+license-file: LICENSE
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: 3.15
+classifier: Topic :: Software Development :: Build Tools
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-python: <4.0,>=3.10
+project-url: Bug Tracker, https://github.com/python-poetry/poetry/issues
+project-url: Homepage, https://github.com/python-poetry/poetry-core
+project-url: Repository, https://github.com/python-poetry/poetry-core
+

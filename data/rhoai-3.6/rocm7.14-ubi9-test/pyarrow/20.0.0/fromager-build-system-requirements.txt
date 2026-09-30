@@ -1,0 +1,6 @@
+setuptools_scm[toml]>=8
+setuptools
+build
+cython>=3
+numpy>=1.25; python_version >= "3.9"
+setuptools>=64

@@ -1,3 +1,4 @@
+setuptools<82
 torch
 wheel
 setuptools

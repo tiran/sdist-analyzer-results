@@ -1,0 +1,41 @@
+metadata-version: 2.4
+name: pybind11
+version: 2.11.1
+dynamic: download-url
+dynamic: license-file
+dynamic: provides-extra
+summary: Seamless operability between C++11 and Python
+keywords: C++11,Python bindings
+home-page: https://github.com/pybind/pybind11
+download-url: https://github.com/pybind/pybind11/tarball/v2.11.1
+author: Wenzel Jakob
+author-email: wenzel.jakob@epfl.ch
+license: BSD
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: Utilities
+classifier: Programming Language :: C++
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: License :: OSI Approved :: BSD License
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: C++
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: pybind11_global==2.11.1; extra == "global"
+requires-python: >=3.6
+project-url: Documentation, https://pybind11.readthedocs.io/
+project-url: Bug Tracker, https://github.com/pybind/pybind11/issues
+project-url: Discussions, https://github.com/pybind/pybind11/discussions
+project-url: Changelog, https://pybind11.readthedocs.io/en/latest/changelog.html
+project-url: Chat, https://gitter.im/pybind/Lobby
+provides-extra: global
+

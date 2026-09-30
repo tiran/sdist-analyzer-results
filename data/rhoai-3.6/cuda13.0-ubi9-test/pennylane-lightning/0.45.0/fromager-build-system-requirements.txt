@@ -1,0 +1,6 @@
+setuptools
+nanobind==2.11.0
+cmake
+ninja; platform_system != "Windows"
+setuptools>=75.8.1
+tomli

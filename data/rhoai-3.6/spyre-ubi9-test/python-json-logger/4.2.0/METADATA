@@ -1,0 +1,24 @@
+metadata-version: 2.4
+name: python-json-logger
+version: 4.2.0
+dynamic: license-file
+summary: JSON Log Formatter for the Python Logging Package
+author-email: Zakaria Zajac <zak@madzak.com>, Nicholas Hairs <info+python-json-logger@nicholashairs.com>
+maintainer-email: Nicholas Hairs <info+python-json-logger@nicholashairs.com>
+license-expression: BSD-2-Clause
+license-file: LICENSE
+classifier: Development Status :: 6 - Mature
+classifier: Intended Audience :: Developers
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: System :: Logging
+classifier: Typing :: Typed
+requires-python: >=3.10
+project-url: Homepage, https://nhairs.github.io/python-json-logger
+project-url: GitHub, https://github.com/nhairs/python-json-logger
+

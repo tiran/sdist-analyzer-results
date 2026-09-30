@@ -1,6 +1,6 @@
-torch
 ninja
+torch
 wheel
+setuptools
 psutil
 packaging
-setuptools

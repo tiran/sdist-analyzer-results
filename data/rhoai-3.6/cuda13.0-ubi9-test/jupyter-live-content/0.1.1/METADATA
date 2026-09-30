@@ -1,0 +1,36 @@
+metadata-version: 2.5
+name: jupyter_live_content
+version: 0.1.1
+summary: A minimal JupyterLab extension that provides live content updates from the filesystem.
+keywords: jupyter,jupyterlab,jupyterlab-extension
+author-email: Project Jupyter <jupyter@googlegroups.com>
+license-expression: BSD-3-Clause
+license-file: LICENSE
+classifier: Framework :: Jupyter
+classifier: Framework :: Jupyter :: JupyterLab
+classifier: Framework :: Jupyter :: JupyterLab :: 4
+classifier: Framework :: Jupyter :: JupyterLab :: Extensions
+classifier: Framework :: Jupyter :: JupyterLab :: Extensions :: Prebuilt
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-dist: jupyter-server<3,>=2.13.0
+requires-dist: watchfiles>=0.21
+requires-dist: jupyter-builder>=1.2.0; extra == "dev"
+requires-dist: jupyterlab>=4; extra == "dev"
+requires-dist: coverage; extra == "test"
+requires-dist: pytest; extra == "test"
+requires-dist: pytest-asyncio; extra == "test"
+requires-dist: pytest-cov; extra == "test"
+requires-dist: pytest-jupyter[server]>=0.6.0; extra == "test"
+requires-python: >=3.10
+project-url: Homepage, https://github.com/jupyter-ai-contrib/jupyter-live-content
+project-url: Bug Tracker, https://github.com/jupyter-ai-contrib/jupyter-live-content/issues
+project-url: Repository, https://github.com/jupyter-ai-contrib/jupyter-live-content.git
+provides-extra: dev
+provides-extra: test
+

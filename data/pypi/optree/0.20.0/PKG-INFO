@@ -1,0 +1,84 @@
+metadata-version: 2.4
+name: optree
+version: 0.20.0
+dynamic: license-file
+summary: Optimized PyTree Utilities.
+keywords: PyTree,Tree Manipulation,Tree Traversal,Functional Programming
+author: OpTree Contributors
+license-expression: Apache-2.0
+license-file: LICENSE
+classifier: Development Status :: 4 - Beta
+classifier: Programming Language :: C++
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: 3.15
+classifier: Programming Language :: Python :: Free Threading :: 4 - Resilient
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Operating System :: POSIX :: Linux
+classifier: Operating System :: MacOS
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: iOS
+classifier: Operating System :: Android
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Education
+classifier: Intended Audience :: Science/Research
+classifier: Topic :: Utilities
+requires-dist: typing-extensions>=4.10.0
+requires-dist: typing-extensions>=4.12.0; python_version >= "3.13"
+requires-dist: typing-extensions>=4.14.0; python_version >= "3.15"
+requires-dist: attrs; extra == "attrs"
+requires-dist: jax; extra == "jax"
+requires-dist: numpy; extra == "numpy"
+requires-dist: torch; extra == "torch"
+requires-dist: cpplint; extra == "lint"
+requires-dist: doc8; extra == "lint"
+requires-dist: mypy; extra == "lint"
+requires-dist: pre-commit; extra == "lint"
+requires-dist: pyenchant; extra == "lint"
+requires-dist: pylint[spelling]; extra == "lint"
+requires-dist: ruff; extra == "lint"
+requires-dist: xdoctest; extra == "lint"
+requires-dist: pytest; extra == "test"
+requires-dist: pytest-cov; extra == "test"
+requires-dist: covdefaults; extra == "test"
+requires-dist: rich; extra == "test"
+requires-dist: typing-extensions==4.10.0; (python_version < "3.13" and platform_system == "Linux") and extra == "test"
+requires-dist: typing-extensions==4.10.0; (python_version < "3.13" and platform_system == "Darwin") and extra == "test"
+requires-dist: typing-extensions==4.10.0; (python_version < "3.13" and platform_system == "Windows") and extra == "test"
+requires-dist: typing-extensions==4.12.0; (python_version >= "3.13" and python_version < "3.15" and platform_system == "Linux") and extra == "test"
+requires-dist: typing-extensions==4.12.0; (python_version >= "3.13" and python_version < "3.15" and platform_system == "Darwin") and extra == "test"
+requires-dist: typing-extensions==4.12.0; (python_version >= "3.13" and python_version < "3.15" and platform_system == "Windows") and extra == "test"
+requires-dist: typing-extensions==4.14.0; (python_version >= "3.15" and platform_system == "Linux") and extra == "test"
+requires-dist: typing-extensions==4.14.0; (python_version >= "3.15" and platform_system == "Darwin") and extra == "test"
+requires-dist: typing-extensions==4.14.0; (python_version >= "3.15" and platform_system == "Windows") and extra == "test"
+requires-dist: sphinx~=8.0; extra == "docs"
+requires-dist: sphinx-autoapi; extra == "docs"
+requires-dist: sphinx-autobuild; extra == "docs"
+requires-dist: sphinx-autodoc-typehints; extra == "docs"
+requires-dist: sphinx-copybutton; extra == "docs"
+requires-dist: sphinx-rtd-theme; extra == "docs"
+requires-dist: sphinxcontrib-bibtex; extra == "docs"
+requires-dist: docutils; extra == "docs"
+requires-dist: attrs; extra == "docs"
+requires-dist: jax[cpu]; extra == "docs"
+requires-dist: numpy; extra == "docs"
+requires-dist: torch; extra == "docs"
+requires-python: >=3.9
+project-url: Homepage, https://github.com/metaopt/optree
+project-url: Repository, https://github.com/metaopt/optree
+project-url: Documentation, https://optree.readthedocs.io
+project-url: Bug Report, https://github.com/metaopt/optree/issues
+provides-extra: attrs
+provides-extra: jax
+provides-extra: numpy
+provides-extra: torch
+provides-extra: lint
+provides-extra: test
+provides-extra: docs
+

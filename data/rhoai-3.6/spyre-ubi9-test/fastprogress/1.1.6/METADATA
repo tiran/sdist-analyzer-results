@@ -1,0 +1,22 @@
+metadata-version: 2.4
+name: fastprogress
+version: 1.1.6
+dynamic: license-file
+summary: A nested progress with plotting options for fastai
+keywords: jupyter,notebook,progressbar
+author-email: Sylvain Gugger and Jeremy Howard <info@fast.ai>
+license: Apache-2.0
+license-file: LICENSE
+classifier: Natural Language :: English
+classifier: Intended Audience :: Developers
+classifier: Development Status :: 4 - Beta
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+requires-dist: fastcore>=1.10.0
+requires-dist: python-fasthtml>=0.12.34
+requires-dist: numpy; extra == "dev"
+requires-python: >=3.10
+project-url: Repository, https://github.com/answerdotai/fastprogress
+project-url: Documentation, https://fastprogress.fast.ai/
+provides-extra: dev
+

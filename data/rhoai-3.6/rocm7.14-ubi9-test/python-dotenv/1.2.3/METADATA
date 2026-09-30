@@ -1,0 +1,29 @@
+metadata-version: 2.4
+name: python-dotenv
+version: 1.2.3
+dynamic: license-file
+summary: Read key-value pairs from a .env file and set them as environment variables
+keywords: environment variables,deployments,settings,env,dotenv,configurations,python
+author-email: Saurabh Kumar <me+github@saurabh-kumar.com>
+license: BSD-3-Clause
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: System Administrators
+classifier: Operating System :: OS Independent
+classifier: Topic :: System :: Systems Administration
+classifier: Topic :: Utilities
+classifier: Environment :: Web Environment
+requires-dist: click>=5.0; extra == "cli"
+requires-python: >=3.10
+project-url: Source, https://github.com/theskumar/python-dotenv
+provides-extra: cli
+

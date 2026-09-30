@@ -1,0 +1,42 @@
+metadata-version: 2.4
+name: sphinxcontrib-devhelp
+version: 2.0.0
+summary: sphinxcontrib-devhelp is a sphinx extension which outputs Devhelp documents
+author-email: Georg Brandl <georg@python.org>
+license-file: LICENCE.rst
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Environment :: Web Environment
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Education
+classifier: License :: OSI Approved :: BSD License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Framework :: Sphinx
+classifier: Framework :: Sphinx :: Extension
+classifier: Topic :: Documentation
+classifier: Topic :: Documentation :: Sphinx
+classifier: Topic :: Text Processing
+classifier: Topic :: Utilities
+requires-dist: ruff==0.5.5; extra == "lint"
+requires-dist: mypy; extra == "lint"
+requires-dist: types-docutils; extra == "lint"
+requires-dist: Sphinx>=5; extra == "standalone"
+requires-dist: pytest; extra == "test"
+requires-python: >=3.9
+project-url: Changelog, https://github.com/sphinx-doc/sphinxcontrib-devhelp/blob/master/CHANGES.rst
+project-url: Code, https://github.com/sphinx-doc/sphinxcontrib-devhelp/
+project-url: Download, https://pypi.org/project/sphinxcontrib-devhelp/
+project-url: Homepage, https://www.sphinx-doc.org/
+project-url: Issue tracker, https://github.com/sphinx-doc/sphinx/issues/
+provides-extra: lint
+provides-extra: standalone
+provides-extra: test
+

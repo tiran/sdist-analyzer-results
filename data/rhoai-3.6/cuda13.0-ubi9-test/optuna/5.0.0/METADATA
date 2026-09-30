@@ -1,0 +1,71 @@
+metadata-version: 2.4
+name: optuna
+version: 5.0.0
+dynamic: license-file
+summary: A hyperparameter optimization framework
+author: Takuya Akiba
+license-file: LICENSE
+license-file: LICENSE_THIRD_PARTY
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Science/Research
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Topic :: Scientific/Engineering
+classifier: Topic :: Scientific/Engineering :: Mathematics
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+classifier: Topic :: Software Development
+classifier: Topic :: Software Development :: Libraries
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: alembic>=1.5.0
+requires-dist: colorlog
+requires-dist: numpy
+requires-dist: packaging>=20.0
+requires-dist: sqlalchemy>=1.4.2
+requires-dist: tqdm
+requires-dist: PyYAML
+requires-dist: ase; extra == "document"
+requires-dist: cmaes>=0.12.0; extra == "document"
+requires-dist: fvcore; extra == "document"
+requires-dist: kaleido!=0.2.1.post1,<0.4; extra == "document"
+requires-dist: lightgbm; extra == "document"
+requires-dist: matplotlib!=3.6.0; extra == "document"
+requires-dist: pandas; extra == "document"
+requires-dist: pillow; extra == "document"
+requires-dist: plotly<7,>=4.9.0; extra == "document"
+requires-dist: scikit-learn; extra == "document"
+requires-dist: sphinx; extra == "document"
+requires-dist: sphinx-copybutton; extra == "document"
+requires-dist: sphinx-gallery; extra == "document"
+requires-dist: sphinx-notfound-page; extra == "document"
+requires-dist: sphinx_rtd_theme>=1.2.0; extra == "document"
+requires-dist: torch; extra == "document"
+requires-dist: torchvision; extra == "document"
+requires-dist: boto3; extra == "optional"
+requires-dist: cmaes>=0.12.0; extra == "optional"
+requires-dist: google-cloud-storage; extra == "optional"
+requires-dist: matplotlib!=3.6.0; extra == "optional"
+requires-dist: pandas; extra == "optional"
+requires-dist: plotly>=4.9.0; extra == "optional"
+requires-dist: redis; extra == "optional"
+requires-dist: scikit-learn>=0.24.2; extra == "optional"
+requires-dist: scipy; extra == "optional"
+requires-dist: torch; extra == "optional"
+requires-dist: greenlet; extra == "optional"
+requires-dist: grpcio; extra == "optional"
+requires-dist: protobuf>=5.28.1; extra == "optional"
+requires-python: >=3.9
+project-url: homepage, https://optuna.org/
+project-url: repository, https://github.com/optuna/optuna
+project-url: documentation, https://optuna.readthedocs.io
+project-url: bugtracker, https://github.com/optuna/optuna/issues
+provides-extra: document
+provides-extra: optional
+

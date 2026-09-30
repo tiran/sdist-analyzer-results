@@ -1,0 +1,48 @@
+metadata-version: 2.4
+name: cupy-cuda13x
+version: 14.1.1
+dynamic: description-content-type
+dynamic: license-file
+dynamic: provides-extra
+dynamic: requires-dist
+summary: CuPy: NumPy & SciPy for GPU
+author-email: Seiya Tokui <tokui@preferred.jp>
+maintainer: CuPy Developers
+license-expression: MIT
+license-file: LICENSE
+license-file: docs/source/license.rst
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Science/Research
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Cython
+classifier: Topic :: Software Development
+classifier: Topic :: Scientific/Engineering
+classifier: Operating System :: POSIX
+classifier: Operating System :: Microsoft :: Windows
+requires-dist: numpy<2.6,>=2.0
+requires-dist: cuda-pathfinder==1.*,>=1.3.4
+requires-dist: scipy<1.17,>=1.14; extra == "all"
+requires-dist: Cython>=3; extra == "all"
+requires-dist: optuna>=2.0; extra == "all"
+requires-dist: packaging; extra == "test"
+requires-dist: pytest>=7.2; extra == "test"
+requires-dist: hypothesis<6.55.0,>=6.37.2; extra == "test"
+requires-dist: mpmath; extra == "test"
+requires-dist: cuda-toolkit[cublas,cudart,cufft,curand,cusolver,cusparse,nvrtc]==13.*; extra == "ctk"
+requires-python: >=3.10
+project-url: Homepage, https://cupy.dev/
+project-url: Documentation, https://docs.cupy.dev/
+project-url: Bug Tracker, https://github.com/cupy/cupy/issues
+project-url: Source Code, https://github.com/cupy/cupy
+provides-extra: all
+provides-extra: test
+provides-extra: ctk
+

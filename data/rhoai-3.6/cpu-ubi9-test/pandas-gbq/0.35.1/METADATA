@@ -1,0 +1,60 @@
+metadata-version: 2.4
+name: pandas-gbq
+version: 0.35.1
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: platform
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+platform: Posix; MacOS X; Windows
+summary: Google BigQuery connector for pandas
+home-page: https://github.com/googleapis/google-cloud-python/tree/main/packages/pandas-gbq
+author: pandas-gbq authors
+author-email: googleapis-packages@google.com
+license: BSD-3-Clause
+license-file: LICENSE.txt
+license-file: AUTHORS.md
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: Operating System :: OS Independent
+classifier: License :: OSI Approved :: BSD License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Operating System :: OS Independent
+classifier: Topic :: Internet
+classifier: Topic :: Scientific/Engineering
+requires-dist: setuptools
+requires-dist: db-dtypes<2.0.0,>=1.1.1
+requires-dist: numpy>=1.26.4
+requires-dist: pandas>=1.5.3
+requires-dist: pyarrow>=12.0.0
+requires-dist: pyarrow>=22.0.0; python_version >= "3.14"
+requires-dist: pydata-google-auth>=1.5.0
+requires-dist: psutil>=5.9.8
+requires-dist: google-api-core<3.0.0,>=2.25.0
+requires-dist: google-auth>=2.14.1
+requires-dist: google-auth-oauthlib>=0.7.0
+requires-dist: google-cloud-bigquery<4.0.0,>=3.20.0
+requires-dist: packaging>=22.0.0
+requires-dist: google-cloud-bigquery-storage<3.0.0,>=2.29.0; extra == "bqstorage"
+requires-dist: tqdm>=4.23.0; extra == "tqdm"
+requires-dist: geopandas>=0.14.4; extra == "geopandas"
+requires-dist: Shapely>=1.8.5; extra == "geopandas"
+requires-python: >=3.10
+provides-extra: bqstorage
+provides-extra: tqdm
+provides-extra: geopandas
+

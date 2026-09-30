@@ -1,0 +1,45 @@
+metadata-version: 2.4
+name: pyclipper
+version: 1.4.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: maintainer
+dynamic: maintainer-email
+dynamic: requires-python
+dynamic: summary
+summary: Cython wrapper for the C++ translation of the Angus Johnson's Clipper library (ver. 6.4.2)
+keywords: polygon clipping,polygon intersection,polygon union,polygon offsetting,polygon boolean,polygon,clipping,clipper,vatti
+home-page: https://github.com/fonttools/pyclipper
+author: Angus Johnson, Maxime Chalton, Lukas Treyer, Gregor Ratajc
+author-email: me@gregorratajc.com
+maintainer: Cosimo Lupo
+maintainer-email: cosimo@anthrotype.com
+license: MIT
+license-file: LICENSE
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Cython
+classifier: Programming Language :: C++
+classifier: Environment :: Other Environment
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: Operating System :: OS Independent
+classifier: License :: OSI Approved
+classifier: License :: OSI Approved :: MIT License
+classifier: Topic :: Multimedia :: Graphics
+classifier: Topic :: Scientific/Engineering :: Mathematics
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-python: >=3.10
+

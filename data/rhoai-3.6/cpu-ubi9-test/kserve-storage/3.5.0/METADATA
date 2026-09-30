@@ -1,0 +1,28 @@
+metadata-version: 2.4
+name: kserve-storage
+version: 3.5.0
+summary: KServe Storage Handler. This module is responsible to download the models from the provided source
+author-email: The KServe Authors <dsun20@bloomberg.net>, The KServe Authors <fspolti@redhat.com>
+license: https://github.com/kserve/kserve/blob/master/LICENSE
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Python :: 3
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: OS Independent
+requires-dist: aiohttp<4.0.0,>=3.10.0
+requires-dist: requests<3.0.0,>=2.32.2
+requires-dist: google-cloud-storage<3.0.0,>=2.14.0
+requires-dist: azure-storage-blob<13.0.0,>=12.20.0
+requires-dist: azure-storage-file-share<13.0.0,>=12.16.0
+requires-dist: azure-identity<2.0.0,>=1.15.0
+requires-dist: boto3<2.0.0,>=1.29.0
+requires-dist: huggingface-hub[hf-transfer]>=0.32.0
+requires-dist: hf-xet>=1.5.0
+requires-dist: dulwich>=0.21.0
+requires-dist: cryptography>=46.0.5
+requires-dist: pyjwt>=2.12.0
+requires-dist: pyasn1>=0.6.3
+requires-dist: azure-core>=1.38.0
+requires-dist: jwcrypto>=1.5.0; extra == "confidential"
+requires-python: <3.13,>=3.10
+provides-extra: confidential
+

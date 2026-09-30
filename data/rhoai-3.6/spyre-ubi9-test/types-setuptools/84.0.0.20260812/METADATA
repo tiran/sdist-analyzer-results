@@ -1,0 +1,16 @@
+metadata-version: 2.4
+name: types-setuptools
+version: 84.0.0.20260812
+dynamic: license-file
+summary: Typing stubs for setuptools
+license-expression: Apache-2.0
+license-file: LICENSE
+classifier: Programming Language :: Python :: 3
+classifier: Typing :: Stubs Only
+requires-python: >=3.10
+project-url: Homepage, https://github.com/python/typeshed
+project-url: GitHub, https://github.com/python/typeshed
+project-url: Changes, https://github.com/typeshed-internal/stub_uploader/blob/main/data/changelogs/setuptools.md
+project-url: Issue tracker, https://github.com/python/typeshed/issues
+project-url: Chat, https://gitter.im/python/typing
+

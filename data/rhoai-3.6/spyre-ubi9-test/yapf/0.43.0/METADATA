@@ -1,0 +1,43 @@
+metadata-version: 2.4
+name: yapf
+version: 0.43.0
+dynamic: license-file
+summary: A formatter for Python code
+author: Google Inc.
+maintainer-email: Bill Wendling <morbo@google.com>
+license: Apache License
+                                            Version 2.0, January 2004
+                                         http://www.apache.org/licenses/
+                 
+                    TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+                 
+                    1. Definitions.
+                 
+                       "License" shall mean the terms and conditions for use, reproduction,
+                       and distribution as defined by Sections 1 through 9 of this document.
+                 
+                       "Licensor" shall mean the copyright owner or entity a...
+license-file: LICENSE
+license-file: AUTHORS
+classifier: Development Status :: 4 - Beta
+classifier: Environment :: Console
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: Software Development :: Quality Assurance
+requires-dist: platformdirs>=3.5.1
+requires-dist: tomli>=2.0.1; python_version < "3.11"
+requires-python: >=3.7
+project-url: Home, https://github.com/google/yapf
+project-url: Changelog, https://github.com/google/yapf/blob/main/CHANGELOG.md
+project-url: Docs, https://github.com/google/yapf/blob/main/README.md#yapf
+project-url: Issues, https://github.com/google/yapf/issues
+

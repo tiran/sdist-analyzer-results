@@ -1,0 +1,103 @@
+metadata-version: 2.4
+name: spacy
+version: 3.8.16
+dynamic: license-file
+summary: Industrial-strength Natural Language Processing (NLP) in Python
+home-page: https://spacy.io
+author: Explosion
+author-email: contact@explosion.ai
+license: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: POSIX :: Linux
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Operating System :: Microsoft :: Windows
+classifier: Programming Language :: Cython
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Scientific/Engineering
+requires-dist: spacy-legacy<3.1.0,>=3.0.11
+requires-dist: spacy-loggers<2.0.0,>=1.0.0
+requires-dist: murmurhash<1.1.0,>=0.28.0
+requires-dist: cymem<2.1.0,>=2.0.2
+requires-dist: preshed<3.1.0,>=3.0.2
+requires-dist: thinc<8.4.0,>=8.3.12
+requires-dist: wasabi<1.2.0,>=0.9.1
+requires-dist: srsly<3.0.0,>=2.5.3
+requires-dist: catalogue<2.1.0,>=2.0.6
+requires-dist: weasel<2.0.0,>=1.0.0
+requires-dist: confection<2.0.0,>=1.3.2
+requires-dist: typer<1.0.0,>=0.3.0
+requires-dist: click<9.0.0,>=8.2.1
+requires-dist: tqdm<5.0.0,>=4.38.0
+requires-dist: numpy>=1.15.0; python_version < "3.9"
+requires-dist: numpy>=1.19.0; python_version >= "3.9"
+requires-dist: requests<3.0.0,>=2.13.0
+requires-dist: pydantic<3.0.0,>=2.0.0
+requires-dist: jinja2
+requires-dist: setuptools
+requires-dist: packaging>=20.0
+requires-dist: spacy_lookups_data<1.1.0,>=1.0.3; extra == "lookups"
+requires-dist: spacy_transformers<1.4.0,>=1.1.2; extra == "transformers"
+requires-dist: cupy<13.0.0,>=5.0.0b4; extra == "cuda"
+requires-dist: cupy-cuda80<13.0.0,>=5.0.0b4; extra == "cuda80"
+requires-dist: cupy-cuda90<13.0.0,>=5.0.0b4; extra == "cuda90"
+requires-dist: cupy-cuda91<13.0.0,>=5.0.0b4; extra == "cuda91"
+requires-dist: cupy-cuda92<13.0.0,>=5.0.0b4; extra == "cuda92"
+requires-dist: cupy-cuda100<13.0.0,>=5.0.0b4; extra == "cuda100"
+requires-dist: cupy-cuda101<13.0.0,>=5.0.0b4; extra == "cuda101"
+requires-dist: cupy-cuda102<13.0.0,>=5.0.0b4; extra == "cuda102"
+requires-dist: cupy-cuda110<13.0.0,>=5.0.0b4; extra == "cuda110"
+requires-dist: cupy-cuda111<13.0.0,>=5.0.0b4; extra == "cuda111"
+requires-dist: cupy-cuda112<13.0.0,>=5.0.0b4; extra == "cuda112"
+requires-dist: cupy-cuda113<13.0.0,>=5.0.0b4; extra == "cuda113"
+requires-dist: cupy-cuda114<13.0.0,>=5.0.0b4; extra == "cuda114"
+requires-dist: cupy-cuda115<13.0.0,>=5.0.0b4; extra == "cuda115"
+requires-dist: cupy-cuda116<13.0.0,>=5.0.0b4; extra == "cuda116"
+requires-dist: cupy-cuda117<13.0.0,>=5.0.0b4; extra == "cuda117"
+requires-dist: cupy-cuda11x<13.0.0,>=11.0.0; extra == "cuda11x"
+requires-dist: cupy-cuda12x<13.0.0,>=11.5.0; extra == "cuda12x"
+requires-dist: cupy-wheel<13.0.0,>=11.0.0; extra == "cuda-autodetect"
+requires-dist: thinc-apple-ops<2.0.0,>=1.0.0; extra == "apple"
+requires-dist: sudachipy!=0.6.1,>=0.5.2; extra == "ja"
+requires-dist: sudachidict_core>=20211220; extra == "ja"
+requires-dist: natto-py>=0.9.0; extra == "ko"
+requires-dist: pythainlp>=2.0; extra == "th"
+requires-python: <3.15,>=3.9
+project-url: Release notes, https://github.com/explosion/spaCy/releases
+project-url: Source, https://github.com/explosion/spaCy
+provides-extra: lookups
+provides-extra: transformers
+provides-extra: cuda
+provides-extra: cuda80
+provides-extra: cuda90
+provides-extra: cuda91
+provides-extra: cuda92
+provides-extra: cuda100
+provides-extra: cuda101
+provides-extra: cuda102
+provides-extra: cuda110
+provides-extra: cuda111
+provides-extra: cuda112
+provides-extra: cuda113
+provides-extra: cuda114
+provides-extra: cuda115
+provides-extra: cuda116
+provides-extra: cuda117
+provides-extra: cuda11x
+provides-extra: cuda12x
+provides-extra: cuda-autodetect
+provides-extra: apple
+provides-extra: ja
+provides-extra: ko
+provides-extra: th
+

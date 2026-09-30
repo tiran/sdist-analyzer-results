@@ -1,0 +1,29 @@
+metadata-version: 2.5
+name: Deprecated
+version: 3.0.0
+summary: Python @deprecated decorator to deprecate old python classes, functions or methods.
+keywords: decorator,deprecate,deprecated,deprecation,warn,warning
+author-email: Laurent LAPORTE <laurent.laporte.pro@gmail.com>
+maintainer-email: Laurent LAPORTE <laurent.laporte.pro@gmail.com>
+license-expression: MIT
+license-file: LICENSE.md
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Web Environment
+classifier: Intended Audience :: Developers
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Typing :: Typed
+requires-dist: wrapt<3,>=1.16
+requires-python: >=3.12
+project-url: Homepage, https://github.com/laurent-laporte-pro/deprecated
+project-url: Documentation, https://deprecated.readthedocs.io/en/latest/
+project-url: Source, https://github.com/laurent-laporte-pro/deprecated
+project-url: Bug Tracker, https://github.com/laurent-laporte-pro/deprecated/issues
+project-url: Changelog, https://github.com/laurent-laporte-pro/deprecated/blob/master/CHANGELOG.md
+

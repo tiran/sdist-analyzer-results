@@ -1,0 +1,275 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.metadata]
+license-files = ["LICENSE"]
+
+[tool.hatch.version]
+path = "skops/__init__.py"
+
+[project]
+name = "skops"
+dynamic = ["version"]
+readme = "README.rst"
+description = "A set of tools, related to machine learning in production."
+maintainers = [
+    { name = "Adrin Jalali", email = "adrin.jalali@gmail.com" },
+    { name= "Benjamin Bossan", email= "benjamin.bossan@gmail.com" },
+]
+requires-python = ">=3.9"
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved",
+    "Programming Language :: Python",
+    "Topic :: Software Development",
+    "Topic :: Scientific/Engineering",
+    "Development Status :: 4 - Beta",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX",
+    "Operating System :: Unix",
+    "Operating System :: MacOS",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Programming Language :: Python :: Implementation :: CPython",
+]
+dependencies = [
+    "numpy>=1.25.0",
+    "scipy>=1.10.0",
+    "scikit-learn>=1.2",
+    "prettytable>=3.9",
+    "packaging>=17.0",
+]
+
+[project.optional-dependencies]
+rich = ["rich>=12"]
+
+[project.urls]
+Homepage = "http://github.com/skops-dev/skops"
+Documentation = "https://skops.readthedocs.io/en/stable/"
+Repository = "http://github.com/skops-dev/skops"
+Issues = "http://github.com/skops-dev/skops/issues"
+Changelog = "https://skops.readthedocs.io/en/stable/changes.html"
+
+[tool.ruff]
+line-length = 88
+extend-exclude = [
+    # locally installed pixi environments
+    ".pixi",
+    # These markdown files are data (model card template and test fixtures) and
+    # must be kept verbatim; ruff would otherwise format the python code blocks in
+    # them.
+    "skops/card/default_template.md",
+    "skops/card/tests/examples",
+]
+
+[tool.ruff.lint]
+# all rules can be found here: https://docs.astral.sh/ruff/rules/
+select = ["E", "F", "W", "I"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["skops"]
+
+[tool.pytest.ini_options]
+doctest_optionflags = "NORMALIZE_WHITESPACE ELLIPSIS"
+filterwarnings = [
+    "error::DeprecationWarning",
+    "error::FutureWarning",
+    # comes from fairlearn
+    "ignore:DataFrameGroupBy.apply operated on the grouping columns.:DeprecationWarning",
+    # sklearn1.8 deprecates this class
+    "ignore:Class PassiveAggressiveClassifier is deprecated:FutureWarning",
+    "ignore:Class PassiveAggressiveRegressor is deprecated:FutureWarning",
+    # sklearn nightly still imports the deprecated scipy.stats.mstats (scipy 2.0)
+    "ignore:`scipy.stats.mstats` is deprecated:DeprecationWarning",
+]
+addopts = "--cov=skops --cov-report=term-missing --doctest-modules"
+
+[tool.coverage.run]
+omit = [
+    "skops/**/test_*.py",
+    "skops/_min_dependencies.py",
+    "skops/conftest.py",
+]
+
+[tool.pyrefly]
+project-includes = ["skops", "examples", "scripts", "docs/conf.py"]
+# Replace imports that cannot be resolved (e.g. numpy, scikit-learn, which are not
+# installed in the pre-commit environment) with `Any` instead of erroring.
+ignore-missing-imports = ["*"]
+# The `legacy` preset is the one pyrefly recommends for projects migrating from mypy.
+preset = "legacy"
+
+[tool.pixi.workspace]
+channels = ["conda-forge"]
+platforms = ["linux-64", "osx-arm64", "osx-64", "win-64"]
+
+[tool.pixi.dependencies]
+# scikit-learn is not included here since it's included explicitly in each task's
+# dependencies either from conda or pypi (pre-release).
+rich = ">=12"
+
+[tool.pixi.pypi-dependencies]
+skops = { path = ".", editable = true }
+
+[tool.pixi.feature.docs.dependencies]
+# To be synced with the versions in docs/requirements.txt
+matplotlib = ">=3.3"
+pandas = ">=1"
+sphinx = ">=3.2.0"
+sphinx-gallery = ">=0.7.0"
+sphinx-rtd-theme = ">=1"
+numpydoc = ">=1.0.0"
+sphinx-prompt = ">=1.3.0"
+sphinx-issues = ">=1.2.0"
+
+[tool.pixi.feature.docs.pypi-dependencies]
+# everything that depends on scikit-learn needs to be a pypi dependency so that this
+# spec is compatible with the nightly build environment.
+fairlearn = ">=0.7.0"
+
+[tool.pixi.feature.tests.dependencies]
+pytest = ">=7"
+pytest-cov = ">=2.9.0"
+flaky = ">=3.7.0"
+pandoc = ">=3.6.4"
+rich = ">=12"
+matplotlib = ">=3.3"
+pandas = ">=1"
+
+[tool.pixi.feature.tests.pypi-dependencies]
+# these are packages that require scikit-learn. They need to be as a pypi dependency
+# because otherwise there will be a package resolution conflict between pypi and conda
+# when installing pre-release nightly release.
+lightgbm = ">=3"
+xgboost = ">=1.6"
+
+[tool.pixi.feature.lint.dependencies]
+pre-commit = "*"
+
+[tool.pixi.feature.dev.dependencies]
+ipython = "*"
+
+[tool.pixi.feature.sklearn12.dependencies]
+scikit-learn = "~=1.2.0"
+pandas = "~=2.0.0"
+numpy = "~=1.25.0"
+scipy = "~=1.10.0"
+fairlearn = "~=0.9.0"
+catboost = ">=1.0"
+python = "~=3.9.0"
+
+
+[tool.pixi.feature.sklearn13.dependencies]
+scikit-learn = "~=1.3.0"
+pandas = "~=2.0.0"
+numpy = "~=1.25.0"
+scipy = "~=1.10.0"
+fairlearn = "~=0.9.0"
+catboost = ">=1.0"
+python = "~=3.10.0"
+
+[tool.pixi.feature.sklearn14.dependencies]
+scikit-learn = "~=1.4.0"
+pandas = "~=2.1.0"
+numpy = "~=1.26.0"
+scipy = "~=1.13.0"
+fairlearn = "~=0.10.0"
+catboost = ">=1.0"
+python = "~=3.11.0"
+
+[tool.pixi.feature.sklearn15.dependencies]
+scikit-learn = "~=1.5.0"
+fairlearn = "~=0.10.0"
+pandas = "~=2.2.0"
+numpy = "~=2.0.0"
+scipy = "~=1.13.0"
+python = "~=3.12.0"
+quantile-forest = "~=1.3.11"
+
+[tool.pixi.feature.sklearn16.dependencies]
+scikit-learn = "~=1.6.0"
+fairlearn = "~=0.11.0"
+pandas = "~=2.2.0"
+numpy = "~=2.1.0"
+scipy = "~=1.14.0"
+catboost = ">=1.0"
+quantile-forest = "~=1.4.0"
+python = "~=3.13.0"
+
+[tool.pixi.feature.sklearn17.dependencies]
+scikit-learn = "~=1.7.0"
+fairlearn = "~=0.12.0"
+pandas = "~=2.3.0"
+numpy = "~=2.3.0"
+scipy = "~=1.16.0"
+catboost = ">=1.0"
+quantile-forest = "~=1.4.0"
+python = "~=3.13.0"
+
+
+[tool.pixi.feature.sklearn18.dependencies]
+scikit-learn = "~=1.8.0"
+fairlearn = "~=0.14.0"
+pandas = "~=2.3.0"
+numpy = "~=2.4.0"
+scipy = "~=1.17.0"
+catboost = ">=1.0"
+quantile-forest = "~=1.4.0"
+python = "~=3.14.0"
+
+[tool.pixi.feature.sklearn19.dependencies]
+scikit-learn = "~=1.9.0"
+fairlearn = "~=0.14.0"
+pandas = "~=3.0.0"
+numpy = "~=2.5.0"
+scipy = "~=1.18.0"
+catboost = ">=1.0"
+quantile-forest = "~=1.4.0"
+python = "~=3.14.0"
+
+# [tool.pixi.feature.sklearn17]
+# this can be used when sklearn=1.7 is in release candidate mode.
+# channels = [
+#     {channel = "conda-forge/label/scikit-learn_rc", priority = 2},
+#     {channel = "conda-forge", priority = 1},
+# ]
+
+
+[tool.pixi.feature.sklearn-nightly.pypi-options]
+# This is for the nightly channel to test the dev version of scikit-learn.
+extra-index-urls = ["https://pypi.anaconda.org/scientific-python-nightly-wheels/simple"]
+
+[tool.pixi.feature.sklearn-nightly.pypi-dependencies]
+# The version value here needs to be exact, hence == instead of ~=
+scikit-learn = "==1.10.dev0"
+fairlearn = "*"
+pandas = "*"
+numpy = "*"
+scipy = "*"
+
+[tool.pixi.feature.lint.tasks]
+lint = { cmd = "pre-commit install && pre-commit run -v --all-files --show-diff-on-failure" }
+
+[tool.pixi.feature.tests.tasks]
+tests = { cmd = "pytest -vsl --cov=skops --cov-report=xml --cov-report=term-missing -m \"not inference\" skops" }
+
+[tool.pixi.environments]
+default = ["docs", "tests", "lint", "rich", "dev", "sklearn-nightly"]
+lint = ["lint"]
+docs = ["docs"]
+ci-sklearn12 = ["rich", "tests", "lint", "sklearn12"]
+ci-sklearn13 = ["rich", "tests", "lint", "sklearn13"]
+ci-sklearn14 = ["rich", "tests", "lint", "sklearn14"]
+ci-sklearn15 = ["rich", "tests", "lint", "sklearn15"]
+ci-sklearn16 = ["rich", "tests", "lint", "sklearn16"]
+ci-sklearn17 = ["rich", "tests", "lint", "sklearn17"]
+ci-sklearn18 = ["rich", "tests", "lint", "sklearn18"]
+ci-sklearn19 = ["rich", "tests", "lint", "sklearn19"]
+ci-sklearn-nightly = ["rich", "tests", "lint", "sklearn-nightly"]

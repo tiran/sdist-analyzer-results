@@ -1,4 +1,4 @@
-filelock
+torch
 setuptools
 wheel
-torch
+filelock

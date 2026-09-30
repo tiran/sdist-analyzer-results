@@ -1,0 +1,34 @@
+metadata-version: 2.5
+name: tuf
+version: 7.0.1
+summary: A secure updater framework for Python
+keywords: authentication,compromise,key,revocation,secure,update,updater
+author-email: theupdateframework@googlegroups.com
+license-expression: Apache-2.0 OR MIT
+license-file: LICENSE
+license-file: LICENSE-MIT
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Natural Language :: English
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: POSIX
+classifier: Operating System :: POSIX :: Linux
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Topic :: Security
+classifier: Topic :: Software Development
+requires-dist: securesystemslib~=1.0
+requires-dist: urllib3~=2.0
+requires-python: >=3.10
+project-url: Documentation, https://theupdateframework.readthedocs.io/en/stable/
+project-url: Homepage, https://www.updateframework.com
+project-url: Issues, https://github.com/theupdateframework/python-tuf/issues
+project-url: Source, https://github.com/theupdateframework/python-tuf
+

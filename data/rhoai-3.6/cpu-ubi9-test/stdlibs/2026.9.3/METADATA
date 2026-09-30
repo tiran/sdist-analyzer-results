@@ -1,0 +1,17 @@
+metadata-version: 2.5
+name: stdlibs
+version: 2026.9.3
+summary: List of packages in the stdlib
+author-email: Amethyst Reese <amy@n7.gg>
+license-expression: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Topic :: Utilities
+classifier: Typing :: Typed
+requires-python: >=3.9
+project-url: Documentation, https://stdlibs.omnilib.dev/en/latest/
+project-url: Github, https://github.com/omnilib/stdlibs
+project-url: Homepage, https://stdlibs.omnilib.dev
+import-name: stdlibs
+

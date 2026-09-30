@@ -1,0 +1,29 @@
+metadata-version: 2.4
+name: openalgo
+version: 2.0.4
+summary: Python library for OpenAlgo's trading APIs and WebSocket feeds, with 100+ technical indicators powered by a Rust core.
+keywords: trading,algorithmic-trading,finance,websocket,market-data,real-time,stock-market,api-wrapper,openalgo,trading-api,stock-trading,technical-analysis,indicators,rsi,macd,sma,ema,bollinger-bands,supertrend,atr,volume-analysis,rust,pyo3
+author-email: Rajandran R <rajandran@openalgo.in>
+license: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Financial and Insurance Industry
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Rust
+classifier: Topic :: Office/Business :: Financial :: Investment
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: httpx>=0.27.0
+requires-dist: pandas>=2.2.0
+requires-dist: websocket-client>=1.8.0
+requires-dist: numpy>=2.0.0
+requires-python: >=3.12
+project-url: Documentation, https://docs.openalgo.in
+project-url: Homepage, https://openalgo.in
+project-url: Repository, https://github.com/marketcalls/openalgo-python-library
+

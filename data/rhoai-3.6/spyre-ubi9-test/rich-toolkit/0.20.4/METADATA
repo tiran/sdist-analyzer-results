@@ -1,0 +1,17 @@
+metadata-version: 2.5
+name: rich-toolkit
+version: 0.20.4
+summary: Rich toolkit for building command-line applications
+license-expression: MIT
+license-file: LICENSE
+license-file: LICENSE-THIRD-PARTY
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Topic :: Software Development :: Libraries
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: click>=8.1.7
+requires-dist: rich>=13.7.1
+requires-dist: typing-extensions>=4.12.2
+requires-python: >=3.8
+

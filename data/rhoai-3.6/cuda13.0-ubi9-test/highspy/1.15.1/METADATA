@@ -1,0 +1,27 @@
+metadata-version: 2.4
+name: highspy
+version: 1.15.1
+summary: A thin set of pybind11 wrappers to HiGHS
+author-email: HiGHS developers <highsopt@gmail.com>
+license-expression: MIT
+license-file: LICENSE.txt
+license-file: THIRD_PARTY_NOTICES.md
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Typing :: Typed
+requires-dist: numpy
+requires-dist: typing_extensions; python_version < "3.10"
+requires-dist: pytest; extra == "test"
+requires-dist: numpy; extra == "test"
+requires-dist: highspy-extras==1.15.1; extra == "extras"
+requires-python: >=3.9
+project-url: Source Code, https://github.com/ERGO-Code/HiGHS
+project-url: Bug Tracker, https://github.com/ERGO-Code/HiGHS/issues
+provides-extra: test
+provides-extra: extras
+

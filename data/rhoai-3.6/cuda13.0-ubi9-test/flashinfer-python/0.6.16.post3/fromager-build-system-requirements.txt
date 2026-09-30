@@ -1,0 +1,14 @@
+numpy
+ninja
+setuptools
+cuda-python
+requests
+tqdm
+click
+torch
+apache-tvm-ffi!=0.1.8,!=0.1.8.post0,<0.2,>=0.1.6
+nvidia-cudnn-frontend
+packaging>=24
+tabulate
+setuptools>=77
+pynvml

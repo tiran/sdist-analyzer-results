@@ -1,0 +1,4 @@
+setuptools<82
+setuptools
+Cython>=3.0.11
+wheel

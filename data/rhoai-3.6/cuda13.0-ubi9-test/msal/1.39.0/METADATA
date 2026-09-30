@@ -1,0 +1,35 @@
+metadata-version: 2.4
+name: msal
+version: 1.39.0
+dynamic: license-file
+summary: The Microsoft Authentication Library (MSAL) for Python library enables your app to access the Microsoft Cloud by supporting authentication of users with Microsoft Azure Active Directory accounts (AAD) and Microsoft Accounts (MSA) using industry standard OAuth2 and OpenID Connect.
+home-page: https://github.com/AzureAD/microsoft-authentication-library-for-python
+author: Microsoft Corporation
+author-email: nugetaad@microsoft.com
+license: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+requires-dist: requests<3,>=2.0.0
+requires-dist: PyJWT[crypto]<3,>=1.0.0
+requires-dist: cryptography<51,>=2.5
+requires-dist: pymsalruntime<0.21,>=0.20; (python_version >= "3.9" and platform_system == "Windows") and extra == "broker"
+requires-dist: pymsalruntime<0.21,>=0.20; (python_version >= "3.9" and platform_system == "Darwin") and extra == "broker"
+requires-dist: pymsalruntime<0.21,>=0.20; (python_version >= "3.9" and platform_system == "Linux") and extra == "broker"
+requires-python: >=3.9
+project-url: Changelog, https://github.com/AzureAD/microsoft-authentication-library-for-python/releases
+project-url: Documentation, https://msal-python.readthedocs.io/
+project-url: Questions, https://stackoverflow.com/questions/tagged/azure-ad-msal+python
+project-url: Feature/Bug Tracker, https://github.com/AzureAD/microsoft-authentication-library-for-python/issues
+provides-extra: broker
+

@@ -1,0 +1,5 @@
+setuptools
+pybind11[global]
+nanobind
+protobuf==6.31.1
+scikit-build-core>=0.11

@@ -1,0 +1,59 @@
+metadata-version: 2.4
+name: gunicorn
+version: 26.1.0
+dynamic: license-file
+summary: WSGI HTTP Server for UNIX
+author-email: Benoit Chesneau <benoitc@gunicorn.org>
+license-expression: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Other Environment
+classifier: Intended Audience :: Developers
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Operating System :: POSIX
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Internet
+classifier: Topic :: Utilities
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: Internet :: WWW/HTTP
+classifier: Topic :: Internet :: WWW/HTTP :: WSGI
+classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Server
+classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+requires-dist: gevent>=24.10.1; extra == "gevent"
+requires-dist: packaging; extra == "gevent"
+requires-dist: tornado>=6.5.7; extra == "tornado"
+requires-dist: setproctitle; extra == "setproctitle"
+requires-dist: h2>=4.4.1; extra == "http2"
+requires-dist: gunicorn_h1c>=0.6.6; extra == "fast"
+requires-dist: gevent>=24.10.1; extra == "testing"
+requires-dist: h2>=4.4.1; extra == "testing"
+requires-dist: coverage; extra == "testing"
+requires-dist: packaging; extra == "testing"
+requires-dist: pytest>=9.0.3; extra == "testing"
+requires-dist: pytest-cov; extra == "testing"
+requires-dist: pytest-asyncio; extra == "testing"
+requires-dist: uvloop>=0.19.0; extra == "testing"
+requires-dist: httpx[http2]>=0.23.0; extra == "testing"
+requires-dist: inotify>=0.2.10; sys_platform == "linux" and extra == "testing"
+requires-python: >=3.10
+project-url: Homepage, https://gunicorn.org
+project-url: Documentation, https://gunicorn.org
+project-url: Issue tracker, https://github.com/benoitc/gunicorn/issues
+project-url: Source code, https://github.com/benoitc/gunicorn
+project-url: Changelog, https://gunicorn.org/news/
+provides-extra: gevent
+provides-extra: tornado
+provides-extra: gthread
+provides-extra: setproctitle
+provides-extra: http2
+provides-extra: fast
+provides-extra: testing
+

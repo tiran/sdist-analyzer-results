@@ -1,0 +1,51 @@
+metadata-version: 2.4
+name: contourpy
+version: 1.4.0
+summary: Python library for calculating contours of 2D quadrilateral grids
+author-email: Ian Thomas <ianthomas23@gmail.com>
+license-expression: BSD-3-Clause
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: Programming Language :: C++
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: 3.15
+classifier: Topic :: Scientific/Engineering :: Information Analysis
+classifier: Topic :: Scientific/Engineering :: Mathematics
+classifier: Topic :: Scientific/Engineering :: Visualization
+requires-dist: numpy>=2.0
+requires-dist: myst-parser; extra == "docs"
+requires-dist: sphinx; extra == "docs"
+requires-dist: sphinx-book-theme; extra == "docs"
+requires-dist: sphinx-copybutton; extra == "docs"
+requires-dist: bokeh; extra == "bokeh"
+requires-dist: selenium; extra == "bokeh"
+requires-dist: contourpy[bokeh,docs]; extra == "mypy"
+requires-dist: bokeh; extra == "mypy"
+requires-dist: docutils-stubs; extra == "mypy"
+requires-dist: mypy==2.1.0; extra == "mypy"
+requires-dist: types-Pillow; extra == "mypy"
+requires-dist: contourpy[test-no-images]; extra == "test"
+requires-dist: matplotlib; extra == "test"
+requires-dist: pre-commit; extra == "test"
+requires-dist: Pillow; extra == "test"
+requires-dist: pytest; extra == "test-no-images"
+requires-dist: pytest-cov; extra == "test-no-images"
+requires-dist: pytest-rerunfailures<16; extra == "test-no-images"
+requires-dist: pytest-xdist; extra == "test-no-images"
+requires-dist: wurlitzer; extra == "test-no-images"
+requires-python: >=3.12
+project-url: Homepage, https://github.com/contourpy/contourpy
+project-url: Changelog, https://contourpy.readthedocs.io/en/latest/changelog.html
+project-url: Documentation, https://contourpy.readthedocs.io
+project-url: Repository, https://github.com/contourpy/contourpy
+provides-extra: docs
+provides-extra: bokeh
+provides-extra: mypy
+provides-extra: test
+provides-extra: test-no-images
+

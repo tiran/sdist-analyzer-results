@@ -1,0 +1,13 @@
+metadata-version: 2.4
+name: hs-connectors
+version: 0.8.0
+dynamic: license-file
+summary: Pluggable backends for transferring hidden states between vLLM and Speculators during online and offline training.
+keywords: hidden states,speculative decoding,speculators,vllm,llm,inference,training,online training,offline training,safetensors,mooncake,distributed training
+author: Red Hat
+license-expression: Apache-2.0
+license-file: LICENSE
+requires-dist: safetensors
+requires-dist: torch
+requires-python: >=3.10
+

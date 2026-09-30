@@ -1,0 +1,60 @@
+metadata-version: 2.4
+name: oracledb
+version: 26.0.0
+dynamic: license-file
+summary: Python interface to Oracle Database
+keywords: Oracle,database
+author-email: Anthony Tuininga <anthony.tuininga@oracle.com>
+license-expression: UPL-1.0 OR Apache-2.0
+license-file: LICENSE.txt
+license-file: THIRD_PARTY_LICENSES.txt
+license-file: NOTICE.txt
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Natural Language :: English
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: 3.15
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Cython
+classifier: Topic :: Database
+requires-dist: cryptography>=3.2.1
+requires-dist: typing_extensions>=4.14.0
+requires-dist: anyio; extra == "test"
+requires-dist: numpy; extra == "test"
+requires-dist: pandas; extra == "test"
+requires-dist: pyarrow; extra == "test"
+requires-dist: pytest; extra == "test"
+requires-dist: tox; extra == "test"
+requires-dist: oci; extra == "oci-config"
+requires-dist: oci; extra == "oci-auth"
+requires-dist: requests>=2.33; extra == "oci-auth"
+requires-dist: azure-appconfiguration; extra == "azure-config"
+requires-dist: azure-identity; extra == "azure-config"
+requires-dist: azure-keyvault-secrets; extra == "azure-config"
+requires-dist: msal; extra == "azure-auth"
+requires-dist: boto3; extra == "aws-config"
+requires-dist: google-cloud-storage; extra == "gcp-config"
+requires-dist: google-cloud-secret-manager; extra == "gcp-config"
+requires-dist: google-crc32c; extra == "gcp-config"
+requires-python: >=3.10
+project-url: Homepage, https://oracle.github.io/python-oracledb
+project-url: Installation, https://python-oracledb.readthedocs.io/en/latest/user_guide/installation.html
+project-url: Samples, https://github.com/oracle/python-oracledb/tree/main/samples
+project-url: Documentation, http://python-oracledb.readthedocs.io
+project-url: Release Notes, https://python-oracledb.readthedocs.io/en/latest/release_notes.html
+project-url: Issues, https://github.com/oracle/python-oracledb/issues
+project-url: Source, https://github.com/oracle/python-oracledb
+provides-extra: test
+provides-extra: oci-config
+provides-extra: oci-auth
+provides-extra: azure-config
+provides-extra: azure-auth
+provides-extra: aws-config
+provides-extra: gcp-config
+

@@ -1,0 +1,5 @@
+setuptools
+patchelf>=0.17.2
+scikit-build-core
+z3-solver<4.15.5,>=4.13.0
+cython<3.3.0,>=3.1.0

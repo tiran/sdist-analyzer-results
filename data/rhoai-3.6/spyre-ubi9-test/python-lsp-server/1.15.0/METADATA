@@ -1,0 +1,61 @@
+metadata-version: 2.4
+name: python-lsp-server
+version: 1.15.0
+dynamic: license-file
+summary: Python Language Server for the Language Server Protocol
+author: Python Language Server Contributors
+license-expression: MIT
+license-file: LICENSE
+requires-dist: docstring-to-markdown
+requires-dist: importlib_metadata>=4.8.3; python_version < "3.10"
+requires-dist: jedi<0.21.0,>=0.17.2
+requires-dist: pluggy>=1.0.0
+requires-dist: python-lsp-jsonrpc<2.0.0,>=1.1.0
+requires-dist: ujson>=3.0.0
+requires-dist: black
+requires-dist: autopep8<2.1.0,>=2.0.4; extra == "all"
+requires-dist: flake8<8,>=7.1; extra == "all"
+requires-dist: mccabe<0.8.0,>=0.7.0; extra == "all"
+requires-dist: pycodestyle<2.13.0,>=2.12.0; extra == "all"
+requires-dist: pydocstyle<6.4.0,>=6.3.0; extra == "all"
+requires-dist: pyflakes<3.3.0,>=3.2.0; extra == "all"
+requires-dist: pylint<4.1.0,>=3.1; extra == "all"
+requires-dist: rope>=1.11.0; extra == "all"
+requires-dist: yapf>=0.33.0; extra == "all"
+requires-dist: whatthepatch<2.0.0,>=1.0.2; extra == "all"
+requires-dist: autopep8<2.1.0,>=2.0.4; extra == "autopep8"
+requires-dist: flake8<8,>=7.1; extra == "flake8"
+requires-dist: mccabe<0.8.0,>=0.7.0; extra == "mccabe"
+requires-dist: pycodestyle<2.13.0,>=2.12.0; extra == "pycodestyle"
+requires-dist: pydocstyle<6.4.0,>=6.3.0; extra == "pydocstyle"
+requires-dist: pyflakes<3.3.0,>=3.2.0; extra == "pyflakes"
+requires-dist: pylint<4.1.0,>=3.1; extra == "pylint"
+requires-dist: rope>=1.11.0; extra == "rope"
+requires-dist: yapf>=0.33.0; extra == "yapf"
+requires-dist: whatthepatch<2.0.0,>=1.0.2; extra == "yapf"
+requires-dist: websockets>=10.3; extra == "websockets"
+requires-dist: pylint<4.1.0,>=3.1; extra == "test"
+requires-dist: pytest; extra == "test"
+requires-dist: pytest-cov; extra == "test"
+requires-dist: coverage; extra == "test"
+requires-dist: numpy; extra == "test"
+requires-dist: pandas; extra == "test"
+requires-dist: matplotlib; extra == "test"
+requires-dist: pyqt6; extra == "test"
+requires-dist: flaky; extra == "test"
+requires-dist: websockets>=10.3; extra == "test"
+requires-python: >=3.9
+project-url: Homepage, https://github.com/python-lsp/python-lsp-server
+provides-extra: all
+provides-extra: autopep8
+provides-extra: flake8
+provides-extra: mccabe
+provides-extra: pycodestyle
+provides-extra: pydocstyle
+provides-extra: pyflakes
+provides-extra: pylint
+provides-extra: rope
+provides-extra: yapf
+provides-extra: websockets
+provides-extra: test
+

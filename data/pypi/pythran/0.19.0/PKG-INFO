@@ -1,0 +1,55 @@
+metadata-version: 2.4
+name: pythran
+version: 0.19.0
+dynamic: license-file
+summary: Ahead of Time compiler for numeric kernels
+author-email: Serge Guelton <serge.guelton@telecom-bretagne.eu>
+license: Copyright (c) 2012, HPC Project and Serge Guelton
+                 All rights reserved.
+                 
+                 Redistribution and use in source and binary forms, with or without
+                 modification, are permitted provided that the following conditions are met:
+                 
+                 	Redistributions of source code must retain the above copyright notice, this
+                 	list of conditions and the following disclaimer.
+                 
+                 	Redistributions in binary form must reproduce the above copyright notice,
+                 	this list...
+license-file: LICENSE
+license-file: LICENSEn
+license-file: AUTHORS
+classifier: Development Status :: 4 - Beta
+classifier: Environment :: Console
+classifier: Intended Audience :: Developers
+classifier: Natural Language :: English
+classifier: Operating System :: POSIX :: Linux
+classifier: Operating System :: MacOS
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: C++
+classifier: Topic :: Software Development :: Compilers
+classifier: Topic :: Software Development :: Code Generators
+requires-dist: ply>=3.4
+requires-dist: setuptools<60; python_version < "3.12"
+requires-dist: setuptools; python_version >= "3.12"
+requires-dist: gast~=0.7.0
+requires-dist: numpy
+requires-dist: beniget~=0.5.0
+requires-dist: numpy; extra == "doc"
+requires-dist: nbsphinx; extra == "doc"
+requires-dist: scipy; extra == "doc"
+requires-dist: guzzle_sphinx_theme; extra == "doc"
+requires-dist: ipython; extra == "test"
+requires-dist: nbval; extra == "test"
+requires-dist: cython; extra == "test"
+requires-dist: wheel; extra == "test"
+requires-dist: packaging; extra == "test"
+requires-dist: ninja; extra == "test"
+requires-dist: meson; extra == "test"
+requires-python: >=3.7
+project-url: Homepage, https://github.com/serge-sans-paille/pythran
+project-url: Documentation, https://pythran.readthedocs.io
+project-url: Changelog, https://pythran.readthedocs.io/en/latest/Changelog.html
+provides-extra: doc
+provides-extra: test
+

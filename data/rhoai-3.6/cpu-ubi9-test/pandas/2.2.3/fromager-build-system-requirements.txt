@@ -1,7 +1,7 @@
-setuptools
-numpy>=2.0
-versioneer[toml]
 meson<1.11.0,>=1.2.1
-wheel
-Cython~=3.0.5
 meson-python==0.13.1
+versioneer[toml]
+setuptools
+wheel
+numpy<3.0,>=2.0
+Cython~=3.0.5

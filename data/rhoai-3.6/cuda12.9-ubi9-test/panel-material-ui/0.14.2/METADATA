@@ -1,0 +1,40 @@
+metadata-version: 2.5
+name: panel-material-ui
+version: 0.14.2
+summary: An extension to bring MaterialUI components to Panel.
+author-email: Philipp Rudiger <philipp.jfr@gmail.com>
+maintainer-email: Philipp Rudiger <philipp.jfr@gmail.com>
+license: BSD
+license-file: LICENSE.txt
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: BSD License
+classifier: Natural Language :: English
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Scientific/Engineering
+classifier: Topic :: Software Development :: Libraries
+requires-dist: bokeh>=3.8.0
+requires-dist: packaging
+requires-dist: panel>=1.8.0
+requires-dist: plotly; extra == "dev"
+requires-dist: pytest; extra == "dev"
+requires-dist: pytest-asyncio; extra == "dev"
+requires-dist: pytest-rerunfailures<16; extra == "dev"
+requires-dist: pytest-xdist; extra == "dev"
+requires-dist: watchfiles; extra == "dev"
+requires-dist: mypy; extra == "mypy"
+requires-dist: types-requests; extra == "mypy"
+requires-dist: typing-extensions; extra == "mypy"
+requires-python: >=3.10
+project-url: Homepage, https://github.com/panel-extensions/panel-material-ui
+project-url: Source, https://github.com/panel-extensions/panel-material-ui
+provides-extra: dev
+provides-extra: mypy
+

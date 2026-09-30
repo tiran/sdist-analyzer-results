@@ -1,0 +1,55 @@
+metadata-version: 2.4
+name: numcodecs
+version: 0.17.0
+summary: A Python package providing buffer compression and transformation codecs for use in data storage and communication applications.
+maintainer-email: Alistair Miles <alimanfoo@googlemail.com>
+license-expression: MIT
+license-file: LICENSE.txt
+license-file: c-blosc/LICENSE.txt
+license-file: c-blosc/LICENSES/BITSHUFFLE.txt
+license-file: c-blosc/LICENSES/FASTLZ.txt
+license-file: c-blosc/LICENSES/LZ4.txt
+license-file: c-blosc/LICENSES/SNAPPY.txt
+license-file: c-blosc/LICENSES/STDINT.txt
+license-file: c-blosc/LICENSES/ZLIB-NG.txt
+license-file: c-blosc/LICENSES/ZLIB.txt
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Information Technology
+classifier: Intended Audience :: Science/Research
+classifier: Programming Language :: Python
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Operating System :: Unix
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+requires-dist: numpy>=2.0
+requires-dist: typing_extensions
+requires-dist: msgpack; extra == "msgpack"
+requires-dist: zfpy>=1.0.0; extra == "zfpy"
+requires-dist: pcodec<2,>=1; extra == "pcodec"
+requires-dist: crc32c>=2.7; extra == "crc32c"
+requires-dist: google-crc32c>=1.5; extra == "google-crc32c"
+requires-dist: sphinx; extra == "docs"
+requires-dist: sphinx-issues; extra == "docs"
+requires-dist: pydata-sphinx-theme; extra == "docs"
+requires-dist: numpydoc; extra == "docs"
+requires-dist: myst-parser; extra == "docs"
+requires-dist: coverage; extra == "test"
+requires-dist: pytest; extra == "test"
+requires-dist: pytest-cov; extra == "test"
+requires-dist: pyzstd; extra == "test"
+requires-dist: importlib_metadata; extra == "test-extras"
+requires-python: >=3.12
+project-url: Bug Tracker, https://github.com/zarr-developers/numcodecs/issues
+project-url: Changelog, https://numcodecs.readthedocs.io/en/stable/release.html
+project-url: Documentation, https://numcodecs.readthedocs.io/
+project-url: Homepage, https://github.com/zarr-developers/numcodecs
+provides-extra: msgpack
+provides-extra: zfpy
+provides-extra: pcodec
+provides-extra: crc32c
+provides-extra: google-crc32c
+provides-extra: docs
+provides-extra: test
+provides-extra: test-extras
+

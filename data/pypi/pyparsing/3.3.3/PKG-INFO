@@ -1,0 +1,35 @@
+metadata-version: 2.5
+name: pyparsing
+version: 3.3.3
+summary: pyparsing - Classes and methods to define and execute parsing grammars
+author-email: Paul McGuire <ptmcg.gm+pyparsing@gmail.com>
+license-expression: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Information Technology
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: 3.15
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Software Development :: Compilers
+classifier: Topic :: Text Processing
+classifier: Typing :: Typed
+requires-dist: railroad-diagrams; extra == "diagrams"
+requires-dist: jinja2; extra == "diagrams"
+requires-python: >=3.9
+project-url: Documentation, https://pyparsing-docs.readthedocs.io/en/latest/
+project-url: Homepage, https://github.com/pyparsing/pyparsing/
+project-url: Source, https://github.com/pyparsing/pyparsing.git
+provides-extra: diagrams
+import-name: pyparsing
+

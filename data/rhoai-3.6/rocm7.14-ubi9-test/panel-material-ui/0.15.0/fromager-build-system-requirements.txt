@@ -1,0 +1,4 @@
+hatch-vcs
+hatchling
+packaging
+setuptools

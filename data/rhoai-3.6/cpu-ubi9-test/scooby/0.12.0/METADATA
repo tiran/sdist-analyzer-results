@@ -1,0 +1,27 @@
+metadata-version: 2.4
+name: scooby
+version: 0.12.0
+dynamic: license-file
+summary: A Great Dane turned Python environment detective
+keywords: environment,reporting,versioning
+author-email: "Dieter Werthmüller, Bane Sullivan, Alex Kaszynski, and contributors" <info@pyvista.org>
+license-expression: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Science/Research
+classifier: Natural Language :: English
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-dist: mkl; platform_system != "Darwin" and extra == "cpu"
+requires-dist: psutil; extra == "cpu"
+requires-python: >=3.10
+project-url: Bug Reports, https://github.com/banesullivan/scooby/issues
+project-url: Homepage, https://github.com/banesullivan/scooby
+project-url: Source Code, https://github.com/banesullivan/scooby
+provides-extra: cpu
+

@@ -1,0 +1,29 @@
+metadata-version: 2.4
+name: xformers
+version: 0.0.35
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: license-file
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: XFormers: A collection of composable Transformer building blocks.
+home-page: https://facebookresearch.github.io/xformers/
+author: Facebook AI Research
+author-email: oncall+xformers@xmail.facebook.com
+license-file: LICENSE
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: License :: OSI Approved :: BSD License
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+classifier: Operating System :: OS Independent
+requires-dist: torch>=2.10
+requires-dist: numpy
+requires-python: >=3.9
+

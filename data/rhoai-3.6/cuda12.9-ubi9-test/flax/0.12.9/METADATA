@@ -1,0 +1,83 @@
+metadata-version: 2.4
+name: flax
+version: 0.12.9
+dynamic: license-file
+summary: Flax: A neural network library for JAX designed for flexibility
+author-email: Flax team <flax-dev@google.com>
+license-file: LICENSE
+license-file: AUTHORS
+classifier: Development Status :: 3 - Alpha
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Programming Language :: Python :: 3.12
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+requires-dist: numpy>=1.23.2
+requires-dist: jax>=0.11.1
+requires-dist: msgpack
+requires-dist: optax
+requires-dist: orbax-checkpoint
+requires-dist: tensorstore
+requires-dist: rich>=11.1
+requires-dist: typing_extensions>=4.2
+requires-dist: PyYAML>=5.4.1
+requires-dist: treescope>=0.1.7
+requires-dist: clu; extra == "testing"
+requires-dist: clu<=0.0.9; python_version < "3.10" and extra == "testing"
+requires-dist: einops; extra == "testing"
+requires-dist: gymnasium[atari]; python_version < "3.14" and extra == "testing"
+requires-dist: jaxlib; extra == "testing"
+requires-dist: jaxtyping; extra == "testing"
+requires-dist: jraph>=0.0.6dev0; extra == "testing"
+requires-dist: ml-collections; extra == "testing"
+requires-dist: mypy; extra == "testing"
+requires-dist: opencv-python; extra == "testing"
+requires-dist: protobuf; extra == "testing"
+requires-dist: pytest; extra == "testing"
+requires-dist: pytest-cov; extra == "testing"
+requires-dist: pytest-custom_exit_code; extra == "testing"
+requires-dist: pytest-xdist; extra == "testing"
+requires-dist: pytype; extra == "testing"
+requires-dist: sentencepiece==0.2.0; extra == "testing"
+requires-dist: tensorflow_text>=2.11.0; (platform_system != "Darwin" and python_version < "3.13") and extra == "testing"
+requires-dist: tensorflow_datasets; extra == "testing"
+requires-dist: tensorflow>=2.12.0; python_version < "3.13" and extra == "testing"
+requires-dist: tensorflow>=2.20.0; (python_version >= "3.13" and python_version < "3.14") and extra == "testing"
+requires-dist: tensorboard; extra == "testing"
+requires-dist: keras<3.13; extra == "testing"
+requires-dist: torch; extra == "testing"
+requires-dist: treescope>=0.1.1; python_version >= "3.10" and extra == "testing"
+requires-dist: cloudpickle>=3.0.0; extra == "testing"
+requires-dist: ale-py>=0.10.2; python_version < "3.14" and extra == "testing"
+requires-dist: grain==0.2.16; extra == "testing"
+requires-dist: sphinx==6.2.1; extra == "docs"
+requires-dist: sphinx-book-theme; extra == "docs"
+requires-dist: Pygments>=2.6.1; extra == "docs"
+requires-dist: ipykernel; extra == "docs"
+requires-dist: tqdm==4.67.1; extra == "docs"
+requires-dist: myst_nb; extra == "docs"
+requires-dist: nbstripout; extra == "docs"
+requires-dist: recommonmark; extra == "docs"
+requires-dist: ipython_genutils; extra == "docs"
+requires-dist: sphinx-design; extra == "docs"
+requires-dist: jupytext==1.13.8; extra == "docs"
+requires-dist: dm-haiku>=0.0.14; extra == "docs"
+requires-dist: docutils; extra == "docs"
+requires-dist: matplotlib; extra == "docs"
+requires-dist: scikit-learn; extra == "docs"
+requires-dist: ml_collections; extra == "docs"
+requires-dist: einops; extra == "docs"
+requires-dist: kagglehub>=0.3.3; extra == "docs"
+requires-dist: ipywidgets>=8.1.5; extra == "docs"
+requires-dist: orbax-export>=0.0.8; extra == "docs"
+requires-dist: jaxtyping; extra == "docs"
+requires-dist: grain; extra == "docs"
+requires-dist: nanobind>=2.5.0; extra == "dev"
+requires-dist: pre-commit>=3.8.0; extra == "dev"
+requires-dist: scikit-build-core[pyproject]>=0.11.0; extra == "dev"
+requires-python: >=3.12
+project-url: homepage, https://github.com/google/flax
+provides-extra: testing
+provides-extra: docs
+provides-extra: dev
+

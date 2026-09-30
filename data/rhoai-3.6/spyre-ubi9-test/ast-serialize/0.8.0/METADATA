@@ -1,0 +1,26 @@
+metadata-version: 2.4
+name: ast_serialize
+version: 0.8.0
+summary: Python bindings for mypy AST serialization
+author-email: Jukka Lehtosalo <jukka.lehtosalo@iki.fi>
+license-expression: MIT
+license-file: LICENSE
+license-file: crates/LICENSE
+classifier: Development Status :: 3 - Alpha
+classifier: Environment :: Console
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: 3.15
+classifier: Programming Language :: Rust
+classifier: Topic :: Software Development
+classifier: Typing :: Typed
+requires-python: >=3.7
+project-url: Homepage, https://github.com/mypyc/ast_serialize
+project-url: Issues, https://github.com/mypyc/ast_serialize/issues
+

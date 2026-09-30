@@ -1,0 +1,35 @@
+metadata-version: 2.4
+name: cloudpathlib
+version: 0.25.0
+summary: pathlib-style classes for cloud storage services.
+keywords: pathlib,cloud storage,s3,azure blob storage,google cloud storage
+author-email: DrivenData <info@drivendata.org>
+license-file: LICENSE
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-dist: typing-extensions>4; python_version < "3.11"
+requires-dist: cloudpathlib[azure]; extra == "all"
+requires-dist: cloudpathlib[gs]; extra == "all"
+requires-dist: cloudpathlib[s3]; extra == "all"
+requires-dist: azure-storage-blob>=12; extra == "azure"
+requires-dist: azure-storage-file-datalake>=12; extra == "azure"
+requires-dist: google-cloud-storage; extra == "gs"
+requires-dist: boto3>=1.34.0; extra == "s3"
+requires-python: >=3.9
+project-url: Bug Tracker, https://github.com/drivendataorg/cloudpathlib/issues
+project-url: Changelog, https://cloudpathlib.drivendata.org/stable/changelog/
+project-url: Documentation, https://cloudpathlib.drivendata.org/
+project-url: Repository, https://github.com/drivendataorg/cloudpathlib
+provides-extra: all
+provides-extra: azure
+provides-extra: gs
+provides-extra: s3
+

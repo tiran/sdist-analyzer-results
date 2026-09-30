@@ -1,0 +1,10 @@
+metadata-version: 2.4
+name: deep-ep
+version: 2.0.1
+dynamic: license-file
+summary: DeepSeek Efficient Parallel Processing
+license-file: LICENSE
+requires-dist: torch>=2.1
+requires-dist: setuptools
+requires-python: >=3.8
+

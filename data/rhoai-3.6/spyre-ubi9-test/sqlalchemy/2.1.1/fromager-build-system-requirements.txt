@@ -1,0 +1,2 @@
+cython>=3.3; platform_python_implementation == "CPython"
+setuptools>=77.0.3

@@ -1,0 +1,31 @@
+metadata-version: 2.4
+name: mysqlclient
+version: 2.3.0
+dynamic: license-file
+summary: Python interface to MySQL
+keywords: MySQL
+author-email: Inada Naoki <songofacandy@gmail.com>
+license-expression: GPL-2.0-or-later
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Other Environment
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Operating System :: Microsoft :: Windows :: Windows NT/2000
+classifier: Operating System :: OS Independent
+classifier: Operating System :: POSIX
+classifier: Operating System :: POSIX :: Linux
+classifier: Operating System :: Unix
+classifier: Programming Language :: C
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Database
+classifier: Topic :: Database :: Database Engines/Servers
+requires-python: >=3.10
+project-url: Project, https://github.com/PyMySQL/mysqlclient
+project-url: Documentation, https://mysqlclient.readthedocs.io/
+

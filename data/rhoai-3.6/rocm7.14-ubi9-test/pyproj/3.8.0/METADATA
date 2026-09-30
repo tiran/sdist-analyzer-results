@@ -1,0 +1,35 @@
+metadata-version: 2.4
+name: pyproj
+version: 3.8.0
+dynamic: home-page
+dynamic: license-file
+summary: Python interface to PROJ (cartographic projections and coordinate transformations library)
+keywords: GIS,map,geospatial,coordinate-systems,coordinate-transformation,cartographic-projection,geodesic
+home-page: https://github.com/pyproj4/pyproj
+author-email: Jeff Whitaker <jeffrey.s.whitaker@noaa.gov>
+maintainer: pyproj contributors
+license-expression: MIT
+license-file: LICENSE
+license-file: LICENSE_proj
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Science/Research
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: 3.15
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Topic :: Scientific/Engineering
+classifier: Topic :: Scientific/Engineering :: GIS
+classifier: Topic :: Scientific/Engineering :: Mathematics
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Typing :: Typed
+classifier: Programming Language :: Python :: Free Threading :: 2 - Beta
+requires-dist: certifi
+requires-python: >=3.12
+project-url: homepage, https://pyproj4.github.io/pyproj/
+project-url: documentation, https://pyproj4.github.io/pyproj/
+project-url: repository, https://github.com/pyproj4/pyproj
+project-url: changelog, https://pyproj4.github.io/pyproj/stable/history.html
+

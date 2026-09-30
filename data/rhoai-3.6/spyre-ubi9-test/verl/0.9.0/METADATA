@@ -1,0 +1,65 @@
+metadata-version: 2.4
+name: verl
+version: 0.9.0
+dynamic: author
+dynamic: author-email
+dynamic: home-page
+dynamic: license-file
+dynamic: provides-extra
+dynamic: requires-dist
+summary: verl: Volcano Engine Reinforcement Learning for LLM
+home-page: https://github.com/verl-project/verl
+author: Bytedance - Seed - MLSys
+author-email: zhangchi.usc1992@bytedance.com, gmsheng@connect.hku.hk
+license: Apache-2.0
+license-file: LICENSE
+requires-dist: accelerate
+requires-dist: codetiming
+requires-dist: datasets
+requires-dist: dill
+requires-dist: hydra-core
+requires-dist: numpy>=2.0.0
+requires-dist: pandas
+requires-dist: peft
+requires-dist: pyarrow>=19.0.0
+requires-dist: pybind11
+requires-dist: pylatexenc
+requires-dist: ray[default]>=2.41.0
+requires-dist: torchdata
+requires-dist: tensordict!=0.9.0,<=0.10.0,>=0.8.0
+requires-dist: transformers!=5.6.0,<5.11,>=5.5.3
+requires-dist: wandb
+requires-dist: packaging>=20.0
+requires-dist: tensorboard
+requires-dist: pytest; extra == "test"
+requires-dist: pre-commit; extra == "test"
+requires-dist: py-spy; extra == "test"
+requires-dist: pytest-asyncio; extra == "test"
+requires-dist: pytest-rerunfailures; extra == "test"
+requires-dist: mathruler; extra == "geo"
+requires-dist: torchvision; extra == "geo"
+requires-dist: qwen_vl_utils; extra == "geo"
+requires-dist: liger-kernel; extra == "gpu"
+requires-dist: flash-attn; extra == "gpu"
+requires-dist: math-verify; extra == "math"
+requires-dist: tensordict!=0.9.0,<=0.10.0,>=0.8.0; extra == "vllm"
+requires-dist: vllm>=0.18.0; extra == "vllm"
+requires-dist: tensordict!=0.9.0,<=0.10.0,>=0.8.0; extra == "sglang"
+requires-dist: sglang[openai,srt]==0.5.8; extra == "sglang"
+requires-dist: torch==2.9.1; extra == "sglang"
+requires-dist: trl<=0.9.6; extra == "trl"
+requires-dist: megatron-bridge; extra == "mcore"
+requires-dist: mbridge; extra == "mcore"
+requires-dist: tensorrt-llm>=1.2.0rc6; extra == "trtllm"
+requires-python: >=3.10
+provides-extra: test
+provides-extra: prime
+provides-extra: geo
+provides-extra: gpu
+provides-extra: math
+provides-extra: vllm
+provides-extra: sglang
+provides-extra: trl
+provides-extra: mcore
+provides-extra: trtllm
+

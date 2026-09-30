@@ -1,0 +1,15 @@
+metadata-version: 2.4
+name: blobfile
+version: 3.3.0
+dynamic: license-file
+summary: Read GCS, ABS and local paths with the same interface, clone of tensorflow.io.gfile
+author: Christopher Hesse
+license: Public Domain
+license-file: LICENSE
+requires-dist: pycryptodomex>=3.8
+requires-dist: urllib3>=2
+requires-dist: lxml>=4.9
+requires-dist: filelock>=3.0
+requires-python: >=3.10
+project-url: Homepage, https://github.com/blobfile/blobfile
+

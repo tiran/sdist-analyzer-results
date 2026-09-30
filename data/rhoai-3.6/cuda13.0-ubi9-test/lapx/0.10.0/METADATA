@@ -1,0 +1,51 @@
+metadata-version: 2.4
+name: lapx
+version: 0.10.0
+dynamic: author
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: maintainer
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: Linear assignment problem solvers, including single and batch solvers.
+keywords: Linear Assignment Problem Solver,LAP solver,Jonker-Volgenant Algorithm,LAPJV,LAPMOD,lap,lapx,lapjvx,lapjvxa,lapjvc,lapjvs,lapjvsa,lapjvx_batch,lapjvxa_batch,lapjvs_batch,lapjvsa_batch,lapmod_batch
+home-page: https://github.com/rathaROG/lapx
+author: Ratha SIV
+maintainer: rathaROG
+license: MIT
+license-file: LICENSE
+license-file: NOTICE
+classifier: Development Status :: 4 - Beta
+classifier: Environment :: Console
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Education
+classifier: Intended Audience :: Science/Research
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: 3.15
+classifier: Topic :: Education
+classifier: Topic :: Education :: Testing
+classifier: Topic :: Scientific/Engineering
+classifier: Topic :: Scientific/Engineering :: Mathematics
+classifier: Topic :: Software Development
+classifier: Topic :: Software Development :: Libraries
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: POSIX
+classifier: Operating System :: Unix
+classifier: Operating System :: MacOS
+requires-dist: numpy>=1.21.6
+requires-python: >=3.7
+

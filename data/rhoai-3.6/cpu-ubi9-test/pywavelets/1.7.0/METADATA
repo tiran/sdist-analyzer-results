@@ -1,0 +1,34 @@
+metadata-version: 2.1
+name: PyWavelets
+version: 1.7.0
+summary: PyWavelets, wavelet transform module
+maintainer-email: The PyWavelets Developers <pywavelets@googlegroups.com>
+license: Copyright (c) 2006-2012 Filip Wasilewski <http://en.ig.ma/>
+                  Copyright (c) 2012-2020 The PyWavelets Developers <https://github.com/PyWavelets/pywt>
+                  
+                  Permission is hereby granted, free of charge, to any person obtaining a copy of
+                  this software and associated documentation files (the "Software"), to deal in
+                  the Software without restriction, including without limitation the rights to
+                  use, copy, modify, merge, publish, distribute, sublicense, and/or sell c...
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Education
+classifier: Intended Audience :: Science/Research
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: C
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: numpy<3,>=1.23
+requires-dist: scipy>=1.9; extra == "optional"
+requires-python: >=3.10
+project-url: homepage, https://github.com/PyWavelets/pywt
+project-url: source, https://github.com/PyWavelets/pywt
+project-url: documentation, https://pywavelets.readthedocs.io/
+provides-extra: optional
+

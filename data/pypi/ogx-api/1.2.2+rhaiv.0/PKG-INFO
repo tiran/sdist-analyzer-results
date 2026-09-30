@@ -1,0 +1,24 @@
+metadata-version: 2.4
+name: ogx-api
+version: 1.2.2
+summary: API and Provider specifications for OGX - lightweight package with protocol definitions and provider specs
+author-email: The OGX Contributors <contributors@ogx.dev>
+license: MIT
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python :: 3
+classifier: Operating System :: OS Independent
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Information Technology
+classifier: Intended Audience :: Science/Research
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+classifier: Topic :: Scientific/Engineering :: Information Analysis
+requires-dist: openai>=2.43.0
+requires-dist: fastapi<1.0,>=0.136.3
+requires-dist: pydantic>=2.11.9
+requires-dist: jsonschema>=4.26.0
+requires-dist: opentelemetry-sdk>=1.43.0
+requires-dist: opentelemetry-exporter-otlp-proto-http>=1.43.0
+requires-dist: opentelemetry-exporter-otlp-proto-grpc>=1.42.1
+requires-python: >=3.12
+project-url: Homepage, https://github.com/ogx-ai/ogx
+

@@ -1,0 +1,45 @@
+metadata-version: 2.4
+name: nccl4py
+version: 0.6.0
+dynamic: license-file
+summary: NCCL4Py: Python bindings for NCCL
+author: NVIDIA Corporation
+license-expression: Apache-2.0
+license-file: LICENSE.txt
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: Intended Audience :: End Users/Desktop
+classifier: Natural Language :: English
+classifier: Operating System :: POSIX :: Linux
+classifier: Topic :: Education
+classifier: Topic :: Scientific/Engineering
+classifier: Topic :: Software Development :: Libraries
+classifier: Programming Language :: Cython
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Environment :: GPU :: NVIDIA CUDA
+classifier: Environment :: GPU :: NVIDIA CUDA :: 12
+classifier: Environment :: GPU :: NVIDIA CUDA :: 13
+requires-dist: packaging
+requires-dist: numpy
+requires-dist: cuda-core~=1.0
+requires-dist: cuda-pathfinder<2.0.0,>=1.5.4
+requires-dist: nvidia-nccl-cu12; extra == "cu12"
+requires-dist: cuda-bindings~=12.0; extra == "cu12"
+requires-dist: nvidia-cutlass-dsl~=4.6; extra == "cu12"
+requires-dist: nvidia-nccl-cu13; extra == "cu13"
+requires-dist: cuda-bindings~=13.0; extra == "cu13"
+requires-dist: nvidia-cutlass-dsl[cu13]~=4.6; extra == "cu13"
+requires-python: >=3.10
+project-url: homepage, https://developer.nvidia.com/nccl
+project-url: documentation, https://docs.nvidia.com/deeplearning/nccl/user-guide/docs/index.html
+project-url: repository, https://github.com/NVIDIA/nccl
+project-url: issues, https://github.com/NVIDIA/nccl/issues
+provides-extra: cu12
+provides-extra: cu13
+

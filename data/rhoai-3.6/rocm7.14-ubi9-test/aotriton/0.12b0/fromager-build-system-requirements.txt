@@ -1,0 +1,9 @@
+pybind11
+setuptools<80.0.0
+pandas
+iniconfig
+pluggy
+pyyaml
+numpy
+filelock
+packaging

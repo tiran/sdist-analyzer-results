@@ -1,0 +1,19 @@
+metadata-version: 2.5
+name: threadpoolctl
+version: 3.7.0
+summary: threadpoolctl
+author-email: Thomas Moreau <thomas.moreau.2010@gmail.com>
+license-expression: BSD-3-Clause
+license-file: LICENSE
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-python: >=3.9
+project-url: homepage, https://github.com/joblib/threadpoolctl
+import-name: threadpoolctl
+

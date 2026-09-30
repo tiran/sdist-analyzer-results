@@ -1,0 +1,80 @@
+metadata-version: 2.4
+name: py-key-value-aio
+version: 0.4.6
+summary: Async Key-Value Store - A pluggable interface for KV Stores
+license-expression: Apache-2.0
+license-file: LICENSE
+classifier: Development Status :: 3 - Alpha
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+requires-dist: beartype>=0.20.0
+requires-dist: typing-extensions>=4.15.0
+requires-dist: aerospike>=16.0.0; extra == "aerospike"
+requires-dist: azure-data-tables>=12.4.0; extra == "azure-tables"
+requires-dist: azure-core>=1.29.0; extra == "azure-tables"
+requires-dist: chdb>=4.1.1; extra == "chdb"
+requires-dist: diskcache>=5.0.0; extra == "disk"
+requires-dist: pathvalidate>=3.3.1; extra == "disk"
+requires-dist: mkdocs>=1.6.0; extra == "docs"
+requires-dist: mkdocs-material>=9.5.0; extra == "docs"
+requires-dist: mkdocstrings[python]>=0.30.0; extra == "docs"
+requires-dist: mkdocstrings-python>=1.10.0; extra == "docs"
+requires-dist: duckdb>=1.1.1; extra == "duckdb"
+requires-dist: pytz>=2025.2; extra == "duckdb"
+requires-dist: aioboto3>=13.3.0; extra == "dynamodb"
+requires-dist: types-aiobotocore-dynamodb>=2.16.0; extra == "dynamodb"
+requires-dist: elasticsearch>=8.0.0; extra == "elasticsearch"
+requires-dist: aiohttp>=3.12; extra == "elasticsearch"
+requires-dist: aiofile!=3.9.0,<3.10,>=3.5.0; python_full_version < "3.11" and extra == "filetree"
+requires-dist: aiofile>=3.12.3; python_full_version >= "3.11" and extra == "filetree"
+requires-dist: anyio>=4.4.0; extra == "filetree"
+requires-dist: google-cloud-firestore>=2.13.0; extra == "firestore"
+requires-dist: google-auth>=2.24.0; extra == "firestore"
+requires-dist: keyring>=25.6.0; extra == "keyring"
+requires-dist: keyring>=25.6.0; extra == "keyring-linux"
+requires-dist: dbus-python>=1.4.0; extra == "keyring-linux"
+requires-dist: aiomcache>=0.8.0; extra == "memcached"
+requires-dist: cachetools>=5.0.0; extra == "memory"
+requires-dist: pymongo>=4.9.0; extra == "mongodb"
+requires-dist: opensearch-py[async]>=2.0.0; extra == "opensearch"
+requires-dist: asyncpg>=0.30.0; extra == "postgresql"
+requires-dist: pydantic>=2.11.9; extra == "pydantic"
+requires-dist: redis>=4.3.0; extra == "redis"
+requires-dist: rocksdict>=0.3.24; python_full_version >= "3.12" and extra == "rocksdb"
+requires-dist: rocksdict>=0.3.2; python_full_version < "3.12" and extra == "rocksdb"
+requires-dist: aioboto3>=13.3.0; extra == "s3"
+requires-dist: types-aiobotocore-s3>=2.16.0; extra == "s3"
+requires-dist: valkey-glide>=2.1.0; extra == "valkey"
+requires-dist: hvac>=2.3.0; extra == "vault"
+requires-dist: types-hvac>=2.3.0; extra == "vault"
+requires-dist: cryptography>=45.0.0; extra == "wrappers-encryption"
+requires-python: >=3.10
+provides-extra: aerospike
+provides-extra: azure-tables
+provides-extra: chdb
+provides-extra: disk
+provides-extra: docs
+provides-extra: duckdb
+provides-extra: dynamodb
+provides-extra: elasticsearch
+provides-extra: filetree
+provides-extra: firestore
+provides-extra: keyring
+provides-extra: keyring-linux
+provides-extra: memcached
+provides-extra: memory
+provides-extra: mongodb
+provides-extra: opensearch
+provides-extra: postgresql
+provides-extra: pydantic
+provides-extra: redis
+provides-extra: rocksdb
+provides-extra: s3
+provides-extra: valkey
+provides-extra: vault
+provides-extra: wrappers-encryption
+

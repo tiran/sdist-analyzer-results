@@ -1,0 +1,41 @@
+metadata-version: 2.4
+name: prophet
+version: 1.4.0
+dynamic: license-file
+summary: Automatic Forecasting Procedure
+author-email: "Sean J. Taylor" <sjtz@pm.me>, Ben Letham <bletham@fb.com>
+maintainer-email: Cuong Duong <cuong.duong242@gmail.com>
+license: MIT
+license-file: LICENSE
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Typing :: Typed
+requires-dist: cmdstanpy>=1.0.4
+requires-dist: numpy>=1.21.6
+requires-dist: matplotlib>=3.5.3
+requires-dist: pandas>=1.3.5
+requires-dist: holidays<1,>=0.25
+requires-dist: tqdm>=4.63.2
+requires-dist: setuptools>=64; extra == "dev"
+requires-dist: wheel; extra == "dev"
+requires-dist: pytest; extra == "dev"
+requires-dist: jupyterlab; extra == "dev"
+requires-dist: ipywidgets; extra == "dev"
+requires-dist: nbconvert; extra == "dev"
+requires-dist: plotly; extra == "dev"
+requires-dist: pyrefly==0.50.0; extra == "dev"
+requires-dist: pdoc; extra == "dev"
+requires-dist: dask[dataframe]; extra == "parallel"
+requires-dist: distributed; extra == "parallel"
+requires-python: >=3.10
+project-url: Homepage, https://facebook.github.io/prophet/
+project-url: Documentation, https://facebook.github.io/prophet/
+project-url: Repository, https://github.com/facebook/prophet
+provides-extra: dev
+provides-extra: parallel
+

@@ -1,0 +1,60 @@
+metadata-version: 2.4
+name: autogluon.common
+version: 1.5.0
+dynamic: author
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: license
+dynamic: project-url
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: Fast and Accurate ML in 3 Lines of Code
+home-page: https://github.com/autogluon/autogluon
+author: AutoGluon Community
+license: Apache-2.0
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Education
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: Intended Audience :: Customer Service
+classifier: Intended Audience :: Financial and Insurance Industry
+classifier: Intended Audience :: Healthcare Industry
+classifier: Intended Audience :: Telecommunications Industry
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: MacOS
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: POSIX
+classifier: Operating System :: Unix
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Topic :: Software Development
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+classifier: Topic :: Scientific/Engineering :: Information Analysis
+classifier: Topic :: Scientific/Engineering :: Image Recognition
+requires-dist: numpy<2.4.0,>=1.25.0
+requires-dist: pandas<2.4.0,>=2.0.0
+requires-dist: pyarrow<21.0.0,>=7.0.0
+requires-dist: boto3<2,>=1.10
+requires-dist: psutil<7.2.0,>=5.7.3
+requires-dist: tqdm<5,>=4.38
+requires-dist: requests
+requires-dist: joblib<1.7,>=1.2
+requires-dist: pyyaml>=5.0
+requires-dist: pytest; extra == "tests"
+requires-dist: types-setuptools; extra == "tests"
+requires-dist: types-requests; extra == "tests"
+requires-dist: pytest-mypy; extra == "tests"
+requires-python: <3.14,>=3.10
+project-url: Documentation, https://auto.gluon.ai
+project-url: Bug Reports, https://github.com/autogluon/autogluon/issues
+project-url: Source, https://github.com/autogluon/autogluon/
+project-url: Contribute!, https://github.com/autogluon/autogluon/blob/master/CONTRIBUTING.md
+provides-extra: tests
+

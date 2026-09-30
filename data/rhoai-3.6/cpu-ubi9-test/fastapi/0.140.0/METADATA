@@ -1,0 +1,75 @@
+metadata-version: 2.4
+name: fastapi
+version: 0.140.0
+summary: FastAPI framework, high performance, easy to learn, fast to code, ready for production
+author-email: =?utf-8?q?Sebasti=C3=A1n_Ram=C3=ADrez?= <tiangolo@gmail.com>
+license-expression: MIT
+license-file: LICENSE
+classifier: Intended Audience :: Information Technology
+classifier: Intended Audience :: System Administrators
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python
+classifier: Topic :: Internet
+classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: Software Development :: Libraries
+classifier: Topic :: Software Development
+classifier: Typing :: Typed
+classifier: Development Status :: 4 - Beta
+classifier: Environment :: Web Environment
+classifier: Framework :: AsyncIO
+classifier: Framework :: FastAPI
+classifier: Framework :: Pydantic
+classifier: Framework :: Pydantic :: 2
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Internet :: WWW/HTTP :: HTTP Servers
+classifier: Topic :: Internet :: WWW/HTTP
+requires-dist: starlette>=0.46.0
+requires-dist: pydantic>=2.9.0
+requires-dist: typing-extensions>=4.8.0
+requires-dist: typing-inspection>=0.4.2
+requires-dist: annotated-doc>=0.0.2
+requires-dist: fastapi-cli[standard]>=0.0.8; extra == "standard"
+requires-dist: fastar>=0.9.0; extra == "standard"
+requires-dist: httpx<1.0.0,>=0.23.0; extra == "standard"
+requires-dist: jinja2>=3.1.5; extra == "standard"
+requires-dist: python-multipart>=0.0.18; extra == "standard"
+requires-dist: email-validator>=2.0.0; extra == "standard"
+requires-dist: uvicorn[standard]>=0.12.0; extra == "standard"
+requires-dist: pydantic-settings>=2.0.0; extra == "standard"
+requires-dist: pydantic-extra-types>=2.0.0; extra == "standard"
+requires-dist: fastapi-cli[standard-no-fastapi-cloud-cli]>=0.0.8; extra == "standard-no-fastapi-cloud-cli"
+requires-dist: httpx<1.0.0,>=0.23.0; extra == "standard-no-fastapi-cloud-cli"
+requires-dist: jinja2>=3.1.5; extra == "standard-no-fastapi-cloud-cli"
+requires-dist: python-multipart>=0.0.18; extra == "standard-no-fastapi-cloud-cli"
+requires-dist: email-validator>=2.0.0; extra == "standard-no-fastapi-cloud-cli"
+requires-dist: uvicorn[standard]>=0.12.0; extra == "standard-no-fastapi-cloud-cli"
+requires-dist: pydantic-settings>=2.0.0; extra == "standard-no-fastapi-cloud-cli"
+requires-dist: pydantic-extra-types>=2.0.0; extra == "standard-no-fastapi-cloud-cli"
+requires-dist: fastapi-cli[standard]>=0.0.8; extra == "all"
+requires-dist: httpx<1.0.0,>=0.23.0; extra == "all"
+requires-dist: jinja2>=3.1.5; extra == "all"
+requires-dist: python-multipart>=0.0.18; extra == "all"
+requires-dist: itsdangerous>=1.1.0; extra == "all"
+requires-dist: pyyaml>=5.3.1; extra == "all"
+requires-dist: email-validator>=2.0.0; extra == "all"
+requires-dist: uvicorn[standard]>=0.12.0; extra == "all"
+requires-dist: pydantic-settings>=2.0.0; extra == "all"
+requires-dist: pydantic-extra-types>=2.0.0; extra == "all"
+requires-python: >=3.10
+project-url: Homepage, https://github.com/fastapi/fastapi
+project-url: Documentation, https://fastapi.tiangolo.com/
+project-url: Repository, https://github.com/fastapi/fastapi
+project-url: Issues, https://github.com/fastapi/fastapi/issues
+project-url: Changelog, https://fastapi.tiangolo.com/release-notes/
+provides-extra: standard
+provides-extra: standard-no-fastapi-cloud-cli
+provides-extra: all
+

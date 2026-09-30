@@ -1,0 +1,13 @@
+metadata-version: 2.4
+name: goodpoints
+version: 0.6.3
+dynamic: license-file
+summary: Tools to generate concise high-quality summaries of a probability distribution
+home-page: https://github.com/microsoft/goodpoints
+license-file: LICENSE
+requires-dist: numpy
+requires-dist: pytest>=7.0; extra == "test"
+requires-dist: pytest-cov>=3.0; extra == "test"
+requires-dist: hypothesis>=6.0; extra == "test"
+provides-extra: test
+

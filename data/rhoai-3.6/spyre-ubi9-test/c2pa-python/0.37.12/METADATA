@@ -1,0 +1,19 @@
+metadata-version: 2.4
+name: c2pa-python
+version: 0.37.12
+dynamic: requires-python
+summary: Python bindings for the C2PA Content Authenticity Initiative (CAI) library
+author-email: Gavin Peacock <gvnpeacock@adobe.com>, Tania Mathern <mathern@adobe.com>
+maintainer-email: Gavin Peacock <gpeacock@adobe.com>, Tania Mathern <mathern@adobe.com>
+license: MIT OR Apache-2.0
+classifier: Programming Language :: Python :: 3
+classifier: Operating System :: MacOS
+classifier: Operating System :: POSIX :: Linux
+classifier: Operating System :: Microsoft :: Windows
+requires-dist: toml>=0.10.2
+requires-dist: cryptography>=41.0.0
+requires-dist: requests>=2.0.0
+requires-python: >=3.10
+project-url: homepage, https://contentauthenticity.org
+project-url: repository, https://github.com/contentauth/c2pa-python
+

@@ -1,0 +1,73 @@
+# SPDX-FileCopyrightText: Copyright (c) 2025-2026 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+# SPDX-License-Identifier: Apache-2.0
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "modelexpress"
+version = "0.5.0"
+description = "Python client for ModelExpress P2P GPU transfer service"
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.10"
+authors = [{ name = "NVIDIA Corporation", email = "sw-dl-dynamo@nvidia.com" }]
+keywords = ["llm", "gpu", "transfer", "rdma", "nixl", "vllm"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "grpcio>=1.66.2",
+    "google-crc32c>=1.5.0",
+    "huggingface_hub>=0.20.0",
+    "numpy>=1.24.0",
+    "protobuf>=5.27.0,<6.0.0", # protobuf 5.x compatibility
+    "pydantic>=2.0.0",
+    "torch>=2.6.0",
+    "runai-model-streamer[s3,gcs,azure]; sys_platform == 'linux'",
+]
+
+[project.optional-dependencies]
+dev = [
+    # Use grpcio-tools<=1.66.2 for protobuf 5.x, >=1.67.0 for protobuf 6.x
+    "grpcio-tools>=1.60.0,<=1.66.2",
+    "opentelemetry-api>=1.41.1",
+    "opentelemetry-sdk>=1.41.1",
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0",
+]
+otel = [
+    "opentelemetry-api>=1.20.0",
+]
+# Opt-in Prometheus metrics collector (MX_METRICS_ENABLED=1).
+# Lazily imported; not required for normal operation.
+metrics = [
+    "prometheus-client>=0.20.0",
+]
+# Required for the VmmArena allocator (CudaVmmBackend uses cuMem* APIs).
+# The pure-Python VmmArena tests don't need it; CudaVmmBackend does.
+vmm = [
+    "cuda-python>=12.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/ai-dynamo/modelexpress"
+Repository = "https://github.com/ai-dynamo/modelexpress.git"
+Documentation = "https://github.com/ai-dynamo/modelexpress/tree/main/docs"
+
+[project.entry-points."vllm.general_plugins"]
+modelexpress = "modelexpress:register_modelexpress_loaders"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["modelexpress*"]
+
+[tool.setuptools.package-data]
+modelexpress = ["py.typed"]

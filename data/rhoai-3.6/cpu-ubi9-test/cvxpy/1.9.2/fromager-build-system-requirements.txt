@@ -1,0 +1,5 @@
+setuptools>=68.1.0
+numpy>=2.0.0
+pybind11
+scipy>=1.13.0
+wheel

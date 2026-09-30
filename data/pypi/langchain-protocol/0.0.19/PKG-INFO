@@ -1,0 +1,23 @@
+metadata-version: 2.4
+name: langchain-protocol
+version: 0.0.19
+summary: Python bindings for the LangChain agent streaming protocol
+license: MIT
+license-file: LICENSE
+classifier: Development Status :: 3 - Alpha
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: typing-extensions<5.0.0,>=4.13.0
+requires-python: <4.0.0,>=3.10.0
+project-url: Homepage, https://github.com/langchain-ai/agent-protocol/tree/main/streaming
+project-url: Repository, https://github.com/langchain-ai/agent-protocol
+project-url: Issues, https://github.com/langchain-ai/agent-protocol/issues
+

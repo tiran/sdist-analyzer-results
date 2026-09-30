@@ -1,0 +1,41 @@
+metadata-version: 2.4
+name: unittest-xml-reporting
+version: 3.2.0
+dynamic: author
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: platform
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+platform: Any
+summary: unittest-based test runner with Ant/JUnit like XML reporting.
+keywords: pyunit,unittest,junit xml,xunit,report,testrunner,xmlrunner
+home-page: http://github.com/xmlrunner/unittest-xml-reporting/tree/master/
+author: Daniel Fernandes Martins, Damien Nozay
+license: BSD
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: BSD License
+classifier: Natural Language :: English
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: Software Development :: Testing
+requires-dist: lxml
+requires-python: >=3.7
+

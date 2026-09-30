@@ -1,0 +1,46 @@
+metadata-version: 2.4
+name: rope
+version: 1.15.0
+dynamic: license-file
+summary: a python refactoring library...
+author-email: Ali Gholami Rudi <aligrudi@users.sourceforge.net>
+maintainer-email: Lie Ryan <lieryan.24@proton.me>
+license: LGPL-3.0-or-later
+license-file: COPYING
+classifier: Development Status :: 4 - Beta
+classifier: Operating System :: OS Independent
+classifier: Environment :: X11 Applications
+classifier: Environment :: Win32 (MS Windows)
+classifier: Environment :: MacOS X
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+classifier: Natural Language :: English
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: 3.15
+classifier: Topic :: Software Development
+requires-dist: pytoolconfig[global]>=1.2.2
+requires-dist: pytoolconfig[doc]; extra == "doc"
+requires-dist: sphinx>=4.5.0; extra == "doc"
+requires-dist: sphinx-autodoc-typehints>=1.18.1; extra == "doc"
+requires-dist: sphinx-rtd-theme>=1.0.0; extra == "doc"
+requires-dist: pytest>=7.0.1; extra == "dev"
+requires-dist: pytest-cov>=4.1.0; extra == "dev"
+requires-dist: pytest-timeout>=2.1.0; extra == "dev"
+requires-dist: build>=0.7.0; extra == "dev"
+requires-dist: pre-commit>=2.20.0; extra == "dev"
+requires-dist: toml>=0.10.2; extra == "release"
+requires-dist: twine>=4.0.2; extra == "release"
+requires-dist: pip-tools>=6.12.1; extra == "release"
+requires-python: >=3.10
+project-url: Source, https://github.com/python-rope/rope
+project-url: Documentation, https://rope.readthedocs.io/
+provides-extra: doc
+provides-extra: dev
+provides-extra: release
+

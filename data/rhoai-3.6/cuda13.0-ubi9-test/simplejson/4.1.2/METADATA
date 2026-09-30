@@ -1,0 +1,40 @@
+metadata-version: 2.4
+name: simplejson
+version: 4.1.2
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: platform
+dynamic: requires-python
+dynamic: summary
+platform: any
+summary: Simple, fast, extensible JSON encoder/decoder for Python
+home-page: https://github.com/simplejson/simplejson
+author: Bob Ippolito
+author-email: bob@redivi.com
+license: MIT OR AFL-2.1
+license-file: LICENSE.txt
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: WebAssembly :: Emscripten
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 2
+classifier: Programming Language :: Python :: 2.7
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: GraalPy
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-python: !=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*,!=3.6.*,!=3.7.*,>=2.7
+

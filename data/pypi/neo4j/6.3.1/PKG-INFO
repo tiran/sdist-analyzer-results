@@ -1,0 +1,42 @@
+metadata-version: 2.4
+name: neo4j
+version: 6.3.1
+dynamic: license-file
+summary: Neo4j Bolt driver for Python
+keywords: neo4j,graph,database
+author-email: "Neo4j, Inc." <drivers@neo4j.com>
+license-expression: Apache-2.0 AND Python-2.0
+license-file: LICENSE.APACHE2.txt
+license-file: LICENSE.PYTHON.txt
+license-file: LICENSE.txt
+license-file: NOTICE.txt
+classifier: Development Status :: 5 - Production/Stable
+classifier: Framework :: AsyncIO
+classifier: Intended Audience :: Developers
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Database
+classifier: Topic :: Software Development
+classifier: Typing :: Typed
+requires-dist: pytz
+requires-dist: numpy<3.0.0,>=1.21.2; extra == "numpy"
+requires-dist: pandas[timezone]<4.0.0,>=1.1.0; extra == "pandas"
+requires-dist: numpy<3.0.0,>=1.21.2; extra == "pandas"
+requires-dist: pyarrow<26.0.0,>=6.0.0; extra == "pyarrow"
+requires-python: >=3.10
+project-url: Homepage, https://neo4j.com/
+project-url: Repository, https://github.com/neo4j/neo4j-python-driver
+project-url: Docs (Manual), https://neo4j.com/docs/python-manual/current/
+project-url: Docs (API Reference), https://neo4j.com/docs/api/python-driver/current/
+project-url: Issue Tracker, https://github.com/neo4j/neo4j-python-driver/issues
+project-url: Changelog, https://github.com/neo4j/neo4j-python-driver/wiki
+project-url: Forum, https://community.neo4j.com/c/drivers-stacks/python/
+project-url: Discord, https://discord.com/invite/neo4j
+provides-extra: numpy
+provides-extra: pandas
+provides-extra: pyarrow
+

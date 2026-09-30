@@ -1,0 +1,23 @@
+metadata-version: 2.1
+name: langchain-community
+version: 0.4.1
+summary: Community contributed LangChain integrations.
+license: MIT
+requires-dist: langchain-core<2.0.0,>=1.0.1
+requires-dist: langchain-classic<2.0.0,>=1.0.0
+requires-dist: SQLAlchemy<3.0.0,>=1.4.0
+requires-dist: requests<3.0.0,>=2.32.5
+requires-dist: PyYAML<7.0.0,>=5.3.0
+requires-dist: aiohttp<4.0.0,>=3.8.3
+requires-dist: tenacity!=8.4.0,<10.0.0,>=8.1.0
+requires-dist: dataclasses-json<0.7.0,>=0.6.7
+requires-dist: pydantic-settings<3.0.0,>=2.10.1
+requires-dist: langsmith<1.0.0,>=0.1.125
+requires-dist: httpx-sse<1.0.0,>=0.4.0
+requires-dist: numpy>=1.26.2; python_version < "3.13"
+requires-dist: numpy>=2.1.0; python_version >= "3.13"
+requires-python: <4.0.0,>=3.10.0
+project-url: Source Code, https://github.com/langchain-ai/langchain-community/tree/main/libs/community
+project-url: Release Notes, https://github.com/langchain-ai/langchain/releases?q=tag%3A%22langchain-community%3D%3D0%22&expanded=true
+project-url: repository, https://github.com/langchain-ai/langchain-community
+

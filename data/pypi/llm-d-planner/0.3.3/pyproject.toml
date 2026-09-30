@@ -1,0 +1,178 @@
+[project]
+name = "llm-d-planner"
+dynamic = ["version"]
+description = "Confidently navigate LLM deployments from concept to production"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "Apache-2.0"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    # Core dependencies - ONLY the minimal set required for library functionality
+    "pydantic>=2.13.4",
+    "pydantic-settings>=2.15.0",
+    "jinja2>=3.1.6",
+    "pyyaml>=6.0.3",
+]
+
+[project.optional-dependencies]
+server = [
+    "fastapi>=0.141.1",
+    "uvicorn[standard]>=0.52.1",
+    "python-multipart>=0.0.32",
+]
+ui = [
+    "streamlit>=1.61.1",
+    "plotly>=6.3.0",
+    "matplotlib>=3.10.9",
+    "requests>=2.34.2",
+]
+llm = [
+    "ollama>=0.6.2",
+]
+openai = [
+    "openai>=3.1.0",
+]
+vertex = [
+    "anthropic[vertex]>=0.122.0",
+]
+kubernetes = [
+    "kubernetes>=36.0.3",
+]
+estimation = [
+    "huggingface_hub>=1.26.0",
+    "transformers>=5.14.1",
+]
+quality-sync = [
+    "pandas>=3.0.5",
+    "datasets>=5.0.1",
+    "httpx>=0.28.1",
+]
+dev = [
+    "pytest>=9.1.1",
+    "pytest-asyncio>=1.4.0",
+    "pytest-cov>=7.1.0",
+    "pytest-rerunfailures>=15.0",
+    "httpx>=0.28.1",
+    "ruff>=0.16.3",
+    "mypy>=2.3.1",
+    "types-PyYAML>=6.0.12.20260815",
+    "types-requests>=2.33.0.20260712",
+]
+
+[project.scripts]
+planner = "planner.cli.planner_cli:main"
+
+[project.urls]
+Homepage = "https://github.com/llm-d-incubation/llm-d-planner"
+Repository = "https://github.com/llm-d-incubation/llm-d-planner"
+Issues = "https://github.com/llm-d-incubation/llm-d-planner/issues"
+
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.build.hooks.vcs]
+version-file = "src/planner/_version.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/planner", "src/quality_scoring"]
+
+[tool.ruff]
+# Set the maximum line length
+line-length = 100
+
+# Target Python 3.11+
+target-version = "py311"
+
+# Exclude common directories
+exclude = [
+    ".git",
+    ".venv",
+    "venv",
+    "__pycache__",
+    "*.egg-info",
+    "build",
+    "dist",
+    "generated_configs",
+    "logs",
+]
+
+[tool.ruff.lint]
+# Enable recommended rules
+select = [
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings
+    "F",   # pyflakes
+    "I",   # isort (import sorting)
+    "N",   # pep8-naming
+    "UP",  # pyupgrade (modern Python syntax)
+    "B",   # flake8-bugbear (common bugs)
+    "C4",  # flake8-comprehensions
+    "SIM", # flake8-simplify
+]
+
+# Ignore specific rules that may be too strict
+ignore = [
+    "E501",   # Line too long (handled by formatter)
+    "B008",   # Do not perform function calls in argument defaults (common in FastAPI)
+    "N802",   # Function name should be lowercase (some exceptions for API routes)
+    "SIM108", # Use ternary operator (sometimes reduces readability)
+]
+
+# Allow autofix for all enabled rules
+fixable = ["ALL"]
+unfixable = []
+
+[tool.ruff.format]
+# Use double quotes for strings
+quote-style = "double"
+
+# Indent with spaces
+indent-style = "space"
+
+# Like Black, automatically detect the appropriate line ending
+line-ending = "auto"
+
+[tool.ruff.lint.per-file-ignores]
+# Ignore import sorting in __init__.py files
+"__init__.py" = ["F401", "I"]
+
+# Test files can have longer lines and unused imports
+"tests/**/*.py" = ["E501", "F401"]
+"test_*.py" = ["E501", "F401"]
+
+[tool.ruff.lint.isort]
+# Organize imports into sections
+known-first-party = ["planner"]
+section-order = ["future", "standard-library", "third-party", "first-party", "local-folder"]
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false
+check_untyped_defs = true
+ignore_missing_imports = true
+
+
+[tool.pytest.ini_options]
+asyncio_mode = "strict"
+asyncio_default_fixture_loop_scope = "session"
+markers = [
+    "integration: marks tests as integration tests (requires LLM or cluster)",
+    "intent_extraction: marks tests that validate LLM intent extraction (requires LLM, run with make test-intent)",
+    "unit: marks tests as unit tests (no external dependencies)",
+    "hf_network: marks tests that need HuggingFace API access (retried in CI via --reruns)",
+]

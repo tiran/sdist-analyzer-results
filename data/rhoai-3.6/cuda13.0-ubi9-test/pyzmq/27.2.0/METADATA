@@ -1,0 +1,23 @@
+metadata-version: 2.4
+name: pyzmq
+version: 27.2.0
+summary: Python bindings for 0MQ
+author: Brian E. Granger, Min Ragan-Kelley
+author-email: PyZMQ Contributors <zeromq-dev@lists.zeromq.org>
+license-expression: BSD-3-Clause
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: Intended Audience :: System Administrators
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: POSIX
+classifier: Topic :: System :: Networking
+classifier: Programming Language :: Python :: 3
+requires-dist: cffi; implementation_name == "pypy"
+requires-python: >=3.9
+project-url: Homepage, https://pyzmq.readthedocs.org
+project-url: Documentation, https://pyzmq.readthedocs.org
+project-url: Source, https://github.com/zeromq/pyzmq
+project-url: Tracker, https://github.com/zeromq/pyzmq/issues
+

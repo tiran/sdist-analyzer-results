@@ -1,0 +1,47 @@
+metadata-version: 2.4
+name: poetry
+version: 2.4.2
+summary: Python dependency management and packaging made easy.
+keywords: packaging,dependency,poetry
+author: Sébastien Eustace
+author-email: sebastien@eustace.io
+maintainer: Arun Babu Neelicattu
+maintainer-email: arun.neelicattu@gmail.com
+license-expression: MIT
+license-file: LICENSE
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Software Development :: Build Tools
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: build<2.0.0,>=1.2.1
+requires-dist: cachecontrol[filecache]<0.15.0,>=0.14.0
+requires-dist: cleo<3.0.0,>=2.1.0
+requires-dist: dulwich<2,>=0.25.0
+requires-dist: fastjsonschema<3.0.0,>=2.18.0
+requires-dist: findpython<0.9.0,>=0.6.2
+requires-dist: installer<2.0.0,>=0.7.0
+requires-dist: keyring<26.0.0,>=25.1.0
+requires-dist: packaging>=24.2
+requires-dist: pbs-installer[download,install]>=2025.6.10
+requires-dist: pkginfo<2.0,>=1.12
+requires-dist: platformdirs<5,>=3.0.0
+requires-dist: poetry-core==2.4.0
+requires-dist: pyproject-hooks<2.0.0,>=1.0.0
+requires-dist: requests<3.0,>=2.26
+requires-dist: requests-toolbelt<2.0.0,>=1.0.0
+requires-dist: shellingham<2.0,>=1.5
+requires-dist: tomli<3.0.0,>=2.0.1; python_version < "3.11"
+requires-dist: tomlkit<1.0.0,>=0.11.4
+requires-dist: trove-classifiers>=2022.5.19
+requires-dist: virtualenv>=20.26.6
+requires-dist: xattr<2.0.0,>=1.0.0; sys_platform == "darwin"
+requires-python: <4.0,>=3.10
+project-url: Changelog, https://python-poetry.org/history/
+project-url: Documentation, https://python-poetry.org/docs
+project-url: Homepage, https://python-poetry.org/
+project-url: Repository, https://github.com/python-poetry/poetry
+

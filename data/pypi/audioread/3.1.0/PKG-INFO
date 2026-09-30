@@ -1,0 +1,29 @@
+metadata-version: 2.4
+name: audioread
+version: 3.1.0
+summary: Multi-library, cross-platform audio decoding.
+author: Adrian Sampson
+author-email: adrian@radbox.org
+license-expression: MIT
+license-file: LICENSE
+classifier: Topic :: Multimedia :: Sound/Audio :: Conversion
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: License :: OSI Approved :: MIT License
+requires-dist: pygobject<4.0.0,>=3.54.2; extra == "gi"
+requires-dist: pymad[mad]<0.12.0,>=0.11.3; extra == "mad"
+requires-dist: pytest>=8.4.2; extra == "test"
+requires-dist: pytest-cov>=7.0.0; extra == "test"
+requires-dist: standard-aifc; python_version >= "3.13"
+requires-dist: standard-sunau; python_version >= "3.13"
+requires-python: >=3.9
+project-url: Bug Tracker, https://github.com/beetbox/audioread/issues
+project-url: Homepage, https://github.com/beetbox/audioread
+project-url: Repository, https://github.com/beetbox/audioread
+provides-extra: gi
+provides-extra: mad
+provides-extra: test
+

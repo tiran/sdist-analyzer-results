@@ -1,0 +1,28 @@
+metadata-version: 2.4
+name: pyre-extensions
+version: 0.0.32
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: license-file
+dynamic: requires-dist
+dynamic: summary
+summary: Type system extensions for use with the pyre type checker
+home-page: https://pyre-check.org
+author: Facebook
+author-email: pyre@fb.com
+license-file: LICENSE
+classifier: Development Status :: 3 - Alpha
+classifier: Environment :: Console
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python
+classifier: Topic :: Software Development
+classifier: Operating System :: OS Independent
+classifier: Typing :: Typed
+requires-dist: typing-inspect
+requires-dist: typing-extensions
+

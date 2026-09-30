@@ -1,0 +1,4 @@
+numpy>=2.0.0; python_version > "3.8"
+pybind11
+cmake
+setuptools>=49.5.0

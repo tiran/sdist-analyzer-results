@@ -1,0 +1,27 @@
+metadata-version: 2.4
+name: onnxsim
+version: 0.7.3
+dynamic: license-file
+summary: Simplify your ONNX model
+keywords: deep-learning,ONNX
+author-email: ONNX Simplifier Authors <daquexian566@gmail.com>
+license-expression: MIT AND (Apache-2.0 OR BSD-2-Clause)
+license-file: LICENSE
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Topic :: Scientific/Engineering
+classifier: Topic :: Software Development
+requires-dist: onnx
+requires-dist: rich
+requires-dist: onnxruntime>=1.6.0; extra == "onnxruntime"
+requires-dist: sympy; extra == "symbolic"
+requires-python: >=3.10
+project-url: Homepage, https://github.com/onnxsim/onnxsim
+provides-extra: onnxruntime
+provides-extra: symbolic
+

@@ -1,0 +1,30 @@
+metadata-version: 2.4
+name: doclang
+version: 0.7.3
+dynamic: license-file
+summary: DocLang reference toolkit
+keywords: doclang,xml,validation,xsd,schematron,documents,llm
+author: DocLang Project
+license-expression: Apache-2.0
+license-file: LICENSE
+classifier: Intended Audience :: Developers
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Software Development :: Libraries
+classifier: Topic :: Text Processing :: Markup :: XML
+requires-dist: lxml>=4.8.0
+requires-dist: typer>=0.15.1
+requires-dist: saxonche>=12.9.0; extra == "schematron-saxon"
+requires-python: >=3.10
+project-url: Homepage, https://www.doclang.ai/
+project-url: Documentation, https://github.com/doclang-project/doclang/blob/main/README.md
+project-url: Repository, https://github.com/doclang-project/doclang
+project-url: Changelog, https://github.com/doclang-project/doclang/blob/main/CHANGELOG.md
+project-url: Issues, https://github.com/doclang-project/doclang/issues
+provides-extra: schematron-saxon
+

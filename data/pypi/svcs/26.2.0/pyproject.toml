@@ -1,0 +1,295 @@
+# SPDX-FileCopyrightText: 2023 Hynek Schlawack <hs@ox.cx>
+#
+# SPDX-License-Identifier: MIT
+
+[build-system]
+requires = ["hatchling>=1.27.0", "hatch-vcs", "hatch-fancy-pypi-readme"]
+build-backend = "hatchling.build"
+
+
+[project]
+dynamic = ["version", "readme"]
+name = "svcs"
+description = "A Flexible Service Locator"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Hynek Schlawack", email = "hs@ox.cx" }]
+requires-python = ">=3.10"
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
+  "Programming Language :: Python :: 3.15",
+  "Typing :: Typed",
+]
+keywords = [
+  "service locator",
+  "dependency injection",
+  "inversion of control",
+  "flask",
+  "starlette",
+  "fastapi",
+  "aiohttp",
+]
+dependencies = [
+  "attrs>=21.3.0", # attrs namespace
+  "typing_extensions>=4.13.0; python_version < '3.15'", # TypeForm
+]
+
+[dependency-groups]
+docs = [
+  "sphinx>=7.2.2",
+  "sphinx-design",
+  "sphinx-copybutton",
+  "sphinx-notfound-page",
+  "sphinxext-opengraph",
+  "myst-parser",
+  "furo>=2023.8.17",
+  "httpx2",
+  "sybil",
+  "pytest>9",
+  "pytest-asyncio",
+  "aiohttp",
+  "fastapi",
+  "flask",
+  "starlette",
+  "sqlalchemy",
+]
+docs-watch = [{ include-group = "docs" }, "watchfiles"]
+tests = ["pytest", "pytest-asyncio", "sybil>=6"]
+lint = [
+  "ruff>=0.16",
+  "prek>=0.4",
+]
+cov = [{ include-group = "tests" }, "coverage[toml]"]
+# Optional integration dependencies for tests.
+optional = [
+  "aiohttp",
+  "fastapi",
+  "flask",
+  "httpx2",
+  "starlette",
+]
+typing = [
+  "fastapi",
+  "flask",
+  "httpx2",
+  "starlette",
+  "aiohttp",
+]
+mypy = [{ include-group = "typing" }, "mypy>=2.2"]  # TypeForms
+pyright = [{ include-group = "typing" }, "pyright"]
+ty = [{ include-group = "typing" }, "ty"]
+pyrefly = [{ include-group = "typing" }, "pyrefly"]
+tox = ["tox>4", "tox-uv-bare"]
+dev = [
+  { include-group = "cov" },
+  { include-group = "mypy" },
+  { include-group = "ty" },
+  { include-group = "optional" },
+  { include-group = "lint" },
+  { include-group = "tox" },
+]
+
+
+[tool.uv]
+# Dependency cooldown
+exclude-newer = "1 week"
+
+
+[project.urls]
+Changelog = "https://github.com/hynek/svcs/blob/main/CHANGELOG.md"
+Documentation = "https://svcs.hynek.me/"
+GitHub = "https://github.com/hynek/svcs"
+Funding = "https://github.com/sponsors/hynek"
+Mastodon = "https://mastodon.social/@hynek"
+Twitter = "https://twitter.com/hynek"
+
+
+[tool.hatch.version]
+source = "vcs"
+raw-options = { local_scheme = "no-local-version" }
+
+[tool.hatch.metadata.hooks.fancy-pypi-readme]
+content-type = "text/markdown"
+
+[[tool.hatch.metadata.hooks.fancy-pypi-readme.fragments]]
+path = "README.md"
+start-after = "<!-- begin logo -->\n"
+end-before = "\n<!-- end logo -->"
+
+[[tool.hatch.metadata.hooks.fancy-pypi-readme.fragments]]
+path = "README.md"
+start-after = "<!-- begin pypi -->\n"
+end-before = "\n<!-- end pypi -->"
+
+[[tool.hatch.metadata.hooks.fancy-pypi-readme.fragments]]
+text = """
+
+## Release Information
+
+"""
+
+[[tool.hatch.metadata.hooks.fancy-pypi-readme.fragments]]
+path = "CHANGELOG.md"
+start-after = "<!-- changelog follows -->"
+pattern = "\n(###.+?\n)## "
+
+[[tool.hatch.metadata.hooks.fancy-pypi-readme.fragments]]
+text = """
+---
+
+[Full Changelog →](https://github.com/hynek/svcs/blob/main/CHANGELOG.md)
+
+
+"""
+
+[[tool.hatch.metadata.hooks.fancy-pypi-readme.fragments]]
+path = "README.md"
+start-at = "## Credits"
+
+[[tool.hatch.metadata.hooks.fancy-pypi-readme.substitutions]]
+pattern = '> \[!(.*)\]'
+replacement = '> **\1**'
+
+[[tool.hatch.metadata.hooks.fancy-pypi-readme.substitutions]]
+pattern = ']\(\./(.*)\)'
+replacement = '](https://github.com/hynek/svcs/blob/main/\1)'
+
+[[tool.hatch.metadata.hooks.fancy-pypi-readme.substitutions]]
+pattern = '(docs/_static/.*")'
+replacement = 'https://raw.githubusercontent.com/hynek/svcs/main/\1"'
+
+
+[tool.pytest]
+strict = true
+testpaths = ["tests"]
+addopts = ["-ra"]
+filterwarnings = ["once::Warning"]
+asyncio_default_fixture_loop_scope = "function"
+
+
+[tool.coverage.run]
+branch = true
+parallel = true
+source = ["svcs", "tests"]
+
+[tool.coverage.paths]
+source = ["src", ".tox/3.*-tests*/**/site-packages"]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
+exclude_also = [
+  # Typing
+  "if TYPE_CHECKING:",
+  ": +\\.\\.\\.$",
+  # Tests
+  'pytest\.fail\(',
+]
+
+
+[tool.interrogate]
+omit-covered-files = true
+verbose = 2
+fail-under = 100
+whitelist-regex = ["test_.*"]
+
+
+[tool.mypy]
+strict = true
+pretty = true
+
+show_error_codes = true
+enable_error_code = ["ignore-without-code"]
+
+disallow_any_generics = false
+
+[[tool.mypy.overrides]]
+module = "tests.*"
+ignore_errors = true
+
+[[tool.mypy.overrides]]
+module = "conftest"
+ignore_errors = true
+
+
+[tool.pyright]
+include = ["src", "typing_tests"]
+ignore = ["typing_tests/mypy.py"]
+
+
+[[tool.ty.overrides]]
+rules.all = "ignore"
+include = [
+  "conftest.py",
+  "docs",
+  "tests",
+  "typing_tests/mypy.py"
+]
+
+
+[tool.pyrefly]
+project-includes = ["src", "typing_tests"]
+project-excludes = [
+  "typing_tests/mypy.py",
+]
+
+
+[tool.ruff]
+src = ["src", "tests", "conftest.py", "docs"]
+line-length = 79
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = [
+  "A001",    # shadowing is fine
+  "ANN",     # Mypy is better at this
+  "ARG",     # unused arguments are normal when implementing interfaces
+  "COM",     # Formatter takes care of our commas
+  "CPY",     # they expect a very specific shape of a copyright notice
+  "D",       # We prefer our own docstring style.
+  "E501",    # leave line-length enforcement to formatter
+  "FBT",     # we have one function that takes one bool; c'mon!
+  "FIX",     # Yes, we want XXX as a marker.
+  "INP001",  # sometimes we want Python files outside of packages
+  "ISC001",  # conflicts with formatter
+  "PLR0913", # yes, many arguments, but most have defaults
+  "PLR0917", # some people have to write hard software
+  "PYI034",  # We're not adding typing_extensions just for Self.
+  "SLF001",  # private members are accessed by friendly functions
+  "TC",      # TYPE_CHECKING blocks break autodocs
+]
+
+[tool.ruff.lint.per-file-ignores]
+"**/test_*" = [
+  "EM101",   # no need for exception msg hygiene in tests
+  "PLR2004", # numbers are fine in tests
+  "PT011",   # broad is fine
+  "PT012",   # Sometimes we need more than one statement in raises()
+  "S101",    # assert
+  "SIM300",  # Yoda rocks in asserts
+  "TRY002",  # stock exceptions are fine in tests
+]
+
+"typing_tests/*" = [
+  "F841",   # unused variables are fine in type checks
+  "F842",   # unused variables are fine in type checks
+  "RUF059", # unused variables are fine in type checks
+  "SLOT",   # we don't care about slots in type checks
+]
+
+"docs/examples/*" = ["PERF203", "BLE001"]
+
+[tool.ruff.lint.isort]
+lines-between-types = 1
+lines-after-imports = 2
+known-first-party = [
+  "svcs",
+  "tests",
+  "simple_fastapi_app",
+  "simple_starlette_app",
+]

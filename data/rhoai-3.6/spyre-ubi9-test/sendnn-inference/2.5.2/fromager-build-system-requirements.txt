@@ -1,0 +1,2 @@
+setuptools_scm<10,>=8
+setuptools

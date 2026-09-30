@@ -1,0 +1,27 @@
+metadata-version: 2.4
+name: pyaml
+version: 26.7.0
+dynamic: author
+dynamic: home-page
+dynamic: license-file
+summary: PyYAML-based module to produce a bit more pretty and readable YAML-serialized data
+keywords: yaml,serialization,pretty-print,formatter,human,readability
+home-page: https://github.com/mk-fg/pretty-yaml
+author: Mike Kazantsev
+author-email: Mike Kazantsev <mk.fraggod@gmail.com>
+license: WTFPL
+license-file: COPYING
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: License :: Public Domain
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3.8
+classifier: Topic :: Software Development
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: Utilities
+requires-dist: PyYAML
+requires-dist: unidecode; extra == "anchors"
+requires-python: >=3.8
+project-url: Homepage, https://github.com/mk-fg/pretty-yaml
+provides-extra: anchors
+

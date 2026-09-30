@@ -1,0 +1,27 @@
+metadata-version: 2.4
+name: chevron
+version: 0.14.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: license
+dynamic: summary
+summary: Mustache templating language renderer
+home-page: https://github.com/noahmorrison/chevron
+author: noah morrison
+author-email: noah@morrison.ph
+license: MIT
+classifier: Development Status :: 4 - Beta
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python :: 2.6
+classifier: Programming Language :: Python :: 2.7
+classifier: Programming Language :: Python :: 3.2
+classifier: Programming Language :: Python :: 3.3
+classifier: Programming Language :: Python :: 3.4
+classifier: Programming Language :: Python :: 3.5
+classifier: Programming Language :: Python :: 3.6
+classifier: Topic :: Text Processing :: Markup
+

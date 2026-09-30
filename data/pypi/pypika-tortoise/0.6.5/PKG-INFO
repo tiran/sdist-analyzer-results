@@ -1,0 +1,12 @@
+metadata-version: 2.1
+name: pypika-tortoise
+version: 0.6.5
+summary: Forked from pypika and streamline just for tortoise-orm
+keywords: postgresql,Tortoise-ORM,mysql,sqlite,sql
+author-email: long2ice <long2ice@gmail.com>
+license: Apache-2.0
+requires-python: >=3.9
+project-url: homepage, https://github.com/tortoise/pypika-tortoise
+project-url: repository, https://github.com/tortoise/pypika-tortoise.git
+project-url: documentation, https://github.com/tortoise/pypika-tortoise
+

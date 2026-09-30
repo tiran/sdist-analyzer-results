@@ -1,0 +1,55 @@
+[project]
+name = 'atpublic'
+authors = [
+    {name = 'Barry Warsaw', email = 'barry@python.org'},
+]
+description = "Keep all y'all's __all__'s in sync"
+readme = 'README.rst'
+requires-python = '>=3.10'
+license = {text = 'Apache-2.0'}
+keywords = [
+    '__all__',
+    'public',
+    'private',
+]
+classifiers = [
+    'Development Status :: 5 - Production/Stable',
+    'Development Status :: 6 - Mature',
+    'Intended Audience :: Developers',
+    'License :: OSI Approved :: Apache Software License',
+    'Operating System :: POSIX',
+    'Operating System :: MacOS :: MacOS X',
+    'Operating System :: Microsoft :: Windows',
+    'Programming Language :: Python',
+    'Programming Language :: Python :: 3',
+    'Topic :: Software Development :: Libraries',
+    'Topic :: Software Development :: Libraries :: Python Modules',
+    'Topic :: Utilities',
+]
+dynamic = ['version']
+
+[project.optional-dependencies]
+install = ['atpublic-install']
+
+[project.urls]
+'Home Page' = 'https://public.readthedocs.io'
+'Documentation' = 'https://public.readthedocs.io'
+'Source' = 'https://gitlab.com/flufl/public.git'
+'Bug Tracker' = 'https://gitlab.com/flufl/public/-/work_items'
+
+[tool.hatch.version]
+path = 'src/public/__init__.py'
+
+[tool.hatch.build.targets.wheel]
+packages = [
+    'src/public',
+]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    'src/public/',
+]
+
+[build-system]
+requires = ['hatchling']
+build-backend = 'hatchling.build'

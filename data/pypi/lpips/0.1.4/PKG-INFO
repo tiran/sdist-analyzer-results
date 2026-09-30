@@ -1,0 +1,13 @@
+metadata-version: 2.1
+name: lpips
+version: 0.1.4
+platform: UNKNOWN
+summary: LPIPS Similarity metric
+home-page: https://github.com/richzhang/PerceptualSimilarity
+author: Richard Zhang
+author-email: rizhang@adobe.com
+license: UNKNOWN
+classifier: Programming Language :: Python :: 3
+classifier: License :: OSI Approved :: BSD License
+classifier: Operating System :: OS Independent
+

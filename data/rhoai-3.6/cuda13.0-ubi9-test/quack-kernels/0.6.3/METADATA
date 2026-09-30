@@ -1,0 +1,27 @@
+metadata-version: 2.4
+name: quack-kernels
+version: 0.6.3
+dynamic: license-file
+license-file: LICENSE
+requires-dist: nvidia-cutlass-dsl~=4.6.0
+requires-dist: torch
+requires-dist: apache-tvm-ffi<0.2,>=0.1.6
+requires-dist: torch-c-dlpack-ext
+requires-dist: einops
+requires-dist: nvidia-cutlass-dsl[cu13]~=4.6.0; extra == "cu13"
+requires-dist: nvidia-matmul-heuristics; extra == "heuristics"
+requires-dist: jax; extra == "jax"
+requires-dist: jax-tvm-ffi; extra == "jax"
+requires-dist: pandas; extra == "bench"
+requires-dist: tyro; extra == "bench"
+requires-dist: pre-commit; extra == "dev"
+requires-dist: pytest; extra == "dev"
+requires-dist: pytest-xdist; extra == "dev"
+requires-dist: ruff; extra == "dev"
+requires-python: >=3.10
+provides-extra: cu13
+provides-extra: heuristics
+provides-extra: jax
+provides-extra: bench
+provides-extra: dev
+

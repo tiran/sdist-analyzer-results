@@ -1,0 +1,32 @@
+metadata-version: 2.1
+name: xgrammar
+version: 0.2.5.post1
+summary: Efficient, Flexible and Portable Structured Generation
+keywords: machine learning,inference
+author: MLC Team
+license: Apache 2.0
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Education
+classifier: Intended Audience :: Science/Research
+requires-dist: apache-tvm-ffi>=0.1.9
+requires-dist: pydantic
+requires-dist: torch>=1.10.0
+requires-dist: transformers<5,>=4.38.0
+requires-dist: triton; platform_system == "Linux" and platform_machine == "x86_64"
+requires-dist: numpy
+requires-dist: typing-extensions>=4.9.0
+requires-dist: huggingface-hub[cli]; extra == "test"
+requires-dist: protobuf; extra == "test"
+requires-dist: pytest; extra == "test"
+requires-dist: sentencepiece; extra == "test"
+requires-dist: tiktoken; extra == "test"
+requires-dist: mlx-lm; platform_system == "Darwin" and platform_machine == "arm64" and extra == "metal"
+requires-dist: transformers<5.13; platform_system == "Darwin" and platform_machine == "arm64" and extra == "metal"
+requires-python: <4,>=3.8
+project-url: Homepage, https://xgrammar.mlc.ai/
+project-url: GitHub, https://github.com/mlc-ai/xgrammar
+provides-extra: test
+provides-extra: metal
+

@@ -1,0 +1,43 @@
+metadata-version: 2.4
+name: google-auth-oauthlib
+version: 1.0.0
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: Google Authentication Library
+keywords: google auth oauth client oauthlib
+home-page: https://github.com/GoogleCloudPlatform/google-auth-library-python-oauthlib
+author: Google Cloud Platform
+author-email: jonwayne+google-auth@google.com
+license: Apache 2.0
+license-file: LICENSE
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.6
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Operating System :: POSIX
+classifier: Operating System :: Microsoft :: Windows
+classifier: Operating System :: MacOS :: MacOS X
+classifier: Operating System :: OS Independent
+classifier: Topic :: Internet :: WWW/HTTP
+requires-dist: google-auth>=2.15.0
+requires-dist: requests-oauthlib>=0.7.0
+requires-dist: click>=6.0.0; extra == "tool"
+requires-python: >=3.6
+provides-extra: tool
+

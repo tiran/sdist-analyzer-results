@@ -1,0 +1,61 @@
+metadata-version: 2.4
+name: dask
+version: 2026.8.0
+dynamic: license-file
+summary: Parallel PyData with Task Scheduling
+keywords: task-scheduling parallel numpy pandas pydata
+maintainer-email: Matthew Rocklin <mrocklin@gmail.com>
+license-expression: BSD-3-Clause
+license-file: LICENSE.txt
+license-file: dask/array/NUMPY_LICENSE.txt
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: Free Threading :: 1 - Unstable
+classifier: Topic :: Scientific/Engineering
+classifier: Topic :: System :: Distributed Computing
+requires-dist: click>=8.1
+requires-dist: cloudpickle>=3.0.0
+requires-dist: fsspec>=2021.09.0
+requires-dist: packaging>=20.0
+requires-dist: partd>=1.4.0
+requires-dist: pyyaml>=5.4.1
+requires-dist: toolz>=0.12.0
+requires-dist: importlib_metadata>=4.13.0; python_version < "3.12"
+requires-dist: numpy>=1.24; extra == "array"
+requires-dist: dask[array]; extra == "dataframe"
+requires-dist: pandas>=2.0; extra == "dataframe"
+requires-dist: pyarrow>=16.0; extra == "dataframe"
+requires-dist: distributed<2026.8.1,>=2026.8.0; extra == "distributed"
+requires-dist: bokeh>=3.1.0; extra == "diagnostics"
+requires-dist: jinja2>=2.10.3; extra == "diagnostics"
+requires-dist: dask[array,dataframe,diagnostics,distributed]; extra == "complete"
+requires-dist: lz4>=4.3.2; extra == "complete"
+requires-dist: pandas[test]; extra == "test"
+requires-dist: pytest; extra == "test"
+requires-dist: pytest-cov; extra == "test"
+requires-dist: pytest-mock; extra == "test"
+requires-dist: pytest-rerunfailures; extra == "test"
+requires-dist: pytest-timeout; extra == "test"
+requires-dist: pytest-xdist; extra == "test"
+requires-dist: pre-commit; extra == "test"
+requires-python: >=3.10
+project-url: Homepage, https://github.com/dask/dask/
+provides-extra: array
+provides-extra: bag
+provides-extra: dataframe
+provides-extra: distributed
+provides-extra: diagnostics
+provides-extra: delayed
+provides-extra: complete
+provides-extra: test
+

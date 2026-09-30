@@ -1,0 +1,27 @@
+metadata-version: 2.4
+name: jwcrypto
+version: 1.6.0
+dynamic: home-page
+dynamic: license-file
+dynamic: maintainer
+dynamic: requires-python
+summary: Implementation of JOSE Web standards
+home-page: https://github.com/latchset/jwcrypto
+maintainer: JWCrypto Project Contributors
+maintainer-email: JWCrypto Project Contributors <simo@redhat.com>
+license-expression: LGPL-3.0-or-later
+license-file: LICENSE
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Security
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: cryptography>=49.0.0
+requires-dist: typing_extensions>=4.5.0
+requires-python: >=3.9
+project-url: Homepage, https://github.com/latchset/jwcrypto
+

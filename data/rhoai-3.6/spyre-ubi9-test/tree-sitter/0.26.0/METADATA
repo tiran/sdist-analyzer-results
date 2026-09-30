@@ -1,0 +1,33 @@
+metadata-version: 2.4
+name: tree-sitter
+version: 0.26.0
+dynamic: license-file
+summary: Python bindings to the Tree-sitter parsing library
+keywords: incremental,parsing,tree-sitter
+author-email: Max Brunsfeld <maxbrunsfeld@gmail.com>
+maintainer-email: ObserverOfTime <chronobserver@disroot.org>
+license-file: LICENSE
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: C
+classifier: Programming Language :: Python
+classifier: Topic :: Software Development :: Compilers
+classifier: Topic :: Text Processing :: Linguistic
+classifier: Typing :: Typed
+requires-dist: sphinx~=8.2; extra == "docs"
+requires-dist: sphinx-book-theme; extra == "docs"
+requires-dist: tree-sitter-html==0.23.2; extra == "tests"
+requires-dist: tree-sitter-javascript==0.25.0; extra == "tests"
+requires-dist: tree-sitter-json==0.24.8; extra == "tests"
+requires-dist: tree-sitter-python==0.25.0; extra == "tests"
+requires-dist: tree-sitter-rust==0.24.2; extra == "tests"
+requires-python: >=3.10
+project-url: Homepage, https://tree-sitter.github.io/tree-sitter/
+project-url: Source, https://github.com/tree-sitter/py-tree-sitter
+project-url: Documentation, https://tree-sitter.github.io/py-tree-sitter/
+project-url: Discord, https://discord.gg/w7nTvsVJhm
+project-url: Matrix, https://matrix.to/#/#tree-sitter-chat:matrix.org
+provides-extra: docs
+provides-extra: tests
+

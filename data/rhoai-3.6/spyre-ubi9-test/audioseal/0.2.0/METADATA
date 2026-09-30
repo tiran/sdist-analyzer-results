@@ -1,0 +1,26 @@
+metadata-version: 2.4
+name: audioseal
+version: 0.2.0
+summary: Watermarking and detection for speech audios
+author: Facebook AI Research
+license-file: LICENSE
+classifier: License :: OSI Approved :: MIT License
+classifier: Topic :: Scientific/Engineering
+classifier: Development Status :: 4 - Beta
+requires-dist: numpy
+requires-dist: omegaconf
+requires-dist: torch>=1.13.0
+requires-dist: einops; python_version >= "3.10"
+requires-dist: func_argparse; extra == "dev"
+requires-dist: torchaudio; extra == "dev"
+requires-dist: soundfile; extra == "dev"
+requires-dist: pytest; extra == "dev"
+requires-dist: black; extra == "dev"
+requires-dist: isort; extra == "dev"
+requires-dist: flake8; extra == "dev"
+requires-dist: pre-commit; extra == "dev"
+requires-python: >=3.8
+project-url: Source, https://github.com/facebookresearch/audioseal
+project-url: Tracker, https://github.com/facebookresearch/audioseal/issues
+provides-extra: dev
+

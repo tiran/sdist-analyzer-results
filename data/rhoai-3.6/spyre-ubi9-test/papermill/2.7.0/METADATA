@@ -1,0 +1,138 @@
+metadata-version: 2.4
+name: papermill
+version: 2.7.0
+dynamic: license-file
+summary: Parameterize and run Jupyter and nteract Notebooks
+keywords: jupyter,mapreduce,notebook,nteract,pipeline
+author-email: nteract contributors <nteract@googlegroups.com>
+license: BSD
+license-file: LICENSE
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Science/Research
+classifier: Intended Audience :: System Administrators
+classifier: License :: OSI Approved :: BSD License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+requires-dist: aiohttp>=3.9; python_version == "3.12"
+requires-dist: click
+requires-dist: entrypoints
+requires-dist: nbclient>=0.2
+requires-dist: nbformat>=5.2
+requires-dist: pyyaml
+requires-dist: requests
+requires-dist: tenacity>=5.0.2
+requires-dist: tqdm>=4.32.2
+requires-dist: azure-datalake-store<1.0.0a0,>=0.0.30; extra == "all"
+requires-dist: azure-identity>=1.3.1; extra == "all"
+requires-dist: azure-storage-blob>=12.1; extra == "all"
+requires-dist: black>=19.3b0; extra == "all"
+requires-dist: boto3; extra == "all"
+requires-dist: gcsfs>=0.2; extra == "all"
+requires-dist: pyarrow>=2; extra == "all"
+requires-dist: pygithub>=1.55; extra == "all"
+requires-dist: requests>=2.21; extra == "all"
+requires-dist: azure-datalake-store<1.0.0a0,>=0.0.30; extra == "azure"
+requires-dist: azure-identity>=1.3.1; extra == "azure"
+requires-dist: azure-storage-blob>=12.1; extra == "azure"
+requires-dist: requests>=2.21; extra == "azure"
+requires-dist: black>=19.3b0; extra == "black"
+requires-dist: attrs>=17.4; extra == "dev"
+requires-dist: azure-datalake-store<1.0.0a0,>=0.0.30; extra == "dev"
+requires-dist: azure-identity>=1.3.1; extra == "dev"
+requires-dist: azure-storage-blob>=12.1; extra == "dev"
+requires-dist: black>=19.3b0; extra == "dev"
+requires-dist: boto3; extra == "dev"
+requires-dist: botocore; extra == "dev"
+requires-dist: bumpversion; extra == "dev"
+requires-dist: check-manifest; extra == "dev"
+requires-dist: codecov; extra == "dev"
+requires-dist: coverage; extra == "dev"
+requires-dist: gcsfs>=0.2; extra == "dev"
+requires-dist: google-compute-engine; extra == "dev"
+requires-dist: ipython<9,>=5; extra == "dev"
+requires-dist: ipywidgets; extra == "dev"
+requires-dist: moto<5.1,>=5; extra == "dev"
+requires-dist: notebook; extra == "dev"
+requires-dist: pip>=18.1; extra == "dev"
+requires-dist: pre-commit; extra == "dev"
+requires-dist: pyarrow>=2; extra == "dev"
+requires-dist: pygithub>=1.55; extra == "dev"
+requires-dist: pytest>=4.1; extra == "dev"
+requires-dist: pytest-cov>=2.6.1; extra == "dev"
+requires-dist: pytest-env>=0.6.2; extra == "dev"
+requires-dist: pytest-mock>=1.10; extra == "dev"
+requires-dist: recommonmark; extra == "dev"
+requires-dist: requests>=2.21; extra == "dev"
+requires-dist: setuptools>=38.6; extra == "dev"
+requires-dist: tox; extra == "dev"
+requires-dist: twine>=1.11; extra == "dev"
+requires-dist: wheel>=0.31; extra == "dev"
+requires-dist: azure-datalake-store<1.0.0a0,>=0.0.30; extra == "docs"
+requires-dist: azure-identity>=1.3.1; extra == "docs"
+requires-dist: azure-storage-blob>=12.1; extra == "docs"
+requires-dist: black>=19.3b0; extra == "docs"
+requires-dist: boto3; extra == "docs"
+requires-dist: furo>=2023.9.10; extra == "docs"
+requires-dist: gcsfs>=0.2; extra == "docs"
+requires-dist: moto>=4.2.8; extra == "docs"
+requires-dist: myst-parser>=2; extra == "docs"
+requires-dist: pyarrow>=2; extra == "docs"
+requires-dist: pygithub>=1.55; extra == "docs"
+requires-dist: requests>=2.21; extra == "docs"
+requires-dist: sphinx>=7.2.6; extra == "docs"
+requires-dist: sphinx-copybutton>=0.5.2; extra == "docs"
+requires-dist: gcsfs>=0.2; extra == "gcs"
+requires-dist: pygithub>=1.55; extra == "github"
+requires-dist: pyarrow>=2; extra == "hdfs"
+requires-dist: boto3; extra == "s3"
+requires-dist: attrs>=17.4; extra == "test"
+requires-dist: azure-datalake-store<1.0.0a0,>=0.0.30; extra == "test"
+requires-dist: azure-identity>=1.3.1; extra == "test"
+requires-dist: azure-storage-blob>=12.1; extra == "test"
+requires-dist: black>=19.3b0; extra == "test"
+requires-dist: boto3; extra == "test"
+requires-dist: botocore; extra == "test"
+requires-dist: bumpversion; extra == "test"
+requires-dist: check-manifest; extra == "test"
+requires-dist: codecov; extra == "test"
+requires-dist: coverage; extra == "test"
+requires-dist: gcsfs>=0.2; extra == "test"
+requires-dist: google-compute-engine; extra == "test"
+requires-dist: ipython<9,>=5; extra == "test"
+requires-dist: ipywidgets; extra == "test"
+requires-dist: moto<5.1,>=5; extra == "test"
+requires-dist: notebook; extra == "test"
+requires-dist: pip>=18.1; extra == "test"
+requires-dist: pre-commit; extra == "test"
+requires-dist: pyarrow>=2; extra == "test"
+requires-dist: pygithub>=1.55; extra == "test"
+requires-dist: pytest>=4.1; extra == "test"
+requires-dist: pytest-cov>=2.6.1; extra == "test"
+requires-dist: pytest-env>=0.6.2; extra == "test"
+requires-dist: pytest-mock>=1.10; extra == "test"
+requires-dist: recommonmark; extra == "test"
+requires-dist: requests>=2.21; extra == "test"
+requires-dist: setuptools>=38.6; extra == "test"
+requires-dist: tox; extra == "test"
+requires-dist: twine>=1.11; extra == "test"
+requires-dist: wheel>=0.31; extra == "test"
+requires-python: >=3.10
+project-url: Documentation, https://papermill.readthedocs.io
+project-url: Funding, https://nteract.io
+project-url: Source, https://github.com/nteract/papermill/
+project-url: Tracker, https://github.com/nteract/papermill/issues
+provides-extra: all
+provides-extra: azure
+provides-extra: black
+provides-extra: dev
+provides-extra: docs
+provides-extra: gcs
+provides-extra: github
+provides-extra: hdfs
+provides-extra: s3
+provides-extra: test
+

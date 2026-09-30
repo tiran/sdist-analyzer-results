@@ -1,0 +1,24 @@
+metadata-version: 2.4
+name: kfp-server-api
+version: 2.17.0
+dynamic: author
+dynamic: author-email
+dynamic: description
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: requires-dist
+dynamic: summary
+summary: Kubeflow Pipelines API
+keywords: OpenAPI,OpenAPI-Generator,Kubeflow Pipelines API
+home-page: https://github.com/kubeflow/pipelines
+author: google
+author-email: kubeflow-pipelines@google.com
+license: Apache 2.0
+license-file: LICENSE
+requires-dist: urllib3>=1.15
+requires-dist: six>=1.10
+requires-dist: certifi
+requires-dist: python-dateutil
+

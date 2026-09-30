@@ -1,0 +1,28 @@
+metadata-version: 2.4
+name: pyspnego
+version: 0.12.2
+dynamic: license-file
+summary: Windows Negotiate Authentication Client and Server
+keywords: windows,spnego,negotiate,ntlm,kerberos,sspi,gssapi,auth
+author-email: Jordan Borean <jborean93@gmail.com>
+license-expression: MIT
+license-file: LICENSE
+classifier: Development Status :: 4 - Beta
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: 3.15
+requires-dist: cryptography
+requires-dist: sspilib>=0.5.0; sys_platform == "win32"
+requires-dist: gssapi>=1.6.0; sys_platform != "win32" and extra == "kerberos"
+requires-dist: krb5>=0.3.0; sys_platform != "win32" and extra == "kerberos"
+requires-dist: ruamel.yaml; extra == "yaml"
+requires-python: >=3.9
+project-url: homepage, https://github.com/jborean93/pyspnego
+provides-extra: kerberos
+provides-extra: yaml
+

@@ -1,0 +1,35 @@
+metadata-version: 2.4
+name: MonkeyType
+version: 23.3.0
+dynamic: license-file
+summary: Generating type annotations from sampled production types
+home-page: https://github.com/Instagram/MonkeyType
+author: Matt Page
+author-email: mpage@instagram.com
+license: BSD
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: BSD License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+requires-dist: mypy_extensions
+requires-dist: libcst>=0.4.4
+requires-dist: black; extra == "dev"
+requires-dist: isort; extra == "dev"
+requires-dist: flake8; extra == "dev"
+requires-dist: pytest; extra == "dev"
+requires-dist: mypy; extra == "dev"
+requires-dist: sphinx; extra == "dev"
+requires-dist: twine; extra == "dev"
+requires-dist: tox; extra == "dev"
+requires-dist: libcst; extra == "dev"
+requires-dist: importlib_metadata; extra == "dev"
+requires-python: >=3.7
+provides-extra: dev
+

@@ -1,0 +1,2 @@
+hatch-jupyter-builder>=0.5
+jupyter-builder<2,>=1.0.2

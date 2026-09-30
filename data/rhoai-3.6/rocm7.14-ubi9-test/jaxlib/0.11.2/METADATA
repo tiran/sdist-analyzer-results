@@ -1,0 +1,31 @@
+metadata-version: 2.4
+name: jaxlib
+version: 0.11.2
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: XLA library for JAX
+home-page: https://github.com/jax-ml/jax
+author: JAX team
+author-email: jax-dev@google.com
+license: Apache-2.0
+license-file: LICENSE.txt
+classifier: Development Status :: 5 - Production/Stable
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: 3.15
+classifier: Programming Language :: Python :: Free Threading :: 3 - Stable
+requires-dist: scipy>=1.14
+requires-dist: numpy>=2.0
+requires-dist: ml_dtypes>=0.5.0
+requires-python: >=3.12
+

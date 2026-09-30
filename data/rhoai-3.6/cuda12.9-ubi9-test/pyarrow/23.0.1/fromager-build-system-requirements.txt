@@ -1,0 +1,6 @@
+setuptools_scm[toml]>=8
+numpy>=1.25
+build
+setuptools
+setuptools>=77
+cython>=3.1

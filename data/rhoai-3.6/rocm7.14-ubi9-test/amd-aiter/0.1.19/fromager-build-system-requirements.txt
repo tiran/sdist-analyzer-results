@@ -1,0 +1,11 @@
+ninja
+setuptools>=45
+torch
+wheel
+setuptools
+flydsl==0.2.4
+psutil
+pandas
+setuptools_scm[toml]>=6.2
+packaging
+pybind11>=3.0.1

@@ -1,0 +1,35 @@
+metadata-version: 2.5
+name: build
+version: 1.6.0
+summary: A simple, correct Python build frontend
+author-email: Filipe Laíns <lains@riseup.net>, Bernát Gábor <gaborjbernat@gmail.com>, layday <layday@protonmail.com>, Henry Schreiner <henryschreineriii@gmail.com>
+license-expression: MIT
+license-file: LICENSE
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: 3.15
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+requires-dist: packaging>=24.0
+requires-dist: pyproject_hooks
+requires-dist: colorama; os_name == "nt"
+requires-dist: importlib-metadata>=4.6; python_full_version < "3.10.2"
+requires-dist: tomli>=1.1.0; python_version < "3.11"
+requires-dist: keyring; extra == "keyring"
+requires-dist: uv>=0.1.18; extra == "uv"
+requires-dist: virtualenv>=20.36.1; extra == "virtualenv"
+requires-python: >=3.10
+project-url: changelog, https://build.pypa.io/en/stable/changelog.html
+project-url: homepage, https://build.pypa.io
+project-url: issues, https://github.com/pypa/build/issues
+project-url: source, https://github.com/pypa/build
+provides-extra: keyring
+provides-extra: uv
+provides-extra: virtualenv
+import-name: build
+

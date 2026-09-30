@@ -1,0 +1,9 @@
+metadata-version: 2.4
+name: kernels-data
+version: 0.16.1
+summary: Kernels data structures (Python bindings)
+home-page: https://github.com/huggingface/kernels
+classifier: Programming Language :: Rust
+classifier: Programming Language :: Python :: Implementation :: CPython
+requires-python: >=3.8
+

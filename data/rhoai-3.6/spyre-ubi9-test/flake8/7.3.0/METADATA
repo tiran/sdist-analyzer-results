@@ -1,0 +1,29 @@
+metadata-version: 2.4
+name: flake8
+version: 7.3.0
+dynamic: license-file
+summary: the modular source code checker: pep8 pyflakes and co
+home-page: https://github.com/pycqa/flake8
+author: Tarek Ziade
+author-email: tarek@ziade.org
+maintainer: Ian Stapleton Cordasco
+maintainer-email: graffatcolmingov@gmail.com
+license: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Framework :: Flake8
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+classifier: Topic :: Software Development :: Quality Assurance
+requires-dist: mccabe<0.8.0,>=0.7.0
+requires-dist: pycodestyle<2.15.0,>=2.14.0
+requires-dist: pyflakes<3.5.0,>=3.4.0
+requires-python: >=3.9
+

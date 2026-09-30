@@ -1,0 +1,27 @@
+metadata-version: 2.4
+name: jupyterlab-lsp
+version: 5.1.1
+dynamic: license-file
+summary: Coding assistance for JupyterLab with Language Server Protocol
+keywords: Interactive,Language Server,LSP,JupyterLab,JupyterLab4
+author: JupyterLab-LSP Development Team
+author-email: project.jupyter@gmail.com
+license: BSD-3-Clause
+license-file: LICENSE
+classifier: Framework :: Jupyter
+classifier: Framework :: Jupyter :: JupyterLab
+classifier: Framework :: Jupyter :: JupyterLab :: 4
+classifier: Framework :: Jupyter :: JupyterLab :: Extensions
+classifier: Framework :: Jupyter :: JupyterLab :: Extensions :: Prebuilt
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: End Users/Desktop
+classifier: Intended Audience :: Information Technology
+classifier: License :: OSI Approved :: BSD License
+classifier: Programming Language :: Python
+requires-dist: jupyter_lsp>=2.0.0
+requires-dist: jupyterlab<5.0.0a0,>=4.1.0
+requires-python: >=3.8
+project-url: Bug Tracker, https://github.com/jupyter-lsp/jupyterlab-lsp/issues
+project-url: Documentation, https://jupyterlab-lsp.readthedocs.io/
+project-url: Source Code, https://github.com/jupyter-lsp/jupyterlab-lsp
+

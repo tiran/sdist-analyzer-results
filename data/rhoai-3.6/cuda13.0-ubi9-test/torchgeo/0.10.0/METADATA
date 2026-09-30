@@ -1,0 +1,84 @@
+metadata-version: 2.4
+name: torchgeo
+version: 0.10.0
+summary: TorchGeo: datasets, samplers, transforms, and pre-trained models for geospatial data
+keywords: pytorch,deep learning,machine learning,remote sensing,satellite imagery,earth observation,geospatial
+author: Adam J. Stewart
+author-email: Adam J. Stewart <ajstewart426@gmail.com>
+maintainer: Adam J. Stewart, Caleb Robinson, Isaac Corley, Nils Lehmann, Ashwin Nair, Robin Cole
+maintainer-email: Adam J. Stewart <ajstewart426@gmail.com>, Caleb Robinson <Caleb.Robinson@microsoft.com>, Isaac Corley <isaac.corley@proton.me>, Nils Lehmann <n.lehmann@tum.de>, Ashwin Nair <ashnair0007@gmail.com>, Robin Cole <robmarkcole@gmail.com>
+license-expression: MIT
+license-file: LICENSE
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Science/Research
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+classifier: Topic :: Scientific/Engineering :: GIS
+requires-dist: einops>=0.3
+requires-dist: geopandas>=1.0
+requires-dist: jsonargparse[jsonnet,signatures]>=4.39
+requires-dist: kornia>=0.8.2
+requires-dist: lightly>=1.5.1
+requires-dist: lightning!=2.5.0,!=2.5.5,!=2.5.6,>=2.4
+requires-dist: matplotlib>=3.7.3
+requires-dist: numpy>=1.26
+requires-dist: pandas>=2.1.1
+requires-dist: pillow>=10
+requires-dist: pyogrio>=0.10
+requires-dist: pyproj>=3.6.1
+requires-dist: rasterio>=1.4.3
+requires-dist: requests>=2.25
+requires-dist: segmentation-models-pytorch>=0.5
+requires-dist: shapely>=2.0.2
+requires-dist: timm>=1.0.3
+requires-dist: torch>=2.2
+requires-dist: torchmetrics[detection]>=1.5
+requires-dist: torchvision>=0.17
+requires-dist: tqdm>=4.57
+requires-dist: typing-extensions>=4.8
+requires-dist: torchgeo[datasets,docs,models,style,tests]; extra == "all"
+requires-dist: h5py<3.15,>=3.10; python_full_version < "3.14" and extra == "datasets"
+requires-dist: laspy>=2.5.3; extra == "datasets"
+requires-dist: netcdf4>=1.6.5; extra == "datasets"
+requires-dist: pandas[parquet]>=2.1.1; extra == "datasets"
+requires-dist: rioxarray>=0.14.1; extra == "datasets"
+requires-dist: scipy>=1.11.2; extra == "datasets"
+requires-dist: tokenizers>=0.14; python_full_version < "3.14" and extra == "datasets"
+requires-dist: webdataset>=0.2.101; extra == "datasets"
+requires-dist: xarray>=0.17; extra == "datasets"
+requires-dist: ipywidgets>=7; extra == "docs"
+requires-dist: myst-parser>=5.1; extra == "docs"
+requires-dist: nbsphinx>=0.8.5; extra == "docs"
+requires-dist: pydata-sphinx-theme>=0.18; extra == "docs"
+requires-dist: sphinx>=8; extra == "docs"
+requires-dist: sphinx-github-changelog>=2; extra == "docs"
+requires-dist: microsoft-aurora>=1.6; extra == "models"
+requires-dist: olmoearth-pretrain-minimal>=0.0.2; extra == "models"
+requires-dist: pandas-stubs>=2.1.1; extra == "style"
+requires-dist: ruff>=0.16; extra == "style"
+requires-dist: ty>=0.0.62; extra == "style"
+requires-dist: types-geopandas>=1.0; extra == "style"
+requires-dist: types-rasterio>=1.5.0.20260728; extra == "style"
+requires-dist: types-requests>=2.25; extra == "style"
+requires-dist: types-shapely>=2.0.2; extra == "style"
+requires-dist: nbmake>=1.4.5; extra == "tests"
+requires-dist: packaging>=21; extra == "tests"
+requires-dist: pytest>=7.3.2; extra == "tests"
+requires-dist: pytest-cov>=4; extra == "tests"
+requires-dist: pytest-socket>=0.3.4; extra == "tests"
+requires-python: >=3.12
+project-url: Codecov, https://app.codecov.io/gh/torchgeo/torchgeo
+project-url: Documentation, https://docs.torchgeo.org
+project-url: Homepage, https://github.com/torchgeo/torchgeo
+project-url: Slack, https://torchgeo.slack.com
+provides-extra: all
+provides-extra: datasets
+provides-extra: docs
+provides-extra: models
+provides-extra: style
+provides-extra: tests
+

@@ -1,0 +1,20 @@
+metadata-version: 2.4
+name: interface_meta
+version: 2.0.1
+summary: `interface_meta` provides a convenient way to expose an extensible API with enforced method signatures and consistent documentation.
+author-email: Matthew Wardrop <mpwardrop@gmail.com>
+license: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Environment :: Console
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+requires-python: >=3.10
+project-url: Homepage, https://github.com/matthewwardrop/interface_meta
+project-url: Repository, https://github.com/matthewwardrop/interface_meta
+

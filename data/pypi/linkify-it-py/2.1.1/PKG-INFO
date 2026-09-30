@@ -1,0 +1,42 @@
+metadata-version: 2.4
+name: linkify-it-py
+version: 2.1.1
+dynamic: license-file
+summary: Links recognition library with FULL unicode support.
+keywords: linkify,linkifier,autolink,autolinker
+author: tsutsu3
+license: MIT
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: License :: OSI Approved :: MIT License
+classifier: Operating System :: OS Independent
+classifier: Intended Audience :: Developers
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: uc-micro-py
+requires-dist: pytest; extra == "test"
+requires-dist: coverage; extra == "test"
+requires-dist: pytest-cov; extra == "test"
+requires-dist: pytest-timeout; extra == "test"
+requires-dist: pre-commit; extra == "dev"
+requires-dist: isort; extra == "dev"
+requires-dist: flake8; extra == "dev"
+requires-dist: black; extra == "dev"
+requires-dist: pyproject-flake8; extra == "dev"
+requires-dist: pytest; extra == "benchmark"
+requires-dist: pytest-benchmark; extra == "benchmark"
+requires-dist: sphinx; extra == "doc"
+requires-dist: sphinx_book_theme; extra == "doc"
+requires-dist: myst-parser; extra == "doc"
+requires-python: >=3.10
+project-url: Homepage, https://github.com/tsutsu3/linkify-it-py
+provides-extra: test
+provides-extra: dev
+provides-extra: benchmark
+provides-extra: doc
+

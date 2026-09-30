@@ -1,0 +1,42 @@
+metadata-version: 2.4
+name: azure-storage-blob
+version: 12.30.2
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: Microsoft Azure Blob Storage Client Library for Python
+keywords: azure,azure sdk
+home-page: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/storage/azure-storage-blob
+author: Microsoft Corporation
+author-email: ascl@microsoft.com
+license: MIT License
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: License :: OSI Approved :: MIT License
+requires-dist: azure-core>=1.37.0
+requires-dist: cryptography>=2.1.4
+requires-dist: typing-extensions>=4.6.0
+requires-dist: isodate>=0.6.1
+requires-dist: azure-core[aio]>=1.37.0; extra == "aio"
+requires-python: >=3.9
+provides-extra: aio
+

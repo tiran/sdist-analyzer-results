@@ -1,0 +1,16 @@
+metadata-version: 2.3
+name: simpleeval
+version: 1.0.8
+summary: A simple, safe single expression evaluator library.
+keywords: ast,eval,expression,parse,simple
+author-email: Daniel Fairhead <danthedeckie@gmail.com>
+maintainer-email: Daniel Fairhead <danthedeckie@gmail.com>
+license: MIT
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: MIT License
+classifier: Programming Language :: Python
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-python: >=3.9
+project-url: Source code, https://github.com/danthedeckie/simpleeval
+

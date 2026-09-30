@@ -1,0 +1,41 @@
+metadata-version: 2.4
+name: pinecone
+version: 10.0.0
+summary: Pinecone Python SDK
+keywords: Pinecone,vector,database,cloud,RAG,AI
+author-email: "Pinecone Systems, Inc." <support@pinecone.io>
+license-expression: Apache-2.0
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: Information Technology
+classifier: Intended Audience :: Science/Research
+classifier: Intended Audience :: System Administrators
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Topic :: Database
+classifier: Topic :: Software Development
+classifier: Topic :: Software Development :: Libraries
+classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: httpx[http2]<1.0,>=0.27
+requires-dist: msgspec<0.22,>=0.19
+requires-dist: orjson<4,>=3.11
+requires-dist: anyio>=4.0
+requires-dist: sphinx>=8.0; extra == "docs"
+requires-dist: furo; extra == "docs"
+requires-dist: myst-parser>=4.0; extra == "docs"
+requires-dist: sphinx-copybutton; extra == "docs"
+requires-dist: sphinx-tabs; extra == "docs"
+requires-python: >=3.10
+project-url: Changelog, https://sdk.pinecone.io/python/migration/v10-migration.html
+project-url: Documentation, https://docs.pinecone.io
+project-url: Homepage, https://www.pinecone.io
+project-url: Issues, https://github.com/pinecone-io/python-sdk/issues
+project-url: Source, https://github.com/pinecone-io/python-sdk
+provides-extra: docs
+

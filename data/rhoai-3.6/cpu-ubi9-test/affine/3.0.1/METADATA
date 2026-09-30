@@ -1,0 +1,25 @@
+metadata-version: 2.4
+name: affine
+version: 3.0.1
+summary: Matrices describing affine transformation of the plane
+keywords: affine,transformation,matrix
+author-email: Sean Gillies <sean.gillies@gmail.com>
+license-expression: BSD-3-Clause
+license-file: AUTHORS.txt
+license-file: LICENSE.txt
+classifier: Development Status :: 5 - Production/Stable
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: 3.15
+classifier: Topic :: Multimedia :: Graphics :: Graphics Conversion
+classifier: Topic :: Scientific/Engineering :: GIS
+classifier: Typing :: Typed
+requires-dist: attrs>=21.3.0
+requires-python: >=3.9
+project-url: Source, https://github.com/rasterio/affine
+

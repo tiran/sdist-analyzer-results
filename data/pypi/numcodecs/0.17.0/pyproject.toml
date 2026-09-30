@@ -1,0 +1,255 @@
+[build-system]
+requires = [
+    "meson-python>=0.17",
+    "meson>=1.6.0",
+    "setuptools-scm>=6.2",
+    "Cython>=3.1",
+    "numpy>=2",
+]
+build-backend = "mesonpy"
+
+[project]
+name = "numcodecs"
+description = """
+A Python package providing buffer compression and transformation codecs \
+for use in data storage and communication applications."""
+readme = "README.md"
+dependencies = ["numpy>=2.0", "typing_extensions"]
+requires-python = ">=3.12"
+dynamic = [
+  "version",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Operating System :: Unix",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+]
+maintainers = [
+    { name = "Alistair Miles", email = "alimanfoo@googlemail.com" },
+]
+license = "MIT"
+license-files = [
+    "LICENSE.txt",
+    "c-blosc/LICENSE.txt",
+    "c-blosc/LICENSES/*",
+]
+
+[project.urls]
+"Bug Tracker" = "https://github.com/zarr-developers/numcodecs/issues"
+Changelog = "https://numcodecs.readthedocs.io/en/stable/release.html"
+Documentation = "https://numcodecs.readthedocs.io/"
+Homepage = "https://github.com/zarr-developers/numcodecs"
+
+[project.optional-dependencies]
+msgpack = [
+    "msgpack",
+]
+zfpy = [
+    "zfpy>=1.0.0"
+]
+pcodec = [
+    "pcodec>=1,<2",
+]
+crc32c = [
+    "crc32c>=2.7",
+]
+google_crc32c = [
+    "google-crc32c>=1.5"
+]
+docs = [
+    "sphinx",
+    "sphinx-issues",
+    "pydata-sphinx-theme",
+    "numpydoc",
+    "myst-parser",
+]
+test = [
+    "coverage",
+    "pytest",
+    "pytest-cov",
+    "pyzstd"
+]
+test_extras = [
+    "importlib_metadata",
+]
+
+[dependency-groups]
+dev = [
+    "meson-python>=0.17",
+    "meson>=1.6.0",
+    "ninja",
+    "cython>=3.1",
+    "setuptools-scm>=6.2",
+    "numpy>=2",
+    "pytest==9.0.3",
+    "pytest-cov",
+]
+test-zarr-308 = [
+    {include-group="dev"},
+    "zarr==3.0.8",
+    "crc32c",
+]
+test-zarr-316 = [
+    {include-group="dev"},
+    "zarr==3.1.6",
+    "crc32c",
+]
+test-zarr-main = [
+    {include-group="dev"},
+    "zarr @ git+https://github.com/zarr-developers/zarr-python.git@main",
+    "crc32c",
+]
+
+[tool.codespell]
+skip = "./.git,fixture"
+ignore-words-list = "ba, compiletime, hist, nd, unparseable"
+
+[tool.coverage.run]
+omit = ["tests/*"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "pragma: ${PY_MAJOR_VERSION} no cover",
+]
+
+[tool.repo-review]
+ignore = ["PY005", "PY007", "PP302", "PP308", "PP309", "GH103", "GH212", "PC111", "PC140", "PC160", "PC170", "PC180", "MY100", "RF103"]
+
+[tool.pytest.ini_options]
+addopts = "-ra --strict-config --strict-markers --cov=numcodecs --cov-report xml --doctest-modules --doctest-glob=*.pyx"
+doctest_optionflags = [
+    "NORMALIZE_WHITESPACE",
+    "ELLIPSIS",
+    "IGNORE_EXCEPTION_DETAIL",
+]
+testpaths = [
+    "tests",
+]
+norecursedirs = [
+    ".git",
+    ".github",
+    ".pytest_cache",
+    "adhoc",
+    "build",
+    "builddir",
+    "subprojects",
+    "c-blosc",
+    "docs",
+    "fixture",
+    "notebooks",
+    "numcodecs.egg-info",
+]
+log_cli_level = "INFO"
+xfail_strict = true
+filterwarnings = [
+    "error",
+    "ignore:As the c extension couldn't be imported:RuntimeWarning", # Ignore warning about pure python google_crc32c (on Python 3.14)
+    "ignore:.*align should be passed as Python or NumPy boolean.*:numpy.exceptions.VisibleDeprecationWarning", # Old fixture files trigger numpy-internal dtype(align=0) warning (NumPy 2.4+)
+]
+
+[tool.cibuildwheel]
+# AVX2 disabled for portable wheels (not all x86_64 CPUs have it)
+config-settings = "setup-args=-Davx2=disabled"
+
+[[tool.cibuildwheel.overrides]]
+select = "*-macosx_arm64"
+config-settings = {setup-args = ["-Davx2=disabled", "-Dsse2=disabled"]}
+
+[tool.ruff]
+line-length = 100
+extend-exclude = ["c-blosc"]
+
+[tool.ruff.lint]
+extend-select = [
+    "B",
+    "C4",
+    "EXE",
+    "FA",
+    "FLY",
+    "FURB",
+    "G",
+    "I",
+    "ISC",
+    "LOG",
+    "PERF",
+    "PGH",
+    "PIE",
+    "PT",
+    "PYI",
+    "RET",
+    "RSE",
+    "RUF",
+    "SIM",
+    "SLOT",
+    "TID",
+    "TRY",
+    "UP",
+]
+ignore = [
+    "FURB101",
+    "FURB103",
+    "PT001",
+    "PT011",
+    "PT012",
+    "PT031",
+    "RET505",
+    "RET506",
+    "SIM108",
+    "TRY003",
+    "TRY301",
+    "UP007",
+    # https://docs.astral.sh/ruff/formatter/#conflicting-lint-rules
+    "W191",
+    "E111",
+    "E114",
+    "E117",
+    "D206",
+    "D300",
+    "Q000",
+    "Q001",
+    "Q002",
+    "Q003",
+    "COM812",
+    "COM819",
+]
+
+[tool.ruff.lint.extend-per-file-ignores]
+"tests/**" = ["SIM201", "SIM202", "SIM300", "TRY002"]
+"notebooks/**" = ["W391"]  # https://github.com/astral-sh/ruff/issues/13763
+
+[tool.ruff.format]
+quote-style = "preserve"
+
+[tool.mypy]
+ignore_errors = false
+ignore_missing_imports = true
+enable_error_code = ["ignore-without-code", "redundant-expr", "truthy-bool"]
+# TODO: set options below to true
+strict = false
+warn_unreachable = false
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_unused_configs = true
+
+[tool.uv]
+# meson-python editable installs require build deps (ninja, meson) at runtime for
+# auto-rebuild on import. Skip build isolation so the venv's ninja is used.
+# The "dev" dependency group provides these build tools. Bootstrap with:
+# `uv pip install --group dev` before running
+# `uv pip install --no-build-isolation -e ".[test,test_extras,msgpack]"`.
+no-build-isolation-package = ["numcodecs"]
+conflicts = [
+    # Zarr versions conflict with each other
+    [
+        { group = "test-zarr-308" },
+        { group = "test-zarr-316" },
+        { group = "test-zarr-main" }
+    ]
+]

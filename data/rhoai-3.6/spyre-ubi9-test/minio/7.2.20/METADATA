@@ -1,0 +1,42 @@
+metadata-version: 2.4
+name: minio
+version: 7.2.20
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: download-url
+dynamic: home-page
+dynamic: license
+dynamic: license-file
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: MinIO Python SDK for Amazon S3 Compatible Cloud Storage
+home-page: https://github.com/minio/minio-py
+download-url: https://github.com/minio/minio-py/releases
+author: MinIO, Inc.
+author-email: dev@min.io
+license: Apache-2.0
+license-file: LICENSE
+license-file: NOTICE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Apache Software License
+classifier: Natural Language :: English
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Topic :: Software Development :: Libraries :: Python Modules
+requires-dist: certifi
+requires-dist: urllib3
+requires-dist: argon2-cffi
+requires-dist: pycryptodome
+requires-dist: typing-extensions
+requires-python: >=3.9
+

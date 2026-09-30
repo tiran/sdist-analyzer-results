@@ -1,0 +1,38 @@
+metadata-version: 2.4
+name: Pygments
+version: 2.15.0
+dynamic: license-file
+summary: Pygments is a syntax highlighting package written in Python.
+keywords: syntax highlighting
+author-email: Georg Brandl <georg@python.org>
+maintainer: Matthäus G. Chajdas
+maintainer-email: Georg Brandl <georg@python.org>, Jean Abou Samra <jean@abou-samra.fr>
+license: BSD-2-Clause
+license-file: LICENSE
+license-file: AUTHORS
+classifier: Development Status :: 6 - Mature
+classifier: Intended Audience :: Developers
+classifier: Intended Audience :: End Users/Desktop
+classifier: Intended Audience :: System Administrators
+classifier: License :: OSI Approved :: BSD License
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Text Processing :: Filters
+classifier: Topic :: Utilities
+requires-dist: importlib-metadata; python_version < "3.8" and extra == "plugins"
+requires-python: >=3.7
+project-url: Homepage, https://pygments.org
+project-url: Documentation, https://pygments.org/docs
+project-url: Source, https://github.com/pygments/pygments
+project-url: Bug Tracker, https://github.com/pygments/pygments/issues
+project-url: Changelog, https://github.com/pygments/pygments/blob/master/CHANGES
+provides-extra: plugins
+

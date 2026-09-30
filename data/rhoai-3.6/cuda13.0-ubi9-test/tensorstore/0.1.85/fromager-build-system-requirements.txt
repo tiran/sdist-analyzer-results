@@ -1,0 +1,6 @@
+ml-dtypes==0.5.4
+pip
+setuptools>=64
+setuptools_scm>=8.1.0
+wheel
+numpy==2.4.6

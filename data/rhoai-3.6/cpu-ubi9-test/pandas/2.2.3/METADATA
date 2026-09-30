@@ -28,9 +28,9 @@ classifier: Programming Language :: Python :: 3.10
 classifier: Programming Language :: Python :: 3.11
 classifier: Programming Language :: Python :: 3.12
 classifier: Topic :: Scientific/Engineering
-requires-dist: numpy>=1.22.4; python_version < "3.11"
-requires-dist: numpy>=1.23.2; python_version == "3.11"
-requires-dist: numpy>=1.26.0; python_version >= "3.12"
+requires-dist: numpy<3.0,>=2.0; python_version < "3.11"
+requires-dist: numpy<3.0,>=2.0; python_version == "3.11"
+requires-dist: numpy<3.0,>=2.0; python_version >= "3.12"
 requires-dist: python-dateutil>=2.8.2
 requires-dist: pytz>=2020.1
 requires-dist: tzdata>=2022.7

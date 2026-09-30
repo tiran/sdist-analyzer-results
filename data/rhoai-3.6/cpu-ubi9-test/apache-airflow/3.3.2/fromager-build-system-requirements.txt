@@ -1,0 +1,6 @@
+pluggy==1.6.0
+hatchling==1.32.0
+packaging==26.3
+trove-classifiers==2026.6.1.19
+tomlkit==0.15.1
+pathspec==1.1.1

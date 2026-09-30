@@ -1,0 +1,3 @@
+wheel
+setuptools_scm[simple]!=10.1,>=8
+setuptools>=80.0.0

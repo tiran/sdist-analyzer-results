@@ -1,0 +1,105 @@
+[build-system]
+requires = [
+  # NOTE: The following build dependencies are necessary for initial
+  # NOTE: provisioning of the in-tree build backend located under
+  # NOTE: `packaging/pep517_backend/`.
+  "expandvars",
+  "setuptools >= 47",  # Minimum required for `version = attr:`
+  "tomli; python_version < '3.11'",
+]
+backend-path = ["packaging"]  # requires `pip >= 20` or `pep517 >= 0.6.0`
+build-backend = "pep517_backend.hooks"  # wraps `setuptools.build_meta`
+
+[tool.local.cythonize]
+# This attr can contain multiple globs
+src = ["src/propcache/*.pyx"]
+
+[tool.local.cythonize.env]
+# Env vars provisioned during cythonize call
+#CFLAGS = "-DCYTHON_TRACE=1 ${CFLAGS}"
+#LDFLAGS = "${LDFLAGS}"
+
+[tool.local.cythonize.flags]
+# This section can contain the following booleans:
+# * annotate — generate annotated HTML page for source files
+# * build — build extension modules using distutils
+# * inplace — build extension modules in place using distutils (implies -b)
+# * force — force recompilation
+# * quiet — be less verbose during compilation
+# * lenient — increase Python compat by ignoring some compile time errors
+# * keep-going — compile as much as possible, ignore compilation failures
+annotate = false
+build = false
+inplace = true
+force = true
+quiet = false
+lenient = false
+keep-going = false
+
+[tool.local.cythonize.kwargs]
+# This section can contain args that have values:
+# * exclude=PATTERN      exclude certain file patterns from the compilation
+# * parallel=N    run builds in N parallel jobs (default: calculated per system)
+# exclude = "**.py"
+# parallel = 12
+
+[tool.local.cythonize.kwargs.directive]
+# This section can contain compiler directives. Ref:
+# https://cython.rtfd.io/en/latest/src/userguide/source_files_and_compilation.html#compiler-directives
+embedsignature = "True"
+emit_code_comments = "True"
+
+[tool.local.cythonize.kwargs.compile-time-env]
+# This section can contain compile time env vars
+
+[tool.local.cythonize.kwargs.option]
+# This section can contain cythonize options
+# Ref: https://github.com/cython/cython/blob/d6e6de9/Cython/Compiler/Options.py#L694-L730
+#docstrings = "True"
+#embed_pos_in_docstring = "True"
+#warning_errors = "True"
+#error_on_unknown_names = "True"
+#error_on_uninitialized = "True"
+
+[tool.cibuildwheel]
+# `build[uv]` makes cibuildwheel use `uv` for every venv it provisions,
+# both on the build side (passed to `python -m build` as `--installer=uv`)
+# and when materializing the test environment. uv resolves and installs
+# the wheel plus `requirements/test.txt` in roughly a second; the previous
+# pip-based path took noticeably longer per ABI and ran once per matrix
+# cell.
+build-frontend = "build[uv]"
+test-requires = "-r requirements/test.txt"
+test-command = "pytest -v --no-cov {project}/tests"
+# Free-threaded CPython under armv7l QEMU emulation crashes with SIGBUS when
+# importing the C extension; the wheel runs fine on real armv7l hardware, so
+# build and ship it but skip the emulated post-build test.
+test-skip = "*t-musllinux_armv7l"
+
+[tool.cibuildwheel.environment]
+COLOR = "yes"
+FORCE_COLOR = "1"
+MYPY_FORCE_COLOR = "1"
+PIP_BUILD_CONSTRAINT = "requirements/cython.txt"
+PIP_CONSTRAINT = "requirements/cython.txt"
+PRE_COMMIT_COLOR = "always"
+PY_COLORS = "1"
+UV_BUILD_CONSTRAINT = "requirements/cython.txt"
+UV_CONSTRAINT = "requirements/cython.txt"
+
+[tool.cibuildwheel.config-settings]
+pure-python = "false"
+
+[tool.ruff.lint]
+# Keep this list small and intentional; the rest of the project still
+# relies on flake8 for general style. The rules below are ones we want
+# to enforce repo-wide as a baseline.
+select = [
+  # Import sorting. Replaces the dedicated isort pre-commit hook so the
+  # formatter (ruff format) and the import sorter (ruff check --select I)
+  # come from the same tool and rev.
+  "I",
+]
+
+[tool.ruff.lint.isort]
+known-first-party = ["propcache"]

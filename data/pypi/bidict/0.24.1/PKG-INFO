@@ -1,0 +1,20 @@
+metadata-version: 2.4
+name: bidict
+version: 0.24.1
+summary: The bidirectional mapping library for Python.
+keywords: bidict,bimap,bidirectional,dict,dictionary,mapping,collections
+author: Joshua Bronson
+author-email: Joshua Bronson <jabronson@gmail.com>
+license-expression: MPL-2.0
+license-file: LICENSE
+classifier: Operating System :: OS Independent
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Typing :: Typed
+requires-dist: typing-extensions>=4.0; python_full_version < "3.12"
+requires-python: >=3.11
+project-url: Changelog, https://bidict.readthedocs.io/changelog.html
+project-url: Documentation, https://bidict.readthedocs.io
+project-url: Sponsor, https://bidict.readthedocs.io/#sponsoring
+project-url: Repository, https://github.com/jab/bidict
+

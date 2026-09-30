@@ -1,0 +1,39 @@
+metadata-version: 2.4
+name: modelexpress
+version: 0.5.0
+summary: Python client for ModelExpress P2P GPU transfer service
+keywords: llm,gpu,transfer,rdma,nixl,vllm
+author-email: NVIDIA Corporation <sw-dl-dynamo@nvidia.com>
+license-expression: Apache-2.0
+classifier: Development Status :: 4 - Beta
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+requires-dist: grpcio>=1.66.2
+requires-dist: google-crc32c>=1.5.0
+requires-dist: huggingface_hub>=0.20.0
+requires-dist: numpy>=1.24.0
+requires-dist: protobuf<6.0.0,>=5.27.0
+requires-dist: pydantic>=2.0.0
+requires-dist: torch>=2.6.0
+requires-dist: runai-model-streamer[azure,gcs,s3]; sys_platform == "linux"
+requires-dist: grpcio-tools<=1.66.2,>=1.60.0; extra == "dev"
+requires-dist: opentelemetry-api>=1.41.1; extra == "dev"
+requires-dist: opentelemetry-sdk>=1.41.1; extra == "dev"
+requires-dist: pytest>=7.0.0; extra == "dev"
+requires-dist: pytest-asyncio>=0.21.0; extra == "dev"
+requires-dist: opentelemetry-api>=1.20.0; extra == "otel"
+requires-dist: prometheus-client>=0.20.0; extra == "metrics"
+requires-dist: cuda-python>=12.0; extra == "vmm"
+requires-python: >=3.10
+project-url: Homepage, https://github.com/ai-dynamo/modelexpress
+project-url: Repository, https://github.com/ai-dynamo/modelexpress.git
+project-url: Documentation, https://github.com/ai-dynamo/modelexpress/tree/main/docs
+provides-extra: dev
+provides-extra: otel
+provides-extra: metrics
+provides-extra: vmm
+

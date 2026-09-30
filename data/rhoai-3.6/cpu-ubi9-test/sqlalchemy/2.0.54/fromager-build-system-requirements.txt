@@ -1,0 +1,2 @@
+cython>=0.29.24; platform_python_implementation == "CPython"
+setuptools>=61.0

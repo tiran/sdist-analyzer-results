@@ -1,0 +1,39 @@
+metadata-version: 2.4
+name: python-rapidjson
+version: 1.25
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: maintainer
+dynamic: maintainer-email
+dynamic: requires-python
+dynamic: summary
+summary: Python wrapper around rapidjson
+keywords: json jsonc rapidjson
+home-page: https://github.com/python-rapidjson/python-rapidjson
+author: Ken Robbins
+author-email: ken@kenrobbins.com
+maintainer: Lele Gaifax
+maintainer-email: lele@metapensiero.it
+license: MIT License
+license-file: LICENSE
+classifier: Development Status :: 5 - Production/Stable
+classifier: Intended Audience :: Developers
+classifier: Programming Language :: C++
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: 3.11
+classifier: Programming Language :: Python :: 3.12
+classifier: Programming Language :: Python :: 3.13
+classifier: Programming Language :: Python :: 3.14
+classifier: Programming Language :: Python :: 3.15
+classifier: Programming Language :: Python
+requires-python: >=3.10
+

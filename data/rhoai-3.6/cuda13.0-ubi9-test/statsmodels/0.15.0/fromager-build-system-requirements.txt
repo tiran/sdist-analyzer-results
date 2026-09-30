@@ -1,0 +1,5 @@
+setuptools_scm<10,>=9.2.0
+meson-python
+cython<4,>=3.0.13
+scipy<2,>=1.13
+numpy<3,>=2.0.0

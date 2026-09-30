@@ -1,0 +1,42 @@
+metadata-version: 2.4
+name: autoevals
+version: 0.3.0
+dynamic: license-file
+summary: Universal library for evaluating AI models
+author-email: BrainTrust <info@braintrustdata.com>
+license-file: LICENSE
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3.10
+classifier: Operating System :: OS Independent
+requires-dist: chevron
+requires-dist: jsonschema
+requires-dist: polyleven
+requires-dist: pyyaml
+requires-dist: black==22.6.0; extra == "dev"
+requires-dist: flake8; extra == "dev"
+requires-dist: flake8-isort; extra == "dev"
+requires-dist: isort==5.12.0; extra == "dev"
+requires-dist: pre-commit; extra == "dev"
+requires-dist: build; extra == "dev"
+requires-dist: twine; extra == "dev"
+requires-dist: braintrust; extra == "dev"
+requires-dist: ipython; extra == "dev"
+requires-dist: openai; extra == "dev"
+requires-dist: pytest; extra == "dev"
+requires-dist: pytest-asyncio; extra == "dev"
+requires-dist: pytest-mock; extra == "dev"
+requires-dist: respx; extra == "dev"
+requires-dist: pydoc-markdown; extra == "doc"
+requires-dist: numpy; extra == "scipy"
+requires-dist: scipy; extra == "scipy"
+requires-dist: litellm<1.85,>=1.60; extra == "litellm"
+requires-dist: autoevals[scipy]; extra == "all"
+requires-python: >=3.10.0
+project-url: Homepage, https://www.braintrustdata.com
+project-url: Bug Tracker, https://github.com/braintrustdata/autoevals
+provides-extra: dev
+provides-extra: doc
+provides-extra: scipy
+provides-extra: litellm
+provides-extra: all
+

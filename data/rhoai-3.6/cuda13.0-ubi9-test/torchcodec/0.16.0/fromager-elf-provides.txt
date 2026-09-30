@@ -1,0 +1,5 @@
+libtorchcodec_core6.so()(64bit)
+libtorchcodec_custom_ops6.so()(64bit)
+libtorchcodec_heic.so()(64bit)
+libtorchcodec_image.so()(64bit)
+libtorchcodec_pybind_ops.so()(64bit)

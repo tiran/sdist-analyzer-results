@@ -1,0 +1,14 @@
+metadata-version: 2.4
+name: dumb-init
+version: 1.2.5.post1
+dynamic: author
+dynamic: home-page
+dynamic: license-file
+dynamic: platform
+dynamic: summary
+platform: linux
+summary: Simple wrapper script which proxies signals to a child
+home-page: https://github.com/Yelp/dumb-init/
+author: Yelp
+license-file: LICENSE
+

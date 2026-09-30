@@ -1,0 +1,3 @@
+wheel
+setuptools-scm
+setuptools>=42

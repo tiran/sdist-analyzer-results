@@ -1,0 +1,99 @@
+metadata-version: 2.4
+name: hypothesis
+version: 6.56.4
+dynamic: author
+dynamic: author-email
+dynamic: classifier
+dynamic: description
+dynamic: description-content-type
+dynamic: home-page
+dynamic: keywords
+dynamic: license
+dynamic: license-file
+dynamic: project-url
+dynamic: provides-extra
+dynamic: requires-dist
+dynamic: requires-python
+dynamic: summary
+summary: A library for property-based testing
+keywords: python testing fuzzing property-based-testing
+home-page: https://hypothesis.works
+author: David R. MacIver and Zac Hatfield-Dodds
+author-email: david@drmaciver.com
+license: MPL-2.0
+license-file: LICENSE.txt
+classifier: Development Status :: 5 - Production/Stable
+classifier: Framework :: Hypothesis
+classifier: Framework :: Pytest
+classifier: Intended Audience :: Developers
+classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+classifier: Operating System :: Unix
+classifier: Operating System :: POSIX
+classifier: Operating System :: Microsoft :: Windows
+classifier: Programming Language :: Python
+classifier: Programming Language :: Python :: 3
+classifier: Programming Language :: Python :: 3 :: Only
+classifier: Programming Language :: Python :: 3.7
+classifier: Programming Language :: Python :: 3.8
+classifier: Programming Language :: Python :: 3.9
+classifier: Programming Language :: Python :: 3.10
+classifier: Programming Language :: Python :: Implementation :: CPython
+classifier: Programming Language :: Python :: Implementation :: PyPy
+classifier: Topic :: Education :: Testing
+classifier: Topic :: Software Development :: Testing
+classifier: Typing :: Typed
+requires-dist: attrs>=19.2.0
+requires-dist: exceptiongroup>=1.0.0; python_version < "3.11"
+requires-dist: sortedcontainers<3.0.0,>=2.1.0
+requires-dist: click>=7.0; extra == "cli"
+requires-dist: black>=19.10b0; extra == "cli"
+requires-dist: rich>=9.0.0; extra == "cli"
+requires-dist: libcst>=0.3.16; extra == "codemods"
+requires-dist: black>=19.10b0; extra == "ghostwriter"
+requires-dist: pytz>=2014.1; extra == "pytz"
+requires-dist: python-dateutil>=1.4; extra == "dateutil"
+requires-dist: lark-parser>=0.6.5; extra == "lark"
+requires-dist: numpy>=1.9.0; extra == "numpy"
+requires-dist: pandas>=1.0; extra == "pandas"
+requires-dist: pytest>=4.6; extra == "pytest"
+requires-dist: dpcontracts>=0.4; extra == "dpcontracts"
+requires-dist: redis>=3.0.0; extra == "redis"
+requires-dist: tzdata>=2022.5; sys_platform == "win32" and extra == "zoneinfo"
+requires-dist: backports.zoneinfo>=0.2.1; python_version < "3.9" and extra == "zoneinfo"
+requires-dist: django>=3.2; extra == "django"
+requires-dist: backports.zoneinfo>=0.2.1; python_version < "3.9" and extra == "all"
+requires-dist: black>=19.10b0; extra == "all"
+requires-dist: click>=7.0; extra == "all"
+requires-dist: django>=3.2; extra == "all"
+requires-dist: dpcontracts>=0.4; extra == "all"
+requires-dist: importlib_metadata>=3.6; python_version < "3.8" and extra == "all"
+requires-dist: lark-parser>=0.6.5; extra == "all"
+requires-dist: libcst>=0.3.16; extra == "all"
+requires-dist: numpy>=1.9.0; extra == "all"
+requires-dist: pandas>=1.0; extra == "all"
+requires-dist: pytest>=4.6; extra == "all"
+requires-dist: python-dateutil>=1.4; extra == "all"
+requires-dist: pytz>=2014.1; extra == "all"
+requires-dist: redis>=3.0.0; extra == "all"
+requires-dist: rich>=9.0.0; extra == "all"
+requires-dist: tzdata>=2022.5; sys_platform == "win32" and extra == "all"
+requires-python: >=3.7
+project-url: Source, https://github.com/HypothesisWorks/hypothesis/tree/master/hypothesis-python
+project-url: Changelog, https://hypothesis.readthedocs.io/en/latest/changes.html
+project-url: Documentation, https://hypothesis.readthedocs.io
+project-url: Issues, https://github.com/HypothesisWorks/hypothesis/issues
+provides-extra: cli
+provides-extra: codemods
+provides-extra: ghostwriter
+provides-extra: pytz
+provides-extra: dateutil
+provides-extra: lark
+provides-extra: numpy
+provides-extra: pandas
+provides-extra: pytest
+provides-extra: dpcontracts
+provides-extra: redis
+provides-extra: zoneinfo
+provides-extra: django
+provides-extra: all
+

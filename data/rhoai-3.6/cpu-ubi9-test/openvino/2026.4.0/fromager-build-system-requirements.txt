@@ -1,0 +1,5 @@
+setuptools
+setuptools<=84.0.0,>=77
+wheel<=0.48.0
+patchelf<=0.17.2.4
+cmake<=4.4.2
